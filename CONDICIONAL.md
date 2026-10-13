@@ -42,6 +42,35 @@ No NS a explosão é literal. `audit/lean/ATK/NSExplosion.lean` e `NSBridgeD.lea
 | (A) ℝ³, sem força | `UnforcedBlowupR3`; `clayA_iff_no_explosion`; `explosion_gives_C` | **nenhuma testemunha conhecida** |
 | (B) toro, sem força | `UnforcedBlowupTorus`; `clayB_iff_no_explosion` | **nenhuma testemunha conhecida** |
 
+## 2c. Linha de fechamento — CLOSED_MATH calculado pelo kernel
+
+Mesmo formato das linhas condicional e de explosão: **alvo exato** → **certificado** (declaração
+sem hipóteses, de tipo exatamente o alvo) → **portão** (`audit/lean/scripts/closure_gate.py`:
+kernel + axiomas padrão + controles) → **bandeira** calculada, nunca escrita à mão.
+
+| Alegação | Alvo exato | CLOSED_MATH | Certificado | Rotas certificadas até ela |
+|---|---|---|---|---|
+| C | `ATK.Exact.ClayC` | **true** (ambiente externo) | `atk_clayC_certified` | ponte `clayC_of_fc` + prova da OpenAI |
+| D | `ATK.Exact.ClayD` | **true** (ambiente externo) | `atk_clayD_certified` | ponte `clayD_of_fc` + prova da OpenAI |
+| A | `ATK.Exact.ClayA` | **false** | — | nenhuma |
+| ¬A | `¬ ATK.Exact.ClayA` | **false** | — | explosão `explosion_refutes_A` (sem testemunha) |
+| B | `ATK.Exact.ClayB` | **false** | — | nenhuma |
+| ¬B | `¬ ATK.Exact.ClayB` | **false** | — | explosão `explosion_refutes_B` (sem testemunha) |
+
+Controles do portão (todos OK, run `38387829549`): aceita uma decisão verdadeira de problema-brinquedo;
+recusa alvo como `axiom`; recusa `sorry`; recusa a ponte e a linha de explosão oferecidas como
+certificado (falta H / falta a testemunha); recusa `alvo ∨ ¬alvo` (teorema vazio).
+
+Os certificados de (C) e (D) só existem no ambiente da OpenAI (a prova deles não compila no
+toolchain ATK v4.34.1 sem portar o repositório). Por isso o portão roda duas vezes: no ambiente
+ATK (`registry.json`: C e D sem certificado local, só rotas) e no ambiente externo
+(`registry_external.json`, workflow `audit-openai-external`, run `38387829506`: **C = true, D = true,
+portão VÁLIDO**, mesmos controles).
+
+Para mudar uma bandeira para `true`, basta acrescentar a `audit/lean/closure/registry.json`
+uma declaração que o kernel aceite com o tipo exato — vinda de uma prova de H (pela ponte) ou de
+uma testemunha (pela explosão). Nenhuma outra edição altera o resultado.
+
 ## 3. Falsificadores exatos
 
 - (A) cai ⇔ existe `ν > 0` e dado `u₀` suave, `div u₀ = 0`, decaimento rápido, **sem força**, sem

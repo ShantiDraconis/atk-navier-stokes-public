@@ -31,6 +31,17 @@ verificado pelo kernel no ambiente da OpenAI (run `38376347284`; ver `audit/READ
 | N5 | G1 `HypothesesComplete_v2.lean` | Honesto: `GeometricDepletion` é hipótese explícita; `EnstrophyData` são funções livres (por isso o registro diz "on genuine flow-derived EnstrophyData"). Modela o caso **sem força** — o balanço não tem termo de força | (i) produzir `EnstrophyData` de uma solução real; (ii) provar a depleção — conteúdo equivalente em força a (A)/(B); (iii) incluir o arquivo no CI |
 | N6 | Prioridade | Separada da matemática: `imports/navier-stokes-critical-barrier-audit/PRIORITY.md` (não afirma acesso, derivação, plágio nem direito a prêmio) | — |
 
+## 2b. Linha de explosão — certificada no kernel
+
+No NS a explosão é literal. `audit/lean/ATK/NSExplosion.lean` e `NSBridgeD.lean`:
+
+| Alternativa | Explosão | Estado |
+|---|---|---|
+| (C) ℝ³, com força | `clayC_of_fc` + prova da OpenAI | **realizada** (kernel, ambiente deles) |
+| (D) toro, com força | `clayD_of_fc` (6/6 certificado) + prova da OpenAI | ponte certificada; certificado externo em execução |
+| (A) ℝ³, sem força | `UnforcedBlowupR3`; `clayA_iff_no_explosion`; `explosion_gives_C` | **nenhuma testemunha conhecida** |
+| (B) toro, sem força | `UnforcedBlowupTorus`; `clayB_iff_no_explosion` | **nenhuma testemunha conhecida** |
+
 ## 3. Falsificadores exatos
 
 - (A) cai ⇔ existe `ν > 0` e dado `u₀` suave, `div u₀ = 0`, decaimento rápido, **sem força**, sem

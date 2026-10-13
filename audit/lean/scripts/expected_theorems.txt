@@ -79,3 +79,16 @@ ATK.NSExplosion.clayA_iff_no_explosion
 ATK.NSExplosion.explosion_gives_C
 ATK.NSExplosion.explosion_refutes_B
 ATK.NSExplosion.clayB_iff_no_explosion
+ATK.NSLaminar.coord_hasFDerivAt
+ATK.NSLaminar.hasFDerivAt_shear
+ATK.NSLaminar.pd_shear
+ATK.NSLaminar.conv3_shear
+ATK.NSLaminar.div3_shear
+ATK.NSLaminar.lap3_shear
+ATK.NSLaminar.lam_eq_shear
+ATK.NSLaminar.hsin
+ATK.NSLaminar.hcos
+ATK.NSLaminar.laminar_no_convection
+ATK.NSLaminar.laminar_solution
+ATK.NSLaminar.laminar_periodic
+ATK.NSLaminar.laminar_global

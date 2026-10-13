@@ -51,5 +51,13 @@
       "hypothesis": "ATK.NSExplosion.UnforcedBlowupTorus",
       "status": "nenhuma testemunha conhecida"
     }
+  ],
+  "subtargets": [
+    {
+      "name": "(B) para a família laminar (sem força, toro)",
+      "decl": "ATK.NSLaminar.laminar_global",
+      "type": "∀ (A ν : ℝ) (m : ℤ), ∃ u p, ATK.Exact.NSClassical ν (ATK.NSLaminar.lam A (2 * Real.pi * m) ν 0) (fun _ _ => 0) u p ∧ ATK.Exact.SpacePeriodic u p",
+      "relation": "(B) pede isto para TODO dado; aqui só para dados laminares (termo não linear nulo)"
+    }
   ]
 }

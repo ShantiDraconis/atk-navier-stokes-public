@@ -77,19 +77,24 @@ jobs:
         shell: bash
         run: |
           mkdir -p ext/ATK
-          cp audit/lean/ATK/BealDescent.lean audit/lean/ATK/Exact.lean audit/lean/ATK/NSBridge.lean ext/ATK/
+          cp audit/lean/ATK/BealDescent.lean audit/lean/ATK/Exact.lean audit/lean/ATK/NSBridge.lean audit/lean/ATK/NSBridgeD.lean ext/ATK/
           printf 'import NavierStokes.ComparatorDefinitions\n' > ext/ATK/FCNavierStokes.lean
-          printf 'import ATK.NSBridge\nimport NavierStokes.ComparatorSolution\n\ntheorem atk_clayC_certified : ATK.Exact.ClayC :=\n  ATK.NSBridge.clayC_of_fc NavierStokes.Comparator.navier_stokes_breakdown_R3\n\n#print axioms atk_clayC_certified\n' > ext/ATK/Certificate.lean
+          printf 'import ATK.NSBridge\nimport ATK.NSBridgeD\nimport NavierStokes.ComparatorSolution\n\ntheorem atk_clayC_certified : ATK.Exact.ClayC :=\n  ATK.NSBridge.clayC_of_fc NavierStokes.Comparator.navier_stokes_breakdown_R3\n\ntheorem atk_clayD_certified : ATK.Exact.ClayD :=\n  ATK.NSBridgeD.clayD_of_fc NavierStokes.Comparator.navier_stokes_breakdown_periodic\n\n#print axioms atk_clayC_certified\n#print axioms atk_clayD_certified\n' > ext/ATK/Certificate.lean
           printf '\n[[lean_lib]]\nname = "ATK"\nglobs = ["ATK.+"]\n' >> ext/lakefile.toml
           cd ext
-          lake build ATK.NSBridge 2>&1 | tail -n 80
+          lake build ATK.NSBridge ATK.NSBridgeD 2>&1 | tail -n 80
           lake env lean ATK/Certificate.lean 2>&1 | tee ../certificate.log
-          if grep -q "'atk_clayC_certified' depends on axioms: \[propext, Classical.choice, Quot.sound\]" ../certificate.log; then
-            echo "::notice title=atk_clayC_certified::OK — declaração de tipo ATK.Exact.ClayC verificada no ambiente externo"
-          else
-            echo "::warning title=atk_clayC_certified::não certificado (ver certificate.log)"
-            exit 1
-          fi
+          ok=0
+          for n in C D; do
+            if grep -q "'atk_clay${n}_certified' depends on axioms: \[propext, Classical.choice, Quot.sound\]" ../certificate.log; then
+              echo "::notice title=atk_clay${n}_certified::OK — declaração de tipo ATK.Exact.Clay${n} verificada no ambiente externo"
+            else
+              echo "::warning title=atk_clay${n}_certified::não certificado (ver certificate.log)"
+              ok=1
+            fi
+          done
+          grep -n "error" ../certificate.log | head -n 8 | sed 's/^/::warning title=certificate.log::/' || true
+          exit $ok
       - uses: actions/upload-artifact@v4
         if: always()
         with:

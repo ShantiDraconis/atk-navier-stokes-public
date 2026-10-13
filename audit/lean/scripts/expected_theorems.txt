@@ -68,3 +68,9 @@ ATK.NSBridge.clayC_of_fc
 ATK.NSBridge.navierStokes_of_fc
 ATK.MaterialVacuity.producer_trivial
 ATK.MaterialVacuity.producer_any_terms
+ATK.NSBridgeD.extForce_eq
+ATK.NSBridgeD.smoothForce_ext
+ATK.NSBridgeD.periodicForce_ext
+ATK.NSBridgeD.base_of_classical
+ATK.NSBridgeD.periodic_of_classical
+ATK.NSBridgeD.clayD_of_fc

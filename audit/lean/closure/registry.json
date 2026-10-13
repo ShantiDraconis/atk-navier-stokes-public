@@ -1,0 +1,55 @@
+{
+  "_doc": "Linha de fechamento: CLOSED_MATH é calculado por scripts/closure_gate.py a partir destas entradas. Um certificado é uma declaração SEM hipóteses de tipo exatamente um dos alvos. Pontes e explosões são rotas.",
+  "problem": "Navier–Stokes (ambiente ATK)",
+  "imports": [
+    "ATK"
+  ],
+  "main_claim": "A",
+  "targets": {
+    "A": "ATK.Exact.ClayA",
+    "B": "ATK.Exact.ClayB",
+    "C": "ATK.Exact.ClayC",
+    "D": "ATK.Exact.ClayD",
+    "¬A": "¬ ATK.Exact.ClayA",
+    "¬B": "¬ ATK.Exact.ClayB"
+  },
+  "negations": {
+    "A": "¬A",
+    "B": "¬B"
+  },
+  "closures": [],
+  "bridges": [
+    {
+      "claim": "C",
+      "decl": "ATK.NSBridge.clayC_of_fc",
+      "hypothesis": "ATK.NSBridge.FCBreakdownR3",
+      "status": "provada pela OpenAI — certificado no ambiente externo (workflow audit-openai-external)"
+    },
+    {
+      "claim": "D",
+      "decl": "ATK.NSBridgeD.clayD_of_fc",
+      "hypothesis": "ATK.NSBridgeD.FCBreakdownPeriodic",
+      "status": "provada pela OpenAI — certificado no ambiente externo (workflow audit-openai-external)"
+    }
+  ],
+  "explosions": [
+    {
+      "claim": "¬A",
+      "decl": "ATK.NSExplosion.explosion_refutes_A",
+      "hypothesis": "ATK.NSExplosion.UnforcedBlowupR3",
+      "status": "nenhuma testemunha conhecida"
+    },
+    {
+      "claim": "C",
+      "decl": "ATK.NSExplosion.explosion_gives_C",
+      "hypothesis": "ATK.NSExplosion.UnforcedBlowupR3",
+      "status": "nenhuma testemunha conhecida"
+    },
+    {
+      "claim": "¬B",
+      "decl": "ATK.NSExplosion.explosion_refutes_B",
+      "hypothesis": "ATK.NSExplosion.UnforcedBlowupTorus",
+      "status": "nenhuma testemunha conhecida"
+    }
+  ]
+}

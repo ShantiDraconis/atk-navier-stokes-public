@@ -95,11 +95,19 @@ jobs:
           done
           grep -n "error" ../certificate.log | head -n 8 | sed 's/^/::warning title=certificate.log::/' || true
           exit $ok
+      - name: Linha de fechamento — CLOSED_MATH calculado pelo kernel (ambiente externo)
+        shell: bash
+        run: |
+          cd ext
+          lake build ATK.Certificate 2>&1 | tail -n 20
+          cd ..
+          python3 audit/lean/scripts/closure_gate.py --root ext --registry audit/lean/closure/registry_external.json --reports ext/reports
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: audit-openai-external
           path: |
+            ext/reports/
             ext_commit.txt
             their_axioms.log
             certificate.log

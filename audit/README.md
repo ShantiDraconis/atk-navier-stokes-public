@@ -64,8 +64,9 @@ verificado pelo kernel do Lean** — no ambiente da OpenAI (`v4.34.0-rc2`), com 
 ponte ATK. A base de confiança é: o kernel do Lean, as definições da Mathlib usadas, as
 definições ATK de `ATK/Exact.lean` e a ponte `ATK/NSBridge.lean` (as duas últimas auditáveis
 aqui). Isto é verificação formal, não decisão do Clay: o prêmio segue as regras do instituto
-(publicação qualificada, dois anos, aceitação geral). (D): os axiomas do teorema periódico deles
-também são os padrão, mas a ponte ATK para `ClayD` ainda não foi escrita.
+(publicação qualificada, dois anos, aceitação geral). **(D)**: a ponte `ATK/NSBridgeD.lean` (`clayD_of_fc`, 6/6 no kernel ATK) foi escrita;
+no run `38382016251` o kernel aceitou também `atk_clayD_certified : ATK.Exact.ClayD :=
+clayD_of_fc navier_stokes_breakdown_periodic`, só com `propext`, `Classical.choice`, `Quot.sound`.
 
 Como o workflow faz:
 1. clona o commit auditado e registra sha256 das definições;

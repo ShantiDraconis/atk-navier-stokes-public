@@ -66,3 +66,5 @@ ATK.NSBridge.forceDecay_of_fc
 ATK.NSBridge.solution_of_classical
 ATK.NSBridge.clayC_of_fc
 ATK.NSBridge.navierStokes_of_fc
+ATK.MaterialVacuity.producer_trivial
+ATK.MaterialVacuity.producer_any_terms

@@ -74,3 +74,8 @@ ATK.NSBridgeD.periodicForce_ext
 ATK.NSBridgeD.base_of_classical
 ATK.NSBridgeD.periodic_of_classical
 ATK.NSBridgeD.clayD_of_fc
+ATK.NSExplosion.explosion_refutes_A
+ATK.NSExplosion.clayA_iff_no_explosion
+ATK.NSExplosion.explosion_gives_C
+ATK.NSExplosion.explosion_refutes_B
+ATK.NSExplosion.clayB_iff_no_explosion

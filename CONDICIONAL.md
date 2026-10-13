@@ -1,4 +1,4 @@
-# Estado: CONDICIONAL — Navier–Stokes
+# Estado: Navier–Stokes — (C) FECHADO por prova externa · (D) CONDICIONAL · (A)/(B) ABERTOS
 
 Auditoria de 13/10/2026. Mesmo formato em todos os repositórios públicos ATK. Nada aqui afirma
 prova nem refutação além do que o kernel certifica.
@@ -15,17 +15,19 @@ independente ATK (`audit/lean/ATK/Exact.lean`): `ClayA`, `ClayB`, `ClayC`, `Clay
 contam declarações de tipo exatamente uma delas ou `¬ ClayA` (a disjunção é teorema —
 `navierStokes_disjunction` — e por isso não serve de alvo).
 
-**Estado no portão:** (C) **CONDICIONAL** · (D) **CONDICIONAL** (ponte ainda não escrita) ·
+**Estado no portão:** (C) **FECHADO por prova externa** — `atk_clayC_certified : ATK.Exact.ClayC`
+verificado pelo kernel no ambiente da OpenAI (run `38376347284`; ver `audit/README.md`) ·
+(D) **CONDICIONAL** (axiomas do teorema deles verificados; ponte ATK ainda não escrita) ·
 (A) **ABERTO** · (B) **ABERTO**.
 
 ## 2. Itens condicionais — o que precisa ser arrumado
 
 | # | Item | Estado | O que fechar |
 |---|---|---|---|
-| N1 | (C) pela prova formal da OpenAI (`openai/NavierStokesAndEuler@f9e8bc5`) | Q1 **verificado** (`clayC_of_fc`: o enunciado deles implica `ClayC`); Q2 (compila só com axiomas padrão?) em execução — ver `audit/README.md` | Resultado do kernel em Q2. Se passar, existe declaração de tipo exatamente `ClayC` (no toolchain deles) |
+| N1 | (C) pela prova formal da OpenAI (`openai/NavierStokesAndEuler@f9e8bc5`) | Q1 **verificado** (`clayC_of_fc`); Q2 **verificado**: compila em 32 min, só axiomas padrão; `atk_clayC_certified : ClayC` aceito pelo kernel no toolchain deles (`v4.34.0-rc2`) | Opcional: reproduzir no toolchain ATK (`v4.34.1`). A prova é da OpenAI (e há provas humanas independentes); não é do programa ATK |
 | N2 | (D) | Falta a ponte `navier_stokes_breakdown_periodic → ClayD`: é preciso conciliar as condições de força periódica das duas formalizações (domínio temporal, suavidade e decaimento em `t`) | Escrever e certificar a ponte (D), como foi feito para (C) |
 | N3 | (A) e (B) — sem força | **Abertos.** Nenhum resultado de setembro de 2026 os decide (`clayA_false_iff`: uma explosão com força não é contraexemplo de (A)) | Prova de regularidade global sem força, ou dado suave sem força que explode |
-| N4 | `NSMaterial.Closure` / `MaterialNSProducer` (`imports/Material/Closure.lean`) | **Vacuidade certificada** (`audit/lean/ATK/MaterialVacuity.lean`): habitada com tudo nulo (`producer_trivial`) e, mais forte, para QUAISQUER termos de estiramento dados (`producer_any_terms`), porque `nu`, `z`, `y` são campos livres | Ligar `nu` à viscosidade, `y` à enstrofia, `z` a `‖∇ω‖²` e `bulk + tail + remainder` ao estiramento de uma solução genuína; aí as cotas viram o conteúdo aberto |
+| N4 | `NSMaterial.Closure` / `MaterialNSProducer` (`imports/Material/Closure.lean`) | **Não compila como está** (campos múltiplos sem parênteses viram parâmetros do primeiro campo). Na intenção evidente: **vacuidade certificada** (`audit/lean/ATK/MaterialVacuity.lean`): habitada com tudo nulo (`producer_trivial`) e, mais forte, para QUAISQUER termos de estiramento dados (`producer_any_terms`), porque `nu`, `z`, `y` são campos livres | Ligar `nu` à viscosidade, `y` à enstrofia, `z` a `‖∇ω‖²` e `bulk + tail + remainder` ao estiramento de uma solução genuína; aí as cotas viram o conteúdo aberto |
 | N5 | G1 `HypothesesComplete_v2.lean` | Honesto: `GeometricDepletion` é hipótese explícita; `EnstrophyData` são funções livres (por isso o registro diz "on genuine flow-derived EnstrophyData"). Modela o caso **sem força** — o balanço não tem termo de força | (i) produzir `EnstrophyData` de uma solução real; (ii) provar a depleção — conteúdo equivalente em força a (A)/(B); (iii) incluir o arquivo no CI |
 | N6 | Prioridade | Separada da matemática: `imports/navier-stokes-critical-barrier-audit/PRIORITY.md` (não afirma acesso, derivação, plágio nem direito a prêmio) | — |
 
@@ -33,8 +35,8 @@ contam declarações de tipo exatamente uma delas ou `¬ ClayA` (a disjunção �
 
 - (A) cai ⇔ existe `ν > 0` e dado `u₀` suave, `div u₀ = 0`, decaimento rápido, **sem força**, sem
   solução suave de energia limitada (`clayA_false_iff`); e então (C) vale (`clayA_or_clayC`).
-- (C) da OpenAI cai se Q2 falhar (erro de compilação ou axioma fora de `propext`,
-  `Classical.choice`, `Quot.sound`) — o que não refutaria (C), só aquela prova.
+- (C): Q2 passou. O que ainda pode invalidar a verificação é só a base de confiança (kernel do
+  Lean, definições da Mathlib e de `ATK/Exact.lean`), não a prova.
 
 ## 4. Prêmio
 
@@ -44,8 +46,9 @@ está em curso; nenhum prêmio atribuído. Nada neste repositório altera isso.
 
 ---
 
-**English summary.** Clay (C): CONDITIONAL on the external kernel build (statement faithfulness
-already verified by `clayC_of_fc`). (D): bridge pending. (A)/(B), the unforced alternatives: OPEN.
+**English summary.** Clay (C): CLOSED by an external proof — `atk_clayC_certified : ATK.Exact.ClayC`
+is accepted by the Lean kernel in OpenAI's environment (standard axioms only). (D): their periodic
+theorem uses only standard axioms; the ATK bridge to `ClayD` is pending. (A)/(B), the unforced alternatives: OPEN.
 Kernel-certified finding: the imported `NSMaterial.Closure` is vacuous (any stretching terms fit
 the budget because `nu`, `z`, `y` are free fields). The G1 hypotheses file is honest but its data
 must come from a genuine solution.

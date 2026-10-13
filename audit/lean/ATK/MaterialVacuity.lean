@@ -3,7 +3,12 @@ import Mathlib
 /-!
 # Auditoria de vacuidade — `NSMaterial.Closure` (`imports/Material/Closure.lean`)
 
-Cópia verbatim da estrutura (namespace trocado). Resultado certificado pelo kernel:
+Cópia da estrutura (namespace trocado). **Achado de compilação:** o original não compila em
+Lean 4 — `bulk tail remainder : State → Real` sem parênteses declara UM campo `bulk` com
+parâmetros `tail remainder` (sintaxe de campo simples), e os campos `tail`, `remainder`, `z`, `y`
+deixam de existir (erro "Function expected"; verificado no CI ao compilar a cópia literal). Abaixo
+está a intenção evidente, com os campos múltiplos entre parênteses. Resultado certificado pelo
+kernel:
 
 * `producer_trivial`: o "fechamento material" existe para QUALQUER tipo de estado, com todas as
   funções nulas;
@@ -22,9 +27,9 @@ noncomputable section
 namespace ATK.MaterialVacuity
 
 structure Closure (State : Type) where
-  bulk tail remainder : State → Real
-  nu z y : State → Real
-  cBulk cTail C : Real
+  (bulk tail remainder : State → Real)
+  (nu z y : State → Real)
+  (cBulk cTail C : Real)
   budget : cBulk + cTail < 1
   cBulk_nonneg : 0 ≤ cBulk
   cTail_nonneg : 0 ≤ cTail

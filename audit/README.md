@@ -68,7 +68,8 @@ Teoremas de `ATK/Closure.lean`, certificados pelo kernel:
   alternativas (A)–(D), pode ser decidido por uma construção **com força** sem tocar em (A).
 - `clayA_false_iff`: (A) é falsa ⇔ existe ν > 0 e dado suave, de divergência nula e decaimento
   rápido, **sem força**, sem solução suave de energia limitada. Uma explosão com força (C) não é
-  um contraexemplo de (A): o dado da OpenAI parte do repouso e a explosão é produzida pela força.
+  um contraexemplo de (A): o dado da OpenAI parte do repouso, e com força nula esse dado gera a
+  solução nula, global e suave — a força externa suave é parte essencial da construção.
 - `navierStokes_disjunction`: o `Prop` "A ∨ B ∨ C ∨ D" é demonstrável; por isso o fechamento é
   medido por declarações de tipo exatamente `ClayA`, `ClayB`, `ClayC`, `ClayD` ou `¬ClayA`.
 

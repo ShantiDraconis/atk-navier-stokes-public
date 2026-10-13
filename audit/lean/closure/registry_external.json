@@ -1,0 +1,40 @@
+{
+  "_doc": "Registro do ambiente externo (openai/NavierStokesAndEuler@f9e8bc5 + ATK). Os certificados são compilados em ATK/Certificate.lean nesse ambiente.",
+  "problem": "Navier–Stokes (ambiente externo OpenAI)",
+  "imports": [
+    "ATK.Certificate"
+  ],
+  "main_claim": "C",
+  "targets": {
+    "C": "ATK.Exact.ClayC",
+    "D": "ATK.Exact.ClayD"
+  },
+  "negations": {},
+  "closures": [
+    {
+      "claim": "C",
+      "decl": "atk_clayC_certified",
+      "via": "clayC_of_fc navier_stokes_breakdown_R3"
+    },
+    {
+      "claim": "D",
+      "decl": "atk_clayD_certified",
+      "via": "clayD_of_fc navier_stokes_breakdown_periodic"
+    }
+  ],
+  "bridges": [
+    {
+      "claim": "C",
+      "decl": "ATK.NSBridge.clayC_of_fc",
+      "hypothesis": "ATK.NSBridge.FCBreakdownR3",
+      "status": "provada (OpenAI)"
+    },
+    {
+      "claim": "D",
+      "decl": "ATK.NSBridgeD.clayD_of_fc",
+      "hypothesis": "ATK.NSBridgeD.FCBreakdownPeriodic",
+      "status": "provada (OpenAI)"
+    }
+  ],
+  "explosions": []
+}

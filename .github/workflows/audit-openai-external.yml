@@ -1,0 +1,113 @@
+name: Auditoria — prova externa da OpenAI (Navier–Stokes (C)/(D))
+
+# Compila no kernel do Lean, no ambiente DELES (Lean/Mathlib v4.34.0-rc2), o fechamento de
+# dependências de NavierStokes.Comparator.navier_stokes_breakdown_R3 / _periodic, audita os axiomas e,
+# no mesmo ambiente, tenta o certificado ATK `atk_clayC_certified : ATK.Exact.ClayC`.
+# Resultado neutro: se houver sorry, axioma extra ou erro, aparece aqui; se não houver, também.
+
+on:
+  push:
+    paths:
+      - '.github/workflows/audit-openai-external.yml'
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "commit de openai/NavierStokesAndEuler"
+        default: "f9e8bc5"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  external:
+    name: Build externo + axiomas + certificado (C)
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      REF: ${{ inputs.ref || 'f9e8bc5' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Clonar openai/NavierStokesAndEuler
+        shell: bash
+        run: |
+          git clone https://github.com/openai/NavierStokesAndEuler ext
+          cd ext && git checkout "$REF"
+          git log -1 --format='%H %cd %s' | tee ../ext_commit.txt
+          cat lean-toolchain | tee -a ../ext_commit.txt
+          sha256sum NavierStokes/ComparatorDefinitions.lean ComparatorChallenges/NavierStokes.lean | tee -a ../ext_commit.txt
+          echo "sorry/admit textuais em NavierStokes/: $(grep -rnw -E 'sorry|admit' NavierStokes/ | wc -l)" | tee -a ../ext_commit.txt
+          echo "declarações axiom em NavierStokes/: $(grep -rn -E '^\s*(private |protected )?axiom ' NavierStokes/ | wc -l)" | tee -a ../ext_commit.txt
+      - name: Instalar elan
+        shell: bash
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o elan-init.sh
+          bash elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Mathlib (cache oficial)
+        working-directory: ext
+        shell: bash
+        run: lake exe cache get
+      - name: Compilar NavierStokes.ComparatorSolution
+        working-directory: ext
+        shell: bash
+        run: |
+          set -o pipefail
+          timeout 320m lake build NavierStokes.ComparatorSolution 2>&1 | tail -n 300
+      - name: Axiomas dos teoremas deles
+        working-directory: ext
+        shell: bash
+        run: |
+          printf 'import NavierStokes.ComparatorSolution\n#print axioms NavierStokes.Comparator.navier_stokes_breakdown_R3\n#print axioms NavierStokes.Comparator.navier_stokes_breakdown_periodic\n#check @NavierStokes.Comparator.navier_stokes_breakdown_R3\n' > AuditAxioms.lean
+          lake env lean AuditAxioms.lean 2>&1 | tee ../their_axioms.log
+          python3 - <<'PY'
+          import re, sys
+          t = open("../their_axioms.log").read()
+          ok = True
+          for n in ["navier_stokes_breakdown_R3", "navier_stokes_breakdown_periodic"]:
+              m = re.search(rf"'NavierStokes\.Comparator\.{n}' depends on axioms: \[([^\]]*)\]", t, re.S)
+              ax = sorted(a.strip() for a in m.group(1).replace("\n", " ").split(",")) if m else None
+              good = ax is not None and set(ax) <= {"propext", "Classical.choice", "Quot.sound"}
+              ok &= good
+              print(f"::notice title={n}::{'OK' if good else 'FALHOU'} axiomas={ax}")
+          sys.exit(0 if ok else 1)
+          PY
+      - name: Certificado ATK no mesmo ambiente (ClayC)
+        continue-on-error: true
+        shell: bash
+        run: |
+          mkdir -p ext/ATK
+          cp audit/lean/ATK/BealDescent.lean audit/lean/ATK/Exact.lean audit/lean/ATK/NSBridge.lean audit/lean/ATK/NSBridgeD.lean ext/ATK/
+          printf 'import NavierStokes.ComparatorDefinitions\n' > ext/ATK/FCNavierStokes.lean
+          printf 'import ATK.NSBridge\nimport ATK.NSBridgeD\nimport NavierStokes.ComparatorSolution\n\ntheorem atk_clayC_certified : ATK.Exact.ClayC :=\n  ATK.NSBridge.clayC_of_fc NavierStokes.Comparator.navier_stokes_breakdown_R3\n\ntheorem atk_clayD_certified : ATK.Exact.ClayD :=\n  ATK.NSBridgeD.clayD_of_fc NavierStokes.Comparator.navier_stokes_breakdown_periodic\n\n#print axioms atk_clayC_certified\n#print axioms atk_clayD_certified\n' > ext/ATK/Certificate.lean
+          printf '\n[[lean_lib]]\nname = "ATK"\nglobs = ["ATK.+"]\n' >> ext/lakefile.toml
+          cd ext
+          lake build ATK.NSBridge ATK.NSBridgeD 2>&1 | tail -n 80
+          lake env lean ATK/Certificate.lean 2>&1 | tee ../certificate.log
+          ok=0
+          for n in C D; do
+            if grep -q "'atk_clay${n}_certified' depends on axioms: \[propext, Classical.choice, Quot.sound\]" ../certificate.log; then
+              echo "::notice title=atk_clay${n}_certified::OK — declaração de tipo ATK.Exact.Clay${n} verificada no ambiente externo"
+            else
+              echo "::warning title=atk_clay${n}_certified::não certificado (ver certificate.log)"
+              ok=1
+            fi
+          done
+          grep -n "error" ../certificate.log | head -n 8 | sed 's/^/::warning title=certificate.log::/' || true
+          exit $ok
+      - name: Linha de fechamento — CLOSED_MATH calculado pelo kernel (ambiente externo)
+        shell: bash
+        run: |
+          cd ext
+          lake build ATK.Certificate 2>&1 | tail -n 20
+          cd ..
+          python3 audit/lean/scripts/closure_gate.py --root ext --registry audit/lean/closure/registry_external.json --reports ext/reports
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: audit-openai-external
+          path: |
+            ext/reports/
+            ext_commit.txt
+            their_axioms.log
+            certificate.log

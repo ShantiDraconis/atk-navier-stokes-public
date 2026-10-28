@@ -1,0 +1,22 @@
+--- a/formal/lean/IndeterminateParameterCompletion.lean
++++ b/formal/lean/IndeterminateParameterCompletion.lean
+@@ -12,7 +12,7 @@
+ reflexive/symmetric/graded-triangle structure instead.
+ -/
+ 
+-import Mathlib.Data.Rat.Basic
++import Mathlib.Data.Rat.Defs
+ import Mathlib.Data.Int.Basic
+ import Mathlib.Tactic
+ 
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean
+@@ -12,7 +12,7 @@
+ reflexive/symmetric/graded-triangle structure instead.
+ -/
+ 
+-import Mathlib.Data.Rat.Basic
++import Mathlib.Data.Rat.Defs
+ import Mathlib.Data.Int.Basic
+ import Mathlib.Tactic
+ 

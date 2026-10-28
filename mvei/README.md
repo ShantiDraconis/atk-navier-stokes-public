@@ -11,16 +11,16 @@ This folder records what the Lean 4 kernel said about the Lean sources of the pr
 
 ## What the kernel said
 
-MVEI verification of 2026-10-28T16:41:02+00:00, on commit `3904224e49f7b2256d56ce19a5e11e7ddc93f524`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
+MVEI verification of 2026-10-28T19:11:15+00:00, on commit `3904224e49f7b2256d56ce19a5e11e7ddc93f524`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
 
 | Lean project | Lean version | Build | Closed | Conditional | Open (`sorry`) | Checked file by file: closed / conditional / open / proof error / not reached |
 |---|---|---|---:|---:|---:|---|
 | `.` | v4.19.0 | failed | 0 | 0 | 0 | 131 / 0 / 6 / 50 / 14 |
-| `formal/lean` | v4.19.0 | failed | 0 | 0 | 0 | 83 / 1 / 0 / 9 / 19 |
+| `formal/lean` | v4.19.0 | failed | 0 | 0 | 0 | 92 / 1 / 0 / 10 / 9 |
 | `formal/millennium/lean` | v4.19.0 | partial | 50 | 0 | 0 | 27 / 0 / 1 / 4 / 7 |
 | `preservation/branch-snapshots/audit_correct-provenance-attribution-20260912/formal/lean` | stable | OK | 0 | 0 | 0 | — |
 | `preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean` | stable | partial | 149 | 0 | 0 | 10 / 0 / 0 / 1 / 27 |
-| `preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean` | v4.19.0 | partial | 165 | 1 | 0 | 20 / 0 / 0 / 4 / 10 |
+| `preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean` | v4.19.0 | partial | 165 | 1 | 0 | 29 / 0 / 0 / 5 / 0 |
 | `preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean` | v4.19.0 | partial | 128 | 0 | 0 | 3 / 0 / 0 / 3 / 0 |
 | `preservation/branch-snapshots/audit_g1-prize-standard-v4-20260913/formal/millennium/lean` | v4.19.0 | OK | 71 | 0 | 0 | — |
 | `preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean` | stable | partial | 149 | 0 | 0 | 10 / 0 / 0 / 1 / 27 |
@@ -44,9 +44,9 @@ MVEI verification of 2026-10-28T16:41:02+00:00, on commit `3904224e49f7b2256d56c
 
 | Closed theorems in this repository | |
 |---|---:|
-| Counting each project | 1 156 |
-| Unique (name + statement) | 538 |
-| Unique, without the lemmas Lean generates itself (`eq_1`, `mk.inj`, `sizeOf_spec`, `deriving`) | 251 |
+| Counting each project | 1 174 |
+| Unique (name + statement) | 547 |
+| Unique, without the lemmas Lean generates itself (`eq_1`, `mk.inj`, `sizeOf_spec`, `deriving`) | 260 |
 
 *Closed* means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`. It says that the statement as written in the file is proved; it does not say that an open problem is solved. Every statement is in `VERIFICACAO.json`. *Conditional* means the proof also uses axioms declared in the repository; *open* means it uses `sorry`. *Checked file by file* covers the files that no build reached: each one went through Lean whole, with a `#print axioms` for each theorem.
 
@@ -66,17 +66,18 @@ MVEI verification of 2026-10-28T16:41:02+00:00, on commit `3904224e49f7b2256d56c
 
 ### Declared theorems
 
-The `.lean` files of the verified commit declare 670 `theorem`/`lemma` (counting copies). The kernel checked 478 of them (467 closed, 2 conditional, 9 open). The closed count in the table above is larger: it also counts the theorems Lean generates by itself (equation lemmas, structure fields, `deriving`), which are not written in the text. For 192 the kernel has no result:
+The `.lean` files of the verified commit declare 670 `theorem`/`lemma` (counting copies). The kernel checked 496 of them (485 closed, 2 conditional, 9 open). The closed count in the table above is larger: it also counts the theorems Lean generates by itself (equation lemmas, structure fields, `deriving`), which are not written in the text. For 174 the kernel has no result:
 
 | Reason | Theorems |
 |---|---:|
-| checked file by file: Lean did not reach the theorem (missing import, syntax error or timeout) | 104 |
-| checked file by file: the written proof does not pass the kernel | 84 |
+| checked file by file: the written proof does not pass the kernel | 86 |
+| checked file by file: Lean did not reach the theorem (missing import, syntax error or timeout) | 84 |
 | the file did not compile (an error in it or in a file it imports) | 4 |
 
 ### MVEI corrections
 
-* `correcoes/imports-no-topo.patch` (import fora do início do arquivo, 6 file(s)): applies to the published sources: `git apply -p1 --directory=imports/navier-stokes-critical-barrier-audit mvei/correcoes/imports-no-topo.patch`
+* `correcoes/imports-no-topo.patch` (import fora do início do arquivo, 6 file(s)): applies to the published sources: `git apply -p1 --directory=imports/navier-stokes-critical-barrier-audit mvei/correcoes/imports-no-topo.patch` (in order, after the ones above)
+* `correcoes/renomear-imports-mathlib.patch` (import de módulo que não existe na versão do Mathlib do projeto (renomeado ou dividido), 2 file(s)): applies to the published sources: `git apply -p1 --directory=imports/navier-stokes-critical-barrier-audit mvei/correcoes/renomear-imports-mathlib.patch` (in order, after the ones above)
 
 ## Files in this folder
 

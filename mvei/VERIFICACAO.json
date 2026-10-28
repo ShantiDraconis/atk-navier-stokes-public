@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:41:02+00:00",
+ "generated_at": "2026-10-28T19:11:15+00:00",
  "standard_axioms": [
   "Classical.choice",
   "Quot.sound",
@@ -15,7 +15,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 22.2,
+   "build_seconds": 20.2,
    "build_error": "error: ././././MillenniumAudit/StabilizedHypothetical.lean:77:30: linarith failed to find a contradiction | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:25: don't know how to synthesize implicit argument 'α' | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:29: don't know how to synthesize implicit argument | error: ././././MillenniumAudit/StabilizedHypothetical.lean:81:7: don't know how to synthesize implicit argument 'α'",
    "sorry_warnings": 2,
    "reconstructed": false,
@@ -726,7 +726,7 @@
      "nome": "G1DynamicCampanato.betaCampanato_eq",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "formal/G1/DynamicCampanato.lean",
@@ -734,7 +734,7 @@
      "nome": "G1DynamicCampanato.w_R_radius_formula",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "formal/G1/DynamicCampanato.lean",
@@ -742,7 +742,7 @@
      "nome": "G1DynamicCampanato.ofXiEpsPDE_PROVED_IDENTITY",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "formal/G1/DynamicCampanato.lean",
@@ -750,7 +750,7 @@
      "nome": "G1DynamicCampanato.localEnergy_radius_formula",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "formal/G1/DynamicCampanato.lean",
@@ -758,7 +758,7 @@
      "nome": "G1DynamicCampanato.farField_linear_ratio",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "formal/G1/DynamicCampanato.lean",
@@ -766,7 +766,7 @@
      "nome": "G1DynamicCampanato.betaCampanato_energy_only",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "formal/G1/DynamicCampanato.lean",
@@ -774,7 +774,7 @@
      "nome": "G1DynamicCampanato.iterate_linear_barrier",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "formal/G1/DynamicCampanato.lean",
@@ -782,7 +782,7 @@
      "nome": "G1DynamicCampanato.iterate_to_half_scale",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "formal/G1/DynamicCampanato.lean",
@@ -790,7 +790,7 @@
      "nome": "G1DynamicCampanato.gamma_lt_half_of_barrier_condition",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "formal/G1/G1_DynamicCriticalGeometry.lean",
@@ -1193,7 +1193,7 @@
      "nome": "CriticalBarrier.B2Chain.chain_resolution",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/mnt/w/mvei/trabalho/navier-stokes-critical-barrier-audit/.lake/mvei-salvage/CriticalBarrier/B2_8_AlignmentTarget.olean' of module CriticalBarrier.B2_8_AlignmentTarget does not exist"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ChainTarget.lean",
@@ -1201,7 +1201,7 @@
      "nome": "CriticalBarrier.B2Chain.target_decay_rate",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/mnt/w/mvei/trabalho/navier-stokes-critical-barrier-audit/.lake/mvei-salvage/CriticalBarrier/B2_8_AlignmentTarget.olean' of module CriticalBarrier.B2_8_AlignmentTarget does not exist"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ChainTarget.lean",
@@ -1209,7 +1209,7 @@
      "nome": "CriticalBarrier.B2Chain.use_gronwall_certificate",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/mnt/w/mvei/trabalho/navier-stokes-critical-barrier-audit/.lake/mvei-salvage/CriticalBarrier/B2_8_AlignmentTarget.olean' of module CriticalBarrier.B2_8_AlignmentTarget does not exist"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ClosureObligations.lean",
@@ -1444,7 +1444,7 @@
      "nome": "Millennium.AllClosureTargets.resolve",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/mnt/w/mvei/trabalho/navier-stokes-critical-barrier-audit/.lake/mvei-salvage/CriticalBarrier/CompleteClosureTargets.olean' of module CriticalBarrier.CompleteClosureTargets does not exist"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/Millennium/AllClosureTargets.lean",
@@ -1452,7 +1452,7 @@
      "nome": "Millennium.AllClosureTargets.all_millennium_from_complete_certificates",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/mnt/w/mvei/trabalho/navier-stokes-critical-barrier-audit/.lake/mvei-salvage/CriticalBarrier/CompleteClosureTargets.olean' of module CriticalBarrier.CompleteClosureTargets does not exist"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean",
@@ -2064,8 +2064,10 @@
    "declared_axioms": [],
    "theorems": [],
    "integrity": [],
-   "note": "a configuração original não compila; o MVEI reconstruiu o lakefile com o Mathlib v4.19.0, mas o código também não compila: error: no such file or directory (error code: 2) | error: build failed",
-   "corrections": [],
+   "note": "CORRIGIDO PELO MVEI (renomear-imports-mathlib): 2 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 2 arquivo(s). a configuração original não compila; o MVEI reconstruiu o lakefile com o Mathlib v4.19.0, mas o código também não compila: error: no such file or directory (error code: 2) | error: build failed",
+   "corrections": [
+    "renomear-imports-mathlib"
+   ],
    "lakefile_gerado": "",
    "avulso": false,
    "salvage": [
@@ -2254,7 +2256,7 @@
      "nome": "CriticalBarrier.B2Chain.chain_resolution",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/tmp/mvei-rec-v2ft7ujd/p/.lake/mvei-salvage/CriticalBarrier/B2_8_AlignmentTarget.olean' of module CriticalBarrier.B2_8_AlignmentTarget does not exist"
     },
     {
      "arquivo": "formal/lean/CriticalBarrier/B2_ChainTarget.lean",
@@ -2262,7 +2264,7 @@
      "nome": "CriticalBarrier.B2Chain.target_decay_rate",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/tmp/mvei-rec-v2ft7ujd/p/.lake/mvei-salvage/CriticalBarrier/B2_8_AlignmentTarget.olean' of module CriticalBarrier.B2_8_AlignmentTarget does not exist"
     },
     {
      "arquivo": "formal/lean/CriticalBarrier/B2_ChainTarget.lean",
@@ -2270,7 +2272,7 @@
      "nome": "CriticalBarrier.B2Chain.use_gronwall_certificate",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/tmp/mvei-rec-v2ft7ujd/p/.lake/mvei-salvage/CriticalBarrier/B2_8_AlignmentTarget.olean' of module CriticalBarrier.B2_8_AlignmentTarget does not exist"
     },
     {
      "arquivo": "formal/lean/CriticalBarrier/B2_ClosureObligations.lean",
@@ -2384,7 +2386,7 @@
      "nome": "CriticalBarrier.BackwardAudit.hypothetical_global_regularity",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/tmp/mvei-rec-v2ft7ujd/p/.lake/mvei-salvage/CriticalBarrier/GlobalRegularityFromG1.olean' of module CriticalBarrier.GlobalRegularityFromG1 does not exist"
     },
     {
      "arquivo": "formal/lean/CriticalBarrier/BackwardWithoutOracle.lean",
@@ -2392,7 +2394,7 @@
      "nome": "CriticalBarrier.BackwardAudit.independent_contract_closes",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/tmp/mvei-rec-v2ft7ujd/p/.lake/mvei-salvage/CriticalBarrier/GlobalRegularityFromG1.olean' of module CriticalBarrier.GlobalRegularityFromG1 does not exist"
     },
     {
      "arquivo": "formal/lean/CriticalBarrier/BackwardWithoutOracle.lean",
@@ -2400,7 +2402,7 @@
      "nome": "CriticalBarrier.BackwardAudit.actualNS_to_contract_still_open",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/tmp/mvei-rec-v2ft7ujd/p/.lake/mvei-salvage/CriticalBarrier/GlobalRegularityFromG1.olean' of module CriticalBarrier.GlobalRegularityFromG1 does not exist"
     },
     {
      "arquivo": "formal/lean/CriticalBarrier/BridgeLogic.lean",
@@ -2599,7 +2601,7 @@
      "nome": "CriticalBarrier.G1BridgeTriviality.g1Bridge_inhabited_for_every_ActualNS",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/tmp/mvei-rec-v2ft7ujd/p/.lake/mvei-salvage/CriticalBarrier/GlobalRegularityFromG1.olean' of module CriticalBarrier.GlobalRegularityFromG1 does not exist"
     },
     {
      "arquivo": "formal/lean/CriticalBarrier/G1G4ClosureBlueprint.lean",
@@ -2897,81 +2899,96 @@
      "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 44,
      "nome": "AuditCompletion.WeightedGap.weight_nonneg",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
     },
     {
      "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 64,
      "nome": "AuditCompletion.ErrorDecomposition.contribution_nonneg",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
     },
     {
      "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 97,
      "nome": "AuditCompletion.Tolerance.refl",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
     },
     {
      "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 100,
      "nome": "AuditCompletion.Tolerance.symm",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
     },
     {
      "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 105,
      "nome": "AuditCompletion.Tolerance.triangle",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
     },
     {
      "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 115,
      "nome": "AuditCompletion.Tolerance.epsilon_close_not_transitive",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
     },
     {
      "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 140,
      "nome": "AuditCompletion.SemanticContext.dual_of_independence_bridge",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": []
     },
     {
      "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 177,
      "nome": "AuditCompletion.open_bridge_not_proved",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": []
     },
     {
      "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 179,
      "nome": "AuditCompletion.conditional_not_proved",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": []
     },
     {
      "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 180,
      "nome": "AuditCompletion.inconsistent_spec_not_proved",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": []
     },
     {
      "arquivo": "formal/lean/Millennium/AllClosureTargets.lean",
@@ -2979,7 +2996,7 @@
      "nome": "Millennium.AllClosureTargets.resolve",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/tmp/mvei-rec-v2ft7ujd/p/.lake/mvei-salvage/CriticalBarrier/CompleteClosureTargets.olean' of module CriticalBarrier.CompleteClosureTargets does not exist"
     },
     {
      "arquivo": "formal/lean/Millennium/AllClosureTargets.lean",
@@ -2987,7 +3004,7 @@
      "nome": "Millennium.AllClosureTargets.all_millennium_from_complete_certificates",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+     "motivo": "object file '/tmp/mvei-rec-v2ft7ujd/p/.lake/mvei-salvage/CriticalBarrier/CompleteClosureTargets.olean' of module CriticalBarrier.CompleteClosureTargets does not exist"
     },
     {
      "arquivo": "formal/lean/UnifiedAsymptoticLogic.lean",
@@ -3067,7 +3084,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 19.2,
+   "build_seconds": 16.2,
    "build_error": "error: ././././MillenniumAudit/HypothesesComplete_v3.lean:58:4: linarith failed to find a contradiction | error: Lean exited with code 1 | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -4026,7 +4043,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.5,
+   "build_seconds": 23.9,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -4104,7 +4121,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": false,
-   "build_seconds": 22.9,
+   "build_seconds": 22.7,
    "build_error": "error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": true,
@@ -5263,7 +5280,7 @@
     }
    ],
    "integrity": [],
-   "note": "RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e compilou o que foi possível (erros restantes: error: CriticalBarrier/ResolutionDynamics.lean:1:0: unknown module prefix 'Mathlib' | error: CriticalBarrier/EndpointInterfaces.lean:41:10: Constructor field `epsilon` of `CriticalBarrier.EndpointInterfaces.EpsilonCoercive.mk` contains universe level metavariables at the expression)",
+   "note": "RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e compilou o que foi possível (erros restantes: error: CriticalBarrier/B2_8_Alignment_Target_Clay.lean:1:0: unknown module prefix 'Mathlib' | error: CriticalBarrier/CriticalTailBridge.lean:1:0: unknown module prefix 'Mathlib')",
    "corrections": [],
    "lakefile_gerado": "import Lake\nopen Lake DSL\n\npackage mveiReconstruido\n\n@[default_target] lean_lib MveiReconstruido where\n  srcDir := \".\"\n  globs := #[.submodules `CriticalBarrier, .one `GapCollapseAudit, .one `IndeterminateParameterCompletion, .one `UnifiedAsymptoticLogic]\n",
    "avulso": false,
@@ -5274,7 +5291,7 @@
      "nome": "CriticalBarrierClayTarget.C_error_eq",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
@@ -5282,7 +5299,7 @@
      "nome": "CriticalBarrierClayTarget.homogeneous_decay_rate_test",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
@@ -5290,7 +5307,7 @@
      "nome": "CriticalBarrierClayTarget.cstar_test",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
@@ -5298,7 +5315,7 @@
      "nome": "CriticalBarrierClayTarget.target_chain_is_explicit",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -5306,7 +5323,7 @@
      "nome": "CriticalBarrier.CriticalTail.l3_from_low_high",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -5314,7 +5331,7 @@
      "nome": "CriticalBarrier.CriticalTail.critical_tail_coercivity",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -5322,7 +5339,7 @@
      "nome": "CriticalBarrier.CriticalTail.shrinkingDefect_pos",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -5330,7 +5347,7 @@
      "nome": "CriticalBarrier.CriticalTail.growingCritical_ge_one",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -5338,7 +5355,7 @@
      "nome": "CriticalBarrier.CriticalTail.l2_l3_scaling_exponents",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -5346,7 +5363,7 @@
      "nome": "CriticalBarrier.CriticalTail.endpoint_from_critical_tail",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/EndpointInterfaces.lean",
@@ -5370,7 +5387,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.geometric_step",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
@@ -5378,7 +5395,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.coercive_bound",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
@@ -5386,7 +5403,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.contraction_coercivity_bound",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
@@ -5394,7 +5411,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.admissible_iterate",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
@@ -5402,7 +5419,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.endpoint_from_native_control",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
@@ -5410,7 +5427,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.zero_defect_endpoint",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
@@ -5418,7 +5435,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.close_triangle",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-mu_zbyh3/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
@@ -5426,7 +5443,7 @@
      "nome": "AuditCompletion.WeightedGap.weight_nonneg",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
@@ -5434,7 +5451,7 @@
      "nome": "AuditCompletion.ErrorDecomposition.contribution_nonneg",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
@@ -5442,7 +5459,7 @@
      "nome": "AuditCompletion.Tolerance.refl",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
@@ -5450,7 +5467,7 @@
      "nome": "AuditCompletion.Tolerance.symm",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
@@ -5458,7 +5475,7 @@
      "nome": "AuditCompletion.Tolerance.triangle",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
@@ -5466,7 +5483,7 @@
      "nome": "AuditCompletion.Tolerance.epsilon_close_not_transitive",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
@@ -5474,7 +5491,7 @@
      "nome": "AuditCompletion.SemanticContext.dual_of_independence_bridge",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
@@ -5482,7 +5499,7 @@
      "nome": "AuditCompletion.open_bridge_not_proved",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
@@ -5490,7 +5507,7 @@
      "nome": "AuditCompletion.conditional_not_proved",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
@@ -5498,7 +5515,7 @@
      "nome": "AuditCompletion.inconsistent_spec_not_proved",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/UnifiedAsymptoticLogic.lean",
@@ -5578,7 +5595,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 0.5,
+   "build_seconds": 0.6,
    "build_error": "error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": true,
@@ -6965,8 +6982,10 @@
     }
    ],
    "integrity": [],
-   "note": "RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././CriticalBarrier/EndpointInterfaces.lean:89:31: unexpected token '|'; expected term | error: ././././CriticalBarrier/EndpointInterfaces.lean:94:6: unexpected token '|'; expected term)",
-   "corrections": [],
+   "note": "CORRIGIDO PELO MVEI (renomear-imports-mathlib): 2 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 2 arquivo(s). RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././CriticalBarrier/EndpointInterfaces.lean:89:31: unexpected token '|'; expected term | error: ././././CriticalBarrier/EndpointInterfaces.lean:94:6: unexpected token '|'; expected term)",
+   "corrections": [
+    "renomear-imports-mathlib"
+   ],
    "lakefile_gerado": "import Lake\nopen Lake DSL\n\npackage mveiReconstruido\n\nrequire mathlib from git\n  \"https://github.com/leanprover-community/mathlib4\" @ \"v4.19.0\"\n\n@[default_target] lean_lib MveiReconstruido where\n  srcDir := \".\"\n  globs := #[.submodules `CriticalBarrier, .one `GapCollapseAudit, .one `IndeterminateParameterCompletion, .one `UnifiedAsymptoticLogic]\n",
    "avulso": false,
    "salvage": [
@@ -7120,81 +7139,96 @@
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 44,
      "nome": "AuditCompletion.WeightedGap.weight_nonneg",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 64,
      "nome": "AuditCompletion.ErrorDecomposition.contribution_nonneg",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 97,
      "nome": "AuditCompletion.Tolerance.refl",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 100,
      "nome": "AuditCompletion.Tolerance.symm",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 105,
      "nome": "AuditCompletion.Tolerance.triangle",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 115,
      "nome": "AuditCompletion.Tolerance.epsilon_close_not_transitive",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 140,
      "nome": "AuditCompletion.SemanticContext.dual_of_independence_bridge",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": []
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 177,
      "nome": "AuditCompletion.open_bridge_not_proved",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": []
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 179,
      "nome": "AuditCompletion.conditional_not_proved",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": []
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
      "linha": 180,
      "nome": "AuditCompletion.inconsistent_spec_not_proved",
-     "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "status": "fechado",
+     "axioms": []
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
@@ -7303,7 +7337,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 19.0,
+   "build_seconds": 19.5,
    "build_error": "error: ././././MillenniumAudit/G1Audit.lean:46:2: dsimp made no progress | error: Lean exited with code 1 | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -8436,7 +8470,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 15.0,
+   "build_seconds": 17.9,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -9237,7 +9271,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": false,
-   "build_seconds": 22.3,
+   "build_seconds": 23.8,
    "build_error": "error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": true,
@@ -10396,7 +10430,7 @@
     }
    ],
    "integrity": [],
-   "note": "RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e compilou o que foi possível (erros restantes: error: CriticalBarrier/ResolutionDynamics.lean:1:0: unknown module prefix 'Mathlib' | error: CriticalBarrier/EndpointInterfaces.lean:41:10: Constructor field `epsilon` of `CriticalBarrier.EndpointInterfaces.EpsilonCoercive.mk` contains universe level metavariables at the expression)",
+   "note": "RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e compilou o que foi possível (erros restantes: error: CriticalBarrier/B2_8_Alignment_Target_Clay.lean:1:0: unknown module prefix 'Mathlib' | error: CriticalBarrier/CriticalTailBridge.lean:1:0: unknown module prefix 'Mathlib')",
    "corrections": [],
    "lakefile_gerado": "import Lake\nopen Lake DSL\n\npackage mveiReconstruido\n\n@[default_target] lean_lib MveiReconstruido where\n  srcDir := \".\"\n  globs := #[.submodules `CriticalBarrier, .one `GapCollapseAudit, .one `IndeterminateParameterCompletion, .one `UnifiedAsymptoticLogic]\n",
    "avulso": false,
@@ -10407,7 +10441,7 @@
      "nome": "CriticalBarrierClayTarget.C_error_eq",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
@@ -10415,7 +10449,7 @@
      "nome": "CriticalBarrierClayTarget.homogeneous_decay_rate_test",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
@@ -10423,7 +10457,7 @@
      "nome": "CriticalBarrierClayTarget.cstar_test",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
@@ -10431,7 +10465,7 @@
      "nome": "CriticalBarrierClayTarget.target_chain_is_explicit",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -10439,7 +10473,7 @@
      "nome": "CriticalBarrier.CriticalTail.l3_from_low_high",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -10447,7 +10481,7 @@
      "nome": "CriticalBarrier.CriticalTail.critical_tail_coercivity",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -10455,7 +10489,7 @@
      "nome": "CriticalBarrier.CriticalTail.shrinkingDefect_pos",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -10463,7 +10497,7 @@
      "nome": "CriticalBarrier.CriticalTail.growingCritical_ge_one",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -10471,7 +10505,7 @@
      "nome": "CriticalBarrier.CriticalTail.l2_l3_scaling_exponents",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -10479,7 +10513,7 @@
      "nome": "CriticalBarrier.CriticalTail.endpoint_from_critical_tail",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/EndpointInterfaces.lean",
@@ -10503,7 +10537,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.geometric_step",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
@@ -10511,7 +10545,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.coercive_bound",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
@@ -10519,7 +10553,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.contraction_coercivity_bound",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
@@ -10527,7 +10561,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.admissible_iterate",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
@@ -10535,7 +10569,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.endpoint_from_native_control",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
@@ -10543,7 +10577,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.zero_defect_endpoint",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
@@ -10551,7 +10585,7 @@
      "nome": "CriticalBarrier.ResolutionDynamics.close_triangle",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-9gzb6bym/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
@@ -10559,7 +10593,7 @@
      "nome": "AuditCompletion.WeightedGap.weight_nonneg",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
@@ -10567,7 +10601,7 @@
      "nome": "AuditCompletion.ErrorDecomposition.contribution_nonneg",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
@@ -10575,7 +10609,7 @@
      "nome": "AuditCompletion.Tolerance.refl",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
@@ -10583,7 +10617,7 @@
      "nome": "AuditCompletion.Tolerance.symm",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
@@ -10591,7 +10625,7 @@
      "nome": "AuditCompletion.Tolerance.triangle",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
@@ -10599,7 +10633,7 @@
      "nome": "AuditCompletion.Tolerance.epsilon_close_not_transitive",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
@@ -10607,7 +10641,7 @@
      "nome": "AuditCompletion.SemanticContext.dual_of_independence_bridge",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
@@ -10615,7 +10649,7 @@
      "nome": "AuditCompletion.open_bridge_not_proved",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
@@ -10623,7 +10657,7 @@
      "nome": "AuditCompletion.conditional_not_proved",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
@@ -10631,7 +10665,7 @@
      "nome": "AuditCompletion.inconsistent_spec_not_proved",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "o Lean não chegou ao fim do arquivo"
+     "motivo": "o Lean parou antes do fim do arquivo (código 1)"
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
@@ -10711,7 +10745,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 16.6,
+   "build_seconds": 34.9,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -11871,7 +11905,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 23.0,
+   "build_seconds": 23.4,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -11949,7 +11983,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.9,
+   "build_seconds": 23.2,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -12105,7 +12139,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.9,
+   "build_seconds": 22.6,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -12183,7 +12217,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.5,
+   "build_seconds": 22.6,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -12261,7 +12295,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.7,
+   "build_seconds": 23.1,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | file: CriticalBarrier.lean | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -12339,7 +12373,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.9,
+   "build_seconds": 22.5,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -12417,7 +12451,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.3,
+   "build_seconds": 30.9,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -12495,7 +12529,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.0,
+   "build_seconds": 25.7,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -12573,7 +12607,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.1,
+   "build_seconds": 22.4,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -12651,7 +12685,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.6,
+   "build_seconds": 23.1,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -12729,7 +12763,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.1,
+   "build_seconds": 22.5,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -12807,7 +12841,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.7,
+   "build_seconds": 27.6,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -12885,7 +12919,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.9,
+   "build_seconds": 23.5,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -12963,7 +12997,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.3,
+   "build_seconds": 22.8,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -13041,7 +13075,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 11.6,
+   "build_seconds": 12.6,
    "build_error": "error: ././././MillenniumAudit/StabilizedHypothetical.lean:77:30: linarith failed to find a contradiction | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:25: don't know how to synthesize implicit argument 'α' | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:29: don't know how to synthesize implicit argument | error: ././././MillenniumAudit/StabilizedHypothetical.lean:81:7: don't know how to synthesize implicit argument 'α'",
    "sorry_warnings": 2,
    "reconstructed": false,

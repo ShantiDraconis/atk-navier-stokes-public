@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T13:47:17+00:00",
+ "generated_at": "2026-10-28T16:41:02+00:00",
  "standard_axioms": [
   "Classical.choice",
   "Quot.sound",
@@ -15,7 +15,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 17.4,
+   "build_seconds": 22.2,
    "build_error": "error: ././././MillenniumAudit/StabilizedHypothetical.lean:77:30: linarith failed to find a contradiction | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:25: don't know how to synthesize implicit argument 'α' | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:29: don't know how to synthesize implicit argument | error: ././././MillenniumAudit/StabilizedHypothetical.lean:81:7: don't know how to synthesize implicit argument 'α'",
    "sorry_warnings": 2,
    "reconstructed": false,
@@ -23,11 +23,2026 @@
    "declared_axioms": [],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para antes do comentário de módulo em 6 arquivo(s). leitura de axiomas: nenhum módulo compilado encontrado",
+   "note": "CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para o início (antes de comentários de módulo ou de documentação) em 6 arquivo(s). leitura de axiomas: nenhum módulo compilado encontrado",
    "corrections": [
     "imports-no-topo"
    ],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 29,
+     "nome": "MillenniumAudit.G1KAdmissible.K0a_regularizedAmplitude_ge",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 37,
+     "nome": "MillenniumAudit.G1KAdmissible.K0a_regularizedAmplitude_nonneg",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 51,
+     "nome": "MillenniumAudit.G1KAdmissible.K0b_degenerate_branch",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 57,
+     "nome": "MillenniumAudit.G1KAdmissible.K1a_chebyshev_superlevel_arithmetic",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 70,
+     "nome": "MillenniumAudit.G1KAdmissible.K1b_weighted_gradient_budget",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 90,
+     "nome": "MillenniumAudit.G1KAdmissible.K1c_liminf_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 108,
+     "nome": "MillenniumAudit.G1KAdmissible.G1a1_sum_six_term_bounds",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 121,
+     "nome": "MillenniumAudit.G1KAdmissible.G1a5_expansive_mode_detected",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ],
+     "preenchimento": {
+      "resultado": "demonstrável",
+      "tatica": "first | (rfl) | (decide) | (trivial) | (simp) | (omega) | (simp_all) | (exact fun _ => trivial) | (norm_num) | (linarith) | (positivity) | (ring) | (tauto) | (aesop) | (nlinarith)"
+     }
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 139,
+     "nome": "MillenniumAudit.G1KAdmissible.G1a2_joint_evolution",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 177,
+     "nome": "MillenniumAudit.G1KAdmissible.G1bc_bulk_tail_to_signed_depletion",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 196,
+     "nome": "MillenniumAudit.G1KAdmissible.G1b2_total_absorption_budget",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 216,
+     "nome": "MillenniumAudit.G1KAdmissible.G1b3_leray_budget",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 231,
+     "nome": "MillenniumAudit.G1KAdmissible.G1d2_energy_controls_time_coefficient",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 253,
+     "nome": "MillenniumAudit.G1KAdmissible.G2a_enstrophy_differential",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 272,
+     "nome": "MillenniumAudit.G1KAdmissible.G2b_uniform_enstrophy",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 291,
+     "nome": "MillenniumAudit.G1KAdmissible.G3_critical_bound",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 302,
+     "nome": "MillenniumAudit.G1KAdmissible.G4_apply_endpoint",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 314,
+     "nome": "MillenniumAudit.G1KAdmissible.F_conditional_global_regularity",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "HypothesesComplete_v3.lean",
+     "linha": 44,
+     "nome": "G1HypothesesV3.bulk_tail_to_depletion",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "HypothesesComplete_v3.lean",
+     "linha": 91,
+     "nome": "G1HypothesesV3.joint_law_and_tail_conditional_G1",
+     "status": "aberto-sorry",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "Lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 59,
+     "nome": "CriticalBarrier.C_error_eq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "Lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 63,
+     "nome": "CriticalBarrier.delta_eq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "Lean/Millennium/CompleteClosure_Targets.lean",
+     "linha": 24,
+     "nome": "B2_9_R_equal",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "Lean/Millennium/CompleteClosure_Targets.lean",
+     "linha": 28,
+     "nome": "B2_9_Pi_different",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "Lean/NavierStokes/B2/B2_8_LowerBound_Template.lean",
+     "linha": 83,
+     "nome": "NSB2.constants_frozen",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 32,
+     "nome": "MillenniumAudit.StabilizedHypothetical.viscosity_positive",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 35,
+     "nome": "MillenniumAudit.StabilizedHypothetical.kappa_positive",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 38,
+     "nome": "MillenniumAudit.StabilizedHypothetical.epsilon_positive",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 41,
+     "nome": "MillenniumAudit.StabilizedHypothetical.tail_budget_positive",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 44,
+     "nome": "MillenniumAudit.StabilizedHypothetical.gamma_strict",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 47,
+     "nome": "MillenniumAudit.StabilizedHypothetical.theta_exact",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 50,
+     "nome": "MillenniumAudit.StabilizedHypothetical.theta_strict",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 54,
+     "nome": "MillenniumAudit.StabilizedHypothetical.energy_dissipation_budget",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 57,
+     "nome": "MillenniumAudit.StabilizedHypothetical.time_coefficient_budget",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 61,
+     "nome": "MillenniumAudit.StabilizedHypothetical.dissipative_margin",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 65,
+     "nome": "MillenniumAudit.StabilizedHypothetical.empirical_eta_budget",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 73,
+     "nome": "MillenniumAudit.StabilizedHypothetical.K0a_totality",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 84,
+     "nome": "MillenniumAudit.StabilizedHypothetical.K0b_degenerate_trivial",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 141,
+     "nome": "MillenniumAudit.StabilizedHypothetical.G1a5_expansive_example",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 159,
+     "nome": "MillenniumAudit.StabilizedHypothetical.G1b_total_strict",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 195,
+     "nome": "MillenniumAudit.StabilizedHypothetical.G1d2_time_integral_bound",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 245,
+     "nome": "MillenniumAudit.StabilizedHypothetical.G2_differential",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 296,
+     "nome": "MillenniumAudit.StabilizedHypothetical.Perelman_like_22_25_3_1",
+     "status": "aberto-sorry",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "PerelmanLikeStabilizationSpec.lean",
+     "linha": 73,
+     "nome": "MillenniumAudit.PerelmanLikeNS.signedDepletion_to_differential",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "PerelmanLikeStabilizationSpec.lean",
+     "linha": 115,
+     "nome": "MillenniumAudit.PerelmanLikeNS.F_of_complete_stabilization",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/multistate-proof-refutation-v1/DeltaUniformity.lean",
+     "linha": 20,
+     "nome": "NSDeltaUniformityAudit.uniform_delta_implies_pointwise",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/multistate-proof-refutation-v1/NS_Multistate.lean",
+     "linha": 43,
+     "nome": "NSMultistateAudit.bilateral_witness_to_end",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "audit/multistate-proof-refutation-v1/NS_Multistate.lean",
+     "linha": 54,
+     "nome": "NSMultistateAudit.hypothetical_chain_composes",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "audit/multistate-proof-refutation-v1/NearFieldTarget.lean",
+     "linha": 36,
+     "nome": "NSNearFieldAudit.improved_target_is_explicit",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/LegacyWeightedLowCounteraudit.lean",
+     "linha": 26,
+     "nome": "NSProducerFirst.legacyGammaEffective_eq_neg35",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/LegacyWeightedLowCounteraudit.lean",
+     "linha": 35,
+     "nome": "NSProducerFirst.legacy_weighted_absorption_constraints_uninhabited",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/LegacyWeightedLowCounteraudit.lean",
+     "linha": 42,
+     "nome": "NSProducerFirst.no_positive_gamma_below_legacy_effective",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/NSMaterialInhabitant.lean",
+     "linha": 35,
+     "nome": "NSProducerFirst.materialInhabitant_certificate",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "audit/producer-first/NSMaterialInhabitant.lean",
+     "linha": 49,
+     "nome": "NSProducerFirst.materialInhabitant_implies_differential",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "audit/producer-first/NSMaterialInhabitant.lean",
+     "linha": 76,
+     "nome": "NSProducerFirst.materialInhabitant_dissipation_margin_pos",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "audit/producer-first/NSMaterialInhabitant.lean",
+     "linha": 93,
+     "nome": "NSProducerFirst.materialInhabitant_iff_terminalProducer",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/ProducerFirst.lean",
+     "linha": 41,
+     "nome": "NSProducerFirst.producerA_nonnegative",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/ProducerFirst.lean",
+     "linha": 47,
+     "nome": "NSProducerFirst.producerA_residual_exact",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/ProducerFirst.lean",
+     "linha": 67,
+     "nome": "NSProducerFirst.signedGain_implies_differential",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/ProducerFirst.lean",
+     "linha": 91,
+     "nome": "NSProducerFirst.signedGain_dissipation_margin_pos",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/ProducerFirst.lean",
+     "linha": 112,
+     "nome": "NSProducerFirst.producerA_total_budget",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/ProducerFirst.lean",
+     "linha": 123,
+     "nome": "NSProducerFirst.standard_unsigned_residual_is_cubic",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/ProducerFirst.lean",
+     "linha": 132,
+     "nome": "NSProducerFirst.energy_compatible_residual_is_quadratic",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/ProducerFirst.lean",
+     "linha": 158,
+     "nome": "NSProducerFirst.signedGainCertificate_not_trivially_inhabited",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "audit/producer-first/SignedGainCore.lean",
+     "linha": 70,
+     "nome": "NSProducerFirst.nonempty_signedGainCertificate_iff_core",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/AlignmentTransport.lean",
+     "linha": 62,
+     "nome": "G1AlignmentTransport.alpha_eps_le_norm",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/AlignmentTransport.lean",
+     "linha": 109,
+     "nome": "G1AlignmentTransport.rhoStarScaleLaw_holds",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/DynamicCampanato.lean",
+     "linha": 35,
+     "nome": "G1DynamicCampanato.betaCampanato_eq",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/G1/DynamicCampanato.lean",
+     "linha": 37,
+     "nome": "G1DynamicCampanato.w_R_radius_formula",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/G1/DynamicCampanato.lean",
+     "linha": 105,
+     "nome": "G1DynamicCampanato.ofXiEpsPDE_PROVED_IDENTITY",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/G1/DynamicCampanato.lean",
+     "linha": 113,
+     "nome": "G1DynamicCampanato.localEnergy_radius_formula",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/G1/DynamicCampanato.lean",
+     "linha": 137,
+     "nome": "G1DynamicCampanato.farField_linear_ratio",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/G1/DynamicCampanato.lean",
+     "linha": 142,
+     "nome": "G1DynamicCampanato.betaCampanato_energy_only",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/G1/DynamicCampanato.lean",
+     "linha": 170,
+     "nome": "G1DynamicCampanato.iterate_linear_barrier",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/G1/DynamicCampanato.lean",
+     "linha": 188,
+     "nome": "G1DynamicCampanato.iterate_to_half_scale",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/G1/DynamicCampanato.lean",
+     "linha": 211,
+     "nome": "G1DynamicCampanato.gamma_lt_half_of_barrier_condition",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 30,
+     "nome": "G1Dynamic.tangentialPart_add_parallel",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 277,
+     "nome": "G1Dynamic.dynamic_geometry_closes_G1",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 454,
+     "nome": "G1Dynamic.TrivialityAudit.dynamicCriticalGeometry_inhabited_for_every_ActualNS",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 491,
+     "nome": "G1Dynamic.TrivialityAudit.fullChain_inhabited_for_every_ActualNS",
+     "status": "aberto-sorry",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 49,
+     "nome": "G1Audit.g1Closed_to_dissipation",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 77,
+     "nome": "G1Audit.endpoint_composition",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 92,
+     "nome": "G1Audit.conditional_regularization",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/HypothesesComplete_v2.lean",
+     "linha": 46,
+     "nome": "G1HypothesesV2.depletion_to_differential",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/HypothesesComplete_v2.lean",
+     "linha": 130,
+     "nome": "G1HypothesesV2.endpoint_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/G1/HypothesesComplete_v2.lean",
+     "linha": 137,
+     "nome": "G1HypothesesV2.conditional_G1_closure",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/HypothesesComplete_v2.lean",
+     "linha": 157,
+     "nome": "G1HypothesesV2.CH95_conditional_G1",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/WeightedLow.lean",
+     "linha": 31,
+     "nome": "G1WeightedLow.two_times_06sq_times_50",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/WeightedLow.lean",
+     "linha": 50,
+     "nome": "G1WeightedLow.gamma_effective_eq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/WeightedLow.lean",
+     "linha": 53,
+     "nome": "G1WeightedLow.gamma_effective_lt_one",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/XiEpsPDE.lean",
+     "linha": 105,
+     "nome": "G1XiEpsPDE.xiEps_unfold",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/G1/XiEpsPDE.lean",
+     "linha": 109,
+     "nome": "G1XiEpsPDE.magEps_unfold",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/g1/lean/G1Depletion.lean",
+     "linha": 40,
+     "nome": "G1.closed_implies_decay",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/g1/lean/G1Depletion.lean",
+     "linha": 53,
+     "nome": "G1.G1_closed_of_depletion",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 49,
+     "nome": "G1Audit.g1Closed_to_dissipation",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 77,
+     "nome": "G1Audit.endpoint_composition",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 92,
+     "nome": "G1Audit.conditional_regularization",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 46,
+     "nome": "G1HypothesesV2.depletion_to_differential",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 130,
+     "nome": "G1HypothesesV2.endpoint_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 137,
+     "nome": "G1HypothesesV2.conditional_G1_closure",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 157,
+     "nome": "G1HypothesesV2.CH95_conditional_G1",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 34,
+     "nome": "CriticalBarrier.B28.constants_exact",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 71,
+     "nome": "CriticalBarrier.B28.alignment_flux_target",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 79,
+     "nome": "CriticalBarrier.B28.kappa_at_target",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 83,
+     "nome": "CriticalBarrier.B28.production_25_1",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 34,
+     "nome": "CriticalBarrier.B28GapIsolation.sqrt10_gt_three",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 41,
+     "nome": "CriticalBarrier.B28GapIsolation.proposed_strain_chain_exceeds_target",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 84,
+     "nome": "CriticalBarrier.B28GapIsolation.expansive_trace_zero",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 87,
+     "nome": "CriticalBarrier.B28GapIsolation.expansive_total_weight_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 90,
+     "nome": "CriticalBarrier.B28GapIsolation.expansive_is_concentrated",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 96,
+     "nome": "CriticalBarrier.B28GapIsolation.expansive_alignment_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 100,
+     "nome": "CriticalBarrier.B28GapIsolation.traceless_and_concentrated_do_not_force_alignment_09",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 118,
+     "nome": "CriticalBarrier.B28GapIsolation.signed_flux_from_directional_certificate",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ChainTarget.lean",
+     "linha": 28,
+     "nome": "CriticalBarrier.B2Chain.chain_resolution",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ChainTarget.lean",
+     "linha": 34,
+     "nome": "CriticalBarrier.B2Chain.target_decay_rate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ChainTarget.lean",
+     "linha": 48,
+     "nome": "CriticalBarrier.B2Chain.use_gronwall_certificate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ClosureObligations.lean",
+     "linha": 50,
+     "nome": "CriticalBarrier.B2ClosureObligations.close_via_geometric_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ClosureObligations.lean",
+     "linha": 66,
+     "nome": "CriticalBarrier.B2ClosureObligations.close_via_vector_tensor_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ClosureObligations.lean",
+     "linha": 81,
+     "nome": "CriticalBarrier.B2ClosureObligations.close_via_enstrophy_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ClosureObligations.lean",
+     "linha": 95,
+     "nome": "CriticalBarrier.B2ClosureObligations.coercive_margin",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 59,
+     "nome": "CriticalBarrier.B2Deterministic.differential_decay",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 77,
+     "nome": "CriticalBarrier.B2Deterministic.high_L3_squared_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 99,
+     "nome": "CriticalBarrier.B2Deterministic.total_L3_from_low_high",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 114,
+     "nome": "CriticalBarrier.B2Deterministic.target_kappa",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 126,
+     "nome": "CriticalBarrier.B2Deterministic.C_error_decimal_exact",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 132,
+     "nome": "CriticalBarrier.B2Deterministic.arithmetic_at_R51",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 150,
+     "nome": "CriticalBarrier.B2Deterministic.use_ess",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 29,
+     "nome": "CriticalBarrier.ClosureTargetTree.TargetConstants.target_error_exact",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 74,
+     "nome": "CriticalBarrier.ClosureTargetTree.NS_chain",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 91,
+     "nome": "CriticalBarrier.ClosureTargetTree.RH_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 101,
+     "nome": "CriticalBarrier.ClosureTargetTree.PNP_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 110,
+     "nome": "CriticalBarrier.ClosureTargetTree.BSD_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 118,
+     "nome": "CriticalBarrier.ClosureTargetTree.Hodge_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 127,
+     "nome": "CriticalBarrier.ClosureTargetTree.YM_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 149,
+     "nome": "CriticalBarrier.ClosureTargetTree.abstract_resolution_law",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/G1G4ClosureBlueprint.lean",
+     "linha": 33,
+     "nome": "CriticalBarrier.G1G4.enstrophy_differential_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/G1G4ClosureBlueprint.lean",
+     "linha": 56,
+     "nome": "CriticalBarrier.G1G4.total_L3_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/G1G4ClosureBlueprint.lean",
+     "linha": 67,
+     "nome": "CriticalBarrier.G1G4.conditional_global_regularity",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean",
+     "linha": 60,
+     "nome": "CriticalBarrier.GlobalRegularityFromG1.global_regularity_from_G1",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean",
+     "linha": 71,
+     "nome": "CriticalBarrier.GlobalRegularityFromG1.dependency_chain",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/Millennium/AllClosureTargets.lean",
+     "linha": 39,
+     "nome": "Millennium.AllClosureTargets.resolve",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/Millennium/AllClosureTargets.lean",
+     "linha": 78,
+     "nome": "Millennium.AllClosureTargets.all_millennium_from_complete_certificates",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean",
+     "linha": 44,
+     "nome": "G1HypothesesV3.bulk_tail_to_depletion",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean",
+     "linha": 91,
+     "nome": "G1HypothesesV3.joint_law_and_tail_conditional_G1",
+     "status": "aberto-sorry",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/Lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 59,
+     "nome": "CriticalBarrier.C_error_eq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/Lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 63,
+     "nome": "CriticalBarrier.delta_eq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/Lean/Millennium/CompleteClosure_Targets.lean",
+     "linha": 24,
+     "nome": "B2_9_R_equal",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/Lean/Millennium/CompleteClosure_Targets.lean",
+     "linha": 28,
+     "nome": "B2_9_Pi_different",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/Lean/NavierStokes/B2/B2_8_LowerBound_Template.lean",
+     "linha": 83,
+     "nome": "NSB2.constants_frozen",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/Lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 59,
+     "nome": "CriticalBarrier.C_error_eq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/Lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 63,
+     "nome": "CriticalBarrier.delta_eq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/Lean/Millennium/CompleteClosure_Targets.lean",
+     "linha": 24,
+     "nome": "B2_9_R_equal",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/Lean/Millennium/CompleteClosure_Targets.lean",
+     "linha": 28,
+     "nome": "B2_9_Pi_different",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/Lean/NavierStokes/B2/B2_8_LowerBound_Template.lean",
+     "linha": 83,
+     "nome": "NSB2.constants_frozen",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 46,
+     "nome": "G1HypothesesV2.depletion_to_differential",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 80,
+     "nome": "G1HypothesesV2.rhoStar_scale",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 139,
+     "nome": "G1HypothesesV2.CH95_to_KWC_conditional",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 147,
+     "nome": "G1HypothesesV2.conditional_G1_closure",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 161,
+     "nome": "G1HypothesesV2.CH95_conditional_G1",
+     "status": "erro",
+     "axioms": [
+      "G1HypothesesV2.CH95_conditional_G1"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 190,
+     "nome": "G1HypothesesV2.endpoint_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/g1/lean/G1Depletion.lean",
+     "linha": 40,
+     "nome": "G1.closed_implies_decay",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/g1/lean/G1Depletion.lean",
+     "linha": 53,
+     "nome": "G1.G1_closed_of_depletion",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 30,
+     "nome": "G1Dynamic.tangentialPart_add_parallel",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 169,
+     "nome": "G1Dynamic.dynamic_geometry_closes_G1",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 49,
+     "nome": "G1Audit.g1Closed_to_dissipation",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 77,
+     "nome": "G1Audit.endpoint_composition",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 92,
+     "nome": "G1Audit.conditional_regularization",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 46,
+     "nome": "G1HypothesesV2.depletion_to_differential",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 130,
+     "nome": "G1HypothesesV2.endpoint_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 137,
+     "nome": "G1HypothesesV2.conditional_G1_closure",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 157,
+     "nome": "G1HypothesesV2.CH95_conditional_G1",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-prize-standard-v4-20260913/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 49,
+     "nome": "G1Audit.g1Closed_to_dissipation",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-prize-standard-v4-20260913/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 77,
+     "nome": "G1Audit.endpoint_composition",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-prize-standard-v4-20260913/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 92,
+     "nome": "G1Audit.conditional_regularization",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-prize-standard-v4-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 46,
+     "nome": "G1HypothesesV2.depletion_to_differential",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-prize-standard-v4-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 130,
+     "nome": "G1HypothesesV2.endpoint_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-prize-standard-v4-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 137,
+     "nome": "G1HypothesesV2.conditional_G1_closure",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-prize-standard-v4-20260913/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 157,
+     "nome": "G1HypothesesV2.CH95_conditional_G1",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/Lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 59,
+     "nome": "CriticalBarrier.C_error_eq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/Lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 63,
+     "nome": "CriticalBarrier.delta_eq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/Lean/Millennium/CompleteClosure_Targets.lean",
+     "linha": 24,
+     "nome": "B2_9_R_equal",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/Lean/Millennium/CompleteClosure_Targets.lean",
+     "linha": 28,
+     "nome": "B2_9_Pi_different",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/Lean/NavierStokes/B2/B2_8_LowerBound_Template.lean",
+     "linha": 83,
+     "nome": "NSB2.constants_frozen",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/main/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 49,
+     "nome": "G1Audit.g1Closed_to_dissipation",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/main/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 77,
+     "nome": "G1Audit.endpoint_composition",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/main/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 92,
+     "nome": "G1Audit.conditional_regularization",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/main/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 46,
+     "nome": "G1HypothesesV2.depletion_to_differential",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/main/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 130,
+     "nome": "G1HypothesesV2.endpoint_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/main/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 137,
+     "nome": "G1HypothesesV2.conditional_G1_closure",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/main/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 157,
+     "nome": "G1HypothesesV2.CH95_conditional_G1",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/main/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean",
+     "linha": 44,
+     "nome": "G1HypothesesV3.bulk_tail_to_depletion",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/main/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean",
+     "linha": 91,
+     "nome": "G1HypothesesV3.joint_law_and_tail_conditional_G1",
+     "status": "aberto-sorry",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/origin/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 49,
+     "nome": "G1Audit.g1Closed_to_dissipation",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/origin/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 77,
+     "nome": "G1Audit.endpoint_composition",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/origin/formal/G1/G1_PrizeStandard_Interface.lean",
+     "linha": 92,
+     "nome": "G1Audit.conditional_regularization",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/origin/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 46,
+     "nome": "G1HypothesesV2.depletion_to_differential",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/origin/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 130,
+     "nome": "G1HypothesesV2.endpoint_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/origin/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 137,
+     "nome": "G1HypothesesV2.conditional_G1_closure",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/origin/formal/G1/HypothesesComplete_v2.lean",
+     "linha": 157,
+     "nome": "G1HypothesesV2.CH95_conditional_G1",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/origin/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean",
+     "linha": 44,
+     "nome": "G1HypothesesV3.bulk_tail_to_depletion",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/origin/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean",
+     "linha": 91,
+     "nome": "G1HypothesesV3.joint_law_and_tail_conditional_G1",
+     "status": "aberto-sorry",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    }
+   ],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -41,7 +2056,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 0.5,
+   "build_seconds": 0.4,
    "build_error": "error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -49,9 +2064,996 @@
    "declared_axioms": [],
    "theorems": [],
    "integrity": [],
-   "note": "leitura de axiomas: nenhum módulo compilado encontrado",
+   "note": "a configuração original não compila; o MVEI reconstruiu o lakefile com o Mathlib v4.19.0, mas o código também não compila: error: no such file or directory (error code: 2) | error: build failed",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 34,
+     "nome": "CriticalBarrier.B28.constants_exact",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 71,
+     "nome": "CriticalBarrier.B28.alignment_flux_target",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 79,
+     "nome": "CriticalBarrier.B28.kappa_at_target",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_AlignmentTarget.lean",
+     "linha": 83,
+     "nome": "CriticalBarrier.B28.production_25_1",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+     "linha": 107,
+     "nome": "CriticalBarrierClayTarget.C_error_eq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+     "linha": 111,
+     "nome": "CriticalBarrierClayTarget.homogeneous_decay_rate_test",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+     "linha": 116,
+     "nome": "CriticalBarrierClayTarget.cstar_test",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+     "linha": 120,
+     "nome": "CriticalBarrierClayTarget.target_chain_is_explicit",
+     "status": "condicional",
+     "axioms": [
+      "CriticalBarrierClayTarget.B2_12_ESS_TARGET",
+      "CriticalBarrierClayTarget.CZ_Riesz_L32_TARGET",
+      "CriticalBarrierClayTarget.LP_Bernstein_TARGET",
+      "CriticalBarrierClayTarget.NS_GLOBAL_CLOSURE_TARGET",
+      "CriticalBarrierClayTarget.Sobolev_R3_TARGET"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 34,
+     "nome": "CriticalBarrier.B28GapIsolation.sqrt10_gt_three",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 41,
+     "nome": "CriticalBarrier.B28GapIsolation.proposed_strain_chain_exceeds_target",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 84,
+     "nome": "CriticalBarrier.B28GapIsolation.expansive_trace_zero",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 87,
+     "nome": "CriticalBarrier.B28GapIsolation.expansive_total_weight_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 90,
+     "nome": "CriticalBarrier.B28GapIsolation.expansive_is_concentrated",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 96,
+     "nome": "CriticalBarrier.B28GapIsolation.expansive_alignment_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 100,
+     "nome": "CriticalBarrier.B28GapIsolation.traceless_and_concentrated_do_not_force_alignment_09",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 118,
+     "nome": "CriticalBarrier.B28GapIsolation.signed_flux_from_directional_certificate",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_ChainTarget.lean",
+     "linha": 28,
+     "nome": "CriticalBarrier.B2Chain.chain_resolution",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_ChainTarget.lean",
+     "linha": 34,
+     "nome": "CriticalBarrier.B2Chain.target_decay_rate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_ChainTarget.lean",
+     "linha": 48,
+     "nome": "CriticalBarrier.B2Chain.use_gronwall_certificate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_ClosureObligations.lean",
+     "linha": 50,
+     "nome": "CriticalBarrier.B2ClosureObligations.close_via_geometric_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_ClosureObligations.lean",
+     "linha": 66,
+     "nome": "CriticalBarrier.B2ClosureObligations.close_via_vector_tensor_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_ClosureObligations.lean",
+     "linha": 81,
+     "nome": "CriticalBarrier.B2ClosureObligations.close_via_enstrophy_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_ClosureObligations.lean",
+     "linha": 95,
+     "nome": "CriticalBarrier.B2ClosureObligations.coercive_margin",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 59,
+     "nome": "CriticalBarrier.B2Deterministic.differential_decay",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 77,
+     "nome": "CriticalBarrier.B2Deterministic.high_L3_squared_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 99,
+     "nome": "CriticalBarrier.B2Deterministic.total_L3_from_low_high",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 114,
+     "nome": "CriticalBarrier.B2Deterministic.target_kappa",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 126,
+     "nome": "CriticalBarrier.B2Deterministic.C_error_decimal_exact",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 132,
+     "nome": "CriticalBarrier.B2Deterministic.arithmetic_at_R51",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 150,
+     "nome": "CriticalBarrier.B2Deterministic.use_ess",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/BackwardHypotheticalClosureOracle.lean",
+     "linha": 10,
+     "nome": "CriticalBarrier.BackwardAudit.hypothetical_global_regularity",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/BackwardWithoutOracle.lean",
+     "linha": 14,
+     "nome": "CriticalBarrier.BackwardAudit.independent_contract_closes",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/BackwardWithoutOracle.lean",
+     "linha": 25,
+     "nome": "CriticalBarrier.BackwardAudit.actualNS_to_contract_still_open",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/BridgeLogic.lean",
+     "linha": 12,
+     "nome": "CriticalBarrier.bridge_compose",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/BridgeLogic.lean",
+     "linha": 21,
+     "nome": "CriticalBarrier.target_failure_forces_critical_failure",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/BridgeLogic.lean",
+     "linha": 30,
+     "nome": "CriticalBarrier.exact_counterexample_refutes",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/BridgeLogic.lean",
+     "linha": 40,
+     "nome": "CriticalBarrier.failed_hypothesis_blocks_application",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/BridgeLogic.lean",
+     "linha": 56,
+     "nome": "CriticalBarrier.provenance_does_not_imply_equivalence",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/BridgeLogic.lean",
+     "linha": 63,
+     "nome": "CriticalBarrier.provenance_does_not_imply_access",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 29,
+     "nome": "CriticalBarrier.ClosureTargetTree.TargetConstants.target_error_exact",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 74,
+     "nome": "CriticalBarrier.ClosureTargetTree.NS_chain",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 91,
+     "nome": "CriticalBarrier.ClosureTargetTree.RH_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 101,
+     "nome": "CriticalBarrier.ClosureTargetTree.PNP_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 110,
+     "nome": "CriticalBarrier.ClosureTargetTree.BSD_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 118,
+     "nome": "CriticalBarrier.ClosureTargetTree.Hodge_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 127,
+     "nome": "CriticalBarrier.ClosureTargetTree.YM_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ClosureTargetTree.lean",
+     "linha": 149,
+     "nome": "CriticalBarrier.ClosureTargetTree.abstract_resolution_law",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 12,
+     "nome": "CriticalBarrier.CriticalTail.l3_from_low_high",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 18,
+     "nome": "CriticalBarrier.CriticalTail.critical_tail_coercivity",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 36,
+     "nome": "CriticalBarrier.CriticalTail.shrinkingDefect_pos",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 39,
+     "nome": "CriticalBarrier.CriticalTail.growingCritical_ge_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 42,
+     "nome": "CriticalBarrier.CriticalTail.l2_l3_scaling_exponents",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 50,
+     "nome": "CriticalBarrier.CriticalTail.endpoint_from_critical_tail",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/EndpointInterfaces.lean",
+     "linha": 92,
+     "nome": "CriticalBarrier.EndpointInterfaces.GradedTolerance",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/EndpointInterfaces.lean",
+     "linha": 113,
+     "nome": "CriticalBarrier.EndpointInterfaces.ns_endpoint_from_bridges",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/G1BridgeTriviality.lean",
+     "linha": 33,
+     "nome": "CriticalBarrier.G1BridgeTriviality.g1Bridge_inhabited_for_every_ActualNS",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/G1G4ClosureBlueprint.lean",
+     "linha": 33,
+     "nome": "CriticalBarrier.G1G4.enstrophy_differential_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/G1G4ClosureBlueprint.lean",
+     "linha": 56,
+     "nome": "CriticalBarrier.G1G4.total_L3_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/G1G4ClosureBlueprint.lean",
+     "linha": 67,
+     "nome": "CriticalBarrier.G1G4.conditional_global_regularity",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean",
+     "linha": 60,
+     "nome": "CriticalBarrier.GlobalRegularityFromG1.global_regularity_from_G1",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean",
+     "linha": 71,
+     "nome": "CriticalBarrier.GlobalRegularityFromG1.dependency_chain",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/NumericClassAudit.lean",
+     "linha": 143,
+     "nome": "CriticalBarrier.DualityNumber.collapse_some_implies_equal",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/NumericClassAudit.lean",
+     "linha": 150,
+     "nome": "CriticalBarrier.DualityNumber.equal_implies_collapse",
+     "status": "fechado",
+     "axioms": [
+      "propext"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/NumericClassAudit.lean",
+     "linha": 166,
+     "nome": "CriticalBarrier.ParameterGap.zero_sensitivity_zero_weight",
+     "status": "fechado",
+     "axioms": [
+      "propext"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/NumericClassAudit.lean",
+     "linha": 170,
+     "nome": "CriticalBarrier.ParameterGap.zero_distance_zero_weight",
+     "status": "fechado",
+     "axioms": [
+      "propext"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/NumericClassAudit.lean",
+     "linha": 186,
+     "nome": "CriticalBarrier.zero_total_is_undefined",
+     "status": "fechado",
+     "axioms": [
+      "propext"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/NumericClassAudit.lean",
+     "linha": 190,
+     "nome": "CriticalBarrier.positive_total_is_defined",
+     "status": "fechado",
+     "axioms": [
+      "propext"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/NumericClassAudit.lean",
+     "linha": 211,
+     "nome": "CriticalBarrier.SharedDistinct.empty_comparison_undefined",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/NumericClassAudit.lean",
+     "linha": 222,
+     "nome": "CriticalBarrier.open_bridge_is_not_proof",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/NumericClassAudit.lean",
+     "linha": 224,
+     "nome": "CriticalBarrier.conditional_is_not_proof",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/NumericClassAudit.lean",
+     "linha": 225,
+     "nome": "CriticalBarrier.inconsistent_spec_is_not_proof",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 17,
+     "nome": "CriticalBarrier.ResolutionDynamics.geometric_step",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 22,
+     "nome": "CriticalBarrier.ResolutionDynamics.coercive_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 35,
+     "nome": "CriticalBarrier.ResolutionDynamics.contraction_coercivity_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 46,
+     "nome": "CriticalBarrier.ResolutionDynamics.admissible_iterate",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 61,
+     "nome": "CriticalBarrier.ResolutionDynamics.endpoint_from_native_control",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 71,
+     "nome": "CriticalBarrier.ResolutionDynamics.zero_defect_endpoint",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 84,
+     "nome": "CriticalBarrier.ResolutionDynamics.close_triangle",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 40,
+     "nome": "CriticalBarrierAudit.collapse_eq_I",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 44,
+     "nome": "CriticalBarrierAudit.sorry_tag_eq_I",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 47,
+     "nome": "CriticalBarrierAudit.admit_tag_eq_I",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 50,
+     "nome": "CriticalBarrierAudit.axiom_tag_eq_I",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 53,
+     "nome": "CriticalBarrierAudit.nan_tag_eq_I",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 56,
+     "nome": "CriticalBarrierAudit.null_tag_eq_I",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 59,
+     "nome": "CriticalBarrierAudit.undefined_tag_eq_I",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 62,
+     "nome": "CriticalBarrierAudit.zero_over_zero_tag_eq_I",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 65,
+     "nome": "CriticalBarrierAudit.divergent_tag_eq_I",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 68,
+     "nome": "CriticalBarrierAudit.nonexistent_limit_tag_eq_I",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 71,
+     "nome": "CriticalBarrierAudit.true_placeholder_tag_eq_I",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 74,
+     "nome": "CriticalBarrierAudit.open_bridge_tag_eq_I",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/GapCollapseAudit.lean",
+     "linha": 96,
+     "nome": "CriticalBarrierAudit.metadata_does_not_upgrade",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 44,
+     "nome": "AuditCompletion.WeightedGap.weight_nonneg",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 64,
+     "nome": "AuditCompletion.ErrorDecomposition.contribution_nonneg",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 97,
+     "nome": "AuditCompletion.Tolerance.refl",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 100,
+     "nome": "AuditCompletion.Tolerance.symm",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 105,
+     "nome": "AuditCompletion.Tolerance.triangle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 115,
+     "nome": "AuditCompletion.Tolerance.epsilon_close_not_transitive",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 140,
+     "nome": "AuditCompletion.SemanticContext.dual_of_independence_bridge",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 177,
+     "nome": "AuditCompletion.open_bridge_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 179,
+     "nome": "AuditCompletion.conditional_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 180,
+     "nome": "AuditCompletion.inconsistent_spec_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "formal/lean/Millennium/AllClosureTargets.lean",
+     "linha": 39,
+     "nome": "Millennium.AllClosureTargets.resolve",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "formal/lean/Millennium/AllClosureTargets.lean",
+     "linha": 78,
+     "nome": "Millennium.AllClosureTargets.all_millennium_from_complete_certificates",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'CriticalBarrier' No directory 'CriticalBarrier' or file 'CriticalBarrier.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batter"
+    },
+    {
+     "arquivo": "formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 20,
+     "nome": "UnifiedAsymptoticLogic.bridge_compose",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 28,
+     "nome": "UnifiedAsymptoticLogic.six_bridges_required",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 36,
+     "nome": "UnifiedAsymptoticLogic.framework_requires_bridge",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 42,
+     "nome": "UnifiedAsymptoticLogic.approximate_to_exact",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 51,
+     "nome": "UnifiedAsymptoticLogic.ns_regularization_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 59,
+     "nome": "UnifiedAsymptoticLogic.rh_stability_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 67,
+     "nome": "UnifiedAsymptoticLogic.pnp_exactification_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 76,
+     "nome": "UnifiedAsymptoticLogic.contradiction_certificate",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 83,
+     "nome": "UnifiedAsymptoticLogic.nonunification_guard",
+     "status": "fechado",
+     "axioms": []
+    }
+   ],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -65,7 +3067,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 18.2,
+   "build_seconds": 19.2,
    "build_error": "error: ././././MillenniumAudit/HypothesesComplete_v3.lean:58:4: linarith failed to find a contradiction | error: Lean exited with code 1 | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -619,6 +3621,398 @@
    "note": "",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 22,
+     "nome": "MillenniumAudit.Core.I_reg_eq_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 28,
+     "nome": "MillenniumAudit.Core.I_pos",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 31,
+     "nome": "MillenniumAudit.Core.I_idempotent",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 36,
+     "nome": "MillenniumAudit.Core.sqrt_five_gt_two",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 42,
+     "nome": "MillenniumAudit.Core.Phi_gt_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 46,
+     "nome": "MillenniumAudit.Core.Phi_pos",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 48,
+     "nome": "MillenniumAudit.Core.Phi_inv_sq_lt_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 58,
+     "nome": "MillenniumAudit.Core.damping_pos",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 62,
+     "nome": "MillenniumAudit.Core.damping_lt_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 82,
+     "nome": "MillenniumAudit.Core.U_example_eq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 85,
+     "nome": "MillenniumAudit.Core.U_pos",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 100,
+     "nome": "MillenniumAudit.Core.N7_component_zero",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 103,
+     "nome": "MillenniumAudit.Core.N7_bounded",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 116,
+     "nome": "MillenniumAudit.Core.P_Lambda_idempotent",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 120,
+     "nome": "MillenniumAudit.Core.P_Lambda_bounded",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 131,
+     "nome": "MillenniumAudit.Core.R_plus_P_eq_u",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 135,
+     "nome": "MillenniumAudit.Core.R_Lambda_small_when_bounded",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 139,
+     "nome": "MillenniumAudit.Core.barrier_conditional",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 143,
+     "nome": "MillenniumAudit.Core.N7_controls_component_zero",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 150,
+     "nome": "MillenniumAudit.Core.N7_controls_residue_closed",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 183,
+     "nome": "MillenniumAudit.Conditional.navier_stokes_conditional",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 202,
+     "nome": "MillenniumAudit.Conditional.problem_conditional",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean",
+     "linha": 230,
+     "nome": "MillenniumAudit.Conditional.final_unification_conditional",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/Core.lean",
+     "linha": 46,
+     "nome": "MillenniumAudit.Bridge.apply",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/G1Audit.lean",
+     "linha": 37,
+     "nome": "MillenniumAudit.G1Audit.closed_depletion_implies_decay",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/G1Audit.lean",
+     "linha": 58,
+     "nome": "MillenniumAudit.G1Audit.cubic_rhs_not_uniform_decay",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/G1Audit.lean",
+     "linha": 75,
+     "nome": "MillenniumAudit.G1Audit.endpoint_from_G1",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean",
+     "linha": 75,
+     "nome": "MillenniumAudit.G1Star.exists_uniform_C",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean",
+     "linha": 95,
+     "nome": "MillenniumAudit.G1Star.rhoStar_scale",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean",
+     "linha": 121,
+     "nome": "MillenniumAudit.G1Star.conditional_global_regularity",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean",
+     "linha": 44,
+     "nome": "G1HypothesesV3.bulk_tail_to_depletion",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean",
+     "linha": 91,
+     "nome": "G1HypothesesV3.joint_law_and_tail_conditional_G1",
+     "status": "aberto-sorry",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/Millennium/BSD.lean",
+     "linha": 9,
+     "nome": "MillenniumAudit.Millennium.BSD.conditional",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MillenniumAudit/Core.olean' of module MillenniumAudit.Core does not exist"
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/Millennium/Hodge.lean",
+     "linha": 9,
+     "nome": "MillenniumAudit.Millennium.Hodge.conditional",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MillenniumAudit/Core.olean' of module MillenniumAudit.Core does not exist"
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/Millennium/NavierStokes.lean",
+     "linha": 22,
+     "nome": "MillenniumAudit.Millennium.NavierStokes.conditional_global_regularity",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MillenniumAudit/Core.olean' of module MillenniumAudit.Core does not exist"
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/Millennium/Poincare.lean",
+     "linha": 7,
+     "nome": "MillenniumAudit.Millennium.Poincare.mapped_status",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MillenniumAudit/Core.olean' of module MillenniumAudit.Core does not exist"
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/Millennium/PvsNP.lean",
+     "linha": 9,
+     "nome": "MillenniumAudit.Millennium.PvsNP.conditional",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MillenniumAudit/Core.olean' of module MillenniumAudit.Core does not exist"
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/Millennium/Riemann.lean",
+     "linha": 9,
+     "nome": "MillenniumAudit.Millennium.Riemann.conditional",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MillenniumAudit/Core.olean' of module MillenniumAudit.Core does not exist"
+    },
+    {
+     "arquivo": "formal/millennium/lean/MillenniumAudit/Millennium/YangMills.lean",
+     "linha": 9,
+     "nome": "MillenniumAudit.Millennium.YangMills.conditional",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MillenniumAudit/Core.olean' of module MillenniumAudit.Core does not exist"
+    }
+   ],
+   "preenchimento": [],
    "summary": {
     "fechado": 50,
     "aberto-sorry": 0,
@@ -632,7 +4026,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.8,
+   "build_seconds": 22.5,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -694,6 +4088,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -707,7 +4104,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": false,
-   "build_seconds": 22.0,
+   "build_seconds": 22.9,
    "build_error": "error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": true,
@@ -1869,6 +5266,305 @@
    "note": "RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e compilou o que foi possível (erros restantes: error: CriticalBarrier/ResolutionDynamics.lean:1:0: unknown module prefix 'Mathlib' | error: CriticalBarrier/EndpointInterfaces.lean:41:10: Constructor field `epsilon` of `CriticalBarrier.EndpointInterfaces.EpsilonCoercive.mk` contains universe level metavariables at the expression)",
    "corrections": [],
    "lakefile_gerado": "import Lake\nopen Lake DSL\n\npackage mveiReconstruido\n\n@[default_target] lean_lib MveiReconstruido where\n  srcDir := \".\"\n  globs := #[.submodules `CriticalBarrier, .one `GapCollapseAudit, .one `IndeterminateParameterCompletion, .one `UnifiedAsymptoticLogic]\n",
+   "avulso": false,
+   "salvage": [
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+     "linha": 107,
+     "nome": "CriticalBarrierClayTarget.C_error_eq",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+     "linha": 111,
+     "nome": "CriticalBarrierClayTarget.homogeneous_decay_rate_test",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+     "linha": 116,
+     "nome": "CriticalBarrierClayTarget.cstar_test",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+     "linha": 120,
+     "nome": "CriticalBarrierClayTarget.target_chain_is_explicit",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 12,
+     "nome": "CriticalBarrier.CriticalTail.l3_from_low_high",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 18,
+     "nome": "CriticalBarrier.CriticalTail.critical_tail_coercivity",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 36,
+     "nome": "CriticalBarrier.CriticalTail.shrinkingDefect_pos",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 39,
+     "nome": "CriticalBarrier.CriticalTail.growingCritical_ge_one",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 42,
+     "nome": "CriticalBarrier.CriticalTail.l2_l3_scaling_exponents",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 50,
+     "nome": "CriticalBarrier.CriticalTail.endpoint_from_critical_tail",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/EndpointInterfaces.lean",
+     "linha": 90,
+     "nome": "CriticalBarrier.EndpointInterfaces.GradedTolerance",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/EndpointInterfaces.lean",
+     "linha": 111,
+     "nome": "CriticalBarrier.EndpointInterfaces.ns_endpoint_from_bridges",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 17,
+     "nome": "CriticalBarrier.ResolutionDynamics.geometric_step",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 22,
+     "nome": "CriticalBarrier.ResolutionDynamics.coercive_bound",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 35,
+     "nome": "CriticalBarrier.ResolutionDynamics.contraction_coercivity_bound",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 46,
+     "nome": "CriticalBarrier.ResolutionDynamics.admissible_iterate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 61,
+     "nome": "CriticalBarrier.ResolutionDynamics.endpoint_from_native_control",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 71,
+     "nome": "CriticalBarrier.ResolutionDynamics.zero_defect_endpoint",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 84,
+     "nome": "CriticalBarrier.ResolutionDynamics.close_triangle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-sxplx24j/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 44,
+     "nome": "AuditCompletion.WeightedGap.weight_nonneg",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 64,
+     "nome": "AuditCompletion.ErrorDecomposition.contribution_nonneg",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 97,
+     "nome": "AuditCompletion.Tolerance.refl",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 100,
+     "nome": "AuditCompletion.Tolerance.symm",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 105,
+     "nome": "AuditCompletion.Tolerance.triangle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 115,
+     "nome": "AuditCompletion.Tolerance.epsilon_close_not_transitive",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 140,
+     "nome": "AuditCompletion.SemanticContext.dual_of_independence_bridge",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 177,
+     "nome": "AuditCompletion.open_bridge_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 179,
+     "nome": "AuditCompletion.conditional_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 180,
+     "nome": "AuditCompletion.inconsistent_spec_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 20,
+     "nome": "UnifiedAsymptoticLogic.bridge_compose",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 28,
+     "nome": "UnifiedAsymptoticLogic.six_bridges_required",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 36,
+     "nome": "UnifiedAsymptoticLogic.framework_requires_bridge",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 42,
+     "nome": "UnifiedAsymptoticLogic.approximate_to_exact",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 51,
+     "nome": "UnifiedAsymptoticLogic.ns_regularization_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 59,
+     "nome": "UnifiedAsymptoticLogic.rh_stability_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 67,
+     "nome": "UnifiedAsymptoticLogic.pnp_exactification_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 76,
+     "nome": "UnifiedAsymptoticLogic.contradiction_certificate",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 83,
+     "nome": "UnifiedAsymptoticLogic.nonunification_guard",
+     "status": "fechado",
+     "axioms": []
+    }
+   ],
+   "preenchimento": [],
    "summary": {
     "fechado": 149,
     "aberto-sorry": 0,
@@ -3272,6 +6968,328 @@
    "note": "RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././CriticalBarrier/EndpointInterfaces.lean:89:31: unexpected token '|'; expected term | error: ././././CriticalBarrier/EndpointInterfaces.lean:94:6: unexpected token '|'; expected term)",
    "corrections": [],
    "lakefile_gerado": "import Lake\nopen Lake DSL\n\npackage mveiReconstruido\n\nrequire mathlib from git\n  \"https://github.com/leanprover-community/mathlib4\" @ \"v4.19.0\"\n\n@[default_target] lean_lib MveiReconstruido where\n  srcDir := \".\"\n  globs := #[.submodules `CriticalBarrier, .one `GapCollapseAudit, .one `IndeterminateParameterCompletion, .one `UnifiedAsymptoticLogic]\n",
+   "avulso": false,
+   "salvage": [
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 12,
+     "nome": "CriticalBarrier.CriticalTail.l3_from_low_high",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 18,
+     "nome": "CriticalBarrier.CriticalTail.critical_tail_coercivity",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 36,
+     "nome": "CriticalBarrier.CriticalTail.shrinkingDefect_pos",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 39,
+     "nome": "CriticalBarrier.CriticalTail.growingCritical_ge_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 42,
+     "nome": "CriticalBarrier.CriticalTail.l2_l3_scaling_exponents",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 50,
+     "nome": "CriticalBarrier.CriticalTail.endpoint_from_critical_tail",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/EndpointInterfaces.lean",
+     "linha": 90,
+     "nome": "CriticalBarrier.EndpointInterfaces.GradedTolerance",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/EndpointInterfaces.lean",
+     "linha": 111,
+     "nome": "CriticalBarrier.EndpointInterfaces.ns_endpoint_from_bridges",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 17,
+     "nome": "CriticalBarrier.ResolutionDynamics.geometric_step",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 22,
+     "nome": "CriticalBarrier.ResolutionDynamics.coercive_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 35,
+     "nome": "CriticalBarrier.ResolutionDynamics.contraction_coercivity_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 46,
+     "nome": "CriticalBarrier.ResolutionDynamics.admissible_iterate",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 61,
+     "nome": "CriticalBarrier.ResolutionDynamics.endpoint_from_native_control",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 71,
+     "nome": "CriticalBarrier.ResolutionDynamics.zero_defect_endpoint",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 84,
+     "nome": "CriticalBarrier.ResolutionDynamics.close_triangle",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 44,
+     "nome": "AuditCompletion.WeightedGap.weight_nonneg",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 64,
+     "nome": "AuditCompletion.ErrorDecomposition.contribution_nonneg",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 97,
+     "nome": "AuditCompletion.Tolerance.refl",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 100,
+     "nome": "AuditCompletion.Tolerance.symm",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 105,
+     "nome": "AuditCompletion.Tolerance.triangle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 115,
+     "nome": "AuditCompletion.Tolerance.epsilon_close_not_transitive",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 140,
+     "nome": "AuditCompletion.SemanticContext.dual_of_independence_bridge",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 177,
+     "nome": "AuditCompletion.open_bridge_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 179,
+     "nome": "AuditCompletion.conditional_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 180,
+     "nome": "AuditCompletion.inconsistent_spec_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 20,
+     "nome": "UnifiedAsymptoticLogic.bridge_compose",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 28,
+     "nome": "UnifiedAsymptoticLogic.six_bridges_required",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 36,
+     "nome": "UnifiedAsymptoticLogic.framework_requires_bridge",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 42,
+     "nome": "UnifiedAsymptoticLogic.approximate_to_exact",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 51,
+     "nome": "UnifiedAsymptoticLogic.ns_regularization_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 59,
+     "nome": "UnifiedAsymptoticLogic.rh_stability_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 67,
+     "nome": "UnifiedAsymptoticLogic.pnp_exactification_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 76,
+     "nome": "UnifiedAsymptoticLogic.contradiction_certificate",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 83,
+     "nome": "UnifiedAsymptoticLogic.nonunification_guard",
+     "status": "fechado",
+     "axioms": []
+    }
+   ],
+   "preenchimento": [
+    {
+     "tipo": "axioma",
+     "nome": "CriticalBarrierClayTarget.B2_10_CRITICAL_L3_TARGET",
+     "enunciado": "CriticalBarrierClayTarget.FluidState → (ℝ → ℝ) → ℝ → Prop",
+     "resultado": "sem resultado",
+     "tatica": ""
+    },
+    {
+     "tipo": "axioma",
+     "nome": "CriticalBarrierClayTarget.Alignment_Bound_TARGET",
+     "enunciado": "∀ (st : CriticalBarrierClayTarget.FluidState),   0 < st.ν →     10 ≤ st.Λ →       CriticalBarrierClayTarget.HRepoRefinedTarget →         ∀ (alignment : ℝ), alignment ≤ 1 - CriticalBarrierClayTarget.deltaAlignment",
+     "resultado": "sem resultado",
+     "tatica": ""
+    },
+    {
+     "tipo": "axioma",
+     "nome": "CriticalBarrierClayTarget.B2_8_REFINED_TARGET",
+     "enunciado": "∀ (st : CriticalBarrierClayTarget.FluidState) (Pi : ℝ),   0 < st.ν →     10 ≤ st.Λ →       Pi ≤ CriticalBarrierClayTarget.kappa st.ν st.Λ * st.R + CriticalBarrierClayTarget.C_error * st.Λ ^ (-0.5) * st.R",
+     "resultado": "sem resultado",
+     "tatica": ""
+    },
+    {
+     "tipo": "axioma",
+     "nome": "CriticalBarrierClayTarget.B2_4_ENERGY_BALANCE_TARGET",
+     "enunciado": "CriticalBarrierClayTarget.FluidState → (ℝ → ℝ) → (ℝ → ℝ) → (ℝ → ℝ) → (ℝ → ℝ) → Prop",
+     "resultado": "sem resultado",
+     "tatica": ""
+    }
+   ],
    "summary": {
     "fechado": 165,
     "aberto-sorry": 0,
@@ -3285,7 +7303,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 16.8,
+   "build_seconds": 19.0,
    "build_error": "error: ././././MillenniumAudit/G1Audit.lean:46:2: dsimp made no progress | error: Lean exited with code 1 | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -4341,6 +8359,70 @@
    "note": "",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/G1Audit.lean",
+     "linha": 37,
+     "nome": "MillenniumAudit.G1Audit.closed_depletion_implies_decay",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/G1Audit.lean",
+     "linha": 58,
+     "nome": "MillenniumAudit.G1Audit.cubic_rhs_not_uniform_decay",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/G1Audit.lean",
+     "linha": 75,
+     "nome": "MillenniumAudit.G1Audit.endpoint_from_G1",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean",
+     "linha": 75,
+     "nome": "MillenniumAudit.G1Star.exists_uniform_C",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean",
+     "linha": 95,
+     "nome": "MillenniumAudit.G1Star.rhoStar_scale",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean",
+     "linha": 121,
+     "nome": "MillenniumAudit.G1Star.conditional_global_regularity",
+     "status": "fechado",
+     "axioms": []
+    }
+   ],
+   "preenchimento": [],
    "summary": {
     "fechado": 128,
     "aberto-sorry": 0,
@@ -4354,7 +8436,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 21.6,
+   "build_seconds": 15.0,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -5139,6 +9221,9 @@
    "note": "",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 71,
     "aberto-sorry": 0,
@@ -5152,7 +9237,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": false,
-   "build_seconds": 22.1,
+   "build_seconds": 22.3,
    "build_error": "error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": true,
@@ -6314,6 +10399,305 @@
    "note": "RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e compilou o que foi possível (erros restantes: error: CriticalBarrier/ResolutionDynamics.lean:1:0: unknown module prefix 'Mathlib' | error: CriticalBarrier/EndpointInterfaces.lean:41:10: Constructor field `epsilon` of `CriticalBarrier.EndpointInterfaces.EpsilonCoercive.mk` contains universe level metavariables at the expression)",
    "corrections": [],
    "lakefile_gerado": "import Lake\nopen Lake DSL\n\npackage mveiReconstruido\n\n@[default_target] lean_lib MveiReconstruido where\n  srcDir := \".\"\n  globs := #[.submodules `CriticalBarrier, .one `GapCollapseAudit, .one `IndeterminateParameterCompletion, .one `UnifiedAsymptoticLogic]\n",
+   "avulso": false,
+   "salvage": [
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+     "linha": 107,
+     "nome": "CriticalBarrierClayTarget.C_error_eq",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+     "linha": 111,
+     "nome": "CriticalBarrierClayTarget.homogeneous_decay_rate_test",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+     "linha": 116,
+     "nome": "CriticalBarrierClayTarget.cstar_test",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+     "linha": 120,
+     "nome": "CriticalBarrierClayTarget.target_chain_is_explicit",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 12,
+     "nome": "CriticalBarrier.CriticalTail.l3_from_low_high",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 18,
+     "nome": "CriticalBarrier.CriticalTail.critical_tail_coercivity",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 36,
+     "nome": "CriticalBarrier.CriticalTail.shrinkingDefect_pos",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 39,
+     "nome": "CriticalBarrier.CriticalTail.growingCritical_ge_one",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 42,
+     "nome": "CriticalBarrier.CriticalTail.l2_l3_scaling_exponents",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 50,
+     "nome": "CriticalBarrier.CriticalTail.endpoint_from_critical_tail",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/EndpointInterfaces.lean",
+     "linha": 90,
+     "nome": "CriticalBarrier.EndpointInterfaces.GradedTolerance",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/EndpointInterfaces.lean",
+     "linha": 111,
+     "nome": "CriticalBarrier.EndpointInterfaces.ns_endpoint_from_bridges",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 17,
+     "nome": "CriticalBarrier.ResolutionDynamics.geometric_step",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 22,
+     "nome": "CriticalBarrier.ResolutionDynamics.coercive_bound",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 35,
+     "nome": "CriticalBarrier.ResolutionDynamics.contraction_coercivity_bound",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 46,
+     "nome": "CriticalBarrier.ResolutionDynamics.admissible_iterate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 61,
+     "nome": "CriticalBarrier.ResolutionDynamics.endpoint_from_native_control",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 71,
+     "nome": "CriticalBarrier.ResolutionDynamics.zero_defect_endpoint",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean",
+     "linha": 84,
+     "nome": "CriticalBarrier.ResolutionDynamics.close_triangle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'Mathlib' No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries: /tmp/mvei-rec-kjug4k45/p/.lake/build/lib/lean /mnt/w/elan/toolchains/leanprover--lean4---v4.3"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 44,
+     "nome": "AuditCompletion.WeightedGap.weight_nonneg",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 64,
+     "nome": "AuditCompletion.ErrorDecomposition.contribution_nonneg",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 97,
+     "nome": "AuditCompletion.Tolerance.refl",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 100,
+     "nome": "AuditCompletion.Tolerance.symm",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 105,
+     "nome": "AuditCompletion.Tolerance.triangle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 115,
+     "nome": "AuditCompletion.Tolerance.epsilon_close_not_transitive",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 140,
+     "nome": "AuditCompletion.SemanticContext.dual_of_independence_bridge",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 177,
+     "nome": "AuditCompletion.open_bridge_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 179,
+     "nome": "AuditCompletion.conditional_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean",
+     "linha": 180,
+     "nome": "AuditCompletion.inconsistent_spec_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "o Lean não chegou ao fim do arquivo"
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 20,
+     "nome": "UnifiedAsymptoticLogic.bridge_compose",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 28,
+     "nome": "UnifiedAsymptoticLogic.six_bridges_required",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 36,
+     "nome": "UnifiedAsymptoticLogic.framework_requires_bridge",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 42,
+     "nome": "UnifiedAsymptoticLogic.approximate_to_exact",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 51,
+     "nome": "UnifiedAsymptoticLogic.ns_regularization_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 59,
+     "nome": "UnifiedAsymptoticLogic.rh_stability_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 67,
+     "nome": "UnifiedAsymptoticLogic.pnp_exactification_route",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 76,
+     "nome": "UnifiedAsymptoticLogic.contradiction_certificate",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/UnifiedAsymptoticLogic.lean",
+     "linha": 83,
+     "nome": "UnifiedAsymptoticLogic.nonunification_guard",
+     "status": "fechado",
+     "axioms": []
+    }
+   ],
+   "preenchimento": [],
    "summary": {
     "fechado": 149,
     "aberto-sorry": 0,
@@ -6327,7 +10711,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 19.0,
+   "build_seconds": 16.6,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -7471,6 +11855,9 @@
    "note": "",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 136,
     "aberto-sorry": 0,
@@ -7484,7 +11871,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.5,
+   "build_seconds": 23.0,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -7546,6 +11933,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -7559,7 +11949,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.5,
+   "build_seconds": 22.9,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -7621,6 +12011,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -7634,7 +12027,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.4,
+   "build_seconds": 23.0,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -7696,6 +12089,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -7709,7 +12105,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.0,
+   "build_seconds": 21.9,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -7771,6 +12167,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -7784,7 +12183,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.6,
+   "build_seconds": 21.5,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -7846,6 +12245,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -7859,7 +12261,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.5,
+   "build_seconds": 21.7,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | file: CriticalBarrier.lean | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -7921,6 +12323,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -7934,7 +12339,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.4,
+   "build_seconds": 22.9,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -7996,6 +12401,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -8009,7 +12417,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.5,
+   "build_seconds": 22.3,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -8071,6 +12479,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -8146,6 +12557,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -8159,7 +12573,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.9,
+   "build_seconds": 22.1,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -8221,6 +12635,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -8234,7 +12651,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.9,
+   "build_seconds": 22.6,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -8296,6 +12713,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -8309,7 +12729,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.4,
+   "build_seconds": 22.1,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -8371,6 +12791,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -8384,7 +12807,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.8,
+   "build_seconds": 21.7,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -8446,6 +12869,9 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -8455,81 +12881,6 @@
   {
    "repo": "navier-stokes-critical-barrier-audit",
    "path": "preservation/branch-snapshots/copilot_task-219265797-1361927617-c6bfd6e0-3c0d-429b-a267-9cea34423468/formal/lean",
-   "toolchain": "leanprover/lean4:stable",
-   "toolchain_used": "leanprover/lean4:stable",
-   "needs_mathlib": false,
-   "build_ok": true,
-   "build_seconds": 21.8,
-   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
-   "sorry_warnings": 0,
-   "reconstructed": false,
-   "bridges": [],
-   "declared_axioms": [
-    {
-     "name": "CriticalBarrier.admissible_concentration_window",
-     "module": "CriticalBarrier.Concentration",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.audit_pipeline_loaded",
-     "module": "CriticalBarrier.Audit",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
-     "module": "CriticalBarrier.Barrier",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.energy_scaling_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_blowup_alternative",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_endpoint_classical",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.finite_energy_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.l3_scale_invariant",
-     "module": "CriticalBarrier.Scaling",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.pressure_poisson_compatibility",
-     "module": "CriticalBarrier.Pressure",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
-     "module": "CriticalBarrier.Forcing",
-     "statement": "Prop"
-    }
-   ],
-   "theorems": [],
-   "integrity": [],
-   "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
-   "corrections": [],
-   "lakefile_gerado": "",
-   "summary": {
-    "fechado": 0,
-    "aberto-sorry": 0,
-    "condicional": 0
-   }
-  },
-  {
-   "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_update-reference-section/formal/lean",
    "toolchain": "leanprover/lean4:stable",
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
@@ -8596,6 +12947,87 @@
    "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
+   "summary": {
+    "fechado": 0,
+    "aberto-sorry": 0,
+    "condicional": 0
+   }
+  },
+  {
+   "repo": "navier-stokes-critical-barrier-audit",
+   "path": "preservation/branch-snapshots/copilot_update-reference-section/formal/lean",
+   "toolchain": "leanprover/lean4:stable",
+   "toolchain_used": "leanprover/lean4:stable",
+   "needs_mathlib": false,
+   "build_ok": true,
+   "build_seconds": 22.3,
+   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
+   "sorry_warnings": 0,
+   "reconstructed": false,
+   "bridges": [],
+   "declared_axioms": [
+    {
+     "name": "CriticalBarrier.admissible_concentration_window",
+     "module": "CriticalBarrier.Concentration",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.audit_pipeline_loaded",
+     "module": "CriticalBarrier.Audit",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
+     "module": "CriticalBarrier.Barrier",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.energy_scaling_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_blowup_alternative",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_endpoint_classical",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.finite_energy_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.l3_scale_invariant",
+     "module": "CriticalBarrier.Scaling",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.pressure_poisson_compatibility",
+     "module": "CriticalBarrier.Pressure",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
+     "module": "CriticalBarrier.Forcing",
+     "statement": "Prop"
+    }
+   ],
+   "theorems": [],
+   "integrity": [],
+   "note": "MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "corrections": [],
+   "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,
@@ -8609,7 +13041,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 12.4,
+   "build_seconds": 11.6,
    "build_error": "error: ././././MillenniumAudit/StabilizedHypothetical.lean:77:30: linarith failed to find a contradiction | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:25: don't know how to synthesize implicit argument 'α' | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:29: don't know how to synthesize implicit argument | error: ././././MillenniumAudit/StabilizedHypothetical.lean:81:7: don't know how to synthesize implicit argument 'α'",
    "sorry_warnings": 2,
    "reconstructed": false,
@@ -8617,11 +13049,438 @@
    "declared_axioms": [],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para antes do comentário de módulo em 6 arquivo(s). leitura de axiomas: nenhum módulo compilado encontrado",
+   "note": "CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para o início (antes de comentários de módulo ou de documentação) em 6 arquivo(s). leitura de axiomas: nenhum módulo compilado encontrado",
    "corrections": [
     "imports-no-topo"
    ],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 29,
+     "nome": "MillenniumAudit.G1KAdmissible.K0a_regularizedAmplitude_ge",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 37,
+     "nome": "MillenniumAudit.G1KAdmissible.K0a_regularizedAmplitude_nonneg",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 51,
+     "nome": "MillenniumAudit.G1KAdmissible.K0b_degenerate_branch",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 57,
+     "nome": "MillenniumAudit.G1KAdmissible.K1a_chebyshev_superlevel_arithmetic",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 70,
+     "nome": "MillenniumAudit.G1KAdmissible.K1b_weighted_gradient_budget",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 90,
+     "nome": "MillenniumAudit.G1KAdmissible.K1c_liminf_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 108,
+     "nome": "MillenniumAudit.G1KAdmissible.G1a1_sum_six_term_bounds",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 121,
+     "nome": "MillenniumAudit.G1KAdmissible.G1a5_expansive_mode_detected",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ],
+     "preenchimento": {
+      "resultado": "demonstrável",
+      "tatica": "first | (rfl) | (decide) | (trivial) | (simp) | (omega) | (simp_all) | (exact fun _ => trivial) | (norm_num) | (linarith) | (positivity) | (ring) | (tauto) | (aesop) | (nlinarith)"
+     }
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 139,
+     "nome": "MillenniumAudit.G1KAdmissible.G1a2_joint_evolution",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 177,
+     "nome": "MillenniumAudit.G1KAdmissible.G1bc_bulk_tail_to_signed_depletion",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 196,
+     "nome": "MillenniumAudit.G1KAdmissible.G1b2_total_absorption_budget",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 216,
+     "nome": "MillenniumAudit.G1KAdmissible.G1b3_leray_budget",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 231,
+     "nome": "MillenniumAudit.G1KAdmissible.G1d2_energy_controls_time_coefficient",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 253,
+     "nome": "MillenniumAudit.G1KAdmissible.G2a_enstrophy_differential",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 272,
+     "nome": "MillenniumAudit.G1KAdmissible.G2b_uniform_enstrophy",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 291,
+     "nome": "MillenniumAudit.G1KAdmissible.G3_critical_bound",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 302,
+     "nome": "MillenniumAudit.G1KAdmissible.G4_apply_endpoint",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 314,
+     "nome": "MillenniumAudit.G1KAdmissible.F_conditional_global_regularity",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/HypothesesComplete_v3.lean",
+     "linha": 44,
+     "nome": "G1HypothesesV3.bulk_tail_to_depletion",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/HypothesesComplete_v3.lean",
+     "linha": 91,
+     "nome": "G1HypothesesV3.joint_law_and_tail_conditional_G1",
+     "status": "aberto-sorry",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 32,
+     "nome": "MillenniumAudit.StabilizedHypothetical.viscosity_positive",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 35,
+     "nome": "MillenniumAudit.StabilizedHypothetical.kappa_positive",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 38,
+     "nome": "MillenniumAudit.StabilizedHypothetical.epsilon_positive",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 41,
+     "nome": "MillenniumAudit.StabilizedHypothetical.tail_budget_positive",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 44,
+     "nome": "MillenniumAudit.StabilizedHypothetical.gamma_strict",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 47,
+     "nome": "MillenniumAudit.StabilizedHypothetical.theta_exact",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 50,
+     "nome": "MillenniumAudit.StabilizedHypothetical.theta_strict",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 54,
+     "nome": "MillenniumAudit.StabilizedHypothetical.energy_dissipation_budget",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 57,
+     "nome": "MillenniumAudit.StabilizedHypothetical.time_coefficient_budget",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 61,
+     "nome": "MillenniumAudit.StabilizedHypothetical.dissipative_margin",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 65,
+     "nome": "MillenniumAudit.StabilizedHypothetical.empirical_eta_budget",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 73,
+     "nome": "MillenniumAudit.StabilizedHypothetical.K0a_totality",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 84,
+     "nome": "MillenniumAudit.StabilizedHypothetical.K0b_degenerate_trivial",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 141,
+     "nome": "MillenniumAudit.StabilizedHypothetical.G1a5_expansive_example",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 159,
+     "nome": "MillenniumAudit.StabilizedHypothetical.G1b_total_strict",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 195,
+     "nome": "MillenniumAudit.StabilizedHypothetical.G1d2_time_integral_bound",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 245,
+     "nome": "MillenniumAudit.StabilizedHypothetical.G2_differential",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean",
+     "linha": 296,
+     "nome": "MillenniumAudit.StabilizedHypothetical.Perelman_like_22_25_3_1",
+     "status": "aberto-sorry",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/PerelmanLikeStabilizationSpec.lean",
+     "linha": 73,
+     "nome": "MillenniumAudit.PerelmanLikeNS.signedDepletion_to_differential",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "preservation/session-scratch-20260913/PerelmanLikeStabilizationSpec.lean",
+     "linha": 115,
+     "nome": "MillenniumAudit.PerelmanLikeNS.F_of_complete_stabilization",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    }
+   ],
+   "preenchimento": [],
    "summary": {
     "fechado": 0,
     "aberto-sorry": 0,

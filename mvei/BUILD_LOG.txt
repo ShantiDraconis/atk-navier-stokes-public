@@ -1,15 +1,15 @@
-MVEI — log consolidado da verificação (2026-10-28T13:47:17+00:00)
+MVEI — log consolidado da verificação (2026-10-28T16:41:02+00:00)
 Os logs completos de cada compilação no GitHub ficam na página da execução do workflow (Actions).
 
 == navier-stokes-critical-barrier-audit/.  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
    correções do MVEI: imports-no-topo
-   nota: CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para antes do comentário de módulo em 6 arquivo(s). leitura de axiomas: nenhum módulo compilado encontrado
+   nota: CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para o início (antes de comentários de módulo ou de documentação) em 6 arquivo(s). leitura de axiomas: nenhum módulo compilado encontrado
    erro: error: ././././MillenniumAudit/StabilizedHypothetical.lean:77:30: linarith failed to find a contradiction | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:25: don't know how to synthesize implicit argument 'α' | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:29: don't know how to synthesize implicit argument | error: ././././MillenniumAudit/StabilizedHypothetical.lean:81:7: don't know how to synthesize implicit argument 'α'
 
 == navier-stokes-critical-barrier-audit/formal/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
-   nota: leitura de axiomas: nenhum módulo compilado encontrado
+   nota: a configuração original não compila; o MVEI reconstruiu o lakefile com o Mathlib v4.19.0, mas o código também não compila: error: no such file or directory (error code: 2) | error: build failed
    erro: error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/formal/millennium/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
@@ -124,6 +124,6 @@ Os logs completos de cada compilação no GitHub ficam na página da execução 
 == navier-stokes-critical-barrier-audit/preservation/session-scratch-20260913  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
    correções do MVEI: imports-no-topo
-   nota: CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para antes do comentário de módulo em 6 arquivo(s). leitura de axiomas: nenhum módulo compilado encontrado
+   nota: CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para o início (antes de comentários de módulo ou de documentação) em 6 arquivo(s). leitura de axiomas: nenhum módulo compilado encontrado
    erro: error: ././././MillenniumAudit/StabilizedHypothetical.lean:77:30: linarith failed to find a contradiction | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:25: don't know how to synthesize implicit argument 'α' | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:29: don't know how to synthesize implicit argument | error: ././././MillenniumAudit/StabilizedHypothetical.lean:81:7: don't know how to synthesize implicit argument 'α'
 

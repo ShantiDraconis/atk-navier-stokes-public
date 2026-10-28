@@ -1,0 +1,4 @@
+import MillenniumAudit.G1Audit
+
+#print axioms MillenniumAudit.G1Audit.closed_depletion_implies_decay
+#print axioms MillenniumAudit.G1Audit.endpoint_from_G1

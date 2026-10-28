@@ -1,0 +1,13 @@
+{
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "source_commit": "3904224e49f7b2256d56ce19a5e11e7ddc93f524",
+ "source_commit_date": "2026-10-07T22:45:16Z",
+ "files": 385,
+ "lean_files": 312,
+ "verified_commit": "3904224e49f7b2256d56ce19a5e11e7ddc93f524",
+ "verification_generated_at": "2026-10-28T13:47:17+00:00",
+ "lean_files_added_after_verified_commit": [],
+ "lean_files_changed_after_verified_commit": [],
+ "published_at": "2026-10-28T15:22:45Z",
+ "published_by": "MVEI tools/publicar_espelhos.py"
+}

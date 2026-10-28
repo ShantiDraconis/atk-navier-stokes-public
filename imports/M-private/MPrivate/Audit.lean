@@ -1,0 +1,48 @@
+import MPrivate.NS.ThirdCoefficient.ScalingClassifier
+import MPrivate.NS.ThirdCoefficient.CriticalLpFamily
+import MPrivate.NS.ThirdCoefficient.StrainL3EnergyBudgetNoGo
+import MPrivate.NS.ThirdCoefficient.SignedStretchingCandidate
+import MPrivate.NS.ThirdCoefficient.SpectralSignedStretching
+import MPrivate.NS.ThirdCoefficient.AlignmentDepletionCandidate
+import MPrivate.NS.ThirdCoefficient.AlignmentDepletionInequality
+import MPrivate.NS.ThirdCoefficient.T3SignedAssembly
+import MPrivate.NS.ThirdCoefficient.CrossTermYoungAbsorption
+import MPrivate.NS.ThirdCoefficient.AlignmentBarrierGain
+import MPrivate.NS.ThirdCoefficient.ViscosityMarginAccounting
+import MPrivate.NS.ThirdCoefficient.EightTermSignedGrouping
+import MPrivate.NS.ThirdCoefficient.SixBlockScaling
+import MPrivate.NS.ThirdCoefficient.LowDirectAbsorptionNoGo
+import MPrivate.NS.ThirdCoefficient.DirectionalCoherenceNoGo
+import MPrivate.NS.ThirdCoefficient.JointAlignmentCandidate
+import MPrivate.NS.ThirdCoefficient.AmplitudeInvariantFixedDeltaNoGo
+import MPrivate.NS.ThirdCoefficient.WeightedTailZeroDenominatorNoGo
+import MPrivate.NS.ThirdCoefficient.LowVelocitySobolevBernstein
+import MPrivate.NS.PostG1.DirectCriticalReconstruction
+
+-- These commands expose theorem dependencies in CI/build logs.
+#print axioms MPrivate.NS.ThirdCoefficient.critical_coefficient_matches_stretching
+#print axioms MPrivate.NS.ThirdCoefficient.criticalQ_identity
+#print axioms MPrivate.NS.ThirdCoefficient.no_positive_universal_constant_for_L2_budget
+#print axioms MPrivate.NS.ThirdCoefficient.no_budget_of_scaling_to_arbitrarily_small_values
+#print axioms MPrivate.NS.ThirdCoefficient.density_decomposition
+#print axioms MPrivate.NS.ThirdCoefficient.spectral_signed_expansion
+#print axioms MPrivate.NS.ThirdCoefficient.aligned_signed_split
+#print axioms MPrivate.NS.ThirdCoefficient.scalar_eq_pos_sub_neg
+#print axioms MPrivate.NS.ThirdCoefficient.decomposedA3_nonneg
+#print axioms MPrivate.NS.ThirdCoefficient.assemble_signed_T3
+#print axioms MPrivate.NS.ThirdCoefficient.young_product_absorption
+#print axioms MPrivate.NS.ThirdCoefficient.cross_absorbed_if_square_le_Z
+#print axioms MPrivate.NS.ThirdCoefficient.positive_defect_preserves_old_barrier
+#print axioms MPrivate.NS.ThirdCoefficient.assemble_T3_with_full_absorption_accounting
+#print axioms MPrivate.NS.ThirdCoefficient.eight_terms_equal_six_signed_blocks
+#print axioms MPrivate.NS.ThirdCoefficient.integratedBlock_scales_degree_three
+#print axioms MPrivate.NS.ThirdCoefficient.no_universal_low_absorption_from_upper_bounds
+#print axioms MPrivate.NS.ThirdCoefficient.direction_only_coherence_not_signed_depletion
+#print axioms MPrivate.NS.ThirdCoefficient.jointAlignment_zero_forces_both_zero
+#print axioms MPrivate.NS.ThirdCoefficient.exists_amplitude_violating_fixed_delta
+#print axioms MPrivate.NS.ThirdCoefficient.zero_ratio_does_not_imply_zero_numerator
+#print axioms MPrivate.NS.ThirdCoefficient.low_velocity_square_le_cutoff_times_gradient
+#print axioms MPrivate.NS.ThirdCoefficient.low_velocity_square_energy_gain_from_bernstein_sobolev
+#print axioms MPrivate.NS.ThirdCoefficient.uniform_cross_budget_from_bernstein_sobolev
+#print axioms MPrivate.NS.PostG1.interpolation_sobolev_to_squared_L3
+#print axioms MPrivate.NS.PostG1.energy_enstrophy_to_uniform_squared_L3

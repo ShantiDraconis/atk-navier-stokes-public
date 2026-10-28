@@ -15,3 +15,9 @@ Do not add confidential data or third-party code without checking its license an
 
 [`imports/navier-stokes-critical-barrier-audit/`](imports/navier-stokes-critical-barrier-audit/) holds the Lean sources of `ShantiDraconis/navier-stokes-critical-barrier-audit` at commit `3904224` (2026-10-07): 385 files. In the MVEI verification the Lean kernel closed 1 156 theorems here (251 unique, without the lemmas Lean generates itself), with 2 conditional and 9 open (`sorry`). A closed theorem proves the statement written in the file; it is not a claim that an open problem is solved. Statements, axioms, the build log and how to reproduce: [`mvei/README.md`](mvei/README.md).
 <!-- mvei:end -->
+
+<!-- mvei-extra:start -->
+## Other repositories published here
+
+* [`imports/M-private/`](imports/M-private/) — Lean sources of `ShantiDraconis/M-private` at commit `ae69c0d` (2026-09-15): 94 files; the Lean kernel closed 813 theorems (269 unique, without auto-generated lemmas), 0 conditional, 0 open. Details: [`mvei/M-private/README.md`](mvei/M-private/README.md).
+<!-- mvei-extra:end -->

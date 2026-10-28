@@ -1,0 +1,11 @@
+--- a/MPrivate/NS/ThirdCoefficient/K1BridgeMatrix.lean
++++ b/MPrivate/NS/ThirdCoefficient/K1BridgeMatrix.lean
+@@ -86,7 +86,7 @@
+ the extra tightness obligation separated from K1a--K1f. -/
+ theorem k1BridgeMatrix_has_seven_rows :
+     k1BridgeMatrix.length = 7 := by
+-  native_decide
++  decide
+ 
+ /-- All currently encoded historical K1 obligations remain marked open. -/
+ theorem k1BridgeMatrix_all_open :

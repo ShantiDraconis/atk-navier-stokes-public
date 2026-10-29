@@ -1,0 +1,4 @@
+21f9ba794275a71f54a39c851035c4906fa60841d10187352769e0504fc985a8  branches/navier-stokes-critical-barrier-audit/atk_k1a-xieps-exact-derivative/formal/G1/XiEpsExactAlgebra.lean
+b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526  branches/navier-stokes-critical-barrier-audit/atk_k1a-xieps-exact-derivative/lake-manifest.json
+1e6a21f0c490cf4d081764648d0473d217ddc48eb0755224aadf84a6bf0d3b1e  branches/navier-stokes-critical-barrier-audit/atk_k1a-xieps-exact-derivative/lakefile.toml
+ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87  branches/navier-stokes-critical-barrier-audit/atk_k1a-xieps-exact-derivative/lean-toolchain

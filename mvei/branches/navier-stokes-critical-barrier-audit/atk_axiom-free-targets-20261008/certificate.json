@@ -1,0 +1,193 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "atk/axiom-free-targets-20261008",
+ "branch_state": "parada",
+ "head_commit": "5c960d9c4a0c1e292870c5afdf3d6f20fbdfbc9d",
+ "head_commit_date": "2026-10-08T23:20:01+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "5c960d9c4a0c1e292870c5afdf3d6f20fbdfbc9d",
+   "date": "2026-10-08T23:20:01+01:00",
+   "subject": "Finish the vector computations (vecHead/vecTail) and fix comment before attribute"
+  },
+  {
+   "commit": "bff91a6a6b2a9a95a865f32f7d3ca20f876f2fe4",
+   "date": "2026-10-08T23:15:53+01:00",
+   "subject": "CI: emit full error context (14 lines after each error:) as annotations"
+  },
+  {
+   "commit": "7862a3b2bb026c7c5a7c3c99b05647196cbc022b",
+   "date": "2026-10-08T23:15:37+01:00",
+   "subject": "Make the Lean/ target files' proofs explicit; fix matrix norm; better CI diagnostics"
+  },
+  {
+   "commit": "ce869ff74d6f9677dcfbeea304eb86ce8fcd46b9",
+   "date": "2026-10-08T23:10:39+01:00",
+   "subject": "Make the three Lean/ target files elaborate (they never compiled, original included)"
+  },
+  {
+   "commit": "d76f5087bb705757405c524153ec13324dc3e4ed",
+   "date": "2026-10-08T23:03:57+01:00",
+   "subject": "CI: emit compile and axiom results as annotations; evidence push is best-effort"
+  },
+  {
+   "commit": "bc945d8a6c2e291710d95aff2c2dc76865dafaaa",
+   "date": "2026-10-08T23:00:04+01:00",
+   "subject": "CI: run compile step without bash -e (grep on files without a namespace aborted it)"
+  },
+  {
+   "commit": "4156f6ee5ede1edf763648078029ebcb0e159ab3",
+   "date": "2026-10-08T22:42:23+01:00",
+   "subject": "Remove all global axioms from the TARGET files; refute the five false ones"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-29T05:36:17+00:00",
+  "lean": [
+   "leanprover/lean4:stable",
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "B2_10_statement_vacuous",
+   "file": "Lean/Millennium/CompleteClosure_Targets.lean",
+   "line": 80,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": B2_10_statement"
+  },
+  {
+   "name": "B2_8_statement_false",
+   "file": "Lean/Millennium/CompleteClosure_Targets.lean",
+   "line": 70,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ B2_8_statement"
+  },
+  {
+   "name": "BSD_statement_vacuous",
+   "file": "Lean/Millennium/CompleteClosure_Targets.lean",
+   "line": 95,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": BSD_statement"
+  },
+  {
+   "name": "CriticalBarrierClayTarget.Alignment_Bound_statement_false",
+   "file": "formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+   "line": 81,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ Alignment_Bound_statement"
+  },
+  {
+   "name": "CriticalBarrierClayTarget.B2_8_REFINED_statement_false",
+   "file": "formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean",
+   "line": 94,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ B2_8_REFINED_statement"
+  },
+  {
+   "name": "HODGE_statement_vacuous",
+   "file": "Lean/Millennium/CompleteClosure_Targets.lean",
+   "line": 96,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": HODGE_statement"
+  },
+  {
+   "name": "NSB2.B2_8_lower_bound_statement_false",
+   "file": "Lean/NavierStokes/B2/B2_8_LowerBound_Template.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ B2_8_lower_bound_statement"
+  },
+  {
+   "name": "NSB2.B2_8_upper_flux_control_statement_false",
+   "file": "Lean/NavierStokes/B2/B2_8_LowerBound_Template.lean",
+   "line": 86,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ B2_8_upper_flux_control_statement"
+  },
+  {
+   "name": "Pi_u1",
+   "file": "Lean/Millennium/CompleteClosure_Targets.lean",
+   "line": 30,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Pi_Lambda S_divFree u1 = -1"
+  },
+  {
+   "name": "Pi_u2",
+   "file": "Lean/Millennium/CompleteClosure_Targets.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Pi_Lambda S_divFree u2 = 1 / 2"
+  },
+  {
+   "name": "PvsNP_G11_statement_vacuous",
+   "file": "Lean/Millennium/CompleteClosure_Targets.lean",
+   "line": 94,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": PvsNP_G11_statement"
+  },
+  {
+   "name": "RH_G8_statement_vacuous",
+   "file": "Lean/Millennium/CompleteClosure_Targets.lean",
+   "line": 84,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": RH_G8_statement"
+  },
+  {
+   "name": "YM_G16_statement_vacuous",
+   "file": "Lean/Millennium/CompleteClosure_Targets.lean",
+   "line": 88,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": YM_G16_statement"
+  },
+  {
+   "name": "u1_dot_u1",
+   "file": "Lean/Millennium/CompleteClosure_Targets.lean",
+   "line": 24,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": u1 ⬝ᵥ u1 = 1"
+  },
+  {
+   "name": "u2_dot_u2",
+   "file": "Lean/Millennium/CompleteClosure_Targets.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": u2 ⬝ᵥ u2 = 1"
+  }
+ ],
+ "closed": 15,
+ "files_sha256": {
+  "Lean/Millennium/CompleteClosure_Targets.lean": "15068d9ad8c154cdaf0a501dfa88fc4de54bcd09efaf37715384fe944d5eaaa8",
+  "Lean/NavierStokes/B2/B2_8_LowerBound_Template.lean": "6729b6f5a56fa2dcf272bd0f509e9c61dcd277aaedd64bfea7d55c02a2fff9b3",
+  "formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean": "c12bbb437477c9a440774219c0cf15210b37f256be796ccba4a688c7007982f2",
+  "formal/lean/lakefile.toml": "ae588249ee34ba35be93608e76703456a73ba966cc13cd08f1a2383af9d901f1",
+  "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
+  "lakefile.toml": "d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c",
+  "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87"
+ },
+ "published_at": "2026-10-29T06:27:20Z",
+ "certificate_sha256": "4063030cbac99b70c356f5743e8454dd319ca726e0b000a1fe5d75ddb5d62ef2"
+}

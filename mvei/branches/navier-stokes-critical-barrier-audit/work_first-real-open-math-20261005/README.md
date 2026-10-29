@@ -5,7 +5,7 @@ Lean sources from the branch `work/first-real-open-math-20261005` of the private
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 3 — closed 2, conditional 0, open 0, proof error 1, not reached 0, no result 0.
 * History: 114 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `6427746637d422dfcf72ff08c5a791cb2da617413943a8fbcb279304861e1033`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/work_first-real-open-math-20261005/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `e0e9a8aaa4bba19765f5e90ed15d50b570af9b164d30f9d0a2d4d8e8f2e2aba2`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/work_first-real-open-math-20261005/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

@@ -1,0 +1,3433 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "atk/ns-forcing-001",
+ "branch_state": "parada",
+ "head_commit": "c406517f22858a51f66ca76a385f8ca97f45bf7e",
+ "head_commit_date": "2026-10-07T03:13:56+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "c406517f22858a51f66ca76a385f8ca97f45bf7e",
+   "date": "2026-10-07T03:13:56+02:00",
+   "subject": "fix: pin NS Holder exponents and product normalization"
+  },
+  {
+   "commit": "f0252c72468ecde659251a80d581239c6711462e",
+   "date": "2026-10-07T03:13:14+02:00",
+   "subject": "fix: complete NS finite-dimensional gradient basis simplification"
+  },
+  {
+   "commit": "03ae247a9517ead32a95d1580141abd60b384fe2",
+   "date": "2026-10-07T03:11:55+02:00",
+   "subject": "fix: port NS whole-space Sobolev proof to Mathlib v4.19 API"
+  },
+  {
+   "commit": "dbc00441fd5e1228316633ae1b2dadcceddbb773",
+   "date": "2026-10-07T03:08:10+02:00",
+   "subject": "fix: close NS small-data algebra without gcongr side goals"
+  },
+  {
+   "commit": "1134624b2cbb06149127de2ee83f57052bc82e40",
+   "date": "2026-10-07T03:08:04+02:00",
+   "subject": "fix: simplify NS second-derivative smoothness witness"
+  },
+  {
+   "commit": "ed06dea139869c22f6a6f26fc965fccb21def587",
+   "date": "2026-10-07T03:02:08+02:00",
+   "subject": "fix: use EuclideanSpace basis lemmas in NS gradient reconstruction"
+  },
+  {
+   "commit": "193a9452002ef51e9af847238be52aca3bbf5d9e",
+   "date": "2026-10-07T03:01:59+02:00",
+   "subject": "fix: apply NS operator norm composition bound explicitly"
+  },
+  {
+   "commit": "fa495603cfcf5496e47cd61a103cc3e1f13834fd",
+   "date": "2026-10-07T03:01:54+02:00",
+   "subject": "fix: complete NS Holder API and exponent proofs"
+  },
+  {
+   "commit": "787d4f88665aaca9079f79440ea59a1dd0c6d6c8",
+   "date": "2026-10-07T03:00:55+02:00",
+   "subject": "fix: use explicit NS endpoint lattice support projections"
+  },
+  {
+   "commit": "8e86a1cf837608ea0653ffee19b40c2fb081c77a",
+   "date": "2026-10-07T03:00:23+02:00",
+   "subject": "fix: make NS endpoint lattice join use explicit support functions"
+  },
+  {
+   "commit": "f8e1b9eca7b61daeaf7c6b077a8697ba0e8e2cb0",
+   "date": "2026-10-07T02:46:25+02:00",
+   "subject": "fix: keep NS H1-to-L3 route conditional on explicit L2 bounds"
+  },
+  {
+   "commit": "d0a232406d4ab6cc61a1383086b0ab247645e0bd",
+   "date": "2026-10-07T02:46:18+02:00",
+   "subject": "fix: expose unavailable NS Fourier L2 layer as explicit backend frontier"
+  },
+  {
+   "commit": "c1d161c4d3cef737feb7d58f8c65005d3903c48d",
+   "date": "2026-10-07T02:46:11+02:00",
+   "subject": "fix: prove NS gradient reconstruction with finite coordinate sums"
+  },
+  {
+   "commit": "e6ae0a27e8e41a465e83de35dbc340a06644d2cb",
+   "date": "2026-10-07T02:43:58+02:00",
+   "subject": "fix: rebuild NS endpoint lattice with support booleans"
+  },
+  {
+   "commit": "47e3b0e5d3be59be1a9e568ee11f04f31454878d",
+   "date": "2026-10-07T02:43:17+02:00",
+   "subject": "fix: use importable NS producer API"
+  },
+  {
+   "commit": "4d8b1500922827e5e50d3602deae5a77f11b9cb6",
+   "date": "2026-10-07T02:43:10+02:00",
+   "subject": "build: add importable NS producer-first API"
+  },
+  {
+   "commit": "e1943a8db04a250bc7988f4ec3d46490d74e4ebe",
+   "date": "2026-10-07T02:33:35+02:00",
+   "subject": "fix: prove NS cutoff derivative by HasFDerivAt composition"
+  },
+  {
+   "commit": "41f4e74260132d7b4ec896a86664f0a6f9598894",
+   "date": "2026-10-07T02:33:30+02:00",
+   "subject": "fix: close NS small-data absorption algebra after analytic leaf"
+  },
+  {
+   "commit": "ce9b4b55814bf58ec79aebc3250aa972b10d7161",
+   "date": "2026-10-07T02:33:10+02:00",
+   "subject": "fix: port NS Holder step to Mathlib v4.19 API"
+  },
+  {
+   "commit": "aa43f39d9d7fa3929cda80f63a2188ccc5c53966",
+   "date": "2026-10-07T02:30:45+02:00",
+   "subject": "fix: place NS gradient import before module documentation"
+  },
+  {
+   "commit": "9ff11f4c8b1b44de4ae2f5b8bfbe9d1b0e033cab",
+   "date": "2026-10-07T02:30:40+02:00",
+   "subject": "fix: prove NS RPA repeated-view chain explicitly"
+  },
+  {
+   "commit": "439ccda1ad04583075eecd5afd1cd334da687440",
+   "date": "2026-10-07T02:30:35+02:00",
+   "subject": "build: expose NS audit modules to unified Lake build"
+  },
+  {
+   "commit": "9b4b9ec0cb5b52c3dc36631a0958d8ac5fd14a36",
+   "date": "2026-10-07T01:47:32+02:00",
+   "subject": "ci: build NS unified module through Lake with pinned cache"
+  },
+  {
+   "commit": "51ad53ceb71d3cc284100d532fc8958c6d06955b",
+   "date": "2026-10-07T01:20:04+02:00",
+   "subject": "ns p1: make Sobolev NNReal exponents explicit"
+  },
+  {
+   "commit": "b158b58a600272234e8a6f46111a7efa547e042d",
+   "date": "2026-10-07T01:20:00+02:00",
+   "subject": "ns p1: use explicit ENNReal exponents in Holder chain"
+  },
+  {
+   "commit": "c720530df52e4b6a5073f6999f6d8968dba67d9b",
+   "date": "2026-10-07T01:19:58+02:00",
+   "subject": "ns p1: fix ContDiff differentiability API in cutoff"
+  },
+  {
+   "commit": "a1ecc3691dc2e0ef8cae8c62ae598568a69c4e1b",
+   "date": "2026-10-07T01:19:15+02:00",
+   "subject": "ci(ns): run only unified NS surface and reject unexpected sorryAx"
+  },
+  {
+   "commit": "72e75695de7fc9a1f232f64235f8b0e0b4f4f3b8",
+   "date": "2026-10-07T01:06:33+02:00",
+   "subject": "ci(ns): enforce 30m timeout and queue cancellation for audit-integrity.yml"
+  },
+  {
+   "commit": "8f53e5c767d5e442dcedab9c43aa1bb8b96314a5",
+   "date": "2026-10-07T01:06:30+02:00",
+   "subject": "ci(ns): enforce 30m timeout and queue cancellation for ns-open-math-targeted-build.yml"
+  },
+  {
+   "commit": "d9066aa9356696f0326a5ba32de9b4a7af4ca8a4",
+   "date": "2026-10-07T01:06:27+02:00",
+   "subject": "ci(ns): enforce 20m timeout and queue cancellation for ns-forcing-guard.yml"
+  },
+  {
+   "commit": "47c5933b8e3220d104c73fafcf20dfedbc17fbd9",
+   "date": "2026-10-07T01:06:24+02:00",
+   "subject": "ci(ns): enforce 45m timeout and queue cancellation for ns-unified-build.yml"
+  },
+  {
+   "commit": "91006ed82b924f949acf19f653c4d940e3285920",
+   "date": "2026-10-07T00:12:48+02:00",
+   "subject": "ci(ns): make audit-integrity.yml manual-only on forcing branch"
+  },
+  {
+   "commit": "b342968354fab060f6576fc666325f3aaa8b39c5",
+   "date": "2026-10-07T00:12:45+02:00",
+   "subject": "ci(ns): make ns-open-math-targeted-build.yml manual-only on forcing branch"
+  },
+  {
+   "commit": "019f83b7f1a279c4d06cb3d6585567ece7d31774",
+   "date": "2026-10-07T00:12:42+02:00",
+   "subject": "ci(ns): make ns-forcing-guard.yml manual-only on forcing branch"
+  },
+  {
+   "commit": "0c5d35f9003a78a36da7be5630e840af274357c3",
+   "date": "2026-10-06T22:36:54+02:00",
+   "subject": "ci(ns): add single unified kernel build"
+  },
+  {
+   "commit": "c06ab3eb405df425f96e814c719b0ec173f65fe7",
+   "date": "2026-10-06T22:36:42+02:00",
+   "subject": "ns: unify structural and material modules in one build surface"
+  },
+  {
+   "commit": "82b4a70492beced6858a3e93052cf1b04da7a815",
+   "date": "2026-10-06T22:29:52+02:00",
+   "subject": "ns p1: kernel-gate global H1 and uniform material chain"
+  },
+  {
+   "commit": "4d02a4f2b48945092878011372e46b8a09303737",
+   "date": "2026-10-06T22:29:40+02:00",
+   "subject": "ns p1: combine H1 and uniform Riesz payloads through stretching"
+  },
+  {
+   "commit": "5bedcb1eef695e01dd021546f6db58234053e22e",
+   "date": "2026-10-06T22:29:19+02:00",
+   "subject": "ns p1: add explicit global vorticity H1 integrability gate"
+  },
+  {
+   "commit": "145780b92ff3a95d9c6bc5ec5ea756a59ea85af5",
+   "date": "2026-10-06T22:28:46+02:00",
+   "subject": "ns p1: kernel-gate uniform Riesz and raw analytic bridge"
+  },
+  {
+   "commit": "35f26b65155356401e6ac50ae5f3cadc430bc533",
+   "date": "2026-10-06T22:28:32+02:00",
+   "subject": "ns p1: isolate raw analytic estimate and prove small-data absorption"
+  },
+  {
+   "commit": "32e07d60d0eb891bb767b0ec87b6616676cebb98",
+   "date": "2026-10-06T22:28:07+02:00",
+   "subject": "ns p1: require uniform-in-time Riesz payload"
+  },
+  {
+   "commit": "4581648a6f63da290914a8b27ab08a32710db68f",
+   "date": "2026-10-06T22:27:18+02:00",
+   "subject": "ns p1: bridge nine-entry gradient payload to stretching"
+  },
+  {
+   "commit": "37ba6753549c0be3e0149c5878f20571f587c8c6",
+   "date": "2026-10-06T22:26:46+02:00",
+   "subject": "ns p1: kernel-gate nine-entry gradient L3 reconstruction"
+  },
+  {
+   "commit": "4d026705f1417efd034c29d256ec8689c4771111",
+   "date": "2026-10-06T22:26:33+02:00",
+   "subject": "ns p1: derive gradient measurability and L3 from smooth state"
+  },
+  {
+   "commit": "49828b7ed65e4188cb5893ff495260bd8bd80ce6",
+   "date": "2026-10-06T22:26:07+02:00",
+   "subject": "ns p1: reconstruct full gradient L3 from nine scalar controls"
+  },
+  {
+   "commit": "aafa1399291a4848344b6ab295bc27f855cd1855",
+   "date": "2026-10-06T22:14:22+02:00",
+   "subject": "ns p1: kernel-gate raw analytic to SignedGain bridge"
+  },
+  {
+   "commit": "5b67ee2487439b32c9a929be919740301850ff60",
+   "date": "2026-10-06T22:14:10+02:00",
+   "subject": "ns p1: prove raw analytic estimate implies concrete SignedGainCore"
+  },
+  {
+   "commit": "9966b8e84e50ae810b3fbe1eb80c4f10ed083cd8",
+   "date": "2026-10-06T22:12:44+02:00",
+   "subject": "ns p1: kernel-gate scalar vorticity and explicit Biot Savart candidate"
+  },
+  {
+   "commit": "91976d8fa964fadb1934e7ee1e6bc0567d36464a",
+   "date": "2026-10-06T22:12:21+02:00",
+   "subject": "ns p1: define explicit Biot Savart double-Riesz gradient candidates"
+  },
+  {
+   "commit": "66eb72cbcfd8b7982ad58ce56a2d24b38b112b8a",
+   "date": "2026-10-06T22:11:47+02:00",
+   "subject": "ns p1: expose scalar vorticity components in L2 and L3"
+  },
+  {
+   "commit": "6fe255d0ddb1b7355885ffd65ea26ebe3eb72858",
+   "date": "2026-10-06T22:11:17+02:00",
+   "subject": "ns p1: kernel-gate analytic slice and nine-entry reconstruction"
+  },
+  {
+   "commit": "47ed4385c5ad328e73010e822cc3947b941cc704",
+   "date": "2026-10-06T22:11:04+02:00",
+   "subject": "ns p1: make analytic-slice and Holder dependencies explicit"
+  },
+  {
+   "commit": "cda6958a2800a8b1c6afa652b60dd303ae507b6d",
+   "date": "2026-10-06T22:10:51+02:00",
+   "subject": "ns p1: close nine-entry to full-gradient L3 reconstruction"
+  },
+  {
+   "commit": "a878181d50f2a87901e8d3ffd84a414f2f6ee48b",
+   "date": "2026-10-06T22:10:09+02:00",
+   "subject": "ns p1: define complete analytic slice data for H1 material route"
+  },
+  {
+   "commit": "6e6c1089fadac5f4af37ee6833c9531a7f9a9585",
+   "date": "2026-10-06T22:07:29+02:00",
+   "subject": "ns p1: define concrete nine-entry Riesz reconstruction payload"
+  },
+  {
+   "commit": "d8dd815a26d81508d150cc9356c07bbcd4d69f88",
+   "date": "2026-10-06T21:56:25+02:00",
+   "subject": "ns: record exact material frontier after concrete H1 route"
+  },
+  {
+   "commit": "c8d2368a911d8bd1c7d417539c42371285a10990",
+   "date": "2026-10-06T21:56:08+02:00",
+   "subject": "ns p1: kernel-gate concrete H1-to-L3 Riesz route"
+  },
+  {
+   "commit": "2a572d91bb546268bd5051581fe853174deed818",
+   "date": "2026-10-06T21:55:58+02:00",
+   "subject": "ns p1: connect concrete Riesz L2 foundation to H1-to-L3 route"
+  },
+  {
+   "commit": "dd12f6247f4c5fe539a82b6ba97dd525d89baedc",
+   "date": "2026-10-06T21:53:04+02:00",
+   "subject": "ns p1: kernel-gate mixed partial commutation"
+  },
+  {
+   "commit": "62fc0fad521e2be8642b68889044f133d4062902",
+   "date": "2026-10-06T21:52:54+02:00",
+   "subject": "ns p1: prove coordinate mixed partial commutation"
+  },
+  {
+   "commit": "176a4c0b5a976aad590fb7c4ff591fdfe84ba292",
+   "date": "2026-10-06T21:50:48+02:00",
+   "subject": "ns p1: kernel-gate coordinate div curl mincut"
+  },
+  {
+   "commit": "08a03b84d6504537ab56e8ea33996db307e3eb40",
+   "date": "2026-10-06T21:50:38+02:00",
+   "subject": "ns p1: expose div curl identity as three scalar coordinates"
+  },
+  {
+   "commit": "c65fe1338676775964e25b106812c2494ad409ce",
+   "date": "2026-10-06T21:19:26+02:00",
+   "subject": "ns p1: kernel-gate Riesz L2 foundation"
+  },
+  {
+   "commit": "2809c004fbb6f191489ccc6a6b2fbdd530e6dc32",
+   "date": "2026-10-06T21:19:15+02:00",
+   "subject": "ns p1: port concrete double Riesz L2 contraction"
+  },
+  {
+   "commit": "d2fab3ccfbdf29d170c869bde43e599883bc6250",
+   "date": "2026-10-06T21:10:39+02:00",
+   "subject": "ns: kernel-gate complete endpoint cube"
+  },
+  {
+   "commit": "d9b9755f66c3bfbd04c0c8eec23366ba5b31e711",
+   "date": "2026-10-06T21:10:30+02:00",
+   "subject": "ns: instantiate complete endpoint cube and material final certificate"
+  },
+  {
+   "commit": "7324b66f21cd6521527821f8a96208020f4a6c2b",
+   "date": "2026-10-06T21:10:07+02:00",
+   "subject": "ns: kernel-gate complete NS RPA cube"
+  },
+  {
+   "commit": "e7dd056849becea4eb1916ee48bcf8dfea1c5702",
+   "date": "2026-10-06T21:09:57+02:00",
+   "subject": "ns: instantiate complete 14-node RPA cube plus material-gated FULL"
+  },
+  {
+   "commit": "3b8739e03950bf2204a0d608c54508b3d0f2f663",
+   "date": "2026-10-06T21:08:33+02:00",
+   "subject": "ns: kernel-gate three material prize gates"
+  },
+  {
+   "commit": "35af157255e7d89ca029f7e096ab7211d88b81af",
+   "date": "2026-10-06T21:08:24+02:00",
+   "subject": "ns: add explicit three-gate material closure schema"
+  },
+  {
+   "commit": "9a94b3a52cfc0f4f8f8a9a29525c678b1226768c",
+   "date": "2026-10-06T21:04:32+02:00",
+   "subject": "docs(rpa): publish structural dual endpoint certification scope"
+  },
+  {
+   "commit": "97fd20627bcd064be483dff2f554c048ca971715",
+   "date": "2026-10-06T21:02:35+02:00",
+   "subject": "rpa: complete endpoint lattice cube through length three"
+  },
+  {
+   "commit": "c4796af68ec2f00b1ebfc2cb477d85475210fbf7",
+   "date": "2026-10-06T20:59:53+02:00",
+   "subject": "rpa: kernel-gate endpoint lattice"
+  },
+  {
+   "commit": "0c680da076ba1b6fafe4817f012e4dac3ecaf47d",
+   "date": "2026-10-06T20:59:43+02:00",
+   "subject": "rpa: formalize free and idempotent endpoint lattice"
+  },
+  {
+   "commit": "050fc723142af72009e640ba7727ad8d2a1a4dd1",
+   "date": "2026-10-06T20:56:32+02:00",
+   "subject": "docs(rpa): publish dual endpoint certificate"
+  },
+  {
+   "commit": "37a1314404843c3dc55685f4198c62ba6a5fb803",
+   "date": "2026-10-06T20:56:19+02:00",
+   "subject": "rpa: preserve distinct open and closed endpoints in dual state"
+  },
+  {
+   "commit": "b15a7e50c9b62860ad5c286c266c69060aaa00b2",
+   "date": "2026-10-06T20:53:00+02:00",
+   "subject": "rpa: kernel-gate minimal transition chain"
+  },
+  {
+   "commit": "6af14d53e86e0d4ca671d02affe9433440157db1",
+   "date": "2026-10-06T20:52:51+02:00",
+   "subject": "rpa: prove minimal five-view transition chain"
+  },
+  {
+   "commit": "36bf111db686b8b8b14ac5319c66c67e1f398ccc",
+   "date": "2026-10-06T20:22:18+02:00",
+   "subject": "ns p1: kernel-gate exact Riesz CZ mincut"
+  },
+  {
+   "commit": "8f9a101420b08a5b3b4591f42012fac18562739e",
+   "date": "2026-10-06T20:22:08+02:00",
+   "subject": "ns p1: expose exact Riesz CZ L3 material mincut"
+  },
+  {
+   "commit": "4298bd9f2494692fe55caab07dc675af297aa8ad",
+   "date": "2026-10-06T19:56:45+02:00",
+   "subject": "ns terminal: formalize open tends to closed terminal dynamics"
+  },
+  {
+   "commit": "5a9028b546a266c9a7b13be403e9fcef538df57c",
+   "date": "2026-10-06T19:54:57+02:00",
+   "subject": "docs(ns terminal): record distinct representatives and equal terminal image"
+  },
+  {
+   "commit": "7755130b7189927bdf5701b2ebf1fa5e9038e3da",
+   "date": "2026-10-06T19:54:45+02:00",
+   "subject": "ns terminal: prove pre-collapse distinction and terminal identification"
+  },
+  {
+   "commit": "ee8c016c91e5da0f64923deb536be6c115c49a6a",
+   "date": "2026-10-06T19:54:26+02:00",
+   "subject": "docs(ns terminal): publish open closed reversal algebra certificate"
+  },
+  {
+   "commit": "aaf0d533a3b988fface928833245d8d3d7c3a502",
+   "date": "2026-10-06T19:54:18+02:00",
+   "subject": "ns terminal: kernel-gate open closed reversal algebra"
+  },
+  {
+   "commit": "85d8259f110abce2772dd7ae115840d7ed3daa9f",
+   "date": "2026-10-06T19:54:09+02:00",
+   "subject": "ns terminal: formalize open closed reversal algebra at endpoint"
+  },
+  {
+   "commit": "6acb612198c1d43ca8e8bb15f15498304fccf569",
+   "date": "2026-10-06T19:51:55+02:00",
+   "subject": "ns terminal: kernel-gate material bridge audit"
+  },
+  {
+   "commit": "33df4e66e06966a3b5c407592c63d593b0a1ee7b",
+   "date": "2026-10-06T19:51:46+02:00",
+   "subject": "ns terminal: audit bridge from structural closure to material endpoint"
+  },
+  {
+   "commit": "c5bfbce27507b94c8f3f913fdf7ef9c4865e093d",
+   "date": "2026-10-06T19:48:26+02:00",
+   "subject": "docs(ns terminal): certify last-bit diagonal normalization"
+  },
+  {
+   "commit": "5d3cd584f27f5e1ca8da6b342692698f6e008289",
+   "date": "2026-10-06T19:48:11+02:00",
+   "subject": "ns terminal: formalize last-bit diagonal normalization 0/1 and 0/2"
+  },
+  {
+   "commit": "26a9101eaa1f0fee5f8602e6a0bc57ce3bffe6ca",
+   "date": "2026-10-06T19:45:56+02:00",
+   "subject": "docs(ns terminal): publish three-state closure certificate"
+  },
+  {
+   "commit": "94395904f79f741684fb65a147748041ba380ffd",
+   "date": "2026-10-06T19:45:44+02:00",
+   "subject": "ns terminal: kernel-gate three-state closure"
+  },
+  {
+   "commit": "72c1f63c46f1ea1bdd80eb8b2f854922c497b308",
+   "date": "2026-10-06T19:45:33+02:00",
+   "subject": "ns terminal: formalize three-state bilateral core closure"
+  },
+  {
+   "commit": "0c0200342535e48df563c6a360085cb393cd7c34",
+   "date": "2026-10-06T19:42:02+02:00",
+   "subject": "ns terminal: kernel-test generic inhabitant impossibility"
+  },
+  {
+   "commit": "356e27e7038f425b6d690380baa028cd844185bb",
+   "date": "2026-10-06T19:40:52+02:00",
+   "subject": "ns terminal: formalize endpoint gap inhabitant cycle"
+  },
+  {
+   "commit": "d62798a92e3c38c6258b4ea312e580c7bc268fd9",
+   "date": "2026-10-06T19:24:16+02:00",
+   "subject": "docs(ns terminal): publish fixed-point gap signature certificate"
+  },
+  {
+   "commit": "30ecd749641e708daee05c051a3f2a20a07a8a8a",
+   "date": "2026-10-06T19:23:44+02:00",
+   "subject": "ns terminal: prove skip-and-restart fixed-point signature"
+  },
+  {
+   "commit": "af6bc91ac1ee8aeff39c9f52edddd32c97535e2c",
+   "date": "2026-10-06T19:21:10+02:00",
+   "subject": "ns terminal: kernel-gate terminal gap signature"
+  },
+  {
+   "commit": "bbaa41c977d95f68e156f68c15dc48f169e56bad",
+   "date": "2026-10-06T19:20:59+02:00",
+   "subject": "ns terminal: formalize fixed-point gap signature"
+  },
+  {
+   "commit": "4fa94223563fdfb45daab3ef1682f3ffb381c6ac",
+   "date": "2026-10-06T19:16:51+02:00",
+   "subject": "fix(ns p1): bound cutoff fderiv directly without private iterated lemma"
+  },
+  {
+   "commit": "0b0bc3c7a0653c15763328dffa4034542658e90f",
+   "date": "2026-10-06T19:15:47+02:00",
+   "subject": "fix(ns p1): close finite smoothness bound against infinity"
+  },
+  {
+   "commit": "22b676831f5fcd4f7bb977ab3f18fc7dbb6af851",
+   "date": "2026-10-06T19:08:40+02:00",
+   "subject": "fix(ns p1): import first iterated derivative norm lemma"
+  },
+  {
+   "commit": "b3f04a4dc15cab4998bb283907e056e82cca3826",
+   "date": "2026-10-06T19:08:37+02:00",
+   "subject": "fix(ns p1): discharge real C2 minSmoothness explicitly"
+  },
+  {
+   "commit": "463ab99eb339fc02f5e03c6a2c62742e1b153b08",
+   "date": "2026-10-06T18:49:14+02:00",
+   "subject": "ns rejection: formalize opposition fixed-point as zero collapse"
+  },
+  {
+   "commit": "a4b7bd9f38398f729fd0c82472ba375b4ef1c5a8",
+   "date": "2026-10-06T18:45:02+02:00",
+   "subject": "fix(ns p1): construct Holder triples directly"
+  },
+  {
+   "commit": "6be61624c46575734eed35bd032bc150c3321930",
+   "date": "2026-10-06T18:44:59+02:00",
+   "subject": "fix(ns p1): bridge fderiv norm to first iterated derivative"
+  },
+  {
+   "commit": "150acf7b0e5d8b6f66fa37fbd2ffa72f6ac7dc8d",
+   "date": "2026-10-06T18:44:57+02:00",
+   "subject": "fix(ns p1): discharge C2 smoothness bound by le_top"
+  },
+  {
+   "commit": "553087a8fc2fe6692933f48c96cbcaa4ef5c3d1f",
+   "date": "2026-10-06T18:39:19+02:00",
+   "subject": "fix(ns p1): adapt bump bounds to current Mathlib API"
+  },
+  {
+   "commit": "9a7f802135be00288d0e253d90ad7e878fb4af73",
+   "date": "2026-10-06T18:39:16+02:00",
+   "subject": "fix(ns p1): remove solved residual goal in pointwise stretch bound"
+  },
+  {
+   "commit": "c8df37b655102bf70ffa906bce815abf07ce062a",
+   "date": "2026-10-06T18:39:13+02:00",
+   "subject": "fix(ns p1): handle zero norm in Lp rpow interpolation"
+  },
+  {
+   "commit": "ede9ad20e87a136a8833fa88bfe75630b4837821",
+   "date": "2026-10-06T18:35:30+02:00",
+   "subject": "fix(ns p1): enable ContDiff infinity notation"
+  },
+  {
+   "commit": "87420ec7f68c3204c71a1c749df67b487e9079ec",
+   "date": "2026-10-06T18:29:25+02:00",
+   "subject": "ns p1: kernelize mixed spatial derivative symmetry"
+  },
+  {
+   "commit": "f3ba246b5b75f0005a90319b41a4414cfc8033be",
+   "date": "2026-10-06T18:29:08+02:00",
+   "subject": "ns p1: kernelize fixed-time spatial smoothness"
+  },
+  {
+   "commit": "970c33f6f89955ea0ec6018a991a7b5b595cec13",
+   "date": "2026-10-06T16:16:56+02:00",
+   "subject": "fix(ns p1): normalize inverse cube explicitly"
+  },
+  {
+   "commit": "ce928e3a1c4c3b621671a24683dfbcd308d3960b",
+   "date": "2026-10-06T16:07:50+02:00",
+   "subject": "fix(ns p1): avoid fragile field_simp in small-data coefficient"
+  },
+  {
+   "commit": "1d9fe5c230b9d583e6505f73776ce4e0bade122d",
+   "date": "2026-10-06T16:00:52+02:00",
+   "subject": "fix(ns p1): normalize small-data coefficient identity"
+  },
+  {
+   "commit": "761aeb72200e2156e2f39ad27b932b710a62364b",
+   "date": "2026-10-06T15:05:54+02:00",
+   "subject": "fix(ns t7): make toy scale point reductions explicit"
+  },
+  {
+   "commit": "ddf8b1753d1a56426021aa98976ec25d2b9c6a36",
+   "date": "2026-10-06T14:31:40+02:00",
+   "subject": "NS T7: compile rejection probe in targeted kernel"
+  },
+  {
+   "commit": "7b130d24bc102dbe142c62126bdcd14eb6e04f68",
+   "date": "2026-10-06T14:28:47+02:00",
+   "subject": "NS T7: add scale-orbit rejection invariant probe"
+  },
+  {
+   "commit": "4f95e7ebe00ec2fb6133ed91292e82603b516e0e",
+   "date": "2026-10-05T09:46:27+02:00",
+   "subject": "ci(ns): compile P1 modules individually with Lake"
+  },
+  {
+   "commit": "7e26f7b1af0382c99294ffdf44afd45f11e2e7aa",
+   "date": "2026-10-05T09:45:59+02:00",
+   "subject": "fix(ns p1): move imports before module doc in P1_SmallData_Gap.lean"
+  },
+  {
+   "commit": "fd19c0172b96f50aa4fd1a9489dffd3544e1aa63",
+   "date": "2026-10-05T09:45:56+02:00",
+   "subject": "fix(ns p1): move imports before module doc in P1_ZeroMaterial.lean"
+  },
+  {
+   "commit": "b5798887398bea39a195fd99a4cdaeea3d78d13b",
+   "date": "2026-10-05T09:45:53+02:00",
+   "subject": "fix(ns p1): move imports before module doc in P1_DivCurlIdentity.lean"
+  },
+  {
+   "commit": "6b170f55fdd2b4c9cdd02f160a5658372cc42374",
+   "date": "2026-10-05T09:45:47+02:00",
+   "subject": "fix(ns p1): move imports before module doc in P1_RieszCZ_L3.lean"
+  },
+  {
+   "commit": "5b519502b42d56e30f38ab298b28915f882a863d",
+   "date": "2026-10-05T09:45:41+02:00",
+   "subject": "fix(ns p1): move imports before module doc in P1_LpInterpolation.lean"
+  },
+  {
+   "commit": "421ccd6934016b3e849af13d186a94c89cf7cfc1",
+   "date": "2026-10-05T09:45:36+02:00",
+   "subject": "fix(ns p1): move imports before module doc in P1_ConcretePDE.lean"
+  },
+  {
+   "commit": "ea573d02e853c9a46bf16f15ec16a0bae6aaf493",
+   "date": "2026-10-05T09:45:34+02:00",
+   "subject": "fix(ns p1): move imports before module doc in P1_ConcreteObservables.lean"
+  },
+  {
+   "commit": "6c0301ea0987130ecd16a837549af22e3dd03f72",
+   "date": "2026-10-05T09:39:45+02:00",
+   "subject": "ci(ns): build registered OpenMath target"
+  },
+  {
+   "commit": "1ee45c5ef14f76749548e016938b6e959875ec1b",
+   "date": "2026-10-05T09:39:36+02:00",
+   "subject": "ci(ns): register open_math module root and glob"
+  },
+  {
+   "commit": "320092c8d90433ee6f2351c3011674153f53e10a",
+   "date": "2026-10-05T09:23:57+02:00",
+   "subject": "ci(ns): trigger targeted build from open_math root changes"
+  },
+  {
+   "commit": "cb16594130cb3014f95c9f20754de42a859c8613",
+   "date": "2026-10-05T09:23:37+02:00",
+   "subject": "ci(ns): add explicit open_math library root"
+  },
+  {
+   "commit": "652d696908327556f89ec6ae9f39cff291016fd3",
+   "date": "2026-10-04T23:23:39+02:00",
+   "subject": "ci(ns): kernel-test every unverified P1 module"
+  },
+  {
+   "commit": "6df993fa57677d0264c90de609f2e123ceabdad9",
+   "date": "2026-10-04T22:03:27+02:00",
+   "subject": "chore(ns forcing): rerun div-curl kernel question after Lake registration"
+  },
+  {
+   "commit": "390540631514ae9b474e7c2efae0ff564ae2f9eb",
+   "date": "2026-10-04T22:02:48+02:00",
+   "subject": "ci(ns): register open_math Lean library for targeted kernel build"
+  },
+  {
+   "commit": "9d9b5c094f6f9556bc585c558e831ac9c8903b6e",
+   "date": "2026-10-04T20:02:24+02:00",
+   "subject": "ci(ns): trigger targeted build on P1 root changes"
+  },
+  {
+   "commit": "c09f1767a989bc149ce15a411a6bcd8219d3f1b6",
+   "date": "2026-10-04T20:02:01+02:00",
+   "subject": "ci(ns): force kernel through div-curl question"
+  },
+  {
+   "commit": "1a1164973d2f597397cd515d21f838ead63bcd42",
+   "date": "2026-10-04T20:01:51+02:00",
+   "subject": "forcing(ns): expose first div-curl kernel question"
+  },
+  {
+   "commit": "ebdbf1776d555798ec08dd0d7c10c8e1c0795283",
+   "date": "2026-10-04T20:01:01+02:00",
+   "subject": "ci(ns): force kernel through isolated P1 root"
+  },
+  {
+   "commit": "4ebd1ccc751db7fcbf76449e913f412d9e4ec652",
+   "date": "2026-10-04T20:00:54+02:00",
+   "subject": "ci(ns): add isolated P1 forcing root"
+  },
+  {
+   "commit": "853144aa2ee13c8f6e7c23b989bcb420a065011b",
+   "date": "2026-10-04T18:20:03+02:00",
+   "subject": "chore(ns forcing): retrigger targeted CZ build"
+  },
+  {
+   "commit": "1a1ec07999639c403db7d1d77eb92571f1185dbc",
+   "date": "2026-10-04T18:19:44+02:00",
+   "subject": "fix(ns ci): move Mathlib import before module doc"
+  },
+  {
+   "commit": "c65c4e7d05a522ec816e62d062fc7f5e142bce55",
+   "date": "2026-10-04T18:09:32+02:00",
+   "subject": "ci(ns): build targeted P1 modules through MillenniumAudit root"
+  },
+  {
+   "commit": "2ebeff05c27d39625dc69e21e1ee3ec792036b99",
+   "date": "2026-10-04T18:09:24+02:00",
+   "subject": "wire targeted NS P1 modules into Lake root"
+  },
+  {
+   "commit": "68a32b4b926859f00a87c43e477d5321cc4e80b3",
+   "date": "2026-10-04T18:05:28+02:00",
+   "subject": "ci(ns): compile targeted P1 files with repository root"
+  },
+  {
+   "commit": "28897c6ef14180013ab4c1184d2713a308f32f4b",
+   "date": "2026-10-04T18:02:01+02:00",
+   "subject": "ci(ns): build open-math modules through Lake resolver"
+  },
+  {
+   "commit": "8c8c18e2157217ecbed9aea8bd9fe70a3335500a",
+   "date": "2026-10-04T17:58:25+02:00",
+   "subject": "fix Lean import ordering in targeted P1 module"
+  },
+  {
+   "commit": "b2e15e6db96e7815c8d89023a464ce41d76c0c6e",
+   "date": "2026-10-04T17:58:22+02:00",
+   "subject": "fix Lean import ordering in targeted P1 module"
+  },
+  {
+   "commit": "426e6116cc4455549d343528e9f2a20ff39a50eb",
+   "date": "2026-10-04T17:58:19+02:00",
+   "subject": "fix Lean import ordering in targeted P1 module"
+  },
+  {
+   "commit": "089c8c236f0c8d0cc8366a4f65e50a35a2d896d1",
+   "date": "2026-10-04T17:58:17+02:00",
+   "subject": "fix Lean import ordering in targeted P1 module"
+  },
+  {
+   "commit": "5a4309d9b0f9658f1bd95b065776697be867f611",
+   "date": "2026-10-04T17:58:14+02:00",
+   "subject": "fix Lean import ordering in targeted P1 module"
+  },
+  {
+   "commit": "c4b16709938e7d6f4c2accda67b2f2a396946c5b",
+   "date": "2026-10-04T17:54:44+02:00",
+   "subject": "ci(ns): add targeted build for new open-math P1 modules"
+  },
+  {
+   "commit": "f37954caffb6e50b2aeb8503cbfe3e7f01c2f7d0",
+   "date": "2026-10-04T17:38:08+02:00",
+   "subject": "forcing(ns): reconstruct gradient norm from scalar entries"
+  },
+  {
+   "commit": "b5c3dae152bf1158c530a2048895830c9d391beb",
+   "date": "2026-10-04T17:37:08+02:00",
+   "subject": "freeze kernel-forced Riesz frontier at two L2 producer estimates"
+  },
+  {
+   "commit": "5008197925c9923c58774a73f0889b5c09d9b25a",
+   "date": "2026-10-04T17:36:24+02:00",
+   "subject": "specialize kernel-forced Riesz route to exact constants 1 and 3"
+  },
+  {
+   "commit": "1f155d49480d660134a1b93cc669e2b24ed74e57",
+   "date": "2026-10-04T17:36:00+02:00",
+   "subject": "compress Riesz L3 target to L2 plus derivative L2 bounds"
+  },
+  {
+   "commit": "e8d5cfc0659ba52d80f59c080db7008cf5d944db",
+   "date": "2026-10-04T17:35:32+02:00",
+   "subject": "add real whole-space Sobolev inequality for H1-to-L3 compression"
+  },
+  {
+   "commit": "8c7361a0234e37d04ea485377e987ba999535cb9",
+   "date": "2026-10-04T17:35:22+02:00",
+   "subject": "forcing(ns): isolate exact concrete Riesz-CZ L3 producer"
+  },
+  {
+   "commit": "1efb442b60f30fb156b348cc382f8d7d158c9471",
+   "date": "2026-10-04T17:31:35+02:00",
+   "subject": "compress P1 nonzero frontier to unique L3 Riesz-CZ producer"
+  },
+  {
+   "commit": "8b2a039a04621b97bd1a24f92af31c588ef442f3",
+   "date": "2026-10-04T17:31:11+02:00",
+   "subject": "close L3 Holder step for P1 stretching majorant"
+  },
+  {
+   "commit": "f562ba4a088e6042844ef3791952ac3a64de0d4a",
+   "date": "2026-10-04T17:29:05+02:00",
+   "subject": "port whole-space H1-to-L6 Sobolev cutoff argument for P1"
+  },
+  {
+   "commit": "445b24c966d0bcec962b4ffb62dc61bac5efe128",
+   "date": "2026-10-04T17:28:22+02:00",
+   "subject": "port minimal whole-space cutoff machinery for P1 Sobolev"
+  },
+  {
+   "commit": "efa945d1566b19081d69933fe253ad6b3459dbc7",
+   "date": "2026-10-04T17:25:38+02:00",
+   "subject": "prove pointwise vortex-stretching operator-norm bound"
+  },
+  {
+   "commit": "cc227aa536bd27a527dadbff987236b28b28acc9",
+   "date": "2026-10-04T16:42:59+02:00",
+   "subject": "record exact P1 harmonic-analysis min-cut after interpolation and Young closure"
+  },
+  {
+   "commit": "f1cbcb731ab97ff8a44199370e1fd813f75650ec",
+   "date": "2026-10-04T16:42:12+02:00",
+   "subject": "chore(ns forcing): retrigger guard after comment-only repair"
+  },
+  {
+   "commit": "86904d60015ef7c5a3ce71a9fa87a8e67139c430",
+   "date": "2026-10-04T16:42:10+02:00",
+   "subject": "kernelize compact-support R3 Sobolev step for P1 vorticity"
+  },
+  {
+   "commit": "3d6347298ecade48e8cc67df6269bceb80e0822e",
+   "date": "2026-10-04T16:41:49+02:00",
+   "subject": "chore(ns): remove guard false positive from adapter comment"
+  },
+  {
+   "commit": "a49a35506299479a68386bcc2495724a483f411b",
+   "date": "2026-10-04T16:40:34+02:00",
+   "subject": "forcing(ns): prove compact H1 to L6 Sobolev block"
+  },
+  {
+   "commit": "7f7184006b347751e9ec94ce11f0ef4863211976",
+   "date": "2026-10-04T16:05:22+02:00",
+   "subject": "update NS terminal adapter to quadratic material frontier"
+  },
+  {
+   "commit": "fb984f8bdce5d549638e0eb01978279689f8fbf2",
+   "date": "2026-10-04T16:04:57+02:00",
+   "subject": "prove quartic Young algebra for P1 small-data absorption"
+  },
+  {
+   "commit": "6c657fe55fcf3e11b6f185fcbd0c8a9301b4faec",
+   "date": "2026-10-04T16:00:53+02:00",
+   "subject": "fix(ns forcing): use audited eLpNorm interpolation mechanism"
+  },
+  {
+   "commit": "205a66f042b88267c322d7181e0627a1b4da923a",
+   "date": "2026-10-04T16:00:10+02:00",
+   "subject": "forcing(ns): port L2-L6 to L3 interpolation core"
+  },
+  {
+   "commit": "7334e9022637e0ff8e273f78ea75f7f977e9ae0b",
+   "date": "2026-10-04T14:24:30+02:00",
+   "subject": "forcing(ns): close small-data absorption algebra around analytic core"
+  },
+  {
+   "commit": "9b4ef7a7390bc553a9e05230aae19016eeada0b8",
+   "date": "2026-10-04T14:14:28+02:00",
+   "subject": "forcing(ns): isolate first nontrivial small-data stretching gap"
+  },
+  {
+   "commit": "7f90ba30acec542d3f2f98cff61bb8a039bccb32",
+   "date": "2026-10-04T14:09:35+02:00",
+   "subject": "forcing(ns): prove zero-state concrete material witness"
+  },
+  {
+   "commit": "cb266aa945397a2dbfd1536b63b80251cd78a0a4",
+   "date": "2026-10-04T14:00:47+02:00",
+   "subject": "forcing(ns): specialize P1 material frontier to concrete NSE state"
+  },
+  {
+   "commit": "756fe55aca29b0233d2bc6d44901509e7bfb382c",
+   "date": "2026-10-04T13:55:11+02:00",
+   "subject": "refactor(ns forcing): keep concrete PDE carrier standalone"
+  },
+  {
+   "commit": "f0d82a6a7c6ce23cb0575533b8ce31802c705e32",
+   "date": "2026-10-04T13:55:00+02:00",
+   "subject": "refactor(ns forcing): keep concrete observables standalone"
+  },
+  {
+   "commit": "829d0db2fb019717b0d7f0aedf7ddad4d83d9b51",
+   "date": "2026-10-04T13:54:36+02:00",
+   "subject": "fix(ns forcing): reuse concrete observables in NSE carrier"
+  },
+  {
+   "commit": "e7e2a485c3b9473955f13b05cb47e2f302c94ff5",
+   "date": "2026-10-04T13:54:12+02:00",
+   "subject": "forcing(ns): define literal smooth NSE carrier"
+  },
+  {
+   "commit": "f15d305266f664b2ea158bc1452ecf9d6cea1a25",
+   "date": "2026-10-04T13:53:01+02:00",
+   "subject": "forcing(ns): define concrete vorticity enstrophy observables"
+  },
+  {
+   "commit": "bca4ea50c762ec5df641d4aab5de5673be8406e4",
+   "date": "2026-10-04T13:38:30+02:00",
+   "subject": "forcing(ns): expose abstract-carrier countermodel before PDE attack"
+  },
+  {
+   "commit": "124ff4e728e0f6504c164eebab0f47039b86bce7",
+   "date": "2026-10-04T13:37:18+02:00",
+   "subject": "chore(ns): freeze isolated P1 material frontier"
+  },
+  {
+   "commit": "dde4e0a642a88ff596e232ebfa87f559ec596232",
+   "date": "2026-10-04T13:21:04+02:00",
+   "subject": "forcing(ns): expose exact P1 material witness obligation"
+  },
+  {
+   "commit": "697d9c84ec10618957bc39cca29b5a87660dfdae",
+   "date": "2026-10-04T13:06:43+02:00",
+   "subject": "chore(ns): crystallize canonical frontier for NS-FORCING-001"
+  },
+  {
+   "commit": "546a186cf813ee4e54026fe17fb753fd0fa5f684",
+   "date": "2026-10-04T12:50:15+02:00",
+   "subject": "fix(ns): make downstream G1 carrier explicit for Lean 4.19"
+  },
+  {
+   "commit": "45f9a328dc047f9481e2fee4ff4206b487cb43e4",
+   "date": "2026-10-04T12:46:49+02:00",
+   "subject": "fix(ns): make G1 analytic bridge scalar fields explicit"
+  },
+  {
+   "commit": "01684d7553db5abe551f5baa5dc15dd5d662d78f",
+   "date": "2026-10-04T12:46:15+02:00",
+   "subject": "ci(coq): fix proof-escape token scanner"
+  },
+  {
+   "commit": "6f4e79a91bc1b3f65fda0cab8cafd8251c6e28fb",
+   "date": "2026-10-04T12:45:57+02:00",
+   "subject": "ci(coq): avoid Axiom-free comment false positive"
+  },
+  {
+   "commit": "b52bd1c771adc3366999989f80342a78b3df4882",
+   "date": "2026-10-04T12:45:54+02:00",
+   "subject": "fix(ns): disambiguate G1 analytic bridge field names"
+  },
+  {
+   "commit": "3d70dd3addd0d3e6ecf55560ff9ef217fb7c62ff",
+   "date": "2026-10-04T12:07:10+02:00",
+   "subject": "ci(coq): scan declarations instead of Axiom-free comments"
+  },
+  {
+   "commit": "30b895b8cfe3fbf513e042193067a921a56274a3",
+   "date": "2026-10-04T12:07:07+02:00",
+   "subject": "fix(lean): disambiguate G1 analytic bridge scale field"
+  },
+  {
+   "commit": "b87eb9217723e5538f3e8d2a3bbfb69540db7dd4",
+   "date": "2026-10-04T02:07:36+02:00",
+   "subject": "fix(ns): align root subcritical budget proof"
+  },
+  {
+   "commit": "09b92425aef9c92b3d71b85ff9698c10973b1733",
+   "date": "2026-10-04T02:05:07+02:00",
+   "subject": "ci(ns): certify reusable downstream kernel blocks"
+  },
+  {
+   "commit": "d6dc67f5d439a160adea0411ec1ab600baaefab3",
+   "date": "2026-10-04T02:04:42+02:00",
+   "subject": "ci(ns): kernel-check reusable G1 downstream blocks"
+  },
+  {
+   "commit": "6144950e3ac4cf49fbaba7dc98bed1d3649f8483",
+   "date": "2026-10-04T02:04:31+02:00",
+   "subject": "fix coq lra import"
+  },
+  {
+   "commit": "ee8654a716e38f96378fbccef33136e2e28a6843",
+   "date": "2026-10-04T01:31:43+02:00",
+   "subject": "fix(ns): expose subcritical budget to G1 depletion arithmetic"
+  },
+  {
+   "commit": "b12a0837450410aed0d40eab4265a29816e4b28a",
+   "date": "2026-10-04T01:28:39+02:00",
+   "subject": "ci(ns): fix formal G1 path in multiprover workflow"
+  },
+  {
+   "commit": "c5bcb870d8b9946f1c79172bc3c5dee923dedad3",
+   "date": "2026-10-04T01:28:36+02:00",
+   "subject": "ci(ns): fix formal G1 path in G1C workflow"
+  },
+  {
+   "commit": "645abf6a0d03628b372d14c22152f878be5ec95a",
+   "date": "2026-10-04T01:26:49+02:00",
+   "subject": "fix(ns): inherit HOL-Analysis in G1 Isabelle session"
+  },
+  {
+   "commit": "1a737841dae316fa89c24e9bc6c1f2cff2885082",
+   "date": "2026-10-04T01:25:41+02:00",
+   "subject": "audit(ns): align G1C foundational axiom policy with canonical kernel"
+  },
+  {
+   "commit": "dc338affe95293e69a95c21cf3f0e8209a91b515",
+   "date": "2026-10-04T01:24:59+02:00",
+   "subject": "ci(ns): build G1 Isabelle as session and cancel stale multiprover runs"
+  },
+  {
+   "commit": "156311aa3b5d61c655963ac3f643f6dbe8150d68",
+   "date": "2026-10-04T01:24:49+02:00",
+   "subject": "fix(ns): package G1 Isabelle theory as reproducible session"
+  },
+  {
+   "commit": "134fbfea8b81522a70bf34db2482716d3f6053af",
+   "date": "2026-10-04T01:22:04+02:00",
+   "subject": "fix(ns): remove redundant G1C depletion simplification"
+  },
+  {
+   "commit": "9170bf73e12aef97e72081bc57fbfe074ab942e1",
+   "date": "2026-10-04T01:18:23+02:00",
+   "subject": "ci(ns): dedicate G1C gate to current material branch and canonical frontier"
+  },
+  {
+   "commit": "3eae019c08ed733c14a9e0f8ca17cec45f61b499",
+   "date": "2026-10-04T01:18:11+02:00",
+   "subject": "ci(ns): deduplicate G1C checks from general audit"
+  },
+  {
+   "commit": "af43dd9dc8232c3e6dbffa114fc79be7e5600c12",
+   "date": "2026-10-04T01:10:19+02:00",
+   "subject": "ci(ns): cancel stale audit-integrity runs per branch"
+  },
+  {
+   "commit": "03a004ec1be589e4363f0e6d42bcec25227eb615",
+   "date": "2026-10-04T01:09:59+02:00",
+   "subject": "fix(ns): make regularized amplitude lower bound rewrite-stable"
+  },
+  {
+   "commit": "a67eae63daf427a3a0c415d988d93c6f9151e248",
+   "date": "2026-10-04T01:05:57+02:00",
+   "subject": "fix(ns): stabilize quadratic G1 projection and strict embedding"
+  },
+  {
+   "commit": "b149fc17066057f5251cfa3f4ed4e0a118e97dca",
+   "date": "2026-10-04T01:05:45+02:00",
+   "subject": "fix(ns): make G1 strict core construction Prop-elimination safe"
+  },
+  {
+   "commit": "0c9c76160b4ac894029d1b342d3f684d0b7341ed",
+   "date": "2026-10-04T01:05:04+02:00",
+   "subject": "fix(ns): expand dependent-looking G1 structure fields"
+  },
+  {
+   "commit": "508526388d4bc88e583060157af243d25d9e3fc6",
+   "date": "2026-10-04T01:01:08+02:00",
+   "subject": "ci(ns): inline G1 audit sources under single Mathlib import"
+  },
+  {
+   "commit": "f84032b9172d0d0659e2db872f77097812897fdf",
+   "date": "2026-10-04T00:57:38+02:00",
+   "subject": "ci(ns): canonicalize all reuse imports before kernel composition"
+  },
+  {
+   "commit": "0d8732051193b0070254cd37d9968ff2b384e13c",
+   "date": "2026-10-04T00:44:40+02:00",
+   "subject": "ci(ns): fix G1 reuse concatenation import order"
+  },
+  {
+   "commit": "74ac71f10c7aa1298caa930c8c3e0873c04cbad6",
+   "date": "2026-10-04T00:40:20+02:00",
+   "subject": "ci(ns): run minimal canonical kernel gate on NS material branch"
+  },
+  {
+   "commit": "642cebd2ebb9aee01d9e387af8c7f8e4057f8c48",
+   "date": "2026-10-04T00:40:06+02:00",
+   "subject": "ci(ns): persist canonical and reuse kernel logs"
+  },
+  {
+   "commit": "0e31b6f9de39b524d97b0c3027f9c202a48c991e",
+   "date": "2026-10-04T00:39:53+02:00",
+   "subject": "ci(ns): add minimal fail-closed kernel preflight"
+  },
+  {
+   "commit": "b783ac569667392c33bc051c9f51f314f185ec91",
+   "date": "2026-10-04T00:16:16+02:00",
+   "subject": "audit(ns): record canonical pipeline, dual lanes, and exact remaining frontiers"
+  },
+  {
+   "commit": "96f33eee99a2d48697b4ba4e96976339c657ca30",
+   "date": "2026-10-04T00:16:14+02:00",
+   "subject": "audit(ns): freeze full reuse matrix and exact terminal min-cut"
+  },
+  {
+   "commit": "589d0f3403e6c249e4ac57b5176432ac0fd662c1",
+   "date": "2026-10-04T00:14:35+02:00",
+   "subject": "ci(ns): kernel-check canonical material closure pipeline"
+  },
+  {
+   "commit": "02ff24f1cf66a769492133293cc019df0d83909c",
+   "date": "2026-10-04T00:14:26+02:00",
+   "subject": "ci(ns): fail-close canonical material pipeline and frontier"
+  },
+  {
+   "commit": "1312ffe418e6db5309ac3ff1dffee770316eaa10",
+   "date": "2026-10-04T00:14:24+02:00",
+   "subject": "audit(ns): align producer-first status to canonical signed-gain core"
+  },
+  {
+   "commit": "5a7e12caf2665b66552c478e055cf929a0d1d6be",
+   "date": "2026-10-04T00:13:48+02:00",
+   "subject": "ns: add canonical material closure pipeline to frozen signed-gain core"
+  },
+  {
+   "commit": "5c7829b553561bfafb134c365443b944283caf02",
+   "date": "2026-10-04T00:08:55+02:00",
+   "subject": "audit(ns): record reuse map and single material frontier"
+  },
+  {
+   "commit": "0660d5dc683fdaf145e9f028f527565aa498c04d",
+   "date": "2026-10-04T00:08:52+02:00",
+   "subject": "audit(ns): consolidate reusable certificates and fastest material frontier"
+  },
+  {
+   "commit": "9644e3e8410a285aa895a388222990cf9db5cabd",
+   "date": "2026-10-01T20:21:20+02:00",
+   "subject": "ns: formalize positive bounded-L3 and negative blow-up observable objects"
+  },
+  {
+   "commit": "c09ac86c0bdbca7dab28d491236e55c71d25d764",
+   "date": "2026-10-01T19:34:23+02:00",
+   "subject": "ns: add primitive scalar material laws with no OpenMath arguments"
+  },
+  {
+   "commit": "6579345a05166d3a6efd02c2315caa5da6aaf61c",
+   "date": "2026-10-01T19:26:31+02:00",
+   "subject": "ns: add flexible bulk-tail-remainder material operator and differential law"
+  },
+  {
+   "commit": "2e4fe05d9f20a9635f179f2a146008bf604c7328",
+   "date": "2026-10-01T17:50:02+02:00",
+   "subject": "ns: derive strict differential directly from bulk-tail bounds"
+  },
+  {
+   "commit": "d321d0a7eb7cb3ff4ab120d68a010a7de71a347b",
+   "date": "2026-10-01T17:49:44+02:00",
+   "subject": "ns: unify G1 bulk-tail route with canonical producer-first core"
+  },
+  {
+   "commit": "7c51a500c8293b60e0c87723b3dd71dcdecff6d5",
+   "date": "2026-10-01T00:16:35+02:00",
+   "subject": "ATK: project strict bulk-tail data to ActualNSToSignedGainCore"
+  },
+  {
+   "commit": "266eca2b3246beda64c6c82e80a65969dadcfb1c",
+   "date": "2026-10-01T00:07:10+02:00",
+   "subject": "ATK: reduce signed-gain core to strict bulk-tail budget"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-29T05:36:17+00:00",
+  "lean": [
+   "leanprover/lean4:stable",
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MillenniumAudit.G1KAdmissible.FlexibleBulkTailRemainder.delta_pos",
+   "file": "audit/producer-first/FlexibleBulkTailMaterialOperator.lean",
+   "line": 105,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{ν : ℝ} {d : EnstrophyData} (H : FlexibleBulkTailRemainder ν d) : 0 < H.delta"
+  },
+  {
+   "name": "MillenniumAudit.G1KAdmissible.flexible_bulk_tail_differential",
+   "file": "audit/producer-first/FlexibleBulkTailMaterialOperator.lean",
+   "line": 71,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{ν : ℝ} {d : EnstrophyData} (H : FlexibleBulkTailRemainder ν d) (B : EnstrophyBalance ν d) : ∀ t, d.yDerivative t + 2 * (1 - (H.cBulk + H.cTail)) * ν * d.z t ≤ 2 * H.a t * d.y t"
+  },
+  {
+   "name": "MillenniumAudit.G1PrimitiveLaws.raw_budget_gives_positive_margin",
+   "file": "audit/producer-first/PrimitiveMaterialLaws.lean",
+   "line": 35,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(cBulk cTail : ℝ) (hbudget : cBulk + cTail < 1) : 0 < 1 - (cBulk + cTail)"
+  },
+  {
+   "name": "MillenniumAudit.G1PrimitiveLaws.raw_bulk_tail_remainder_bound",
+   "file": "audit/producer-first/PrimitiveMaterialLaws.lean",
+   "line": 5,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(stretch bulk tail remainder ν z y a cBulk cTail : ℝ) (hsplit : stretch = bulk + tail + remainder) (hbulk : bulk ≤ cBulk * ν * z) (htail : tail ≤ cTail * ν * z) (hrem : remainder ≤ a * y) : stretch ≤ (cBulk + cTail) * ν * z + a * y"
+  },
+  {
+   "name": "MillenniumAudit.G1PrimitiveLaws.raw_enstrophy_differential",
+   "file": "audit/producer-first/PrimitiveMaterialLaws.lean",
+   "line": 20,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(yPrime stretch ν z y a cBulk cTail : ℝ) (hbalance : yPrime / 2 + ν * z = stretch) (hstretch : stretch ≤ (cBulk + cTail) * ν * z + a * y) : yPrime + 2 * (1 - (cBulk + cTail)) * ν * z ≤ 2 * a * y"
+  },
+  {
+   "name": "MillenniumAudit.G1PrimitiveLaws.raw_time_coefficient_budget",
+   "file": "audit/producer-first/PrimitiveMaterialLaws.lean",
+   "line": 42,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(totalA totalGradU2 K E ν : ℝ) (hK : 0 ≤ K) (hA : totalA ≤ K * totalGradU2) (hEnergy : totalGradU2 ≤ E / (2 * ν)) : totalA ≤ K * (E / (2 * ν))"
+  },
+  {
+   "name": "MillenniumAudit.G1PrimitiveLaws.raw_zero_remainder_differential",
+   "file": "audit/producer-first/PrimitiveMaterialLaws.lean",
+   "line": 59,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(yPrime stretch ν z cBulk cTail : ℝ) (hbalance : yPrime / 2 + ν * z = stretch) (hstretch : stretch ≤ (cBulk + cTail) * ν * z) : yPrime + 2 * (1 - (cBulk + cTail)) * ν * z ≤ 0"
+  },
+  {
+   "name": "MillenniumAudit.MaterialDecision.CriticalL3BlowupProfile.exceeds_every_threshold",
+   "file": "audit/producer-first/MaterialDecisionObjects.lean",
+   "line": 40,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(B : CriticalL3BlowupProfile) (C : ℝ) : ∃ n, C < B.l3norm n"
+  },
+  {
+   "name": "MillenniumAudit.MaterialDecision.CriticalL3BlowupProfile.no_uniform_bound",
+   "file": "audit/producer-first/MaterialDecisionObjects.lean",
+   "line": 27,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(B : CriticalL3BlowupProfile) : ¬ ∃ C : ℝ, ∀ n, B.l3norm n ≤ C"
+  },
+  {
+   "name": "MillenniumAudit.MaterialDecision.CriticalL3BlowupProfile.refutes_uniform_bound",
+   "file": "audit/producer-first/MaterialDecisionObjects.lean",
+   "line": 53,
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(B : CriticalL3BlowupProfile) (C : ℝ) (hbound : ∀ n, B.l3norm n ≤ C) : False"
+  },
+  {
+   "name": "MillenniumAudit.MaterialDecision.bounded_and_blowup_samples_incompatible",
+   "file": "audit/producer-first/MaterialDecisionObjects.lean",
+   "line": 76,
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(P : UniformCriticalL3Profile) (B : CriticalL3BlowupProfile) (hsample : ∀ n, B.l3norm n = P.l3norm (B.time n)) : False"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.closed_closed_closed_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 66,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize CLOSED_CLOSED_CLOSED_NS = .closedOnly"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.closed_closed_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 41,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize CLOSED_CLOSED_NS = .closedOnly"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.closed_closed_open_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 80,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize CLOSED_CLOSED_OPEN_NS = .full"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.closed_open_closed_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 78,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize CLOSED_OPEN_CLOSED_NS = .full"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.closed_open_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 37,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize CLOSED_OPEN_NS = .full"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.closed_open_open_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 73,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize CLOSED_OPEN_OPEN_NS = .full"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.dual_ns_eq_full",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 25,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": DUAL_NS = .full"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.full_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 89,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize FULL_NS = .full"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.full_ns_counts",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 86,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": FULL_NS = ⟨2, 2⟩"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.ns_cube_complete",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 92,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize openFree = .openOnly ∧ canonicalize closedFree = .closedOnly ∧ canonicalize OPEN_CLOSED_NS = .full ∧ canonicalize CLOSED_OPEN_NS = .full ∧ canonicalize OPEN_OPEN_NS = .openOnly ∧ canonicalize CLOSED_CLOSED_NS = .closedOnly ∧ canonicalize OPEN_OPEN_OPEN_NS = .openOnly ∧ canonicalize CLOSED_CLOSED_CLOSED_NS = .closedOnly ∧ canonicalize OPEN_OPEN_CLOSED_NS = .full ∧ canonicalize OPEN_C"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.open_closed_closed_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 75,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize OPEN_CLOSED_CLOSED_NS = .full"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.open_closed_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 34,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize OPEN_CLOSED_NS = .full"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.open_closed_open_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 71,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize OPEN_CLOSED_OPEN_NS = .full"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.open_ns_ne_closed_ns",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 19,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": OPEN_NS ≠ CLOSED_NS"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.open_open_closed_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 68,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize OPEN_OPEN_CLOSED_NS = .full"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.open_open_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 39,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize OPEN_OPEN_NS = .openOnly"
+  },
+  {
+   "name": "NSMaterialPrizeGate.NSCube.open_open_open_ns_canonical",
+   "file": "open_math/NS_EndpointCube.lean",
+   "line": 63,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize OPEN_OPEN_OPEN_NS = .openOnly"
+  },
+  {
+   "name": "NSMaterialPrizeGate.finalClosure_implies_smoothness",
+   "file": "open_math/NS_MaterialPrizeGate.lean",
+   "line": 72,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {ActualNS SmoothGlobal NoBlowup EnergyControlled CriticalRegular : State → Prop} {ν : ℝ} {data : State → EnstrophyData} (h : NSFinalClosureMaterial State ActualNS SmoothGlobal NoBlowup EnergyControlled CriticalRegular ν data) : NSSmoothnessGate State ActualNS SmoothGlobal"
+  },
+  {
+   "name": "NSMaterialPrizeGate.structural_full_plus_material_closes",
+   "file": "open_math/NS_MaterialPrizeGate.lean",
+   "line": 84,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {ActualNS SmoothGlobal NoBlowup EnergyControlled CriticalRegular : State → Prop} {ν : ℝ} {data : State → EnstrophyData} {Open Closed : Prop} (_hFull : RPA.EndpointLattice.FULL Open Closed) (hMaterial : NSFinalClosureMaterial State ActualNS SmoothGlobal NoBlowup EnergyControlled CriticalRegular ν data) : NSFinalClosureMaterial State ActualNS SmoothGlobal NoBlowup EnergyControlled Cri"
+  },
+  {
+   "name": "NSProducerFirst.P02RejectionNSInvariantProbe.invScale_val",
+   "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
+   "line": 41,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(lam : Scale) : (invScale lam).1 = lam.1⁻¹"
+  },
+  {
+   "name": "NSProducerFirst.P02RejectionNSInvariantProbe.no_scale_orbit_collapse",
+   "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
+   "line": 116,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(M : ScaleModel) (x : M.Point) (hx : M.defect x ≠ 0) : ¬ ∃ lam : Scale, M.defect (M.scale lam x) = 0"
+  },
+  {
+   "name": "NSProducerFirst.P02RejectionNSInvariantProbe.nonzero_defect_preserved",
+   "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(M : ScaleModel) (x : M.Point) (hx : M.defect x ≠ 0) (lam : Scale) : M.defect (M.scale lam x) ≠ 0"
+  },
+  {
+   "name": "NSProducerFirst.P02RejectionNSInvariantProbe.not_every_real_eq_neg_self",
+   "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
+   "line": 150,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (∀ x : ℝ, x = -x)"
+  },
+  {
+   "name": "NSProducerFirst.P02RejectionNSInvariantProbe.positive_defect_preserved",
+   "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
+   "line": 60,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(M : ScaleModel) (x : M.Point) (hx : 0 < M.defect x) (lam : Scale) : 0 < M.defect (M.scale lam x)"
+  },
+  {
+   "name": "NSProducerFirst.P02RejectionNSInvariantProbe.real_eq_neg_self_iff_zero",
+   "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
+   "line": 138,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : ℝ) : x = -x ↔ x = 0"
+  },
+  {
+   "name": "NSProducerFirst.P02RejectionNSInvariantProbe.scale_inverse",
+   "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(M : ScaleModel) (lam : Scale) (x : M.Point) : M.scale (invScale lam) (M.scale lam x) = x"
+  },
+  {
+   "name": "NSProducerFirst.P02RejectionNSInvariantProbe.scaling_axioms_do_not_force_defect_zero",
+   "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
+   "line": 108,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∃ (M : ScaleModel) (x : M.Point), M.defect x ≠ 0"
+  },
+  {
+   "name": "NSProducerFirst.P02RejectionNSInvariantProbe.toy_has_positive_defect",
+   "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
+   "line": 103,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": 0 < toyScaleModel.defect (show toyScaleModel.Point from (1 : ℝ))"
+  },
+  {
+   "name": "NSProducerFirst.P02RejectionNSInvariantProbe.toy_rejects_analytic_collapse",
+   "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
+   "line": 163,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ AdditionalAnalyticCollapse toyScaleModel"
+  },
+  {
+   "name": "NSProducerFirst.P02RejectionNSInvariantProbe.universal_scale_collapse_forbidden",
+   "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
+   "line": 126,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(M : ScaleModel) (hx : ∃ x : M.Point, M.defect x ≠ 0) : ¬ (∀ x : M.Point, ∃ lam : Scale, M.defect (M.scale lam x) = 0)"
+  },
+  {
+   "name": "NSProducerFirst.P02RejectionNSInvariantProbe.zero_defect_preserved",
+   "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
+   "line": 77,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(M : ScaleModel) (x : M.Point) (hx : M.defect x = 0) (lam : Scale) : M.defect (M.scale lam x) = 0"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.CompactSupportSobolevSlice.sobolev",
+   "file": "open_math/ActualNSToSignedGainCore/P1_SobolevCompactSupport.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {u : NSProducerFirst.P1Concrete.VelocityField} {t : ℝ},   NSProducerFirst.P1Concrete.CompactSupportSobolevSlice u t →     MeasureTheory.eLpNorm (NSProducerFirst.P1Concrete.vorticity u t) 6 MeasureTheory.volume ≤       ↑(MeasureTheory.eLpNormLESNormFDerivOfEqInnerConst MeasureTheory.volume 2) *         MeasureTheory.eLpNorm (fderiv ℝ (NSProducerFirst.P1Concrete.vorticity u t)) 2 MeasureTheory.vol"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.P1_concrete_material_attempt",
+   "file": "open_math/ActualNSToSignedGainCore/P1_ConcreteMaterialAttack.lean",
+   "line": 18,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) : ∃ (bulk tail remainder : ℝ → ℝ) (cBulk cTail C : ℝ), 0 ≤ cBulk ∧ 0 ≤ cTail ∧ cBulk + cTail < 1 ∧ (∀ t, stretching s.velocity t = bulk t + tail t + remainder t) ∧ (∀ t, bulk t ≤ cBulk * ν * palinstrophy s.velocity t) ∧ (∀ t, tail t ≤ cTail * ν * palinstrophy s.velocity t) ∧ (∀ t, remainder t ≤ C * (enstrophy s.velocity t)^2"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.abs_p1RieszSymbol_le_one",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RieszCZ_Mincut.lean",
+   "line": 26,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(j : Fin 3) (ξ : Space) : |p1RieszSymbol j ξ| ≤ 1"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.abs_stretchingDensity_le",
+   "file": "open_math/ActualNSToSignedGainCore/P1_StretchingPointwise.lean",
+   "line": 12,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (u : NSProducerFirst.P1Concrete.VelocityField) (t : ℝ) (x : NSProducerFirst.P1Concrete.Space),   |NSProducerFirst.P1Concrete.stretchingDensity u t x| ≤     ‖NSProducerFirst.P1Concrete.vorticity u t x‖ ^ 2 * ‖NSProducerFirst.P1Concrete.spatialDerivative u t x‖"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.analyticSlice_exposes_H1_inputs",
+   "file": "open_math/ActualNSToSignedGainCore/P1_NSAnalyticSliceData.lean",
+   "line": 56,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (h : NSAnalyticSliceData u t) : MemLp (vorticity u t) 2 (volume : Measure Space) ∧ MemLp (fderiv ℝ (vorticity u t)) 2 (volume : Measure Space) ∧ MemLp (vorticity u t) 3 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.analyticSlice_gradient_memLp_three",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3FromNineEntry.lean",
+   "line": 48,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (P : GradientRieszNineEntryPayload u t) : MemLp (fun x => spatialDerivative u t x) 3 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.analyticSlice_stretchingMajorant_memLp_one",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3FromNineEntry.lean",
+   "line": 59,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (P : GradientRieszNineEntryPayload u t) : MemLp (stretchingMajorant u t) 1 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.column_norm_le_sum_entries",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientEntries.lean",
+   "line": 58,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(A : Space →L[ℝ] Space) (j : Fin 3) : ‖A (coordinateVector j)‖ ≤ ∑ i : Fin 3, |(A (coordinateVector j)) i|"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.compact_sobolev_L6",
+   "file": "open_math/ActualNSToSignedGainCore/P1_SobolevL6.lean",
+   "line": 29,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{w : Space → Space} (hw : ContDiff ℝ 1 w) (hcompact : HasCompactSupport w) : eLpNorm w 6 (volume : Measure Space) ≤ (eLpNormLESNormFDerivOfEqInnerConst (volume : Measure Space) (2 : ℝ≥0) : ℝ≥0∞) * eLpNorm (fderiv ℝ w) 2 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.compact_sobolev_L6_toReal",
+   "file": "open_math/ActualNSToSignedGainCore/P1_SobolevL6.lean",
+   "line": 53,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{w : Space → Space} (hw : ContDiff ℝ 1 w) (hcompact : HasCompactSupport w) (hDw2 : MemLp (fderiv ℝ w) 2 (volume : Measure Space)) : (eLpNorm w 6 (volume : Measure Space)).toReal ≤ sobolevL6Constant * (eLpNorm (fderiv ℝ w) 2 (volume : Measure Space)).toReal"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.coordinate_decomposition",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientEntries.lean",
+   "line": 26,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(v : Space) : ∑ j : Fin 3, v j • coordinateVector j = v"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.coordinate_mixed_second_derivative_commutes",
+   "file": "open_math/ActualNSToSignedGainCore/P1_MixedPartials.lean",
+   "line": 14,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) (x : Space) (i j : Fin 3) : fderiv ℝ (fderiv ℝ (fun y : Space => s.velocity (t, y))) x (coordinateVector i) (coordinateVector j) = fderiv ℝ (fderiv ℝ (fun y : Space => s.velocity (t, y))) x (coordinateVector j) (coordinateVector i)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.coordinate_mixed_second_derivative_component_commutes",
+   "file": "open_math/ActualNSToSignedGainCore/P1_MixedPartials.lean",
+   "line": 36,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) (x : Space) (i j k : Fin 3) : (fderiv ℝ (fderiv ℝ (fun y : Space => s.velocity (t, y))) x (coordinateVector i) (coordinateVector j)) k = (fderiv ℝ (fderiv ℝ (fun y : Space => s.velocity (t, y))) x (coordinateVector j) (coordinateVector i)) k"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.coordinate_target_of_divCurl",
+   "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlCoordinateMincut.lean",
+   "line": 57,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (x : Space) (h : spatialLaplacian s.velocity t x = - curlVorticity s.velocity t x) : DivCurlCoordinateTarget s t x"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.divCurl_iff_coordinate_target",
+   "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlCoordinateMincut.lean",
+   "line": 75,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (x : Space) : spatialLaplacian s.velocity t x = - curlVorticity s.velocity t x ↔ DivCurlCoordinateTarget s t x"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.divCurl_of_coordinate_target",
+   "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlCoordinateMincut.lean",
+   "line": 43,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (x : Space) (h : DivCurlCoordinateTarget s t x) : spatialLaplacian s.velocity t x = - curlVorticity s.velocity t x"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.eLpNorm_three_le",
+   "file": "open_math/ActualNSToSignedGainCore/P1_LpInterpolation.lean",
+   "line": 24,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] {f : NSProducerFirst.P1Concrete.Space → E},   MeasureTheory.AEStronglyMeasurable f MeasureTheory.volume →     MeasureTheory.eLpNorm f 3 MeasureTheory.volume ≤       MeasureTheory.eLpNorm f 2 MeasureTheory.volume ^ (1 / 2) *         MeasureTheory.eLpNorm f 6 MeasureTheory.volume ^ (1 / 2)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.enstrophy_eq_integral_norm_sq",
+   "file": "open_math/ActualNSToSignedGainCore/P1_VorticityH1Gate.lean",
+   "line": 60,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(u : VelocityField) (t : ℝ) : enstrophy u t = ∫ x : Space, ‖vorticity u t x‖ ^ 2"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.enstrophy_nonneg",
+   "file": "open_math/ActualNSToSignedGainCore/P1_ConcreteObservables.lean",
+   "line": 82,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (u : NSProducerFirst.P1Concrete.VelocityField) (t : ℝ), 0 ≤ NSProducerFirst.P1Concrete.enstrophy u t"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.enstrophy_zero",
+   "file": "open_math/ActualNSToSignedGainCore/P1_ZeroMaterial.lean",
+   "line": 37,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(t : ℝ) : enstrophy (fun _ => 0) t = 0"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.gradientEntryMajorant_memLp",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3Reconstruction.lean",
+   "line": 22,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH u t) : MemLp (gradientEntryMajorant u t) 3 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.gradientEntry_apply",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientEntries.lean",
+   "line": 20,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(u : VelocityField) (t : ℝ) (j i : Fin 3) (x : Space) : gradientEntry u t j i x = (spatialDerivative u t x (coordinateVector j)) i"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.gradientEnvelope_memLp_three",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3FromNineEntry.lean",
+   "line": 23,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (P : GradientRieszNineEntryPayload u t) : MemLp (gradientEnvelope u t) 3 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.gradientRieszCandidateL2_memLp",
+   "file": "open_math/ActualNSToSignedGainCore/P1_BiotSavartRieszCandidate.lean",
+   "line": 79,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (j i : Fin 3) : MemLp (gradientRieszCandidateL2 A j i : Space → ℂ) 2 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.gradient_memLp_three_of_nineEntry",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3FromNineEntry.lean",
+   "line": 34,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (hsmooth : ContDiff ℝ 1 (fun x : Space => u (t, x))) (P : GradientRieszNineEntryPayload u t) : MemLp (fun x => spatialDerivative u t x) 3 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.gradient_pointwise_le_nine_entries",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientRieszNineEntry.lean",
+   "line": 44,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(u : VelocityField) (t : ℝ) (x : Space) : ‖spatialDerivative u t x‖ ≤ ∑ j : Fin 3, ∑ i : Fin 3, |gradientEntry u t j i x|"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.h1_to_l3_compression",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RieszH1ToL3.lean",
+   "line": 18,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] {f : Space → E} (hf : ContDiff ℝ 1 f) (h2 : MemLp f 2 volume) (hD2 : MemLp (fderiv ℝ f) 2 volume) : MemLp f 3 volume ∧ realLpNorm 3 f ≤ realLpNorm 2 f ^ (1 / 2 : ℝ) * (((eLpNormLESNormFDerivOfEqInnerConst (volume : Measure Space) 2 : ℝ) * realLpNorm 2 (fderiv ℝ f)) ^ (1 / 2 : ℝ))"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.memLp_three_and_norm_le",
+   "file": "open_math/ActualNSToSignedGainCore/P1_LpInterpolation.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] {f : NSProducerFirst.P1Concrete.Space → E},   MeasureTheory.MemLp f 2 MeasureTheory.volume →     MeasureTheory.MemLp f 6 MeasureTheory.volume →       MeasureTheory.MemLp f 3 MeasureTheory.volume ∧         NSProducerFirst.P1Concrete.realLpNorm 3 f ≤           NSProducerFirst.P1Concrete.realLpNorm 2 f ^ (1 / 2) * NSProducerFirst.P1Concrete.realLpNorm 6"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.mincut_of_p1_rieszCZ_L3",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RieszCZ_Mincut.lean",
+   "line": 77,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": P1_RIESZ_CZ_L3_OPEN_MATH"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.nineEntryPayload_entry",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientRieszNineEntry.lean",
+   "line": 59,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH u t) (j i : Fin 3) : GradientEntryL3Control u t j i"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.nineEntryPayload_uniform_coefficient",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientRieszNineEntry.lean",
+   "line": 68,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH u t) : ∃ Cmax : ℝ, 0 ≤ Cmax ∧ ∀ j i : Fin 3, ((nineEntryPayload_entry H j i).C ≤ Cmax)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.nonempty_signedGainCore_of_rawAnalytic_smallData",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RawAnalyticToSignedGain.lean",
+   "line": 118,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν ε : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) (hν : 0 < ν) (hsmall : SmallEnstrophy s ε) (hRaw : RawAnalyticStretchingEstimate s) : Nonempty (NSProducerFirst.SignedGainCore ν (concreteEnstrophyData s))"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.omegaComponentComplex_memLp_two",
+   "file": "open_math/ActualNSToSignedGainCore/P1_BiotSavartRieszCandidate.lean",
+   "line": 25,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (k : Fin 3) : MemLp (omegaComponentComplex u t k) 2 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.omegaComponent_memLp_three",
+   "file": "open_math/ActualNSToSignedGainCore/P1_VorticityComponents.lean",
+   "line": 28,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (k : Fin 3) : MemLp (omegaComponent u t k) 3 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.omegaComponent_memLp_two",
+   "file": "open_math/ActualNSToSignedGainCore/P1_VorticityComponents.lean",
+   "line": 19,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (k : Fin 3) : MemLp (omegaComponent u t k) 2 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.opNorm_le_sum_coordinate_columns",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientEntries.lean",
+   "line": 35,
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(A : Space →L[ℝ] Space) : ‖A‖ ≤ ∑ j : Fin 3, ‖A (coordinateVector j)‖"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.operator_output_l3_of_l2_and_derivative",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RieszH1ToL3.lean",
+   "line": 46,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] {f g : Space → E} (hg : ContDiff ℝ 1 g) (hg2 : MemLp g 2 volume) (hgD2 : MemLp (fderiv ℝ g) 2 volume) (hf2 : MemLp f 2 volume) (hfD2 : MemLp (fderiv ℝ f) 2 volume) (h0 : realLpNorm 2 g ≤ realLpNorm 2 f) (A : ℝ) (hA : 0 ≤ A) (h1 : realLpNorm 2 (fderiv ℝ g) ≤ A * realLpNorm 2 (fderiv ℝ f)) : MemLp g 3 volume ∧ realLpNorm 3 g ≤ realLpNorm 2 f"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1BaseCutoff_fderiv_le",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 93,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : NSProducerFirst.P1Concrete.Space),   ‖fderiv ℝ NSProducerFirst.P1Concrete.p1BaseCutoff x‖ ≤ NSProducerFirst.P1Concrete.p1DerivativeConstant"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1BaseCutoff_smooth",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ContDiff ℝ (↑⊤) NSProducerFirst.P1Concrete.p1BaseCutoff"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1Cutoff_eq_one",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : ℝ}, 0 < R → ∀ {x : NSProducerFirst.P1Concrete.Space}, ‖x‖ ≤ R → NSProducerFirst.P1Concrete.p1Cutoff R x = 1"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1Cutoff_eq_zero",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : ℝ}, 0 < R → ∀ {x : NSProducerFirst.P1Concrete.Space}, 2 * R ≤ ‖x‖ → NSProducerFirst.P1Concrete.p1Cutoff R x = 0"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1Cutoff_fderiv_le",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 107,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : ℝ},   0 < R →     ∀ (x : NSProducerFirst.P1Concrete.Space),       ‖fderiv ℝ (NSProducerFirst.P1Concrete.p1Cutoff R) x‖ ≤ NSProducerFirst.P1Concrete.p1DerivativeConstant / R"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1Cutoff_hasCompactSupport",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : ℝ}, 0 < R → HasCompactSupport (NSProducerFirst.P1Concrete.p1Cutoff R)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1Cutoff_le_one",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 38,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (R : ℝ) (x : NSProducerFirst.P1Concrete.Space), NSProducerFirst.P1Concrete.p1Cutoff R x ≤ 1"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1Cutoff_nonneg",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (R : ℝ) (x : NSProducerFirst.P1Concrete.Space), 0 ≤ NSProducerFirst.P1Concrete.p1Cutoff R x"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1Cutoff_smooth",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (R : ℝ), ContDiff ℝ (↑⊤) (NSProducerFirst.P1Concrete.p1Cutoff R)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1Cutoff_support_subset",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 60,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : ℝ}, 0 < R → Function.support (NSProducerFirst.P1Concrete.p1Cutoff R) ⊆ Metric.ball 0 (2 * R)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1DerivativeConstant_pos",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 90,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "0 < NSProducerFirst.P1Concrete.p1DerivativeConstant"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1DoubleRiesz_output_l3_of_derivative_bound",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RieszH1ConcreteRoute.lean",
+   "line": 17,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(i j : Fin 3) {f g : Space → ℂ} (hg : ContDiff ℝ 1 g) (hg2 : MemLp g 2 volume) (hgD2 : MemLp (fderiv ℝ g) 2 volume) (hf2 : MemLp f 2 volume) (hfD2 : MemLp (fderiv ℝ f) 2 volume) (hL2 : realLpNorm 2 g ≤ realLpNorm 2 f) (A : ℝ) (hA : 0 ≤ A) (hD2 : realLpNorm 2 (fderiv ℝ g) ≤ A * realLpNorm 2 (fderiv ℝ f)) : MemLp g 3 volume ∧ realLpNorm 3 g ≤ realLpNorm 2 f ^ (1 / 2 : ℝ) * (((eLpNormLESNormFDerivOfE"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1DoubleRiesz_output_l3_of_triple_derivative",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RieszH1ConcreteRoute.lean",
+   "line": 50,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(i j : Fin 3) {f g : Space → ℂ} (hg : ContDiff ℝ 1 g) (hg2 : MemLp g 2 volume) (hgD2 : MemLp (fderiv ℝ g) 2 volume) (hf2 : MemLp f 2 volume) (hfD2 : MemLp (fderiv ℝ f) 2 volume) (hL2 : realLpNorm 2 g ≤ realLpNorm 2 f) (hD2 : realLpNorm 2 (fderiv ℝ g) ≤ 3 * realLpNorm 2 (fderiv ℝ f)) : MemLp g 3 volume ∧ realLpNorm 3 g ≤ realLpNorm 2 f ^ (1 / 2 : ℝ) * (((eLpNormLESNormFDerivOfEqInnerConst (volume :"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1RieszL2Backend_contraction",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RieszL2Foundation.lean",
+   "line": 29,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(B : P1RieszL2Backend) (i j : Fin 3) (f : Lp ℂ 2 (volume : Measure Space)) : ‖B.doubleRiesz i j f‖ ≤ ‖f‖"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1RieszSymbol_zero",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RieszCZ_Mincut.lean",
+   "line": 22,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(j : Fin 3) : p1RieszSymbol j 0 = 0"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1_eLpNorm_fderiv_cutoff_smul_le",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceSobolev.lean",
+   "line": 52,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{f : Space → E} (hf : ContDiff ℝ 1 f) {R : ℝ} (hR : 0 < R) : eLpNorm (fderiv ℝ (fun y => p1Cutoff R y • f y)) 2 volume ≤ eLpNorm (fderiv ℝ f) 2 volume + ENNReal.ofReal (p1DerivativeConstant / R) * eLpNorm f 2 volume"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1_eventually_cutoff_eq_one",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 134,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : NSProducerFirst.P1Concrete.Space), ∀ᶠ (n : ℕ) in Filter.atTop, NSProducerFirst.P1Concrete.p1Cutoff (↑n) x = 1"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1_exists_derivative_bound",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 78,
+   "state": "nao_checado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∃ C : ℝ, 0 < C ∧ ∀ x : Space, ‖fderiv ℝ p1BaseCutoff x‖ ≤ C"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1_norm_dilation_le",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 100,
+   "state": "nao_checado",
+   "axioms_beyond_standard": [],
+   "statement": "{R : ℝ} (hR : 0 < R) : ‖p1Dilation R‖ ≤ R⁻¹"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1_norm_fderiv_cutoff_smul_le",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceSobolev.lean",
+   "line": 20,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{f : Space → E} (hf : ContDiff ℝ 1 f) {R : ℝ} (hR : 0 < R) (x : Space) : ‖fderiv ℝ (fun y => p1Cutoff R y • f y) x‖ ≤ ‖fderiv ℝ f x‖ + (p1DerivativeConstant / R) * ‖f x‖"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1_norm_scaled",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : ℝ}, 0 < R → ∀ (x : NSProducerFirst.P1Concrete.Space), ‖R⁻¹ • x‖ = ‖x‖ / R"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1_rieszCZ_L3",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RieszCZ_L3.lean",
+   "line": 24,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(u : VelocityField) (t : ℝ) (hu2 : MemLp (fun x => u (t, x)) 2 (volume : Measure Space)) (hdiv : ∀ x, spatialDivergence u t x = 0) (hω3 : MemLp (vorticity u t) 3 (volume : Measure Space)) : ∃ C_CZ : ℝ, 0 ≤ C_CZ ∧ MemLp (fun x => spatialDerivative u t x) 3 (volume : Measure Space) ∧ (eLpNorm (fun x => spatialDerivative u t x) 3 (volume : Measure Space)).toReal ≤ C_CZ * (eLpNorm (vorticity u t) 3 (v"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1_rieszCZ_L3_of_mincut",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RieszCZ_Mincut.lean",
+   "line": 57,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(H : P1_RIESZ_CZ_L3_OPEN_MATH) (u : VelocityField) (t : ℝ) (hu2 : MemLp (fun x => u (t, x)) 2 (volume : Measure Space)) (hdiv : ∀ x, spatialDivergence u t x = 0) (hω3 : MemLp (vorticity u t) 3 (volume : Measure Space)) : ∃ C_CZ : ℝ, 0 ≤ C_CZ ∧ MemLp (fun x => spatialDerivative u t x) 3 (volume : Measure Space) ∧ (eLpNorm (fun x => spatialDerivative u t x) 3 (volume : Measure Space)).toReal ≤ C_CZ "
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1_scalar_product_bound",
+   "file": "open_math/ActualNSToSignedGainCore/P1_StretchingHolder.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{p q r : ENNReal} [ENNReal.HolderTriple p q r] {f g : Space → ℝ} (hf : MemLp f p volume) (hg : MemLp g q volume) : MemLp (fun x => f x * g x) r volume ∧ p1LpNorm r (fun x => f x * g x) ≤ p1LpNorm p f * p1LpNorm q g"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1_smooth_eLpNorm_six_le",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceSobolev.lean",
+   "line": 77,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{f : Space → E} (hf : ContDiff ℝ 1 f) (h2 : MemLp f 2 volume) : eLpNorm f 6 volume ≤ (eLpNormLESNormFDerivOfEqInnerConst (volume : Measure Space) 2 : ℝ≥0∞) * eLpNorm (fderiv ℝ f) 2 volume"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1_smooth_eLpNorm_six_toReal_le",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceSobolev.lean",
+   "line": 169,
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{f : Space → E} (hf : ContDiff ℝ 1 f) (h2 : MemLp f 2 volume) (hD2 : MemLp (fderiv ℝ f) 2 volume) : (eLpNorm f 6 volume).toReal ≤ (eLpNormLESNormFDerivOfEqInnerConst (volume : Measure Space) 2 : ℝ) * (eLpNorm (fderiv ℝ f) 2 volume).toReal"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.p1_smooth_memLp_six",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceSobolev.lean",
+   "line": 159,
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{f : Space → E} (hf : ContDiff ℝ 1 f) (h2 : MemLp f 2 volume) (hD2 : MemLp (fderiv ℝ f) 2 volume) : MemLp f 6 volume"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.palinstrophy_eq_integral_norm_sq",
+   "file": "open_math/ActualNSToSignedGainCore/P1_VorticityH1Gate.lean",
+   "line": 67,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(u : VelocityField) (t : ℝ) : palinstrophy u t = ∫ x : Space, ‖fderiv ℝ (fun y : Space => vorticity u t y) x‖ ^ 2"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.palinstrophy_nonneg",
+   "file": "open_math/ActualNSToSignedGainCore/P1_ConcreteObservables.lean",
+   "line": 87,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (u : NSProducerFirst.P1Concrete.VelocityField) (t : ℝ), 0 ≤ NSProducerFirst.P1Concrete.palinstrophy u t"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.palinstrophy_zero",
+   "file": "open_math/ActualNSToSignedGainCore/P1_ZeroMaterial.lean",
+   "line": 41,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(t : ℝ) : palinstrophy (fun _ => 0) t = 0"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.quartic_young_three_one",
+   "file": "open_math/ActualNSToSignedGainCore/P1_QuarticYoung.lean",
+   "line": 13,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (a b : ℝ), 0 ≤ a → 0 ≤ b → a ^ 3 * b ≤ 3 / 4 * a ^ 4 + 1 / 4 * b ^ 4"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.quartic_young_three_one_four_mul",
+   "file": "open_math/ActualNSToSignedGainCore/P1_QuarticYoung.lean",
+   "line": 30,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (a b : ℝ), 0 ≤ a → 0 ≤ b → 4 * (a ^ 3 * b) ≤ 3 * a ^ 4 + b ^ 4"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.riesz_three_l3_of_unit_l2_and_triple_derivative",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RieszH1ToL3.lean",
+   "line": 93,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] {f g : Space → E} (hg : ContDiff ℝ 1 g) (hg2 : MemLp g 2 volume) (hgD2 : MemLp (fderiv ℝ g) 2 volume) (hf2 : MemLp f 2 volume) (hfD2 : MemLp (fderiv ℝ f) 2 volume) (hL2 : realLpNorm 2 g ≤ realLpNorm 2 f) (hD2 : realLpNorm 2 (fderiv ℝ g) ≤ 3 * realLpNorm 2 (fderiv ℝ f)) : MemLp g 3 volume ∧ realLpNorm 3 g ≤ realLpNorm 2 f ^ (1 / 2 : ℝ) * (("
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.rijOmegaL2_norm_le",
+   "file": "open_math/ActualNSToSignedGainCore/P1_BiotSavartRieszCandidate.lean",
+   "line": 71,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (a b k : Fin 3) : ‖rijOmegaL2 A a b k‖ ≤ ‖omegaComponentL2 A k‖"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.small_data_signed_stretching_gap",
+   "file": "open_math/ActualNSToSignedGainCore/P1_SmallData_Gap.lean",
+   "line": 29,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν ε : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) (hν : 0 < ν) (hsmall : SmallEnstrophy s ε) : ∃ θ C : ℝ, 0 ≤ θ ∧ θ < 1 ∧ 0 ≤ C ∧ ∀ t, stretching s.velocity t ≤ θ * ν * palinstrophy s.velocity t + C * (enstrophy s.velocity t)^2"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.small_data_signed_stretching_gap_of_raw",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RawAnalyticEstimate.lean",
+   "line": 25,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν ε : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) (hν : 0 < ν) (hsmall : SmallEnstrophy s ε) (hRaw : RawAnalyticEstimate s) : ∃ θ C : ℝ, 0 ≤ θ ∧ θ < 1 ∧ 0 ≤ C ∧ ∀ t, stretching s.velocity t ≤ θ * ν * palinstrophy s.velocity t + C * (enstrophy s.velocity t)^2"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.smoothNSState_divergence_free",
+   "file": "open_math/ActualNSToSignedGainCore/P1_RieszCZ_L3.lean",
+   "line": 63,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) : ∀ x, spatialDivergence s.velocity t x = 0"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.smoothNSState_spatialDerivative_aestronglyMeasurable",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3SmoothState.lean",
+   "line": 17,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) : AEStronglyMeasurable (fun x : Space => spatialDerivative s.velocity t x) (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.smoothNSState_spatialDerivative_memLp_three_of_nine_entries",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3SmoothState.lean",
+   "line": 33,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH s.velocity t) : MemLp (fun x : Space => spatialDerivative s.velocity t x) 3 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.smoothNSState_stretchingMajorant_lpNorm_one_le_of_nine_entries",
+   "file": "open_math/ActualNSToSignedGainCore/P1_NineEntryToStretching.lean",
+   "line": 43,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) (hω3 : MemLp (vorticity s.velocity t) 3 (volume : Measure Space)) (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH s.velocity t) : p1LpNorm 1 (stretchingMajorant s.velocity t) ≤ p1LpNorm 3 (fun x => ‖vorticity s.velocity t x‖) ^ 2 * p1LpNorm 3 (fun x => ‖spatialDerivative s.velocity t x‖)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.smoothNSState_stretchingMajorant_memLp_one_of_nine_entries",
+   "file": "open_math/ActualNSToSignedGainCore/P1_NineEntryToStretching.lean",
+   "line": 14,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) (hω3 : MemLp (vorticity s.velocity t) 3 (volume : Measure Space)) (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH s.velocity t) : MemLp (stretchingMajorant s.velocity t) 1 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.sobolevL6Constant_nonneg",
+   "file": "open_math/ActualNSToSignedGainCore/P1_SobolevL6.lean",
+   "line": 25,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": 0 ≤ sobolevL6Constant"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.space_ext_three",
+   "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlCoordinateMincut.lean",
+   "line": 14,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b : Space} (h0 : a 0 = b 0) (h1 : a 1 = b 1) (h2 : a 2 = b 2) : a = b"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.spatialDerivative_memLp_three_of_nine_entries",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3Reconstruction.lean",
+   "line": 34,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{u : VelocityField} {t : ℝ} (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH u t) (hmeas : AEStronglyMeasurable (fun x : Space => spatialDerivative u t x) (volume : Measure Space)) : MemLp (fun x : Space => spatialDerivative u t x) 3 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.spatialDerivative_norm_le_sum_entries",
+   "file": "open_math/ActualNSToSignedGainCore/P1_GradientEntries.lean",
+   "line": 78,
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(u : VelocityField) (t : ℝ) (x : Space) : ‖spatialDerivative u t x‖ ≤ ∑ j : Fin 3, ∑ i : Fin 3, |gradientEntry u t j i x|"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.spatialLaplacian_eq_neg_curlVorticity",
+   "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlIdentity.lean",
+   "line": 45,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) : ∀ x, spatialLaplacian s.velocity t x = - curlVorticity s.velocity t x"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.spatialSlice_contDiff",
+   "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlIdentity.lean",
+   "line": 15,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) : ContDiff ℝ ∞ (fun x : Space => s.velocity (t, x))"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.spatialSlice_second_derivative_symmetric",
+   "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlIdentity.lean",
+   "line": 28,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) (x : Space) : IsSymmSndFDerivAt ℝ (fun y : Space => s.velocity (t, y)) x"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.stretchingDensity_le_majorant",
+   "file": "open_math/ActualNSToSignedGainCore/P1_StretchingPointwise.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (u : NSProducerFirst.P1Concrete.VelocityField) (t : ℝ) (x : NSProducerFirst.P1Concrete.Space),   NSProducerFirst.P1Concrete.stretchingDensity u t x ≤ NSProducerFirst.P1Concrete.stretchingMajorant u t x"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.stretchingMajorant_lpNorm_one_le",
+   "file": "open_math/ActualNSToSignedGainCore/P1_StretchingHolder.lean",
+   "line": 71,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(u : VelocityField) (t : ℝ) (hω : MemLp (vorticity u t) 3 volume) (hD : MemLp (fun x => spatialDerivative u t x) 3 volume) : p1LpNorm 1 (stretchingMajorant u t) ≤ p1LpNorm 3 (fun x => ‖vorticity u t x‖) ^ 2 * p1LpNorm 3 (fun x => ‖spatialDerivative u t x‖)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.stretchingMajorant_memLp_one_of_L3",
+   "file": "open_math/ActualNSToSignedGainCore/P1_StretchingHolder.lean",
+   "line": 43,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(u : VelocityField) (t : ℝ) (hω : MemLp (vorticity u t) 3 volume) (hD : MemLp (fun x => spatialDerivative u t x) 3 volume) : MemLp (stretchingMajorant u t) 1 volume"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.stretchingMajorant_nonneg",
+   "file": "open_math/ActualNSToSignedGainCore/P1_StretchingPointwise.lean",
+   "line": 54,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (u : NSProducerFirst.P1Concrete.VelocityField) (t : ℝ) (x : NSProducerFirst.P1Concrete.Space),   0 ≤ NSProducerFirst.P1Concrete.stretchingMajorant u t x"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.stretching_zero",
+   "file": "open_math/ActualNSToSignedGainCore/P1_ZeroMaterial.lean",
+   "line": 45,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(t : ℝ) : stretching (fun _ => 0) t = 0"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.uniformGradientRiesz_constant",
+   "file": "open_math/ActualNSToSignedGainCore/P1_UniformGradientRiesz.lean",
+   "line": 46,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} {s : SmoothNSState times ν f} (H : UNIFORM_GRADIENT_RIESZ_OPEN_MATH s) : ∃ C_CZ : ℝ, 0 ≤ C_CZ ∧ ∀ t : ℝ, ((Classical.choice H).atTime t).Cmax ≤ C_CZ"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.uniformGradientRiesz_per_time",
+   "file": "open_math/ActualNSToSignedGainCore/P1_UniformGradientRiesz.lean",
+   "line": 35,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} {s : SmoothNSState times ν f} (H : UNIFORM_GRADIENT_RIESZ_OPEN_MATH s) (t : ℝ) : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH s.velocity t"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.uniform_material_stretching_holder_bound",
+   "file": "open_math/ActualNSToSignedGainCore/P1_UniformMaterialChain.lean",
+   "line": 44,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) (hH1 : VORTICITY_H1_OPEN_MATH s) (hRiesz : UNIFORM_GRADIENT_RIESZ_OPEN_MATH s) {t : ℝ} (ht : t ∈ times) : p1LpNorm 1 (stretchingMajorant s.velocity t) ≤ p1LpNorm 3 (fun x => ‖vorticity s.velocity t x‖) ^ 2 * p1LpNorm 3 (fun x => ‖spatialDerivative s.velocity t x‖)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.uniform_material_stretching_memLp_one",
+   "file": "open_math/ActualNSToSignedGainCore/P1_UniformMaterialChain.lean",
+   "line": 19,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) (hH1 : VORTICITY_H1_OPEN_MATH s) (hRiesz : UNIFORM_GRADIENT_RIESZ_OPEN_MATH s) {t : ℝ} (ht : t ∈ times) : MemLp (stretchingMajorant s.velocity t) 1 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.vorticity_eLpNorm_six_le_fderiv_two_of_compactSupport",
+   "file": "open_math/ActualNSToSignedGainCore/P1_SobolevCompactSupport.lean",
+   "line": 18,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (u : NSProducerFirst.P1Concrete.VelocityField) (t : ℝ),   ContDiff ℝ 1 (NSProducerFirst.P1Concrete.vorticity u t) →     HasCompactSupport (NSProducerFirst.P1Concrete.vorticity u t) →       MeasureTheory.eLpNorm (NSProducerFirst.P1Concrete.vorticity u t) 6 MeasureTheory.volume ≤         ↑(MeasureTheory.eLpNormLESNormFDerivOfEqInnerConst MeasureTheory.volume 2) *           MeasureTheory.eLpNorm (f"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.vorticity_memLp_three_of_H1_gate",
+   "file": "open_math/ActualNSToSignedGainCore/P1_VorticityH1Gate.lean",
+   "line": 44,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} {s : SmoothNSState times ν f} (H : VORTICITY_H1_OPEN_MATH s) (t : ℝ) : MemLp (vorticity s.velocity t) 3 (volume : Measure Space)"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.vorticity_zero",
+   "file": "open_math/ActualNSToSignedGainCore/P1_ZeroMaterial.lean",
+   "line": 33,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(t : ℝ) (x : Space) : vorticity (fun _ => 0) t x = 0"
+  },
+  {
+   "name": "NSProducerFirst.P1Concrete.zero_material_witness",
+   "file": "open_math/ActualNSToSignedGainCore/P1_ZeroMaterial.lean",
+   "line": 49,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(times : Set ℝ) (ν : ℝ) : ∃ (bulk tail remainder : ℝ → ℝ) (cBulk cTail C : ℝ), 0 ≤ cBulk ∧ 0 ≤ cTail ∧ cBulk + cTail < 1 ∧ (∀ t, stretching (zeroState times ν).velocity t = bulk t + tail t + remainder t) ∧ (∀ t, bulk t ≤ cBulk * ν * palinstrophy (zeroState times ν).velocity t) ∧ (∀ t, tail t ≤ cTail * ν * palinstrophy (zeroState times ν).velocity t) ∧ (∀ t, remainder t ≤ C * (enstrophy (zeroState "
+  },
+  {
+   "name": "NSProducerFirst.P1_generic_frontier_not_derivable_from_abstract_carriers",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WitnessAttack.lean",
+   "line": 51,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": ": ¬ Nonempty (ActualNSToQuadraticBulkTailWitness Unit P1AbstractCounterexampleActualNS (1 : ℝ) (fun _ => P1AbstractCounterexampleData))"
+  },
+  {
+   "name": "NSProducerFirst.P1_no_witness_for_abstract_counterexample",
+   "file": "open_math/ActualNSToSignedGainCore/P1_WitnessAttack.lean",
+   "line": 40,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": ": ¬ Nonempty (QuadraticBulkTailWitness (1 : ℝ) P1AbstractCounterexampleData)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalBridgeAudit.no_structural_to_arbitrary_signed_gain",
+   "file": "open_math/ActualNSToSignedGainCore/P05TerminalBridgeAudit.lean",
+   "line": 32,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (Nonempty State → Nonempty (SignedGainCertificate 1 impossibleSignedGainData))"
+  },
+  {
+   "name": "NSProducerFirst.TerminalBridgeAudit.no_terminal_cycle_to_impossible_signed_gain",
+   "file": "open_math/ActualNSToSignedGainCore/P05TerminalBridgeAudit.lean",
+   "line": 41,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (Endpoint True → Nonempty (SignedGainCertificate 1 impossibleSignedGainData))"
+  },
+  {
+   "name": "NSProducerFirst.TerminalBridgeAudit.structural_closure_does_not_inhabit_impossible_signed_gain",
+   "file": "open_math/ActualNSToSignedGainCore/P05TerminalBridgeAudit.lean",
+   "line": 23,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty State → ¬ Nonempty (SignedGainCertificate 1 impossibleSignedGainData)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalBridgeAudit.structural_terminal_witness_exists",
+   "file": "open_math/ActualNSToSignedGainCore/P05TerminalBridgeAudit.lean",
+   "line": 18,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty State"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.all_finite_continuations_agree",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 70,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{Obligation : Type} (S : Signature Obligation) (m n : Nat) (o : Obligation) : repeat S.expand m o = repeat S.expand n o"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.endpoint_iff_gap",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 93,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} : Endpoint P ↔ Gap P"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.endpoint_to_gap",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 88,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} : Endpoint P → Gap P"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.expansion_adds_no_new_obligation",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{Obligation : Type} (S : Signature Obligation) (o : Obligation) : S.expand o = o"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.gap_iff_habitant",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 95,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} : Gap P ↔ Habitant P"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.gap_to_habitant",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 90,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} : Gap P → Habitant P"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.habitant_iff_inhabitant",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 96,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} : Habitant P ↔ Inhabitant P"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.habitant_to_inhabitant",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 91,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} : Habitant P → Inhabitant P"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.inhabitant_to_endpoint",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 92,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} : Inhabitant P → Endpoint P"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.no_generic_terminal_inhabitant",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 114,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (∀ P : Prop, Endpoint P)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.repeat_eq_terminal",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 23,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{Obligation : Type} (S : Signature Obligation) (n : Nat) (o : Obligation) : repeat S.expand n o = o"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.restart_after_skip_is_same_terminal",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 60,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{Obligation : Type} (S : Signature Obligation) (n : Nat) (o : Obligation) : repeat S.expand n (repeat S.expand 1 o) = o"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.signature_alone_does_not_imply_arbitrary_target",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 41,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": (∃ S : Signature Unit, True) ∧ ¬ False"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.skip_terminal_bit",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 51,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{Obligation : Type} (S : Signature Obligation) (o : Obligation) : repeat S.expand 1 o = o"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.terminal_cycle",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 97,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} : Endpoint P ↔ Inhabitant P"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.terminal_cycle_does_not_create_false",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 108,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": (Endpoint False ↔ Gap False) ∧ ¬ Endpoint False"
+  },
+  {
+   "name": "NSProducerFirst.TerminalGapSignature.terminal_inhabited_iff_endpoint",
+   "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
+   "line": 98,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{P : Prop} : Inhabited (Endpoint P) ↔ Endpoint P"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.closed_eq_reverse_open_after_collapse",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 51,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": collapse .right = collapse (reverse .right)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.closed_is_terminal_fixed",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 136,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": terminalStep State.core = State.core"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.closed_ne_reverse_closed",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 94,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": State.right ≠ reverse State.right"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.collapse_reverse_commute",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 61,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(s : State) : collapse (reverse s) = reverse (collapse s)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.collapse_reverse_eq_collapse",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 36,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(s : State) : collapse (reverse s) = collapse s"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_closed_distinct_but_terminally_equal",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 104,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": State.left ≠ State.right ∧ collapse State.left = collapse State.right"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_closed_equal_after_terminal_collapse",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 41,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": collapse .left = collapse .right"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_eq_reverse_closed_after_collapse",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 46,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": collapse .left = collapse (reverse .left)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_ne_closed",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 99,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": State.left ≠ State.right"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_ne_reverse_open",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 86,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": State.left ≠ reverse State.left"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_reaches_closed_and_stays",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 141,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(n : Nat) : Nat.iterate terminalStep (n + 1) State.left = State.core"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_tends_to_closed",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 130,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": terminalStep State.left = State.core"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.representative_ne_reverse_but_terminalEq",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 110,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(s : State) (hs : s ≠ State.core) : s ≠ reverse s ∧ TerminalEq s (reverse s)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.reverse_core",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 29,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": reverse .core = .core"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.reverse_involutive",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 31,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(s : State) : reverse (reverse s) = s"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.reverse_left",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 27,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": reverse .left = .right"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.reverse_right",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 30,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": reverse .right = .left"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.terminalEq_all",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 71,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(a b : State) : TerminalEq a b"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.terminalEq_reverse",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 75,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(s : State) : TerminalEq s (reverse s)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.terminal_equivalence_does_not_close_material_endpoint",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 79,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ Nonempty (NSProducerFirst.SignedGainCertificate 1 NSProducerFirst.impossibleSignedGainData)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.terminal_image_is_core",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 56,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(s : State) : collapse s = .core"
+  },
+  {
+   "name": "NSProducerFirst.TerminalOpenClosedAlgebra.unique_terminal_normal_form",
+   "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
+   "line": 152,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(s : State) : terminalStep s = State.core"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.all_collapse_to_core",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(s : State) : collapse s = .core"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.bilateral_meet",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 54,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": collapse .left = collapse .right"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.closure_does_not_create_arbitrary_endpoint",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 63,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (∀ P : Prop, P)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.code_core",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 29,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": code .core = 1"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.code_left",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": code .left = 0"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.code_right",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 30,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": code .right = 2"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.collapse_core",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 39,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": collapse .core = .core"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.collapse_idempotent",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(s : State) : collapse (collapse s) = collapse s"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.collapse_left",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 37,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": collapse .left = .core"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.collapse_right",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": collapse .right = .core"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.core_fixed",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 41,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": collapse .core = .core"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.last_bit_normalization_does_not_decide_arbitrary_prop",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 115,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (∀ P : Prop, P ∨ ¬ P → P)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.normalize_00",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 87,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": normalizeLastBit (0, 0) = (0, 0)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.normalize_01",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 81,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": normalizeLastBit (0, 1) = (1, 1)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.normalize_02",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 84,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": normalizeLastBit (0, 2) = (2, 2)"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.normalize_fixed_iff_diagonal",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 102,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : PairCode) : normalizeLastBit p = p ↔ p.1 = p.2"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.normalize_idempotent",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 96,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : PairCode) : normalizeLastBit (normalizeLastBit p) = normalizeLastBit p"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.normalize_is_diagonal",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 90,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : PairCode) : (normalizeLastBit p).1 = (normalizeLastBit p).2"
+  },
+  {
+   "name": "NSProducerFirst.TerminalThreeStateClosure.three_state_model_exists",
+   "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
+   "line": 59,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty State"
+  },
+  {
+   "name": "NSProducerFirst.g1_bulk_tail_implies_strict_differential",
+   "file": "audit/producer-first/G1MaterialUnified.lean",
+   "line": 80,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ν cBulk δTail : ℝ) (_hν : 0 ≤ ν) (d : MillenniumAudit.G1KAdmissible.EnstrophyData) (s : MillenniumAudit.G1KAdmissible.StretchSplit d) (hBulk : MillenniumAudit.G1KAdmissible.BulkAbsorption ν cBulk d s) (hTail : MillenniumAudit.G1KAdmissible.ExceptionalTailControl ν δTail d s) (hBudget : MillenniumAudit.G1KAdmissible.SubcriticalBudget cBulk δTail) (hbalance : ∀ t, (1 / 2 : ℝ) * deriv (EnstrophyData"
+  },
+  {
+   "name": "NSProducerFirst.navierStokes_material_cert_refute_disjoint",
+   "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
+   "line": 62,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(State : Type) (ActualNS : State → Prop) (ν : ℝ) (data : State → EnstrophyData) : ¬ (NavierStokesMaterialCertifies State ActualNS ν data ∧ NavierStokesMaterialRefutes State ActualNS ν data)"
+  },
+  {
+   "name": "NSProducerFirst.nonempty_actualNSToSignedGainCore_of_quadraticBulkTail",
+   "file": "audit/producer-first/MaterialClosurePipeline.lean",
+   "line": 130,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} (h : Nonempty (ActualNSToQuadraticBulkTailWitness State ActualNS ν data)) : Nonempty (ActualNSToSignedGainCore State ActualNS ν data)"
+  },
+  {
+   "name": "NSProducerFirst.nonempty_signedGainCore_of_bulk_tail",
+   "file": "audit/producer-first/SignedGainCore.lean",
+   "line": 129,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{ν : ℝ} {d : EnstrophyData} (bulk tail : ℝ → ℝ) (split : ∀ t, d.stretch t = bulk t + tail t) (cBulk δTail : ℝ) (hBulk0 : 0 ≤ cBulk) (hTail0 : 0 ≤ δTail) (hBulk : ∀ t, bulk t ≤ cBulk * ν * d.z t) (hTail : ∀ t, tail t ≤ δTail * ν * d.z t) (hBudget : cBulk + δTail < 1) : Nonempty (SignedGainCore ν d)"
+  },
+  {
+   "name": "NSProducerFirst.not_navierStokesMaterialCertifies_iff_refutes",
+   "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
+   "line": 46,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(State : Type) (ActualNS : State → Prop) (ν : ℝ) (data : State → EnstrophyData) : ¬ NavierStokesMaterialCertifies State ActualNS ν data ↔ NavierStokesMaterialRefutes State ActualNS ν data"
+  },
+  {
+   "name": "NSProducerFirst.quadraticProducer_certifies_navierStokesMaterial",
+   "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
+   "line": 37,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} (h : NavierStokesQuadraticProducer State ActualNS ν data) : NavierStokesMaterialCertifies State ActualNS ν data"
+  },
+  {
+   "name": "NSRPACube.closed_closed_closed_ns_canonical",
+   "file": "open_math/NS_RPACompleteCube.lean",
+   "line": 66,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize CLOSED_CLOSED_CLOSED_NS = .closedOnly"
+  },
+  {
+   "name": "NSRPACube.closed_closed_ns_canonical",
+   "file": "open_math/NS_RPACompleteCube.lean",
+   "line": 60,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize CLOSED_CLOSED_NS = .closedOnly"
+  },
+  {
+   "name": "NSRPACube.closed_closed_open_ns_canonical",
+   "file": "open_math/NS_RPACompleteCube.lean",
+   "line": 84,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize CLOSED_CLOSED_OPEN_NS = .full"
+  },
+  {
+   "name": "NSRPACube.closed_open_closed_ns_canonical",
+   "file": "open_math/NS_RPACompleteCube.lean",
+   "line": 81,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize CLOSED_OPEN_CLOSED_NS = .full"
+  },
+  {
+   "name": "NSRPACube.closed_open_open_ns_canonical",
+   "file": "open_math/NS_RPACompleteCube.lean",
+   "line": 75,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize CLOSED_OPEN_OPEN_NS = .full"
+  },
+  {
+   "name": "NSRPACube.dual_ns_canonical",
+   "file": "open_math/NS_RPACompleteCube.lean",
+   "line": 54,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize DUAL_NS = .full"
+  },
+  {
+   "name": "NSRPACube.full_ns_free_canonical",
+   "file": "open_math/NS_RPACompleteCube.lean",
+   "line": 87,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize FULL_NS_FREE = .full"
+  },
+  {
+   "name": "NSRPACube.open_closed_closed_ns_canonical",
+   "file": "open_math/NS_RPACompleteCube.lean",
+   "line": 78,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize OPEN_CLOSED_CLOSED_NS = .full"
+  },
+  {
+   "name": "NSRPACube.open_closed_open_ns_canonical",
+   "file": "open_math/NS_RPACompleteCube.lean",
+   "line": 72,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize OPEN_CLOSED_OPEN_NS = .full"
+  },
+  {
+   "name": "NSRPACube.open_open_closed_ns_canonical",
+   "file": "open_math/NS_RPACompleteCube.lean",
+   "line": 69,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize OPEN_OPEN_CLOSED_NS = .full"
+  },
+  {
+   "name": "NSRPACube.open_open_ns_canonical",
+   "file": "open_math/NS_RPACompleteCube.lean",
+   "line": 57,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize OPEN_OPEN_NS = .openOnly"
+  },
+  {
+   "name": "NSRPACube.open_open_open_ns_canonical",
+   "file": "open_math/NS_RPACompleteCube.lean",
+   "line": 63,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize OPEN_OPEN_OPEN_NS = .openOnly"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 63,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize closedFree = .closedOnly"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_closed_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 66,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize (closedFree + closedFree) = .closedOnly"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_closed_closed_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 114,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize (closedFree + closedFree + closedFree) = .closedOnly"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_closed_closed_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 126,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize (closedFree + closedFree + openFree) = .full"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_closed_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 67,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize (closedFree + openFree) = .full"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_closed_open_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 124,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize (closedFree + openFree + closedFree) = .full"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_closed_open_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 120,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize (closedFree + openFree + openFree) = .full"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_dual",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 64,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize dualFree = .full"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_empty",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 60,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize emptyFree = .empty"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_fullFree",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 133,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize fullFree = .full"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 62,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize openFree = .openOnly"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_open_closed_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 122,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize (openFree + closedFree + closedFree) = .full"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_open_closed_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 118,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize (openFree + closedFree + openFree) = .full"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_open_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 65,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize (openFree + openFree) = .openOnly"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_open_open_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 116,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize (openFree + openFree + closedFree) = .full"
+  },
+  {
+   "name": "RPA.EndpointLattice.canonical_open_open_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 111,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize (openFree + openFree + openFree) = .openOnly"
+  },
+  {
+   "name": "RPA.EndpointLattice.closed_closed_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 104,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": closedFree + closedFree + closedFree = ⟨0, 3⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.closed_closed_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 110,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": closedFree + closedFree + openFree = ⟨1, 2⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.closed_idempotent",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 70,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": join .closedOnly .closedOnly = .closedOnly"
+  },
+  {
+   "name": "RPA.EndpointLattice.closed_open_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 109,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": closedFree + openFree + closedFree = ⟨1, 2⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.closed_open_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 107,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": closedFree + openFree + openFree = ⟨2, 1⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.closed_plus_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 24,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": closedFree + closedFree = ⟨0, 2⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.closed_plus_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 22,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": closedFree + openFree = dualFree"
+  },
+  {
+   "name": "RPA.EndpointLattice.complete_cube_through_three",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 168,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalize openFree = .openOnly ∧ canonicalize closedFree = .closedOnly ∧ canonicalize (openFree + closedFree) = .full ∧ canonicalize (closedFree + openFree) = .full ∧ canonicalize (openFree + openFree) = .openOnly ∧ canonicalize (closedFree + closedFree) = .closedOnly ∧ canonicalize (openFree + openFree + openFree) = .openOnly ∧ canonicalize (closedFree + closedFree + closedFree) = .closedOnl"
+  },
+  {
+   "name": "RPA.EndpointLattice.fullFree_counts",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 131,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": fullFree = ⟨2, 2⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.full_absorbs_left",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 72,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : Canonical) : join .full x = .full"
+  },
+  {
+   "name": "RPA.EndpointLattice.full_absorbs_right",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 73,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : Canonical) : join x .full = .full"
+  },
+  {
+   "name": "RPA.EndpointLattice.full_eq_dual_endpoint_state",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 81,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(Open Closed : Prop) : FULL Open Closed ↔ RPA.DUAL_ENDPOINT_STATE Open Closed"
+  },
+  {
+   "name": "RPA.EndpointLattice.full_eq_final_root",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 86,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(Open Closed : Prop) : FULL Open Closed ↔ FINAL_ROOT Open Closed"
+  },
+  {
+   "name": "RPA.EndpointLattice.full_eq_global_external_certificate",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 88,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(Open Closed : Prop) : FULL Open Closed ↔ GLOBAL_EXTERNAL_CERTIFICATE Open Closed"
+  },
+  {
+   "name": "RPA.EndpointLattice.full_eq_math",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 84,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(Open Closed : Prop) : FULL Open Closed ↔ MATH Open Closed"
+  },
+  {
+   "name": "RPA.EndpointLattice.maximal_full_chain",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 90,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(Open Closed : Prop) : FULL Open Closed ↔ RPA.DUAL_ENDPOINT_STATE Open Closed ∧ MATH Open Closed ∧ FINAL_ROOT Open Closed ∧ GLOBAL_EXTERNAL_CERTIFICATE Open Closed"
+  },
+  {
+   "name": "RPA.EndpointLattice.one_open_two_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 26,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": openFree + closedFree + closedFree = ⟨1, 2⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.open_closed_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 108,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": openFree + closedFree + closedFree = ⟨1, 2⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.open_closed_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 106,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": openFree + closedFree + openFree = ⟨2, 1⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.open_idempotent",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 68,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": join .openOnly .openOnly = .openOnly"
+  },
+  {
+   "name": "RPA.EndpointLattice.open_join_closed_full",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 71,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": join .openOnly .closedOnly = .full"
+  },
+  {
+   "name": "RPA.EndpointLattice.open_open_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 105,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": openFree + openFree + closedFree = ⟨2, 1⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.open_open_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 102,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": openFree + openFree + openFree = ⟨3, 0⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.open_plus_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 20,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": openFree + closedFree = dualFree"
+  },
+  {
+   "name": "RPA.EndpointLattice.open_plus_open",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 23,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": openFree + openFree = ⟨2, 0⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.two_open_one_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 25,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": openFree + openFree + closedFree = ⟨2, 1⟩"
+  },
+  {
+   "name": "RPA.EndpointLattice.two_open_two_closed",
+   "file": "open_math/RPA_EndpointLattice.lean",
+   "line": 27,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": openFree + openFree + closedFree + closedFree = ⟨2, 2⟩"
+  },
+  {
+   "name": "RPA.bridge_eq_math",
+   "file": "open_math/RPA_MinimalChain.lean",
+   "line": 54,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(Open Closed : Prop) : OPEN_BRIDGE_CLOSED_BRIDGE Open Closed ↔ MATH Open Closed"
+  },
+  {
+   "name": "RPA.certify",
+   "file": "open_math/RPA_MinimalChain.lean",
+   "line": 89,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{Open Closed : Prop} (hOpen : Open) (hClosed : Closed) (hIdentity : Open ↔ Closed) : GLOBAL_EXTERNAL_CERTIFICATE Open Closed"
+  },
+  {
+   "name": "RPA.dual_endpoint_eq_openClosed",
+   "file": "open_math/RPA_MinimalChain.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(Open Closed : Prop) : OPEN_ENDPOINT_CLOSED_ENDPOINT Open Closed ↔ OPEN_MATH_CLOSED_MATH Open Closed"
+  },
+  {
+   "name": "RPA.finalRoot_eq_globalExternal",
+   "file": "open_math/RPA_MinimalChain.lean",
+   "line": 63,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(Open Closed : Prop) : FINAL_ROOT Open Closed ↔ GLOBAL_EXTERNAL_CERTIFICATE Open Closed"
+  },
+  {
+   "name": "RPA.math_eq_finalRoot",
+   "file": "open_math/RPA_MinimalChain.lean",
+   "line": 59,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(Open Closed : Prop) : MATH Open Closed ↔ FINAL_ROOT Open Closed"
+  },
+  {
+   "name": "RPA.openClosed_eq_bridge",
+   "file": "open_math/RPA_MinimalChain.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(Open Closed : Prop) : OPEN_MATH_CLOSED_MATH Open Closed ↔ OPEN_BRIDGE_CLOSED_BRIDGE Open Closed"
+  },
+  {
+   "name": "RPA.openPos_ne_closedPos",
+   "file": "open_math/RPA_MinimalChain.lean",
+   "line": 20,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": EndpointPosition.openPos ≠ EndpointPosition.closedPos"
+  },
+  {
+   "name": "RPA.rpa_chain",
+   "file": "open_math/RPA_MinimalChain.lean",
+   "line": 74,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(Open Closed : Prop) : OPEN_ENDPOINT_CLOSED_ENDPOINT Open Closed ↔ DUAL_ENDPOINT_STATE Open Closed ∧ OPEN_MATH_CLOSED_MATH Open Closed ∧ OPEN_BRIDGE_CLOSED_BRIDGE Open Closed ∧ MATH Open Closed ∧ FINAL_ROOT Open Closed ∧ GLOBAL_EXTERNAL_CERTIFICATE Open Closed"
+  }
+ ],
+ "closed": 80,
+ "files_sha256": {
+  "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
+  "lakefile.toml": "a04806e1803da95f93288391457d12b83c5da1e1f70a624bb08251616701dfbb",
+  "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87",
+  "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean": "c1837731dc8c2eb7e68676949eeb777c760801d1ef119f8f8feb3e2cd491b51e",
+  "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean": "b5c60d7575f01bf12c2e3920a379001d8d99fee2ca1f1eac22896828cde9bfd2",
+  "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean": "4c84a7ce65a905a599ae208cc3b220faee3db4e046aec128a0d7b04c4fdb1fc8",
+  "open_math/ActualNSToSignedGainCore/P1_ConcreteObservables.lean": "af99e291a460e8e1188c0a758ca5b264bbd19aed8cd0e1bd1df563bc643618df",
+  "open_math/ActualNSToSignedGainCore/P1_GradientEntries.lean": "05cd6d35ba37327ad6d2ae2b8a0003c11bf00eba7f41005f312bfcdfc5206c46",
+  "open_math/ActualNSToSignedGainCore/P1_LpInterpolation.lean": "ca06bc61e6dc4165be94ce701f301a4018042b91eaa89768e4eea5c8020ac9d8",
+  "open_math/ActualNSToSignedGainCore/P1_QuarticYoung.lean": "dade3c9858d6b026cbc5294424281091084198a0448ef99db7cfd7d69d7f52fd",
+  "open_math/ActualNSToSignedGainCore/P1_RieszL2Foundation.lean": "f08a06c5131eb6df39222aa82785f1a942ccde1ad6fb349cfe07fdd06c719d09",
+  "open_math/ActualNSToSignedGainCore/P1_SobolevCompactSupport.lean": "49311d226d6568358fd2be54d74d69a5de497be43ac0b82170971c3245571fc1",
+  "open_math/ActualNSToSignedGainCore/P1_StretchingHolder.lean": "a8f5aacb569688825c67532f4dc7c1788fe74f823c04bb7254760e4ea2d6f914",
+  "open_math/ActualNSToSignedGainCore/P1_StretchingPointwise.lean": "76c897d71c92cafafcc79ed2aa204911a242f596ca17c85cead81d59b9a81a8a",
+  "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean": "f639d4f6eb0f5ea7e1964f9c9c241a4471150b82ee953db9e78f2045e2015c9c",
+  "open_math/ActualNSToSignedGainCore/P1_WholeSpaceSobolev.lean": "c9275e8cd3a2b8a6a30af39ec3df005a2437f5e06938d5980ff2a91bc9ecc5be",
+  "open_math/RPA_MinimalChain.lean": "9af04ebce5afe14f5d768c1bd5fc14307d43a2c5f078399f0f82ca4a813638e1"
+ },
+ "published_at": "2026-10-29T06:27:20Z",
+ "certificate_sha256": "ff51d9dde1885169fef82bd4d7cfb8ba4f12615f05da871b17429f1e7b4362eb"
+}

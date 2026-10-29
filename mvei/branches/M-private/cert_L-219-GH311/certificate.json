@@ -1,0 +1,103 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-private",
+ "branch": "cert/L-219-GH311",
+ "branch_state": "parada",
+ "head_commit": "3888e90de03c70518a82db6ad5c54cf3b7c3d347",
+ "head_commit_date": "2026-09-14T23:51:53+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "3888e90de03c70518a82db6ad5c54cf3b7c3d347",
+   "date": "2026-09-14T23:51:53+02:00",
+   "subject": "cert(L-219): record GH-311 GREEN forensic certificate"
+  },
+  {
+   "commit": "c848a761212f8eb756c636548d6bcce5bce473f3",
+   "date": "2026-09-14T23:40:33+02:00",
+   "subject": "fix(L-219): expand sqrt product square before rewrite"
+  },
+  {
+   "commit": "2b9f8a6ad6daa7b479d5f32a788a9854015744fb",
+   "date": "2026-09-14T19:08:51+00:00",
+   "subject": "Fix: use young_product_absorption instead of young_product_absorb"
+  },
+  {
+   "commit": "a62d0a7299a1261fbf9f99c80307f77f4efd2624",
+   "date": "2026-09-14T20:30:38+02:00",
+   "subject": "ci: make ActualNSBonyBridge reachable"
+  },
+  {
+   "commit": "87f70b9a7f0fdbbdca6b7a80c025df44ac1237f6",
+   "date": "2026-09-14T20:15:39+02:00",
+   "subject": "ns: generalize Bony bridge to projected vorticity blocks"
+  },
+  {
+   "commit": "3b7b77d8f3f10b3371d9c382a6dc3348bd2879c5",
+   "date": "2026-09-14T16:22:44+02:00",
+   "subject": "bony bridge: require exact cross-block reconstruction and truncation provenance"
+  },
+  {
+   "commit": "d23adc7b491c920a8982a6fa6c3c8e5d6c59289e",
+   "date": "2026-09-14T15:54:12+02:00",
+   "subject": "ActualNSBonyBridge: tighten norm data and remove unused destructuring"
+  },
+  {
+   "commit": "0618fcf47594154f4d08c4ce7bc934cdd93e28b9",
+   "date": "2026-09-14T15:41:00+02:00",
+   "subject": "ActualNSBonyBridge: isolate norm-level cross bridge"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-29T05:36:17+00:00",
+  "lean": [
+   "leanprover/lean4:v4.34.0-rc2"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.ActualNSBonyBridge.certified_norm_data_gives_cross_T3",
+   "file": "MPrivate/NS/ThirdCoefficient/ActualNSBonyBridge.lean",
+   "line": 54,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (d : MPrivate.NS.ThirdCoefficient.ActualNSBonyBridge.BonyCrossNormData) (eps : ℝ),   0 < eps →     MPrivate.NS.ThirdCoefficient.ActualNSBonyBridge.BonyCrossNormCertified d →       d.Vcross ≤ eps * d.Z + d.K ^ 2 / (4 * eps) * MPrivate.NS.ThirdCoefficient.crossCoefficientFromVelocity d.UL * d.Y"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.ActualNSBonyBridge.certified_norm_data_gives_square_control",
+   "file": "MPrivate/NS/ThirdCoefficient/ActualNSBonyBridge.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (d : MPrivate.NS.ThirdCoefficient.ActualNSBonyBridge.BonyCrossNormData),   MPrivate.NS.ThirdCoefficient.ActualNSBonyBridge.BonyCrossNormCertified d →     MPrivate.NS.ThirdCoefficient.CrossSquareControl d.b d.K d.UL d.Y"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.ActualNSBonyBridge.projected_shell_aggregate_gives_cross_T3",
+   "file": "MPrivate/NS/ThirdCoefficient/ActualNSBonyBridge.lean",
+   "line": 85,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (d : MPrivate.NS.ThirdCoefficient.ActualNSBonyBridge.ProjectedShellAggregate) (eps : ℝ),   0 < eps →     d.Vcross ≤ eps * d.Z + d.K ^ 2 / (4 * eps) * MPrivate.NS.ThirdCoefficient.crossCoefficientFromVelocity d.UL * d.Y"
+  }
+ ],
+ "closed": 3,
+ "files_sha256": {
+  "MPrivate/NS/ThirdCoefficient/ActualBonyDecomposition.lean": "5b5ad3f9e6ed090ab1ef92e155830221f62246c57fac707ed278854b53bf7d72",
+  "MPrivate/NS/ThirdCoefficient/ActualBonyLPConcrete.lean": "e4ff7e8294a3cb62eb885ef0b6676b33e1762aa4e2083a7aea319a8d7e3b1ec8",
+  "MPrivate/NS/ThirdCoefficient/ActualBonyToCrossT3.lean": "d1577ffe0bc6aec0c238df6a794346df5b3901525ced3ca7282fb5e2ef2221b6",
+  "MPrivate/NS/ThirdCoefficient/ActualCrossSquareControlFrontier.lean": "e565d82cc0d7da4716b1ea295e5c91c724d3de0e234a5a6296d8889e253bfcbe",
+  "MPrivate/NS/ThirdCoefficient/ActualNSBonyBridge.lean": "40e62fcd0f7c470e6ab32de5c4a27ef465b0a5744821b0429deaaf7c57f33bba",
+  "MPrivate/NS/ThirdCoefficient/CrossCoefficientScalingCorrection.lean": "f3a2fb017e423aa00f1ab5f447ae1195dc51fecb64df86ffb6c9136399357c02",
+  "MPrivate/NS/ThirdCoefficient/CrossTermYoungAbsorption.lean": "4bd33cddbcb899d37d8583b052252de75fd9d6e0ad4fa2e10c57c202f5c12989",
+  "MPrivate/NS/ThirdCoefficient/CrossVelocityFactorization.lean": "18cff3e5dda206dccb5dcf2704bb215a1334295195239f418639fcc446a1fd09",
+  "lakefile.lean": "8e24d7248b6220c7b5fff5d2697559767b052ca6725c05b962a8047691741027",
+  "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88"
+ },
+ "published_at": "2026-10-29T06:27:18Z",
+ "certificate_sha256": "88963fbbfeb3f9ac7508596880641a2aff694672808b0bc88d091e3058af464d"
+}

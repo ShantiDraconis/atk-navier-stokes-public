@@ -1,0 +1,238 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-private",
+ "branch": "chain/219-forward-corrected",
+ "branch_state": "parada",
+ "head_commit": "574f30b6dd1df85d9c399291e29b3e1ce4c2342d",
+ "head_commit_date": "2026-09-15T01:44:38+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "574f30b6dd1df85d9c399291e29b3e1ce4c2342d",
+   "date": "2026-09-15T01:44:38+02:00",
+   "subject": "fix(hardening): normalize alignment barrier multiplication order"
+  },
+  {
+   "commit": "38fe65c3a9bfecc12c5b683e701e8672c877c6d4",
+   "date": "2026-09-15T01:38:02+02:00",
+   "subject": "hardening: make late GREEN nodes reachable from root"
+  },
+  {
+   "commit": "ae6726549e534145228858f43d9e769190371e65",
+   "date": "2026-09-15T01:37:48+02:00",
+   "subject": "hardening: add GREEN low-velocity Bernstein-Sobolev node"
+  },
+  {
+   "commit": "434b74b87bcac0054c4a4bee8e7cf4cfc80b4de5",
+   "date": "2026-09-15T01:37:33+02:00",
+   "subject": "hardening: add GREEN concrete signed-limit passage node"
+  },
+  {
+   "commit": "e86564fc5a317a0544acaf040afe7b4aec24750a",
+   "date": "2026-09-15T01:36:59+02:00",
+   "subject": "hardening: import GREEN slot-247..250 redundant-ring fix"
+  },
+  {
+   "commit": "cae95b5ed24f7a41f06216190d9adb03a926f622",
+   "date": "2026-09-15T01:36:40+02:00",
+   "subject": "hardening: consolidate GREEN slot-239..246 cross-gain fixes"
+  },
+  {
+   "commit": "a135a4a9b44a87a800070b98ed99ae1ced54c139",
+   "date": "2026-09-15T01:34:48+02:00",
+   "subject": "hardening: import GREEN slot-239 Filter fix into forward chain"
+  },
+  {
+   "commit": "3f3f85933aafa7e13cd7489fec989ac3896692a9",
+   "date": "2026-09-15T01:30:26+02:00",
+   "subject": "chain: promote corrected audit snapshot through L251-L271"
+  },
+  {
+   "commit": "69c39aecc91130ac48e76ec9c88cb2b6a073a03f",
+   "date": "2026-09-15T01:17:20+02:00",
+   "subject": "chain: promote fully corrected T4 budget state through gate 223"
+  },
+  {
+   "commit": "02f3e5dc7e75ce13b20ed478ff77c009651cb39c",
+   "date": "2026-09-15T01:16:44+02:00",
+   "subject": "chain: apply recovered gate 222 NS completion identity continuity"
+  },
+  {
+   "commit": "5d97a3d42459fa7a1dc44ee6e18d20df95dd878a",
+   "date": "2026-09-15T01:16:11+02:00",
+   "subject": "chain: apply recovered gate 221 G4 identity hardening"
+  },
+  {
+   "commit": "b97c579b946e7b82dadd531013e4ce18f5f44d16",
+   "date": "2026-09-15T01:15:39+02:00",
+   "subject": "chain: apply recovered gate 220 identity continuity"
+  },
+  {
+   "commit": "c848a761212f8eb756c636548d6bcce5bce473f3",
+   "date": "2026-09-14T23:40:33+02:00",
+   "subject": "fix(L-219): expand sqrt product square before rewrite"
+  },
+  {
+   "commit": "2b9f8a6ad6daa7b479d5f32a788a9854015744fb",
+   "date": "2026-09-14T19:08:51+00:00",
+   "subject": "Fix: use young_product_absorption instead of young_product_absorb"
+  },
+  {
+   "commit": "a62d0a7299a1261fbf9f99c80307f77f4efd2624",
+   "date": "2026-09-14T20:30:38+02:00",
+   "subject": "ci: make ActualNSBonyBridge reachable"
+  },
+  {
+   "commit": "87f70b9a7f0fdbbdca6b7a80c025df44ac1237f6",
+   "date": "2026-09-14T20:15:39+02:00",
+   "subject": "ns: generalize Bony bridge to projected vorticity blocks"
+  },
+  {
+   "commit": "3b7b77d8f3f10b3371d9c382a6dc3348bd2879c5",
+   "date": "2026-09-14T16:22:44+02:00",
+   "subject": "bony bridge: require exact cross-block reconstruction and truncation provenance"
+  },
+  {
+   "commit": "d23adc7b491c920a8982a6fa6c3c8e5d6c59289e",
+   "date": "2026-09-14T15:54:12+02:00",
+   "subject": "ActualNSBonyBridge: tighten norm data and remove unused destructuring"
+  },
+  {
+   "commit": "0618fcf47594154f4d08c4ce7bc934cdd93e28b9",
+   "date": "2026-09-14T15:41:00+02:00",
+   "subject": "ActualNSBonyBridge: isolate norm-level cross bridge"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-29T05:36:17+00:00",
+  "lean": [
+   "leanprover/lean4:v4.34.0-rc2"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.concrete_signed_limit_preserves_cross_energy_gain",
+   "file": "MPrivate/NS/ThirdCoefficient/SignedIntegralLimitConcrete.lean",
+   "line": 25,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_1} [inst : MeasurableSpace α] (μ : MeasureTheory.Measure α) (F : ℕ → α → ℝ) (aCross g bound : α → ℝ)   (Cstar : ℝ),   (∀ (n : ℕ), MeasureTheory.AEStronglyMeasurable (F n) μ) →     MeasureTheory.Integrable bound μ →       (∀ (n : ℕ), ∀ᵐ (x : α) ∂μ, ‖F n x‖ ≤ bound x) →         (∀ᵐ (x : α) ∂μ, Filter.Tendsto (fun n => F n x) Filter.atTop (nhds (aCross x))) →           (∀ (n : ℕ), ∫ (x"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.defect_lower_bound_preserves_amplitude_multiple",
+   "file": "MPrivate/NS/ThirdCoefficient/AlignmentBarrierGain.lean",
+   "line": 21,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (A D c : ℝ), 0 ≤ A → c ≤ D → c * A ≤ MPrivate.NS.ThirdCoefficient.alignmentCoefficient A D"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.energy_cannot_control_enstrophy_at_incompatible_scale",
+   "file": "MPrivate/NS/ThirdCoefficient/SignedSpacetimeCrossNoGo.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (Y E C lambda : ℝ), 0 < lambda → C * E < lambda ^ 2 * Y → ¬lambda * Y ≤ C * (E / lambda)"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.integral_upper_bound_of_dominated_signed_truncations",
+   "file": "MPrivate/NS/ThirdCoefficient/SignedIntegralLimitConcrete.lean",
+   "line": 8,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_1} [inst : MeasurableSpace α] (μ : MeasureTheory.Measure α) (F : ℕ → α → ℝ) (f bound : α → ℝ) (B : ℝ),   (∀ (n : ℕ), MeasureTheory.AEStronglyMeasurable (F n) μ) →     MeasureTheory.Integrable bound μ →       (∀ (n : ℕ), ∀ᵐ (x : α) ∂μ, ‖F n x‖ ≤ bound x) →         (∀ᵐ (x : α) ∂μ, Filter.Tendsto (fun n => F n x) Filter.atTop (nhds (f x))) →           (∀ (n : ℕ), ∫ (x : α), F n x ∂μ ≤ B"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.integrated_gain_of_uniform_signed_truncations",
+   "file": "MPrivate/NS/ThirdCoefficient/SignedSpacetimeCrossGain.lean",
+   "line": 55,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "(crossPartial : ℕ → ℝ → ℝ) (aCross g : ℝ → ℝ) (Cstar Tstar : ℝ) (hconv : SignedCrossTruncation crossPartial aCross) (htrunc : UniformSignedTruncationGain I crossPartial g Cstar Tstar) (hpass : SignedIntegralLimitPassage I crossPartial aCross g Cstar Tstar) : IntegratedCrossEnergyGain I aCross g Cstar Tstar"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.low_velocity_square_budget_from_heat_duhamel",
+   "file": "MPrivate/NS/ThirdCoefficient/SignedSpacetimeCrossGain.lean",
+   "line": 84,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(hmono : IntegralMonotone I) (hmul : IntegralConstMul I) (hadd : IntegralSubadditive I) (UL Uheat Uduhamel : ℝ → ℝ) (T Bheat Bduhamel : ℝ) (hsplit : HeatDuhamelLowVelocitySplit UL Uheat Uduhamel) (hheat : I (fun t => Uheat t ^ 2) T ≤ Bheat) (hduhamel : I (fun t => Uduhamel t ^ 2) T ≤ Bduhamel) : I (fun t => UL t ^ 2) T ≤ 2 * (Bheat + Bduhamel)"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.mixed_signed_block_nonzero_witness",
+   "file": "MPrivate/NS/ThirdCoefficient/SignedSpacetimeCrossNoGo.lean",
+   "line": 6,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MPrivate.NS.ThirdCoefficient.mixedSignedBlock 1 1 1 1 = 6"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.not_universal_mixed_block_cancellation",
+   "file": "MPrivate/NS/ThirdCoefficient/SignedSpacetimeCrossNoGo.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬∀ (sL sH wL wH : ℝ), MPrivate.NS.ThirdCoefficient.mixedSignedBlock sL sH wL wH = 0"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.signed_integrated_gain_closes_cross_budget",
+   "file": "MPrivate/NS/ThirdCoefficient/SignedSpacetimeCrossGain.lean",
+   "line": 196,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(aCross g : ℝ → ℝ) (Cstar Tstar E0 nu : ℝ) (hgain : IntegratedCrossEnergyGain I aCross g Cstar Tstar) (henergy : UniformEnergyBudgetBelow I g Tstar E0 nu) : UniformCrossBudgetBelow I aCross Tstar (Cstar * (E0 / (2 * nu)))"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.square_of_heat_duhamel_split",
+   "file": "MPrivate/NS/ThirdCoefficient/SignedSpacetimeCrossGain.lean",
+   "line": 77,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(x y : ℝ) : (x + y) ^ 2 ≤ 2 * (x ^ 2 + y ^ 2)"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.uniform_cross_budget_from_integrated_gain",
+   "file": "MPrivate/NS/ThirdCoefficient/ActualCrossBudget.lean",
+   "line": 70,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (I : (ℝ → ℝ) → ℝ → ℝ) (aCross g : ℝ → ℝ) (Cstar Tstar E0 nu : ℝ),   MPrivate.NS.ThirdCoefficient.CrossIntegratedEnergyGain I aCross g Cstar Tstar →     MPrivate.NS.ThirdCoefficient.UniformEnergyBudgetBelow I g Tstar E0 nu →       MPrivate.NS.ThirdCoefficient.UniformCrossBudgetBelow I aCross Tstar (Cstar * (E0 / (2 * nu)))"
+  }
+ ],
+ "closed": 9,
+ "files_sha256": {
+  "MPrivate/NS/ThirdCoefficient/ActualBonyDecomposition.lean": "5b5ad3f9e6ed090ab1ef92e155830221f62246c57fac707ed278854b53bf7d72",
+  "MPrivate/NS/ThirdCoefficient/ActualBonyLPConcrete.lean": "e4ff7e8294a3cb62eb885ef0b6676b33e1762aa4e2083a7aea319a8d7e3b1ec8",
+  "MPrivate/NS/ThirdCoefficient/ActualBonyToCrossT3.lean": "d1577ffe0bc6aec0c238df6a794346df5b3901525ced3ca7282fb5e2ef2221b6",
+  "MPrivate/NS/ThirdCoefficient/ActualCrossBudget.lean": "4cacd33865c4346f0d32299f8170a5902e6ef8efaf7926643c0f4e8b73492185",
+  "MPrivate/NS/ThirdCoefficient/ActualCrossSquareControlFrontier.lean": "e565d82cc0d7da4716b1ea295e5c91c724d3de0e234a5a6296d8889e253bfcbe",
+  "MPrivate/NS/ThirdCoefficient/AlignmentBarrierGain.lean": "cc9f7f0cc80b3f06175cf606aab1cba93ae4d037719b8df5085a7a523615ffe4",
+  "MPrivate/NS/ThirdCoefficient/AlignmentDefectFactorization.lean": "03faacd1b10d08a548e1e59a70d9dcc1ab442ae06dead01a1cc8623120f2b605",
+  "MPrivate/NS/ThirdCoefficient/AlignmentDepletionInequality.lean": "c2898dc23de37da14d68a7dec15af4f4c54205551fc8a2824afe76d421ac6af9",
+  "MPrivate/NS/ThirdCoefficient/CrossCoefficientScalingCorrection.lean": "f3a2fb017e423aa00f1ab5f447ae1195dc51fecb64df86ffb6c9136399357c02",
+  "MPrivate/NS/ThirdCoefficient/CrossLowVelocityTimeBudgetNoGo.lean": "7f37b06205c8252d141824005879567592b726c880b94f1d52e117fea433cb9a",
+  "MPrivate/NS/ThirdCoefficient/CrossTermYoungAbsorption.lean": "4bd33cddbcb899d37d8583b052252de75fd9d6e0ad4fa2e10c57c202f5c12989",
+  "MPrivate/NS/ThirdCoefficient/CrossVelocityFactorization.lean": "096c85963f946fe27681679f3c1bddb6b272d84356e6281d52911fd5fdba3a20",
+  "MPrivate/NS/ThirdCoefficient/EightTermSignedGrouping.lean": "9ac6b959887a1d7f0f473155b1f3c3d4019ecde7a60e095cf8d36cbf1e03322e",
+  "MPrivate/NS/ThirdCoefficient/EnergyBudgetMultiplier.lean": "0e00309a2c28afcdf5f8774f7a0db363683f5ed17d7175f621270efe65b8242b",
+  "MPrivate/NS/ThirdCoefficient/ScaleInvariantBudget.lean": "ffb19cbb7bf8e7c35bf40dcd5b841f3fc4f7b3c0f37fa4eeadd969430bb000d4",
+  "MPrivate/NS/ThirdCoefficient/ScalingClassifier.lean": "2b926b1201729ccd01ddaaf40236a0c4a13b64dea8357c55b6814160d2ce86ce",
+  "MPrivate/NS/ThirdCoefficient/SignedIntegralLimitConcrete.lean": "944a80a3c29b00f199af68eabca454faeecab2369b4f5986a322de222945b79e",
+  "MPrivate/NS/ThirdCoefficient/SignedSpacetimeCrossGain.lean": "1fe6403d9a7fda2484ff7d32bb867302cea05e5c02c3f4927ab38007cf198a58",
+  "MPrivate/NS/ThirdCoefficient/SignedSpacetimeCrossNoGo.lean": "0b7e1a2fbcd8727833ef1ed3ca1cc3014ce64a12c792f52e7d9e111d023564d2",
+  "MPrivate/NS/ThirdCoefficient/SignedStretchingCandidate.lean": "1a05c0c74f648b9320d8c4f8cc03956f051820410ed3b514888874de2ea02d9d",
+  "MPrivate/NS/ThirdCoefficient/Specification.lean": "8310731e9f0e48295b1c61395db9805678e9e5b92c66d23e7af56e10c642d692",
+  "MPrivate/NS/ThirdCoefficient/SpectralSignedStretching.lean": "651db2ba592b77dbf9525f11afd2ddde13e5446f8e229799fc891da37d3fe043",
+  "lakefile.lean": "8e24d7248b6220c7b5fff5d2697559767b052ca6725c05b962a8047691741027",
+  "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88"
+ },
+ "published_at": "2026-10-29T06:27:18Z",
+ "certificate_sha256": "80a844861f23342c7b4d590cae758b20efe4ebe8ff8421d3c52df52cc1080e7b"
+}

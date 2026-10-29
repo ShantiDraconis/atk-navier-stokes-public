@@ -1,0 +1,8 @@
+15068d9ad8c154cdaf0a501dfa88fc4de54bcd09efaf37715384fe944d5eaaa8  branches/navier-stokes-critical-barrier-audit/atk_axiom-free-targets-20261008/Lean/Millennium/CompleteClosure_Targets.lean
+6729b6f5a56fa2dcf272bd0f509e9c61dcd277aaedd64bfea7d55c02a2fff9b3  branches/navier-stokes-critical-barrier-audit/atk_axiom-free-targets-20261008/Lean/NavierStokes/B2/B2_8_LowerBound_Template.lean
+c12bbb437477c9a440774219c0cf15210b37f256be796ccba4a688c7007982f2  branches/navier-stokes-critical-barrier-audit/atk_axiom-free-targets-20261008/formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean
+ae588249ee34ba35be93608e76703456a73ba966cc13cd08f1a2383af9d901f1  branches/navier-stokes-critical-barrier-audit/atk_axiom-free-targets-20261008/formal/lean/lakefile.toml
+55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea  branches/navier-stokes-critical-barrier-audit/atk_axiom-free-targets-20261008/formal/lean/lean-toolchain
+b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526  branches/navier-stokes-critical-barrier-audit/atk_axiom-free-targets-20261008/lake-manifest.json
+d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c  branches/navier-stokes-critical-barrier-audit/atk_axiom-free-targets-20261008/lakefile.toml
+ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87  branches/navier-stokes-critical-barrier-audit/atk_axiom-free-targets-20261008/lean-toolchain

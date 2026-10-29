@@ -1,0 +1,164 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "copilot/teorema-alvo-hdynamic",
+ "branch_state": "parada",
+ "head_commit": "983941a98945cb39a957be3aded47679a6c4c71f",
+ "head_commit_date": "2026-09-13T17:45:45+00:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "983941a98945cb39a957be3aded47679a6c4c71f",
+   "date": "2026-09-13T17:45:45+00:00",
+   "subject": "Refine DynamicCampanato remainder witness"
+  },
+  {
+   "commit": "9051e27e81cd295a5a4e8df1de83ed65e0978136",
+   "date": "2026-09-13T17:44:57+00:00",
+   "subject": "Clarify DynamicCampanato inverse-cube weight"
+  },
+  {
+   "commit": "359bbec652c333981b54f750d0f153de6dfea542",
+   "date": "2026-09-13T17:44:18+00:00",
+   "subject": "Align DynamicCampanato OmegaTheta and scaling weight"
+  },
+  {
+   "commit": "e9c3359ca24aab324335ac6553f33b6efce71623",
+   "date": "2026-09-13T17:43:39+00:00",
+   "subject": "Tighten DynamicCampanato norm assumptions"
+  },
+  {
+   "commit": "08967302573c66d59baefb41fb6d9873cdd1ef4a",
+   "date": "2026-09-13T17:42:54+00:00",
+   "subject": "Polish DynamicCampanato interfaces"
+  },
+  {
+   "commit": "c043cfe0f157e18ab0bc2bdb278c5eacd97e57de",
+   "date": "2026-09-13T17:42:11+00:00",
+   "subject": "Clarify DynamicCampanato remainder and recursion"
+  },
+  {
+   "commit": "2e71a4f31ac7958bf07713803391895998ef33e2",
+   "date": "2026-09-13T17:41:19+00:00",
+   "subject": "Refine DynamicCampanato gamma threshold"
+  },
+  {
+   "commit": "8e93126c591c32941fd77a31eb39172be8063903",
+   "date": "2026-09-13T17:40:31+00:00",
+   "subject": "Refine DynamicCampanato naming"
+  },
+  {
+   "commit": "2e4afd0e3a18190ca5ba5429cb2eb940204bfeaf",
+   "date": "2026-09-13T17:39:36+00:00",
+   "subject": "Add DynamicCampanato interface and blocking audit"
+  },
+  {
+   "commit": "27730acfd15d34282bd51428d3d29939a0025348",
+   "date": "2026-09-13T17:33:29+00:00",
+   "subject": "Track hDynamic cutoff centers and epsilon limits"
+  },
+  {
+   "commit": "56c5f01aec19fc186ca07b04eeff652b840c6f03",
+   "date": "2026-09-13T17:32:34+00:00",
+   "subject": "Bound hDynamic remainder uniformity in time"
+  },
+  {
+   "commit": "b202775db2c0607ab2e68571f4dd8f20296847ec",
+   "date": "2026-09-13T17:31:55+00:00",
+   "subject": "Document hDynamic argument order"
+  },
+  {
+   "commit": "6183a61ef77b30557647b5dcae38018228f6a977",
+   "date": "2026-09-13T17:31:12+00:00",
+   "subject": "Align hDynamic remainder naming"
+  },
+  {
+   "commit": "26adb789ad08f8e0bc8f22ceaeb191078eca97ea",
+   "date": "2026-09-13T17:30:38+00:00",
+   "subject": "Clarify absorbed xi-gradient remainder term"
+  },
+  {
+   "commit": "f385945f8f892ab67a512f40c79183effbb3b83d",
+   "date": "2026-09-13T17:30:05+00:00",
+   "subject": "Refine hDynamic cutoff profile fields"
+  },
+  {
+   "commit": "97aec372f4a068e21a913687cf9de132cb1ab2c3",
+   "date": "2026-09-13T17:29:15+00:00",
+   "subject": "Polish hDynamic interface details"
+  },
+  {
+   "commit": "288c7f788104b876bad0f01a7a408fab8d7b0b0b",
+   "date": "2026-09-13T17:28:36+00:00",
+   "subject": "Clarify hDynamic xi_eps evolution term"
+  },
+  {
+   "commit": "cd0896e00a1d90011c533d5d18e54dc99cf0ad48",
+   "date": "2026-09-13T17:27:54+00:00",
+   "subject": "Tighten hDynamic bridge obligations"
+  },
+  {
+   "commit": "93aea10ce8672232a7cb3cc235b68eb60693d096",
+   "date": "2026-09-13T17:07:44+00:00",
+   "subject": "Refine hDynamic cutoff-independent interface"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-29T05:36:17+00:00",
+  "lean": [
+   "leanprover/lean4:stable",
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "G1DynamicCampanato.gamma_lt_half",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 231,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{P : XiEpsPDE} (it : CampanatoIteration P) (hκ : it.kappaThreshold ≤ P.κ) : it.gamma < (1 / 2 : ℝ)"
+  },
+  {
+   "name": "G1DynamicCampanato.half_scale_barrier_eq",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 242,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{C r rho : ℝ} (hrho : rho ≠ 0) : (C / 2) * (r / rho) = C * ((r / 2) / rho)"
+  },
+  {
+   "name": "G1DynamicCampanato.localTestField_eq",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 137,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ω : VorticityFamily) (avg : XiBallAverage) {norms : VorticityNorms} {κ : ℝ} (cutoff : FixedScaleCutoff norms κ) (ε t r : ℝ) (x : Space) : localTestField ω avg cutoff ε t r x = (((wR cutoff) t x)^2 * omegaAbsEps ω ε t x) • (xiEps ω ε t x - avg ε t r)"
+  },
+  {
+   "name": "G1DynamicCampanato.preserve_linear_barrier",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 249,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{γ A C r rho Jhalf Jr : ℝ} (hr : 0 ≤ r) (hrho : 0 < rho) (hstep : Jhalf ≤ γ * Jr + A * (r / rho)) (hbound : Jr ≤ C * (r / rho)) (hcontract : 2 * γ * C + 2 * A ≤ C) : Jhalf ≤ C * ((r / 2) / rho)"
+  }
+ ],
+ "closed": 1,
+ "files_sha256": {
+  "formal/G1/DynamicCampanato.lean": "d706734f5052160c996711466c8f937fe709365070dec2e5f0c35a3bfb24aa81",
+  "lakefile.toml": "d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c",
+  "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87"
+ },
+ "published_at": "2026-10-29T06:27:33Z",
+ "certificate_sha256": "c18beb2454f6a52c2319acb62ee0717efbd476f921eef1fb93540585e8e0b32e"
+}

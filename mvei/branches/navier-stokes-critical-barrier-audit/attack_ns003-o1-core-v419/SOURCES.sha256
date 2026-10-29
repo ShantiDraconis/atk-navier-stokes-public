@@ -1,0 +1,8 @@
+0994575d31c50a20f19c52ad6dacde51405d99c015e7141f8d01ed9db9f592d5  branches/navier-stokes-critical-barrier-audit/attack_ns003-o1-core-v419/G1_KAdmissible_to_SignedDepletion.lean
+fef6fb1c0be88a28b106f5c8453795feac889ac3d43c3353e647da20a430814c  branches/navier-stokes-critical-barrier-audit/attack_ns003-o1-core-v419/HypothesesComplete_v3.lean
+7649fb9b7347516298a498927cdf652abda9e52c43b0327a207562f502411bc2  branches/navier-stokes-critical-barrier-audit/attack_ns003-o1-core-v419/formal/G1/NS003EndpointTheorem.lean
+1c48faf7e742804174936c845b805be0df31e1b5c03b8f3af537d919a317c9f4  branches/navier-stokes-critical-barrier-audit/attack_ns003-o1-core-v419/formal/G1/NS003O1Concrete.lean
+0c497a06e7d37686de5627b55fd8599be50a151a4090f14ec2f310596d7cc7e3  branches/navier-stokes-critical-barrier-audit/attack_ns003-o1-core-v419/formal/G1/StrictSignedDepletionProducer.lean
+b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526  branches/navier-stokes-critical-barrier-audit/attack_ns003-o1-core-v419/lake-manifest.json
+a5de78a93ba257572f683b546fdb07f604d842c69c26f43f5089ada9c7e8bf8a  branches/navier-stokes-critical-barrier-audit/attack_ns003-o1-core-v419/lakefile.toml
+55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea  branches/navier-stokes-critical-barrier-audit/attack_ns003-o1-core-v419/lean-toolchain

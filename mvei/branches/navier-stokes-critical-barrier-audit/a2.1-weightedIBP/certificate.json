@@ -1,0 +1,1537 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "a2.1-weightedIBP",
+ "branch_state": "parada",
+ "head_commit": "79140147ba92fe290b4178f92ff7d77ec3271198",
+ "head_commit_date": "2026-09-14T02:59:28+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "79140147ba92fe290b4178f92ff7d77ec3271198",
+   "date": "2026-09-14T02:59:28+02:00",
+   "subject": "fix(G1): make trace-zero contraction explicit"
+  },
+  {
+   "commit": "c28dd5d6d70e2800c4d967c769fed19eb20d0eb7",
+   "date": "2026-09-14T02:55:28+02:00",
+   "subject": "fix(G1): close strain-kernel trace explicitly"
+  },
+  {
+   "commit": "6ba398ca329f32d0813a382a1bfe5c1f29b40806",
+   "date": "2026-09-14T02:51:22+02:00",
+   "subject": "fix(G1): restore localized energy interface and real ball volume"
+  },
+  {
+   "commit": "6563f5f250d551029fa0a4f6a5cc074f82bc6356",
+   "date": "2026-09-14T02:44:48+02:00",
+   "subject": "fix(G1): align strong geometric induction step"
+  },
+  {
+   "commit": "7a44dc9e3f0b5f661380f6ee09a12f1feee283fc",
+   "date": "2026-09-14T02:40:21+02:00",
+   "subject": "fix(G1): strengthen dyadic geometric bound induction"
+  },
+  {
+   "commit": "7145145dc95c92b790f9d4254304cda835e5e942",
+   "date": "2026-09-14T02:36:00+02:00",
+   "subject": "fix(G1): use explicit Finset.sum in DynamicCampanato"
+  },
+  {
+   "commit": "8b55ba00068ba9ba033b44e4a505569537e47c28",
+   "date": "2026-09-14T02:30:18+02:00",
+   "subject": "fix(G1): close DynamicCampanato build blockers"
+  },
+  {
+   "commit": "9bce82eb76aae4bdc42dac42ddf73ae7be22b38f",
+   "date": "2026-09-14T02:23:02+02:00",
+   "subject": "fix(G1): convert common AE set to null complement directly"
+  },
+  {
+   "commit": "5f9cdeab7deda75e5093745f28f3467d47d3b8ec",
+   "date": "2026-09-14T02:10:08+02:00",
+   "subject": "fix(G1): close product pairing by direct equality composition"
+  },
+  {
+   "commit": "41fbe75ddba77884e0f27dcfa991d225263f791f",
+   "date": "2026-09-14T02:05:57+02:00",
+   "subject": "fix(G1): isolate product representative identification"
+  },
+  {
+   "commit": "4b05071bf97f50fb0c7e73bdb6dfbb4adc01bd3d",
+   "date": "2026-09-14T02:00:14+02:00",
+   "subject": "fix(G1): close residual reflexive product goal"
+  },
+  {
+   "commit": "2b12aa9a7aec2f7eaf4d7f288e802a90750e8b25",
+   "date": "2026-09-14T01:56:37+02:00",
+   "subject": "fix(G1): separate product integral transport steps"
+  },
+  {
+   "commit": "9c73f22e1ce044317eedea17a5758c86c15fadd3",
+   "date": "2026-09-14T01:53:25+02:00",
+   "subject": "fix(G1): rewrite product integral transport by simplification"
+  },
+  {
+   "commit": "9a8f5c00992334b5d0015c24a05093fc9bdd342b",
+   "date": "2026-09-14T01:49:17+02:00",
+   "subject": "fix(G1): apply integral transport lemma explicitly"
+  },
+  {
+   "commit": "3daaed42003b5b2b44758ae894e0d11c587d45ba",
+   "date": "2026-09-14T01:45:51+02:00",
+   "subject": "fix(G1): close definitional final transport step"
+  },
+  {
+   "commit": "9aa24f91705e528a0c728f66fe8cdf5e8cfb19d2",
+   "date": "2026-09-14T01:42:27+02:00",
+   "subject": "fix(G1): discharge definitional residue in product pairing"
+  },
+  {
+   "commit": "c819e1437980da384762127298ff8aa49f353950",
+   "date": "2026-09-14T01:39:07+02:00",
+   "subject": "fix(G1): close confirmed product pairing proof obligations"
+  },
+  {
+   "commit": "873dda419540f46e2f3e9b7f4c5de1be905bac9d",
+   "date": "2026-09-14T01:34:59+02:00",
+   "subject": "protocol: restore parser-only phase 16 patch"
+  },
+  {
+   "commit": "00e68e1193f61f8d6e413d2df6afb2c9120a843c",
+   "date": "2026-09-14T01:29:42+02:00",
+   "subject": "fix: elaborate product pairing transport without placeholders"
+  },
+  {
+   "commit": "5995dd9eb4eb6dc0a5ec4584cefd84a2335ec980",
+   "date": "2026-09-14T01:25:40+02:00",
+   "subject": "fix: open SchwartzMap syntax scope for phase 16"
+  },
+  {
+   "commit": "4f36ff370d0043153b9e4a440e4174dec9512780",
+   "date": "2026-09-14T01:22:02+02:00",
+   "subject": "fix: open SchwartzMap syntax scope for phase 15"
+  },
+  {
+   "commit": "cb614c30bb43c3093f032c5ad1952ba4560703f5",
+   "date": "2026-09-14T01:18:30+02:00",
+   "subject": "fix: load Schwartz derivative syntax for phase 15"
+  },
+  {
+   "commit": "3d8f3396fb54d8a3384215cb1bb64ef4ef7645ad",
+   "date": "2026-09-14T01:14:53+02:00",
+   "subject": "fix: use explicit line derivative CLM in 4D pairing"
+  },
+  {
+   "commit": "a43b035df791c54269d3a358792d137c8f4f96ea",
+   "date": "2026-09-14T00:58:14+02:00",
+   "subject": "ci: retrigger Lean G1 audit after WeakOmega4DPairing parser fix"
+  },
+  {
+   "commit": "124ab02d2dc08500811a90d455d873eb9dc9d4c0",
+   "date": "2026-09-14T00:51:42+02:00",
+   "subject": "fix: avoid unary-minus parser ambiguity in 4D pairing"
+  },
+  {
+   "commit": "3b3c9a346ec101fe9d804bdeb7ce6966c2e62bc3",
+   "date": "2026-09-14T00:30:40+02:00",
+   "subject": "fix: parenthesize negated line derivative in 4D pairing"
+  },
+  {
+   "commit": "8713639df2ad19428f9d35264b1df3ed9379fc5f",
+   "date": "2026-09-14T00:25:27+02:00",
+   "subject": "fix: close Prod.fst/snd projection fderiv on pure spatial directions"
+  },
+  {
+   "commit": "a2113471426ef8ad45f06f9e96ec53e4f763578b",
+   "date": "2026-09-13T23:10:41+02:00",
+   "subject": "fix: expose projection compositions before fderiv_comp"
+  },
+  {
+   "commit": "890626470ed148429a5578882e5823c9a4808a9b",
+   "date": "2026-09-13T23:06:27+02:00",
+   "subject": "fix: reduce tensor spatial derivative through product projections"
+  },
+  {
+   "commit": "748f61b55320801e0de8a014bda4ec252901df59",
+   "date": "2026-09-13T23:00:43+02:00",
+   "subject": "formal: expose pointwise function product before fderiv_mul"
+  },
+  {
+   "commit": "af1e4f7ae3e2ec80a9fc51fa2964468f6e85a705",
+   "date": "2026-09-13T22:56:21+02:00",
+   "subject": "ci: build countable common spatial test set"
+  },
+  {
+   "commit": "50e5629eb0daf80354dba79c6f918ec800f748a4",
+   "date": "2026-09-13T22:56:02+02:00",
+   "subject": "formal: add common ae set for countable spatial test family"
+  },
+  {
+   "commit": "723b773a41c04ebf7c0dc027c0822aaf32178a50",
+   "date": "2026-09-13T22:55:17+02:00",
+   "subject": "formal: derive tensor spatial derivative from smooth factors"
+  },
+  {
+   "commit": "46747506cffe201c515946ab2f5227053f816ec5",
+   "date": "2026-09-13T22:51:07+02:00",
+   "subject": "formal: expose real-to-complex linear map in tensor test"
+  },
+  {
+   "commit": "e76ecd09bd2d9aa00a51bbde0c1ea54cb23e2ff1",
+   "date": "2026-09-13T22:47:53+02:00",
+   "subject": "formal: make tensor product smoothness explicit"
+  },
+  {
+   "commit": "3cee7deeac8e42961a849a443661b4ed1f1937e3",
+   "date": "2026-09-13T22:44:21+02:00",
+   "subject": "formal: normalize zero coordinate before extensionality"
+  },
+  {
+   "commit": "e8e8b16e43bff0e28a2ab5be77332bc8169758d0",
+   "date": "2026-09-13T22:41:00+02:00",
+   "subject": "formal: close zero first coordinate by extensionality"
+  },
+  {
+   "commit": "6eef869b06b20df0f8ba784226daa987ed6cbe7b",
+   "date": "2026-09-13T22:33:35+02:00",
+   "subject": "formal: unfold product direction in both coordinate projections"
+  },
+  {
+   "commit": "a80e69654ca4f97c0ee71e3a80d8de86c4463325",
+   "date": "2026-09-13T22:33:16+02:00",
+   "subject": "formal: project canonical spatial basis by product coordinates"
+  },
+  {
+   "commit": "d6903c316a47233666ea7a577410d45a1c9a3814",
+   "date": "2026-09-13T22:31:44+02:00",
+   "subject": "formal: finish canonical product basis normalization"
+  },
+  {
+   "commit": "e2551224acb5548869f95dafad3e632d7e8ac10f",
+   "date": "2026-09-13T22:28:12+02:00",
+   "subject": "formal: close final product spatial basis coordinates"
+  },
+  {
+   "commit": "8566207b119047da0a6eee1c278af53fe8f08be5",
+   "date": "2026-09-13T22:24:05+02:00",
+   "subject": "formal: stage canonical spatial basis transport"
+  },
+  {
+   "commit": "9211d1b721764107008d86820ffca001cad58753",
+   "date": "2026-09-13T22:22:40+02:00",
+   "subject": "formal: use spatial reindex lemma without unfolding"
+  },
+  {
+   "commit": "6c7aa2a2725435e0e81087f7adfb8d46cc3b7deb",
+   "date": "2026-09-13T22:19:22+02:00",
+   "subject": "formal: certify spacetime-product inverse identities"
+  },
+  {
+   "commit": "af5bc514bd795e20f5142578e722ddcf79992429",
+   "date": "2026-09-13T22:16:04+02:00",
+   "subject": "formal: simplify inverse spacetime-product identity"
+  },
+  {
+   "commit": "13ca83d5f37c347f541650a96c63ccc683adafd5",
+   "date": "2026-09-13T22:13:01+02:00",
+   "subject": "formal: transport weak omega pairing to product integrals"
+  },
+  {
+   "commit": "36ed18b082a6eb09ade95563abbf6e9fb66d6def",
+   "date": "2026-09-13T22:12:30+02:00",
+   "subject": "formal: expose inverse spacetime-product split identities"
+  },
+  {
+   "commit": "110c03c21b9f3875ebd7f0219c016d2cd35a664d",
+   "date": "2026-09-13T22:09:26+02:00",
+   "subject": "formal: normalize canonical spatial basis coordinates"
+  },
+  {
+   "commit": "3bd36bb1fc3fe85d35cbd2082ff9af8ec366cd2d",
+   "date": "2026-09-13T22:09:15+02:00",
+   "subject": "formal: specialize weak pairing to pure spatial direction"
+  },
+  {
+   "commit": "f9e989f0b528b6771e732c8e2dbec0f1a8d62533",
+   "date": "2026-09-13T22:08:27+02:00",
+   "subject": "formal: align measurable equivalence transport coercions"
+  },
+  {
+   "commit": "cacbcaff2dd21c2fa88be88016d9c0e101a13c8f",
+   "date": "2026-09-13T22:07:21+02:00",
+   "subject": "formal: finish product spatial direction by extensionality"
+  },
+  {
+   "commit": "19f3c441a2d58cd7644b606c1eaafa2181a9230b",
+   "date": "2026-09-13T22:05:30+02:00",
+   "subject": "formal: simplify product spatial direction proof"
+  },
+  {
+   "commit": "d3b109a7210a89b9abd7d03dcedf3f4765d74e2b",
+   "date": "2026-09-13T22:04:19+02:00",
+   "subject": "formal: finish product spatial basis identification"
+  },
+  {
+   "commit": "0e01f6bd71291354e455b7ecc246cec081f18da2",
+   "date": "2026-09-13T22:01:15+02:00",
+   "subject": "formal: isolate Fin4 spatial reindex identity"
+  },
+  {
+   "commit": "8d37718aa4d65714edb5edf71942a8de4cd4c3f6",
+   "date": "2026-09-13T21:58:01+02:00",
+   "subject": "formal: close canonical spatial direction coordinates"
+  },
+  {
+   "commit": "160fe7b1a070958fac5cf0a07e89da941233efd5",
+   "date": "2026-09-13T21:55:08+02:00",
+   "subject": "formal: compose coordinate measure-preserving maps correctly"
+  },
+  {
+   "commit": "3009c7887847aafac89e86b2a2c54e836b59f875",
+   "date": "2026-09-13T21:53:02+02:00",
+   "subject": "ci: build tensor-product spatial derivative"
+  },
+  {
+   "commit": "22fba7846d77db4e6c42a17d83a626403748dd32",
+   "date": "2026-09-13T21:52:49+02:00",
+   "subject": "formal: keep tensor derivative lemma dependency-minimal"
+  },
+  {
+   "commit": "66141303ea66a5fe0fee8e28d6bbd840edd72765",
+   "date": "2026-09-13T21:52:28+02:00",
+   "subject": "formal: isolate tensor-product spatial derivative formula"
+  },
+  {
+   "commit": "9298ca6999e19ee26df197f61b6cd97a9e54d0dd",
+   "date": "2026-09-13T21:50:18+02:00",
+   "subject": "ci: build canonical spacetime spatial directions"
+  },
+  {
+   "commit": "79e39181b9345e5949774920f4cd8e0f20751f37",
+   "date": "2026-09-13T21:50:04+02:00",
+   "subject": "formal: isolate canonical product spatial directions"
+  },
+  {
+   "commit": "ded9e1aae2409457a4057106d780b64641a43e42",
+   "date": "2026-09-13T21:46:59+02:00",
+   "subject": "formal: fix coordinate measure preservation by explicit trans composition"
+  },
+  {
+   "commit": "2501fb1737449130126c745829d642cebb7a0cf5",
+   "date": "2026-09-13T21:43:50+02:00",
+   "subject": "ci: compile tensor-product Schwartz layer"
+  },
+  {
+   "commit": "82f85df0882d2dbf48b76d6dcb721e5a847a47d6",
+   "date": "2026-09-13T21:43:35+02:00",
+   "subject": "formal: use spacetime continuous linear equivalence for Schwartz transport"
+  },
+  {
+   "commit": "9d2b07454227296fde5e64781b447ebb3d4bba23",
+   "date": "2026-09-13T21:42:35+02:00",
+   "subject": "formal: construct compactly supported tensor-product Schwartz test"
+  },
+  {
+   "commit": "5725623d6a175f8425a8d2fb7f0dec2d74b901aa",
+   "date": "2026-09-13T21:42:05+02:00",
+   "subject": "formal: prove coordinate map preservation via map_map"
+  },
+  {
+   "commit": "1a8cb6a9ba8164ec785b020035a15deb8afb3eab",
+   "date": "2026-09-13T21:40:52+02:00",
+   "subject": "ci: build product-space weak omega pairing"
+  },
+  {
+   "commit": "1aabe629ecd11ca4438b4e64f988fdea9018bf76",
+   "date": "2026-09-13T21:40:37+02:00",
+   "subject": "formal: transport weak omega derivative pairing to product Schwartz tests"
+  },
+  {
+   "commit": "c57e90900875eca839dc255ccb4b983a78841ead",
+   "date": "2026-09-13T21:38:26+02:00",
+   "subject": "formal: expose continuous linear spacetime product equivalence"
+  },
+  {
+   "commit": "5a60eefb3a09f1fd17621fd71b2bfcc0f32096f8",
+   "date": "2026-09-13T21:37:01+02:00",
+   "subject": "formal: make coordinate measure transports explicit"
+  },
+  {
+   "commit": "a97ab4325c0eaf535ab95742459cfd4bc50e72ff",
+   "date": "2026-09-13T21:34:13+02:00",
+   "subject": "ci: compile spacetime integral transport layer"
+  },
+  {
+   "commit": "0cfa6a0234c094224ceb27b28cad385d5f326101",
+   "date": "2026-09-13T21:33:55+02:00",
+   "subject": "formal: expose measurable equivalence and integral transport for spacetime split"
+  },
+  {
+   "commit": "2feaf93be0de6d8b55e4471b4c02952a4cd103b8",
+   "date": "2026-09-13T21:33:21+02:00",
+   "subject": "formal: match smooth-order coercion in spatial slice tests"
+  },
+  {
+   "commit": "17f5dbf7f009ad66bd66606465257ea95192865c",
+   "date": "2026-09-13T21:33:07+02:00",
+   "subject": "formal: match Mathlib smooth-order coercion exactly"
+  },
+  {
+   "commit": "1d7628ed530cffa79c4a248da9b4abf17f435fd4",
+   "date": "2026-09-13T21:32:02+02:00",
+   "subject": "ci: compile 4D weak omega pairing layer"
+  },
+  {
+   "commit": "6dbc83ed0d3786609a996a27cf20fb5aaf101a33",
+   "date": "2026-09-13T21:31:27+02:00",
+   "subject": "formal: prove 4D weak omega derivative pairing from tempered distributions"
+  },
+  {
+   "commit": "daf4484812cb9d9a54c9b905aeb66172dffe3aa1",
+   "date": "2026-09-13T21:29:52+02:00",
+   "subject": "formal: disambiguate smooth test differentiability order"
+  },
+  {
+   "commit": "c5a949b496d2d6efff1151a905139d5415732e0e",
+   "date": "2026-09-13T21:29:34+02:00",
+   "subject": "formal: disambiguate infinite differentiability order"
+  },
+  {
+   "commit": "599b2f406dbdfa2998d919d0233421d14723a263",
+   "date": "2026-09-13T21:26:46+02:00",
+   "subject": "formal: fix coordinate split typing and measure coercions"
+  },
+  {
+   "commit": "d47d57520e2690fd3a486341c4703e6ce9680742",
+   "date": "2026-09-13T21:26:17+02:00",
+   "subject": "ci: compile weak omega spatial slice reduction"
+  },
+  {
+   "commit": "e0d8e3380896eb50f900764682942f3e049bc77f",
+   "date": "2026-09-13T21:25:55+02:00",
+   "subject": "formal: reduce spatial weak derivative slicing to separated product tests"
+  },
+  {
+   "commit": "953e415d1d14564b6587b513d1608e785a03fbe4",
+   "date": "2026-09-13T21:23:39+02:00",
+   "subject": "formal: add du Bois-Reymond time separation lemma for slices"
+  },
+  {
+   "commit": "90bf13821e6321d8ba14464e2398f13a7887fb4a",
+   "date": "2026-09-13T21:22:20+02:00",
+   "subject": "ci: compile strain-kernel moment layer"
+  },
+  {
+   "commit": "4775d4f7205075b7f89c20ee41b9cdc79a8eb4d4",
+   "date": "2026-09-13T21:21:38+02:00",
+   "subject": "formal: transport omega and spatial derivative L2 reps to product spacetime"
+  },
+  {
+   "commit": "0a94388ca87ca0a6c4726ff903c998e7278d47e3",
+   "date": "2026-09-13T21:21:37+02:00",
+   "subject": "formal: isolate strain-kernel moment parity facts"
+  },
+  {
+   "commit": "5f24b48ba42f7173b6e487160999a33404a18068",
+   "date": "2026-09-13T21:21:08+02:00",
+   "subject": "formal: make spatial slice measurability definitional"
+  },
+  {
+   "commit": "8602e2ffba35dc3dfe5705c57c19564ae549f83c",
+   "date": "2026-09-13T21:06:56+02:00",
+   "subject": "formal: finish a.e. slice measurability reduction"
+  },
+  {
+   "commit": "7f61662e0be35082d0c70dde3f9c3f1a3837b6fb",
+   "date": "2026-09-13T21:04:38+02:00",
+   "subject": "ci: build spacetime coordinate split"
+  },
+  {
+   "commit": "b0f01db0bc5595bdf3e40ef030487e511bcff1ab",
+   "date": "2026-09-13T21:04:23+02:00",
+   "subject": "formal: construct measure-preserving spacetime coordinate split"
+  },
+  {
+   "commit": "95101e67b4e8d5f9f5e530139298c580b756f5b2",
+   "date": "2026-09-13T21:02:51+02:00",
+   "subject": "formal: fix Fubini slice proof against pinned Mathlib"
+  },
+  {
+   "commit": "d334fc81c942462afb81844e436e6aefbc0d7ac9",
+   "date": "2026-09-13T21:00:44+02:00",
+   "subject": "ci: compile preparatory far-field and Campanato layers"
+  },
+  {
+   "commit": "b0ace7c2bc714cf057e55d86b6c533a831ffd00f",
+   "date": "2026-09-13T21:00:12+02:00",
+   "subject": "formal: isolate Campanato smallness arithmetic"
+  },
+  {
+   "commit": "83f943a8b629f6bd179dfff83906bedb28472025",
+   "date": "2026-09-13T20:59:43+02:00",
+   "subject": "audit: isolate strain-kernel moment cancellation targets"
+  },
+  {
+   "commit": "cd1b9e1fbac8caad2a37f999b76d3f9ed84933c6",
+   "date": "2026-09-13T20:59:04+02:00",
+   "subject": "formal: isolate signed far-field bilinear target"
+  },
+  {
+   "commit": "ce859a91528a47471b7827d36db37c5f7a0e3e7a",
+   "date": "2026-09-13T20:58:28+02:00",
+   "subject": "formal: isolate tensorial strain-kernel architecture"
+  },
+  {
+   "commit": "a03a3a426eb86f32cf0c718c4f5d02f15cb5fea5",
+   "date": "2026-09-13T20:57:55+02:00",
+   "subject": "ci: build WeakOmegaSliceInterface before diffusion layer"
+  },
+  {
+   "commit": "7fdeae58ed8bb4f7272e0bb791d93edcb683f864",
+   "date": "2026-09-13T20:57:48+02:00",
+   "subject": "formal: prove product L2 slicing and isolate spatial derivative bridge"
+  },
+  {
+   "commit": "464a4ba5a6ecd6f69f13654ef0f5ad4a0aa7e803",
+   "date": "2026-09-13T20:57:17+02:00",
+   "subject": "formal: fix ball mean proof for pinned Mathlib API"
+  },
+  {
+   "commit": "905e97179bceef066366c7cff7e2165ea46776fc",
+   "date": "2026-09-13T20:52:26+02:00",
+   "subject": "ci: build ball mean bound"
+  },
+  {
+   "commit": "4d8e58da6e2a65bbdd375634055bc43eccd0b005",
+   "date": "2026-09-13T20:52:15+02:00",
+   "subject": "formal: prove regularized direction ball mean bound"
+  },
+  {
+   "commit": "349565a2b8e9058fe83230e1f1ffec3111cb6f6e",
+   "date": "2026-09-13T20:50:58+02:00",
+   "subject": "ci: build WeakOmegaBridge before diffusion layer"
+  },
+  {
+   "commit": "cba6ea3c4453ece28084b47d2d1a4bd8b62a88c8",
+   "date": "2026-09-13T20:50:45+02:00",
+   "subject": "formal: add weak omega spacetime Sobolev bridge"
+  },
+  {
+   "commit": "e07c8f6808747884bd2b746006f1514f5819f85a",
+   "date": "2026-09-13T20:49:07+02:00",
+   "subject": "formal: reuse shared Vec3 alias in XiEpsPDE"
+  },
+  {
+   "commit": "ebe59c18a6710918676084293285f93a46677ea6",
+   "date": "2026-09-13T20:43:26+02:00",
+   "subject": "formal: fix Campanato recurrence term order"
+  },
+  {
+   "commit": "82142ef0b15ed890de4f3104cce042a2c7ef1b12",
+   "date": "2026-09-13T20:40:02+02:00",
+   "subject": "formal: isolate structural eta H1 route without Winfinity assumption"
+  },
+  {
+   "commit": "6e4e4029f7b0fa69ea80e9b4a241d5836a2a7414",
+   "date": "2026-09-13T20:37:06+02:00",
+   "subject": "formal: fix EuclideanSpace coordinate directions"
+  },
+  {
+   "commit": "ae03258cd1555606f692618d420351eb2941e019",
+   "date": "2026-09-13T20:33:27+02:00",
+   "subject": "ci: compile weak XiEps PDE layer explicitly"
+  },
+  {
+   "commit": "b1189e3a0d68f15922dbedb47ecf6e97182cc0a2",
+   "date": "2026-09-13T20:33:14+02:00",
+   "subject": "formal: package spatial L2 weak gradient representatives"
+  },
+  {
+   "commit": "b23523851ff0c54e183f16145242a5470a5fedfb",
+   "date": "2026-09-13T20:33:03+02:00",
+   "subject": "formal: define spatial weak derivatives and Laplacian directly"
+  },
+  {
+   "commit": "16d6158780dffc39e178aee4c673ae3b1296d664",
+   "date": "2026-09-13T20:25:21+02:00",
+   "subject": "ci: build Hminus1-H10 weighted diffusion layer"
+  },
+  {
+   "commit": "c97912fd03cb3977ebb02f9e0918e6c6aa6dffe4",
+   "date": "2026-09-13T20:25:11+02:00",
+   "subject": "formal: formulate weighted diffusion IBP in Hminus1-H10 duality"
+  },
+  {
+   "commit": "f2e06af7b76e3568f639faaf35495f53291b6af1",
+   "date": "2026-09-13T20:11:14+02:00",
+   "subject": "ci: compile vector local representative bridge"
+  },
+  {
+   "commit": "d734249e7e29b8ac0ae8a30b1f26fbd3ca01a6a2",
+   "date": "2026-09-13T20:11:09+02:00",
+   "subject": "formal: extract componentwise L2 weak derivative representatives"
+  },
+  {
+   "commit": "6b897be5a262a68d260375fcd772db059a3161e4",
+   "date": "2026-09-13T20:10:52+02:00",
+   "subject": "formal: make Sobolev bridge componentwise vector-valued"
+  },
+  {
+   "commit": "a6a506f39468943442410a6c556bb2bfc1c181c0",
+   "date": "2026-09-13T20:08:40+02:00",
+   "subject": "formal: derive L2 representatives for weak first derivatives"
+  },
+  {
+   "commit": "b420de094fcb1a06abfb8a5020b4495b8c086cea",
+   "date": "2026-09-13T20:04:20+02:00",
+   "subject": "ci: run lake update before G1 builds"
+  },
+  {
+   "commit": "443e4183f8e1c095eca8aae78a6542b08ea2e110",
+   "date": "2026-09-13T19:59:19+02:00",
+   "subject": "formal: add space-time Sobolev weak derivative bridge"
+  },
+  {
+   "commit": "4b643a6647241f98ddd36bd48f20e4f497876d8d",
+   "date": "2026-09-13T19:50:49+02:00",
+   "subject": "audit: investigate signed far-field rho-star cubed compensation without closing G1"
+  },
+  {
+   "commit": "2e7ee608c9757ff370097658d275f395047fe141",
+   "date": "2026-09-13T19:50:26+02:00",
+   "subject": "ci: compile G1 formalization on audit branch"
+  },
+  {
+   "commit": "3e6aa86d08e8884b98e254d2765dc753a189ab75",
+   "date": "2026-09-13T19:50:19+02:00",
+   "subject": "build: add Lake project for formal G1 modules"
+  },
+  {
+   "commit": "1fade4dc8e6efa84e102aa64b4bd999b843b8fb1",
+   "date": "2026-09-13T19:50:14+02:00",
+   "subject": "build: add Lean toolchain for formal audit branch"
+  },
+  {
+   "commit": "4ab59061a9004f3405ed2af263ddfd311a8e9b33",
+   "date": "2026-09-13T19:46:53+02:00",
+   "subject": "audit: update localized PDE pairing and weak IBP status"
+  },
+  {
+   "commit": "533cd3f3f8ce9022905fc74a44506ca1e134287c",
+   "date": "2026-09-13T19:46:28+02:00",
+   "subject": "formal: replace tested equation by Bochner PDE pairing and isolate weak IBP"
+  },
+  {
+   "commit": "40926b04eef58bc50452dc3ee087e3221727d740",
+   "date": "2026-09-13T19:41:05+02:00",
+   "subject": "audit: classify beta zero and geometric nondegeneracy bridge"
+  },
+  {
+   "commit": "35dd9077bba46578a1348ccfd7d801e8f855e779",
+   "date": "2026-09-13T19:40:37+02:00",
+   "subject": "formal: concretize localized integrals and isolate geometric nondegeneracy"
+  },
+  {
+   "commit": "6a58fb2b652737aa577955fb887eabf5495e3696",
+   "date": "2026-09-13T19:38:40+02:00",
+   "subject": "formal: derive localized identity from tested XiEpsPDE and IBP"
+  },
+  {
+   "commit": "28a943d9b381a1fb1e7177d1ea84dcfa5137cc5f",
+   "date": "2026-09-13T19:36:31+02:00",
+   "subject": "audit: isolate signed far-field cancellation obstruction"
+  },
+  {
+   "commit": "f43ed5cf913856844f9747dd47d75f1f0a31ff5f",
+   "date": "2026-09-13T19:35:49+02:00",
+   "subject": "formal: define XiEpsPDE regularization and cutoff-free remainders"
+  },
+  {
+   "commit": "1b5417f175128ca29742d837d66b5381f90f6b88",
+   "date": "2026-09-13T19:31:14+02:00",
+   "subject": "audit: record exact localized identity scaling and Campanato contraction check"
+  },
+  {
+   "commit": "c364931c6392f9eb1cef39771b6e266564f860da",
+   "date": "2026-09-13T19:29:19+02:00",
+   "subject": "formal: expose exact localized XiEps energy identity before estimates"
+  },
+  {
+   "commit": "64a5340f10311249f52e2c7a71a0c105f18cb61b",
+   "date": "2026-09-13T19:24:59+02:00",
+   "subject": "audit: record DynamicCampanato blocking points without circularity"
+  },
+  {
+   "commit": "95d8c023a53b2d8299e03d02e94ba80b7e648fdf",
+   "date": "2026-09-13T19:24:30+02:00",
+   "subject": "formal: attack PDE to DynamicCampanato and isolate blocking estimates"
+  },
+  {
+   "commit": "631a230acfddcc57d805cc58b9c06124318153d6",
+   "date": "2026-09-13T19:18:32+02:00",
+   "subject": "formal: add noncircular DynamicCampanato audit interface"
+  },
+  {
+   "commit": "5b69a61484194010df3800ff3a1037830844ca5a",
+   "date": "2026-09-13T19:08:34+02:00",
+   "subject": "audit: attack hDynamic theorem and isolate noncircular blockers"
+  },
+  {
+   "commit": "b864bef70fe72563203515d10951c68bd64427b4",
+   "date": "2026-09-13T16:59:13+02:00",
+   "subject": "audit: expand pre-date evidence ledger across all discovered NS commits"
+  },
+  {
+   "commit": "e7c50f02f7fecfc570b1d954068259508d504c3c",
+   "date": "2026-09-13T16:35:35+02:00",
+   "subject": "audit: record exact stabilization results commits and proof ledger"
+  },
+  {
+   "commit": "572a4dd7a5f19d46e7fc0f38828f332505da1d63",
+   "date": "2026-09-13T15:58:32+02:00",
+   "subject": "audit: document pre-2026 code provenance for NS critical architecture"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-29T05:36:17+00:00",
+  "lean": [
+   "leanprover/lean4:v4.32.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "G1Audit.LocalEnergyIdentityData.ofXiEpsPDE_identity",
+   "file": "formal/G1/XiEpsLocalizedRealization.lean",
+   "line": 393,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.XiEpsLocalizedRealization), G1Audit.LocalEnergyIdentity (G1Audit.LocalEnergyIdentityData.ofXiEpsPDE h)"
+  },
+  {
+   "name": "G1Audit.LocalizedCutoff.grad_rho_power",
+   "file": "formal/G1/XiEpsLocalizedRealization.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c : G1Audit.LocalizedCutoff), c.gradScale = (c.K * c.rho)⁻¹"
+  },
+  {
+   "name": "G1Audit.LocalizedCutoff.lap_rho_power",
+   "file": "formal/G1/XiEpsLocalizedRealization.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c : G1Audit.LocalizedCutoff), c.lapScale = (c.K * c.rho)⁻¹ ^ 2"
+  },
+  {
+   "name": "G1Audit.SpaceTimeProductTransfer.goodSlices_ae",
+   "file": "formal/G1/WeakOmegaSliceInterface.lean",
+   "line": 86,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {h : G1Audit.WeakOmegaSpaceTime} (tr : G1Audit.SpaceTimeProductTransfer h),   ∀ᵐ (t : ℝ), G1Audit.ProductOmegaSliceGood tr.omegaProd tr.dxOmegaProd t"
+  },
+  {
+   "name": "G1Audit.StrainKernelData.apply_symmetric",
+   "file": "formal/G1/StrainKernel.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (K : G1Audit.StrainKernelData) (z ω : G1Audit.Vec3) (i j : Fin 3), K.apply z ω i j = K.apply z ω j i"
+  },
+  {
+   "name": "G1Audit.StrainKernelData.apply_trace_zero",
+   "file": "formal/G1/StrainKernel.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (K : G1Audit.StrainKernelData) (z ω : G1Audit.Vec3), ∑ i, K.apply z ω i i = 0"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.dt_memSobolev_zero",
+   "file": "formal/G1/WeakOmegaBridge.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i : Fin 3), TemperedDistribution.MemSobolev 0 2 (h.dtDist i)"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.dx_memSobolev_zero",
+   "file": "formal/G1/WeakOmegaBridge.lean",
+   "line": 54,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i k : Fin 3), TemperedDistribution.MemSobolev 0 2 (h.dxDist i k)"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.lineDeriv_memSobolev_zero",
+   "file": "formal/G1/WeakOmegaBridge.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i : Fin 3) (m : G1Audit.SpaceTime),   TemperedDistribution.MemSobolev 0 2 (LineDeriv.lineDerivOp m (h.omegaDist i))"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.memSobolev_zero",
+   "file": "formal/G1/WeakOmegaBridge.lean",
+   "line": 37,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i : Fin 3), TemperedDistribution.MemSobolev 0 2 (h.omegaDist i)"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.omegaL2_spec",
+   "file": "formal/G1/WeakOmegaBridge.lean",
+   "line": 65,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i : Fin 3), h.omegaDist i = MeasureTheory.Lp.toTemperedDistribution (h.omegaL2 i)"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.omegaProd_memLp",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 154,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i : Fin 3), MeasureTheory.MemLp (h.omegaProd i) 2 G1Audit.productSpaceTimeMeasure"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.omegaProd_slice_memLp_ae",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 164,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i : Fin 3),   ∀ᵐ (t : ℝ), MeasureTheory.MemLp (G1Audit.spatialSlice (h.omegaProd i) t) 2 MeasureTheory.volume"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.productSlicesGood_ae",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 176,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime), ∀ᵐ (t : ℝ), G1Audit.ProductOmegaSliceGood h.omegaProd h.weakDxProd t"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.spatialDerivativeCommonFullSet_compl_null",
+   "file": "formal/G1/SeparatedSpatialWeakDerivativeIdentity.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i k : Fin 3) (psi dpsi : ℕ → G1Audit.Vec3 → ℂ),   (∀ (n : ℕ),       MeasureTheory.LocallyIntegrable (G1Audit.spatialWeakResidual (h.omegaProd i) (h.weakDxProd i k) (psi n) (dpsi n))         MeasureTheory.volume) →     (∀ (n : ℕ), G1Audit.SeparatedSpatialWeakDerivativeIdentity (h.omegaProd i) (h.weakDxProd i k) (psi n) (dpsi n)) →       MeasureTheory.volume (G1Au"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.spatialDerivative_testSeq_ae_common",
+   "file": "formal/G1/SeparatedSpatialWeakDerivativeIdentity.lean",
+   "line": 18,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i k : Fin 3) (psi dpsi : ℕ → G1Audit.Vec3 → ℂ),   (∀ (n : ℕ),       MeasureTheory.LocallyIntegrable (G1Audit.spatialWeakResidual (h.omegaProd i) (h.weakDxProd i k) (psi n) (dpsi n))         MeasureTheory.volume) →     (∀ (n : ℕ), G1Audit.SeparatedSpatialWeakDerivativeIdentity (h.omegaProd i) (h.weakDxProd i k) (psi n) (dpsi n)) →       ∀ᵐ (t : ℝ), ∀ (n : ℕ), G1A"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.spatialDerivative_test_ae",
+   "file": "formal/G1/WeakOmegaSpatialSlice.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i k : Fin 3) (psi dpsi : G1Audit.Vec3 → ℂ),   MeasureTheory.LocallyIntegrable (G1Audit.spatialWeakResidual (h.omegaProd i) (h.weakDxProd i k) psi dpsi)       MeasureTheory.volume →     G1Audit.SeparatedSpatialWeakDerivativeIdentity (h.omegaProd i) (h.weakDxProd i k) psi dpsi →       ∀ᵐ (t : ℝ), G1Audit.spatialWeakResidual (h.omegaProd i) (h.weakDxProd i k) psi d"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.weakDirectionalL2_spec",
+   "file": "formal/G1/WeakOmegaBridge.lean",
+   "line": 76,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i : Fin 3) (m : G1Audit.SpaceTime),   LineDeriv.lineDerivOp m (h.omegaDist i) = MeasureTheory.Lp.toTemperedDistribution (h.weakDirectionalL2 i m)"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.weakDtL2_spec",
+   "file": "formal/G1/WeakOmegaBridge.lean",
+   "line": 87,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i : Fin 3), h.dtDist i = MeasureTheory.Lp.toTemperedDistribution (h.weakDtL2 i)"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.weakDxL2_spec",
+   "file": "formal/G1/WeakOmegaBridge.lean",
+   "line": 98,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i k : Fin 3),   h.dxDist i k = MeasureTheory.Lp.toTemperedDistribution (h.weakDxL2 i k)"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.weakDxProd_memLp",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 159,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i k : Fin 3),   MeasureTheory.MemLp (h.weakDxProd i k) 2 G1Audit.productSpaceTimeMeasure"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.weakDxProd_slice_memLp_ae",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 170,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i k : Fin 3),   ∀ᵐ (t : ℝ), MeasureTheory.MemLp (G1Audit.spatialSlice (h.weakDxProd i k) t) 2 MeasureTheory.volume"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.weakDx_productSchwartz_pairing",
+   "file": "formal/G1/WeakOmegaProductPairing.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i k : Fin 3) (Phi : SchwartzMap G1Audit.ProductSpaceTime ℂ),   (MeasureTheory.Lp.toTemperedDistribution (h.weakDxL2 i k)) (G1Audit.productSchwartzPullback Phi) =     (MeasureTheory.Lp.toTemperedDistribution (h.omegaL2 i))       (G1Audit.productSchwartzPullback         (-LineDeriv.lineDerivOp (G1Audit.spaceTimeProductCLE (G1Audit.spatialDirection k)) Phi))"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.weakDx_productSpatial_integral_pairing",
+   "file": "formal/G1/WeakOmegaProductPairing.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i k : Fin 3) (Phi : SchwartzMap G1Audit.ProductSpaceTime ℂ),   ∫ (z : G1Audit.ProductSpaceTime), Phi z * h.weakDxProd i k z =     ∫ (z : G1Audit.ProductSpaceTime),       -(LineDeriv.lineDerivOp (G1Audit.productSpatialDirection k) Phi) z * h.omegaProd i z"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.weakDx_productSpatial_pairing",
+   "file": "formal/G1/WeakOmegaProductPairing.lean",
+   "line": 59,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i k : Fin 3) (Phi : SchwartzMap G1Audit.ProductSpaceTime ℂ),   (MeasureTheory.Lp.toTemperedDistribution (h.weakDxL2 i k)) (G1Audit.productSchwartzPullback Phi) =     (MeasureTheory.Lp.toTemperedDistribution (h.omegaL2 i))       (G1Audit.productSchwartzPullback (-LineDeriv.lineDerivOp (G1Audit.productSpatialDirection k) Phi))"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.weakDx_schwartz_pairing",
+   "file": "formal/G1/WeakOmega4DPairing.lean",
+   "line": 23,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i k : Fin 3) (Phi : SchwartzMap G1Audit.SpaceTime ℂ),   (MeasureTheory.Lp.toTemperedDistribution (h.weakDxL2 i k)) Phi =     (MeasureTheory.Lp.toTemperedDistribution (h.omegaL2 i)) (-LineDeriv.lineDerivOp (G1Audit.spatialDirection k) Phi)"
+  },
+  {
+   "name": "G1Audit.WeakOmegaSpaceTime.weakDx_schwartz_pairing_dist",
+   "file": "formal/G1/WeakOmega4DPairing.lean",
+   "line": 38,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakOmegaSpaceTime) (i k : Fin 3) (Phi : SchwartzMap G1Audit.SpaceTime ℂ),   (MeasureTheory.Lp.toTemperedDistribution (h.weakDxL2 i k)) Phi =     (h.omegaDist i) (-LineDeriv.lineDerivOp (G1Audit.spatialDirection k) Phi)"
+  },
+  {
+   "name": "G1Audit.WeakXiSpaceTime.dt_memSobolev_zero",
+   "file": "formal/G1/WeakDerivBridge.lean",
+   "line": 58,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakXiSpaceTime) (i : Fin 3), TemperedDistribution.MemSobolev 0 2 (h.dtDist i)"
+  },
+  {
+   "name": "G1Audit.WeakXiSpaceTime.dx_memSobolev_zero",
+   "file": "formal/G1/WeakDerivBridge.lean",
+   "line": 63,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakXiSpaceTime) (i k : Fin 3), TemperedDistribution.MemSobolev 0 2 (h.dxDist i k)"
+  },
+  {
+   "name": "G1Audit.WeakXiSpaceTime.exists_lineDeriv_L2_rep",
+   "file": "formal/G1/VectorLocalRep.lean",
+   "line": 17,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakXiSpaceTime) (i : Fin 3) (m : G1Audit.SpaceTime),   ∃ v, LineDeriv.lineDerivOp m (h.xiDist i) = MeasureTheory.Lp.toTemperedDistribution v"
+  },
+  {
+   "name": "G1Audit.WeakXiSpaceTime.lineDeriv_memSobolev_zero",
+   "file": "formal/G1/WeakDerivBridge.lean",
+   "line": 52,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakXiSpaceTime) (i : Fin 3) (m : G1Audit.SpaceTime),   TemperedDistribution.MemSobolev 0 2 (LineDeriv.lineDerivOp m (h.xiDist i))"
+  },
+  {
+   "name": "G1Audit.WeakXiSpaceTime.memSobolev_one_two",
+   "file": "formal/G1/WeakDerivBridge.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakXiSpaceTime) (i : Fin 3), TemperedDistribution.MemSobolev 1 2 (h.xiDist i)"
+  },
+  {
+   "name": "G1Audit.WeakXiSpaceTime.weakDirectionalL2_spec",
+   "file": "formal/G1/VectorLocalRep.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakXiSpaceTime) (i : Fin 3) (m : G1Audit.SpaceTime),   LineDeriv.lineDerivOp m (h.xiDist i) = MeasureTheory.Lp.toTemperedDistribution (h.weakDirectionalL2 i m)"
+  },
+  {
+   "name": "G1Audit.WeakXiSpaceTime.weakDtL2_spec",
+   "file": "formal/G1/VectorLocalRep.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakXiSpaceTime) (i : Fin 3), h.dtDist i = MeasureTheory.Lp.toTemperedDistribution (h.weakDtL2 i)"
+  },
+  {
+   "name": "G1Audit.WeakXiSpaceTime.weakDxL2_spec",
+   "file": "formal/G1/VectorLocalRep.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.WeakXiSpaceTime) (i k : Fin 3), h.dxDist i k = MeasureTheory.Lp.toTemperedDistribution (h.weakDxL2 i k)"
+  },
+  {
+   "name": "G1Audit.XiEpsLocalizedRealization.diffusionIBP",
+   "file": "formal/G1/XiEpsLocalizedRealization.lean",
+   "line": 266,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.XiEpsLocalizedRealization),   h.terms.laplacianPair = -h.terms.diffusionBulk - h.terms.diffusionCutoffCross - h.terms.diffusionWeightCross"
+  },
+  {
+   "name": "G1Audit.XiEpsLocalizedRealization.localized_identity",
+   "file": "formal/G1/XiEpsLocalizedRealization.lean",
+   "line": 307,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.XiEpsLocalizedRealization),   h.terms.timeEnergyDerivative + h.terms.timeWeightAndMean + h.terms.transport + h.pde.ν * h.terms.diffusionBulk =     h.terms.stretchNear + h.terms.stretchFar - h.pde.ν * h.terms.diffusionCutoffCross -             h.pde.ν * h.terms.diffusionWeightCross +           h.pde.ν * h.terms.logDrift +         h.terms.R1Pair +       h.terms.R2Pair"
+  },
+  {
+   "name": "G1Audit.XiEpsLocalizedRealization.strainSplitPair",
+   "file": "formal/G1/XiEpsLocalizedRealization.lean",
+   "line": 259,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.XiEpsLocalizedRealization), h.terms.stretchTotal = h.terms.stretchNear + h.terms.stretchFar"
+  },
+  {
+   "name": "G1Audit.XiEpsLocalizedRealization.testedEquation",
+   "file": "formal/G1/XiEpsLocalizedRealization.lean",
+   "line": 282,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.XiEpsLocalizedRealization),   h.terms.timeEnergyDerivative + h.terms.timeWeightAndMean + h.terms.transport =     h.terms.stretchTotal + h.pde.ν * h.terms.laplacianPair + h.pde.ν * h.terms.logDrift + h.terms.R1Pair +       h.terms.R2Pair"
+  },
+  {
+   "name": "G1Audit.XiEpsPDE.DtXi_eq_rhs",
+   "file": "formal/G1/XiEpsLocalizedRealization.lean",
+   "line": 93,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.XiEpsPDE), h.DtXi = h.rhs"
+  },
+  {
+   "name": "G1Audit.XiEpsPDE.R1_denominator_ne_zero",
+   "file": "formal/G1/XiEpsPDE.lean",
+   "line": 115,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.XiEpsPDE) (x : G1Audit.Vec3), G1Audit.magEps h.omegaEps h.ε x ≠ 0"
+  },
+  {
+   "name": "G1Audit.XiEpsPDE.R2_denominator_ne_zero",
+   "file": "formal/G1/XiEpsPDE.lean",
+   "line": 120,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.XiEpsPDE) (x : G1Audit.Vec3), G1Audit.magEps h.omegaEps h.ε x ≠ 0"
+  },
+  {
+   "name": "G1Audit.XiEpsPDE.bochnerPair_equation",
+   "file": "formal/G1/XiEpsLocalizedRealization.lean",
+   "line": 99,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : G1Audit.XiEpsPDE) (test : G1Audit.VectorField), G1Audit.bochnerPair h.DtXi test = G1Audit.bochnerPair h.rhs test"
+  },
+  {
+   "name": "G1Audit.ae_eq_zero_of_time_smooth_tests",
+   "file": "formal/G1/WeakOmegaSliceInterface.lean",
+   "line": 61,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {r : ℝ → ℂ},   MeasureTheory.LocallyIntegrable r MeasureTheory.volume →     (∀ (a : ℝ → ℝ), ContDiff ℝ (↑⊤) a → HasCompactSupport a → ∫ (t : ℝ), a t • r t = 0) → ∀ᵐ (t : ℝ), r t = 0"
+  },
+  {
+   "name": "G1Audit.ballMeanBound",
+   "file": "formal/G1/BallMeanBound.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (omega : G1Audit.VectorField) (eps : ℝ),   0 < eps →     ∀ (c : G1Audit.Vec3) (r : ℝ),       0 < r →         MeasureTheory.IntegrableOn (G1Audit.xiEps omega eps) (Metric.ball c r) MeasureTheory.volume →           ‖G1Audit.xiBallMean omega eps c r‖ ≤ 1"
+  },
+  {
+   "name": "G1Audit.campanato_linear_half_step",
+   "file": "formal/G1/DynamicCampanatoArithmetic.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (s : G1Audit.OneStepCampanato) (C : ℝ),   0 ≤ C → s.Jr ≤ C * (s.r / s.rho) → 2 * s.gamma * C + 2 * s.A ≤ C → s.JrHalf ≤ C * (s.r / 2 / s.rho)"
+  },
+  {
+   "name": "G1Audit.finFourEquivTimeSpace_spatial",
+   "file": "formal/G1/SpaceTimeSpatialDirection.lean",
+   "line": 16,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (k : Fin 3), G1Audit.finFourEquivTimeSpace k.succ = Sum.inr k"
+  },
+  {
+   "name": "G1Audit.firstMomentIntegrand_even",
+   "file": "formal/G1/StrainKernelMoments.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (K : G1Audit.StrainKernelData) (l i j k : Fin 3) (z : G1Audit.Vec3),   G1Audit.firstMomentIntegrand K l i j k (-z) = G1Audit.firstMomentIntegrand K l i j k z"
+  },
+  {
+   "name": "G1Audit.gamma_lt_half_of_kappa",
+   "file": "formal/G1/DynamicCampanatoArithmetic.lean",
+   "line": 13,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {CK kappa gamma : ℝ}, 0 < CK → 0 ≤ kappa → gamma = CK * kappa → kappa < 1 / (2 * CK) → gamma < 1 / 2"
+  },
+  {
+   "name": "G1Audit.gamma_lt_half_of_linearClosure",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 71,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {gamma A C : ℝ}, 0 < A → 0 < C → G1Audit.LinearClosure gamma A C → gamma < 1 / 2"
+  },
+  {
+   "name": "G1Audit.geometric_half_sum_le_two",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 94,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : ℕ), ∑ k ∈ Finset.range n, (1 / 2) ^ k ≤ 2"
+  },
+  {
+   "name": "G1Audit.gronwall_factor_36",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 138,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (s : G1Audit.CampanatoSignature), s.aIntegral = 36 → G1Audit.gronwallFactor s = Real.exp 72"
+  },
+  {
+   "name": "G1Audit.integral_comp_productToSpaceTime",
+   "file": "formal/G1/SpaceTimeIntegralTransport.lean",
+   "line": 32,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (F : G1Audit.SpaceTime → ℂ),   ∫ (z : G1Audit.ProductSpaceTime), F (G1Audit.productToSpaceTime z) = ∫ (y : G1Audit.SpaceTime), F y"
+  },
+  {
+   "name": "G1Audit.integral_comp_spaceTimeToProduct",
+   "file": "formal/G1/SpaceTimeIntegralTransport.lean",
+   "line": 41,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (F : G1Audit.ProductSpaceTime → ℂ),   ∫ (z : G1Audit.SpaceTime), F (G1Audit.spaceTimeToProduct z) = ∫ (y : G1Audit.ProductSpaceTime), F y"
+  },
+  {
+   "name": "G1Audit.integral_sq_norm_eq_iterated",
+   "file": "formal/G1/WeakOmegaSliceInterface.lean",
+   "line": 50,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : G1Audit.ProductScalarField},   MeasureTheory.MemLp f 2 G1Audit.productSpaceTimeMeasure →     ∫ (z : G1Audit.ProductSpaceTime), ‖f z‖ ^ 2 ∂G1Audit.productSpaceTimeMeasure =       ∫ (t : ℝ) (x : G1Audit.Vec3), ‖f (t, x)‖ ^ 2"
+  },
+  {
+   "name": "G1Audit.l2RepToProduct_memLp",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 140,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (F : ↥(MeasureTheory.Lp ℂ 2 MeasureTheory.volume)),   MeasureTheory.MemLp (G1Audit.l2RepToProduct F) 2 G1Audit.productSpaceTimeMeasure"
+  },
+  {
+   "name": "G1Audit.l2RepToProduct_memLp_volume",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 129,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (F : ↥(MeasureTheory.Lp ℂ 2 MeasureTheory.volume)),   MeasureTheory.MemLp (G1Audit.l2RepToProduct F) 2 MeasureTheory.volume"
+  },
+  {
+   "name": "G1Audit.lineDeriv_productSchwartzPullback",
+   "file": "formal/G1/WeakOmegaProductPairing.lean",
+   "line": 32,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (m : G1Audit.SpaceTime) (Phi : SchwartzMap G1Audit.ProductSpaceTime ℂ),   LineDeriv.lineDerivOp m (G1Audit.productSchwartzPullback Phi) =     G1Audit.productSchwartzPullback (LineDeriv.lineDerivOp (G1Audit.spaceTimeProductCLE m) Phi)"
+  },
+  {
+   "name": "G1Audit.linearClosure_of_C",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 81,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {gamma A C : ℝ}, gamma < 1 / 2 → 0 ≤ A → 2 * A / (1 - 2 * gamma) ≤ C → G1Audit.LinearClosure gamma A C"
+  },
+  {
+   "name": "G1Audit.linear_rate_one_step",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 158,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (s : G1Audit.OneStepCampanato) (C : ℝ),   0 ≤ C → s.Jr ≤ C * (s.r / s.rho) → 2 * s.gamma * C + 2 * s.A ≤ C → s.JrHalf ≤ C * (s.r / 2 / s.rho)"
+  },
+  {
+   "name": "G1Audit.magEps_ne_zero",
+   "file": "formal/G1/XiEpsPDE.lean",
+   "line": 41,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (ω : G1Audit.VectorField) (ε : ℝ), 0 < ε → ∀ (x : G1Audit.Vec3), G1Audit.magEps ω ε x ≠ 0"
+  },
+  {
+   "name": "G1Audit.magEps_nonneg",
+   "file": "formal/G1/XiEpsPDE.lean",
+   "line": 29,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (ω : G1Audit.VectorField) (ε : ℝ) (x : G1Audit.Vec3), 0 ≤ G1Audit.magEps ω ε x"
+  },
+  {
+   "name": "G1Audit.magEps_pos",
+   "file": "formal/G1/XiEpsPDE.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (ω : G1Audit.VectorField) (ε : ℝ), 0 < ε → ∀ (x : G1Audit.Vec3), 0 < G1Audit.magEps ω ε x"
+  },
+  {
+   "name": "G1Audit.magEps_sq",
+   "file": "formal/G1/WeakDiffusionIBP.lean",
+   "line": 25,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (omega : G1Audit.VectorField) (eps : ℝ) (x : G1Audit.Vec3), G1Audit.magEps omega eps x ^ 2 = ‖omega x‖ ^ 2 + eps ^ 2"
+  },
+  {
+   "name": "G1Audit.memLp_two_spatialSlice_ae",
+   "file": "formal/G1/WeakOmegaSliceInterface.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : G1Audit.ProductScalarField},   MeasureTheory.MemLp f 2 G1Audit.productSpaceTimeMeasure →     ∀ᵐ (t : ℝ), MeasureTheory.MemLp (G1Audit.spatialSlice f t) 2 MeasureTheory.volume"
+  },
+  {
+   "name": "G1Audit.neg_lineDeriv_productSchwartzPullback",
+   "file": "formal/G1/WeakOmegaProductPairing.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (m : G1Audit.SpaceTime) (Phi : SchwartzMap G1Audit.ProductSpaceTime ℂ),   -LineDeriv.lineDerivOp m (G1Audit.productSchwartzPullback Phi) =     G1Audit.productSchwartzPullback (-LineDeriv.lineDerivOp (G1Audit.spaceTimeProductCLE m) Phi)"
+  },
+  {
+   "name": "G1Audit.norm_le_magEps",
+   "file": "formal/G1/WeakDiffusionIBP.lean",
+   "line": 32,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (omega : G1Audit.VectorField) (eps : ℝ) (x : G1Audit.Vec3), ‖omega x‖ ≤ G1Audit.magEps omega eps x"
+  },
+  {
+   "name": "G1Audit.productSchwartzPullback_apply",
+   "file": "formal/G1/WeakOmegaProductPairing.lean",
+   "line": 26,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (Phi : SchwartzMap G1Audit.ProductSpaceTime ℂ) (z : G1Audit.SpaceTime),   (G1Audit.productSchwartzPullback Phi) z = Phi (G1Audit.spaceTimeToProduct z)"
+  },
+  {
+   "name": "G1Audit.productSpaceTimeMeasure_eq_volume",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 121,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "G1Audit.productSpaceTimeMeasure = MeasureTheory.volume"
+  },
+  {
+   "name": "G1Audit.productTensorSchwartz_apply",
+   "file": "formal/G1/TensorProductSchwartz.lean",
+   "line": 73,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (alpha : ℝ → ℝ) (psi : G1Audit.Vec3 → ℂ) (halphaSmooth : ContDiff ℝ (↑⊤) alpha)   (halphaCompact : HasCompactSupport alpha) (hpsiSmooth : ContDiff ℝ (↑⊤) psi) (hpsiCompact : HasCompactSupport psi)   (z : G1Audit.ProductSpaceTime),   (G1Audit.productTensorSchwartz alpha psi halphaSmooth halphaCompact hpsiSmooth hpsiCompact) z = ↑(alpha z.1) * psi z.2"
+  },
+  {
+   "name": "G1Audit.productTensorSchwartz_spatial_lineDeriv_apply",
+   "file": "formal/G1/TensorProductSpatialDerivative.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (alpha : ℝ → ℝ) (psi : G1Audit.Vec3 → ℂ) (halphaSmooth : ContDiff ℝ (↑⊤) alpha)   (halphaCompact : HasCompactSupport alpha) (hpsiSmooth : ContDiff ℝ (↑⊤) psi) (hpsiCompact : HasCompactSupport psi)   (k : Fin 3) (z : G1Audit.ProductSpaceTime),   (LineDeriv.lineDerivOp (G1Audit.productSpatialDirection k)         (G1Audit.productTensorSchwartz alpha psi halphaSmooth halphaCompact hpsiSmooth hpsiCom"
+  },
+  {
+   "name": "G1Audit.productToSpaceTime_measurePreserving",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 75,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MeasureTheory.MeasurePreserving G1Audit.productToSpaceTime MeasureTheory.volume MeasureTheory.volume"
+  },
+  {
+   "name": "G1Audit.productToSpaceTime_spaceTimeToProduct",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 98,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (z : G1Audit.SpaceTime), G1Audit.productToSpaceTime (G1Audit.spaceTimeToProduct z) = z"
+  },
+  {
+   "name": "G1Audit.recurrence_rhs_factor",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (s : G1Audit.DynamicCampanatoData),   s.gamma * (s.q * G1Audit.scaleRatio s) + s.A * G1Audit.scaleRatio s = (s.gamma * s.q + s.A) * G1Audit.scaleRatio s"
+  },
+  {
+   "name": "G1Audit.recurrence_step_bound",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (s : G1Audit.DynamicCampanatoData),   G1Audit.DynamicRecurrence s →     s.Jr ≤ s.q * G1Audit.scaleRatio s → s.JrHalf ≤ (s.gamma * s.q + s.A) * G1Audit.scaleRatio s"
+  },
+  {
+   "name": "G1Audit.spaceTimeProductCLE_apply",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 111,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (z : G1Audit.SpaceTime), G1Audit.spaceTimeProductCLE z = G1Audit.spaceTimeToProduct z"
+  },
+  {
+   "name": "G1Audit.spaceTimeProductCLE_spatialDirection",
+   "file": "formal/G1/SpaceTimeSpatialDirection.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (k : Fin 3), G1Audit.spaceTimeProductCLE (G1Audit.spatialDirection k) = G1Audit.productSpatialDirection k"
+  },
+  {
+   "name": "G1Audit.spaceTimeProductCLE_symm_apply",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 116,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (z : G1Audit.ProductSpaceTime), G1Audit.spaceTimeProductCLE.symm z = G1Audit.productToSpaceTime z"
+  },
+  {
+   "name": "G1Audit.spaceTimeProductHomeomorph_apply",
+   "file": "formal/G1/TensorProductSchwartz.lean",
+   "line": 89,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (z : G1Audit.SpaceTime), G1Audit.spaceTimeProductHomeomorph z = G1Audit.spaceTimeToProduct z"
+  },
+  {
+   "name": "G1Audit.spaceTimeProductHomeomorph_symm_apply",
+   "file": "formal/G1/TensorProductSchwartz.lean",
+   "line": 94,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (z : G1Audit.ProductSpaceTime), G1Audit.spaceTimeProductHomeomorph.symm z = G1Audit.productToSpaceTime z"
+  },
+  {
+   "name": "G1Audit.spaceTimeProductMeasurableEquiv_apply",
+   "file": "formal/G1/SpaceTimeIntegralTransport.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (z : G1Audit.SpaceTime), G1Audit.spaceTimeProductMeasurableEquiv z = G1Audit.spaceTimeToProduct z"
+  },
+  {
+   "name": "G1Audit.spaceTimeProductMeasurableEquiv_symm_apply",
+   "file": "formal/G1/SpaceTimeIntegralTransport.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (z : G1Audit.ProductSpaceTime), G1Audit.spaceTimeProductMeasurableEquiv.symm z = G1Audit.productToSpaceTime z"
+  },
+  {
+   "name": "G1Audit.spaceTimeReindex_spatialDirection",
+   "file": "formal/G1/SpaceTimeSpatialDirection.lean",
+   "line": 21,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (k : Fin 3), G1Audit.spaceTimeReindex (G1Audit.spatialDirection k) = EuclideanSpace.single (Sum.inr k) 1"
+  },
+  {
+   "name": "G1Audit.spaceTimeSplitL2_measurePreserving",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MeasureTheory.MeasurePreserving (⇑G1Audit.spaceTimeSplitL2) MeasureTheory.volume MeasureTheory.volume"
+  },
+  {
+   "name": "G1Audit.spaceTimeTensorRaw_contDiff",
+   "file": "formal/G1/TensorProductSchwartz.lean",
+   "line": 112,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {alpha : ℝ → ℝ} {psi : G1Audit.Vec3 → ℂ},   ContDiff ℝ (↑⊤) alpha → ContDiff ℝ (↑⊤) psi → ContDiff ℝ (↑⊤) (G1Audit.spaceTimeTensorRaw alpha psi)"
+  },
+  {
+   "name": "G1Audit.spaceTimeTensorRaw_hasCompactSupport",
+   "file": "formal/G1/TensorProductSchwartz.lean",
+   "line": 103,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {alpha : ℝ → ℝ} {psi : G1Audit.Vec3 → ℂ},   HasCompactSupport alpha → HasCompactSupport psi → HasCompactSupport (G1Audit.spaceTimeTensorRaw alpha psi)"
+  },
+  {
+   "name": "G1Audit.spaceTimeTensorSchwartz_apply",
+   "file": "formal/G1/TensorProductSchwartz.lean",
+   "line": 132,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (alpha : ℝ → ℝ) (psi : G1Audit.Vec3 → ℂ) (halphaSmooth : ContDiff ℝ (↑⊤) alpha)   (halphaCompact : HasCompactSupport alpha) (hpsiSmooth : ContDiff ℝ (↑⊤) psi) (hpsiCompact : HasCompactSupport psi)   (z : G1Audit.SpaceTime),   (G1Audit.spaceTimeTensorSchwartz alpha psi halphaSmooth halphaCompact hpsiSmooth hpsiCompact) z =     ↑(alpha (G1Audit.spaceTimeToProduct z).1) * psi (G1Audit.spaceTimeToPr"
+  },
+  {
+   "name": "G1Audit.spaceTimeToProduct_measurePreserving",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MeasureTheory.MeasurePreserving G1Audit.spaceTimeToProduct MeasureTheory.volume MeasureTheory.volume"
+  },
+  {
+   "name": "G1Audit.spaceTimeToProduct_productToSpaceTime",
+   "file": "formal/G1/SpaceTimeCoordinateSplit.lean",
+   "line": 92,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (z : G1Audit.ProductSpaceTime), G1Audit.spaceTimeToProduct (G1Audit.productToSpaceTime z) = z"
+  },
+  {
+   "name": "G1Audit.spatialWeakResidual_ae_zero",
+   "file": "formal/G1/WeakOmegaSpatialSlice.lean",
+   "line": 30,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f g : G1Audit.ProductScalarField} {psi dpsi : G1Audit.Vec3 → ℂ},   MeasureTheory.LocallyIntegrable (G1Audit.spatialWeakResidual f g psi dpsi) MeasureTheory.volume →     G1Audit.SeparatedSpatialWeakDerivativeIdentity f g psi dpsi →       ∀ᵐ (t : ℝ), G1Audit.spatialWeakResidual f g psi dpsi t = 0"
+  },
+  {
+   "name": "G1Audit.strainComponent_odd",
+   "file": "formal/G1/StrainKernelMoments.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (K : G1Audit.StrainKernelData) (i j k : Fin 3) (z : G1Audit.Vec3),   G1Audit.strainComponent K i j k (-z) = -G1Audit.strainComponent K i j k z"
+  },
+  {
+   "name": "G1Audit.subtract_constant_identity",
+   "file": "formal/G1/StrainKernelMoments.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (K : G1Audit.StrainKernelData) (i j k : Fin 3) (a c : ℝ) (z : G1Audit.Vec3),   G1Audit.strainComponent K i j k z * a =     G1Audit.strainComponent K i j k z * (a - c) + G1Audit.strainComponent K i j k z * c"
+  },
+  {
+   "name": "G1Audit.support_tensorProductRaw_subset",
+   "file": "formal/G1/TensorProductSchwartz.lean",
+   "line": 35,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (alpha : ℝ → ℝ) (psi : G1Audit.Vec3 → ℂ),   Function.support (G1Audit.tensorProductRaw alpha psi) ⊆ Function.support alpha ×ˢ Function.support psi"
+  },
+  {
+   "name": "G1Audit.tensorProductRaw_contDiff",
+   "file": "formal/G1/TensorProductSchwartz.lean",
+   "line": 25,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {alpha : ℝ → ℝ} {psi : G1Audit.Vec3 → ℂ},   ContDiff ℝ (↑⊤) alpha → ContDiff ℝ (↑⊤) psi → ContDiff ℝ (↑⊤) (G1Audit.tensorProductRaw alpha psi)"
+  },
+  {
+   "name": "G1Audit.tensorProductRaw_hasCompactSupport",
+   "file": "formal/G1/TensorProductSchwartz.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {alpha : ℝ → ℝ} {psi : G1Audit.Vec3 → ℂ},   HasCompactSupport alpha → HasCompactSupport psi → HasCompactSupport (G1Audit.tensorProductRaw alpha psi)"
+  },
+  {
+   "name": "G1Audit.weightedIBP_component",
+   "file": "formal/G1/WeakDiffusionIBP.lean",
+   "line": 142,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (d : G1Audit.WeightedDualityComponent) (h : G1Audit.WeightedDualityInterface d),   d.lapPair = -d.bulk - d.cutoffCross - d.weightCross"
+  },
+  {
+   "name": "G1Audit.weightedIBP_vector_component",
+   "file": "formal/G1/WeakDiffusionIBP.lean",
+   "line": 156,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (d : G1Audit.WeightedDualityVector) (h : G1Audit.WeightedDualityVectorInterface d) (i : Fin 3),   (d.component i).lapPair = -(d.component i).bulk - (d.component i).cutoffCross - (d.component i).weightCross"
+  },
+  {
+   "name": "G1Audit.xiEps_norm_le_one",
+   "file": "formal/G1/WeakDiffusionIBP.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (omega : G1Audit.VectorField) (eps : ℝ), 0 < eps → ∀ (x : G1Audit.Vec3), ‖G1Audit.xiEps omega eps x‖ ≤ 1"
+  },
+  {
+   "name": "G1Audit.xiEps_norm_le_one_for_mean",
+   "file": "formal/G1/BallMeanBound.lean",
+   "line": 17,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (omega : G1Audit.VectorField) (eps : ℝ), 0 < eps → ∀ (x : G1Audit.Vec3), ‖G1Audit.xiEps omega eps x‖ ≤ 1"
+  },
+  {
+   "name": "G1Audit.xiEps_sub_mean_norm_le_two",
+   "file": "formal/G1/WeakDiffusionIBP.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (omega : G1Audit.VectorField) (eps : ℝ),   0 < eps → ∀ (m : G1Audit.Vec3), ‖m‖ ≤ 1 → ∀ (x : G1Audit.Vec3), ‖G1Audit.xiEps omega eps x - m‖ ≤ 2"
+  }
+ ],
+ "closed": 100,
+ "files_sha256": {
+  "formal/G1/BallMeanBound.lean": "3808b652df530ff5f817e22cc3ac63c2e990c340236429c4310ba928e3e0a67a",
+  "formal/G1/DynamicCampanato.lean": "3225fca6fb19688fa13d757421332cdd16d500e9bbfce6217b3dded6b24eca75",
+  "formal/G1/DynamicCampanatoArithmetic.lean": "6700de6b8e72d14d710c054bc05cf570abc1545c28c5770553cfb12a11df485c",
+  "formal/G1/SeparatedSpatialWeakDerivativeIdentity.lean": "2335bd860b0932e082a0c2d5194bcd18b4486973db35611af4dcd636235e2bcf",
+  "formal/G1/SpaceTimeCoordinateSplit.lean": "67bff4830302f65368f10fc39a6fa9c63807e6d47cc1593816f5027272be32b6",
+  "formal/G1/SpaceTimeIntegralTransport.lean": "6ee932e9a7b76bb2fc58b466007e51402f1129bfdee12d43babb0dfdcf778c45",
+  "formal/G1/SpaceTimeSpatialDirection.lean": "abe179c843a574548356f957385f945392dac6c2c9ddd96cf6a92700d2cb136b",
+  "formal/G1/StrainKernel.lean": "e693d67cde2e4e69867214b466d0e9deb0884be998cb85f13196eb6d27aefd0c",
+  "formal/G1/StrainKernelMoments.lean": "8903ec8f41d41e6c14cd842daed85347ada3d715fa8f81168a32fb1cfd12ca8a",
+  "formal/G1/TensorProductSchwartz.lean": "a2697638f0ac372524b4a099629330e20b6ff006a4e98a2e207509f38e176a17",
+  "formal/G1/TensorProductSpatialDerivative.lean": "099fb6b6c19a26caa5fa20f1c09e7c9bdd1847a668ea8e3660c28bb55ae972bf",
+  "formal/G1/VectorLocalRep.lean": "af37b21c1628c938b503bf55ccc95907961bb7df8135a683f04fa162de288214",
+  "formal/G1/WeakDerivBridge.lean": "37a0b0a9387c227379481566ae4dc8be1b935f9b3165805335bb976a63d3cdd1",
+  "formal/G1/WeakDiffusionIBP.lean": "d2f7b7f0c8984118c5e108bdaac533d9921b741ae47bddc3388dab5c2200d88f",
+  "formal/G1/WeakOmega4DPairing.lean": "fe4ba944da1734eb86edd13abd7a8aa32d2c86fbf63ee84dbdc0d62f0ea743fb",
+  "formal/G1/WeakOmegaBridge.lean": "8196c64138d10e4be4fd97c7b6aae9c4042429b87e134f37efbde44dc7164d1d",
+  "formal/G1/WeakOmegaProductPairing.lean": "9e7936a48e7b3644d3b1075ec2949cfd26f84c3655961ca1a8be5c032b48c0f5",
+  "formal/G1/WeakOmegaSliceInterface.lean": "fe2fe516494c73cf2fe5ec3b1a9f8393ed3c4676dc748c8f9394fbf91b297f87",
+  "formal/G1/WeakOmegaSpatialSlice.lean": "16b550b0f9f6e07f033fffe4b5965f709f27a4316de4fd686bad83962438625b",
+  "formal/G1/XiEpsLocalizedRealization.lean": "ffeaf015a104f0542dc9d8377855653bfe6b7c826f7545c189f4ad9868e28ce7",
+  "formal/G1/XiEpsPDE.lean": "6d0517329c0bed627179e5449e3591465082f76c79a0ea8562be43b6fa16a5ea",
+  "lakefile.toml": "d9ce2767a20a6777405735e8f3409689264ee6d6a6ceb123c99c01e669234ba4",
+  "lean-toolchain": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af"
+ },
+ "published_at": "2026-10-29T06:27:20Z",
+ "certificate_sha256": "794b6ee11c84911f87b090412b7557c9bc2bde8e31d13c4a4b43ef0f641ecf9d"
+}

@@ -1,0 +1,1487 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "atk/kernel-theta-budget-20260928",
+ "branch_state": "parada",
+ "head_commit": "4416414f1b3ad007dbbb625689b8151a0a10432b",
+ "head_commit_date": "2026-09-28T13:56:42+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "4416414f1b3ad007dbbb625689b8151a0a10432b",
+   "date": "2026-09-28T13:56:42+01:00",
+   "subject": "ATK NS: rename structure fields to avoid proof-escape scanner false positive"
+  },
+  {
+   "commit": "18e38906bd1c7b86ebc235f621cf37702d593e90",
+   "date": "2026-09-28T13:28:10+01:00",
+   "subject": "ATK kernel: derive admissible theta budget from three-gate epsilon bound"
+  },
+  {
+   "commit": "76b469f398c610d6c435c4e17ed42401040d0064",
+   "date": "2026-09-28T09:17:50+01:00",
+   "subject": "feat(ns): route kernel-promoted G1 assembly through fast path"
+  },
+  {
+   "commit": "5d227c488b7ea29a3b713356884c8c261162eed7",
+   "date": "2026-09-28T09:06:53+01:00",
+   "subject": "fix(ns): expose promoted G1 assembly structure projections"
+  },
+  {
+   "commit": "9c39aecdc8c6faa09e2049c9f9c2e24a50549979",
+   "date": "2026-09-28T08:45:54+01:00",
+   "subject": "ci(ns): build and audit kernel-promoted G1 assembly"
+  },
+  {
+   "commit": "f1f3b26dcf43c1af02728ddb42ce2b394257c3c0",
+   "date": "2026-09-28T08:45:45+01:00",
+   "subject": "atk(ns): incorporate kernel-promoted ThreeGate to G1 assembly"
+  },
+  {
+   "commit": "227cd43742173ae072cdb6381f172bac4ec26ae9",
+   "date": "2026-09-28T00:10:43+01:00",
+   "subject": "ATK NS: compose exact derivative into PDE lift obligation"
+  },
+  {
+   "commit": "deee77f2775e89eda2b8d9c88c48c96fd587165e",
+   "date": "2026-09-28T00:02:55+01:00",
+   "subject": "fix(ns): normalize inverse-radius scalar identity"
+  },
+  {
+   "commit": "067b71a5eaf2edf8132a9f284d0e621ba7dac4d1",
+   "date": "2026-09-27T23:02:26+01:00",
+   "subject": "ATK NS: factor inverse scalar before field closure"
+  },
+  {
+   "commit": "2a9de667c425b1d94ed6b84115b7181b131dbc88",
+   "date": "2026-09-27T21:30:37+01:00",
+   "subject": "ATK NS: normalize terminal scalar identity with ring_nf"
+  },
+  {
+   "commit": "c0f3a7c9f2ee90b8b7c2f70f33e6aaa3a25217a4",
+   "date": "2026-09-27T21:26:49+01:00",
+   "subject": "ATK NS: normalize inverse powers before scalar field closure"
+  },
+  {
+   "commit": "19cd98fbb35cc81d1908670355c40a54331cdbec",
+   "date": "2026-09-27T21:21:02+01:00",
+   "subject": "ATK NS: isolate scalar inverse coefficient"
+  },
+  {
+   "commit": "789e645d8d118fbdfc8cde074c37bcb217da91f2",
+   "date": "2026-09-27T21:17:41+01:00",
+   "subject": "ATK NS: clear inverse power denominators"
+  },
+  {
+   "commit": "6284c0ba2fa8266b3177207a6f00d6470dd7e607",
+   "date": "2026-09-27T21:10:40+01:00",
+   "subject": "ATK NS: isolate inverse-square normalization"
+  },
+  {
+   "commit": "d6df323656b9f5cf1e6acae553cd9a5d38b552ff",
+   "date": "2026-09-27T21:03:59+01:00",
+   "subject": "ATK NS: close scalar radius identity directly"
+  },
+  {
+   "commit": "9912b0fb1f11f50b1191a80112dd077d60bf751e",
+   "date": "2026-09-27T21:02:51+01:00",
+   "subject": "ATK NS: close scalar identity in inverse-radius derivative"
+  },
+  {
+   "commit": "69e9edca157866b3e4e47522496ef6f6d72ccf90",
+   "date": "2026-09-27T21:02:32+01:00",
+   "subject": "ATK NS: normalize inverse power in Frechet inhabitant"
+  },
+  {
+   "commit": "a2f0227a2972b863ae37851b1a718e03c8e5ee69",
+   "date": "2026-09-27T20:59:07+01:00",
+   "subject": "ATK NS: close inverse-power scalar normalization"
+  },
+  {
+   "commit": "def401ba38b5ef57dcdb5c3b7595815af61a98ca",
+   "date": "2026-09-27T20:56:48+01:00",
+   "subject": "ATK NS: rerun corrected exact Frechet inhabitant"
+  },
+  {
+   "commit": "e7b41812aa0d8d9ed311fb1601f42e7b4bd964f0",
+   "date": "2026-09-27T20:54:54+01:00",
+   "subject": "ATK NS: normalize exact Frechet proof term"
+  },
+  {
+   "commit": "41df4851f29fbc92123f8f9a6b860b028cd20f36",
+   "date": "2026-09-27T20:54:29+01:00",
+   "subject": "ATK NS: normalize CLM maps with valid scalar domain"
+  },
+  {
+   "commit": "93df1d542d7d999775d99a85d6b516bf5e961540",
+   "date": "2026-09-27T20:54:24+01:00",
+   "subject": "ATK NS: verify corrected exact Frechet inhabitant"
+  },
+  {
+   "commit": "478cdbea2e4ef7e6f24e4d3421820d334e68c796",
+   "date": "2026-09-27T20:50:22+01:00",
+   "subject": "ATK NS: fix scalar inverse derivative domain"
+  },
+  {
+   "commit": "ac8265a3127d39eb55161c6347c64d99cc8368a5",
+   "date": "2026-09-27T20:48:24+01:00",
+   "subject": "ATK NS: advance exact Frechet inhabitant to chain rule"
+  },
+  {
+   "commit": "3246a6912c5970abe6debae61076b550a42b49f6",
+   "date": "2026-09-27T20:46:02+01:00",
+   "subject": "ATK NS: isolate derivative map equalities"
+  },
+  {
+   "commit": "20fbf88bb1bfb0ca3670c25cf102f2bade67f4cf",
+   "date": "2026-09-27T20:42:13+01:00",
+   "subject": "ATK NS: canonicalize inverse-radius derivative"
+  },
+  {
+   "commit": "b6d8de69f4199844a40784214777a4957ab73b39",
+   "date": "2026-09-27T20:38:10+01:00",
+   "subject": "ATK NS: normalize exact Frechet derivative operator"
+  },
+  {
+   "commit": "f111e7dd8645c22b15995d5c289b74b7257e8e47",
+   "date": "2026-09-27T20:33:58+01:00",
+   "subject": "ATK NS: verify exact Frechet producer in existing K1a gate"
+  },
+  {
+   "commit": "023dd4c402b8992dc39600a1a82bb6f826af881e",
+   "date": "2026-09-27T20:33:21+01:00",
+   "subject": "ATK NS: produce exact Frechet inhabitant for xi_eps"
+  },
+  {
+   "commit": "53c655c99e21a194fb72b620428a02bc683c178f",
+   "date": "2026-09-25T23:59:20+01:00",
+   "subject": "CI: aggregate K1a CORE modules in one gate"
+  },
+  {
+   "commit": "f1285205e1a60c78d4057d3b7dee0e19bd139acc",
+   "date": "2026-09-25T22:30:39+01:00",
+   "subject": "K1a: close pointwise PDE lift from frozen Dxi linearity"
+  },
+  {
+   "commit": "99eebd495f58a27dead96121ecf0d2240c4ec10b",
+   "date": "2026-09-25T22:28:30+01:00",
+   "subject": "CI: build K1a Frechet producer target"
+  },
+  {
+   "commit": "d5abadb12db1e9e29ab2d40a4ac226efdb1bb822",
+   "date": "2026-09-25T22:08:06+01:00",
+   "subject": "K1a: add reuse-first Frechet producer target"
+  },
+  {
+   "commit": "9e3ff1810b4560fad00bb96599c2a505ec4b3b3f",
+   "date": "2026-09-25T21:57:16+01:00",
+   "subject": "NS: gate monotone external route router"
+  },
+  {
+   "commit": "0439df8b63666d63f4931e08cdc5d1f8841fa9cb",
+   "date": "2026-09-25T21:57:11+01:00",
+   "subject": "NS: add monotone no-loop external route router"
+  },
+  {
+   "commit": "c9c525acfd54d1b89516a68137201cf9ddfe1a28",
+   "date": "2026-09-25T21:44:53+01:00",
+   "subject": "NS: gate compressed external fast path in CI"
+  },
+  {
+   "commit": "e1695d1ca7cd0e37ec2bda3c46e5fcad8e380eb6",
+   "date": "2026-09-25T21:44:48+01:00",
+   "subject": "NS: add fail-closed five-gate external fast path"
+  },
+  {
+   "commit": "41df1485c3ec420e79d8fd58b199a45e9ffe7d18",
+   "date": "2026-09-25T21:30:08+01:00",
+   "subject": "K1a: fix linear-map scalar witness"
+  },
+  {
+   "commit": "43fdfacdb29095fda5e2317078a69468a5635431",
+   "date": "2026-09-25T21:27:18+01:00",
+   "subject": "K1a: package derivative candidate as continuous linear map"
+  },
+  {
+   "commit": "4e931e012b079a1fb17581dfb9ddb9592257c9b0",
+   "date": "2026-09-25T21:18:48+01:00",
+   "subject": "K1a: fix linearity witness argument order"
+  },
+  {
+   "commit": "71d157842d78cc9be639de314dcf3a462bf32fc1",
+   "date": "2026-09-25T21:10:47+01:00",
+   "subject": "K1a: discharge PDE lift linearity obligation"
+  },
+  {
+   "commit": "2305c1fbcb49deae805d8a695f53657de79b42cd",
+   "date": "2026-09-25T20:38:44+01:00",
+   "subject": "K1a: prove Dxi candidate linearity"
+  },
+  {
+   "commit": "704f951dfe56274cc983c4a258b18f49f3c53025",
+   "date": "2026-09-25T20:23:24+01:00",
+   "subject": "K1a: gate PDE lift target"
+  },
+  {
+   "commit": "01b699d22347abb74cc9b0d75c0e2cf91851506c",
+   "date": "2026-09-25T20:23:18+01:00",
+   "subject": "K1a: add fail-closed PDE lift target"
+  },
+  {
+   "commit": "be23b15a4970cd928ad0a3b244f8069b0f9b0b0a",
+   "date": "2026-09-25T20:11:03+01:00",
+   "subject": "K1a: type exact Frechet derivative target over Vec3"
+  },
+  {
+   "commit": "bdfe1a0e69afa6f3c970c1ebb3ff1843dc902d6f",
+   "date": "2026-09-25T20:05:13+01:00",
+   "subject": "K1a: gate analytic chain-rule target"
+  },
+  {
+   "commit": "6873f59afb5fbe866f8cad5909179f16a60ba3e6",
+   "date": "2026-09-25T20:05:04+01:00",
+   "subject": "K1a: add fail-closed analytic chain-rule target"
+  },
+  {
+   "commit": "489b05987f444758234d0ef2987aa26fecaab68b",
+   "date": "2026-09-25T19:43:43+01:00",
+   "subject": "K1a: rewrite cleared denominator goal by radial factorization"
+  },
+  {
+   "commit": "4dccbff3b5a531689a1b176a450ed626d7b511ee",
+   "date": "2026-09-25T19:39:07+01:00",
+   "subject": "K1a: supply polynomial radial factorization"
+  },
+  {
+   "commit": "eaeb64da982057163a3906bdf796213f9b2cef1e",
+   "date": "2026-09-25T19:24:19+01:00",
+   "subject": "K1a: remove redundant inverse rewrites"
+  },
+  {
+   "commit": "108b998cc8650483771ee56294b81178724e0a0a",
+   "date": "2026-09-25T19:15:40+01:00",
+   "subject": "K1a: clear radial inverses directly"
+  },
+  {
+   "commit": "f9b280262d07017873230a2c216b11abe5db6b87",
+   "date": "2026-09-25T19:00:25+01:00",
+   "subject": "K1a: normalize radial coefficient before denominator clearing"
+  },
+  {
+   "commit": "e75bca3b10bceac7c9f698eb90e504cb0ddf0f17",
+   "date": "2026-09-25T18:32:30+01:00",
+   "subject": "K1a: factor radial proof through scalar coefficient identity"
+  },
+  {
+   "commit": "67a03e766e5dc22a2ceced8e46373be70703e684",
+   "date": "2026-09-25T18:24:42+01:00",
+   "subject": "K1a: repair vector scalar action and radial identity"
+  },
+  {
+   "commit": "4872fa5f16d6e6b9832895537dec62d012bde741",
+   "date": "2026-09-25T18:21:00+01:00",
+   "subject": "K1a: include vector kernel in scientific gate"
+  },
+  {
+   "commit": "2f0821def4a7ab3defe68596b440c4c89cf7a2bc",
+   "date": "2026-09-25T18:20:54+01:00",
+   "subject": "K1a: add vector derivative algebra kernel"
+  },
+  {
+   "commit": "95d68051c2427bf1de731ae5c5823091287b65a5",
+   "date": "2026-09-25T18:12:26+01:00",
+   "subject": "K1a: close radial defect normalization goal"
+  },
+  {
+   "commit": "90c701d0a8e12ed451d9d94a222a25bff27193e9",
+   "date": "2026-09-25T18:07:21+01:00",
+   "subject": "K1a: add k1a-scientific-gate.yml to executable gate"
+  },
+  {
+   "commit": "4a4d1eac6b1f9d318b6a74e2d9727804c20dfb11",
+   "date": "2026-09-25T18:07:19+01:00",
+   "subject": "K1a: add K1aClaimGate.lean to executable gate"
+  },
+  {
+   "commit": "08058911f0f2a2dac36f131dd7df789a34fe1d2e",
+   "date": "2026-09-25T18:07:03+01:00",
+   "subject": "K1a: add ScientificMeet.lean to executable gate"
+  },
+  {
+   "commit": "04c2e947ddd95151cf9010f56790b6bf72b38daf",
+   "date": "2026-09-25T18:07:01+01:00",
+   "subject": "K1a: add K1aXiEpsAlgebra.lean to executable gate"
+  },
+  {
+   "commit": "799b7da538e49a2e46ffd0b03446a3d2c8be3174",
+   "date": "2026-09-25T17:50:53+01:00",
+   "subject": "G1: add fail-closed two-lane scientific meet"
+  },
+  {
+   "commit": "773c6960f5ca700cbaeec466b257657177ed8ca4",
+   "date": "2026-09-25T17:44:08+01:00",
+   "subject": "K1a: isolate exact regularized-direction algebra"
+  },
+  {
+   "commit": "bdf538c84076cece7aae52e9d35d68c226e968d1",
+   "date": "2026-09-21T06:40:57+01:00",
+   "subject": "ci(ns): cache mathlib downloads for G1C capture"
+  },
+  {
+   "commit": "e9bbb648bdd780bde2df553987df9d63d55015dd",
+   "date": "2026-09-21T06:39:15+01:00",
+   "subject": "ci(ns): fix G1 fields and make capture observable"
+  },
+  {
+   "commit": "0bd8f40a94d4005aef8f4daed5fc5bac5a61dcdf",
+   "date": "2026-09-21T06:21:25+01:00",
+   "subject": "fix(ns): strengthen Isabelle depletion algebra proof"
+  },
+  {
+   "commit": "e101d81f49be2c50eb19c822442be2e70e2745e6",
+   "date": "2026-09-21T06:21:19+01:00",
+   "subject": "fix(ns): disambiguate analytic bridge scalar fields"
+  },
+  {
+   "commit": "216232ff0ef63cf97fe8b42ceb2fe749491b44e3",
+   "date": "2026-09-21T01:46:28+01:00",
+   "subject": "ci(ns): build millennium core before G1C replay capture"
+  },
+  {
+   "commit": "e0fde214350b2d9d3e5a0155359050d5da97c037",
+   "date": "2026-09-21T01:14:42+01:00",
+   "subject": "ci(ns): expose formal G1 root to fail-proof kernel checks"
+  },
+  {
+   "commit": "b91cd48d1e0338d23b26c6a7ee406bc374943e5a",
+   "date": "2026-09-21T01:14:34+01:00",
+   "subject": "fix(ns): normalize G1 module imports in FailProofAllGaps.lean"
+  },
+  {
+   "commit": "e77def5d9ce6f05e31a743eb04497e4d2484c9fc",
+   "date": "2026-09-21T01:14:30+01:00",
+   "subject": "fix(ns): normalize G1 module imports in FailProofFinal.lean"
+  },
+  {
+   "commit": "419a7e40af294c6e2976f2d9189a5fb358aefe70",
+   "date": "2026-09-21T01:14:25+01:00",
+   "subject": "fix(ns): normalize G1 module imports in DynamicCampanato.lean"
+  },
+  {
+   "commit": "180305672f4b3221eaa44a3e866306e047ca35ed",
+   "date": "2026-09-21T01:06:56+01:00",
+   "subject": "ci(ns): hydrate Lean oleans before G1C kernel capture"
+  },
+  {
+   "commit": "3f887b75406e2b2ca1e2b303b19eb2ede38e262a",
+   "date": "2026-09-21T00:59:48+01:00",
+   "subject": "ci(ns): preserve G1C capture metadata on dependency prep failure"
+  },
+  {
+   "commit": "35c248d53072d7a04f39750a74e8bfa805a79560",
+   "date": "2026-09-21T00:52:39+01:00",
+   "subject": "fix(ns): resolve XiEpsPDE module path in fail-proof chain"
+  },
+  {
+   "commit": "3c9f965f9d7d5caeb2f8af274e5f13f7171828f8",
+   "date": "2026-09-21T00:36:12+01:00",
+   "subject": "ci(ns): build registered G1 library before kernel checks"
+  },
+  {
+   "commit": "f2e24ba2de92be2b4c12a9f943e971cbf8423ff5",
+   "date": "2026-09-21T00:36:02+01:00",
+   "subject": "ci(ns): add G1 library umbrella"
+  },
+  {
+   "commit": "04088aa82c6b61a37e18589912fa9ff106815e6c",
+   "date": "2026-09-21T00:35:58+01:00",
+   "subject": "fix(ns): import XiEpsPDE through registered G1 library"
+  },
+  {
+   "commit": "ddae60546bf4c86f4571ad5fae0f44188c267d0b",
+   "date": "2026-09-21T00:35:53+01:00",
+   "subject": "ci(ns): register formal G1 Lean library"
+  },
+  {
+   "commit": "29385825847593e7e0310aca976eb7973bd94cef",
+   "date": "2026-09-21T00:29:48+01:00",
+   "subject": "ci(ns): hydrate G1C dependencies before kernel capture"
+  },
+  {
+   "commit": "52f25e8f1bac59e2529924c4b2259b1a816b662f",
+   "date": "2026-09-21T00:22:30+01:00",
+   "subject": "ci(ns): reclaim runner disk before root Lean cache"
+  },
+  {
+   "commit": "7ca260111bad89c360c316ea4781b1722e87b7ac",
+   "date": "2026-09-21T00:22:26+01:00",
+   "subject": "fix(g1-isabelle): use Isabelle symbol escapes"
+  },
+  {
+   "commit": "d49b6cfc855d60203f4b5c643d969167b3f8d245",
+   "date": "2026-09-20T23:23:31+01:00",
+   "subject": "fix(g1-isabelle): use ASCII function arrow syntax"
+  },
+  {
+   "commit": "e9012a06f064b9e6c7b1178bdf19188c86d7e943",
+   "date": "2026-09-20T22:42:59+01:00",
+   "subject": "fix(ns): quote Isabelle HOL-Analysis parent session"
+  },
+  {
+   "commit": "a23aacd6b886db6266aa29faf1a43d617088134a",
+   "date": "2026-09-20T22:29:13+01:00",
+   "subject": "atk(ns): chain-rule correct commutator channel"
+  },
+  {
+   "commit": "6bddb45fea49401fff3a7005d42f6f0956413410",
+   "date": "2026-09-20T22:24:26+01:00",
+   "subject": "atk(ns): link strainXi componentwise to S_eps"
+  },
+  {
+   "commit": "85569b0e2351d1f2c0b466ccf267730e3cce1b28",
+   "date": "2026-09-20T22:20:26+01:00",
+   "subject": "atk(ns): compute tangential strain channel"
+  },
+  {
+   "commit": "9a66669aa517d6034227d2aabfbaa346222df4ed",
+   "date": "2026-09-20T22:16:57+01:00",
+   "subject": "fix(ns): state R2 bound componentwise"
+  },
+  {
+   "commit": "bd9459b7c2430440fac5f82c95a39a6e9504f5c7",
+   "date": "2026-09-20T22:14:07+01:00",
+   "subject": "atk(ns): correct gradient and R2 tensor types"
+  },
+  {
+   "commit": "f3ba024dafad7cac095ecb0ff7c2f9785a9e5921",
+   "date": "2026-09-20T22:09:46+01:00",
+   "subject": "atk(ns): make radial diffusion channel concrete"
+  },
+  {
+   "commit": "22799c740a29d577f14328e97f4356e406bd0f32",
+   "date": "2026-09-20T22:05:57+01:00",
+   "subject": "atk(ns): type XiEps PDE equation channels"
+  },
+  {
+   "commit": "786caa50eb35f83f78e9563e5d2fa780920dbd13",
+   "date": "2026-09-20T20:57:12+01:00",
+   "subject": "cert(g1): promote NS fail-proof ledger after dedicated GREEN"
+  },
+  {
+   "commit": "360ffa61c3a23e06a7be6bd8d12417c74e20c457",
+   "date": "2026-09-20T20:52:57+01:00",
+   "subject": "ci(g1): avoid field-name false positives and record source SHA"
+  },
+  {
+   "commit": "7880c89efefed9b06ff66223cb5c60bff4ce0cdc",
+   "date": "2026-09-20T20:49:21+01:00",
+   "subject": "fix(failproof): make real-valued witnesses noncomputable and type aggregate proposition"
+  },
+  {
+   "commit": "e7c5fe9152021807ee45272b189a550b9d7f4269",
+   "date": "2026-09-20T20:49:12+01:00",
+   "subject": "fix(failproof): separate aggregate proposition from proof term"
+  },
+  {
+   "commit": "ce5a8f7a1dfe915d2ac0059687cc67a262269f4d",
+   "date": "2026-09-20T20:45:38+01:00",
+   "subject": "fix(failproof): provide proof of exact R1/R2 conjunction"
+  },
+  {
+   "commit": "cc87f70781623fd64af0c7bec63a51c5eb9e8683",
+   "date": "2026-09-20T20:42:31+01:00",
+   "subject": "fix(failproof): type no-cubic-reduction as exact R1/R2 proposition"
+  },
+  {
+   "commit": "b4b1532ce375088530748be54a92775574f02890",
+   "date": "2026-09-20T18:45:03+01:00",
+   "subject": "fix(failproof): correct Campanato proposition/proof distinctions"
+  },
+  {
+   "commit": "980696945e1cf6ff8f5c92e76a9e73d4c71e296c",
+   "date": "2026-09-20T18:42:02+01:00",
+   "subject": "fix(failproof): normalize Campanato records for Lean 4.19"
+  },
+  {
+   "commit": "4bc8982e39667a9edfd7ad9235204ba28adfc78a",
+   "date": "2026-09-20T18:38:09+01:00",
+   "subject": "ci(g1): compile fail-proof modules from repository root"
+  },
+  {
+   "commit": "e2d96f1897ff800ff57cefa37c958802204be104",
+   "date": "2026-09-20T18:35:10+01:00",
+   "subject": "ci(g1): compile full fail-proof dependency closure"
+  },
+  {
+   "commit": "b078ac2b35b325dab1e9d8d449ba3925e842ebda",
+   "date": "2026-09-20T18:34:41+01:00",
+   "subject": "ci(g1): emit olean files for fail-proof import closure"
+  },
+  {
+   "commit": "2ccc9927468efe15aa0c3cd5bd790758bf62a2ba",
+   "date": "2026-09-20T18:31:48+01:00",
+   "subject": "fix(failproof): stabilize alignment transport under Lean 4.19"
+  },
+  {
+   "commit": "753b9c9a07974cc5d778b5116007a6757b4172e7",
+   "date": "2026-09-20T18:28:38+01:00",
+   "subject": "fix(failproof): update vacuous hDynamic witness to explicit data"
+  },
+  {
+   "commit": "1ef15b3cb7edcf11da9906067590a660f917932e",
+   "date": "2026-09-20T18:25:38+01:00",
+   "subject": "fix(failproof): replace reserved lambda field in scale witness"
+  },
+  {
+   "commit": "75369267f4d94ce072b812ff97ddedd26ba25cd2",
+   "date": "2026-09-20T18:25:28+01:00",
+   "subject": "fix(failproof): stabilize G1 dynamic algebra and identifiers"
+  },
+  {
+   "commit": "e27f87e5a1d5ba5cff87ec26e8a950b5c0acae0f",
+   "date": "2026-09-20T18:22:14+01:00",
+   "subject": "fix(failproof): make hDynamic constant explicit structure data"
+  },
+  {
+   "commit": "a5ddcec437d4e88b80183c7255cec741ae4220a6",
+   "date": "2026-09-20T17:34:07+01:00",
+   "subject": "cert(ns): extend fail-proof ledger through K1a-K1f and NS-B9"
+  },
+  {
+   "commit": "d2432e167a4cac2b641bfa9cbe03cd2a55fd824f",
+   "date": "2026-09-20T17:33:56+01:00",
+   "subject": "failproof(ns): cover NS-B7 pressure, B8 forcing, B9 mean-to-critical"
+  },
+  {
+   "commit": "55bc5be7f49f0979907a0b80baa2d70a56a8d1a8",
+   "date": "2026-09-20T17:33:34+01:00",
+   "subject": "fix(failproof): import AlignmentTransport directly"
+  },
+  {
+   "commit": "37c93fe7d444532ed1ba16a498c3a7c2dfbdfe38",
+   "date": "2026-09-20T17:33:26+01:00",
+   "subject": "failproof(ns): add explicit K1a-K1f interface countercertificates"
+  },
+  {
+   "commit": "fc56629896c6330995a134ace550a5009ebac9da",
+   "date": "2026-09-20T17:32:36+01:00",
+   "subject": "ci(g1): run fail-proof certificate once per PR update"
+  },
+  {
+   "commit": "ceaa22b507a28715f7dc5ec7804fcc0f8157d585",
+   "date": "2026-09-20T17:32:22+01:00",
+   "subject": "fix(lean): make inner-product type explicit in AlignmentTransport.lean"
+  },
+  {
+   "commit": "457c5d1c512bb6abd9fba4443d8466f482eb05c5",
+   "date": "2026-09-20T17:32:20+01:00",
+   "subject": "fix(lean): make inner-product type explicit in G1_DynamicCriticalGeometry.lean"
+  },
+  {
+   "commit": "2db0d524e2cab5421dfb9e11ee28ac30849a47e6",
+   "date": "2026-09-20T17:32:17+01:00",
+   "subject": "fix(lean): make inner-product type explicit in XiEpsPDE.lean"
+  },
+  {
+   "commit": "859d2ed724192d39149d8b51639a11594c02cce2",
+   "date": "2026-09-20T17:31:40+01:00",
+   "subject": "cert(g1): record standard axiom footprint and hash gap ledger"
+  },
+  {
+   "commit": "a544fd5f01e878908af3cb3df11893f572feae53",
+   "date": "2026-09-20T17:31:11+01:00",
+   "subject": "cert(ns): add traceable fail-proof gap ledger"
+  },
+  {
+   "commit": "73b31d546725cded13d86a0d8e66cc9fe4674eaf",
+   "date": "2026-09-20T17:30:28+01:00",
+   "subject": "ci(g1): certify all exposed fail-proof gaps"
+  },
+  {
+   "commit": "4610b9efe3d7bb2bec9864c5e3e5291464865b10",
+   "date": "2026-09-20T17:30:19+01:00",
+   "subject": "failproof(ns): add countercertificates for G2-G4 and NS-B1-B6"
+  },
+  {
+   "commit": "e787b6d65da8102500708467700e1a71f662f303",
+   "date": "2026-09-20T17:29:25+01:00",
+   "subject": "fix(lean): repair inner-product notation in AlignmentTransport"
+  },
+  {
+   "commit": "1c560883838751d41e5ca93c15ace134b3ef71ff",
+   "date": "2026-09-20T17:29:07+01:00",
+   "subject": "fix(lean): stabilize AlignmentTransport.lean elaboration"
+  },
+  {
+   "commit": "6642fcf4007872c330f98c20860ad059a8aad781",
+   "date": "2026-09-20T17:29:04+01:00",
+   "subject": "fix(lean): stabilize G1_DynamicCriticalGeometry.lean elaboration"
+  },
+  {
+   "commit": "093987f1cc32cda27107420f47ba2b9269efb60a",
+   "date": "2026-09-20T17:29:00+01:00",
+   "subject": "fix(lean): stabilize XiEpsPDE.lean elaboration"
+  },
+  {
+   "commit": "e0487d6b29445db8a2c95456d6dda9e43b362f93",
+   "date": "2026-09-20T17:25:48+01:00",
+   "subject": "fix(ci): point fail-proof gate at formal/G1 sources"
+  },
+  {
+   "commit": "59642cb2742ad4566925e0d5170e7251cabaa9fd",
+   "date": "2026-09-20T17:23:21+01:00",
+   "subject": "ci(g1): isolate fail-proof gate from unrelated library build"
+  },
+  {
+   "commit": "7a3c11433a89282b0fd68ab0b20f9bae5dc07d72",
+   "date": "2026-09-20T17:22:24+01:00",
+   "subject": "cert(g1): stamp fail-proof certificate schema v1"
+  },
+  {
+   "commit": "5aec5529a20587633de993c08d49362a4b06a8b3",
+   "date": "2026-09-20T17:22:02+01:00",
+   "subject": "ci(g1): add dedicated final fail-proof certificate gate"
+  },
+  {
+   "commit": "148211a6b0691065b81bfea114df5732d7e25518",
+   "date": "2026-09-20T17:21:25+01:00",
+   "subject": "fix(lean): make subcritical depletion proof robust under Lean 4.19"
+  },
+  {
+   "commit": "db3f442673fdd4378e1963f6f12116ad88a56e76",
+   "date": "2026-09-20T16:30:10+01:00",
+   "subject": "failproof(ci): harden audit Lean proof-escape scans"
+  },
+  {
+   "commit": "12e9cc0ba5f680b7b1e021a2c97c379494dbe5f9",
+   "date": "2026-09-20T16:30:08+01:00",
+   "subject": "failproof(ci): harden G1 v4 proof-escape scan"
+  },
+  {
+   "commit": "6de15df4d8fbb6c7b81f4e6bdbd202053e34c4e9",
+   "date": "2026-09-20T16:29:23+01:00",
+   "subject": "fix(ci): build dedicated Isabelle G1 session"
+  },
+  {
+   "commit": "8e9d9efce1bef5d439e3d35e3c4775b28eff9298",
+   "date": "2026-09-20T16:29:16+01:00",
+   "subject": "fix(isabelle): add dedicated G1 session"
+  },
+  {
+   "commit": "09b60270061063eea0ea37fe79c4146d82097bff",
+   "date": "2026-09-20T16:29:12+01:00",
+   "subject": "fix(lean): unfold subcritical budget before linarith"
+  },
+  {
+   "commit": "4d9c469f408772464eb76a152b25f28f4eec7023",
+   "date": "2026-09-20T16:27:37+01:00",
+   "subject": "fix(ci): give Agda module roots explicitly"
+  },
+  {
+   "commit": "726bdd7bfbc5f94b56dc38f163a3c7d48f684874",
+   "date": "2026-09-20T16:26:05+01:00",
+   "subject": "ci(g1): compile fail-proof modules from root Lake project"
+  },
+  {
+   "commit": "bd9f9ab549e8da16861195fb006c0be28a7bd270",
+   "date": "2026-09-20T16:24:56+01:00",
+   "subject": "ci(g1): kernel-check consolidated fail-proof certificate"
+  },
+  {
+   "commit": "5a7804625af2c9b0bad53b8f4e796a3605c5e031",
+   "date": "2026-09-20T16:24:48+01:00",
+   "subject": "cert(g1): add consolidated fail-proof theorem"
+  },
+  {
+   "commit": "9b401f8a2cc48824bb85ef246d279021bca37a24",
+   "date": "2026-09-20T16:24:34+01:00",
+   "subject": "audit(g1): align K1a/K1d obligations with fail-proof results"
+  },
+  {
+   "commit": "2645260a6f380e359fea4421bcc6188cb7ed5c26",
+   "date": "2026-09-20T16:24:15+01:00",
+   "subject": "failproof(g1): show DynamicCampanato identity accepts vacuous PDE spec"
+  },
+  {
+   "commit": "3dbeb2170d329c0425d00d8761850c29cba1ee2a",
+   "date": "2026-09-20T16:23:50+01:00",
+   "subject": "failproof(g1): mark XiEpsPDE as specification and expose vacuous equation field"
+  },
+  {
+   "commit": "8fd2ca5ce933272a03c05a942702e44e8ddac3aa",
+   "date": "2026-09-20T16:20:28+01:00",
+   "subject": "refactor(failproof): simplify nonunit projection countercertificate"
+  },
+  {
+   "commit": "2f76240fa0fcb9baa538b4abbbc0e727e97db4e3",
+   "date": "2026-09-20T16:20:11+01:00",
+   "subject": "failproof(g1): expose nonunit xi_eps projection defect"
+  },
+  {
+   "commit": "840ecff12d4f18653612e0be7159a632d9bab810",
+   "date": "2026-09-20T16:19:40+01:00",
+   "subject": "failproof(ci): catch inline Lean sorry and hidden constants"
+  },
+  {
+   "commit": "006fb47d0e602103f29020d17e8e5b9e20dffd5e",
+   "date": "2026-09-20T16:18:59+01:00",
+   "subject": "failproof(g1): prove FullChain interface admits vacuous composition"
+  },
+  {
+   "commit": "14f5182abc0f76d4da882fd2e9bdd4178b81c220",
+   "date": "2026-09-20T16:18:32+01:00",
+   "subject": "ci(g1): kernel-check fail-proof G1 interfaces"
+  },
+  {
+   "commit": "0eb97094b97ee09f741d3a971cdd6e4fa9057543",
+   "date": "2026-09-20T16:18:24+01:00",
+   "subject": "failproof(g1): certify vacuity of coherence interface"
+  },
+  {
+   "commit": "3ee68580f9b8120f9b28b6bceadc67b88d08d36a",
+   "date": "2026-09-20T16:17:58+01:00",
+   "subject": "failproof(g1): remove six sorry-backed K1 placeholders"
+  },
+  {
+   "commit": "5c79c92b127ff3e691698a0255bbd6d9cbb6c534",
+   "date": "2026-09-20T16:13:03+01:00",
+   "subject": "audit(g1): fix enstrophy convention and non-circular L1 requirement"
+  },
+  {
+   "commit": "7b9134530c454d20dd0e2042820d4bb8a51f9215",
+   "date": "2026-09-20T16:11:52+01:00",
+   "subject": "ci(g1): kernel-check WeightedLow explicitly"
+  },
+  {
+   "commit": "22a5283ed226a746971dfbea78b889acb65f8fc2",
+   "date": "2026-09-20T16:11:50+01:00",
+   "subject": "fix(g1): reject impossible negative absorption coefficient"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-29T05:36:17+00:00",
+  "lean": [
+   "leanprover/lean4:stable",
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "CriticalBarrier.ExternalFastPath.compose_external",
+   "file": "formal/lean/CriticalBarrier/ExternalFastPath.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(k1a : K1aCoreBundle) (k1 : K1AnalyticBundle) (g1 : G1ClosureBundle) (global : GlobalClosureBundle) (ext : ExternalCertificateBundle) (hk1a : k1a.exactFrechet ∧ k1a.chainRule ∧ k1a.pdeLift ∧ k1a.explicitRemainder) (hk1 : k1.cutoffFreeRemainder ∧ k1.transportEstimate ∧ k1.biotSavartSplit ∧ k1.positiveUniformGamma ∧ k1.epsilonLimit ∧ k1.dimensionalNormalization) (hg1 : g1.signedDepletion ∧ g1.realPr"
+  },
+  {
+   "name": "CriticalBarrier.ExternalFastPath.promoted_three_gate_plus_balance",
+   "file": "formal/lean/CriticalBarrier/ExternalFastPath.lean",
+   "line": 67,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : KernelPromotedG1Assembly.ThreeGatePointwiseData) (nu yPrime : ℝ) (hnu : 0 < nu) (hT3 : KernelPromotedG1Assembly.ThreeGatePointwiseCertified d) (hbal : KernelPromotedG1Assembly.EnstrophyBalance yPrime nu d.Z d.V) : (1 / 2 : ℝ) * yPrime + (1 - KernelPromotedG1Assembly.pointwiseTheta d nu) * nu * d.Z ≤ (d.C * KernelPromotedG1Assembly.pointwiseA3 d) * d.Y"
+  },
+  {
+   "name": "CriticalBarrier.ExternalRouteRouter.next_ne_self",
+   "file": "formal/lean/CriticalBarrier/ExternalRouteRouter.lean",
+   "line": 33,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(a : Route) : next a ≠ some a"
+  },
+  {
+   "name": "CriticalBarrier.ExternalRouteRouter.next_strictly_advances",
+   "file": "formal/lean/CriticalBarrier/ExternalRouteRouter.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b : Route} (h : next a = some b) : rank a < rank b"
+  },
+  {
+   "name": "CriticalBarrier.K1aClaimGate.conflicting_evidence_blocks_claim",
+   "file": "formal/lean/CriticalBarrier/K1aClaimGate.lean",
+   "line": 25,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ claimable ⟨.proved, .proved⟩"
+  },
+  {
+   "name": "CriticalBarrier.K1aClaimGate.unknown_proof_blocks_claim",
+   "file": "formal/lean/CriticalBarrier/K1aClaimGate.lean",
+   "line": 17,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(r : EvidenceState) : ¬ claimable ⟨.unknown, r⟩"
+  },
+  {
+   "name": "CriticalBarrier.K1aClaimGate.unknown_refutation_blocks_claim",
+   "file": "formal/lean/CriticalBarrier/K1aClaimGate.lean",
+   "line": 21,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : EvidenceState) : ¬ claimable ⟨p, .unknown⟩"
+  },
+  {
+   "name": "CriticalBarrier.K1aExactFrechetProducer.chainRuleStatement_closed_of_differentiableAt",
+   "file": "formal/lean/CriticalBarrier/K1aExactFrechetProducer.lean",
+   "line": 96,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps : ℝ} (heps : 0 < eps) {w : ℝ → Vec3} {t : ℝ} (hw : DifferentiableAt ℝ w t) : ChainRuleStatement eps w t"
+  },
+  {
+   "name": "CriticalBarrier.K1aExactFrechetProducer.exactDerivativeStatement_closed",
+   "file": "formal/lean/CriticalBarrier/K1aExactFrechetProducer.lean",
+   "line": 77,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : ExactDerivativeStatement eps w"
+  },
+  {
+   "name": "CriticalBarrier.K1aExactFrechetProducer.inverseRadiusDerivativeMap",
+   "file": "formal/lean/CriticalBarrier/K1aExactFrechetProducer.lean",
+   "line": 12,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : ((ContinuousLinearMap.smulRight (1 : ℝ →L[ℝ] ℝ) (-(r eps w ^ 2)⁻¹)).comp ((1 / (2 * r eps w)) • (2 • innerSL ℝ w))) = (-(r eps w ^ 3)⁻¹) • innerSL ℝ w"
+  },
+  {
+   "name": "CriticalBarrier.K1aExactFrechetProducer.productDerivativeMap",
+   "file": "formal/lean/CriticalBarrier/K1aExactFrechetProducer.lean",
+   "line": 29,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : (r eps w)⁻¹ • (1 : Vec3 →L[ℝ] Vec3) + (((-(r eps w ^ 3)⁻¹) • innerSL ℝ w).smulRight w) = DxiCLM eps w"
+  },
+  {
+   "name": "CriticalBarrier.K1aExactFrechetProducer.xiFrechetTarget_closed",
+   "file": "formal/lean/CriticalBarrier/K1aExactFrechetProducer.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : XiFrechetTarget eps w"
+  },
+  {
+   "name": "CriticalBarrier.K1aExactFrechetProducer.xi_chainRule_of_hasDerivAt",
+   "file": "formal/lean/CriticalBarrier/K1aExactFrechetProducer.lean",
+   "line": 82,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps : ℝ} (heps : 0 < eps) {w : ℝ → Vec3} {t : ℝ} {w' : Vec3} (hw : HasDerivAt w w' t) : HasDerivAt (fun s => xi eps (w s)) (DxiCandidate eps (w t) w') t"
+  },
+  {
+   "name": "CriticalBarrier.K1aExactFrechetProducer.xi_hasFDerivAt_DxiCLM",
+   "file": "formal/lean/CriticalBarrier/K1aExactFrechetProducer.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : HasFDerivAt (xi eps) (DxiCLM eps w) w"
+  },
+  {
+   "name": "CriticalBarrier.K1aFrechet.exactDerivative_from_target",
+   "file": "formal/lean/CriticalBarrier/K1aFrechet.lean",
+   "line": 25,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps : ℝ} {w : Vec3} (h : XiFrechetTarget eps w) : ExactDerivativeStatement eps w"
+  },
+  {
+   "name": "CriticalBarrier.K1aPDELift.DxiLinearityTarget_closed",
+   "file": "formal/lean/CriticalBarrier/K1aPDELift.lean",
+   "line": 41,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(eps : ℝ) (w : Vec3) : DxiLinearityTarget eps w"
+  },
+  {
+   "name": "CriticalBarrier.K1aPDELift.XiMaterialTarget_closed",
+   "file": "formal/lean/CriticalBarrier/K1aPDELift.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : VorticityMaterialData) : XiMaterialTarget d"
+  },
+  {
+   "name": "CriticalBarrier.K1aVectorKernel.DxiCLM_apply",
+   "file": "formal/lean/CriticalBarrier/K1aVectorKernel.lean",
+   "line": 88,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(eps : ℝ) (w v : Vec3) : DxiCLM eps w v = DxiCandidate eps w v"
+  },
+  {
+   "name": "CriticalBarrier.K1aVectorKernel.DxiCandidate_add",
+   "file": "formal/lean/CriticalBarrier/K1aVectorKernel.lean",
+   "line": 60,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(eps : ℝ) (w a b : Vec3) : DxiCandidate eps w (a + b) = DxiCandidate eps w a + DxiCandidate eps w b"
+  },
+  {
+   "name": "CriticalBarrier.K1aVectorKernel.DxiCandidate_radial_form",
+   "file": "formal/lean/CriticalBarrier/K1aVectorKernel.lean",
+   "line": 38,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : DxiCandidate eps w w = (eps ^ 2 * ((r eps w) ^ 3)⁻¹) • w"
+  },
+  {
+   "name": "CriticalBarrier.K1aVectorKernel.DxiCandidate_smul",
+   "file": "formal/lean/CriticalBarrier/K1aVectorKernel.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(eps c : ℝ) (w a : Vec3) : DxiCandidate eps w (c • a) = c • DxiCandidate eps w a"
+  },
+  {
+   "name": "CriticalBarrier.K1aVectorKernel.r_ne_zero",
+   "file": "formal/lean/CriticalBarrier/K1aVectorKernel.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : r eps w ≠ 0"
+  },
+  {
+   "name": "CriticalBarrier.K1aVectorKernel.r_pos",
+   "file": "formal/lean/CriticalBarrier/K1aVectorKernel.lean",
+   "line": 23,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : 0 < r eps w"
+  },
+  {
+   "name": "CriticalBarrier.K1aVectorKernel.r_sq",
+   "file": "formal/lean/CriticalBarrier/K1aVectorKernel.lean",
+   "line": 32,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : (r eps w) ^ 2 = ‖w‖ ^ 2 + eps ^ 2"
+  },
+  {
+   "name": "CriticalBarrier.K1aXiEps.eps_le_sqrt_rSq",
+   "file": "formal/G1/XiEpsChainRule.lean",
+   "line": 26,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{eps q : ℝ} (heps : 0 < eps) (hq : 0 ≤ q) : eps ≤ Real.sqrt (rSq eps q)"
+  },
+  {
+   "name": "CriticalBarrier.K1aXiEps.eps_sq_div_rsq_le_one",
+   "file": "formal/G1/XiEpsChainRule.lean",
+   "line": 57,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps q r : ℝ} (hq : 0 ≤ q) (hr : r ^ 2 = rSq eps q) (hr0 : r ≠ 0) : eps ^ 2 / r ^ 2 ≤ 1"
+  },
+  {
+   "name": "CriticalBarrier.K1aXiEps.rSq_pos",
+   "file": "formal/G1/XiEpsChainRule.lean",
+   "line": 15,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps q : ℝ} (heps : 0 < eps) (hq : 0 ≤ q) : 0 < rSq eps q"
+  },
+  {
+   "name": "CriticalBarrier.K1aXiEps.radial_defect_scalar",
+   "file": "formal/G1/XiEpsChainRule.lean",
+   "line": 35,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{eps q : ℝ} (heps : 0 < eps) (hq : 0 ≤ q) : 1 - q / rSq eps q = eps ^ 2 / rSq eps q"
+  },
+  {
+   "name": "CriticalBarrier.K1aXiEps.radial_eigenvalue_scalar",
+   "file": "formal/G1/XiEpsChainRule.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps q r : ℝ} (hr : r ^ 2 = rSq eps q) (hr0 : r ≠ 0) : 1 / r - q / r ^ 3 = eps ^ 2 / r ^ 3"
+  },
+  {
+   "name": "CriticalBarrier.K1aXiEps.sqrt_rSq_pos",
+   "file": "formal/G1/XiEpsChainRule.lean",
+   "line": 21,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{eps q : ℝ} (heps : 0 < eps) (hq : 0 ≤ q) : 0 < Real.sqrt (rSq eps q)"
+  },
+  {
+   "name": "CriticalBarrier.KernelPromotedG1Assembly.balance_and_G1flex_give_differential_inequality",
+   "file": "formal/lean/CriticalBarrier/KernelPromotedG1Assembly.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(yPrime nu Z V theta a Y : ℝ) (hbal : EnstrophyBalance yPrime nu Z V) (hg1 : G1FlexEstimate V theta nu Z a Y) : (1 / 2 : ℝ) * yPrime + (1 - theta) * nu * Z ≤ a * Y"
+  },
+  {
+   "name": "CriticalBarrier.KernelPromotedG1Assembly.pointwiseTheta_nonnegative",
+   "file": "formal/lean/CriticalBarrier/KernelPromotedG1Assembly.lean",
+   "line": 73,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : ThreeGatePointwiseData) (nu : ℝ) (hnu : 0 < nu) (heps : 0 ≤ totalEpsilon d) : 0 ≤ pointwiseTheta d nu"
+  },
+  {
+   "name": "CriticalBarrier.KernelPromotedG1Assembly.pointwiseTheta_strictly_less_than_one",
+   "file": "formal/lean/CriticalBarrier/KernelPromotedG1Assembly.lean",
+   "line": 82,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : ThreeGatePointwiseData) (nu : ℝ) (hnu : 0 < nu) (heps : totalEpsilon d < nu) : pointwiseTheta d nu < 1"
+  },
+  {
+   "name": "CriticalBarrier.KernelPromotedG1Assembly.three_gate_gives_G1flex",
+   "file": "formal/lean/CriticalBarrier/KernelPromotedG1Assembly.lean",
+   "line": 91,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : ThreeGatePointwiseData) (nu : ℝ) (hnu : 0 < nu) (h : ThreeGatePointwiseCertified d) : G1FlexEstimate d.V (pointwiseTheta d nu) nu d.Z (d.C * pointwiseA3 d) d.Y"
+  },
+  {
+   "name": "CriticalBarrier.KernelPromotedG1Assembly.three_gate_plus_balance_gives_differential",
+   "file": "formal/lean/CriticalBarrier/KernelPromotedG1Assembly.lean",
+   "line": 104,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : ThreeGatePointwiseData) (nu yPrime : ℝ) (hnu : 0 < nu) (hT3 : ThreeGatePointwiseCertified d) (hbal : EnstrophyBalance yPrime nu d.Z d.V) : (1 / 2 : ℝ) * yPrime + (1 - pointwiseTheta d nu) * nu * d.Z ≤ (d.C * pointwiseA3 d) * d.Y"
+  },
+  {
+   "name": "CriticalBarrier.KernelPromotedG1Assembly.three_gate_pointwise_assembles",
+   "file": "formal/lean/CriticalBarrier/KernelPromotedG1Assembly.lean",
+   "line": 61,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : ThreeGatePointwiseData) (h : ThreeGatePointwiseCertified d) : d.V ≤ totalEpsilon d * d.Z + d.C * pointwiseA3 d * d.Y"
+  },
+  {
+   "name": "CriticalBarrier.ScientificMeet.conflict_cannot_issue",
+   "file": "formal/G1/ScientificMeet.lean",
+   "line": 52,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ CanIssueScientificFinal .conflict"
+  },
+  {
+   "name": "CriticalBarrier.ScientificMeet.meet_disproved_disproved",
+   "file": "formal/G1/ScientificMeet.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": meet .disproved .disproved = .neither"
+  },
+  {
+   "name": "CriticalBarrier.ScientificMeet.meet_disproved_proved",
+   "file": "formal/G1/ScientificMeet.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": meet .disproved .proved = .refutationOnly"
+  },
+  {
+   "name": "CriticalBarrier.ScientificMeet.meet_proved_disproved",
+   "file": "formal/G1/ScientificMeet.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": meet .proved .disproved = .proofOnly"
+  },
+  {
+   "name": "CriticalBarrier.ScientificMeet.meet_proved_proved",
+   "file": "formal/G1/ScientificMeet.lean",
+   "line": 25,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": meet .proved .proved = .conflict"
+  },
+  {
+   "name": "CriticalBarrier.ScientificMeet.meet_unknown_left",
+   "file": "formal/G1/ScientificMeet.lean",
+   "line": 37,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(r : EvidenceState) : meet .unknown r = .openMath"
+  },
+  {
+   "name": "CriticalBarrier.ScientificMeet.meet_unknown_right",
+   "file": "formal/G1/ScientificMeet.lean",
+   "line": 41,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : EvidenceState) : meet p .unknown = .openMath"
+  },
+  {
+   "name": "CriticalBarrier.ScientificMeet.neither_cannot_issue",
+   "file": "formal/G1/ScientificMeet.lean",
+   "line": 60,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ CanIssueScientificFinal .neither"
+  },
+  {
+   "name": "CriticalBarrier.ScientificMeet.openMath_cannot_issue",
+   "file": "formal/G1/ScientificMeet.lean",
+   "line": 56,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ CanIssueScientificFinal .openMath"
+  },
+  {
+   "name": "G1DynamicCampanato.proved_identity_interface_accepts_vacuous_pde",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 165,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": PROVED_IDENTITY vacuousLocalEnergyIdentityData"
+  },
+  {
+   "name": "G1FailProofAllGaps.ALL_EXPOSED_GAPS_FAIL_PROOF",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 340,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": G1FailProofFinal.CURRENT_ARCHITECTURE_FAIL_PROOF_PROP ∧ vacuousEndpointMap.GlobalRegularity ∧ EndpointInterfaces.NSCriticalBridge vacuousNSAssumptions ∧ EndpointInterfaces.ESSEndpoint vacuousNSAssumptions ∧ vacuousEpsilonCoercive.implication ∧ vacuousCorrectionClosure.preservesAdmissibility ∧ vacuousCorrectionClosure.contractsDefect ∧ vacuousPressureCompatibility.theoremObligation ∧ vacuousForci"
+  },
+  {
+   "name": "G1FailProofAllGaps.G2_INTERFACE_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 157,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": zeroG1G4State.highL3 ≤ vacuousHighFrequencyCertificate.C * vacuousHighFrequencyCertificate.Lambda ^ (-1 : ℤ) * vacuousHighFrequencyCertificate.M"
+  },
+  {
+   "name": "G1FailProofAllGaps.G3_INTERFACE_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 174,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": zeroG1G4State.totalL3 ≤ vacuousFixedScaleReconstruction.low_bound + vacuousFixedScaleReconstruction.high_bound"
+  },
+  {
+   "name": "G1FailProofAllGaps.G4_INTERFACE_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 187,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousEndpointMap.GlobalRegularity"
+  },
+  {
+   "name": "G1FailProofAllGaps.GENERIC_NS_BRIDGE_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 311,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousNoSorryBridge.ActualNS → vacuousNoSorryBridge.GlobalRegularity"
+  },
+  {
+   "name": "G1FailProofAllGaps.K1A_INVENTORY_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 34,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousK1Inventory.K1a"
+  },
+  {
+   "name": "G1FailProofAllGaps.K1B_INVENTORY_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 36,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousK1Inventory.K1b"
+  },
+  {
+   "name": "G1FailProofAllGaps.K1B_TRANSPORT_INTERFACE_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 53,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousTransportEstimate.C_transport_cutoff_free ∧ vacuousTransportEstimate.transport_bound"
+  },
+  {
+   "name": "G1FailProofAllGaps.K1C_INVENTORY_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 37,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousK1Inventory.K1c"
+  },
+  {
+   "name": "G1FailProofAllGaps.K1C_K1D_ABSORPTION_INTERFACE_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 68,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousUniformAbsorption.gamma_eps_independent ∧ vacuousUniformAbsorption.biot_savart_bound ∧ vacuousUniformAbsorption.aubin_lions_tightness"
+  },
+  {
+   "name": "G1FailProofAllGaps.K1D_INVENTORY_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 38,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousK1Inventory.K1d"
+  },
+  {
+   "name": "G1FailProofAllGaps.K1D_WEIGHTED_ABSORPTION_DERIVATION_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 83,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousWeightedAbsorption.γ_derivation_certificate"
+  },
+  {
+   "name": "G1FailProofAllGaps.K1E_INTEGRABILITY_INTERFACE_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 104,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousIntegrableCoefficient.uniform_L1 ∧ vacuousIntegrableCoefficient.A_cutoff_free"
+  },
+  {
+   "name": "G1FailProofAllGaps.K1E_INVENTORY_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 39,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousK1Inventory.K1e"
+  },
+  {
+   "name": "G1FailProofAllGaps.K1E_LIMIT_INTERFACE_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 117,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousAbsorptionToDepletionBridge.eps_limit_preserves_gamma"
+  },
+  {
+   "name": "G1FailProofAllGaps.K1F_DIMENSIONAL_INTERFACE_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 134,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousVEffData.dimensional_normalisation"
+  },
+  {
+   "name": "G1FailProofAllGaps.K1F_INVENTORY_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 40,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousK1Inventory.K1f"
+  },
+  {
+   "name": "G1FailProofAllGaps.NS_B1_UNDERSPECIFIED_CLASS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 199,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∃ u : vacuousNSAssumptions.AdmissibleState, vacuousNSAssumptions.repositoryCondition u"
+  },
+  {
+   "name": "G1FailProofAllGaps.NS_B2_CRITICAL_BRIDGE_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 204,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": EndpointInterfaces.NSCriticalBridge vacuousNSAssumptions"
+  },
+  {
+   "name": "G1FailProofAllGaps.NS_B3_ESS_MAP_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 211,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": EndpointInterfaces.ESSEndpoint vacuousNSAssumptions"
+  },
+  {
+   "name": "G1FailProofAllGaps.NS_B4_ZERO_BRANCH_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 226,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousEpsilonWellDefined.zeroBranchSpecified () trivial rfl"
+  },
+  {
+   "name": "G1FailProofAllGaps.NS_B5_COERCIVITY_FIELD_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 239,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousEpsilonCoercive.implication"
+  },
+  {
+   "name": "G1FailProofAllGaps.NS_B6_CORRECTION_FIELDS_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 252,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousCorrectionClosure.preservesAdmissibility ∧ vacuousCorrectionClosure.contractsDefect"
+  },
+  {
+   "name": "G1FailProofAllGaps.NS_B7_PRESSURE_FIELD_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 263,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousPressureCompatibility.theoremObligation"
+  },
+  {
+   "name": "G1FailProofAllGaps.NS_B8_FORCING_FIELD_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 273,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousForcingCompatibility.theoremObligation"
+  },
+  {
+   "name": "G1FailProofAllGaps.NS_B9_MEAN_TO_CRITICAL_FIELD_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 286,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousMeanToCritical.theoremObligation"
+  },
+  {
+   "name": "G1FailProofAllGaps.STATE_CLOSURE_INTERFACE_VACUOUS",
+   "file": "formal/G1/FailProofAllGaps.lean",
+   "line": 335,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousStateClosure.GlobalRegularity ()"
+  },
+  {
+   "name": "G1FailProofFinal.CURRENT_ARCHITECTURE_FAIL_PROOF",
+   "file": "formal/G1/FailProofFinal.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": CURRENT_ARCHITECTURE_FAIL_PROOF_PROP"
+  },
+  {
+   "name": "G1FailProofFinal.absorption_route_countercertificate",
+   "file": "formal/G1/FailProofFinal.lean",
+   "line": 30,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": G1WeightedLow.gamma_effective = -35 ∧ ¬ ∃ γ : ℝ, 0 < γ ∧ γ ≤ G1WeightedLow.gamma_effective"
+  },
+  {
+   "name": "G1FailProofFinal.coherence_interface_countercertificate",
+   "file": "formal/G1/FailProofFinal.lean",
+   "line": 37,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∃ q : G1Dynamic.CriticalCoherenceAtTime, q.C = 0 ∧ q.holds"
+  },
+  {
+   "name": "G1FailProofFinal.dynamic_campanato_countercertificate",
+   "file": "formal/G1/FailProofFinal.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": G1DynamicCampanato.PROVED_IDENTITY G1DynamicCampanato.vacuousLocalEnergyIdentityData"
+  },
+  {
+   "name": "G1FailProofFinal.fullchain_interface_countercertificate",
+   "file": "formal/G1/FailProofFinal.lean",
+   "line": 41,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": (G1Dynamic.vacuousFullChain.compose trivial).depletion"
+  },
+  {
+   "name": "G1FailProofFinal.xieps_interface_countercertificate",
+   "file": "formal/G1/FailProofFinal.lean",
+   "line": 45,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": G1XiEpsPDE.vacuousXiEpsPDESpec.equation ∧ G1XiEpsPDE.vacuousXiEpsPDESpec.local_energy_test"
+  },
+  {
+   "name": "G1WeightedLow.gamma_effective_cannot_bound_positive_gamma",
+   "file": "formal/G1/WeightedLow.lean",
+   "line": 120,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ ∃ γ : ℝ, 0 < γ ∧ γ ≤ gamma_effective"
+  },
+  {
+   "name": "G1WeightedLow.gamma_effective_not_pos",
+   "file": "formal/G1/WeightedLow.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ 0 < gamma_effective"
+  },
+  {
+   "name": "G1XiEpsPDE.XiEpsPDE.equation_holds",
+   "file": "formal/G1/XiEpsPDE.lean",
+   "line": 233,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(h : XiEpsPDE) : h.equation"
+  },
+  {
+   "name": "G1XiEpsPDE.regularizedChainMap_unfold",
+   "file": "formal/G1/XiEpsPDE.lean",
+   "line": 87,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(r : ℝ) (ξ v : Vec3) : regularizedChainMap r ξ v = r⁻¹ • (v - ((@inner ℝ Vec3 _ ξ v)) • ξ)"
+  },
+  {
+   "name": "G1XiEpsPDE.xieps_record_allows_vacuous_equation",
+   "file": "formal/G1/XiEpsPDE.lean",
+   "line": 309,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousXiEpsPDESpec.equation"
+  },
+  {
+   "name": "G1XiEpsPDE.xieps_record_allows_vacuous_local_energy_test",
+   "file": "formal/G1/XiEpsPDE.lean",
+   "line": 313,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": vacuousXiEpsPDESpec.local_energy_test"
+  }
+ ],
+ "closed": 56,
+ "files_sha256": {
+  "formal/G1/DynamicCampanato.lean": "ca6be9bd81706c00cdbd3cef942ad99d601ae0ea8d6592dbe955fc8d178bed77",
+  "formal/G1/FailProofFinal.lean": "dc7d01dc30347bddd40d6b28541d4e66e8e8ebcfa51fb7c6ef35dfa36cd46571",
+  "formal/G1/G1_DynamicCriticalGeometry.lean": "a35c0cf091632cfe4a6682469c81fbfa69c63ac8fed25a8be13aa4de6fe202df",
+  "formal/G1/ScientificMeet.lean": "a00e82b321b648eba9cb31c6edaae047f7aa3032bd250dd4c9fb97f7e0ebf1df",
+  "formal/G1/WeightedLow.lean": "0b700ba44839af996491bdfa5c8378ee88bae0f228d9458f9c45df1dd61762a1",
+  "formal/G1/XiEpsChainRule.lean": "2362f2cadf20664828d4946230146dad61469ecdeaf6401808a729ab08d09521",
+  "formal/G1/XiEpsPDE.lean": "ec46dbf9b520e6a6611b5b852d8b6ae440dac015e6de8df767c8b4c82105cd9b",
+  "formal/lean/CriticalBarrier/ExternalFastPath.lean": "dd81d80215908db62393af1e82b05b8ff53862a3c07755f77f669ab32bdf4498",
+  "formal/lean/CriticalBarrier/ExternalRouteRouter.lean": "4e8a6759dea2aae6b4152b3e353af0b4ca69329792813a80916f457e4d00a79b",
+  "formal/lean/CriticalBarrier/K1aChainRule.lean": "02e86bf047e8a6426db34b8ff950d1da16b6b568ce11fb62679b1b60c3cb1db8",
+  "formal/lean/CriticalBarrier/K1aClaimGate.lean": "1a8ff725341e4161a3ea926db26a94274c8c494a7402613fb34145ed97d96211",
+  "formal/lean/CriticalBarrier/K1aExactFrechetProducer.lean": "97ad8873fcb0c19b02cd2eeb35c05c6227af31d51adfb7e87b7399724c93f4f1",
+  "formal/lean/CriticalBarrier/K1aFrechet.lean": "d7cd1e941e1ed21c8a0db2ea66ae85283fb41ed363158143ad27a31b8fc50c53",
+  "formal/lean/CriticalBarrier/K1aPDELift.lean": "780d24c078f0c9d3759305e902de76699f94f27d0c347e4eef02e829a64fc46e",
+  "formal/lean/CriticalBarrier/K1aVectorKernel.lean": "5db4d142beef0639f24cc8ce4a4ecd652c913c60a8fc1e79f368a3af80c2f3fc",
+  "formal/lean/CriticalBarrier/K1aXiEpsAlgebra.lean": "ea1bdcfed43a995f7b86f20327fcbb830045f8270aa0cc31d6e1d144b73915df",
+  "formal/lean/CriticalBarrier/KernelPromotedG1Assembly.lean": "6ce68a8357293a0ece77cb71f337e421fbc0d59fdbc6e0388e1e222a2f97aca9",
+  "formal/lean/CriticalBarrier/ScientificMeet.lean": "4f2ef04a135c0b14b996e3afaf8363b1ec26dbfaf639b5f9fa765d7837e1ad03",
+  "formal/lean/lakefile.toml": "ae588249ee34ba35be93608e76703456a73ba966cc13cd08f1a2383af9d901f1",
+  "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
+  "lakefile.toml": "1e6a21f0c490cf4d081764648d0473d217ddc48eb0755224aadf84a6bf0d3b1e",
+  "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87"
+ },
+ "published_at": "2026-10-29T06:27:20Z",
+ "certificate_sha256": "aa13c2d0cb5f7c57787eaf49e079d4c5bcf15d499a94693dc80c964d4783d116"
+}

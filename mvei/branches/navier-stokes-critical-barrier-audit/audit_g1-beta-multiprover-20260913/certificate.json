@@ -1,0 +1,202 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "audit/g1-beta-multiprover-20260913",
+ "branch_state": "parada",
+ "head_commit": "74f5413f14016c548d8c1d8ea407bef5adad0236",
+ "head_commit_date": "2026-09-13T18:56:43+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "74f5413f14016c548d8c1d8ea407bef5adad0236",
+   "date": "2026-09-13T18:56:43+02:00",
+   "subject": "formal: wire weighted-low and alignment transport into aggregate"
+  },
+  {
+   "commit": "939e1316935d2f535aa9dd32c389fc0f8eb0b8a2",
+   "date": "2026-09-13T18:56:33+02:00",
+   "subject": "formal: isolate PDE-derived alignment transport bridge"
+  },
+  {
+   "commit": "05060cd50592bd7166a50256a6c7a65e51b1e85e",
+   "date": "2026-09-13T18:56:10+02:00",
+   "subject": "formal: add honest weighted-low and absorption interfaces without sup-y"
+  },
+  {
+   "commit": "e4ee69c6bdf55b2d8ee62c19d6cce27cbbc8eb9b",
+   "date": "2026-09-13T18:22:00+02:00",
+   "subject": "audit: isolate exact blockers required to close NS stabilization"
+  },
+  {
+   "commit": "331dce6c8020e7da3149872aae85bec2458324cf",
+   "date": "2026-09-13T18:15:00+02:00",
+   "subject": "audit: add seven-problem proof obligation matrix"
+  },
+  {
+   "commit": "890bc5105310f558c71726ba42e8dcf6a88e98c0",
+   "date": "2026-09-13T18:14:48+02:00",
+   "subject": "audit: formalize seven-problem core with provenance and proof firewall"
+  },
+  {
+   "commit": "466e93c356f4e52ba62a61c63f87468009e3b07b",
+   "date": "2026-09-13T18:14:19+02:00",
+   "subject": "formal: add universal Millennium algebraic core and typed adapters"
+  },
+  {
+   "commit": "5cfa883c3dbf16c227d0e0e57ba30ee8e1d6d901",
+   "date": "2026-09-13T18:09:29+02:00",
+   "subject": "audit: map universal Millennium nucleus genealogy through 2026-09-08"
+  },
+  {
+   "commit": "3a3ad03306fd5d9401118a3d2d814c8605731ca2",
+   "date": "2026-09-13T17:07:59+02:00",
+   "subject": "audit: map pre-cutoff fragments to current NS closure architecture"
+  },
+  {
+   "commit": "0269d3e2275e10f92f40ffca5c28fdb8e70f3602",
+   "date": "2026-09-13T17:07:11+02:00",
+   "subject": "audit: add exhaustive pre-cutoff master priority ledger"
+  },
+  {
+   "commit": "8757d34c0f69c2dc1a5160f050821fcf23d1b405",
+   "date": "2026-09-13T16:41:14+02:00",
+   "subject": "audit: document pre-cutoff fragmented Navier-Stokes provenance chain"
+  },
+  {
+   "commit": "322c0a9b753e335a107e0aa7442fd798e869dac3",
+   "date": "2026-09-13T16:40:33+02:00",
+   "subject": "audit: add pre-2026-09-08 fragmented provenance genealogy"
+  },
+  {
+   "commit": "12faa8ae815fafe8d62fe23374da6420f41286c5",
+   "date": "2026-09-13T15:48:03+02:00",
+   "subject": "audit: falsify naive NS entropy with exact Beltrami test"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-29T05:36:17+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "padrão do elan"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "CriticalBarrier.AlignmentTransport.qJoint_nonneg",
+   "file": "formal/lean/CriticalBarrier/AlignmentTransport.lean",
+   "line": 27,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(A : AlignmentState) : 0 ≤ qJoint A"
+  },
+  {
+   "name": "CriticalBarrier.AlignmentTransport.transport_after_absorption",
+   "file": "formal/lean/CriticalBarrier/AlignmentTransport.lean",
+   "line": 51,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "(T : TransportEstimate) (A : UniformAbsorption) (hcomm : T.comm ≤ A.comm) : T.q_t + T.coercive ≤ A.gamma * A.diss + A.bQ + T.cutoff + T.motion + T.lower"
+  },
+  {
+   "name": "CriticalBarrier.EntropyObstruction.beltrami_naive_entropy_negative",
+   "file": "formal/lean/CriticalBarrier/EntropyObstruction.lean",
+   "line": 13,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {ν q : ℝ}, 0 < ν → 0 < q → q < 2 * ν → q * (q - 2 * ν) < 0"
+  },
+  {
+   "name": "CriticalBarrier.EntropyObstruction.beltrami_naive_entropy_positive",
+   "file": "formal/lean/CriticalBarrier/EntropyObstruction.lean",
+   "line": 32,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {ν q : ℝ}, 0 < q → 2 * ν < q → 0 < q * (q - 2 * ν)"
+  },
+  {
+   "name": "CriticalBarrier.EntropyObstruction.beltrami_naive_entropy_threshold",
+   "file": "formal/lean/CriticalBarrier/EntropyObstruction.lean",
+   "line": 24,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {ν q : ℝ}, q = 2 * ν → q * (q - 2 * ν) = 0"
+  },
+  {
+   "name": "CriticalBarrier.MillenniumCore.adapter_scalar_core",
+   "file": "formal/lean/CriticalBarrier/MillenniumCore.lean",
+   "line": 155,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (A : CriticalBarrier.MillenniumCore.MillenniumAdapter) (s : A.State),   0 ≤     CriticalBarrier.MillenniumCore.naiveRemainder (A.Q s) A.lambda +       CriticalBarrier.MillenniumCore.linearCorrection (A.Q s) A.lambda"
+  },
+  {
+   "name": "CriticalBarrier.MillenniumCore.corrected_remainder_eq_sq",
+   "file": "formal/lean/CriticalBarrier/MillenniumCore.lean",
+   "line": 26,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (q lambda : ℝ),   CriticalBarrier.MillenniumCore.naiveRemainder q lambda + CriticalBarrier.MillenniumCore.linearCorrection q lambda =     q ^ 2"
+  },
+  {
+   "name": "CriticalBarrier.MillenniumCore.corrected_remainder_nonneg",
+   "file": "formal/lean/CriticalBarrier/MillenniumCore.lean",
+   "line": 32,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (q lambda : ℝ),   0 ≤ CriticalBarrier.MillenniumCore.naiveRemainder q lambda + CriticalBarrier.MillenniumCore.linearCorrection q lambda"
+  },
+  {
+   "name": "CriticalBarrier.WeightedLow.audit_constant_36",
+   "file": "formal/lean/CriticalBarrier/WeightedLow.lean",
+   "line": 83,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": (2 : ℝ) * (0.6 : ℝ) ^ 2 * 50 = 36"
+  },
+  {
+   "name": "CriticalBarrier.WeightedLow.etaLow_tendsto_zero",
+   "file": "formal/lean/CriticalBarrier/WeightedLow.lean",
+   "line": 24,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(D : WeightedLowData) : Filter.Tendsto D.etaLow (nhdsWithin 0 (Set.Ici 0)) (nhds 0)"
+  },
+  {
+   "name": "CriticalBarrier.WeightedLow.residual_dissipation_positive",
+   "file": "formal/lean/CriticalBarrier/WeightedLow.lean",
+   "line": 103,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(D : SignedDepletionData) : 0 < (1 - D.theta) * D.nu"
+  },
+  {
+   "name": "CriticalBarrier.WeightedLow.strict_absorption",
+   "file": "formal/lean/CriticalBarrier/WeightedLow.lean",
+   "line": 69,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "(D : WeightedAbsorptionData) : D.comm ≤ D.gamma * D.diss + D.lower ∧ D.gamma < 1"
+  }
+ ],
+ "closed": 7,
+ "files_sha256": {
+  "formal/lean/CriticalBarrier/EntropyObstruction.lean": "df5a7c3ec1e88baac46b9efe5be7815bdeb63921d3409343fe50302b270ac92d",
+  "formal/lean/CriticalBarrier/MillenniumCore.lean": "d15615faf447ca3df75c74a944833d9a4b6b237ace1721ea750223cb506602f5",
+  "formal/lean/CriticalBarrier/WeightedLow.lean": "52c347968279ead392d30c743e197fef02b0747ca18b249ecc8afe755fd6edbb",
+  "formal/lean/lakefile.toml": "ae588249ee34ba35be93608e76703456a73ba966cc13cd08f1a2383af9d901f1",
+  "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+ },
+ "published_at": "2026-10-29T06:27:20Z",
+ "certificate_sha256": "2154f79ae38e9961d5152dbe22bacba30f79173e2961ceb5051394e3cb45b899"
+}

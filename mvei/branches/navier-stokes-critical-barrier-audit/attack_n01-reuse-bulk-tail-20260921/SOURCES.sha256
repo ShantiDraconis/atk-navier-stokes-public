@@ -1,0 +1,7 @@
+55eb773ce6a35ced9f66bb8d29517f24a76632887892aaccd9ee397a4f523b69  branches/navier-stokes-critical-barrier-audit/attack_n01-reuse-bulk-tail-20260921/HypothesesComplete_v3.lean
+a35c0cf091632cfe4a6682469c81fbfa69c63ac8fed25a8be13aa4de6fe202df  branches/navier-stokes-critical-barrier-audit/attack_n01-reuse-bulk-tail-20260921/formal/G1/G1_DynamicCriticalGeometry.lean
+672bdef60e4002db1221edf50430037047bc0262e2882559a9bab821aefcdcb9  branches/navier-stokes-critical-barrier-audit/attack_n01-reuse-bulk-tail-20260921/formal/G1/G1_DynamicCriticalGeometry_Hardened.lean
+eb1bb2fc687dc998a475ab24186c91822ade6b5a7b1a76b91f8f7a47ac4b895a  branches/navier-stokes-critical-barrier-audit/attack_n01-reuse-bulk-tail-20260921/formal/G1/N01WeightedClosureReuse.lean
+b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526  branches/navier-stokes-critical-barrier-audit/attack_n01-reuse-bulk-tail-20260921/lake-manifest.json
+858fc925453ec1233fb61e6fd57cdfc85cad9a6cf974d8b433a9af47ab7804b4  branches/navier-stokes-critical-barrier-audit/attack_n01-reuse-bulk-tail-20260921/lakefile.toml
+ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87  branches/navier-stokes-critical-barrier-audit/attack_n01-reuse-bulk-tail-20260921/lean-toolchain

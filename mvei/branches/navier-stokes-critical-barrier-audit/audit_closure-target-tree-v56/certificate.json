@@ -43,7 +43,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-28T23:56:08+00:00",
+  "generated_at": "2026-10-29T05:36:17+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0",
    "padrão do elan"
@@ -85,6 +85,6 @@
  "files_sha256": {
   "formal/G1/DynamicCampanato.lean": "ec175c7b6254491f7707bad7729432bb0fdbbfb82b4ebade9e9fa526f289e144"
  },
- "published_at": "2026-10-29T02:47:15Z",
- "certificate_sha256": "e5b5f21b3298b0c5c97c7c4c60c8bea4ce4ea4dd0a6c0771b3e196d2afda6e26"
+ "published_at": "2026-10-29T06:27:33Z",
+ "certificate_sha256": "9a098d42be722029fc31975b98e9e4e28608b6eb393e15e0bbf0661a23908a38"
 }

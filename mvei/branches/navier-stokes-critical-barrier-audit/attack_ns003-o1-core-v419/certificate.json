@@ -1,0 +1,751 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "attack/ns003-o1-core-v419",
+ "branch_state": "parada",
+ "head_commit": "a8e724a912d200fef4ee046f3952dca39e64bde3",
+ "head_commit_date": "2026-09-26T10:03:17+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "a8e724a912d200fef4ee046f3952dca39e64bde3",
+   "date": "2026-09-26T10:03:17+01:00",
+   "subject": "ci(atl-egc): enforce canonical graph validation"
+  },
+  {
+   "commit": "72193d06b75f7b0bb2e39d6de4e982d15032dcf7",
+   "date": "2026-09-26T10:03:06+01:00",
+   "subject": "feat(atl-egc): validate canonical graph and forbid derived persistence"
+  },
+  {
+   "commit": "8f3dbf3084ce0d21bcde9a8395cd6eccad954d1b",
+   "date": "2026-09-26T10:03:03+01:00",
+   "subject": "feat(atl-egc): add empirical cost history store"
+  },
+  {
+   "commit": "bb2a1c7a107704f83754d5a63bb77fa995764362",
+   "date": "2026-09-26T10:03:00+01:00",
+   "subject": "feat(atl-egc): add canonical graph store"
+  },
+  {
+   "commit": "8539adb248b326f98741f3946b112a62125400ab",
+   "date": "2026-09-26T10:02:27+01:00",
+   "subject": "refactor(atl-egc): canonicalize verify.sh"
+  },
+  {
+   "commit": "ace31375846b453ebeff99fa3d3b97396430250b",
+   "date": "2026-09-26T10:02:23+01:00",
+   "subject": "refactor(atl-egc): canonicalize emit_certificate.py"
+  },
+  {
+   "commit": "6578bdc4254eacdf4b843379ab7b70f7bd52c851",
+   "date": "2026-09-26T10:02:18+01:00",
+   "subject": "refactor(atl-egc): canonicalize certificate.schema.json"
+  },
+  {
+   "commit": "8b77dbb194bf867dd83fb95ab67892aa999070f2",
+   "date": "2026-09-26T10:02:14+01:00",
+   "subject": "refactor(atl-egc): canonicalize atl_graph.schema.json"
+  },
+  {
+   "commit": "c5f89e83b916416a44eb66e48832ba030a6b194b",
+   "date": "2026-09-26T10:01:05+01:00",
+   "subject": "ci(atl-egc): trigger core validation on current head"
+  },
+  {
+   "commit": "24831a117135eb93ea0bb98fa2956d3d61e72bd4",
+   "date": "2026-09-26T10:00:46+01:00",
+   "subject": "fix(atl-egc): declare all ATL modules as library roots"
+  },
+  {
+   "commit": "7f2a90f3633de2f045e0c546e7acf09dd89663a6",
+   "date": "2026-09-26T10:00:20+01:00",
+   "subject": "fix(atl-egc): register all ATL and Problems modules"
+  },
+  {
+   "commit": "9e4eed5d40a8264a3f0b58844b208fc19183ef6b",
+   "date": "2026-09-26T09:02:15+01:00",
+   "subject": "fix(atl-egc): keep a single OpenMathClass definition"
+  },
+  {
+   "commit": "f258dc401a0aa8e7f7ebd48cdb55dbdd3b271b21",
+   "date": "2026-09-26T09:01:24+01:00",
+   "subject": "fix(atl-egc): repair JSON emitter escaping"
+  },
+  {
+   "commit": "704e4a78cbc8ee5110d7c801da014525103c2c4e",
+   "date": "2026-09-26T09:00:22+01:00",
+   "subject": "fix(atl-egc): simplify Firewall.lean for Lean 4.10"
+  },
+  {
+   "commit": "123f72dfbb1197a8ba50ae22c097aae398d2db3d",
+   "date": "2026-09-26T09:00:16+01:00",
+   "subject": "fix(atl-egc): simplify Graph.lean for Lean 4.10"
+  },
+  {
+   "commit": "36d983217dfaf9e40e66a415ef09a1a7d180fa69",
+   "date": "2026-09-26T08:59:20+01:00",
+   "subject": "fix(atl-egc): open Lean names in EGC.lean"
+  },
+  {
+   "commit": "f27634a42ab09fd2e512821bec3bf4264cc210b1",
+   "date": "2026-09-26T08:59:14+01:00",
+   "subject": "fix(atl-egc): open Lean names in Miner.lean"
+  },
+  {
+   "commit": "641bd104a8b581394c99fe9db81e575a2928260b",
+   "date": "2026-09-26T08:59:08+01:00",
+   "subject": "fix(atl-egc): open Lean names in Node.lean"
+  },
+  {
+   "commit": "e9f971c41692a5830c053a9a514f2ce09a36da5b",
+   "date": "2026-09-26T08:59:03+01:00",
+   "subject": "fix(atl-egc): make Firewall.lean Lean-4.10 compatible"
+  },
+  {
+   "commit": "a7ebbc108f933b16122823784876e800106053c4",
+   "date": "2026-09-26T08:58:57+01:00",
+   "subject": "fix(atl-egc): make Audit.lean Lean-4.10 compatible"
+  },
+  {
+   "commit": "1634c1500e76230dae09f165b5f121d1447a51d3",
+   "date": "2026-09-26T08:57:52+01:00",
+   "subject": "fix(atl-egc): open Lean namespace in Base"
+  },
+  {
+   "commit": "bc7c3cef8496757e08471ab75852d57cfe66dd4d",
+   "date": "2026-09-26T08:57:09+01:00",
+   "subject": "fix(atl-egc): avoid reserved promotion parameter"
+  },
+  {
+   "commit": "318406a44437fb5f3039e068e365f11536977708",
+   "date": "2026-09-26T08:56:53+01:00",
+   "subject": "fix(atl-egc): support Lean 4.10 min reduction"
+  },
+  {
+   "commit": "62e21567b3145323a08870f2e796bbea8d030070",
+   "date": "2026-09-26T08:56:47+01:00",
+   "subject": "fix(atl-egc): import Lean names in Base"
+  },
+  {
+   "commit": "7045344cc544989ce0a02167a436691d9b83cae1",
+   "date": "2026-09-26T08:56:01+01:00",
+   "subject": "fix(atl-egc): add canonical Problems root module"
+  },
+  {
+   "commit": "dc44cab04fe9e8337fc7623a663023a70778b677",
+   "date": "2026-09-26T08:55:57+01:00",
+   "subject": "fix(atl-egc): add canonical ATL root module"
+  },
+  {
+   "commit": "c7b888f0f47642807b97aceaf623b3cb19625b8d",
+   "date": "2026-09-26T08:55:01+01:00",
+   "subject": "fix(atl-egc): build full ATL and Problems namespaces"
+  },
+  {
+   "commit": "19f3ba211fb1734c2d0ef7599e6707c65958cac7",
+   "date": "2026-09-26T08:54:04+01:00",
+   "subject": "ci(atl-egc): add isolated core build gate"
+  },
+  {
+   "commit": "4f94d3de2534e889944c865713ec5f4941bcbbce",
+   "date": "2026-09-26T08:53:51+01:00",
+   "subject": "feat(atl-egc): collapse swarm to five roles"
+  },
+  {
+   "commit": "622e3ff74f44e4392b92ad6cabc96e29b14bb00e",
+   "date": "2026-09-26T08:53:49+01:00",
+   "subject": "feat(atl-egc): add bounded retry policy"
+  },
+  {
+   "commit": "bd7dd71a38a5c5cfa1bc32a043792018fcb50ca3",
+   "date": "2026-09-26T08:53:35+01:00",
+   "subject": "refactor(atl-egc): harden Main.lean"
+  },
+  {
+   "commit": "ac56100b7af99f9eae15ee4113b3946d9b4728d6",
+   "date": "2026-09-26T08:53:28+01:00",
+   "subject": "refactor(atl-egc): harden Miner.lean"
+  },
+  {
+   "commit": "e4369ca21520886ef8e9e7251a312ba313e4b756",
+   "date": "2026-09-26T08:53:23+01:00",
+   "subject": "refactor(atl-egc): harden Emit.lean"
+  },
+  {
+   "commit": "0f48c8c6fe49a01cb4263db0571c43884e5f5ff3",
+   "date": "2026-09-26T08:53:18+01:00",
+   "subject": "refactor(atl-egc): harden EGC.lean"
+  },
+  {
+   "commit": "2ff9825ed2ab16974a43072dab1eeda146527bc6",
+   "date": "2026-09-26T08:52:37+01:00",
+   "subject": "feat(atl-egc): report independent and canonical gate errors"
+  },
+  {
+   "commit": "e735d73c1af167a8fa458fbc72ff4b24732a1780",
+   "date": "2026-09-26T08:52:34+01:00",
+   "subject": "feat(atl-egc): add bounded reuse resolver"
+  },
+  {
+   "commit": "43f180a3787236b47e5ecdeebc03c8b2fc9c57cd",
+   "date": "2026-09-26T08:52:31+01:00",
+   "subject": "feat(atl-egc): add attackable min-cut router"
+  },
+  {
+   "commit": "27cbd1e7e7d2acd5f47f090feb7aea5ac35eca57",
+   "date": "2026-09-26T08:52:28+01:00",
+   "subject": "feat(atl-egc): add empirical cost model"
+  },
+  {
+   "commit": "da71dd8e9548c4fbe870b287bea8b82618ab05bf",
+   "date": "2026-09-26T08:52:25+01:00",
+   "subject": "feat(atl-egc): add derived-state loader"
+  },
+  {
+   "commit": "e9dd30bf12314ca3c98edf838f45ef143e39819f",
+   "date": "2026-09-26T08:52:21+01:00",
+   "subject": "feat(atl-egc): add canonical typed graph"
+  },
+  {
+   "commit": "df7e848f731aafecaa56a8c378540e39884e1bdb",
+   "date": "2026-09-26T08:51:34+01:00",
+   "subject": "refactor(atl-egc): canonicalize Firewall.lean"
+  },
+  {
+   "commit": "f4ef115494e87cee2f6070a776c5a23039221d5c",
+   "date": "2026-09-26T08:51:30+01:00",
+   "subject": "refactor(atl-egc): canonicalize Audit.lean"
+  },
+  {
+   "commit": "8ca5781a42c776d731d6fefe49e2c294c1c3b516",
+   "date": "2026-09-26T08:51:26+01:00",
+   "subject": "refactor(atl-egc): canonicalize Node.lean"
+  },
+  {
+   "commit": "3d40e0bfe69de31f446550faaed14928357aab94",
+   "date": "2026-09-26T08:51:03+01:00",
+   "subject": "feat(atl-egc): add typed promotion rules"
+  },
+  {
+   "commit": "7171196cc02b454a2236b28770f280a7997663a0",
+   "date": "2026-09-26T08:50:54+01:00",
+   "subject": "feat(atl-egc): derive node states instead of persisting them"
+  },
+  {
+   "commit": "6b9d8011523ba470f7796273e9d988fa60e68df7",
+   "date": "2026-09-26T08:08:55+01:00",
+   "subject": "ci(atl-egc): add isolated package gate"
+  },
+  {
+   "commit": "6a3ff75f7c884ceafd563bdd1b9089c2ce74bce4",
+   "date": "2026-09-26T08:08:52+01:00",
+   "subject": "docs(atl-egc): add reviewer guide"
+  },
+  {
+   "commit": "f8d29f87edbcad054b5aa0f7fc943fb3eb4ae290",
+   "date": "2026-09-26T08:08:49+01:00",
+   "subject": "docs(atl-egc): add reproducibility guide"
+  },
+  {
+   "commit": "f74110c5ee950bfb0ce8303cd533deae5f3c58d3",
+   "date": "2026-09-26T08:08:47+01:00",
+   "subject": "feat(atl-egc): add canonical graph schema"
+  },
+  {
+   "commit": "a3e015bb5462db6847494043b99976b3cfaefee6",
+   "date": "2026-09-26T08:08:44+01:00",
+   "subject": "feat(atl-egc): add EGC JSON schema"
+  },
+  {
+   "commit": "f6840791a09edcbb818a2d1212a135f1bf69d526",
+   "date": "2026-09-26T08:08:41+01:00",
+   "subject": "feat(atl-egc): add artifact hash emitter"
+  },
+  {
+   "commit": "1250e064c39e08a135670b07e2bd18d6f9a736ec",
+   "date": "2026-09-26T08:08:38+01:00",
+   "subject": "feat(atl-egc): add clean reproduction script"
+  },
+  {
+   "commit": "494200302e808f8a923fb89797c136671916adb9",
+   "date": "2026-09-26T08:08:36+01:00",
+   "subject": "feat(atl-egc): add canonical verification script"
+  },
+  {
+   "commit": "0ffbfcfd9a4cc1a649cae30b8a3071ebdee447c2",
+   "date": "2026-09-26T08:08:01+01:00",
+   "subject": "feat(atl-egc): add fail-closed PNP problem record"
+  },
+  {
+   "commit": "d72eb6c4669543f62ed1daa7577f63242456551c",
+   "date": "2026-09-26T08:07:57+01:00",
+   "subject": "feat(atl-egc): add fail-closed Hodge problem record"
+  },
+  {
+   "commit": "74d26c9786a294afa4f03be232017772fc13d4c0",
+   "date": "2026-09-26T08:07:54+01:00",
+   "subject": "feat(atl-egc): add fail-closed RH problem record"
+  },
+  {
+   "commit": "afcaecfe26a4f5a62b879c83883c2a5c83a4da62",
+   "date": "2026-09-26T08:07:51+01:00",
+   "subject": "feat(atl-egc): add fail-closed BSD problem record"
+  },
+  {
+   "commit": "4fc9de55a52b48a9389a7b95fce1397288851a39",
+   "date": "2026-09-26T08:07:48+01:00",
+   "subject": "feat(atl-egc): add fail-closed Beal problem record"
+  },
+  {
+   "commit": "911de0df1c4aca57c593bff4d081404a2fde6147",
+   "date": "2026-09-26T08:07:46+01:00",
+   "subject": "feat(atl-egc): add fail-closed YM problem record"
+  },
+  {
+   "commit": "8b8dd225b4b6fa3044c75e61ff2325145d7dde67",
+   "date": "2026-09-26T08:07:43+01:00",
+   "subject": "feat(atl-egc): add fail-closed NS problem record"
+  },
+  {
+   "commit": "ead0f1e7470d1dbf9749d656d360e5fab0738a1f",
+   "date": "2026-09-26T08:06:46+01:00",
+   "subject": "feat(atl-egc): wire ATL core"
+  },
+  {
+   "commit": "fedbf44b6ebefabad8676c9f8726c73a27cca219",
+   "date": "2026-09-26T08:06:43+01:00",
+   "subject": "feat(atl-egc): add certificate serialization"
+  },
+  {
+   "commit": "aab0fe4e9f84ad6c5c93a06080b1d35f5f0ed60e",
+   "date": "2026-09-26T08:06:41+01:00",
+   "subject": "feat(atl-egc): add fail-closed theorem and mined certificates"
+  },
+  {
+   "commit": "1d211490e29fef3b315111c585929bd75d128ca5",
+   "date": "2026-09-26T08:06:38+01:00",
+   "subject": "feat(atl-egc): add bounded mining classification"
+  },
+  {
+   "commit": "eeab0f42357abce1e6204c91b64f2b4cf4006d61",
+   "date": "2026-09-26T08:06:36+01:00",
+   "subject": "feat(atl-egc): add five explicit firewalls"
+  },
+  {
+   "commit": "14ed02ea91a1440fdc594a24232d7facdef98777",
+   "date": "2026-09-26T08:06:33+01:00",
+   "subject": "feat(atl-egc): add explicit audit evidence model"
+  },
+  {
+   "commit": "224a0f72dd78b8adb50602fb16f5fcd47a8e46cb",
+   "date": "2026-09-26T08:06:29+01:00",
+   "subject": "feat(atl-egc): add canonical node schema"
+  },
+  {
+   "commit": "4f056aa31f3e1d8530740b1deab5fc1b6e841a75",
+   "date": "2026-09-26T08:04:53+01:00",
+   "subject": "feat(atl-egc): add barrier records"
+  },
+  {
+   "commit": "1dd05021dd49882712563e0249fa4c9477810751",
+   "date": "2026-09-26T08:04:51+01:00",
+   "subject": "feat(atl-egc): add statement freeze command"
+  },
+  {
+   "commit": "bb4193019abf2f9fc9c872e01e640d5b299d8731",
+   "date": "2026-09-26T08:04:48+01:00",
+   "subject": "feat(atl-egc): add deterministic statement hashing"
+  },
+  {
+   "commit": "be63cd2ac897525ace746c84e3c5fa874ed03b78",
+   "date": "2026-09-26T08:04:46+01:00",
+   "subject": "feat(atl-egc): add canonical axiom policy"
+  },
+  {
+   "commit": "766338699fc4e423c20459d08fab27529bb2044e",
+   "date": "2026-09-26T08:04:43+01:00",
+   "subject": "feat(atl-egc): add isolated Lake package"
+  },
+  {
+   "commit": "e45dcd065c5ae7ee8ffe8ac63c6018d820738cfa",
+   "date": "2026-09-26T08:04:40+01:00",
+   "subject": "feat(atl-egc): add isolated Lean toolchain"
+  },
+  {
+   "commit": "9c8b6c9d31375e3a02f9b4746c68bfb8f06286b2",
+   "date": "2026-09-26T07:56:17+01:00",
+   "subject": "fix(ns003-o1-fast): make L1 time certificate proposition well-typed"
+  },
+  {
+   "commit": "6ba9ae3d8c956a18663c61c3d82e21d4f1031424",
+   "date": "2026-09-26T07:55:35+01:00",
+   "subject": "ci(ns003-o1-fast): gate atomic DAG and open-math contracts"
+  },
+  {
+   "commit": "b3790e7668a1a670fa215b95e74f111aec2dd992",
+   "date": "2026-09-26T07:55:19+01:00",
+   "subject": "feat(ns003-o1-fast): add statement dependency cycle detector"
+  },
+  {
+   "commit": "d5fa5c57cf8e4d6222c358e88b32c93b7f1caf1c",
+   "date": "2026-09-26T07:55:15+01:00",
+   "subject": "feat(ns003-o1-fast): add explicit atomic open-math obligations"
+  },
+  {
+   "commit": "9ef669536f64c4916c9252c170ad5fecec04dc33",
+   "date": "2026-09-26T07:52:45+01:00",
+   "subject": "fix(ns003-o1-fast): verify frozen hashes with Python"
+  },
+  {
+   "commit": "404468abf5e95d75cdc42907813e0f5ba4c7e40f",
+   "date": "2026-09-26T07:51:32+01:00",
+   "subject": "ci(ns003-o1-fast): enforce lock cache axioms and coverage"
+  },
+  {
+   "commit": "b9de7bd76e5a987d38170efda023a482d4f58a84",
+   "date": "2026-09-26T07:50:39+01:00",
+   "subject": "feat(ns003-o1-fast): add O1 coverage and dependency metrics"
+  },
+  {
+   "commit": "bcc495a8b2f62d09cb7b01371469706aeca3d5bc",
+   "date": "2026-09-26T07:50:37+01:00",
+   "subject": "feat(ns003-o1-fast): add hardened O1 atomic contract"
+  },
+  {
+   "commit": "adc9bdbfebb99cf43e207c4288ba2b2ddd5b2f8e",
+   "date": "2026-09-26T07:50:34+01:00",
+   "subject": "chore(ns003-o1-fast): freeze O1 dependency source hashes"
+  },
+  {
+   "commit": "b9dc45f1808c5c64d0c8408a6c0abb96009016c7",
+   "date": "2026-09-26T07:50:31+01:00",
+   "subject": "feat(ns003-o1-fast): add explicit proof policy base"
+  },
+  {
+   "commit": "104e0509fceec4639b93b47c3d0e09321b29577c",
+   "date": "2026-09-26T07:42:31+01:00",
+   "subject": "fix(ns003-o1-fast): make uniform Q certificate proposition well-typed"
+  },
+  {
+   "commit": "3452898399c98774edbd27b5d813d5caef8c824f",
+   "date": "2026-09-26T07:33:54+01:00",
+   "subject": "fix(ns003-o1-fast): remove unused root-module import"
+  },
+  {
+   "commit": "e73ef94f00dc4a5c48d8b7b1bb92abbde42aac56",
+   "date": "2026-09-26T07:33:49+01:00",
+   "subject": "fix(ns003-o1-fast): remove unused root-module import"
+  },
+  {
+   "commit": "9563014ac3e32bf054a54ad566924b13d8cfd61c",
+   "date": "2026-09-26T07:26:39+01:00",
+   "subject": "fix(ns003-o1-fast): make K0a sqrt monotonicity explicit"
+  },
+  {
+   "commit": "b4a8c3c70dbbc9967c07964b35bab27dfea59f33",
+   "date": "2026-09-26T07:22:41+01:00",
+   "subject": "fix(ns003-o1-fast): remove linarith from K0a bound"
+  },
+  {
+   "commit": "84136fee5614e29a5dcc8c49bab997ea3423a0f2",
+   "date": "2026-09-26T05:21:07+01:00",
+   "subject": "fix(ns003-o1): prove regularized amplitude bound directly"
+  },
+  {
+   "commit": "7c5688f9c9f58a73553d81f01ae0d3fc8750ca63",
+   "date": "2026-09-26T02:49:03+01:00",
+   "subject": "ci(ns003-o1): add fast core gate in existing Lean package"
+  },
+  {
+   "commit": "13729ee507e67591c7f444463722f234a9aacf61",
+   "date": "2026-09-26T02:47:38+01:00",
+   "subject": "ci(ns003-o1-core): gate core without CKN compatibility layer"
+  },
+  {
+   "commit": "f879adf7f23ee1ea9083c55b3edd19ae06d4cfd2",
+   "date": "2026-09-26T02:47:36+01:00",
+   "subject": "build(ns003-o1-core): remove CKN from core lane"
+  },
+  {
+   "commit": "0fbf44bc93a94cd7f1a99de6db14210952c84226",
+   "date": "2026-09-26T02:47:34+01:00",
+   "subject": "build(ns003-o1-core): restore Lean 4.19"
+  },
+  {
+   "commit": "da46273a7fc00636f64d036ce2c211addfe5f97a",
+   "date": "2026-09-26T02:44:57+01:00",
+   "subject": "fix(ns003-o1): make core certificate field types explicit"
+  },
+  {
+   "commit": "4ac0200f8ec67bc21f7d84bbdc4ebd65fdcc0f06",
+   "date": "2026-09-26T02:34:19+01:00",
+   "subject": "ci(ns003-o1): reject real proof escapes only"
+  },
+  {
+   "commit": "301126ee0493f71cb8abb442c154cb3600bdef58",
+   "date": "2026-09-26T02:34:16+01:00",
+   "subject": "ci(ns003-o1): reject real proof escapes only"
+  },
+  {
+   "commit": "5e9edac66d4af1b176b64f25441c793ca8efbe3e",
+   "date": "2026-09-26T02:33:43+01:00",
+   "subject": "fix(ns003-o1): move Mathlib import to module header"
+  },
+  {
+   "commit": "4b1cb83a3752327d6e4cf5d316791deabd87cc39",
+   "date": "2026-09-26T02:26:06+01:00",
+   "subject": "ci(ns003-o1): add dedicated Lean gate for O1 chain"
+  },
+  {
+   "commit": "ed5625595097d9413186be8a5ba3c1ec4bd16a28",
+   "date": "2026-09-26T02:25:44+01:00",
+   "subject": "fix(g1): make AnalyticBridge field dependencies explicit"
+  },
+  {
+   "commit": "4c96303d4a5ba214f56ca3efa2669bc97045a5c5",
+   "date": "2026-09-26T02:24:57+01:00",
+   "subject": "build(ns003-o1): remove tracked Lake package gitlinks"
+  },
+  {
+   "commit": "d2affb8f2b1cd09ee13f63ba7aad1a676622f80c",
+   "date": "2026-09-26T02:22:34+01:00",
+   "subject": "ci(ns003-o1): fix formal G1 relative paths"
+  },
+  {
+   "commit": "9a81ba71f3d2b045fbb2232b9c0fee66d5a0f0b7",
+   "date": "2026-09-26T02:22:31+01:00",
+   "subject": "ci(ns003-o1): fix formal G1 relative paths"
+  },
+  {
+   "commit": "34acb195fd0570fd16627f51c37e0630f30ac340",
+   "date": "2026-09-26T02:21:43+01:00",
+   "subject": "formal(ns003-o1): replace B2 target axioms with explicit proof package"
+  },
+  {
+   "commit": "f710c1bcf60ca3c1375bd54adc8df8f15974014e",
+   "date": "2026-09-26T02:21:04+01:00",
+   "subject": "formal(ns003-o1): replace global pressure axiom with explicit law"
+  },
+  {
+   "commit": "45e90b0f8b961c44109c88103329228ef1e88ed1",
+   "date": "2026-09-26T02:21:02+01:00",
+   "subject": "formal(ns003-o1): replace global energy axioms with explicit laws"
+  },
+  {
+   "commit": "28657bc5f4dfb6d10c7b9b6cf7b9f5175a2520d4",
+   "date": "2026-09-26T02:20:59+01:00",
+   "subject": "formal(g1): remove K1a-K1f sorry placeholders, require explicit proofs"
+  },
+  {
+   "commit": "907b47f55c8ce1b4917834b275f81d6c17294de2",
+   "date": "2026-09-26T02:18:52+01:00",
+   "subject": "formal(ns003-o1): import kernelized CKN epsilon-regularity"
+  },
+  {
+   "commit": "3e38c2e6ffd45dd987ec0b30d35fe09299a5283e",
+   "date": "2026-09-26T02:18:34+01:00",
+   "subject": "build(ns003-o1): add kernelized CKN dependency"
+  },
+  {
+   "commit": "3f46d541555548595e78979df72b565eeb7b1a23",
+   "date": "2026-09-26T02:18:31+01:00",
+   "subject": "build(ns003-o1): move compatibility lane to Lean 4.35 rc2"
+  },
+  {
+   "commit": "01d5dcfd08ac96951d351098a60f735c1f7c63bf",
+   "date": "2026-09-26T02:17:00+01:00",
+   "subject": "formal(ns003): make O1 concrete as ActualNS to uniform Q_joint"
+  },
+  {
+   "commit": "6df60b453e5f15588efb0afc10bc4a3fc6cf7785",
+   "date": "2026-09-26T02:15:04+01:00",
+   "subject": "fix(g1): expose SubcriticalBudget inequality to linarith"
+  },
+  {
+   "commit": "426c7c905a733a2d592083918d90b984d5171fe3",
+   "date": "2026-09-26T02:14:02+01:00",
+   "subject": "formal(ns003): isolate O1 ActualNS-to-joint-Q as first real gap"
+  },
+  {
+   "commit": "ba39f146ef40b1e6c91987c2065b97229e678eed",
+   "date": "2026-09-26T02:12:48+01:00",
+   "subject": "formal(ns003): prove signed depletion plus enstrophy balance gives genuine G1"
+  },
+  {
+   "commit": "cbf545a5a88dc3cdd722a811cd834a1c6e41d259",
+   "date": "2026-09-26T02:10:53+01:00",
+   "subject": "formal(ns003): add strict signed depletion producer from certified budget"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-29T05:36:17+00:00",
+  "lean": [
+   "leanprover/lean4:stable",
+   "leanprover/lean4:v4.10.0",
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "CriticalBarrier.EnergyLaws.finite",
+   "file": "formal/lean/CriticalBarrier/Energy.lean",
+   "line": 12,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(E : EnergyLaws) : E.finite_energy_constraint"
+  },
+  {
+   "name": "CriticalBarrier.EnergyLaws.scaling",
+   "file": "formal/lean/CriticalBarrier/Energy.lean",
+   "line": 14,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(E : EnergyLaws) : E.energy_scaling_constraint"
+  },
+  {
+   "name": "CriticalBarrier.PressureLaws.compatibility",
+   "file": "formal/lean/CriticalBarrier/Pressure.lean",
+   "line": 11,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(P : PressureLaws) : P.pressure_poisson_compatibility"
+  },
+  {
+   "name": "MillenniumAudit.NS003.CKNAdapter.epsilon_regular_region_control",
+   "file": "formal/G1/NS003CKNAdapter.lean",
+   "line": 11,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(q : ℝ) (hq : 5 / 2 < q) : ∃ ε₀ γ₀ C₄ : ℝ, 0 < ε₀ ∧ 0 < γ₀ ∧ γ₀ ≤ 2 / 3 ∧ 0 ≤ C₄ ∧ ∀ (Ω : Set Vec3) (I : Set ℝ) (u : ParabolicPoint → Vec3) (Du : ParabolicPoint → Fin 3 → Vec3) (p : ParabolicPoint → ℝ) (f : ParabolicPoint → Vec3), IsSuitableWeakSolution Ω I q u Du p f → closure (parabolicCylinder 0 0 1) ⊆ spaceTimeSet Ω I → (∫⁻ z in parabolicCylinder 0 0 1, ENNReal.ofReal (vec3EuclideanNorm (u z))"
+  },
+  {
+   "name": "MillenniumAudit.NS003.CKNAdapter.gradient_epsilon_regular_region_control",
+   "file": "formal/G1/NS003CKNAdapter.lean",
+   "line": 45,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(q : ℝ) (hq : 5 / 2 < q) : ∃ ε₁ : ℝ, 0 < ε₁ ∧ ∀ (Ω : Set Vec3) (I : Set ℝ) (u : ParabolicPoint → Vec3) (Du : ParabolicPoint → Fin 3 → Vec3) (p : ParabolicPoint → ℝ) (f : ParabolicPoint → Vec3), IsSuitableWeakSolution Ω I q u Du p f → ∀ z₀ ∈ spaceTimeSet Ω I, Filter.limsup (fun r : ℝ => (ENNReal.ofReal r)⁻¹ * ∫⁻ w in parabolicCylinder z₀.1 z₀.2 r, ENNReal.ofReal (spatialGradientSq u Du w)) (𝓝[>] (0"
+  },
+  {
+   "name": "MillenniumAudit.NS003.O1ActualNSUniformQJoint_implies_concrete_O1",
+   "file": "formal/G1/NS003O1Concrete.lean",
+   "line": 98,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(h : O1ActualNSUniformQJoint) : O1ConcreteStatement"
+  },
+  {
+   "name": "MillenniumAudit.NS003.O1_O2_O3_close_flexible_G1",
+   "file": "formal/G1/NS003FirstGap.lean",
+   "line": 45,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : Prop) (ν : ℝ) (d : G1PrizeStandardV4.EnstrophyData) (hNS : ActualNS) (o1 : O1ActualNSToJointQ ActualNS) (o2 : O2JointQToKernel) (tail : WeightedTailControl) (o3 : O3KernelTailGain ν d) : FlexibleStretchingBound ν o3.θ o3.a d ∧ Nonempty (L1TimeControl o3.a)"
+  },
+  {
+   "name": "MillenniumAudit.NS003.O1_O2_O3_to_uniform_enstrophy",
+   "file": "formal/G1/NS003FirstGap.lean",
+   "line": 64,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS UniformEnstrophy : Prop) (ν : ℝ) (d : G1PrizeStandardV4.EnstrophyData) (yPrime : ℝ → ℝ) (hNS : ActualNS) (hbal : G1PrizeStandardV4.EnstrophyBalance ν d yPrime) (o1 : O1ActualNSToJointQ ActualNS) (o2 : O2JointQToKernel) (tail : WeightedTailControl) (o3 : O3KernelTailGain ν d) (gr : GronwallClosure ν d yPrime UniformEnstrophy) : UniformEnstrophy"
+  },
+  {
+   "name": "MillenniumAudit.NS003.O1_currently_uninhabited",
+   "file": "formal/G1/NS003FirstGap.lean",
+   "line": 92,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": O1_inhabited_in_current_corpus = false"
+  },
+  {
+   "name": "MillenniumAudit.NS003.O1_from_atomic_components",
+   "file": "formal/millennium/lean/MillenniumAudit/NS003O1Atomic.lean",
+   "line": 83,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(u : ActualNSCriticalData) (hA : LocalEnergyToDirection u) (hB : PressureToStrain u) (hC : EpsilonRegularRegionControl u) (hD : ExceptionalTailControlAtomic u) (assemble : O1AssemblyLaw u) : DynamicQBound"
+  },
+  {
+   "name": "MillenniumAudit.NS003.O1_from_components",
+   "file": "formal/G1/NS003O1Concrete.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(u : ActualNSData) (c : O1ProofComponents u) (hA : c.localEnergy_to_direction) (hB : c.pressure_to_strain) (hC : c.epsilon_regular_region_control) (hD : c.exceptional_tail_control) : ∃ q : QJointTrajectory, Nonempty (UniformQJointBound q)"
+  },
+  {
+   "name": "MillenniumAudit.NS003.QJointTrajectory.nonneg",
+   "file": "formal/G1/NS003O1Concrete.lean",
+   "line": 21,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(q : QJointTrajectory) (t : ℝ) : 0 ≤ q.value t"
+  },
+  {
+   "name": "MillenniumAudit.NS003.StrictSignedDepletionProducer",
+   "file": "formal/G1/StrictSignedDepletionProducer.lean",
+   "line": 9,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ν cBulk δTail : ℝ) (hν : 0 ≤ ν) (d : EnstrophyData) (s : StretchSplit d) (hBulk : BulkAbsorption ν cBulk d s) (hTail : ExceptionalTailControl ν δTail d s) (hBudget : SubcriticalBudget cBulk δTail) : ∃ θ : ℝ, 0 ≤ θ ∧ θ < 1 ∧ ∀ t, d.stretch t ≤ θ * ν * d.z t"
+  },
+  {
+   "name": "MillenniumAudit.NS003.StrictSignedDepletionProducer_delta",
+   "file": "formal/G1/StrictSignedDepletionProducer.lean",
+   "line": 29,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ν cBulk δTail : ℝ) (hν : 0 ≤ ν) (d : EnstrophyData) (s : StretchSplit d) (hBulk : BulkAbsorption ν cBulk d s) (hTail : ExceptionalTailControl ν δTail d s) (hBudget : SubcriticalBudget cBulk δTail) : ∃ δ : ℝ, 0 < δ ∧ δ ≤ 1 ∧ ∀ t, d.stretch t ≤ (1 - δ) * ν * d.z t"
+  },
+  {
+   "name": "MillenniumAudit.NS003.signed_depletion_balance_implies_G1",
+   "file": "formal/G1/NS003EndpointTheorem.lean",
+   "line": 54,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ν δ : ℝ) (d : EnstrophyData) (hδ : 0 < δ) (hBalance : EnstrophyBalance ν d) (hDepletion : ∀ t, d.stretch t ≤ (1 - δ) * ν * d.z t) : ∀ t, d.yDerivative t + 2 * δ * ν * d.z t ≤ 0"
+  },
+  {
+   "name": "MillenniumAudit.NS003.strict_signed_depletion_to_genuine_G1",
+   "file": "formal/G1/NS003EndpointTheorem.lean",
+   "line": 8,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ν cBulk δTail : ℝ) (hν : 0 ≤ ν) (d : EnstrophyData) (s : StretchSplit d) (hBalance : EnstrophyBalance ν d) (hBulk : BulkAbsorption ν cBulk d s) (hTail : ExceptionalTailControl ν δTail d s) (hBudget : SubcriticalBudget cBulk δTail) : ∃ δ : ℝ, 0 < δ ∧ δ ≤ 1 ∧ (∀ t, d.stretch t ≤ (1 - δ) * ν * d.z t) ∧ (∀ t, d.yDerivative t + 2 * δ * ν * d.z t ≤ 0)"
+  },
+  {
+   "name": "MillenniumAudit.NS003.strict_signed_route_uses_budget_not_fixed_delta",
+   "file": "formal/G1/StrictSignedDepletionProducer.lean",
+   "line": 50,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ν cBulk δTail : ℝ) (hν : 0 ≤ ν) (d : EnstrophyData) (s : StretchSplit d) (hBulk : BulkAbsorption ν cBulk d s) (hTail : ExceptionalTailControl ν δTail d s) (hBudget : SubcriticalBudget cBulk δTail) : G1HypothesesV3.GeometricDepletion ν { z"
+  }
+ ],
+ "closed": 8,
+ "files_sha256": {
+  "G1_KAdmissible_to_SignedDepletion.lean": "0994575d31c50a20f19c52ad6dacde51405d99c015e7141f8d01ed9db9f592d5",
+  "HypothesesComplete_v3.lean": "fef6fb1c0be88a28b106f5c8453795feac889ac3d43c3353e647da20a430814c",
+  "formal/G1/NS003EndpointTheorem.lean": "7649fb9b7347516298a498927cdf652abda9e52c43b0327a207562f502411bc2",
+  "formal/G1/NS003O1Concrete.lean": "1c48faf7e742804174936c845b805be0df31e1b5c03b8f3af537d919a317c9f4",
+  "formal/G1/StrictSignedDepletionProducer.lean": "0c497a06e7d37686de5627b55fd8599be50a151a4090f14ec2f310596d7cc7e3",
+  "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
+  "lakefile.toml": "a5de78a93ba257572f683b546fdb07f604d842c69c26f43f5089ada9c7e8bf8a",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+ },
+ "published_at": "2026-10-29T06:27:20Z",
+ "certificate_sha256": "923de2e25e74fc55700d6bdf7439e6f177acc1a543deeb1ca83872b62da96aa1"
+}

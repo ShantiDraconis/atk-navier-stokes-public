@@ -1,0 +1,1781 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "open-math/ns-final-empty",
+ "branch_state": "parada",
+ "head_commit": "61132607c574ef079c1937a49726a922ff7fd512",
+ "head_commit_date": "2026-09-27T10:55:41+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "61132607c574ef079c1937a49726a922ff7fd512",
+   "date": "2026-09-27T10:55:41+01:00",
+   "subject": "record fail-closed logic refutation frontier"
+  },
+  {
+   "commit": "e84652fd9d809059e2b4a166dbbd38f7654f74d4",
+   "date": "2026-09-27T10:55:12+01:00",
+   "subject": "gate energy compression barrier in NS minimal green"
+  },
+  {
+   "commit": "0ebfac0b61ba5c60b833a62a8a88ba621d61035f",
+   "date": "2026-09-26T23:39:37+01:00",
+   "subject": "feat(ns): enable frozen terminal inhabitant from exact critical producer"
+  },
+  {
+   "commit": "944147129e498ef909727952748a344fad499a76",
+   "date": "2026-09-26T23:05:20+01:00",
+   "subject": "fix(ns): minimize positive habitant core to exact Prop transport"
+  },
+  {
+   "commit": "afafa5b59f8ba25d50670f6a7cee50dd2302d82c",
+   "date": "2026-09-26T22:59:41+01:00",
+   "subject": "fix(ns): make positive producer parameters explicit and Prop-exact"
+  },
+  {
+   "commit": "b795e88c0af0656eb908c483eb531f4cf214ccd5",
+   "date": "2026-09-26T22:55:22+01:00",
+   "subject": "ci(ns): gate exact positive terminal critical-L3 producer"
+  },
+  {
+   "commit": "6d68f5a72fb18472dda9dd93e59172d4d78de005",
+   "date": "2026-09-26T22:54:53+01:00",
+   "subject": "feat(ns): isolate exact positive terminal critical-L3 producer"
+  },
+  {
+   "commit": "77aceba513c25c4fbb044d57ff484bb45eb598d7",
+   "date": "2026-09-26T22:52:53+01:00",
+   "subject": "audit(ns): pin terminal inhabitant attack and external reuse"
+  },
+  {
+   "commit": "64b7c4f75b6aa1cd9283d837cca566375eb84ee8",
+   "date": "2026-09-26T22:38:27+01:00",
+   "subject": "fix(ns): make terminal inhabitant parameters explicit"
+  },
+  {
+   "commit": "f4766ffb58368af8f7fcf2052a6609404e68abe5",
+   "date": "2026-09-26T22:07:37+01:00",
+   "subject": "ci(ns): gate frozen terminal inhabitant certificate"
+  },
+  {
+   "commit": "19af8730e1ea16f0bedc68057120b16891045964",
+   "date": "2026-09-26T22:07:28+01:00",
+   "subject": "cert(ns): freeze fail-closed terminal inhabitant certificate"
+  },
+  {
+   "commit": "efdfeb6d9e504a58a2860c9ae55f7342f72bec29",
+   "date": "2026-09-26T22:07:18+01:00",
+   "subject": "feat(ns): freeze terminal global-or-blowup inhabitant interface"
+  },
+  {
+   "commit": "2967b7c91ea9a34f58e4a8ca58a788e7939f2a67",
+   "date": "2026-09-26T21:26:23+01:00",
+   "subject": "ci(ns): gate F7 plus F1 limit closure theorem"
+  },
+  {
+   "commit": "52bef055073c125ac64fc56d4999cbf629fc84ff",
+   "date": "2026-09-26T21:26:13+01:00",
+   "subject": "feat(ns): formalize F7 compactness plus F1 residual vanishing closure"
+  },
+  {
+   "commit": "ac6e1acd1593a4b003d36c548c7e33f8111a1cfc",
+   "date": "2026-09-26T20:19:19+01:00",
+   "subject": "ci(ns): gate exact G1e unconditional certificate"
+  },
+  {
+   "commit": "d7284282ea0e32453060a46950ddba797934712d",
+   "date": "2026-09-26T20:19:09+01:00",
+   "subject": "feat(ns): isolate exact G1e ActualNS unconditional producer"
+  },
+  {
+   "commit": "5bdbcec3452814dd3fafea41e6ca1fb8dcc519e7",
+   "date": "2026-09-26T20:06:36+01:00",
+   "subject": "cert(ns): record K1d negative-gamma route falsification"
+  },
+  {
+   "commit": "484802dc532f498c0f4c16dbd978ddfeb225a1b6",
+   "date": "2026-09-26T20:06:15+01:00",
+   "subject": "fix(ns): falsify impossible negative gamma absorption shortcut"
+  },
+  {
+   "commit": "d7cbe6c386b7d0f57b923144ab550e69ca8fab7f",
+   "date": "2026-09-26T20:05:22+01:00",
+   "subject": "cert(ns): isolate exact unconditional material certificate"
+  },
+  {
+   "commit": "2f7c9acaa661d8dd730aace66216092b94aa35e3",
+   "date": "2026-09-26T20:04:12+01:00",
+   "subject": "cert(ns): pin exact unconditional claim blocker and theorem enablement"
+  },
+  {
+   "commit": "1116b40a0c73862324ad7f9b5d428019fa85d819",
+   "date": "2026-09-26T20:02:35+01:00",
+   "subject": "ci(ns): gate exact unconditional claim certificate"
+  },
+  {
+   "commit": "a5ebd9bf284377f800d0d0a7a391a6917316a9f2",
+   "date": "2026-09-26T20:02:26+01:00",
+   "subject": "fix(ns): make unconditional certificate self-contained"
+  },
+  {
+   "commit": "119ccbcbd4b260d01d7b47ebd46110466e915b59",
+   "date": "2026-09-26T20:02:08+01:00",
+   "subject": "feat(ns): isolate exact unconditional claim certificate"
+  },
+  {
+   "commit": "59028df785a0d26aa8a0124bf5759c0f5669a412",
+   "date": "2026-09-26T20:00:03+01:00",
+   "subject": "ci(ns): gate all-certified reuse master theorem"
+  },
+  {
+   "commit": "14cabbb89f762a3f237af772bb0324e923ee857e",
+   "date": "2026-09-26T19:59:53+01:00",
+   "subject": "feat(ns): reuse all certified closure chain into terminal theorem"
+  },
+  {
+   "commit": "7f4bbaa8599c6be28fed37d5c25e478e97c7d8bc",
+   "date": "2026-09-26T19:45:29+01:00",
+   "subject": "ci(ns): isolate three-case closure gate"
+  },
+  {
+   "commit": "7c347e60786f51ce3970d75e762ee087c61a5828",
+   "date": "2026-09-26T19:40:32+01:00",
+   "subject": "feat(ns): add three-case OPEN_MATH closure theorem"
+  },
+  {
+   "commit": "8b3be48ea38c3e11e130f96c9bf236efde6a28a5",
+   "date": "2026-09-26T08:56:05+01:00",
+   "subject": "ci(ns): trigger minimal gate on G1 downstream module fixes"
+  },
+  {
+   "commit": "4a8492a155b86cb9476e5f054b2912d1b30a808d",
+   "date": "2026-09-26T08:55:48+01:00",
+   "subject": "fix(ns): use ordinary comments before variable commands"
+  },
+  {
+   "commit": "603e50bc55b1a7aa56c09cf942c26cfa6cb401ce",
+   "date": "2026-09-26T08:21:39+01:00",
+   "subject": "fix(ns): build G1 strict adapter as Lake module"
+  },
+  {
+   "commit": "5566a1a722c040ba98e5a1912337234c119cb217",
+   "date": "2026-09-26T08:15:02+01:00",
+   "subject": "ci(ns): kernel-check G1 strict producer reuse adapter"
+  },
+  {
+   "commit": "f4bf7b0069b4303523a5de90a36b568de9ed6c92",
+   "date": "2026-09-26T08:14:45+01:00",
+   "subject": "feat(ns): reuse G1 producer as canonical strict depletion producer"
+  },
+  {
+   "commit": "a463f857d07a9165dc32319507797db3ec79fb6a",
+   "date": "2026-09-26T00:35:17+01:00",
+   "subject": "ci(ns): automate evidence reuse routing"
+  },
+  {
+   "commit": "bbb40acee9ef8a9f0abe13c3a28636d82400a3cc",
+   "date": "2026-09-26T00:35:03+01:00",
+   "subject": "feat(ns): add automatic evidence reuse router"
+  },
+  {
+   "commit": "75271ff35456b5a716362a9692d302b2464a781c",
+   "date": "2026-09-26T00:34:16+01:00",
+   "subject": "ci(ns): validate frontier graph in external promotion bundle"
+  },
+  {
+   "commit": "95eb5a1a24b53002f947667df88fe9d48e35d068",
+   "date": "2026-09-26T00:34:03+01:00",
+   "subject": "feat(ns): drive promotion bundle from claim-evidence frontier graph"
+  },
+  {
+   "commit": "8b71499f1f9e6b2d6a6cf562208f119ba64e9722",
+   "date": "2026-09-26T00:33:35+01:00",
+   "subject": "feat(ns): add claim evidence frontier graph"
+  },
+  {
+   "commit": "5f0dc9ca6f6668e9df9692661dd66c1d3e407250",
+   "date": "2026-09-26T00:32:32+01:00",
+   "subject": "fix(ns): build canonical OpenMathCore module in final-root gate"
+  },
+  {
+   "commit": "702e5f2e2e6f5d49a5447ab3f56a5773163db92f",
+   "date": "2026-09-26T00:32:29+01:00",
+   "subject": "fix(ns): place Mathlib import first in HypothesesComplete_v3.lean"
+  },
+  {
+   "commit": "72ea59e886b25f1b39f3739a43e9a2e01d5057b9",
+   "date": "2026-09-26T00:32:26+01:00",
+   "subject": "fix(ns): place Mathlib import first in G1_KAdmissible_to_SignedDepletion.lean"
+  },
+  {
+   "commit": "273b918499d96b2a32bd8a905cfefcbf8a2805e3",
+   "date": "2026-09-26T00:31:55+01:00",
+   "subject": "fix(ns): move Mathlib import before G1 module documentation"
+  },
+  {
+   "commit": "3691a25a45dcc15e5c62bb79c4273b02e3e17cbf",
+   "date": "2026-09-26T00:26:15+01:00",
+   "subject": "sync(ns): link amplitude certificate into evidence ledger"
+  },
+  {
+   "commit": "e098867f4bd2c96a76150a6192b529240243e5a9",
+   "date": "2026-09-26T00:26:11+01:00",
+   "subject": "sync(ns): register certified amplitude no-go evidence"
+  },
+  {
+   "commit": "4d6cf6fd0f29691cfa6846899581380aeba2440f",
+   "date": "2026-09-26T00:25:12+01:00",
+   "subject": "ci(ns): audit reusable bulk-tail evidence and scope boundaries"
+  },
+  {
+   "commit": "81c7a4edc0c4c6c3d6cf936bfd74d060ef7c0ce6",
+   "date": "2026-09-26T00:24:57+01:00",
+   "subject": "feat(ns): make claim promotion consume evidence linkage ledger"
+  },
+  {
+   "commit": "6e778ce53d91d7c6b5382a2cd9790a3c846ad6dc",
+   "date": "2026-09-26T00:24:37+01:00",
+   "subject": "ci(ns): trigger fast terminal on certificates and reuse frozen amplitude proof"
+  },
+  {
+   "commit": "dd943733d431adda51887547fc33c769531fbe52",
+   "date": "2026-09-26T00:24:13+01:00",
+   "subject": "docs(ns): link reusable evidence to formal claim boundaries"
+  },
+  {
+   "commit": "4538250c74c34177fe069d883cbf7a00a70441e0",
+   "date": "2026-09-26T00:07:44+01:00",
+   "subject": "cert(ns): certify amplitude fixed-delta no-go"
+  },
+  {
+   "commit": "354cb34d0072482da3afaf823643ab6c38c36c24",
+   "date": "2026-09-26T00:07:03+01:00",
+   "subject": "fix(ns): use importable OpenMathCore and G1 fast-path modules"
+  },
+  {
+   "commit": "f4138b84062bd33eca933d44463086db34065d75",
+   "date": "2026-09-26T00:06:56+01:00",
+   "subject": "refactor(ns): make G1 fast path a compatibility wrapper"
+  },
+  {
+   "commit": "9b5b56e895b42790450f7ea96fd094e237995777",
+   "date": "2026-09-26T00:06:49+01:00",
+   "subject": "refactor(ns): make OpenMathCore source a compatibility wrapper"
+  },
+  {
+   "commit": "7aa4987305e866965dfedf6df81111244aebfba1",
+   "date": "2026-09-26T00:06:40+01:00",
+   "subject": "refactor(ns): expose G1 fast path as importable Lean module"
+  },
+  {
+   "commit": "17dfe07d3d92a9d4d1e5a36ee5e2abfa98bb6e77",
+   "date": "2026-09-26T00:06:33+01:00",
+   "subject": "refactor(ns): expose OpenMathCore as importable Lean module"
+  },
+  {
+   "commit": "e9d87c13033176ffd55f7f793a4ef57b996a9005",
+   "date": "2026-09-26T00:05:04+01:00",
+   "subject": "cert(ns): stage amplitude fixed-delta no-go fail-closed"
+  },
+  {
+   "commit": "44fbab45d23661c0a6bdb3219255ed5620998899",
+   "date": "2026-09-26T00:03:57+01:00",
+   "subject": "fix(ns): parenthesize certificate invariance contract"
+  },
+  {
+   "commit": "4ce16c721ba0a66688e05bc9f6a0ce234a2e11c2",
+   "date": "2026-09-25T23:58:07+01:00",
+   "subject": "fix(ns): split scaling projections from proof application"
+  },
+  {
+   "commit": "ead9036adcccdc37b6b0c7ce66becfb2509a4b59",
+   "date": "2026-09-25T23:36:13+01:00",
+   "subject": "fix(ns): require FINAL_FAIL evidence before root readiness"
+  },
+  {
+   "commit": "efc492e61e54a14dd12040704b7dd3f6f4d59cf8",
+   "date": "2026-09-25T23:33:25+01:00",
+   "subject": "fix(ns): use explicit scaling-model projections in fast terminal no-go"
+  },
+  {
+   "commit": "f672cfc280c197e6900d3eeb1a3d2f072d0d2d69",
+   "date": "2026-09-25T22:32:10+01:00",
+   "subject": "ci(ns): validate OpenMathCore to G1 fast-path adapter"
+  },
+  {
+   "commit": "32061b3b29af7580457078543ee6611896d28cf6",
+   "date": "2026-09-25T22:31:48+01:00",
+   "subject": "feat(ns): reuse OpenMathCore as fast G1 producer"
+  },
+  {
+   "commit": "eb92e7c3c8d8504812bbae4a6694a6179865f3df",
+   "date": "2026-09-25T22:28:17+01:00",
+   "subject": "fix(ns): apply scaling fields at declared arity"
+  },
+  {
+   "commit": "0772c677167babcc0617f0b5e8f00ae01dca1fa6",
+   "date": "2026-09-25T22:25:23+01:00",
+   "subject": "fix(ns): infer scaling state and amplitude from expected types"
+  },
+  {
+   "commit": "9094deb5ed1f04bcd21efe831514abcad62735e1",
+   "date": "2026-09-25T22:19:28+01:00",
+   "subject": "audit(ns): snapshot fast-path green infrastructure"
+  },
+  {
+   "commit": "6a87d5e8fd644a64c2d454a301f10994aed3ee49",
+   "date": "2026-09-25T22:17:40+01:00",
+   "subject": "ci(ns): validate canonical one-gap open-math core"
+  },
+  {
+   "commit": "90cbb77a154de437f2b7bf5611724ee9335f7cb4",
+   "date": "2026-09-25T22:17:37+01:00",
+   "subject": "cert(ns): point proof promotion at canonical strict-depletion core"
+  },
+  {
+   "commit": "30630adff986aee95ebf086cce9b81aa0e18773e",
+   "date": "2026-09-25T22:17:14+01:00",
+   "subject": "cert(ns): canonicalize fastest path on existing open-math core"
+  },
+  {
+   "commit": "8a90613e6555599fa6147155ceac430fb25a85f8",
+   "date": "2026-09-25T22:17:07+01:00",
+   "subject": "cert(ns): reuse canonical one-gap ActualNS-to-G1 reduction"
+  },
+  {
+   "commit": "6df9ea55c07060206ad502044be5aaa7df2f7f62",
+   "date": "2026-09-25T22:15:09+01:00",
+   "subject": "feat(ns): separate auxiliary claim blockers from terminal blockers"
+  },
+  {
+   "commit": "30929a825408d7dc8e19238ecdc4399c7e1dfbc8",
+   "date": "2026-09-25T22:15:06+01:00",
+   "subject": "cert(ns): remove auxiliary amplitude no-go from terminal dependency"
+  },
+  {
+   "commit": "965e4ff739de49973285c8e3b1e90ca126d02c73",
+   "date": "2026-09-25T22:14:39+01:00",
+   "subject": "cert(ns): compress proof frontier to single G1 producer"
+  },
+  {
+   "commit": "541d331492b1e84973ff9212cc128ac046187fee",
+   "date": "2026-09-25T22:12:26+01:00",
+   "subject": "ci(ns): isolate amplitude no-go in dedicated refutation audit"
+  },
+  {
+   "commit": "234c471fbb614b7a6a66d49804ff2e05338d9ddc",
+   "date": "2026-09-25T22:12:13+01:00",
+   "subject": "ci(ns): remove nonterminal amplitude audit from final-root path"
+  },
+  {
+   "commit": "9f1cf4b4a77798d5f8315ec2c5ac54d48e9b3d49",
+   "date": "2026-09-25T22:12:09+01:00",
+   "subject": "ci(ns): decouple amplitude no-go from fast terminal path"
+  },
+  {
+   "commit": "d2f0ccfe5cfdb3af05f0747788c3ec173d25a204",
+   "date": "2026-09-25T22:04:41+01:00",
+   "subject": "fix(ns): use explicit structure projections in amplitude no-go"
+  },
+  {
+   "commit": "d98579a5832c516353d1745f47034d7946e07636",
+   "date": "2026-09-25T22:00:34+01:00",
+   "subject": "ci(ns): trigger fast gate on named-argument no-go proof"
+  },
+  {
+   "commit": "975d480a2b0f1e9d740afab0b5f768338db53c07",
+   "date": "2026-09-25T21:56:28+01:00",
+   "subject": "ci(ns): reserve full root gate for promotion and architecture changes"
+  },
+  {
+   "commit": "153b81e53c32da11e41068840f921482de7afde3",
+   "date": "2026-09-25T21:56:14+01:00",
+   "subject": "ci(ns): add fast terminal gate for live open-math producers"
+  },
+  {
+   "commit": "274f2745b14daa5b31c4c3ea19b7b98c4a4f69b8",
+   "date": "2026-09-25T21:55:46+01:00",
+   "subject": "fix(ns): use named scaling arguments in amplitude no-go"
+  },
+  {
+   "commit": "db965c9e4294344164e12a785a9dd8808d226f13",
+   "date": "2026-09-25T21:52:39+01:00",
+   "subject": "cert(ns): bind external issuance to FINAL_FAIL and FINAL_ROOT"
+  },
+  {
+   "commit": "45011e357fd8383d78dfac35441a2704c4936e89",
+   "date": "2026-09-25T21:52:35+01:00",
+   "subject": "ci(ns): gate FINAL_ROOT on explicit FINAL_FAIL artifact"
+  },
+  {
+   "commit": "c99d59f07e6a17b1dee9767fcaa4546815d7589d",
+   "date": "2026-09-25T21:52:14+01:00",
+   "subject": "cert(ns): require explicit FINAL_FAIL before FINAL_ROOT"
+  },
+  {
+   "commit": "03a5979d488ba0dd5f02cb103401ffc46e973ee5",
+   "date": "2026-09-25T21:52:08+01:00",
+   "subject": "cert(ns): insert FINAL_FAIL into promotion DAG"
+  },
+  {
+   "commit": "4714244506123888e71e5cb2fa89cd00e9c41c54",
+   "date": "2026-09-25T21:52:03+01:00",
+   "subject": "cert(ns): materialize fail-closed FINAL_FAIL artifact"
+  },
+  {
+   "commit": "63a9675dea07651f1db939694fd84decc9b2ba2d",
+   "date": "2026-09-25T21:50:52+01:00",
+   "subject": "ci(ns): require complete fail-closed claim export coverage"
+  },
+  {
+   "commit": "ddd67286dfc1d17a47c4b7082feda7a74a9eb84c",
+   "date": "2026-09-25T21:50:37+01:00",
+   "subject": "feat(ns): export fail-closed status certificate for every claim"
+  },
+  {
+   "commit": "856ea6d0727619975e63a0af8b260a003963f30f",
+   "date": "2026-09-25T21:50:05+01:00",
+   "subject": "cert(ns): add claim dependency DAG and fail-closed exports"
+  },
+  {
+   "commit": "ff269963f29556bb52737d8e4aed4fe70a75b0b2",
+   "date": "2026-09-25T21:49:48+01:00",
+   "subject": "cert(ns): compress OPEN_MATH terminal to G1Producer"
+  },
+  {
+   "commit": "d9e164e017c63c113f9d7ac474541ae766d7a0b3",
+   "date": "2026-09-25T21:49:44+01:00",
+   "subject": "cert(ns): make G1Producer the canonical claim fast path"
+  },
+  {
+   "commit": "454742cec1ba82c276faba2fe84196103cb80233",
+   "date": "2026-09-25T21:47:59+01:00",
+   "subject": "chore(ns): keep pending amplitude claim unpinned until green"
+  },
+  {
+   "commit": "835b826045d16991960a10e91f22028fdc225902",
+   "date": "2026-09-25T21:47:41+01:00",
+   "subject": "ci(audit): make G1C capture deterministic and artifact-safe"
+  },
+  {
+   "commit": "6f56cefa514dfc389e46979fd514ccfc038e47d4",
+   "date": "2026-09-25T21:47:34+01:00",
+   "subject": "ci(ns): add claim promotion fast path"
+  },
+  {
+   "commit": "db82e98a487f168530e910b05b276105204759d4",
+   "date": "2026-09-25T21:47:24+01:00",
+   "subject": "feat(ns): add reusable fail-closed external bundle generator"
+  },
+  {
+   "commit": "5c3cd8328301a585a7818345db06d6eacf947d68",
+   "date": "2026-09-25T21:47:08+01:00",
+   "subject": "feat(ns): add fail-closed claim promotion registry"
+  },
+  {
+   "commit": "59101d1f3b24f4153b4dc0762d47be29a24402b7",
+   "date": "2026-09-25T21:46:39+01:00",
+   "subject": "fix(ns): type projections explicitly in amplitude no-go"
+  },
+  {
+   "commit": "9b26e84357a231f6bfe29f4025bc91bc94a529ad",
+   "date": "2026-09-25T21:46:17+01:00",
+   "subject": "fix(ns): use named projection arguments in amplitude no-go"
+  },
+  {
+   "commit": "69aa564f1a69c3967fb38ac3badeb09d48b32986",
+   "date": "2026-09-25T21:34:26+01:00",
+   "subject": "fix(ns): avoid structure-field shadowing in amplitude no-go"
+  },
+  {
+   "commit": "a213de2a246c83387cc13842c2db3be221c4d8e1",
+   "date": "2026-09-25T21:31:28+01:00",
+   "subject": "fix(ns): apply local certificate invariance directly"
+  },
+  {
+   "commit": "909e8f2c54f37ad054bf97ecd8a20d0d98048ad6",
+   "date": "2026-09-25T21:30:17+01:00",
+   "subject": "cert(ns): record exact external-certificate blocker"
+  },
+  {
+   "commit": "3e7ef73054c8c8c3fa47ced96bd37c9b350cd4b2",
+   "date": "2026-09-25T21:30:08+01:00",
+   "subject": "cert(ns): record single-producer fastest path"
+  },
+  {
+   "commit": "6b3acb0f13dc366d5e6a3bc52a3b6b391945b21d",
+   "date": "2026-09-25T21:30:05+01:00",
+   "subject": "cert(ns): bind scientific endpoint to single G1 producer"
+  },
+  {
+   "commit": "f154753a926ca82292c87715a8de5c5edf343276",
+   "date": "2026-09-25T21:29:48+01:00",
+   "subject": "ci(ns): validate single G1 producer fast-path contract"
+  },
+  {
+   "commit": "5e46f78300c114bfa98802f22c41388df938caa0",
+   "date": "2026-09-25T21:29:37+01:00",
+   "subject": "feat(ns): isolate single G1 producer fast-path contract"
+  },
+  {
+   "commit": "ca22b8ff38cdc8b3e64817b8197097fa84823058",
+   "date": "2026-09-25T21:26:55+01:00",
+   "subject": "fix(ns): rewrite directly with certificate invariance"
+  },
+  {
+   "commit": "128b1139d31cc44286ded342e6bf4b8859ee054c",
+   "date": "2026-09-25T21:26:20+01:00",
+   "subject": "fix(ns): avoid iff field notation in amplitude no-go"
+  },
+  {
+   "commit": "8f06b3de1b9673e0fc63294f4b6afc733ff6e5d7",
+   "date": "2026-09-25T21:21:00+01:00",
+   "subject": "cert(ns): set direct G1 producer as fastest proof endpoint"
+  },
+  {
+   "commit": "382ac2673fc0aec06a1ecef973be755f511590a3",
+   "date": "2026-09-25T21:20:57+01:00",
+   "subject": "cert(ns): compress proof route to direct G1 producer"
+  },
+  {
+   "commit": "bfcd60ffacccccbbf33ede1d83ab45d276613656",
+   "date": "2026-09-25T21:20:40+01:00",
+   "subject": "feat(ns): collapse actual regularity directly to habitability"
+  },
+  {
+   "commit": "ad7ef8abc9b78e28a8f48e461172f0faf6579e97",
+   "date": "2026-09-25T21:20:37+01:00",
+   "subject": "feat(ns): add direct G1 to regularity fast path"
+  },
+  {
+   "commit": "4db6a6cb067b6239b9e460cd9bbeb8b40e194f00",
+   "date": "2026-09-25T21:19:30+01:00",
+   "subject": "fix(ns): apply local scaling lemmas at correct arity"
+  },
+  {
+   "commit": "bf8253cf1ccaf71550e02b76f643c7271b3172d2",
+   "date": "2026-09-25T21:11:48+01:00",
+   "subject": "fix(ns): specialize local scaling certificates before use"
+  },
+  {
+   "commit": "e761443c438a30fcd4ac33d6b57c9da8ec939e94",
+   "date": "2026-09-25T21:07:47+01:00",
+   "subject": "cert(ns): compress proof route to direct G1 producer"
+  },
+  {
+   "commit": "46ace64711e8d6ecd612bf53da6a46b1e46125eb",
+   "date": "2026-09-25T21:07:41+01:00",
+   "subject": "cert(ns): compress proof route to direct G1 producer"
+  },
+  {
+   "commit": "60f0097bbdd921db88662dd32d5d7c571ddc4424",
+   "date": "2026-09-25T21:07:37+01:00",
+   "subject": "cert(ns): compress proof route to direct G1 producer"
+  },
+  {
+   "commit": "78c9ca8e1b52f9f10ba3cdb1d19b0d73376e6db6",
+   "date": "2026-09-25T21:07:22+01:00",
+   "subject": "ci(ns): gate direct G1 fast path and canonical OPEN_MATH producer"
+  },
+  {
+   "commit": "0adfaf20a53afc88a9d53cb40406ffc96f5f015a",
+   "date": "2026-09-25T21:07:06+01:00",
+   "subject": "feat(ns): expose direct G1 fast path to global regularity"
+  },
+  {
+   "commit": "0020fc17cb95c67b400ecd484cd5c35974ead5c1",
+   "date": "2026-09-25T21:05:56+01:00",
+   "subject": "fix(ns): destructure scaling model for robust no-go proof"
+  },
+  {
+   "commit": "7455fef52c7d622b4e65665ddedddd9bc1cd9d66",
+   "date": "2026-09-25T21:05:21+01:00",
+   "subject": "docs(atk): add fastest-path acceleration rule"
+  },
+  {
+   "commit": "44570c36ca1a4cadea56351b8a77fc09d24939e5",
+   "date": "2026-09-25T21:04:59+01:00",
+   "subject": "fix(ns): use direct scaling-model certificate projection"
+  },
+  {
+   "commit": "cf4068faf366b71bacda8eeba94d2d6a9236a7cf",
+   "date": "2026-09-25T20:43:10+01:00",
+   "subject": "fix(ns): qualify scaling fields and use division-order lemma"
+  },
+  {
+   "commit": "199bb9d3a6c017198e75c5b8249ceb8ac01a45d2",
+   "date": "2026-09-25T20:42:04+01:00",
+   "subject": "fix(ns): reduce amplitude no-go to normalized scalar contradiction"
+  },
+  {
+   "commit": "b6b76cbdb5cf21c987c9724fc652f2663c46dc1a",
+   "date": "2026-09-25T20:34:49+01:00",
+   "subject": "fix(ns): eliminate division from amplitude no-go proof"
+  },
+  {
+   "commit": "1ded2ca6c9a8d417d83413ea36e35066240ddf95",
+   "date": "2026-09-25T20:27:12+01:00",
+   "subject": "fix(ns): canonicalize division cancellation in amplitude no-go"
+  },
+  {
+   "commit": "801451632db2850cf9dc08c945b798e97386d754",
+   "date": "2026-09-25T20:26:33+01:00",
+   "subject": "fix(ns): normalize amplitude no-go algebra"
+  },
+  {
+   "commit": "85032b806aa82eaaa49dc71a22919f1817e75c98",
+   "date": "2026-09-25T20:22:20+01:00",
+   "subject": "fix(ns): rewrite certificate invariance in no-go proof"
+  },
+  {
+   "commit": "eeeae5b05c734a922aa2cca62dbc22aa9060ac64",
+   "date": "2026-09-25T20:13:54+01:00",
+   "subject": "ci(ns): validate certified reuse ledger without OPEN_MATH promotion"
+  },
+  {
+   "commit": "ea8669c6a2004f357b8f38e57ddb89eb55510dfd",
+   "date": "2026-09-25T20:13:43+01:00",
+   "subject": "cert(ns): connect GREEN reuse map to dual-lane status"
+  },
+  {
+   "commit": "3fd9c4b64d79809adce45a5735985a26ad1b7cce",
+   "date": "2026-09-25T20:13:40+01:00",
+   "subject": "cert(ns): connect certified reuse ledger to scientific endpoints"
+  },
+  {
+   "commit": "e9252048c404d221de724572ddce4c4d685448c8",
+   "date": "2026-09-25T20:13:24+01:00",
+   "subject": "cert(ns): consolidate GREEN/FROZEN reuse into scientific endpoints"
+  },
+  {
+   "commit": "3ec60d0cea15c15bb195bb3bfe934237f1b05e05",
+   "date": "2026-09-25T20:11:44+01:00",
+   "subject": "feat(ns): adapt certified actual regularity into proof inputs"
+  },
+  {
+   "commit": "753b998aeac36da53428e31e2648e449bb189327",
+   "date": "2026-09-25T20:10:32+01:00",
+   "subject": "fix(ns): simplify amplitude-invariant fixed-delta no-go proof"
+  },
+  {
+   "commit": "3043e4d5489f25a07ae65258b019782e030954ff",
+   "date": "2026-09-25T20:10:29+01:00",
+   "subject": "fix(ns): repair amplitude-invariant no-go proof"
+  },
+  {
+   "commit": "0eec666602b2fbcac0f6c4a80a501bb990db5dbc",
+   "date": "2026-09-25T20:05:48+01:00",
+   "subject": "ci(ns): enforce canonical scientific endpoint manifest"
+  },
+  {
+   "commit": "361c018ac2c589bc3a8f932696a2fa612b1b553a",
+   "date": "2026-09-25T20:05:38+01:00",
+   "subject": "fix(ns): close terminal isSome goals definitionally"
+  },
+  {
+   "commit": "934c73c2661bc17be635667ccdba4cfb846e99a2",
+   "date": "2026-09-25T20:05:38+01:00",
+   "subject": "cert(ns): define canonical scientific endpoint manifest"
+  },
+  {
+   "commit": "bddc29752c4c7e608373043f9100373787c5c79f",
+   "date": "2026-09-25T20:05:22+01:00",
+   "subject": "cert(ns): record semantic proof/refutation meeting obligations"
+  },
+  {
+   "commit": "217dac7ea680fcc4cf36073c338b922b6f0703e2",
+   "date": "2026-09-25T20:05:12+01:00",
+   "subject": "feat(ns): formalize semantic contradiction between closed lanes"
+  },
+  {
+   "commit": "61a144ae196378703d5b69b620d505316fe24017",
+   "date": "2026-09-25T20:04:53+01:00",
+   "subject": "fix(ns): require proof closure to preserve actual NS state semantics"
+  },
+  {
+   "commit": "ab9d7c663140a21817ab30e0cd4fde6ac62e6f37",
+   "date": "2026-09-25T20:04:27+01:00",
+   "subject": "cert(ns): record identity-witness refutation obstruction"
+  },
+  {
+   "commit": "c688a60d54b10f6a4ff50733e6f9f2d4153f0347",
+   "date": "2026-09-25T20:04:25+01:00",
+   "subject": "audit(ns): expose refutation reduction axiom footprint"
+  },
+  {
+   "commit": "71b1e75732b6ecbd34230af3fc5e138d99897dfd",
+   "date": "2026-09-25T20:04:08+01:00",
+   "subject": "feat(ns): reduce universal refutation producer to actual irregularity"
+  },
+  {
+   "commit": "b8f87a2b788b2433b78cdff29c8a55b907dd2939",
+   "date": "2026-09-25T20:03:15+01:00",
+   "subject": "fix(ns): close terminal isSome witnesses definitionally"
+  },
+  {
+   "commit": "253ebb5fef00175e8c81a1fe24302e4c3cbd741b",
+   "date": "2026-09-25T19:52:13+01:00",
+   "subject": "fix(ns): make dual-lane terminal evidence fully decidable"
+  },
+  {
+   "commit": "f21e1d2f6da18890821c4eafe4b71bdbb5c7e61a",
+   "date": "2026-09-25T19:51:39+01:00",
+   "subject": "fix(ns): separate mechanical root selection from scientific authorization"
+  },
+  {
+   "commit": "31e330868db060a2d4da82b5c6bfe65ff7fb0570",
+   "date": "2026-09-25T19:44:43+01:00",
+   "subject": "ci(ns): gate amplitude fixed-delta no-go"
+  },
+  {
+   "commit": "c6dbb50f80e8e12fd121c77ec536f576d2c98879",
+   "date": "2026-09-25T19:44:34+01:00",
+   "subject": "ci(ns): enforce null final root until scientific asymmetry exists"
+  },
+  {
+   "commit": "6ff0337a4971c5086c07aaff2743eb9dfd18b5c0",
+   "date": "2026-09-25T19:44:33+01:00",
+   "subject": "prove(ns): formalize amplitude-invariant fixed-delta no-go"
+  },
+  {
+   "commit": "1dc41b29b8e546863f2b099bf0dc85dc8d2e1456",
+   "date": "2026-09-25T19:44:23+01:00",
+   "subject": "cert(ns): record hardened dual-lane fail-closed obligations"
+  },
+  {
+   "commit": "be7d4698f271a8e8691e25cec140469ec9bc32bb",
+   "date": "2026-09-25T19:44:04+01:00",
+   "subject": "fix(ns): require scientific close/fail evidence before final root"
+  },
+  {
+   "commit": "a86e6d8c1df902b3c78ba2b9dfcdcbbd8e54d11c",
+   "date": "2026-09-25T19:40:17+01:00",
+   "subject": "cert(ns): freeze scaling reduction green"
+  },
+  {
+   "commit": "ed77819722b83a104af4b8bd392c7cdc4cf83cb2",
+   "date": "2026-09-25T19:39:35+01:00",
+   "subject": "fix(audit): capture G1C axioms from direct source harness"
+  },
+  {
+   "commit": "203381d13be1bdde346925643b33a4db3ce18222",
+   "date": "2026-09-25T19:19:06+01:00",
+   "subject": "fix(audit): build MillenniumAudit library before G1C axiom harness"
+  },
+  {
+   "commit": "af5550f748e8f96c91d17caee4abd30b0f73e9c9",
+   "date": "2026-09-25T19:15:46+01:00",
+   "subject": "fix(ns): use explicit division cancellation in scaling proof"
+  },
+  {
+   "commit": "52cbbe2a753fd0e37b97393ada7b7f3ebe370999",
+   "date": "2026-09-25T19:10:21+01:00",
+   "subject": "fix(ns): close scaling witness arithmetic without parser escapes"
+  },
+  {
+   "commit": "3c76d66e7ee0e47759a42e65cf3a6c329a5e532a",
+   "date": "2026-09-25T19:05:23+01:00",
+   "subject": "fix(ns): repair scaling witness proof"
+  },
+  {
+   "commit": "a25446af00647d7df50864831fc51490f4e5b1f6",
+   "date": "2026-09-25T19:00:50+01:00",
+   "subject": "fix(ns): replace reserved lambda token in scaling witness"
+  },
+  {
+   "commit": "dc44543dfdc6d5d081fc9c44d487c900b6028bc3",
+   "date": "2026-09-25T18:57:16+01:00",
+   "subject": "ci(ns): gate scaling witness reduction"
+  },
+  {
+   "commit": "cf9ad3a7f9c5b27bc5cfc327eed8818533089139",
+   "date": "2026-09-25T18:57:05+01:00",
+   "subject": "prove(ns): reduce fiber unboundedness to scaling witness"
+  },
+  {
+   "commit": "a7063a3706091d5ec424db596f458a3bbd767f50",
+   "date": "2026-09-25T18:36:27+01:00",
+   "subject": "cert(ns): freeze green producer infrastructure"
+  },
+  {
+   "commit": "e9c4c3b561d2893ad297ed573677ebe9b3089424",
+   "date": "2026-09-25T18:25:15+01:00",
+   "subject": "fix(audit): always capture G1C return codes and footprint evidence"
+  },
+  {
+   "commit": "cbc9e7fc08c67d3b6e784fd6242328f0237af3c3",
+   "date": "2026-09-25T18:24:09+01:00",
+   "subject": "ci(ns): include fail-closed dual-lane terminal in final root gate"
+  },
+  {
+   "commit": "dcef2f8f26f2b61165cb5fcb3037182f572caccd",
+   "date": "2026-09-25T18:23:56+01:00",
+   "subject": "fix(ns): make dual-lane terminal self-contained and fail-closed"
+  },
+  {
+   "commit": "c46737bd7664ec37f92f173f3645487aa17382d1",
+   "date": "2026-09-25T18:23:13+01:00",
+   "subject": "feat(ns): add fail-closed dual-lane terminal composition"
+  },
+  {
+   "commit": "c8f48d27205506f3714f764a2714475227138d0d",
+   "date": "2026-09-25T18:22:31+01:00",
+   "subject": "fix(ns): make refutation producer self-contained and fail-closed"
+  },
+  {
+   "commit": "09f1f50ed6a7ca2745d0004c178d379367998f17",
+   "date": "2026-09-25T18:20:17+01:00",
+   "subject": "fix(ns): avoid Proof namespace parser collision in producer"
+  },
+  {
+   "commit": "d11cf075e93b961ceae22b50f68e1fb980c3916b",
+   "date": "2026-09-25T18:20:08+01:00",
+   "subject": "fix(ns): make refutation producer self-contained"
+  },
+  {
+   "commit": "e1a42c9220bf2668e2dc156da937a6d9b5ae1547",
+   "date": "2026-09-25T18:20:03+01:00",
+   "subject": "fix(ns): make proof producer self-contained"
+  },
+  {
+   "commit": "545e536197ca3308ebb51515b1d92475ca1ec4f8",
+   "date": "2026-09-25T18:15:09+01:00",
+   "subject": "ci(ns): gate energy compression barrier"
+  },
+  {
+   "commit": "ec1702853eebc93a3c516099109e59fcd354ad1e",
+   "date": "2026-09-25T18:14:56+01:00",
+   "subject": "prove(ns): add energy compression barrier"
+  },
+  {
+   "commit": "d2da218fa2b56481ff02257756e77ce5d75e630e",
+   "date": "2026-09-25T18:14:28+01:00",
+   "subject": "cert(ns): add dual-lane claim ledger"
+  },
+  {
+   "commit": "89675bb84647de2f45ee147c497b4d882f196829",
+   "date": "2026-09-25T18:14:15+01:00",
+   "subject": "ci(ns): gate producers and final root assembler"
+  },
+  {
+   "commit": "85d8f3a039bd2f682e356fd271b443cbd9de2276",
+   "date": "2026-09-25T18:14:01+01:00",
+   "subject": "open-math(ns): add final root assembler"
+  },
+  {
+   "commit": "35c760e8b20afa2663308eb76eef1ee8d77cde89",
+   "date": "2026-09-25T18:13:59+01:00",
+   "subject": "open-math(ns): add refutation producer interface"
+  },
+  {
+   "commit": "f59c82d411208718400d9fef10514f69af4b0ec4",
+   "date": "2026-09-25T18:13:57+01:00",
+   "subject": "open-math(ns): add proof producer interface"
+  },
+  {
+   "commit": "b83b36406ce6a6b0041dfa5df99701028b472b91",
+   "date": "2026-09-25T18:10:02+01:00",
+   "subject": "fix(ns): unify subcritical lane state parameter"
+  },
+  {
+   "commit": "48835fc34b2ecc35dfe87d9f72cf0571fc357042",
+   "date": "2026-09-25T18:06:58+01:00",
+   "subject": "fix(ns): stabilize bridge type parameters with named State"
+  },
+  {
+   "commit": "f702869e9c54b6401bdbcf75b751d1467f7a5cd2",
+   "date": "2026-09-25T17:54:33+01:00",
+   "subject": "ci(ns): gate claim tests for both lanes"
+  },
+  {
+   "commit": "7f95b243b1c6e83ddcdcd31c0feeffd41a3dafdd",
+   "date": "2026-09-25T17:54:22+01:00",
+   "subject": "test(ns): add refutation-lane claim test"
+  },
+  {
+   "commit": "a1932dcddc0f6dab33f0e231246f8fc413c58227",
+   "date": "2026-09-25T17:54:19+01:00",
+   "subject": "test(ns): add proof-lane claim test"
+  },
+  {
+   "commit": "ac7589cbf3d0c566dd127461c4ea56b7b7fc708b",
+   "date": "2026-09-25T17:53:04+01:00",
+   "subject": "fix(ns): make State parameter explicit in bridge types"
+  },
+  {
+   "commit": "4915f699dcf793842be37836e7db2a7ee4e01d67",
+   "date": "2026-09-25T17:31:52+01:00",
+   "subject": "cert(ns): freeze green dual-lane boundary"
+  },
+  {
+   "commit": "fc154735401676601afb027f28e452b4100790e5",
+   "date": "2026-09-25T17:29:56+01:00",
+   "subject": "fix(ns): eliminate State shadowing in ActualNS bridge structures"
+  },
+  {
+   "commit": "4fd156c2491a6083b350715d5e2c51ea3086a05f",
+   "date": "2026-09-25T17:19:05+01:00",
+   "subject": "fix(ns): bind proof lane to explicit PDE predicate"
+  },
+  {
+   "commit": "5e0d9ea4acbe6164027022e8effe532847f064be",
+   "date": "2026-09-25T17:17:51+01:00",
+   "subject": "fix(ns): prove scientific boundary asymmetry without rewrite"
+  },
+  {
+   "commit": "3b823bbd6882ff2e32ba5c87d9cc72f7203e7fcc",
+   "date": "2026-09-25T16:36:02+01:00",
+   "subject": "cert(ns): register dual-lane final-root frontier"
+  },
+  {
+   "commit": "5f984d2632832d7bd41e5e19644841adc8cc8c41",
+   "date": "2026-09-25T16:35:54+01:00",
+   "subject": "ci(ns): gate proof and refutation lanes"
+  },
+  {
+   "commit": "cbe880183d301dc052afbca4cd0680821439baa2",
+   "date": "2026-09-25T16:35:31+01:00",
+   "subject": "open-math(ns): add scientific boundary"
+  },
+  {
+   "commit": "18da036240a33ba0b14048c5c0a23fcce9c38e38",
+   "date": "2026-09-25T16:35:29+01:00",
+   "subject": "open-math(ns): add refutation lane"
+  },
+  {
+   "commit": "2dfa6aa1b080b2e0a2378de7ab32c0f26c631479",
+   "date": "2026-09-25T16:35:27+01:00",
+   "subject": "open-math(ns): add proof lane"
+  },
+  {
+   "commit": "c9b12e27ed3938504933e577565d324af1d12327",
+   "date": "2026-09-25T15:47:21+01:00",
+   "subject": "cert(ns): mark final root ready conditional"
+  },
+  {
+   "commit": "2359da30e10f16c017fcddf037335be87119f9c6",
+   "date": "2026-09-25T15:47:13+01:00",
+   "subject": "ci(ns): add dedicated final-root gate"
+  },
+  {
+   "commit": "63f728f1d5f40016c96faf64b4040c3175e68f76",
+   "date": "2026-09-25T15:30:58+01:00",
+   "subject": "fix(audit): make G1C capture deterministic"
+  },
+  {
+   "commit": "5a3ec0e76ff8afeac0a5b659ff60112e2ee168fc",
+   "date": "2026-09-25T15:22:39+01:00",
+   "subject": "fix(audit): import G1C module instead of replaying full source"
+  },
+  {
+   "commit": "e7ba798ae070aced859985f9c30522d2d1a60669",
+   "date": "2026-09-25T12:43:02+01:00",
+   "subject": "fix(ns): make final proof claim gate self-contained"
+  },
+  {
+   "commit": "af0579473e2e3242111c847c4dc051c252952d43",
+   "date": "2026-09-25T12:20:33+01:00",
+   "subject": "fix(ns): type subcritical coupling lane explicitly"
+  },
+  {
+   "commit": "761a2321a48a31cd80ac3e22b1efc9d9ab5ae872",
+   "date": "2026-09-25T11:55:08+01:00",
+   "subject": "ci(ns): gate final proof claim scaffold"
+  },
+  {
+   "commit": "47d513d35e72a45e7794cc475628d78577005556",
+   "date": "2026-09-25T11:54:57+01:00",
+   "subject": "open-math(ns): add EXTERNAL_CERTIFICATE.json"
+  },
+  {
+   "commit": "387e93313628e056d09940c4e4dd86796206af71",
+   "date": "2026-09-25T11:54:55+01:00",
+   "subject": "open-math(ns): add FINAL_ROOT.json"
+  },
+  {
+   "commit": "3c99cc24f6dc49b66e8d00242c5527ddcb43c967",
+   "date": "2026-09-25T11:54:53+01:00",
+   "subject": "open-math(ns): add FINAL_PROOF_CLAIM.lean"
+  },
+  {
+   "commit": "d2b082dfa3991adc344624c2dcf32a0a0b892160",
+   "date": "2026-09-25T11:54:51+01:00",
+   "subject": "open-math(ns): add CLAIM_MANIFEST.json"
+  },
+  {
+   "commit": "ce28ce21af2d008c8688f6110866d9856ab85eb0",
+   "date": "2026-09-25T11:39:09+01:00",
+   "subject": "ci(ns): compile quantum closure claim lane"
+  },
+  {
+   "commit": "ff27164dc24fbe235c4787d8495ad5cedb32b153",
+   "date": "2026-09-25T11:38:59+01:00",
+   "subject": "open-math(ns): add quantum dynamic closure claim lane"
+  },
+  {
+   "commit": "bf922b78ff3ffde3db9b9d5967148cadde8202d1",
+   "date": "2026-09-25T10:54:29+01:00",
+   "subject": "ci(ns): compile ActualNS subcritical coupling lane"
+  },
+  {
+   "commit": "5e1c14da9e60a5922c10a31c36d071bcc5fdd37a",
+   "date": "2026-09-25T10:54:15+01:00",
+   "subject": "open-math(ns): add ActualNS to subcritical coupling claim lane"
+  },
+  {
+   "commit": "cf9bb8085ec952cc9ef269c1ed5b561b8e77b7f5",
+   "date": "2026-09-25T08:56:49+01:00",
+   "subject": "fix(ns): remove scanner-triggering words from terminal comment"
+  },
+  {
+   "commit": "5552677bc3f223ba7514ab310263a9fc0ed01a2b",
+   "date": "2026-09-25T08:48:49+01:00",
+   "subject": "open-math(ns): refine terminal to time-uniform solution-dependent budget"
+  },
+  {
+   "commit": "b7ee91cd3d1b5c783e23bfd626634855d2753efe",
+   "date": "2026-09-25T08:48:38+01:00",
+   "subject": "ci(ns): gate certified architecture and exact bulk-tail terminal"
+  },
+  {
+   "commit": "e20d9dab3c6bcf24021a066e9ffc2d4219f16759",
+   "date": "2026-09-25T08:48:35+01:00",
+   "subject": "cleanup(ns): remove duplicate minimal claim from active lane"
+  },
+  {
+   "commit": "92718da0b0337d15e8dc400c5717a0ee60dd5a2f",
+   "date": "2026-09-25T08:48:20+01:00",
+   "subject": "open-math(ns): isolate exact time-uniform bulk-tail terminal"
+  },
+  {
+   "commit": "617c117c5c2f32054ad84fdeda9bddb452a37411",
+   "date": "2026-09-25T08:41:16+01:00",
+   "subject": "cert(ns): freeze GREEN conditional closure architecture"
+  },
+  {
+   "commit": "e37e21b98d037426317f80937d2644a9fa678507",
+   "date": "2026-09-25T08:40:06+01:00",
+   "subject": "open-math(ns): freeze exact terminal PDE obligation"
+  },
+  {
+   "commit": "ba79d39333be30605920fa8b2855f213b3f8d65d",
+   "date": "2026-09-25T08:38:44+01:00",
+   "subject": "fix(ns): construct G1 directly from bulk-tail certificate"
+  },
+  {
+   "commit": "c789a3551719ebe27c5ffa435c7b02566630ba38",
+   "date": "2026-09-25T08:31:44+01:00",
+   "subject": "ci(ns): gate complete fail-closed closure architecture"
+  },
+  {
+   "commit": "b9e405023afa13dc6127dce8a6cf05a65c5afa0b",
+   "date": "2026-09-25T08:31:36+01:00",
+   "subject": "open-math(ns): formalize complete fail-closed Navier-Stokes closure architecture"
+  },
+  {
+   "commit": "16c8e2002e00df302d81a28fc4374ef5830fda43",
+   "date": "2026-09-25T08:29:22+01:00",
+   "subject": "ci(ns): compile self-contained minimal claim"
+  },
+  {
+   "commit": "7386efb6dbf81214b3c382faa7ae259fa5337821",
+   "date": "2026-09-25T08:29:08+01:00",
+   "subject": "open-math(ns): record minimal claim boundary"
+  },
+  {
+   "commit": "a086c15ecd8fc41f3d8bde1bc3d86c8754038908",
+   "date": "2026-09-25T08:29:06+01:00",
+   "subject": "open-math(ns): add self-contained minimal claim theorem"
+  },
+  {
+   "commit": "d89596cbac149000adc2228f6c1c1a9c5cc40be4",
+   "date": "2026-09-25T08:25:16+01:00",
+   "subject": "ci(ns): gate OPEN_MATH minimal core with exact Lean build"
+  },
+  {
+   "commit": "81c27c51f06a6b845e036237bb638e78a891df64",
+   "date": "2026-09-25T08:20:35+01:00",
+   "subject": "open-math(ns): add minimal kernel-green bulk-tail depletion theorem"
+  },
+  {
+   "commit": "26b8465c1f1a5c536375bae4f0bdb696949c4c70",
+   "date": "2026-09-25T08:14:34+01:00",
+   "subject": "open-math(ns): isolate single remaining signed-depletion core"
+  },
+  {
+   "commit": "2357b8def609f8c0ff53ab2eeebc6fd000790a6a",
+   "date": "2026-09-25T08:14:25+01:00",
+   "subject": "open-math(ns): reduce G1 closure to single strict signed-depletion core"
+  },
+  {
+   "commit": "860f87e515c63f1a3bc720fa5b1ce9c311d0a2dc",
+   "date": "2026-09-25T08:12:19+01:00",
+   "subject": "open-math(ns): document isolated producer and promotion rule"
+  },
+  {
+   "commit": "a6718dc5b3285d7f194512e4dcc2c1b3b77962b8",
+   "date": "2026-09-25T08:12:17+01:00",
+   "subject": "open-math(ns): pin reusable GREEN certified bases"
+  },
+  {
+   "commit": "fd840b0a5954f6832871b41642e37a369f75ad47",
+   "date": "2026-09-25T08:12:15+01:00",
+   "subject": "open-math(ns): record ActualNS to G1 OPEN_MATH status"
+  },
+  {
+   "commit": "ed1704b60669e45e3198a7e0a8cb3a962640dbd3",
+   "date": "2026-09-25T08:12:13+01:00",
+   "subject": "open-math(ns): add fail-closed ActualNS to G1 producer scope"
+  },
+  {
+   "commit": "aa407560829b2fa12b1260290d621d2fbbe2135b",
+   "date": "2026-09-25T08:09:09+01:00",
+   "subject": "open-math(ns): initialize empty FINAL_ROOT scope"
+  },
+  {
+   "commit": "cd3aaba43506b83aad5f94eac3466fba93ad1ced",
+   "date": "2026-09-25T08:09:07+01:00",
+   "subject": "open-math(ns): initialize empty FINAL_PROOF scope"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-29T05:36:17+00:00",
+  "lean": [
+   "leanprover/lean4:stable",
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "CriticalBarrier.OpenMath.NavierStokes.MinimalGreen.uniform_bulk_tail_implies_strict_signed_depletion",
+   "file": "open-math/navier-stokes/actualns-g1/MinimalGreenCore.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : State → Prop) (D : PDEData (State"
+  },
+  {
+   "name": "CriticalBarrier.OpenMath.NavierStokes.bulkTail_implies_openMathCore",
+   "file": "formal/lean/CriticalBarrier/OpenMath/NavierStokes/G1StrictAdapter.lean",
+   "line": 48,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : State → Prop) (D : NSG1ProducerFastPath.Data (State"
+  },
+  {
+   "name": "CriticalBarrier.OpenMath.NavierStokes.g1Bridge_of_openMathCore",
+   "file": "formal/lean/CriticalBarrier/OpenMath/NavierStokes/OpenMathCore.lean",
+   "line": 78,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{ActualNS : State → Prop} {D : PhysicalStretchingData (State"
+  },
+  {
+   "name": "CriticalBarrier.OpenMath.NavierStokes.g1Producer_implies_openMathCore",
+   "file": "formal/lean/CriticalBarrier/OpenMath/NavierStokes/G1StrictAdapter.lean",
+   "line": 37,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : State → Prop) (D : NSG1ProducerFastPath.Data (State"
+  },
+  {
+   "name": "CriticalBarrier.OpenMath.NavierStokes.global_regularity_from_actualNS_producer",
+   "file": "open-math/navier-stokes/actualns-g1/ActualNSToG1Bridge.lean",
+   "line": 48,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop) (hProducer : ActualNSProducer ActualNS) (hDown : DownstreamClosure ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity) : ∀ u, ActualNS u → GlobalRegularity u"
+  },
+  {
+   "name": "G1WeightedLow.gamma_effective_eq_neg35",
+   "file": "formal/G1/WeightedLow.lean",
+   "line": 115,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": gamma_effective = (-35 : ℝ)"
+  },
+  {
+   "name": "G1WeightedLow.gamma_effective_not_positive",
+   "file": "formal/G1/WeightedLow.lean",
+   "line": 124,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (0 < gamma_effective)"
+  },
+  {
+   "name": "G1WeightedLow.no_canonical_absorption_at_gamma_effective",
+   "file": "formal/G1/WeightedLow.lean",
+   "line": 128,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ ∃ wa : WeightedAbsorptionData, wa.γ = gamma_effective"
+  },
+  {
+   "name": "NSActualNSToSubcriticalCoupling.actualNS_to_subcriticalCoupling",
+   "file": "open-math/navier-stokes/claim/ActualNSToSubcriticalCouplingLane.lean",
+   "line": 115,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {NSPredicate : NSEData → State → Prop} (D : NSEData) (nsToQ : ActualNSToDynamicQ State NSPredicate D) (qToKernel : DynamicQToKernel State D) (kernelToTail : KernelToTail State D) (nsToLow : ActualNSToLowFrequency State NSPredicate D) (strictBudget : StrictCombinedBudget State NSPredicate D) (strictEvidence : ∀ u : State, ∀ hu : ActualNS NSPredicate D u, strictBudget.bridge u hu (nsT"
+  },
+  {
+   "name": "NSActualNSToSubcriticalCoupling.subcriticalCoupling_of_controls",
+   "file": "open-math/navier-stokes/claim/ActualNSToSubcriticalCouplingLane.lean",
+   "line": 102,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {D : NSEData} {u : State} (low : LowFrequencyControl D u) (tail : ExceptionalTailControl D u) (hstrict : low.lowBound + tail.tailBound < 1) : SubcriticalCoupling (assembleLP low tail)"
+  },
+  {
+   "name": "NSAllCertifiedReuseMaster.enable_final_theorem_from_open_math_core",
+   "file": "open-math/navier-stokes/claim/AllCertifiedReuseMaster.lean",
+   "line": 31,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop) (D : PhysicalStretchingData (State"
+  },
+  {
+   "name": "NSAllCertifiedReuseMaster.only_core_needed_for_terminal",
+   "file": "open-math/navier-stokes/claim/AllCertifiedReuseMaster.lean",
+   "line": 58,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop) (D : PhysicalStretchingData (State"
+  },
+  {
+   "name": "NSAmplitudeInvariantNoGo.no_fixed_delta_from_amplitude_invariant_certificate",
+   "file": "open-math/navier-stokes/logic-refutation/AmplitudeInvariantFixedDeltaNoGo.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(M : ScalingModel (State"
+  },
+  {
+   "name": "NSBulkTailTerminal.openMath_implies_strict_budget",
+   "file": "open-math/navier-stokes/claim/BulkTailTerminal.lean",
+   "line": 102,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : State → Prop) (D : Data (State"
+  },
+  {
+   "name": "NSBulkTailTerminal.producer_implies_uniform_margin",
+   "file": "open-math/navier-stokes/claim/BulkTailTerminal.lean",
+   "line": 57,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : State → Prop) (D : Data (State"
+  },
+  {
+   "name": "NSClaimProducers.ProofLane.actual_regularity_implies_habitability",
+   "file": "open-math/navier-stokes/claim/ProofProducer.lean",
+   "line": 80,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(D : ActualNSData (State"
+  },
+  {
+   "name": "NSClaimProducers.ProofLane.inputs_imply_actual_regularity",
+   "file": "open-math/navier-stokes/claim/ProofProducer.lean",
+   "line": 89,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(D : ActualNSData (State"
+  },
+  {
+   "name": "NSClaimProducers.ProofLane.inputs_imply_habitability",
+   "file": "open-math/navier-stokes/claim/ProofProducer.lean",
+   "line": 71,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(D : ActualNSData (State"
+  },
+  {
+   "name": "NSClaimProducers.RefutationLane.all_actual_regular_excludes_refutation",
+   "file": "open-math/navier-stokes/claim/RefutationProducer.lean",
+   "line": 77,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(D : ActualNSData (State"
+  },
+  {
+   "name": "NSClaimProducers.RefutationLane.exclusion_implies_actual_irregular",
+   "file": "open-math/navier-stokes/claim/RefutationProducer.lean",
+   "line": 64,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(D : ActualNSData (State"
+  },
+  {
+   "name": "NSClaimProducers.RefutationLane.inputs_imply_exclusion",
+   "file": "open-math/navier-stokes/claim/RefutationProducer.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(D : ActualNSData (State"
+  },
+  {
+   "name": "NSClaimTests.Proof.producer_implies_habitability",
+   "file": "open-math/navier-stokes/claim/ProofLaneClaimTest.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(D : ActualNSData (State"
+  },
+  {
+   "name": "NSClaimTests.Refutation.producer_implies_exclusion",
+   "file": "open-math/navier-stokes/claim/RefutationLaneClaimTest.lean",
+   "line": 39,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(D : ActualNSData (State"
+  },
+  {
+   "name": "NSClosedArchitecture.bulk_tail_closes_signed_depletion",
+   "file": "open-math/navier-stokes/claim/NavierStokesClosedArchitecture.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : State → Prop) (D : Data (State"
+  },
+  {
+   "name": "NSClosedArchitecture.g1_closes_if_downstream",
+   "file": "open-math/navier-stokes/claim/NavierStokesClosedArchitecture.lean",
+   "line": 129,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS GlobalRegularity : State → Prop) (D : Data (State"
+  },
+  {
+   "name": "NSClosedArchitecture.navier_stokes_closed_from_G1",
+   "file": "open-math/navier-stokes/claim/NavierStokesClosedArchitecture.lean",
+   "line": 140,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS GlobalRegularity : State → Prop) (D : Data (State"
+  },
+  {
+   "name": "NSClosedArchitecture.navier_stokes_closed_if_producers",
+   "file": "open-math/navier-stokes/claim/NavierStokesClosedArchitecture.lean",
+   "line": 151,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS GlobalRegularity : State → Prop) (D : Data (State"
+  },
+  {
+   "name": "NSDualLane.Boundary.ready_requires_asymmetry",
+   "file": "open-math/navier-stokes/claim/ScientificBoundary.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(B : ScientificBoundary) (h : Ready B) : B.proofLane ≠ B.refutationLane"
+  },
+  {
+   "name": "NSDualLane.Proof.proof_lane_implies_habitability",
+   "file": "open-math/navier-stokes/claim/ProofLane.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(D : ActualNSData (State"
+  },
+  {
+   "name": "NSDualLane.Refutation.refutation_lane_implies_refuted",
+   "file": "open-math/navier-stokes/claim/RefutationLane.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(D : ActualNSData (State"
+  },
+  {
+   "name": "NSDualLaneTerminal.open_open_no_final_fail",
+   "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
+   "line": 117,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ FinalFail openState"
+  },
+  {
+   "name": "NSDualLaneTerminal.open_open_no_root",
+   "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
+   "line": 121,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": WinningRoot openEvidence = none"
+  },
+  {
+   "name": "NSDualLaneTerminal.open_open_not_ready",
+   "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
+   "line": 113,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ Ready openState openEvidence"
+  },
+  {
+   "name": "NSDualLaneTerminal.proof_and_refutation_closed_contradict",
+   "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
+   "line": 125,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} (ActualNS regular : State → Prop) (S : ScientificState) (hProofSem : S.proofClosed → ∀ u, ActualNS u → regular u) (hRefSem : S.refutationClosed → ∃ u, ActualNS u ∧ ¬ regular u) : ¬ (S.proofClosed ∧ S.refutationClosed)"
+  },
+  {
+   "name": "NSDualLaneTerminal.proof_terminal_ready",
+   "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
+   "line": 62,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(S : ScientificState) (hProof : S.proofClosed) (hRefFail : S.refutationFailed) (proofSha finalFailSha : String) : Ready S (proofTerminal proofSha finalFailSha)"
+  },
+  {
+   "name": "NSDualLaneTerminal.ready_implies_final_fail",
+   "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
+   "line": 80,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(S : ScientificState) (E : TerminalEvidence) (h : Ready S E) : FinalFail S"
+  },
+  {
+   "name": "NSDualLaneTerminal.ready_implies_root_present",
+   "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
+   "line": 89,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(S : ScientificState) (E : TerminalEvidence) (h : Ready S E) : (WinningRoot E).isSome = true"
+  },
+  {
+   "name": "NSDualLaneTerminal.refutation_terminal_ready",
+   "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
+   "line": 71,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(S : ScientificState) (hRef : S.refutationClosed) (hProofFail : S.proofFailed) (refutationSha finalFailSha : String) : Ready S (refutationTerminal refutationSha finalFailSha)"
+  },
+  {
+   "name": "NSEnergyCompressionBarrier.fiber_unbounded_implies_no_energy_only_control",
+   "file": "open-math/navier-stokes/logic-refutation/EnergyCompressionBarrier.lean",
+   "line": 26,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(Admissible : State → Prop) (energyProjection : State → EnergyData) (criticalResidual : State → ℝ) (h : CriticalUnboundedOnFiber Admissible energyProjection criticalResidual) : ¬ EnergyOnlyControl Admissible energyProjection criticalResidual"
+  },
+  {
+   "name": "NSEnergyCompressionBarrier.fiber_unbounded_implies_no_factorization",
+   "file": "open-math/navier-stokes/logic-refutation/EnergyCompressionBarrier.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(Admissible : State → Prop) (energyProjection : State → EnergyData) (criticalResidual : State → ℝ) (h : CriticalUnboundedOnFiber Admissible energyProjection criticalResidual) : ¬ EnergyOnlyFactorization Admissible energyProjection criticalResidual"
+  },
+  {
+   "name": "NSFiberUnboundedFromScaling.scaling_witness_implies_fiber_unbounded",
+   "file": "open-math/navier-stokes/logic-refutation/FiberUnboundedFromScaling.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(Admissible : State → Prop) (energyProjection : State → EnergyData) (criticalResidual : State → ℝ) (W : ScalingWitness Admissible energyProjection criticalResidual) : CriticalUnboundedOnFiber Admissible energyProjection criticalResidual"
+  },
+  {
+   "name": "NSFinalAssembler.ready_implies_root_present",
+   "file": "open-math/navier-stokes/claim/FinalRootAssembler.lean",
+   "line": 32,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(E : RootEvidence) (h : Ready E) : (WinningRoot E).isSome"
+  },
+  {
+   "name": "NSFinalAssembler.ready_requires_final_fail_sha",
+   "file": "open-math/navier-stokes/claim/FinalRootAssembler.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(E : RootEvidence) (h : Ready E) : E.finalFailSha.isSome"
+  },
+  {
+   "name": "NSFinalProofClaim.final_proof_of_bridge",
+   "file": "open-math/navier-stokes/claim/FINAL_PROOF_CLAIM.lean",
+   "line": 63,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : Prop) (bridge : ActualNSToQuantumClosure (H"
+  },
+  {
+   "name": "NSG1ProducerFastPath.bulkTail_implies_producer_exists",
+   "file": "formal/lean/CriticalBarrier/OpenMath/NavierStokes/G1ProducerFastPath.lean",
+   "line": 90,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : State → Prop) (D : Data (State"
+  },
+  {
+   "name": "NSG1ProducerFastPath.producer_implies_closed",
+   "file": "formal/lean/CriticalBarrier/OpenMath/NavierStokes/G1ProducerFastPath.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : State → Prop) (D : Data (State"
+  },
+  {
+   "name": "NSG1eActualNSMapCertificate.g1e_iff_open_math_core",
+   "file": "open-math/navier-stokes/claim/G1eActualNSMapCertificate.lean",
+   "line": 42,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : State → Prop) (D : PhysicalStretchingData (State"
+  },
+  {
+   "name": "NSG1eActualNSMapCertificate.g1e_implies_open_math_core",
+   "file": "open-math/navier-stokes/claim/G1eActualNSMapCertificate.lean",
+   "line": 23,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : State → Prop) (D : PhysicalStretchingData (State"
+  },
+  {
+   "name": "NSG1eActualNSMapCertificate.open_math_core_implies_g1e",
+   "file": "open-math/navier-stokes/claim/G1eActualNSMapCertificate.lean",
+   "line": 32,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : State → Prop) (D : PhysicalStretchingData (State"
+  },
+  {
+   "name": "NSHabitantCertificate.inhabitant_closes_terminal",
+   "file": "open-math/navier-stokes/claim/NSHabitantCertificate.lean",
+   "line": 54,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(SolvesNavierStokes : InitialData → (ℝ → VelocityField) → Prop) (SmoothGlobal : (ℝ → VelocityField) → Prop) (FiniteTimeBlowUp : InitialData → ℝ → Prop) (H : NSHabitant SolvesNavierStokes SmoothGlobal FiniteTimeBlowUp) : GlobalRegularityClaim SolvesNavierStokes SmoothGlobal ∨ BlowUpClaim FiniteTimeBlowUp"
+  },
+  {
+   "name": "NSHabitantCertificate.ns_closed_of_blowup",
+   "file": "open-math/navier-stokes/claim/NSHabitantCertificate.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(FiniteTimeBlowUp : InitialData → ℝ → Prop) (H : NSBlowUpHabitant FiniteTimeBlowUp) : BlowUpClaim FiniteTimeBlowUp"
+  },
+  {
+   "name": "NSHabitantCertificate.ns_closed_of_global",
+   "file": "open-math/navier-stokes/claim/NSHabitantCertificate.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(SolvesNavierStokes : InitialData → (ℝ → VelocityField) → Prop) (SmoothGlobal : (ℝ → VelocityField) → Prop) (H : NSGlobalHabitant SolvesNavierStokes SmoothGlobal) : GlobalRegularityClaim SolvesNavierStokes SmoothGlobal"
+  },
+  {
+   "name": "NSHabitantCertificate.open_math_producer_closes_terminal",
+   "file": "open-math/navier-stokes/claim/NSHabitantCertificate.lean",
+   "line": 73,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(SolvesNavierStokes : InitialData → (ℝ → VelocityField) → Prop) (SmoothGlobal : (ℝ → VelocityField) → Prop) (FiniteTimeBlowUp : InitialData → ℝ → Prop) (h : OpenMathProducer SolvesNavierStokes SmoothGlobal FiniteTimeBlowUp) : GlobalRegularityClaim SolvesNavierStokes SmoothGlobal ∨ BlowUpClaim FiniteTimeBlowUp"
+  },
+  {
+   "name": "NSHabitantEnable.build_h_pos",
+   "file": "open-math/navier-stokes/claim/NSHabitantEnable.lean",
+   "line": 45,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "(hCritical : CriticalProducer IsMaximalSmoothNS CriticalL3Finite) (hEndpoint : Endpoint IsMaximalSmoothNS CriticalL3Finite GlobalSmoothTraj) (B : PositiveConstructionBridge IsMaximalSmoothNS GlobalSmoothTraj SolvesNavierStokes SmoothGlobal) : NSHabitantCertificate.NSGlobalHabitant SolvesNavierStokes SmoothGlobal"
+  },
+  {
+   "name": "NSHabitantEnable.enable_from_critical",
+   "file": "open-math/navier-stokes/claim/NSHabitantEnable.lean",
+   "line": 77,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "(hCritical : CriticalProducer IsMaximalSmoothNS CriticalL3Finite) (hEndpoint : Endpoint IsMaximalSmoothNS CriticalL3Finite GlobalSmoothTraj) (B : PositiveConstructionBridge IsMaximalSmoothNS GlobalSmoothTraj SolvesNavierStokes SmoothGlobal) : NSHabitantCertificate.NSHabitant SolvesNavierStokes SmoothGlobal FiniteTimeBlowUp"
+  },
+  {
+   "name": "NSHabitantEnable.enable_terminal_positive",
+   "file": "open-math/navier-stokes/claim/NSHabitantEnable.lean",
+   "line": 69,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "(hPos : NSHabitantCertificate.NSGlobalHabitant SolvesNavierStokes SmoothGlobal) : NSHabitantCertificate.NSHabitant SolvesNavierStokes SmoothGlobal FiniteTimeBlowUp"
+  },
+  {
+   "name": "NSLimitClosureF7F1.exact_material_gap",
+   "file": "open-math/navier-stokes/claim/LimitClosureF7F1.lean",
+   "line": 84,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(P : State → Prop) (A : ApproximatingLane (State"
+  },
+  {
+   "name": "NSLimitClosureF7F1.limit_property_closure",
+   "file": "open-math/navier-stokes/claim/LimitClosureF7F1.lean",
+   "line": 52,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(P : State → Prop) (A : ApproximatingLane (State"
+  },
+  {
+   "name": "NSLimitClosureF7F1.navier_stokes_limit_closure",
+   "file": "open-math/navier-stokes/claim/LimitClosureF7F1.lean",
+   "line": 62,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(P GlobalSmooth : State → Prop) (A : ApproximatingLane (State"
+  },
+  {
+   "name": "NSLimitClosureF7F1.open_math_producer_enables_theorem",
+   "file": "open-math/navier-stokes/claim/LimitClosureF7F1.lean",
+   "line": 75,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(P GlobalSmooth : State → Prop) (A : ApproximatingLane (State"
+  },
+  {
+   "name": "NSOpenMathCoreToG1Producer.openMathCore_implies_fastClosed",
+   "file": "open-math/navier-stokes/claim/OpenMathCoreToG1Producer.lean",
+   "line": 42,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{ActualNS : State → Prop} {D : PhysicalStretchingData (State"
+  },
+  {
+   "name": "NSOpenMathCoreToG1Producer.openMathCore_implies_fastProducerExists",
+   "file": "open-math/navier-stokes/claim/OpenMathCoreToG1Producer.lean",
+   "line": 34,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{ActualNS : State → Prop} {D : PhysicalStretchingData (State"
+  },
+  {
+   "name": "NSPositiveHabitantCore.open_math_exact",
+   "file": "open-math/navier-stokes/claim/NSPositiveHabitantCore.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": OpenMathProducer Admissible IsMaximalSmoothNS CriticalL3Finite ↔ UniformCriticalL3Producer Admissible IsMaximalSmoothNS CriticalL3Finite"
+  },
+  {
+   "name": "NSPositiveHabitantCore.producer_enables_global",
+   "file": "open-math/navier-stokes/claim/NSPositiveHabitantCore.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(hProducer : UniformCriticalL3Producer Admissible IsMaximalSmoothNS CriticalL3Finite) (hEndpoint : EndpointCertificate Admissible IsMaximalSmoothNS CriticalL3Finite GlobalSmooth) : ∀ u0, Admissible u0 → ∀ u, IsMaximalSmoothNS u0 u → GlobalSmooth u0 u"
+  },
+  {
+   "name": "NSQuantumClosureClaim.actualNS_closes_quantum_lane",
+   "file": "open-math/navier-stokes/claim/QuantumClosureClaim.lean",
+   "line": 90,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : Prop) (bridge : ActualNSToQuantumClosure (H"
+  },
+  {
+   "name": "NSQuantumClosureClaim.close_of_realization",
+   "file": "open-math/navier-stokes/claim/QuantumClosureClaim.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(P : QuantumClosurePackage (H"
+  },
+  {
+   "name": "NSThreeCaseClosure.close_open_math_of_admissible",
+   "file": "open-math/navier-stokes/claim/ThreeCaseClosure.lean",
+   "line": 52,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{OpenMathClosed : Prop} (W : ClosureWitnesses OpenMathClosed) (s : PairState) (hs : admissible s) : OpenMathClosed"
+  },
+  {
+   "name": "NSThreeCaseClosure.enable_final_theorem",
+   "file": "open-math/navier-stokes/claim/ThreeCaseClosure.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(E : TheoremEnablement) (s : PairState) (hs : admissible s) : E.FinalTheorem"
+  },
+  {
+   "name": "NSThreeCaseClosure.false_false_admissible",
+   "file": "open-math/navier-stokes/claim/ThreeCaseClosure.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": admissible ⟨.false, .false⟩"
+  },
+  {
+   "name": "NSThreeCaseClosure.false_true_admissible",
+   "file": "open-math/navier-stokes/claim/ThreeCaseClosure.lean",
+   "line": 35,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": admissible ⟨.false, .true⟩"
+  },
+  {
+   "name": "NSThreeCaseClosure.true_false_admissible",
+   "file": "open-math/navier-stokes/claim/ThreeCaseClosure.lean",
+   "line": 39,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": admissible ⟨.true, .false⟩"
+  },
+  {
+   "name": "NSThreeCaseClosure.true_true_excluded",
+   "file": "open-math/navier-stokes/claim/ThreeCaseClosure.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ admissible ⟨.true, .true⟩"
+  },
+  {
+   "name": "NSUnconditionalClaimCertificate.certificate_enables_final_theorem",
+   "file": "open-math/navier-stokes/claim/UnconditionalClaimCertificate.lean",
+   "line": 24,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop) (D : PhysicalStretchingData (State"
+  },
+  {
+   "name": "NSUnconditionalClaimCertificate.certificate_requires_open_math_core",
+   "file": "open-math/navier-stokes/claim/UnconditionalClaimCertificate.lean",
+   "line": 38,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop) (D : PhysicalStretchingData (State"
+  }
+ ],
+ "closed": 58,
+ "files_sha256": {
+  "formal/G1/WeightedLow.lean": "7ce283704eb794c67ae1d798739792c2c0ccc7f72afe0a0fb0c4470767bc3fc6",
+  "formal/lean/CriticalBarrier/OpenMath/NavierStokes/G1ProducerFastPath.lean": "742f2323663a17bd66c0025bcb83c54624a54911f696ec479f7305a85f4da154",
+  "formal/lean/lakefile.toml": "ae588249ee34ba35be93608e76703456a73ba966cc13cd08f1a2383af9d901f1",
+  "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
+  "lakefile.toml": "d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c",
+  "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87",
+  "open-math/navier-stokes/actualns-g1/MinimalGreenCore.lean": "258538c2997851516f309dc9baa9680a3c4ab2d988205d0c07dc2f95e95ac502",
+  "open-math/navier-stokes/claim/ActualNSToSubcriticalCouplingLane.lean": "245b05694642c498572b2d23deb731348cbe14a28217cfda27b8a2be26d66a14",
+  "open-math/navier-stokes/claim/BulkTailTerminal.lean": "28c82a49f2fcc534aac6ec975c03c5c799a1936e1b53b28dac8c6637405d8d1f",
+  "open-math/navier-stokes/claim/DualLaneTerminal.lean": "6ea27512b47d9271af90a479eb8217b6cf8ef25abcfc5c6a4b07ea99744df5c1",
+  "open-math/navier-stokes/claim/FINAL_PROOF_CLAIM.lean": "34bf2ebf338e17cc1711a8d7c163325245eb5ec998d5de41aaffc7db7c623127",
+  "open-math/navier-stokes/claim/FinalRootAssembler.lean": "96632cdd86dd6fc63235ed91f14952100ab72690ac56b407c9f6687e1ce16fb2",
+  "open-math/navier-stokes/claim/LimitClosureF7F1.lean": "43c161373bb693516b73b11ccd785c940e6c8d45ca1dc8415aedf9069dba047d",
+  "open-math/navier-stokes/claim/NSHabitantCertificate.lean": "117ea865a8cd43525f1a2db57fc0f803583133831909ccdcc3b3528bc700b6a4",
+  "open-math/navier-stokes/claim/NSPositiveHabitantCore.lean": "341ce9085a9c9a47e8659015aff82f9500f32caad61ac16c7a3ab4e21699de3d",
+  "open-math/navier-stokes/claim/NavierStokesClosedArchitecture.lean": "d928be41fb018bec44e1e82f5ec5587fc024eb32e474a6a5e02041e7a54bfcdd",
+  "open-math/navier-stokes/claim/ProofLane.lean": "86ade921d1aaf9006257e430804ce0a0d4aecd105ddcd4c962ef0063856094b3",
+  "open-math/navier-stokes/claim/ProofLaneClaimTest.lean": "c9f9f5cedea5dab188584667877e078a7666a4a6373cbf7a0f6305cae449f4ad",
+  "open-math/navier-stokes/claim/ProofProducer.lean": "21f8446c8a633c49c858d2c8948ee301de69b76552f98509eaeebd7cbae6233d",
+  "open-math/navier-stokes/claim/QuantumClosureClaim.lean": "623f620bd8ae82d2044ef09ea82e536cdf6448c3858ea2e365c7d5cfa1ae3ef1",
+  "open-math/navier-stokes/claim/RefutationLane.lean": "6cdc571db6a5bb7aac99fe15ddb81a54ba941395b1b35085f0ba9ef480695630",
+  "open-math/navier-stokes/claim/RefutationLaneClaimTest.lean": "fe009559232d5abc626fbdd7fd9ca55895199b5eb50a7310540f167088916026",
+  "open-math/navier-stokes/claim/RefutationProducer.lean": "05aa9ce00e70534ab6927d1933303570607efc6d4e50c7690afe6f83ec6927bc",
+  "open-math/navier-stokes/claim/ScientificBoundary.lean": "744afc255463385e8231b4a5d309f338bb6ff558c36d9bc1dce0d8362da81dc3",
+  "open-math/navier-stokes/claim/ThreeCaseClosure.lean": "12198c341efbde64dd32b30570d8c7455977e96333b7b6261453794f7a35614c",
+  "open-math/navier-stokes/logic-refutation/AmplitudeInvariantFixedDeltaNoGo.lean": "4d0fd42789779f6c558433ec1b90d8c8b6625ae8433306c0108473d890a64670",
+  "open-math/navier-stokes/logic-refutation/EnergyCompressionBarrier.lean": "f7705dd820f1d4bf53e520860445adfb7b4e23d1206de0aeec003972df638e0f",
+  "open-math/navier-stokes/logic-refutation/FiberUnboundedFromScaling.lean": "4729c50509cc8a0e0bfc1be24c31ca1390b6598648e0982021275df1eef8c1f9"
+ },
+ "published_at": "2026-10-29T06:27:20Z",
+ "certificate_sha256": "9de357be5256ae9d169592bdecb1cf60ecae6f3cca01021dfae1149addb0354e"
+}

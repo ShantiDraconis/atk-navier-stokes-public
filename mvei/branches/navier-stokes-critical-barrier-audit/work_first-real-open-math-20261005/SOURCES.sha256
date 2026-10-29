@@ -1,0 +1,5 @@
+22e936ff12772f5196497093d0afb1cf81ef0812120a8ae1cc334e85168494d4  branches/navier-stokes-critical-barrier-audit/work_first-real-open-math-20261005/formal/lean/CriticalBarrier/ForcingKernel.lean
+d7afa978dcff6b8e84fc6d1f59e824e2a8d17252f967788010da0657f7827974  branches/navier-stokes-critical-barrier-audit/work_first-real-open-math-20261005/formal/lean/CriticalBarrier/G1BridgeFalsification.lean
+0e25a0a9b41671521209f006a8ad51354c2a491d4b4ce34e65f61d507c1cba19  branches/navier-stokes-critical-barrier-audit/work_first-real-open-math-20261005/formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean
+ae588249ee34ba35be93608e76703456a73ba966cc13cd08f1a2383af9d901f1  branches/navier-stokes-critical-barrier-audit/work_first-real-open-math-20261005/formal/lean/lakefile.toml
+55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea  branches/navier-stokes-critical-barrier-audit/work_first-real-open-math-20261005/formal/lean/lean-toolchain

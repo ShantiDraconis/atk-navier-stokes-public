@@ -1,0 +1,122 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "frozen/ns-conditional-closure-ba79d393",
+ "branch_state": "parada",
+ "head_commit": "ba79d39333be30605920fa8b2855f213b3f8d65d",
+ "head_commit_date": "2026-09-25T08:38:44+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "ba79d39333be30605920fa8b2855f213b3f8d65d",
+   "date": "2026-09-25T08:38:44+01:00",
+   "subject": "fix(ns): construct G1 directly from bulk-tail certificate"
+  },
+  {
+   "commit": "c789a3551719ebe27c5ffa435c7b02566630ba38",
+   "date": "2026-09-25T08:31:44+01:00",
+   "subject": "ci(ns): gate complete fail-closed closure architecture"
+  },
+  {
+   "commit": "b9e405023afa13dc6127dce8a6cf05a65c5afa0b",
+   "date": "2026-09-25T08:31:36+01:00",
+   "subject": "open-math(ns): formalize complete fail-closed Navier-Stokes closure architecture"
+  },
+  {
+   "commit": "16c8e2002e00df302d81a28fc4374ef5830fda43",
+   "date": "2026-09-25T08:29:22+01:00",
+   "subject": "ci(ns): compile self-contained minimal claim"
+  },
+  {
+   "commit": "7386efb6dbf81214b3c382faa7ae259fa5337821",
+   "date": "2026-09-25T08:29:08+01:00",
+   "subject": "open-math(ns): record minimal claim boundary"
+  },
+  {
+   "commit": "a086c15ecd8fc41f3d8bde1bc3d86c8754038908",
+   "date": "2026-09-25T08:29:06+01:00",
+   "subject": "open-math(ns): add self-contained minimal claim theorem"
+  },
+  {
+   "commit": "d89596cbac149000adc2228f6c1c1a9c5cc40be4",
+   "date": "2026-09-25T08:25:16+01:00",
+   "subject": "ci(ns): gate OPEN_MATH minimal core with exact Lean build"
+  },
+  {
+   "commit": "81c27c51f06a6b845e036237bb638e78a891df64",
+   "date": "2026-09-25T08:20:35+01:00",
+   "subject": "open-math(ns): add minimal kernel-green bulk-tail depletion theorem"
+  },
+  {
+   "commit": "26b8465c1f1a5c536375bae4f0bdb696949c4c70",
+   "date": "2026-09-25T08:14:34+01:00",
+   "subject": "open-math(ns): isolate single remaining signed-depletion core"
+  },
+  {
+   "commit": "2357b8def609f8c0ff53ab2eeebc6fd000790a6a",
+   "date": "2026-09-25T08:14:25+01:00",
+   "subject": "open-math(ns): reduce G1 closure to single strict signed-depletion core"
+  },
+  {
+   "commit": "860f87e515c63f1a3bc720fa5b1ce9c311d0a2dc",
+   "date": "2026-09-25T08:12:19+01:00",
+   "subject": "open-math(ns): document isolated producer and promotion rule"
+  },
+  {
+   "commit": "a6718dc5b3285d7f194512e4dcc2c1b3b77962b8",
+   "date": "2026-09-25T08:12:17+01:00",
+   "subject": "open-math(ns): pin reusable GREEN certified bases"
+  },
+  {
+   "commit": "fd840b0a5954f6832871b41642e37a369f75ad47",
+   "date": "2026-09-25T08:12:15+01:00",
+   "subject": "open-math(ns): record ActualNS to G1 OPEN_MATH status"
+  },
+  {
+   "commit": "ed1704b60669e45e3198a7e0a8cb3a962640dbd3",
+   "date": "2026-09-25T08:12:13+01:00",
+   "subject": "open-math(ns): add fail-closed ActualNS to G1 producer scope"
+  },
+  {
+   "commit": "aa407560829b2fa12b1260290d621d2fbbe2135b",
+   "date": "2026-09-25T08:09:09+01:00",
+   "subject": "open-math(ns): initialize empty FINAL_ROOT scope"
+  },
+  {
+   "commit": "cd3aaba43506b83aad5f94eac3466fba93ad1ced",
+   "date": "2026-09-25T08:09:07+01:00",
+   "subject": "open-math(ns): initialize empty FINAL_PROOF scope"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:stable",
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "NSMinimalClaim.bulk_tail_closes_signed_depletion",
+   "file": "open-math/navier-stokes/claim/NavierStokesMinimalClaim.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ActualNS : State → Prop) (D : Data (State"
+  }
+ ],
+ "closed": 1,
+ "files_sha256": {
+  "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
+  "lakefile.toml": "d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c",
+  "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87",
+  "open-math/navier-stokes/claim/NavierStokesMinimalClaim.lean": "24699360014548f2c08289993a02bb037c8525ab1930e14248382f91c3a7a9d4"
+ },
+ "published_at": "2026-10-29T01:37:32Z",
+ "certificate_sha256": "2fdd9a8f4af439c269e385ac1a7dc1a7f222e103bbcd18d8be18b9b5b97de7dd"
+}

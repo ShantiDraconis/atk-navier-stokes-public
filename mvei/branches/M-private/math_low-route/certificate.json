@@ -1,0 +1,63 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-private",
+ "branch": "math/low-route",
+ "branch_state": "parada",
+ "head_commit": "e40fff5ccbfadaa9713fb60c9fb881f98d137e93",
+ "head_commit_date": "2026-09-14T16:22:05+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "e40fff5ccbfadaa9713fb60c9fb881f98d137e93",
+   "date": "2026-09-14T16:22:05+02:00",
+   "subject": "low route: harden provenance maximal-time and anti-circular gates"
+  },
+  {
+   "commit": "e3660f81cc8035e34a996a800e38e3f00b42dbd5",
+   "date": "2026-09-14T15:54:34+02:00",
+   "subject": "ActualLowRoute: minimize imports and normalize low coefficient theorem"
+  },
+  {
+   "commit": "e3672213ff8570bb7bb7ca255f5e0141fa933575",
+   "date": "2026-09-14T15:41:24+02:00",
+   "subject": "ActualLowRoute: separate noncircular low closure modes"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.34.0-rc2"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.ActualLowRoute.coefficient_route_gives_full_low_bound",
+   "file": "MPrivate/NS/ThirdCoefficient/ActualLowRoute.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{Vlow C aLow Y : ℝ} (h : LowCoefficientRoute Vlow C aLow Y) : Vlow ≤ C * aLow * Y"
+  },
+  {
+   "name": "MPrivate.NS.ThirdCoefficient.ActualLowRoute.direct_route_gives_full_low_bound",
+   "file": "MPrivate/NS/ThirdCoefficient/ActualLowRoute.lean",
+   "line": 32,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{Vlow epsLow Z C aLow Y : ℝ} (h : LowDirectRoute Vlow epsLow Z) (hC : 0 ≤ C) (ha : 0 ≤ aLow) (hY : 0 ≤ Y) : Vlow ≤ epsLow * Z + C * aLow * Y"
+  }
+ ],
+ "closed": 2,
+ "files_sha256": {
+  "MPrivate/NS/ThirdCoefficient/ActualLowRoute.lean": "60f81cea27ea3eccc4b5966571ddb04be85ddd2de1743f682e67235af9f13e04",
+  "lakefile.lean": "8e24d7248b6220c7b5fff5d2697559767b052ca6725c05b962a8047691741027",
+  "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88"
+ },
+ "published_at": "2026-10-29T01:37:32Z",
+ "certificate_sha256": "cb4a0263b4062bbfc8ed1abea89b40762d11a4705e098b74aa13eab2ae6dd8b9"
+}

@@ -1,0 +1,90 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "audit/closure-target-tree-v56",
+ "branch_state": "parada",
+ "head_commit": "31869e70b3262497afccef17eb571b40bfce6eed",
+ "head_commit_date": "2026-09-13T19:19:17+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "31869e70b3262497afccef17eb571b40bfce6eed",
+   "date": "2026-09-13T19:19:17+02:00",
+   "subject": "audit: record noncircular DynamicCampanato DAG and hDynamic status"
+  },
+  {
+   "commit": "0b310a128736980dc99d9fc6859d992acc952bf4",
+   "date": "2026-09-13T19:18:53+02:00",
+   "subject": "formal: add dynamic critical geometry interface with open hDynamic bridge"
+  },
+  {
+   "commit": "631a230acfddcc57d805cc58b9c06124318153d6",
+   "date": "2026-09-13T19:18:32+02:00",
+   "subject": "formal: add noncircular DynamicCampanato audit interface"
+  },
+  {
+   "commit": "5b69a61484194010df3800ff3a1037830844ca5a",
+   "date": "2026-09-13T19:08:34+02:00",
+   "subject": "audit: attack hDynamic theorem and isolate noncircular blockers"
+  },
+  {
+   "commit": "b864bef70fe72563203515d10951c68bd64427b4",
+   "date": "2026-09-13T16:59:13+02:00",
+   "subject": "audit: expand pre-date evidence ledger across all discovered NS commits"
+  },
+  {
+   "commit": "e7c50f02f7fecfc570b1d954068259508d504c3c",
+   "date": "2026-09-13T16:35:35+02:00",
+   "subject": "audit: record exact stabilization results commits and proof ledger"
+  },
+  {
+   "commit": "572a4dd7a5f19d46e7fc0f38828f332505da1d63",
+   "date": "2026-09-13T15:58:32+02:00",
+   "subject": "audit: document pre-2026 code provenance for NS critical architecture"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "padrão do elan"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "G1Audit.hDynamic_from_dynamic_campanato",
+   "file": "formal/G1/DynamicCampanato.lean",
+   "line": 134,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {Point : Type u_1} (d : G1Audit.DynamicCampanatoData Point) (hDynamic : Prop),   G1Audit.DynamicCampanatoBridge d → G1Audit.CampanatoToHDynamic d hDynamic → hDynamic"
+  },
+  {
+   "name": "G1Audit.hDynamic_if_campanato_closes",
+   "file": "formal/G1/G1_DynamicCriticalGeometry.lean",
+   "line": 67,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{Point State : Type*} (pde : XiEpsPDE State) (geom : DynamicCriticalGeometryData Point) (rem : RemainderCutoffFreeWitness) (hDynamic : Prop) (analytic : PDEToDynamicCampanato pde geom rem) (embedding : HDynamicOpenBridge geom hDynamic) : hDynamic"
+  },
+  {
+   "name": "G1Audit.signed_depletion_if_dynamic_geometry_closes",
+   "file": "formal/G1/G1_DynamicCriticalGeometry.lean",
+   "line": 91,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{Point State : Type*} (pde : XiEpsPDE State) (geom : DynamicCriticalGeometryData Point) (rem : RemainderCutoffFreeWitness) (hDynamic signedDepletion : Prop) (analytic : PDEToDynamicCampanato pde geom rem) (embedding : HDynamicOpenBridge geom hDynamic) (downstream : HDynamicToSignedDepletion hDynamic signedDepletion) : signedDepletion"
+  }
+ ],
+ "closed": 1,
+ "files_sha256": {
+  "formal/G1/DynamicCampanato.lean": "ec175c7b6254491f7707bad7729432bb0fdbbfb82b4ebade9e9fa526f289e144"
+ },
+ "published_at": "2026-10-29T01:37:32Z",
+ "certificate_sha256": "763858c08e218efe58876674ca704c24d042776b53a93ebfe52494f61625a73c"
+}

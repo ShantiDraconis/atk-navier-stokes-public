@@ -1,0 +1,4 @@
+b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526  branches/navier-stokes-critical-barrier-audit/frozen_ns-conditional-closure-ba79d393/lake-manifest.json
+d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c  branches/navier-stokes-critical-barrier-audit/frozen_ns-conditional-closure-ba79d393/lakefile.toml
+ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87  branches/navier-stokes-critical-barrier-audit/frozen_ns-conditional-closure-ba79d393/lean-toolchain
+24699360014548f2c08289993a02bb037c8525ab1930e14248382f91c3a7a9d4  branches/navier-stokes-critical-barrier-audit/frozen_ns-conditional-closure-ba79d393/open-math/navier-stokes/claim/NavierStokesMinimalClaim.lean

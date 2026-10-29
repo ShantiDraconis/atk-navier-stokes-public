@@ -1,0 +1,77 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "atk/falsified-terminal-inhabitants-20260930",
+ "branch_state": "parada",
+ "head_commit": "90b242569d434d4d3189257cf44fd23bc4e3b3f9",
+ "head_commit_date": "2026-09-30T17:09:40+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "90b242569d434d4d3189257cf44fd23bc4e3b3f9",
+   "date": "2026-09-30T17:09:40+02:00",
+   "subject": "ATK FALSIFIED: verify NS terminal propagation mock"
+  },
+  {
+   "commit": "a22f8a9f383c75af3b9e024f7c87f0f91ca10fd9",
+   "date": "2026-09-30T17:07:30+02:00",
+   "subject": "ATK FALSIFIED: inject exact terminal inhabitant for propagation test"
+  },
+  {
+   "commit": "a03eda02b97dfc98133ad3d7abd2e20bdd3ef1fc",
+   "date": "2026-09-30T13:56:12+02:00",
+   "subject": "ATK: add minimal terminal auto-compose workflow"
+  },
+  {
+   "commit": "2fa1fff3eed4c59d7c4b6558c9a1b1a45b4c6e55",
+   "date": "2026-09-30T13:56:10+02:00",
+   "subject": "ATK: proof-first composition on terminal branch"
+  },
+  {
+   "commit": "e41b8955daefdf3ed9a38b7e99e19bd7dc82f93a",
+   "date": "2026-09-30T12:27:03+02:00",
+   "subject": "ATK: trigger direct terminal verification"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:stable",
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "NSAutoCompose.extract",
+   "file": "audit/producer-first/AutoCompose.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} (c : TheoremCertificate P) : P"
+  },
+  {
+   "name": "NSProducerFirst.falsified_terminal_is_inhabited",
+   "file": "audit/producer-first/FalsifiedTerminal.lean",
+   "line": 14,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(State : Type) (ActualNS : State → Prop) (ν : ℝ) (data : State → EnstrophyData) : Nonempty (ActualNSToSignedGain State ActualNS ν data)"
+  }
+ ],
+ "closed": 1,
+ "files_sha256": {
+  "audit/producer-first/AutoCompose.lean": "4a2f14c3a198429a55ac646fbcb24efc399a6827c8c9ffb1bd9f09ba5f661d12",
+  "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
+  "lakefile.toml": "d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c",
+  "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87"
+ },
+ "published_at": "2026-10-29T01:37:32Z",
+ "certificate_sha256": "088281a7e85e12b41f8063198c0290f82f50f6f9cc85e0cd5c756078ee2be9ca"
+}

@@ -626,6 +626,6 @@
   "formal/lean/lakefile.toml": "ae588249ee34ba35be93608e76703456a73ba966cc13cd08f1a2383af9d901f1",
   "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
  },
- "published_at": "2026-10-29T01:37:32Z",
- "certificate_sha256": "a2693a1008702592d66d4c2501cf061dd63f1afa6b5a5dff24da094176025050"
+ "published_at": "2026-10-29T02:47:15Z",
+ "certificate_sha256": "6427746637d422dfcf72ff08c5a791cb2da617413943a8fbcb279304861e1033"
 }

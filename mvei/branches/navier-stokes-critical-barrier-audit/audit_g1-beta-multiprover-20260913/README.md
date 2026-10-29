@@ -5,7 +5,7 @@ Lean sources from the branch `audit/g1-beta-multiprover-20260913` of the private
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 12 — closed 7, conditional 0, open 0, proof error 5, not reached 0, no result 0.
 * History: 13 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `2154f79ae38e9961d5152dbe22bacba30f79173e2961ceb5051394e3cb45b899`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/audit_g1-beta-multiprover-20260913/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `584ac88adb12ec25cdcd7056bfb6c25c3474a128d89c3d6455aa4dd381293b94`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/audit_g1-beta-multiprover-20260913/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

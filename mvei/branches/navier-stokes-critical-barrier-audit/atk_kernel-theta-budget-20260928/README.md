@@ -5,7 +5,7 @@ Lean sources from the branch `atk/kernel-theta-budget-20260928` of the private r
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 85 — closed 56, conditional 0, open 0, proof error 2, not reached 27, no result 0.
 * History: 150 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `aa13c2d0cb5f7c57787eaf49e079d4c5bcf15d499a94693dc80c964d4783d116`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/atk_kernel-theta-budget-20260928/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `64b07a0fd4b61e80e574ef923daf715b23d4e5e54f7a3aa14d5fc664f3ec0714`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/atk_kernel-theta-budget-20260928/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

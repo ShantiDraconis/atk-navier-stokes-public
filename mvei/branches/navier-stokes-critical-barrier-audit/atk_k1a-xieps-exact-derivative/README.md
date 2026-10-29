@@ -5,7 +5,7 @@ Lean sources from the branch `atk/k1a-xieps-exact-derivative` of the private rep
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 12 — closed 4, conditional 0, open 0, proof error 3, not reached 5, no result 0.
 * History: 92 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `95cb99fa52cc40a2b1af5c5088897fc3bfc89a139e73165c5dd7bcf92650c799`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/atk_k1a-xieps-exact-derivative/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `e24504d85bf9016a27acacc7849b3497c575f6fd74687e21c26ab9abb0e04371`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/atk_k1a-xieps-exact-derivative/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

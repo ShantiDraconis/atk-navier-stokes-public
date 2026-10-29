@@ -117,6 +117,6 @@
   "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87",
   "open-math/navier-stokes/claim/NavierStokesMinimalClaim.lean": "24699360014548f2c08289993a02bb037c8525ab1930e14248382f91c3a7a9d4"
  },
- "published_at": "2026-10-29T06:27:33Z",
- "certificate_sha256": "7f7a9557268dfc990663661e20facb3ff512193d8b5832d02938d7186c39015b"
+ "published_at": "2026-10-29T20:16:17Z",
+ "certificate_sha256": "58e6090da527ab9906433f35f75240c915e13c98ad3ef05502963cafbb3d2113"
 }

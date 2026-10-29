@@ -5,7 +5,7 @@ Lean sources from the branch `audit/closure-target-tree-v56` of the private repo
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 3 — closed 1, conditional 0, open 0, proof error 2, not reached 0, no result 0.
 * History: 7 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `9a098d42be722029fc31975b98e9e4e28608b6eb393e15e0bbf0661a23908a38`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/audit_closure-target-tree-v56/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `372796c88633d2b94c9e57e7173b67eb011ed8a888dfef0ba88d265f8645d9cc`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/audit_closure-target-tree-v56/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

@@ -5,7 +5,7 @@ Lean sources from the branch `attack/ns003-o1-core-v419` of the private reposito
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 17 — closed 8, conditional 0, open 0, proof error 3, not reached 6, no result 0.
 * History: 114 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `923de2e25e74fc55700d6bdf7439e6f177acc1a543deeb1ca83872b62da96aa1`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/attack_ns003-o1-core-v419/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `b98ea708b6e3888b4bdc5bebd51bb53b966e8b845de2e6b2965f80d941d0fb2b`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/attack_ns003-o1-core-v419/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

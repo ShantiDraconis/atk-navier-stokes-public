@@ -5,7 +5,7 @@ Lean sources from the branch `attack/n01-reuse-bulk-tail-20260921` of the privat
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 10 — closed 10, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 101 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `9c65d561ede02aa512bde2f1040b93c33337a5474615ccc979bd0a0aacd092e0`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/attack_n01-reuse-bulk-tail-20260921/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `f7181a88278d85e9de3d29a829fb8836d5bbf1055c6725ef4d1d01f0fa23bbde`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/attack_n01-reuse-bulk-tail-20260921/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

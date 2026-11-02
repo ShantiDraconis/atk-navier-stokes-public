@@ -1138,7 +1138,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-29T05:36:17+00:00",
+  "generated_at": "2026-10-30T16:50:26+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -1155,7 +1155,7 @@
    "name": "CriticalBarrier.OpenMath.NavierStokes.MinimalGreen.uniform_bulk_tail_implies_strict_signed_depletion",
    "file": "open-math/navier-stokes/actualns-g1/MinimalGreenCore.lean",
    "line": 44,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS : State → Prop) (D : PDEData (State"
   },
@@ -1163,7 +1163,7 @@
    "name": "CriticalBarrier.OpenMath.NavierStokes.bulkTail_implies_openMathCore",
    "file": "formal/lean/CriticalBarrier/OpenMath/NavierStokes/G1StrictAdapter.lean",
    "line": 48,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS : State → Prop) (D : NSG1ProducerFastPath.Data (State"
   },
@@ -1171,7 +1171,7 @@
    "name": "CriticalBarrier.OpenMath.NavierStokes.g1Bridge_of_openMathCore",
    "file": "formal/lean/CriticalBarrier/OpenMath/NavierStokes/OpenMathCore.lean",
    "line": 78,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{ActualNS : State → Prop} {D : PhysicalStretchingData (State"
   },
@@ -1179,7 +1179,7 @@
    "name": "CriticalBarrier.OpenMath.NavierStokes.g1Producer_implies_openMathCore",
    "file": "formal/lean/CriticalBarrier/OpenMath/NavierStokes/G1StrictAdapter.lean",
    "line": 37,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS : State → Prop) (D : NSG1ProducerFastPath.Data (State"
   },
@@ -1187,7 +1187,7 @@
    "name": "CriticalBarrier.OpenMath.NavierStokes.global_regularity_from_actualNS_producer",
    "file": "open-math/navier-stokes/actualns-g1/ActualNSToG1Bridge.lean",
    "line": 48,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop) (hProducer : ActualNSProducer ActualNS) (hDown : DownstreamClosure ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity) : ∀ u, ActualNS u → GlobalRegularity u"
   },
@@ -1195,7 +1195,7 @@
    "name": "G1WeightedLow.gamma_effective_eq_neg35",
    "file": "formal/G1/WeightedLow.lean",
    "line": 115,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": gamma_effective = (-35 : ℝ)"
   },
@@ -1203,7 +1203,7 @@
    "name": "G1WeightedLow.gamma_effective_not_positive",
    "file": "formal/G1/WeightedLow.lean",
    "line": 124,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ (0 < gamma_effective)"
   },
@@ -1211,7 +1211,7 @@
    "name": "G1WeightedLow.no_canonical_absorption_at_gamma_effective",
    "file": "formal/G1/WeightedLow.lean",
    "line": 128,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ ∃ wa : WeightedAbsorptionData, wa.γ = gamma_effective"
   },
@@ -1219,7 +1219,7 @@
    "name": "NSActualNSToSubcriticalCoupling.actualNS_to_subcriticalCoupling",
    "file": "open-math/navier-stokes/claim/ActualNSToSubcriticalCouplingLane.lean",
    "line": 115,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{State : Type} {NSPredicate : NSEData → State → Prop} (D : NSEData) (nsToQ : ActualNSToDynamicQ State NSPredicate D) (qToKernel : DynamicQToKernel State D) (kernelToTail : KernelToTail State D) (nsToLow : ActualNSToLowFrequency State NSPredicate D) (strictBudget : StrictCombinedBudget State NSPredicate D) (strictEvidence : ∀ u : State, ∀ hu : ActualNS NSPredicate D u, strictBudget.bridge u hu (nsT"
   },
@@ -1227,7 +1227,7 @@
    "name": "NSActualNSToSubcriticalCoupling.subcriticalCoupling_of_controls",
    "file": "open-math/navier-stokes/claim/ActualNSToSubcriticalCouplingLane.lean",
    "line": 102,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{State : Type} {D : NSEData} {u : State} (low : LowFrequencyControl D u) (tail : ExceptionalTailControl D u) (hstrict : low.lowBound + tail.tailBound < 1) : SubcriticalCoupling (assembleLP low tail)"
   },
@@ -1235,7 +1235,7 @@
    "name": "NSAllCertifiedReuseMaster.enable_final_theorem_from_open_math_core",
    "file": "open-math/navier-stokes/claim/AllCertifiedReuseMaster.lean",
    "line": 31,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop) (D : PhysicalStretchingData (State"
   },
@@ -1243,7 +1243,7 @@
    "name": "NSAllCertifiedReuseMaster.only_core_needed_for_terminal",
    "file": "open-math/navier-stokes/claim/AllCertifiedReuseMaster.lean",
    "line": 58,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop) (D : PhysicalStretchingData (State"
   },
@@ -1251,7 +1251,7 @@
    "name": "NSAmplitudeInvariantNoGo.no_fixed_delta_from_amplitude_invariant_certificate",
    "file": "open-math/navier-stokes/logic-refutation/AmplitudeInvariantFixedDeltaNoGo.lean",
    "line": 27,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(M : ScalingModel (State"
   },
@@ -1259,7 +1259,7 @@
    "name": "NSBulkTailTerminal.openMath_implies_strict_budget",
    "file": "open-math/navier-stokes/claim/BulkTailTerminal.lean",
    "line": 102,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS : State → Prop) (D : Data (State"
   },
@@ -1267,7 +1267,7 @@
    "name": "NSBulkTailTerminal.producer_implies_uniform_margin",
    "file": "open-math/navier-stokes/claim/BulkTailTerminal.lean",
    "line": 57,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS : State → Prop) (D : Data (State"
   },
@@ -1275,7 +1275,7 @@
    "name": "NSClaimProducers.ProofLane.actual_regularity_implies_habitability",
    "file": "open-math/navier-stokes/claim/ProofProducer.lean",
    "line": 80,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(D : ActualNSData (State"
   },
@@ -1283,7 +1283,7 @@
    "name": "NSClaimProducers.ProofLane.inputs_imply_actual_regularity",
    "file": "open-math/navier-stokes/claim/ProofProducer.lean",
    "line": 89,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(D : ActualNSData (State"
   },
@@ -1291,7 +1291,7 @@
    "name": "NSClaimProducers.ProofLane.inputs_imply_habitability",
    "file": "open-math/navier-stokes/claim/ProofProducer.lean",
    "line": 71,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(D : ActualNSData (State"
   },
@@ -1299,7 +1299,7 @@
    "name": "NSClaimProducers.RefutationLane.all_actual_regular_excludes_refutation",
    "file": "open-math/navier-stokes/claim/RefutationProducer.lean",
    "line": 77,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(D : ActualNSData (State"
   },
@@ -1307,7 +1307,7 @@
    "name": "NSClaimProducers.RefutationLane.exclusion_implies_actual_irregular",
    "file": "open-math/navier-stokes/claim/RefutationProducer.lean",
    "line": 64,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(D : ActualNSData (State"
   },
@@ -1315,7 +1315,7 @@
    "name": "NSClaimProducers.RefutationLane.inputs_imply_exclusion",
    "file": "open-math/navier-stokes/claim/RefutationProducer.lean",
    "line": 49,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(D : ActualNSData (State"
   },
@@ -1323,7 +1323,7 @@
    "name": "NSClaimTests.Proof.producer_implies_habitability",
    "file": "open-math/navier-stokes/claim/ProofLaneClaimTest.lean",
    "line": 36,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(D : ActualNSData (State"
   },
@@ -1331,7 +1331,7 @@
    "name": "NSClaimTests.Refutation.producer_implies_exclusion",
    "file": "open-math/navier-stokes/claim/RefutationLaneClaimTest.lean",
    "line": 39,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(D : ActualNSData (State"
   },
@@ -1339,7 +1339,7 @@
    "name": "NSClosedArchitecture.bulk_tail_closes_signed_depletion",
    "file": "open-math/navier-stokes/claim/NavierStokesClosedArchitecture.lean",
    "line": 53,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS : State → Prop) (D : Data (State"
   },
@@ -1347,7 +1347,7 @@
    "name": "NSClosedArchitecture.g1_closes_if_downstream",
    "file": "open-math/navier-stokes/claim/NavierStokesClosedArchitecture.lean",
    "line": 129,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS GlobalRegularity : State → Prop) (D : Data (State"
   },
@@ -1355,7 +1355,7 @@
    "name": "NSClosedArchitecture.navier_stokes_closed_from_G1",
    "file": "open-math/navier-stokes/claim/NavierStokesClosedArchitecture.lean",
    "line": 140,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS GlobalRegularity : State → Prop) (D : Data (State"
   },
@@ -1363,7 +1363,7 @@
    "name": "NSClosedArchitecture.navier_stokes_closed_if_producers",
    "file": "open-math/navier-stokes/claim/NavierStokesClosedArchitecture.lean",
    "line": 151,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS GlobalRegularity : State → Prop) (D : Data (State"
   },
@@ -1371,7 +1371,7 @@
    "name": "NSDualLane.Boundary.ready_requires_asymmetry",
    "file": "open-math/navier-stokes/claim/ScientificBoundary.lean",
    "line": 22,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(B : ScientificBoundary) (h : Ready B) : B.proofLane ≠ B.refutationLane"
   },
@@ -1379,7 +1379,7 @@
    "name": "NSDualLane.Proof.proof_lane_implies_habitability",
    "file": "open-math/navier-stokes/claim/ProofLane.lean",
    "line": 53,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(D : ActualNSData (State"
   },
@@ -1387,7 +1387,7 @@
    "name": "NSDualLane.Refutation.refutation_lane_implies_refuted",
    "file": "open-math/navier-stokes/claim/RefutationLane.lean",
    "line": 51,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(D : ActualNSData (State"
   },
@@ -1395,7 +1395,7 @@
    "name": "NSDualLaneTerminal.open_open_no_final_fail",
    "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
    "line": 117,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ FinalFail openState"
   },
@@ -1403,7 +1403,7 @@
    "name": "NSDualLaneTerminal.open_open_no_root",
    "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
    "line": 121,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": WinningRoot openEvidence = none"
   },
@@ -1411,7 +1411,7 @@
    "name": "NSDualLaneTerminal.open_open_not_ready",
    "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
    "line": 113,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ Ready openState openEvidence"
   },
@@ -1419,7 +1419,7 @@
    "name": "NSDualLaneTerminal.proof_and_refutation_closed_contradict",
    "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
    "line": 125,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{State : Type} (ActualNS regular : State → Prop) (S : ScientificState) (hProofSem : S.proofClosed → ∀ u, ActualNS u → regular u) (hRefSem : S.refutationClosed → ∃ u, ActualNS u ∧ ¬ regular u) : ¬ (S.proofClosed ∧ S.refutationClosed)"
   },
@@ -1427,7 +1427,7 @@
    "name": "NSDualLaneTerminal.proof_terminal_ready",
    "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
    "line": 62,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(S : ScientificState) (hProof : S.proofClosed) (hRefFail : S.refutationFailed) (proofSha finalFailSha : String) : Ready S (proofTerminal proofSha finalFailSha)"
   },
@@ -1435,7 +1435,7 @@
    "name": "NSDualLaneTerminal.ready_implies_final_fail",
    "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
    "line": 80,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(S : ScientificState) (E : TerminalEvidence) (h : Ready S E) : FinalFail S"
   },
@@ -1443,7 +1443,7 @@
    "name": "NSDualLaneTerminal.ready_implies_root_present",
    "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
    "line": 89,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(S : ScientificState) (E : TerminalEvidence) (h : Ready S E) : (WinningRoot E).isSome = true"
   },
@@ -1451,7 +1451,7 @@
    "name": "NSDualLaneTerminal.refutation_terminal_ready",
    "file": "open-math/navier-stokes/claim/DualLaneTerminal.lean",
    "line": 71,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(S : ScientificState) (hRef : S.refutationClosed) (hProofFail : S.proofFailed) (refutationSha finalFailSha : String) : Ready S (refutationTerminal refutationSha finalFailSha)"
   },
@@ -1459,7 +1459,7 @@
    "name": "NSEnergyCompressionBarrier.fiber_unbounded_implies_no_energy_only_control",
    "file": "open-math/navier-stokes/logic-refutation/EnergyCompressionBarrier.lean",
    "line": 26,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(Admissible : State → Prop) (energyProjection : State → EnergyData) (criticalResidual : State → ℝ) (h : CriticalUnboundedOnFiber Admissible energyProjection criticalResidual) : ¬ EnergyOnlyControl Admissible energyProjection criticalResidual"
   },
@@ -1467,7 +1467,7 @@
    "name": "NSEnergyCompressionBarrier.fiber_unbounded_implies_no_factorization",
    "file": "open-math/navier-stokes/logic-refutation/EnergyCompressionBarrier.lean",
    "line": 49,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(Admissible : State → Prop) (energyProjection : State → EnergyData) (criticalResidual : State → ℝ) (h : CriticalUnboundedOnFiber Admissible energyProjection criticalResidual) : ¬ EnergyOnlyFactorization Admissible energyProjection criticalResidual"
   },
@@ -1475,7 +1475,7 @@
    "name": "NSFiberUnboundedFromScaling.scaling_witness_implies_fiber_unbounded",
    "file": "open-math/navier-stokes/logic-refutation/FiberUnboundedFromScaling.lean",
    "line": 31,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(Admissible : State → Prop) (energyProjection : State → EnergyData) (criticalResidual : State → ℝ) (W : ScalingWitness Admissible energyProjection criticalResidual) : CriticalUnboundedOnFiber Admissible energyProjection criticalResidual"
   },
@@ -1483,7 +1483,7 @@
    "name": "NSFinalAssembler.ready_implies_root_present",
    "file": "open-math/navier-stokes/claim/FinalRootAssembler.lean",
    "line": 32,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(E : RootEvidence) (h : Ready E) : (WinningRoot E).isSome"
   },
@@ -1491,7 +1491,7 @@
    "name": "NSFinalAssembler.ready_requires_final_fail_sha",
    "file": "open-math/navier-stokes/claim/FinalRootAssembler.lean",
    "line": 42,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(E : RootEvidence) (h : Ready E) : E.finalFailSha.isSome"
   },
@@ -1499,7 +1499,7 @@
    "name": "NSFinalProofClaim.final_proof_of_bridge",
    "file": "open-math/navier-stokes/claim/FINAL_PROOF_CLAIM.lean",
    "line": 63,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS : Prop) (bridge : ActualNSToQuantumClosure (H"
   },
@@ -1509,7 +1509,7 @@
    "line": 90,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(ActualNS : State → Prop) (D : Data (State"
+   "statement": "∀ {State : Type} (ActualNS : State → Prop) (D : NSG1ProducerFastPath.Data),   NSG1ProducerFastPath.BulkTailProducer ActualNS D → NSG1ProducerFastPath.ProducerExists ActualNS D"
   },
   {
    "name": "NSG1ProducerFastPath.producer_implies_closed",
@@ -1517,13 +1517,13 @@
    "line": 36,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(ActualNS : State → Prop) (D : Data (State"
+   "statement": "∀ {State : Type} (ActualNS : State → Prop) (D : NSG1ProducerFastPath.Data),   NSG1ProducerFastPath.G1Producer ActualNS D → NSG1ProducerFastPath.G1Closed ActualNS D"
   },
   {
    "name": "NSG1eActualNSMapCertificate.g1e_iff_open_math_core",
    "file": "open-math/navier-stokes/claim/G1eActualNSMapCertificate.lean",
    "line": 42,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS : State → Prop) (D : PhysicalStretchingData (State"
   },
@@ -1531,7 +1531,7 @@
    "name": "NSG1eActualNSMapCertificate.g1e_implies_open_math_core",
    "file": "open-math/navier-stokes/claim/G1eActualNSMapCertificate.lean",
    "line": 23,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS : State → Prop) (D : PhysicalStretchingData (State"
   },
@@ -1539,7 +1539,7 @@
    "name": "NSG1eActualNSMapCertificate.open_math_core_implies_g1e",
    "file": "open-math/navier-stokes/claim/G1eActualNSMapCertificate.lean",
    "line": 32,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS : State → Prop) (D : PhysicalStretchingData (State"
   },
@@ -1547,7 +1547,7 @@
    "name": "NSHabitantCertificate.inhabitant_closes_terminal",
    "file": "open-math/navier-stokes/claim/NSHabitantCertificate.lean",
    "line": 54,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(SolvesNavierStokes : InitialData → (ℝ → VelocityField) → Prop) (SmoothGlobal : (ℝ → VelocityField) → Prop) (FiniteTimeBlowUp : InitialData → ℝ → Prop) (H : NSHabitant SolvesNavierStokes SmoothGlobal FiniteTimeBlowUp) : GlobalRegularityClaim SolvesNavierStokes SmoothGlobal ∨ BlowUpClaim FiniteTimeBlowUp"
   },
@@ -1555,7 +1555,7 @@
    "name": "NSHabitantCertificate.ns_closed_of_blowup",
    "file": "open-math/navier-stokes/claim/NSHabitantCertificate.lean",
    "line": 48,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(FiniteTimeBlowUp : InitialData → ℝ → Prop) (H : NSBlowUpHabitant FiniteTimeBlowUp) : BlowUpClaim FiniteTimeBlowUp"
   },
@@ -1563,7 +1563,7 @@
    "name": "NSHabitantCertificate.ns_closed_of_global",
    "file": "open-math/navier-stokes/claim/NSHabitantCertificate.lean",
    "line": 40,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(SolvesNavierStokes : InitialData → (ℝ → VelocityField) → Prop) (SmoothGlobal : (ℝ → VelocityField) → Prop) (H : NSGlobalHabitant SolvesNavierStokes SmoothGlobal) : GlobalRegularityClaim SolvesNavierStokes SmoothGlobal"
   },
@@ -1571,7 +1571,7 @@
    "name": "NSHabitantCertificate.open_math_producer_closes_terminal",
    "file": "open-math/navier-stokes/claim/NSHabitantCertificate.lean",
    "line": 73,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(SolvesNavierStokes : InitialData → (ℝ → VelocityField) → Prop) (SmoothGlobal : (ℝ → VelocityField) → Prop) (FiniteTimeBlowUp : InitialData → ℝ → Prop) (h : OpenMathProducer SolvesNavierStokes SmoothGlobal FiniteTimeBlowUp) : GlobalRegularityClaim SolvesNavierStokes SmoothGlobal ∨ BlowUpClaim FiniteTimeBlowUp"
   },
@@ -1579,7 +1579,7 @@
    "name": "NSHabitantEnable.build_h_pos",
    "file": "open-math/navier-stokes/claim/NSHabitantEnable.lean",
    "line": 45,
-   "state": "erro",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(hCritical : CriticalProducer IsMaximalSmoothNS CriticalL3Finite) (hEndpoint : Endpoint IsMaximalSmoothNS CriticalL3Finite GlobalSmoothTraj) (B : PositiveConstructionBridge IsMaximalSmoothNS GlobalSmoothTraj SolvesNavierStokes SmoothGlobal) : NSHabitantCertificate.NSGlobalHabitant SolvesNavierStokes SmoothGlobal"
   },
@@ -1587,7 +1587,7 @@
    "name": "NSHabitantEnable.enable_from_critical",
    "file": "open-math/navier-stokes/claim/NSHabitantEnable.lean",
    "line": 77,
-   "state": "erro",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(hCritical : CriticalProducer IsMaximalSmoothNS CriticalL3Finite) (hEndpoint : Endpoint IsMaximalSmoothNS CriticalL3Finite GlobalSmoothTraj) (B : PositiveConstructionBridge IsMaximalSmoothNS GlobalSmoothTraj SolvesNavierStokes SmoothGlobal) : NSHabitantCertificate.NSHabitant SolvesNavierStokes SmoothGlobal FiniteTimeBlowUp"
   },
@@ -1595,7 +1595,7 @@
    "name": "NSHabitantEnable.enable_terminal_positive",
    "file": "open-math/navier-stokes/claim/NSHabitantEnable.lean",
    "line": 69,
-   "state": "erro",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(hPos : NSHabitantCertificate.NSGlobalHabitant SolvesNavierStokes SmoothGlobal) : NSHabitantCertificate.NSHabitant SolvesNavierStokes SmoothGlobal FiniteTimeBlowUp"
   },
@@ -1603,7 +1603,7 @@
    "name": "NSLimitClosureF7F1.exact_material_gap",
    "file": "open-math/navier-stokes/claim/LimitClosureF7F1.lean",
    "line": 84,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(P : State → Prop) (A : ApproximatingLane (State"
   },
@@ -1611,7 +1611,7 @@
    "name": "NSLimitClosureF7F1.limit_property_closure",
    "file": "open-math/navier-stokes/claim/LimitClosureF7F1.lean",
    "line": 52,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(P : State → Prop) (A : ApproximatingLane (State"
   },
@@ -1619,7 +1619,7 @@
    "name": "NSLimitClosureF7F1.navier_stokes_limit_closure",
    "file": "open-math/navier-stokes/claim/LimitClosureF7F1.lean",
    "line": 62,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(P GlobalSmooth : State → Prop) (A : ApproximatingLane (State"
   },
@@ -1627,7 +1627,7 @@
    "name": "NSLimitClosureF7F1.open_math_producer_enables_theorem",
    "file": "open-math/navier-stokes/claim/LimitClosureF7F1.lean",
    "line": 75,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(P GlobalSmooth : State → Prop) (A : ApproximatingLane (State"
   },
@@ -1635,7 +1635,7 @@
    "name": "NSOpenMathCoreToG1Producer.openMathCore_implies_fastClosed",
    "file": "open-math/navier-stokes/claim/OpenMathCoreToG1Producer.lean",
    "line": 42,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{ActualNS : State → Prop} {D : PhysicalStretchingData (State"
   },
@@ -1643,7 +1643,7 @@
    "name": "NSOpenMathCoreToG1Producer.openMathCore_implies_fastProducerExists",
    "file": "open-math/navier-stokes/claim/OpenMathCoreToG1Producer.lean",
    "line": 34,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{ActualNS : State → Prop} {D : PhysicalStretchingData (State"
   },
@@ -1651,7 +1651,7 @@
    "name": "NSPositiveHabitantCore.open_math_exact",
    "file": "open-math/navier-stokes/claim/NSPositiveHabitantCore.lean",
    "line": 42,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": OpenMathProducer Admissible IsMaximalSmoothNS CriticalL3Finite ↔ UniformCriticalL3Producer Admissible IsMaximalSmoothNS CriticalL3Finite"
   },
@@ -1659,7 +1659,7 @@
    "name": "NSPositiveHabitantCore.producer_enables_global",
    "file": "open-math/navier-stokes/claim/NSPositiveHabitantCore.lean",
    "line": 27,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(hProducer : UniformCriticalL3Producer Admissible IsMaximalSmoothNS CriticalL3Finite) (hEndpoint : EndpointCertificate Admissible IsMaximalSmoothNS CriticalL3Finite GlobalSmooth) : ∀ u0, Admissible u0 → ∀ u, IsMaximalSmoothNS u0 u → GlobalSmooth u0 u"
   },
@@ -1667,7 +1667,7 @@
    "name": "NSQuantumClosureClaim.actualNS_closes_quantum_lane",
    "file": "open-math/navier-stokes/claim/QuantumClosureClaim.lean",
    "line": 90,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS : Prop) (bridge : ActualNSToQuantumClosure (H"
   },
@@ -1675,7 +1675,7 @@
    "name": "NSQuantumClosureClaim.close_of_realization",
    "file": "open-math/navier-stokes/claim/QuantumClosureClaim.lean",
    "line": 72,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(P : QuantumClosurePackage (H"
   },
@@ -1683,7 +1683,7 @@
    "name": "NSThreeCaseClosure.close_open_math_of_admissible",
    "file": "open-math/navier-stokes/claim/ThreeCaseClosure.lean",
    "line": 52,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{OpenMathClosed : Prop} (W : ClosureWitnesses OpenMathClosed) (s : PairState) (hs : admissible s) : OpenMathClosed"
   },
@@ -1691,7 +1691,7 @@
    "name": "NSThreeCaseClosure.enable_final_theorem",
    "file": "open-math/navier-stokes/claim/ThreeCaseClosure.lean",
    "line": 72,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(E : TheoremEnablement) (s : PairState) (hs : admissible s) : E.FinalTheorem"
   },
@@ -1699,7 +1699,7 @@
    "name": "NSThreeCaseClosure.false_false_admissible",
    "file": "open-math/navier-stokes/claim/ThreeCaseClosure.lean",
    "line": 43,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": admissible ⟨.false, .false⟩"
   },
@@ -1707,7 +1707,7 @@
    "name": "NSThreeCaseClosure.false_true_admissible",
    "file": "open-math/navier-stokes/claim/ThreeCaseClosure.lean",
    "line": 35,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": admissible ⟨.false, .true⟩"
   },
@@ -1715,7 +1715,7 @@
    "name": "NSThreeCaseClosure.true_false_admissible",
    "file": "open-math/navier-stokes/claim/ThreeCaseClosure.lean",
    "line": 39,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": admissible ⟨.true, .false⟩"
   },
@@ -1723,7 +1723,7 @@
    "name": "NSThreeCaseClosure.true_true_excluded",
    "file": "open-math/navier-stokes/claim/ThreeCaseClosure.lean",
    "line": 31,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ admissible ⟨.true, .true⟩"
   },
@@ -1731,7 +1731,7 @@
    "name": "NSUnconditionalClaimCertificate.certificate_enables_final_theorem",
    "file": "open-math/navier-stokes/claim/UnconditionalClaimCertificate.lean",
    "line": 24,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop) (D : PhysicalStretchingData (State"
   },
@@ -1739,43 +1739,17 @@
    "name": "NSUnconditionalClaimCertificate.certificate_requires_open_math_core",
    "file": "open-math/navier-stokes/claim/UnconditionalClaimCertificate.lean",
    "line": 38,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop) (D : PhysicalStretchingData (State"
   }
  ],
- "closed": 58,
+ "closed": 2,
  "files_sha256": {
-  "formal/G1/WeightedLow.lean": "7ce283704eb794c67ae1d798739792c2c0ccc7f72afe0a0fb0c4470767bc3fc6",
   "formal/lean/CriticalBarrier/OpenMath/NavierStokes/G1ProducerFastPath.lean": "742f2323663a17bd66c0025bcb83c54624a54911f696ec479f7305a85f4da154",
   "formal/lean/lakefile.toml": "ae588249ee34ba35be93608e76703456a73ba966cc13cd08f1a2383af9d901f1",
-  "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
-  "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
-  "lakefile.toml": "d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c",
-  "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87",
-  "open-math/navier-stokes/actualns-g1/MinimalGreenCore.lean": "258538c2997851516f309dc9baa9680a3c4ab2d988205d0c07dc2f95e95ac502",
-  "open-math/navier-stokes/claim/ActualNSToSubcriticalCouplingLane.lean": "245b05694642c498572b2d23deb731348cbe14a28217cfda27b8a2be26d66a14",
-  "open-math/navier-stokes/claim/BulkTailTerminal.lean": "28c82a49f2fcc534aac6ec975c03c5c799a1936e1b53b28dac8c6637405d8d1f",
-  "open-math/navier-stokes/claim/DualLaneTerminal.lean": "6ea27512b47d9271af90a479eb8217b6cf8ef25abcfc5c6a4b07ea99744df5c1",
-  "open-math/navier-stokes/claim/FINAL_PROOF_CLAIM.lean": "34bf2ebf338e17cc1711a8d7c163325245eb5ec998d5de41aaffc7db7c623127",
-  "open-math/navier-stokes/claim/FinalRootAssembler.lean": "96632cdd86dd6fc63235ed91f14952100ab72690ac56b407c9f6687e1ce16fb2",
-  "open-math/navier-stokes/claim/LimitClosureF7F1.lean": "43c161373bb693516b73b11ccd785c940e6c8d45ca1dc8415aedf9069dba047d",
-  "open-math/navier-stokes/claim/NSHabitantCertificate.lean": "117ea865a8cd43525f1a2db57fc0f803583133831909ccdcc3b3528bc700b6a4",
-  "open-math/navier-stokes/claim/NSPositiveHabitantCore.lean": "341ce9085a9c9a47e8659015aff82f9500f32caad61ac16c7a3ab4e21699de3d",
-  "open-math/navier-stokes/claim/NavierStokesClosedArchitecture.lean": "d928be41fb018bec44e1e82f5ec5587fc024eb32e474a6a5e02041e7a54bfcdd",
-  "open-math/navier-stokes/claim/ProofLane.lean": "86ade921d1aaf9006257e430804ce0a0d4aecd105ddcd4c962ef0063856094b3",
-  "open-math/navier-stokes/claim/ProofLaneClaimTest.lean": "c9f9f5cedea5dab188584667877e078a7666a4a6373cbf7a0f6305cae449f4ad",
-  "open-math/navier-stokes/claim/ProofProducer.lean": "21f8446c8a633c49c858d2c8948ee301de69b76552f98509eaeebd7cbae6233d",
-  "open-math/navier-stokes/claim/QuantumClosureClaim.lean": "623f620bd8ae82d2044ef09ea82e536cdf6448c3858ea2e365c7d5cfa1ae3ef1",
-  "open-math/navier-stokes/claim/RefutationLane.lean": "6cdc571db6a5bb7aac99fe15ddb81a54ba941395b1b35085f0ba9ef480695630",
-  "open-math/navier-stokes/claim/RefutationLaneClaimTest.lean": "fe009559232d5abc626fbdd7fd9ca55895199b5eb50a7310540f167088916026",
-  "open-math/navier-stokes/claim/RefutationProducer.lean": "05aa9ce00e70534ab6927d1933303570607efc6d4e50c7690afe6f83ec6927bc",
-  "open-math/navier-stokes/claim/ScientificBoundary.lean": "744afc255463385e8231b4a5d309f338bb6ff558c36d9bc1dce0d8362da81dc3",
-  "open-math/navier-stokes/claim/ThreeCaseClosure.lean": "12198c341efbde64dd32b30570d8c7455977e96333b7b6261453794f7a35614c",
-  "open-math/navier-stokes/logic-refutation/AmplitudeInvariantFixedDeltaNoGo.lean": "4d0fd42789779f6c558433ec1b90d8c8b6625ae8433306c0108473d890a64670",
-  "open-math/navier-stokes/logic-refutation/EnergyCompressionBarrier.lean": "f7705dd820f1d4bf53e520860445adfb7b4e23d1206de0aeec003972df638e0f",
-  "open-math/navier-stokes/logic-refutation/FiberUnboundedFromScaling.lean": "4729c50509cc8a0e0bfc1be24c31ca1390b6598648e0982021275df1eef8c1f9"
+  "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
  },
- "published_at": "2026-10-29T20:16:03Z",
- "certificate_sha256": "7d22bf82c4f1eda3892c57da864c7a3275f2b74e189c42fec1873cf07439cdf9"
+ "published_at": "2026-11-02T20:55:44Z",
+ "certificate_sha256": "8b2879624a38283495c40335dac1ffb17b812cd6ddbb35c895d1eb815ff11b7a"
 }

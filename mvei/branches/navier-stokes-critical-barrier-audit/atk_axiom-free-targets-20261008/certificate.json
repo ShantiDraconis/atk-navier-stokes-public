@@ -43,7 +43,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-29T05:36:17+00:00",
+  "generated_at": "2026-10-30T16:50:26+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -60,7 +60,7 @@
    "name": "B2_10_statement_vacuous",
    "file": "Lean/Millennium/CompleteClosure_Targets.lean",
    "line": 80,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": B2_10_statement"
   },
@@ -68,7 +68,7 @@
    "name": "B2_8_statement_false",
    "file": "Lean/Millennium/CompleteClosure_Targets.lean",
    "line": 70,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ B2_8_statement"
   },
@@ -76,7 +76,7 @@
    "name": "BSD_statement_vacuous",
    "file": "Lean/Millennium/CompleteClosure_Targets.lean",
    "line": 95,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": BSD_statement"
   },
@@ -86,7 +86,7 @@
    "line": 81,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": ": ¬ Alignment_Bound_statement"
+   "statement": "¬CriticalBarrierClayTarget.Alignment_Bound_statement"
   },
   {
    "name": "CriticalBarrierClayTarget.B2_8_REFINED_statement_false",
@@ -94,13 +94,13 @@
    "line": 94,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": ": ¬ B2_8_REFINED_statement"
+   "statement": "¬CriticalBarrierClayTarget.B2_8_REFINED_statement"
   },
   {
    "name": "HODGE_statement_vacuous",
    "file": "Lean/Millennium/CompleteClosure_Targets.lean",
    "line": 96,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": HODGE_statement"
   },
@@ -108,7 +108,7 @@
    "name": "NSB2.B2_8_lower_bound_statement_false",
    "file": "Lean/NavierStokes/B2/B2_8_LowerBound_Template.lean",
    "line": 69,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ B2_8_lower_bound_statement"
   },
@@ -116,7 +116,7 @@
    "name": "NSB2.B2_8_upper_flux_control_statement_false",
    "file": "Lean/NavierStokes/B2/B2_8_LowerBound_Template.lean",
    "line": 86,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ B2_8_upper_flux_control_statement"
   },
@@ -124,7 +124,7 @@
    "name": "Pi_u1",
    "file": "Lean/Millennium/CompleteClosure_Targets.lean",
    "line": 30,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": Pi_Lambda S_divFree u1 = -1"
   },
@@ -132,7 +132,7 @@
    "name": "Pi_u2",
    "file": "Lean/Millennium/CompleteClosure_Targets.lean",
    "line": 34,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": Pi_Lambda S_divFree u2 = 1 / 2"
   },
@@ -140,7 +140,7 @@
    "name": "PvsNP_G11_statement_vacuous",
    "file": "Lean/Millennium/CompleteClosure_Targets.lean",
    "line": 94,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": PvsNP_G11_statement"
   },
@@ -148,7 +148,7 @@
    "name": "RH_G8_statement_vacuous",
    "file": "Lean/Millennium/CompleteClosure_Targets.lean",
    "line": 84,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": RH_G8_statement"
   },
@@ -156,7 +156,7 @@
    "name": "YM_G16_statement_vacuous",
    "file": "Lean/Millennium/CompleteClosure_Targets.lean",
    "line": 88,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": YM_G16_statement"
   },
@@ -164,7 +164,7 @@
    "name": "u1_dot_u1",
    "file": "Lean/Millennium/CompleteClosure_Targets.lean",
    "line": 24,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": u1 ⬝ᵥ u1 = 1"
   },
@@ -172,22 +172,17 @@
    "name": "u2_dot_u2",
    "file": "Lean/Millennium/CompleteClosure_Targets.lean",
    "line": 27,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": u2 ⬝ᵥ u2 = 1"
   }
  ],
- "closed": 15,
+ "closed": 2,
  "files_sha256": {
-  "Lean/Millennium/CompleteClosure_Targets.lean": "15068d9ad8c154cdaf0a501dfa88fc4de54bcd09efaf37715384fe944d5eaaa8",
-  "Lean/NavierStokes/B2/B2_8_LowerBound_Template.lean": "6729b6f5a56fa2dcf272bd0f509e9c61dcd277aaedd64bfea7d55c02a2fff9b3",
   "formal/lean/CriticalBarrier/B2_8_Alignment_Target_Clay.lean": "c12bbb437477c9a440774219c0cf15210b37f256be796ccba4a688c7007982f2",
   "formal/lean/lakefile.toml": "ae588249ee34ba35be93608e76703456a73ba966cc13cd08f1a2383af9d901f1",
-  "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
-  "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
-  "lakefile.toml": "d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c",
-  "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87"
+  "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
  },
- "published_at": "2026-10-29T20:16:03Z",
- "certificate_sha256": "61f62f4e1235864c7d3ba2b6a42d0a68130abd356de7faacbc42ac3e74f4c5bc"
+ "published_at": "2026-11-02T20:55:44Z",
+ "certificate_sha256": "b6dfba59eb07ec26e225bc665e13304faa5c4363c8a570c18b062be2c81d182e"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T18:57:14+00:00",
+ "generated_at": "2026-10-30T16:50:26+00:00",
  "standard_axioms": [
   "Classical.choice",
   "Quot.sound",
@@ -15,7 +15,7 @@
    "toolchain_used": "leanprover/lean4:v4.34.0-rc2",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 393.2,
+   "build_seconds": 424.3,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -7162,16 +7162,21 @@
     }
    ],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (native-decide-k1): native_decide trocado por decide em k1BridgeMatrix_has_seven_rows (MPrivate/NS/ThirdCoefficient/K1BridgeMatrix.lean:89).",
+   "note": "CORRIGIDO PELO MVEI (native-decide-k1, renomear-imports-mathlib): native_decide trocado por decide em k1BridgeMatrix_has_seven_rows (MPrivate/NS/ThirdCoefficient/K1BridgeMatrix.lean:89); 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s).",
    "corrections": [
-    "native-decide-k1"
+    "native-decide-k1",
+    "renomear-imports-mathlib"
    ],
    "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
    "summary": {
     "fechado": 813,
     "aberto-sorry": 0,
     "condicional": 0
-   }
+   },
+   "hora_commit_mvei": 1793349359
   }
  ]
 }

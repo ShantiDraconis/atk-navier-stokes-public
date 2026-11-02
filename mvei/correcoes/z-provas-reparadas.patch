@@ -1,0 +1,100 @@
+--- a/G1_KAdmissible_to_SignedDepletion.lean
++++ b/G1_KAdmissible_to_SignedDepletion.lean
+@@ -32,8 +32,9 @@
+ theorem K0a_regularizedAmplitude_ge
+     (w ε : ℝ) (hε : 0 < ε) :
+     ε ≤ regularizedAmplitude w ε := by
+-  rw [regularizedAmplitude, ← Real.sqrt_sq (le_of_lt hε)]
+-  exact Real.sqrt_le_sqrt (by nlinarith [sq_nonneg w])
++  unfold regularizedAmplitude
++  calc ε = Real.sqrt (ε ^ 2) := (Real.sqrt_sq (le_of_lt hε)).symm
++    _ ≤ Real.sqrt (w ^ 2 + ε ^ 2) := Real.sqrt_le_sqrt (by nlinarith [sq_nonneg w])
+ 
+ /-- K0a': the regularized amplitude is nonnegative. -/
+ theorem K0a_regularizedAmplitude_nonneg (w ε : ℝ) :
+--- a/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
++++ b/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
+@@ -64,8 +64,7 @@
+ theorem differential_decay
+     (p : Parameters) (s : Snapshot) (h : BalanceCertificates p s) :
+     s.dRdt ≤ -(p.decayRate) * s.R := by
+-  dsimp [Parameters.decayRate, Parameters.kappa, Parameters.perturbation,
+-    Parameters.C_error]
++  unfold Parameters.decayRate
+   linarith [h.balance, h.dissipation, h.flux]
+ 
+ /-- Correct high-frequency L3 reconstruction interface:
+--- a/formal/lean/CriticalBarrier/CriticalTailBridge.lean
++++ b/formal/lean/CriticalBarrier/CriticalTailBridge.lean
+@@ -37,7 +37,8 @@
+ def growingCritical (n : ℕ) : ℝ := n + 1
+ 
+ theorem shrinkingDefect_pos (n : ℕ) : 0 < shrinkingDefect n := by
+-  simp [shrinkingDefect]
++  unfold shrinkingDefect
++  positivity
+ 
+ theorem growingCritical_ge_one (n : ℕ) : 1 ≤ growingCritical n := by
+   simp [growingCritical]
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
+@@ -64,8 +64,7 @@
+ theorem differential_decay
+     (p : Parameters) (s : Snapshot) (h : BalanceCertificates p s) :
+     s.dRdt ≤ -(p.decayRate) * s.R := by
+-  dsimp [Parameters.decayRate, Parameters.kappa, Parameters.perturbation,
+-    Parameters.C_error]
++  unfold Parameters.decayRate
+   linarith [h.balance, h.dissipation, h.flux]
+ 
+ /-- Correct high-frequency L3 reconstruction interface:
+--- a/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean
++++ b/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean
+@@ -37,7 +37,8 @@
+ def growingCritical (n : ℕ) : ℝ := n + 1
+ 
+ theorem shrinkingDefect_pos (n : ℕ) : 0 < shrinkingDefect n := by
+-  simp [shrinkingDefect]
++  unfold shrinkingDefect
++  positivity
+ 
+ theorem growingCritical_ge_one (n : ℕ) : 1 ≤ growingCritical n := by
+   simp [growingCritical]
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean
+@@ -37,7 +37,8 @@
+ def growingCritical (n : ℕ) : ℝ := n + 1
+ 
+ theorem shrinkingDefect_pos (n : ℕ) : 0 < shrinkingDefect n := by
+-  simp [shrinkingDefect]
++  unfold shrinkingDefect
++  positivity
+ 
+ theorem growingCritical_ge_one (n : ℕ) : 1 ≤ growingCritical n := by
+   simp [growingCritical]
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean
+@@ -37,7 +37,8 @@
+ def growingCritical (n : ℕ) : ℝ := n + 1
+ 
+ theorem shrinkingDefect_pos (n : ℕ) : 0 < shrinkingDefect n := by
+-  simp [shrinkingDefect]
++  unfold shrinkingDefect
++  positivity
+ 
+ theorem growingCritical_ge_one (n : ℕ) : 1 ≤ growingCritical n := by
+   simp [growingCritical]
+--- a/preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean
++++ b/preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean
+@@ -32,8 +32,9 @@
+ theorem K0a_regularizedAmplitude_ge
+     (w ε : ℝ) (hε : 0 < ε) :
+     ε ≤ regularizedAmplitude w ε := by
+-  rw [regularizedAmplitude, ← Real.sqrt_sq (le_of_lt hε)]
+-  exact Real.sqrt_le_sqrt (by nlinarith [sq_nonneg w])
++  unfold regularizedAmplitude
++  calc ε = Real.sqrt (ε ^ 2) := (Real.sqrt_sq (le_of_lt hε)).symm
++    _ ≤ Real.sqrt (w ^ 2 + ε ^ 2) := Real.sqrt_le_sqrt (by nlinarith [sq_nonneg w])
+ 
+ /-- K0a': the regularized amplitude is nonnegative. -/
+ theorem K0a_regularizedAmplitude_nonneg (w ε : ℝ) :

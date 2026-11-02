@@ -1,131 +1,157 @@
-MVEI — log consolidado da verificação (2026-10-29T18:57:14+00:00)
+MVEI — log consolidado da verificação (2026-10-30T16:50:26+00:00)
 Os logs completos de cada compilação no GitHub ficam na página da execução do workflow (Actions).
 
 == navier-stokes-critical-barrier-audit/.  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
-   correções do MVEI: imports-no-topo
-   nota: CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para o início (antes de comentários de módulo ou de documentação) em 6 arquivo(s). leitura de axiomas: nenhum módulo compilado encontrado
-   erro: error: ././././MillenniumAudit/StabilizedHypothetical.lean:77:30: linarith failed to find a contradiction | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:25: don't know how to synthesize implicit argument 'α' | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:29: don't know how to synthesize implicit argument | error: ././././MillenniumAudit/StabilizedHypothetical.lean:81:7: don't know how to synthesize implicit argument 'α'
+   correções do MVEI: imports-no-topo, vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (imports-no-topo, vocabulario-lean4, z-provas-reparadas): imports movidos para o início (antes de comentários de módulo ou de documentação) em 6 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. leitura de axiomas: nenhum módulo compilado encontrado
+   erro: error: ././././MillenniumAudit/StabilizedHypothetical.lean:77:30: linarith failed to find a contradiction | error: ././././MillenniumAudit/StabilizedHypothetical.lean:164:4: failed to prove positivity/nonnegativity/nonzeroness | error: Lean exited with code 1 | error: build failed
 
 == navier-stokes-critical-barrier-audit/formal/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
-   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
-   correções do MVEI: renomear-imports-mathlib
-   nota: CORRIGIDO PELO MVEI (renomear-imports-mathlib): 2 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 2 arquivo(s). a configuração original não compila; o MVEI reconstruiu o lakefile com o Mathlib v4.19.0, mas o código também não compila: error: no such file or directory (error code: 2) | error: build failed
+   teoremas: fechados 449, condicionais 1, abertos 0; axiomas declarados 19
+   correções do MVEI: renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas): 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././UnifiedAsymptoticLogic.lean:22:2: unknown constant 'Real.sqrt' | error: Lean exited with code 1)
    erro: error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/formal/millennium/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
    teoremas: fechados 50, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge.
    erro: error: ././././MillenniumAudit/HypothesesComplete_v3.lean:58:4: linarith failed to find a contradiction | error: Lean exited with code 1 | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_correct-provenance-attribution-20260912/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
-== navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  FALHOU
-   teoremas: fechados 149, condicionais 0, abertos 0; axiomas declarados 10
-   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e compilou o que foi possível (erros restantes: error: CriticalBarrier/B2_8_Alignment_Target_Clay.lean:1:0: unknown module prefix 'Mathlib' | error: CriticalBarrier/CriticalTailBridge.lean:1:0: unknown module prefix 'Mathlib')
+== navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 235, condicionais 1, abertos 0; axiomas declarados 19
+   correções do MVEI: renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas): 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././IndeterminateParameterCompletion.lean:120:58: unsolved goals | error: Lean exited with code 1)
    erro: error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
-   teoremas: fechados 165, condicionais 1, abertos 0; axiomas declarados 19
-   correções do MVEI: renomear-imports-mathlib
-   nota: CORRIGIDO PELO MVEI (renomear-imports-mathlib): 2 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 2 arquivo(s). RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././CriticalBarrier/EndpointInterfaces.lean:89:31: unexpected token '|'; expected term | error: ././././CriticalBarrier/EndpointInterfaces.lean:94:6: unexpected token '|'; expected term)
+   teoremas: fechados 235, condicionais 1, abertos 0; axiomas declarados 19
+   correções do MVEI: renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas): 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././IndeterminateParameterCompletion.lean:120:58: unsolved goals | error: Lean exited with code 1)
    erro: error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
    teoremas: fechados 128, condicionais 0, abertos 0; axiomas declarados 0
-   erro: error: ././././MillenniumAudit/G1Audit.lean:46:2: dsimp made no progress | error: Lean exited with code 1 | error: build failed
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge.
+   erro: error: ././././MillenniumAudit/G1Audit.lean:48:2: dsimp made no progress | error: Lean exited with code 1 | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_g1-prize-standard-v4-20260913/formal/millennium/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
    teoremas: fechados 71, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge.
 
-== navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  FALHOU
-   teoremas: fechados 149, condicionais 0, abertos 0; axiomas declarados 10
-   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e compilou o que foi possível (erros restantes: error: CriticalBarrier/B2_8_Alignment_Target_Clay.lean:1:0: unknown module prefix 'Mathlib' | error: CriticalBarrier/CriticalTailBridge.lean:1:0: unknown module prefix 'Mathlib')
+== navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 235, condicionais 1, abertos 0; axiomas declarados 19
+   correções do MVEI: renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas): 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././IndeterminateParameterCompletion.lean:120:58: unsolved goals | error: Lean exited with code 1)
    erro: error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/millennium/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
    teoremas: fechados 136, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge.
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_add-lre-ns-framework/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_audit-search-terms/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_claim-navier-stokes-git-evidence/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_compare-mathematical-formulas/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_execute-multi-agent-audit/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_fix-doc-date-error/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | file: CriticalBarrier.lean | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_navier-stokes-critical-barrier-audit/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_navier-stokes-noncircular-implementation/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_registro-git-navier-stokes/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_revendo-arquivos-auditoria/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_shanti-0-0-default-history/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_shanti-auditoria-ns/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_target-extractor/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_task-219265797-1361927617-c6bfd6e0-3c0d-429b-a267-9cea34423468/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_update-reference-section/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
-   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
    erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
 
 == navier-stokes-critical-barrier-audit/preservation/session-scratch-20260913  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
-   correções do MVEI: imports-no-topo
-   nota: CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para o início (antes de comentários de módulo ou de documentação) em 6 arquivo(s). leitura de axiomas: nenhum módulo compilado encontrado
-   erro: error: ././././MillenniumAudit/StabilizedHypothetical.lean:77:30: linarith failed to find a contradiction | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:25: don't know how to synthesize implicit argument 'α' | error: ././././MillenniumAudit/StabilizedHypothetical.lean:83:29: don't know how to synthesize implicit argument | error: ././././MillenniumAudit/StabilizedHypothetical.lean:81:7: don't know how to synthesize implicit argument 'α'
+   correções do MVEI: imports-no-topo, vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (imports-no-topo, vocabulario-lean4, z-provas-reparadas): imports movidos para o início (antes de comentários de módulo ou de documentação) em 6 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. leitura de axiomas: nenhum módulo compilado encontrado
+   erro: error: ././././MillenniumAudit/StabilizedHypothetical.lean:77:30: linarith failed to find a contradiction | error: ././././MillenniumAudit/StabilizedHypothetical.lean:164:4: failed to prove positivity/nonnegativity/nonzeroness | error: Lean exited with code 1 | error: build failed
 

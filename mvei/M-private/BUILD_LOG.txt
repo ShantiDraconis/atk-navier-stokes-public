@@ -1,8 +1,8 @@
-MVEI — log consolidado da verificação (2026-10-29T18:57:14+00:00)
+MVEI — log consolidado da verificação (2026-10-30T16:50:26+00:00)
 Os logs completos de cada compilação no GitHub ficam na página da execução do workflow (Actions).
 
 == M-private/.  [leanprover/lean4:v4.34.0-rc2 -> leanprover/lean4:v4.34.0-rc2]  OK
    teoremas: fechados 813, condicionais 0, abertos 0; axiomas declarados 0
-   correções do MVEI: native-decide-k1
-   nota: CORRIGIDO PELO MVEI (native-decide-k1): native_decide trocado por decide em k1BridgeMatrix_has_seven_rows (MPrivate/NS/ThirdCoefficient/K1BridgeMatrix.lean:89).
+   correções do MVEI: native-decide-k1, renomear-imports-mathlib
+   nota: CORRIGIDO PELO MVEI (native-decide-k1, renomear-imports-mathlib): native_decide trocado por decide em k1BridgeMatrix_has_seven_rows (MPrivate/NS/ThirdCoefficient/K1BridgeMatrix.lean:89); 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s).
 

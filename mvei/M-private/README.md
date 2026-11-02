@@ -12,7 +12,7 @@ This folder records what the Lean 4 kernel said about the Lean sources of the pr
 
 ## What the kernel said
 
-MVEI verification of 2026-10-29T18:57:14+00:00, on commit `ae69c0d7e2eea29ca8ce67d96d48798334cbe724`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
+MVEI verification of 2026-10-30T16:50:26+00:00, on commit `ae69c0d7e2eea29ca8ce67d96d48798334cbe724`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
 
 | Lean project | Lean version | Build | Closed | Conditional | Open (`sorry`) | Checked file by file: closed / conditional / open / proof error / not reached |
 |---|---|---|---:|---:|---:|---|
@@ -33,6 +33,7 @@ The `.lean` files of the verified commit declare 201 `theorem`/`lemma` (counting
 ### MVEI corrections
 
 * `correcoes/native-decide-k1.patch` (native_decide (o kernel não confere), 1 file(s)): applies to the published sources: `git apply -p1 --directory=imports/M-private mvei/M-private/correcoes/native-decide-k1.patch` (in order, after the ones above)
+* `correcoes/renomear-imports-mathlib.patch` (import de módulo que não existe na versão do Mathlib do projeto (renomeado ou dividido), 4 file(s)): applies to the published sources: `git apply -p1 --directory=imports/M-private mvei/M-private/correcoes/renomear-imports-mathlib.patch` (in order, after the ones above)
 
 ## Files in this folder
 

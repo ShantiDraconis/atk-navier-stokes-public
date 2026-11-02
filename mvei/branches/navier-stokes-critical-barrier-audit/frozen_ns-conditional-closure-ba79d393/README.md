@@ -5,7 +5,7 @@ Lean sources from the branch `frozen/ns-conditional-closure-ba79d393` of the pri
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 1 — closed 1, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 16 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `58e6090da527ab9906433f35f75240c915e13c98ad3ef05502963cafbb3d2113`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/frozen_ns-conditional-closure-ba79d393/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `1cdd72b1a4b5c2d640b61abfd8ea09b348418b603bd60b44dd5d96ec76b32dfa`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/frozen_ns-conditional-closure-ba79d393/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

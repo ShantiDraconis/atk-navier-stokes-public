@@ -1,0 +1,32 @@
+--- a/MPrivate/NS/ThirdCoefficient/ActualBonyBlockAssembly.lean
++++ b/MPrivate/NS/ThirdCoefficient/ActualBonyBlockAssembly.lean
+@@ -1,4 +1,4 @@
+-import Mathlib.Basic.Real.Basic
++import Mathlib
+ import MPrivate.NS.ThirdCoefficient.ActualBonyDecomposition
+ 
+ /-- One scalar cross block produced by a future genuine Bony/LP decomposition. -/
+--- a/MPrivate/NS/ThirdCoefficient/ActualBonyDecomposition.lean
++++ b/MPrivate/NS/ThirdCoefficient/ActualBonyDecomposition.lean
+@@ -1,4 +1,4 @@
+-import Mathlib.Basic.Real.Basic
++import Mathlib
+ import MPrivate.NS.ThirdCoefficient.ActualCrossSquareControlFrontier
+ 
+ /--
+--- a/MPrivate/NS/ThirdCoefficient/ActualBonyLPConcrete.lean
++++ b/MPrivate/NS/ThirdCoefficient/ActualBonyLPConcrete.lean
+@@ -1,4 +1,4 @@
+-import Mathlib.Basic.Real.Basic
++import Mathlib
+ import MPrivate.NS.ThirdCoefficient.ActualBonyDecomposition
+ 
+ namespace MPrivate.NS.ThirdCoefficient.ActualBonyLPConcrete
+--- a/MPrivate/NS/ThirdCoefficient/ActualCrossSquareControlFrontier.lean
++++ b/MPrivate/NS/ThirdCoefficient/ActualCrossSquareControlFrontier.lean
+@@ -1,4 +1,4 @@
+-import Mathlib.Basic.Real.Basic
++import Mathlib
+ 
+ structure ActualCrossSquareControlFrontier where
+   actual_cross_block_inventory_complete : Prop

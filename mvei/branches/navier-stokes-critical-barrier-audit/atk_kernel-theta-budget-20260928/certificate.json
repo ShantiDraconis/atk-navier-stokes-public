@@ -758,7 +758,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-29T05:36:17+00:00",
+  "generated_at": "2026-10-30T16:50:26+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -777,7 +777,7 @@
    "line": 48,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(k1a : K1aCoreBundle) (k1 : K1AnalyticBundle) (g1 : G1ClosureBundle) (global : GlobalClosureBundle) (ext : ExternalCertificateBundle) (hk1a : k1a.exactFrechet ∧ k1a.chainRule ∧ k1a.pdeLift ∧ k1a.explicitRemainder) (hk1 : k1.cutoffFreeRemainder ∧ k1.transportEstimate ∧ k1.biotSavartSplit ∧ k1.positiveUniformGamma ∧ k1.epsilonLimit ∧ k1.dimensionalNormalization) (hg1 : g1.signedDepletion ∧ g1.realPr"
+   "statement": "∀ (k1a : CriticalBarrier.ExternalFastPath.K1aCoreBundle) (k1 : CriticalBarrier.ExternalFastPath.K1AnalyticBundle)   (g1 : CriticalBarrier.ExternalFastPath.G1ClosureBundle)   (global : CriticalBarrier.ExternalFastPath.GlobalClosureBundle)   (ext : CriticalBarrier.ExternalFastPath.ExternalCertificateBundle),   k1a.exactFrechet ∧ k1a.chainRule ∧ k1a.pdeLift ∧ k1a.explicitRemainder →     k1.cutoffFree"
   },
   {
    "name": "CriticalBarrier.ExternalFastPath.promoted_three_gate_plus_balance",
@@ -785,7 +785,7 @@
    "line": 67,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(d : KernelPromotedG1Assembly.ThreeGatePointwiseData) (nu yPrime : ℝ) (hnu : 0 < nu) (hT3 : KernelPromotedG1Assembly.ThreeGatePointwiseCertified d) (hbal : KernelPromotedG1Assembly.EnstrophyBalance yPrime nu d.Z d.V) : (1 / 2 : ℝ) * yPrime + (1 - KernelPromotedG1Assembly.pointwiseTheta d nu) * nu * d.Z ≤ (d.C * KernelPromotedG1Assembly.pointwiseA3 d) * d.Y"
+   "statement": "∀ (d : CriticalBarrier.KernelPromotedG1Assembly.ThreeGatePointwiseData) (nu yPrime : ℝ),   0 < nu →     CriticalBarrier.KernelPromotedG1Assembly.ThreeGatePointwiseCertified d →       CriticalBarrier.KernelPromotedG1Assembly.EnstrophyBalance yPrime nu d.Z d.V →         1 / 2 * yPrime + (1 - CriticalBarrier.KernelPromotedG1Assembly.pointwiseTheta d nu) * nu * d.Z ≤           d.C * CriticalBarrier.Ke"
   },
   {
    "name": "CriticalBarrier.ExternalRouteRouter.next_ne_self",
@@ -793,7 +793,7 @@
    "line": 33,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(a : Route) : next a ≠ some a"
+   "statement": "∀ (a : CriticalBarrier.ExternalRouteRouter.Route), CriticalBarrier.ExternalRouteRouter.next a ≠ some a"
   },
   {
    "name": "CriticalBarrier.ExternalRouteRouter.next_strictly_advances",
@@ -801,7 +801,7 @@
    "line": 28,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{a b : Route} (h : next a = some b) : rank a < rank b"
+   "statement": "∀ {a b : CriticalBarrier.ExternalRouteRouter.Route},   CriticalBarrier.ExternalRouteRouter.next a = some b →     CriticalBarrier.ExternalRouteRouter.rank a < CriticalBarrier.ExternalRouteRouter.rank b"
   },
   {
    "name": "CriticalBarrier.K1aClaimGate.conflicting_evidence_blocks_claim",
@@ -809,7 +809,7 @@
    "line": 25,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": ": ¬ claimable ⟨.proved, .proved⟩"
+   "statement": "¬CriticalBarrier.K1aClaimGate.claimable     { proofLane := CriticalBarrier.ScientificMeet.EvidenceState.proved,       refutationLane := CriticalBarrier.ScientificMeet.EvidenceState.proved }"
   },
   {
    "name": "CriticalBarrier.K1aClaimGate.unknown_proof_blocks_claim",
@@ -817,7 +817,7 @@
    "line": 17,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(r : EvidenceState) : ¬ claimable ⟨.unknown, r⟩"
+   "statement": "∀ (r : CriticalBarrier.ScientificMeet.EvidenceState),   ¬CriticalBarrier.K1aClaimGate.claimable       { proofLane := CriticalBarrier.ScientificMeet.EvidenceState.unknown, refutationLane := r }"
   },
   {
    "name": "CriticalBarrier.K1aClaimGate.unknown_refutation_blocks_claim",
@@ -825,7 +825,7 @@
    "line": 21,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(p : EvidenceState) : ¬ claimable ⟨p, .unknown⟩"
+   "statement": "∀ (p : CriticalBarrier.ScientificMeet.EvidenceState),   ¬CriticalBarrier.K1aClaimGate.claimable       { proofLane := p, refutationLane := CriticalBarrier.ScientificMeet.EvidenceState.unknown }"
   },
   {
    "name": "CriticalBarrier.K1aExactFrechetProducer.chainRuleStatement_closed_of_differentiableAt",
@@ -833,7 +833,7 @@
    "line": 96,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps : ℝ} (heps : 0 < eps) {w : ℝ → Vec3} {t : ℝ} (hw : DifferentiableAt ℝ w t) : ChainRuleStatement eps w t"
+   "statement": "∀ {eps : ℝ},   0 < eps →     ∀ {w : ℝ → CriticalBarrier.K1aVectorKernel.Vec3} {t : ℝ},       DifferentiableAt ℝ w t → CriticalBarrier.K1aChainRule.ChainRuleStatement eps w t"
   },
   {
    "name": "CriticalBarrier.K1aExactFrechetProducer.exactDerivativeStatement_closed",
@@ -841,7 +841,7 @@
    "line": 77,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : ExactDerivativeStatement eps w"
+   "statement": "∀ {eps : ℝ},   0 < eps → ∀ (w : CriticalBarrier.K1aVectorKernel.Vec3), CriticalBarrier.K1aChainRule.ExactDerivativeStatement eps w"
   },
   {
    "name": "CriticalBarrier.K1aExactFrechetProducer.inverseRadiusDerivativeMap",
@@ -849,7 +849,7 @@
    "line": 12,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : ((ContinuousLinearMap.smulRight (1 : ℝ →L[ℝ] ℝ) (-(r eps w ^ 2)⁻¹)).comp ((1 / (2 * r eps w)) • (2 • innerSL ℝ w))) = (-(r eps w ^ 3)⁻¹) • innerSL ℝ w"
+   "statement": "∀ {eps : ℝ},   0 < eps →     ∀ (w : CriticalBarrier.K1aVectorKernel.Vec3),       (ContinuousLinearMap.smulRight 1 (-(CriticalBarrier.K1aVectorKernel.r eps w ^ 2)⁻¹)).comp           ((1 / (2 * CriticalBarrier.K1aVectorKernel.r eps w)) • 2 • (innerSL ℝ) w) =         -(CriticalBarrier.K1aVectorKernel.r eps w ^ 3)⁻¹ • (innerSL ℝ) w"
   },
   {
    "name": "CriticalBarrier.K1aExactFrechetProducer.productDerivativeMap",
@@ -857,7 +857,7 @@
    "line": 29,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : (r eps w)⁻¹ • (1 : Vec3 →L[ℝ] Vec3) + (((-(r eps w ^ 3)⁻¹) • innerSL ℝ w).smulRight w) = DxiCLM eps w"
+   "statement": "∀ {eps : ℝ},   0 < eps →     ∀ (w : CriticalBarrier.K1aVectorKernel.Vec3),       (CriticalBarrier.K1aVectorKernel.r eps w)⁻¹ • 1 +           (-(CriticalBarrier.K1aVectorKernel.r eps w ^ 3)⁻¹ • (innerSL ℝ) w).smulRight w =         CriticalBarrier.K1aVectorKernel.DxiCLM eps w"
   },
   {
    "name": "CriticalBarrier.K1aExactFrechetProducer.xiFrechetTarget_closed",
@@ -865,7 +865,7 @@
    "line": 72,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : XiFrechetTarget eps w"
+   "statement": "∀ {eps : ℝ}, 0 < eps → ∀ (w : CriticalBarrier.K1aVectorKernel.Vec3), CriticalBarrier.K1aFrechet.XiFrechetTarget eps w"
   },
   {
    "name": "CriticalBarrier.K1aExactFrechetProducer.xi_chainRule_of_hasDerivAt",
@@ -873,7 +873,7 @@
    "line": 82,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps : ℝ} (heps : 0 < eps) {w : ℝ → Vec3} {t : ℝ} {w' : Vec3} (hw : HasDerivAt w w' t) : HasDerivAt (fun s => xi eps (w s)) (DxiCandidate eps (w t) w') t"
+   "statement": "∀ {eps : ℝ},   0 < eps →     ∀ {w : ℝ → CriticalBarrier.K1aVectorKernel.Vec3} {t : ℝ} {w' : CriticalBarrier.K1aVectorKernel.Vec3},       HasDerivAt w w' t →         HasDerivAt (fun s => CriticalBarrier.K1aVectorKernel.xi eps (w s))           (CriticalBarrier.K1aVectorKernel.DxiCandidate eps (w t) w') t"
   },
   {
    "name": "CriticalBarrier.K1aExactFrechetProducer.xi_hasFDerivAt_DxiCLM",
@@ -881,7 +881,7 @@
    "line": 40,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : HasFDerivAt (xi eps) (DxiCLM eps w) w"
+   "statement": "∀ {eps : ℝ},   0 < eps →     ∀ (w : CriticalBarrier.K1aVectorKernel.Vec3),       HasFDerivAt (CriticalBarrier.K1aVectorKernel.xi eps) (CriticalBarrier.K1aVectorKernel.DxiCLM eps w) w"
   },
   {
    "name": "CriticalBarrier.K1aFrechet.exactDerivative_from_target",
@@ -889,7 +889,7 @@
    "line": 25,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps : ℝ} {w : Vec3} (h : XiFrechetTarget eps w) : ExactDerivativeStatement eps w"
+   "statement": "∀ {eps : ℝ} {w : CriticalBarrier.K1aVectorKernel.Vec3},   CriticalBarrier.K1aFrechet.XiFrechetTarget eps w → CriticalBarrier.K1aChainRule.ExactDerivativeStatement eps w"
   },
   {
    "name": "CriticalBarrier.K1aPDELift.DxiLinearityTarget_closed",
@@ -897,7 +897,7 @@
    "line": 41,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(eps : ℝ) (w : Vec3) : DxiLinearityTarget eps w"
+   "statement": "∀ (eps : ℝ) (w : CriticalBarrier.K1aVectorKernel.Vec3), CriticalBarrier.K1aPDELift.DxiLinearityTarget eps w"
   },
   {
    "name": "CriticalBarrier.K1aPDELift.XiMaterialTarget_closed",
@@ -905,7 +905,7 @@
    "line": 48,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(d : VorticityMaterialData) : XiMaterialTarget d"
+   "statement": "∀ (d : CriticalBarrier.K1aPDELift.VorticityMaterialData), CriticalBarrier.K1aPDELift.XiMaterialTarget d"
   },
   {
    "name": "CriticalBarrier.K1aVectorKernel.DxiCLM_apply",
@@ -913,7 +913,7 @@
    "line": 88,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(eps : ℝ) (w v : Vec3) : DxiCLM eps w v = DxiCandidate eps w v"
+   "statement": "∀ (eps : ℝ) (w v : CriticalBarrier.K1aVectorKernel.Vec3),   (CriticalBarrier.K1aVectorKernel.DxiCLM eps w) v = CriticalBarrier.K1aVectorKernel.DxiCandidate eps w v"
   },
   {
    "name": "CriticalBarrier.K1aVectorKernel.DxiCandidate_add",
@@ -921,7 +921,7 @@
    "line": 60,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(eps : ℝ) (w a b : Vec3) : DxiCandidate eps w (a + b) = DxiCandidate eps w a + DxiCandidate eps w b"
+   "statement": "∀ (eps : ℝ) (w a b : CriticalBarrier.K1aVectorKernel.Vec3),   CriticalBarrier.K1aVectorKernel.DxiCandidate eps w (a + b) =     CriticalBarrier.K1aVectorKernel.DxiCandidate eps w a + CriticalBarrier.K1aVectorKernel.DxiCandidate eps w b"
   },
   {
    "name": "CriticalBarrier.K1aVectorKernel.DxiCandidate_radial_form",
@@ -929,7 +929,7 @@
    "line": 38,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : DxiCandidate eps w w = (eps ^ 2 * ((r eps w) ^ 3)⁻¹) • w"
+   "statement": "∀ {eps : ℝ},   0 < eps →     ∀ (w : CriticalBarrier.K1aVectorKernel.Vec3),       CriticalBarrier.K1aVectorKernel.DxiCandidate eps w w =         (eps ^ 2 * (CriticalBarrier.K1aVectorKernel.r eps w ^ 3)⁻¹) • w"
   },
   {
    "name": "CriticalBarrier.K1aVectorKernel.DxiCandidate_smul",
@@ -937,7 +937,7 @@
    "line": 68,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(eps c : ℝ) (w a : Vec3) : DxiCandidate eps w (c • a) = c • DxiCandidate eps w a"
+   "statement": "∀ (eps c : ℝ) (w a : CriticalBarrier.K1aVectorKernel.Vec3),   CriticalBarrier.K1aVectorKernel.DxiCandidate eps w (c • a) = c • CriticalBarrier.K1aVectorKernel.DxiCandidate eps w a"
   },
   {
    "name": "CriticalBarrier.K1aVectorKernel.r_ne_zero",
@@ -945,7 +945,7 @@
    "line": 28,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : r eps w ≠ 0"
+   "statement": "∀ {eps : ℝ}, 0 < eps → ∀ (w : CriticalBarrier.K1aVectorKernel.Vec3), CriticalBarrier.K1aVectorKernel.r eps w ≠ 0"
   },
   {
    "name": "CriticalBarrier.K1aVectorKernel.r_pos",
@@ -953,7 +953,7 @@
    "line": 23,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : 0 < r eps w"
+   "statement": "∀ {eps : ℝ}, 0 < eps → ∀ (w : CriticalBarrier.K1aVectorKernel.Vec3), 0 < CriticalBarrier.K1aVectorKernel.r eps w"
   },
   {
    "name": "CriticalBarrier.K1aVectorKernel.r_sq",
@@ -961,16 +961,14 @@
    "line": 32,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps : ℝ} (heps : 0 < eps) (w : Vec3) : (r eps w) ^ 2 = ‖w‖ ^ 2 + eps ^ 2"
+   "statement": "∀ {eps : ℝ},   0 < eps →     ∀ (w : CriticalBarrier.K1aVectorKernel.Vec3), CriticalBarrier.K1aVectorKernel.r eps w ^ 2 = ‖w‖ ^ 2 + eps ^ 2"
   },
   {
    "name": "CriticalBarrier.K1aXiEps.eps_le_sqrt_rSq",
    "file": "formal/G1/XiEpsChainRule.lean",
    "line": 26,
-   "state": "erro",
-   "axioms_beyond_standard": [
-    "sorryAx"
-   ],
+   "state": "nao_checado",
+   "axioms_beyond_standard": [],
    "statement": "{eps q : ℝ} (heps : 0 < eps) (hq : 0 ≤ q) : eps ≤ Real.sqrt (rSq eps q)"
   },
   {
@@ -979,7 +977,7 @@
    "line": 57,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps q r : ℝ} (hq : 0 ≤ q) (hr : r ^ 2 = rSq eps q) (hr0 : r ≠ 0) : eps ^ 2 / r ^ 2 ≤ 1"
+   "statement": "∀ {eps q r : ℝ}, 0 ≤ q → r ^ 2 = CriticalBarrier.K1aXiEps.rSq eps q → r ≠ 0 → eps ^ 2 / r ^ 2 ≤ 1"
   },
   {
    "name": "CriticalBarrier.K1aXiEps.rSq_pos",
@@ -987,17 +985,15 @@
    "line": 15,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps q : ℝ} (heps : 0 < eps) (hq : 0 ≤ q) : 0 < rSq eps q"
+   "statement": "∀ {eps q : ℝ}, 0 < eps → 0 ≤ q → 0 < CriticalBarrier.K1aXiEps.rSq eps q"
   },
   {
    "name": "CriticalBarrier.K1aXiEps.radial_defect_scalar",
    "file": "formal/G1/XiEpsChainRule.lean",
    "line": 35,
-   "state": "erro",
-   "axioms_beyond_standard": [
-    "sorryAx"
-   ],
-   "statement": "{eps q : ℝ} (heps : 0 < eps) (hq : 0 ≤ q) : 1 - q / rSq eps q = eps ^ 2 / rSq eps q"
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {eps q : ℝ},   0 < eps → 0 ≤ q → 1 - q / CriticalBarrier.K1aXiEps.rSq eps q = eps ^ 2 / CriticalBarrier.K1aXiEps.rSq eps q"
   },
   {
    "name": "CriticalBarrier.K1aXiEps.radial_eigenvalue_scalar",
@@ -1005,7 +1001,7 @@
    "line": 43,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps q r : ℝ} (hr : r ^ 2 = rSq eps q) (hr0 : r ≠ 0) : 1 / r - q / r ^ 3 = eps ^ 2 / r ^ 3"
+   "statement": "∀ {eps q r : ℝ}, r ^ 2 = CriticalBarrier.K1aXiEps.rSq eps q → r ≠ 0 → 1 / r - q / r ^ 3 = eps ^ 2 / r ^ 3"
   },
   {
    "name": "CriticalBarrier.K1aXiEps.sqrt_rSq_pos",
@@ -1013,7 +1009,7 @@
    "line": 21,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps q : ℝ} (heps : 0 < eps) (hq : 0 ≤ q) : 0 < Real.sqrt (rSq eps q)"
+   "statement": "∀ {eps q : ℝ}, 0 < eps → 0 ≤ q → 0 < √(CriticalBarrier.K1aXiEps.rSq eps q)"
   },
   {
    "name": "CriticalBarrier.KernelPromotedG1Assembly.balance_and_G1flex_give_differential_inequality",
@@ -1021,7 +1017,7 @@
    "line": 22,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(yPrime nu Z V theta a Y : ℝ) (hbal : EnstrophyBalance yPrime nu Z V) (hg1 : G1FlexEstimate V theta nu Z a Y) : (1 / 2 : ℝ) * yPrime + (1 - theta) * nu * Z ≤ a * Y"
+   "statement": "∀ (yPrime nu Z V theta a Y : ℝ),   CriticalBarrier.KernelPromotedG1Assembly.EnstrophyBalance yPrime nu Z V →     CriticalBarrier.KernelPromotedG1Assembly.G1FlexEstimate V theta nu Z a Y →       1 / 2 * yPrime + (1 - theta) * nu * Z ≤ a * Y"
   },
   {
    "name": "CriticalBarrier.KernelPromotedG1Assembly.pointwiseTheta_nonnegative",
@@ -1029,7 +1025,7 @@
    "line": 73,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(d : ThreeGatePointwiseData) (nu : ℝ) (hnu : 0 < nu) (heps : 0 ≤ totalEpsilon d) : 0 ≤ pointwiseTheta d nu"
+   "statement": "∀ (d : CriticalBarrier.KernelPromotedG1Assembly.ThreeGatePointwiseData) (nu : ℝ),   0 < nu →     0 ≤ CriticalBarrier.KernelPromotedG1Assembly.totalEpsilon d →       0 ≤ CriticalBarrier.KernelPromotedG1Assembly.pointwiseTheta d nu"
   },
   {
    "name": "CriticalBarrier.KernelPromotedG1Assembly.pointwiseTheta_strictly_less_than_one",
@@ -1037,7 +1033,7 @@
    "line": 82,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(d : ThreeGatePointwiseData) (nu : ℝ) (hnu : 0 < nu) (heps : totalEpsilon d < nu) : pointwiseTheta d nu < 1"
+   "statement": "∀ (d : CriticalBarrier.KernelPromotedG1Assembly.ThreeGatePointwiseData) (nu : ℝ),   0 < nu →     CriticalBarrier.KernelPromotedG1Assembly.totalEpsilon d < nu →       CriticalBarrier.KernelPromotedG1Assembly.pointwiseTheta d nu < 1"
   },
   {
    "name": "CriticalBarrier.KernelPromotedG1Assembly.three_gate_gives_G1flex",
@@ -1045,7 +1041,7 @@
    "line": 91,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(d : ThreeGatePointwiseData) (nu : ℝ) (hnu : 0 < nu) (h : ThreeGatePointwiseCertified d) : G1FlexEstimate d.V (pointwiseTheta d nu) nu d.Z (d.C * pointwiseA3 d) d.Y"
+   "statement": "∀ (d : CriticalBarrier.KernelPromotedG1Assembly.ThreeGatePointwiseData) (nu : ℝ),   0 < nu →     CriticalBarrier.KernelPromotedG1Assembly.ThreeGatePointwiseCertified d →       CriticalBarrier.KernelPromotedG1Assembly.G1FlexEstimate d.V         (CriticalBarrier.KernelPromotedG1Assembly.pointwiseTheta d nu) nu d.Z         (d.C * CriticalBarrier.KernelPromotedG1Assembly.pointwiseA3 d) d.Y"
   },
   {
    "name": "CriticalBarrier.KernelPromotedG1Assembly.three_gate_plus_balance_gives_differential",
@@ -1053,7 +1049,7 @@
    "line": 104,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(d : ThreeGatePointwiseData) (nu yPrime : ℝ) (hnu : 0 < nu) (hT3 : ThreeGatePointwiseCertified d) (hbal : EnstrophyBalance yPrime nu d.Z d.V) : (1 / 2 : ℝ) * yPrime + (1 - pointwiseTheta d nu) * nu * d.Z ≤ (d.C * pointwiseA3 d) * d.Y"
+   "statement": "∀ (d : CriticalBarrier.KernelPromotedG1Assembly.ThreeGatePointwiseData) (nu yPrime : ℝ),   0 < nu →     CriticalBarrier.KernelPromotedG1Assembly.ThreeGatePointwiseCertified d →       CriticalBarrier.KernelPromotedG1Assembly.EnstrophyBalance yPrime nu d.Z d.V →         1 / 2 * yPrime + (1 - CriticalBarrier.KernelPromotedG1Assembly.pointwiseTheta d nu) * nu * d.Z ≤           d.C * CriticalBarrier.Ke"
   },
   {
    "name": "CriticalBarrier.KernelPromotedG1Assembly.three_gate_pointwise_assembles",
@@ -1061,7 +1057,7 @@
    "line": 61,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(d : ThreeGatePointwiseData) (h : ThreeGatePointwiseCertified d) : d.V ≤ totalEpsilon d * d.Z + d.C * pointwiseA3 d * d.Y"
+   "statement": "∀ (d : CriticalBarrier.KernelPromotedG1Assembly.ThreeGatePointwiseData),   CriticalBarrier.KernelPromotedG1Assembly.ThreeGatePointwiseCertified d →     d.V ≤       CriticalBarrier.KernelPromotedG1Assembly.totalEpsilon d * d.Z +         d.C * CriticalBarrier.KernelPromotedG1Assembly.pointwiseA3 d * d.Y"
   },
   {
    "name": "CriticalBarrier.ScientificMeet.conflict_cannot_issue",
@@ -1069,7 +1065,7 @@
    "line": 52,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": ": ¬ CanIssueScientificFinal .conflict"
+   "statement": "¬CriticalBarrier.ScientificMeet.CanIssueScientificFinal CriticalBarrier.ScientificMeet.MeetState.conflict"
   },
   {
    "name": "CriticalBarrier.ScientificMeet.meet_disproved_disproved",
@@ -1077,7 +1073,7 @@
    "line": 34,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": ": meet .disproved .disproved = .neither"
+   "statement": "CriticalBarrier.ScientificMeet.meet CriticalBarrier.ScientificMeet.EvidenceState.disproved     CriticalBarrier.ScientificMeet.EvidenceState.disproved =   CriticalBarrier.ScientificMeet.MeetState.neither"
   },
   {
    "name": "CriticalBarrier.ScientificMeet.meet_disproved_proved",
@@ -1085,7 +1081,7 @@
    "line": 31,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": ": meet .disproved .proved = .refutationOnly"
+   "statement": "CriticalBarrier.ScientificMeet.meet CriticalBarrier.ScientificMeet.EvidenceState.disproved     CriticalBarrier.ScientificMeet.EvidenceState.proved =   CriticalBarrier.ScientificMeet.MeetState.refutationOnly"
   },
   {
    "name": "CriticalBarrier.ScientificMeet.meet_proved_disproved",
@@ -1093,7 +1089,7 @@
    "line": 28,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": ": meet .proved .disproved = .proofOnly"
+   "statement": "CriticalBarrier.ScientificMeet.meet CriticalBarrier.ScientificMeet.EvidenceState.proved     CriticalBarrier.ScientificMeet.EvidenceState.disproved =   CriticalBarrier.ScientificMeet.MeetState.proofOnly"
   },
   {
    "name": "CriticalBarrier.ScientificMeet.meet_proved_proved",
@@ -1101,7 +1097,7 @@
    "line": 25,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": ": meet .proved .proved = .conflict"
+   "statement": "CriticalBarrier.ScientificMeet.meet CriticalBarrier.ScientificMeet.EvidenceState.proved     CriticalBarrier.ScientificMeet.EvidenceState.proved =   CriticalBarrier.ScientificMeet.MeetState.conflict"
   },
   {
    "name": "CriticalBarrier.ScientificMeet.meet_unknown_left",
@@ -1109,7 +1105,7 @@
    "line": 37,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(r : EvidenceState) : meet .unknown r = .openMath"
+   "statement": "∀ (r : CriticalBarrier.ScientificMeet.EvidenceState),   CriticalBarrier.ScientificMeet.meet CriticalBarrier.ScientificMeet.EvidenceState.unknown r =     CriticalBarrier.ScientificMeet.MeetState.openMath"
   },
   {
    "name": "CriticalBarrier.ScientificMeet.meet_unknown_right",
@@ -1117,7 +1113,7 @@
    "line": 41,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(p : EvidenceState) : meet p .unknown = .openMath"
+   "statement": "∀ (p : CriticalBarrier.ScientificMeet.EvidenceState),   CriticalBarrier.ScientificMeet.meet p CriticalBarrier.ScientificMeet.EvidenceState.unknown =     CriticalBarrier.ScientificMeet.MeetState.openMath"
   },
   {
    "name": "CriticalBarrier.ScientificMeet.neither_cannot_issue",
@@ -1125,7 +1121,7 @@
    "line": 60,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": ": ¬ CanIssueScientificFinal .neither"
+   "statement": "¬CriticalBarrier.ScientificMeet.CanIssueScientificFinal CriticalBarrier.ScientificMeet.MeetState.neither"
   },
   {
    "name": "CriticalBarrier.ScientificMeet.openMath_cannot_issue",
@@ -1133,13 +1129,13 @@
    "line": 56,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": ": ¬ CanIssueScientificFinal .openMath"
+   "statement": "¬CriticalBarrier.ScientificMeet.CanIssueScientificFinal CriticalBarrier.ScientificMeet.MeetState.openMath"
   },
   {
    "name": "G1DynamicCampanato.proved_identity_interface_accepts_vacuous_pde",
    "file": "formal/G1/DynamicCampanato.lean",
    "line": 165,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": PROVED_IDENTITY vacuousLocalEnergyIdentityData"
   },
@@ -1147,7 +1143,7 @@
    "name": "G1FailProofAllGaps.ALL_EXPOSED_GAPS_FAIL_PROOF",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 340,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": G1FailProofFinal.CURRENT_ARCHITECTURE_FAIL_PROOF_PROP ∧ vacuousEndpointMap.GlobalRegularity ∧ EndpointInterfaces.NSCriticalBridge vacuousNSAssumptions ∧ EndpointInterfaces.ESSEndpoint vacuousNSAssumptions ∧ vacuousEpsilonCoercive.implication ∧ vacuousCorrectionClosure.preservesAdmissibility ∧ vacuousCorrectionClosure.contractsDefect ∧ vacuousPressureCompatibility.theoremObligation ∧ vacuousForci"
   },
@@ -1155,7 +1151,7 @@
    "name": "G1FailProofAllGaps.G2_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 157,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": zeroG1G4State.highL3 ≤ vacuousHighFrequencyCertificate.C * vacuousHighFrequencyCertificate.Lambda ^ (-1 : ℤ) * vacuousHighFrequencyCertificate.M"
   },
@@ -1163,7 +1159,7 @@
    "name": "G1FailProofAllGaps.G3_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 174,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": zeroG1G4State.totalL3 ≤ vacuousFixedScaleReconstruction.low_bound + vacuousFixedScaleReconstruction.high_bound"
   },
@@ -1171,7 +1167,7 @@
    "name": "G1FailProofAllGaps.G4_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 187,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousEndpointMap.GlobalRegularity"
   },
@@ -1179,7 +1175,7 @@
    "name": "G1FailProofAllGaps.GENERIC_NS_BRIDGE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 311,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousNoSorryBridge.ActualNS → vacuousNoSorryBridge.GlobalRegularity"
   },
@@ -1187,7 +1183,7 @@
    "name": "G1FailProofAllGaps.K1A_INVENTORY_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 34,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousK1Inventory.K1a"
   },
@@ -1195,7 +1191,7 @@
    "name": "G1FailProofAllGaps.K1B_INVENTORY_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 36,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousK1Inventory.K1b"
   },
@@ -1203,7 +1199,7 @@
    "name": "G1FailProofAllGaps.K1B_TRANSPORT_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 53,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousTransportEstimate.C_transport_cutoff_free ∧ vacuousTransportEstimate.transport_bound"
   },
@@ -1211,7 +1207,7 @@
    "name": "G1FailProofAllGaps.K1C_INVENTORY_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 37,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousK1Inventory.K1c"
   },
@@ -1219,7 +1215,7 @@
    "name": "G1FailProofAllGaps.K1C_K1D_ABSORPTION_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 68,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousUniformAbsorption.gamma_eps_independent ∧ vacuousUniformAbsorption.biot_savart_bound ∧ vacuousUniformAbsorption.aubin_lions_tightness"
   },
@@ -1227,7 +1223,7 @@
    "name": "G1FailProofAllGaps.K1D_INVENTORY_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 38,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousK1Inventory.K1d"
   },
@@ -1235,7 +1231,7 @@
    "name": "G1FailProofAllGaps.K1D_WEIGHTED_ABSORPTION_DERIVATION_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 83,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousWeightedAbsorption.γ_derivation_certificate"
   },
@@ -1243,7 +1239,7 @@
    "name": "G1FailProofAllGaps.K1E_INTEGRABILITY_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 104,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousIntegrableCoefficient.uniform_L1 ∧ vacuousIntegrableCoefficient.A_cutoff_free"
   },
@@ -1251,7 +1247,7 @@
    "name": "G1FailProofAllGaps.K1E_INVENTORY_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 39,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousK1Inventory.K1e"
   },
@@ -1259,7 +1255,7 @@
    "name": "G1FailProofAllGaps.K1E_LIMIT_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 117,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousAbsorptionToDepletionBridge.eps_limit_preserves_gamma"
   },
@@ -1267,7 +1263,7 @@
    "name": "G1FailProofAllGaps.K1F_DIMENSIONAL_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 134,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousVEffData.dimensional_normalisation"
   },
@@ -1275,7 +1271,7 @@
    "name": "G1FailProofAllGaps.K1F_INVENTORY_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 40,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousK1Inventory.K1f"
   },
@@ -1283,7 +1279,7 @@
    "name": "G1FailProofAllGaps.NS_B1_UNDERSPECIFIED_CLASS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 199,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": ∃ u : vacuousNSAssumptions.AdmissibleState, vacuousNSAssumptions.repositoryCondition u"
   },
@@ -1291,7 +1287,7 @@
    "name": "G1FailProofAllGaps.NS_B2_CRITICAL_BRIDGE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 204,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": EndpointInterfaces.NSCriticalBridge vacuousNSAssumptions"
   },
@@ -1299,7 +1295,7 @@
    "name": "G1FailProofAllGaps.NS_B3_ESS_MAP_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 211,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": EndpointInterfaces.ESSEndpoint vacuousNSAssumptions"
   },
@@ -1307,7 +1303,7 @@
    "name": "G1FailProofAllGaps.NS_B4_ZERO_BRANCH_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 226,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousEpsilonWellDefined.zeroBranchSpecified () trivial rfl"
   },
@@ -1315,7 +1311,7 @@
    "name": "G1FailProofAllGaps.NS_B5_COERCIVITY_FIELD_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 239,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousEpsilonCoercive.implication"
   },
@@ -1323,7 +1319,7 @@
    "name": "G1FailProofAllGaps.NS_B6_CORRECTION_FIELDS_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 252,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousCorrectionClosure.preservesAdmissibility ∧ vacuousCorrectionClosure.contractsDefect"
   },
@@ -1331,7 +1327,7 @@
    "name": "G1FailProofAllGaps.NS_B7_PRESSURE_FIELD_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 263,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousPressureCompatibility.theoremObligation"
   },
@@ -1339,7 +1335,7 @@
    "name": "G1FailProofAllGaps.NS_B8_FORCING_FIELD_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 273,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousForcingCompatibility.theoremObligation"
   },
@@ -1347,7 +1343,7 @@
    "name": "G1FailProofAllGaps.NS_B9_MEAN_TO_CRITICAL_FIELD_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 286,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousMeanToCritical.theoremObligation"
   },
@@ -1355,7 +1351,7 @@
    "name": "G1FailProofAllGaps.STATE_CLOSURE_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 335,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousStateClosure.GlobalRegularity ()"
   },
@@ -1363,7 +1359,7 @@
    "name": "G1FailProofFinal.CURRENT_ARCHITECTURE_FAIL_PROOF",
    "file": "formal/G1/FailProofFinal.lean",
    "line": 69,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": CURRENT_ARCHITECTURE_FAIL_PROOF_PROP"
   },
@@ -1371,7 +1367,7 @@
    "name": "G1FailProofFinal.absorption_route_countercertificate",
    "file": "formal/G1/FailProofFinal.lean",
    "line": 30,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": G1WeightedLow.gamma_effective = -35 ∧ ¬ ∃ γ : ℝ, 0 < γ ∧ γ ≤ G1WeightedLow.gamma_effective"
   },
@@ -1379,7 +1375,7 @@
    "name": "G1FailProofFinal.coherence_interface_countercertificate",
    "file": "formal/G1/FailProofFinal.lean",
    "line": 37,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": ∃ q : G1Dynamic.CriticalCoherenceAtTime, q.C = 0 ∧ q.holds"
   },
@@ -1387,7 +1383,7 @@
    "name": "G1FailProofFinal.dynamic_campanato_countercertificate",
    "file": "formal/G1/FailProofFinal.lean",
    "line": 51,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": G1DynamicCampanato.PROVED_IDENTITY G1DynamicCampanato.vacuousLocalEnergyIdentityData"
   },
@@ -1395,7 +1391,7 @@
    "name": "G1FailProofFinal.fullchain_interface_countercertificate",
    "file": "formal/G1/FailProofFinal.lean",
    "line": 41,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": (G1Dynamic.vacuousFullChain.compose trivial).depletion"
   },
@@ -1403,7 +1399,7 @@
    "name": "G1FailProofFinal.xieps_interface_countercertificate",
    "file": "formal/G1/FailProofFinal.lean",
    "line": 45,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": G1XiEpsPDE.vacuousXiEpsPDESpec.equation ∧ G1XiEpsPDE.vacuousXiEpsPDESpec.local_energy_test"
   },
@@ -1411,7 +1407,7 @@
    "name": "G1WeightedLow.gamma_effective_cannot_bound_positive_gamma",
    "file": "formal/G1/WeightedLow.lean",
    "line": 120,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ ∃ γ : ℝ, 0 < γ ∧ γ ≤ gamma_effective"
   },
@@ -1419,7 +1415,7 @@
    "name": "G1WeightedLow.gamma_effective_not_pos",
    "file": "formal/G1/WeightedLow.lean",
    "line": 53,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ 0 < gamma_effective"
   },
@@ -1427,7 +1423,7 @@
    "name": "G1XiEpsPDE.XiEpsPDE.equation_holds",
    "file": "formal/G1/XiEpsPDE.lean",
    "line": 233,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(h : XiEpsPDE) : h.equation"
   },
@@ -1435,7 +1431,7 @@
    "name": "G1XiEpsPDE.regularizedChainMap_unfold",
    "file": "formal/G1/XiEpsPDE.lean",
    "line": 87,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(r : ℝ) (ξ v : Vec3) : regularizedChainMap r ξ v = r⁻¹ • (v - ((@inner ℝ Vec3 _ ξ v)) • ξ)"
   },
@@ -1443,7 +1439,7 @@
    "name": "G1XiEpsPDE.xieps_record_allows_vacuous_equation",
    "file": "formal/G1/XiEpsPDE.lean",
    "line": 309,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousXiEpsPDESpec.equation"
   },
@@ -1451,20 +1447,15 @@
    "name": "G1XiEpsPDE.xieps_record_allows_vacuous_local_energy_test",
    "file": "formal/G1/XiEpsPDE.lean",
    "line": 313,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousXiEpsPDESpec.local_energy_test"
   }
  ],
- "closed": 56,
+ "closed": 44,
  "files_sha256": {
-  "formal/G1/DynamicCampanato.lean": "ca6be9bd81706c00cdbd3cef942ad99d601ae0ea8d6592dbe955fc8d178bed77",
-  "formal/G1/FailProofFinal.lean": "dc7d01dc30347bddd40d6b28541d4e66e8e8ebcfa51fb7c6ef35dfa36cd46571",
-  "formal/G1/G1_DynamicCriticalGeometry.lean": "a35c0cf091632cfe4a6682469c81fbfa69c63ac8fed25a8be13aa4de6fe202df",
   "formal/G1/ScientificMeet.lean": "a00e82b321b648eba9cb31c6edaae047f7aa3032bd250dd4c9fb97f7e0ebf1df",
-  "formal/G1/WeightedLow.lean": "0b700ba44839af996491bdfa5c8378ee88bae0f228d9458f9c45df1dd61762a1",
   "formal/G1/XiEpsChainRule.lean": "2362f2cadf20664828d4946230146dad61469ecdeaf6401808a729ab08d09521",
-  "formal/G1/XiEpsPDE.lean": "ec46dbf9b520e6a6611b5b852d8b6ae440dac015e6de8df767c8b4c82105cd9b",
   "formal/lean/CriticalBarrier/ExternalFastPath.lean": "dd81d80215908db62393af1e82b05b8ff53862a3c07755f77f669ab32bdf4498",
   "formal/lean/CriticalBarrier/ExternalRouteRouter.lean": "4e8a6759dea2aae6b4152b3e353af0b4ca69329792813a80916f457e4d00a79b",
   "formal/lean/CriticalBarrier/K1aChainRule.lean": "02e86bf047e8a6426db34b8ff950d1da16b6b568ce11fb62679b1b60c3cb1db8",
@@ -1482,6 +1473,6 @@
   "lakefile.toml": "1e6a21f0c490cf4d081764648d0473d217ddc48eb0755224aadf84a6bf0d3b1e",
   "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87"
  },
- "published_at": "2026-10-29T20:16:03Z",
- "certificate_sha256": "64b07a0fd4b61e80e574ef923daf715b23d4e5e54f7a3aa14d5fc664f3ec0714"
+ "published_at": "2026-11-02T20:55:44Z",
+ "certificate_sha256": "6094380cb02b38c61a9ab2ab78eca6539a63c365b24e26f0176a2152844250ea"
 }

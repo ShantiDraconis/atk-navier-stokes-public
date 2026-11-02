@@ -1,0 +1,1241 @@
+--- a/G1_KAdmissible_to_SignedDepletion.lean
++++ b/G1_KAdmissible_to_SignedDepletion.lean
+@@ -130,7 +130,7 @@
+ /-- The genuinely analytic G1a evolution inequality.  Constructing a value of
+ this structure from an actual NSE solution is OPEN. -/
+ structure JointEvolutionCertificate where
+-  q qDerivative viscousRate production lowerOrder : ℝ → ℝ
++  (q qDerivative viscousRate production lowerOrder : ℝ → ℝ)
+   hq : ∀ t, 0 ≤ q t
+   hViscous : ∀ t, 0 ≤ viscousRate t
+   evolution : ∀ t,
+@@ -208,7 +208,7 @@
+ /-! ## G1d: non-circular time-integrability bookkeeping -/
+ 
+ structure LerayEnergyCertificate where
+-  ν E0 totalGradU2 : ℝ
++  (ν E0 totalGradU2 : ℝ)
+   hν : 0 < ν
+   hE0 : 0 ≤ E0
+   hgrad : 0 ≤ totalGradU2
+@@ -280,7 +280,7 @@
+ 
+ /-- Algebraic G3 reconstruction data. -/
+ structure CriticalReconstruction where
+-  E0 M C : ℝ
++  (E0 M C : ℝ)
+   hE0 : 0 ≤ E0
+   hM : 0 ≤ M
+   hC : 0 ≤ C
+--- a/Lean/Millennium/CompleteClosure_Targets.lean
++++ b/Lean/Millennium/CompleteClosure_Targets.lean
+@@ -1,4 +1,7 @@
+ import Mathlib.Data.Matrix.Basic
++import Mathlib.Tactic.NormNum
++import Mathlib.Data.Real.Basic
++import Mathlib.Data.Complex.Basic
+ 
+ noncomputable section
+ open Matrix
+--- a/MillenniumAudit/StabilizedHypothetical.lean
++++ b/MillenniumAudit/StabilizedHypothetical.lean
+@@ -77,7 +77,7 @@
+   exact Real.sqrt_le_sqrt (by nlinarith [sq_nonneg w])
+ 
+ structure K0DegenerateCertificate where
+-  y z : ℝ
++  (y z : ℝ)
+   hy : 0 ≤ y
+   hz : 0 ≤ z
+   zeroGradient : z = 0 → y = 0
+@@ -97,7 +97,7 @@
+     etaLow δ ≤ constant * Real.sqrt δ
+ 
+ structure WeightedGradientControl where
+-  weightedGradient palinstrophy : ℝ → ℝ
++  (weightedGradient palinstrophy : ℝ → ℝ)
+   hWeighted : ∀ t, 0 ≤ weightedGradient t
+   hPalinstrophy : ∀ t, 0 ≤ palinstrophy t
+   domination : ∀ t, weightedGradient t ≤ palinstrophy t
+@@ -108,7 +108,7 @@
+ 
+ structure LowerSemicontinuityCertificate where
+   regularizedIntegral : ℕ → ℝ
+-  limitIntegral liminfValue : ℝ
++  (limitIntegral liminfValue : ℝ)
+   hRegularized : ∀ k, 0 ≤ regularizedIntegral k
+   hLimit : 0 ≤ limitIntegral
+   liminfBound : limitIntegral ≤ liminfValue
+@@ -124,14 +124,14 @@
+ /-! ## G1a: six evolution-term classes -/
+ 
+ structure SixForces where
+-  commutator transport tail cutoff scaleMotion : ℝ → ℝ
++  (commutator transport tail cutoff scaleMotion : ℝ → ℝ)
+   dissipation : ℝ → ℝ
+ 
+ def SixForces.production (q : SixForces) (t : ℝ) : ℝ :=
+   q.commutator t + q.transport t + q.tail t + q.cutoff t + q.scaleMotion t
+ 
+ structure JointEvolutionCertificate where
+-  q qDerivative lowerOrder : ℝ → ℝ
++  (q qDerivative lowerOrder : ℝ → ℝ)
+   forces : SixForces
+   hq : ∀ t, 0 ≤ q t
+   hDissipation : ∀ t, 0 ≤ forces.dissipation t
+@@ -146,7 +146,7 @@
+ /-! ## G1b/G1c: absorption and principal-value-compatible tail -/
+ 
+ structure AbsorptionCertificate where
+-  γ1 γ2 θTail θCutoff θMotion : ℝ
++  (γ1 γ2 θTail θCutoff θMotion : ℝ)
+   hγ1 : 0 ≤ γ1
+   hγ2 : 0 ≤ γ2
+   hTail : 0 ≤ θTail
+@@ -165,7 +165,7 @@
+   · exact h.strictBudget
+ 
+ structure PrincipalValueTailCertificate where
+-  numerator denominator eta : ℝ → ℝ
++  (numerator denominator eta : ℝ → ℝ)
+   hNumerator : ∀ t, 0 ≤ numerator t
+   hDenominator : ∀ t, 0 ≤ denominator t
+   ratioOnNonzero : ∀ t, denominator t ≠ 0 →
+@@ -207,7 +207,7 @@
+ /-! ## The three aggregated Perelman-like objects -/
+ 
+ structure MonotoneNSEntropy where
+-  entropyDerivative defectEnergy remainder multiplier entropy : ℝ → ℝ
++  (entropyDerivative defectEnergy remainder multiplier entropy : ℝ → ℝ)
+   hDefect : ∀ t, 0 ≤ defectEnergy t
+   identity : ∀ t,
+     entropyDerivative t = defectEnergy t + remainder t
+@@ -230,7 +230,7 @@
+ /-! ## G2/G3/G4 and the conditional F -/
+ 
+ structure EnstrophyState where
+-  y yDerivative z stretch a : ℝ → ℝ
++  (y yDerivative z stretch a : ℝ → ℝ)
+   hy : ∀ t, 0 ≤ y t
+   hz : ∀ t, 0 ≤ z t
+   ha : ∀ t, 0 ≤ a t
+--- a/PerelmanLikeStabilizationSpec.lean
++++ b/PerelmanLikeStabilizationSpec.lean
+@@ -30,7 +30,7 @@
+ /-- Object 1: a typed entropy identity.  Constructing this certificate from
+ ActualNS is not done by this module. -/
+ structure TypedEntropyCertificate where
+-  entropy dissipation remainder multiplier : ℝ → ℝ
++  (entropy dissipation remainder multiplier : ℝ → ℝ)
+   hDissipation : ∀ t, 0 ≤ dissipation t
+   identity : ∀ t,
+     entropy t + dissipation t = remainder t
+--- a/audit/multistate-proof-refutation-v1/DeltaUniformity.lean
++++ b/audit/multistate-proof-refutation-v1/DeltaUniformity.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace NSDeltaUniformityAudit
+ 
+ def UniformDelta
+--- a/audit/multistate-proof-refutation-v1/NS_Multistate.lean
++++ b/audit/multistate-proof-refutation-v1/NS_Multistate.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace NSMultistateAudit
+ 
+ inductive ClosureStatus
+--- a/audit/multistate-proof-refutation-v1/NearFieldTarget.lean
++++ b/audit/multistate-proof-refutation-v1/NearFieldTarget.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace NSNearFieldAudit
+ 
+ structure TestedPDEIdentity where
+--- a/audit/producer-first/LegacyWeightedLowCounteraudit.lean
++++ b/audit/producer-first/LegacyWeightedLowCounteraudit.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace NSProducerFirst
+ 
+ /-!
+--- a/audit/producer-first/NSMaterialInhabitant.lean
++++ b/audit/producer-first/NSMaterialInhabitant.lean
+@@ -1,3 +1,5 @@
++import Mathlib.Tactic
++import Mathlib.Data.Real.Basic
+ /-!
+ NS material inhabitant interface.
+ 
+--- a/audit/producer-first/SignedGainCore.lean
++++ b/audit/producer-first/SignedGainCore.lean
+@@ -1,3 +1,5 @@
++import Mathlib.Tactic
++import Mathlib.Data.Real.Basic
+ /-!
+ Forward-only continuation of audit/producer-first/ProducerFirst.lean.
+ 
+--- a/formal/G1/AlignmentTransport.lean
++++ b/formal/G1/AlignmentTransport.lean
+@@ -90,28 +90,28 @@
+ /-- Scale-covariance of rho_star under NS rescaling. -/
+ structure RhoStarScaleCovariance (κ : ℝ) where
+   /-- λ > 0 is the rescaling factor. -/
+-  λ : ℝ
+-  hλ : 0 < λ
++  «λ» : ℝ
++  «hλ» : 0 < «λ»
+   /-- Norms before rescaling. -/
+-  omegaL2 gradOmegaL2 : ℝ
++  (omegaL2 gradOmegaL2 : ℝ)
+   hgrad_pos : 0 < gradOmegaL2
+   /-- Norms after rescaling: caller supplies the values. -/
+-  omegaL2_scaled gradOmegaL2_scaled : ℝ
++  (omegaL2_scaled gradOmegaL2_scaled : ℝ)
+   /-- Under NS rescaling: ‖ω_λ‖₂ = λ^{1/2} ‖ω‖₂. -/
+-  homega_scaled : omegaL2_scaled = Real.sqrt λ * omegaL2
++  homega_scaled : omegaL2_scaled = Real.sqrt «λ» * omegaL2
+   /-- Under NS rescaling: ‖∇ω_λ‖₂ = λ^{3/2} ‖∇ω‖₂. -/
+-  hgrad_scaled : gradOmegaL2_scaled = λ * Real.sqrt λ * gradOmegaL2
++  hgrad_scaled : gradOmegaL2_scaled = «λ» * Real.sqrt «λ» * gradOmegaL2
+ 
+ /-- The scale-covariance law rho_star_λ = λ^{-1} * rho_star follows from the scaling equalities. -/
+ def rhoStarScaleLaw (κ : ℝ) (s : RhoStarScaleCovariance κ) : Prop :=
+   rho_star κ s.omegaL2_scaled s.gradOmegaL2_scaled
+-    = (1 / s.λ) * rho_star κ s.omegaL2 s.gradOmegaL2
++    = (1 / s.«λ») * rho_star κ s.omegaL2 s.gradOmegaL2
+ 
+ /-- The scale law is provable from the equality fields and positivity. -/
+ lemma rhoStarScaleLaw_holds (κ : ℝ) (s : RhoStarScaleCovariance κ) :
+     rhoStarScaleLaw κ s := by
+   simp only [rhoStarScaleLaw, rho_star, s.homega_scaled, s.hgrad_scaled]
+-  have hλ := s.hλ
++  have «hλ» := s.«hλ»
+   have hgrad := s.hgrad_pos
+   field_simp
+   ring
+@@ -222,7 +222,7 @@
+ -/
+ structure V_eff_Data where
+   /-- L² and L∞ norms of vorticity. -/
+-  omegaL2 omegaLinf : ℝ → ℝ    -- t ↦ norms
++  (omegaL2 omegaLinf : ℝ → ℝ)    -- t ↦ norms
+   homegaLinf_pos : ∀ t, 0 < omegaLinf t
+   /-- Effective volume. -/
+   V_eff : ℝ → ℝ
+--- a/formal/G1/DynamicCampanato.lean
++++ b/formal/G1/DynamicCampanato.lean
+@@ -51,12 +51,12 @@
+ -/
+ structure LocalEnergyIdentityData where
+   xiPDE : XiEpsPDE
+-  kappa K omegaL2 gradOmegaL2 r : ℝ
++  (kappa K omegaL2 gradOmegaL2 r : ℝ)
+   hr : 0 < r
+   cutoff : Cutoff kappa K omegaL2 gradOmegaL2
+-  temporal transport stretchNear stretchFar diffusionMain : ℝ
+-  crossCutoffOrderOne crossCutoffOrderTwo crossGradMag drift : ℝ
+-  R1Term R2Term : ℝ
++  (temporal transport stretchNear stretchFar diffusionMain : ℝ)
++  (crossCutoffOrderOne crossCutoffOrderTwo crossGradMag drift : ℝ)
++  (R1Term R2Term : ℝ)
+   /-- Exact test choice: `φ² (ξ_ε - (ξ_ε)_{B_r}) |ω|_ε` with `φ = w_R`. -/
+   tests_XiEpsPDE_exactly : Prop
+   /-- Exact identity with no hidden absorption. -/
+@@ -122,7 +122,7 @@
+ the linear error term in the Campanato step and does not introduce `ρ_*^{-2}`.
+ -/
+ structure FarFieldAveragedBound where
+-  C_far rhoStar r omegaL2 farFieldSqAvg : ℝ
++  (C_far rhoStar r omegaL2 farFieldSqAvg : ℝ)
+   hC_far : 0 ≤ C_far
+   hr : 0 ≤ r
+   hr_le_rhoStar : r ≤ rhoStar
+@@ -161,7 +161,7 @@
+ 
+ /-- One step of the Campanato iteration `J_{r/2} ≤ γ J_r + A r / ρ_*`. -/
+ structure CampanatoIterationStep where
+-  gamma A rhoStar r Jr Jhalf : ℝ
++  (gamma A rhoStar r Jr Jhalf : ℝ)
+   hgamma : 0 ≤ gamma
+   hA : 0 ≤ A
+   hr : 0 ≤ r
+@@ -236,14 +236,14 @@
+ recording merely `γ < 1` is insufficient for the Campanato barrier.
+ -/
+ structure DiffusionHalfContraction where
+-  kappa gammaDiff : ℝ
++  (kappa gammaDiff : ℝ)
+   hkappa : 0 < kappa
+   half_contraction : gammaDiff ≤ (1 : ℝ) / 2
+   produced_by_diffusion : Prop
+ 
+ /-- Signed far-field formulation left open until the cancellation gain is proved. -/
+ structure StretchFarSignedOpenCZ where
+-  rhoStar r betaMissing : ℝ
++  (rhoStar r betaMissing : ℝ)
+   hr : 0 ≤ r
+   hrhoStar : 0 < rhoStar
+   hbetaMissing : 0 < betaMissing
+--- a/formal/G1/G1_DynamicCriticalGeometry.lean
++++ b/formal/G1/G1_DynamicCriticalGeometry.lean
+@@ -48,14 +48,14 @@
+ ||∇ω_λ||₂ = λ^(3/2)||∇ω||₂.
+ -/
+ structure VorticityScalingData where
+-  λ : ℝ
+-  hλ : 0 < λ
++  «λ» : ℝ
++  «hλ» : 0 < «λ»
+   omegaL2 : ℝ
+   gradOmegaL2 : ℝ
+   omegaL2_scaled : ℝ
+   gradOmegaL2_scaled : ℝ
+-  homega : omegaL2_scaled = Real.sqrt λ * omegaL2
+-  hgrad : gradOmegaL2_scaled = λ * Real.sqrt λ * gradOmegaL2
++  homega : omegaL2_scaled = Real.sqrt «λ» * omegaL2
++  hgrad : gradOmegaL2_scaled = «λ» * Real.sqrt «λ» * gradOmegaL2
+ 
+ /--
+ The expected spatial scaling law for ρ_* is exposed as a proposition.
+@@ -63,7 +63,7 @@
+ -/
+ def RhoStarScalesLikeLength (κ : ℝ) (s : VorticityScalingData) : Prop :=
+   rhoStar κ s.omegaL2_scaled s.gradOmegaL2_scaled
+-    = (1 / s.λ) * rhoStar κ s.omegaL2 s.gradOmegaL2
++    = (1 / s.«λ») * rhoStar κ s.omegaL2 s.gradOmegaL2
+ 
+ /--
+ Pairwise directional discrepancy. We use the Gram determinant rather than a
+@@ -207,7 +207,7 @@
+       This is the critical piece: it uses only ‖u₀‖₂ and ν from Leray-Hopf. -/
+   remainder_vanishes : Prop
+   /-- Explicit dependence witness: the L¹ bound on R_ε is controlled by a
+-      constant that depends ONLY on (‖u₀‖₂, ν) and NOT on ε. -/
++      axiom that depends ONLY on (‖u₀‖₂, ν) and NOT on ε. -/
+   remainder_bound_cutoff_free : Prop
+ 
+ /--
+@@ -316,7 +316,7 @@
+ -/
+ structure hDynamic_eps_Statement (C0 : ℝ) (hC0 : 0 ≤ C0) where
+   /-- Parameters. -/
+-  eps theta kappa : ℝ
++  (eps theta kappa : ℝ)
+   heps : 0 < eps
+   htheta : 0 < theta ∧ theta < 1
+   hkappa : 0 < kappa
+--- a/formal/G1/XiEpsPDE.lean
++++ b/formal/G1/XiEpsPDE.lean
+@@ -15,6 +15,7 @@
+ import Mathlib.Analysis.InnerProductSpace.PiL2
+ import Mathlib.Data.Matrix.Basic
+ import Mathlib.Data.Real.Sqrt
++import Mathlib.Analysis.SpecialFunctions.Sqrt
+ 
+ noncomputable section G1XiEpsPDESection
+ 
+@@ -93,9 +94,9 @@
+   /-- Exact test by `φ² (ξ_ε - (ξ_ε)_{B_r}) |ω|_ε`, before CZ/Young. -/
+   local_energy_test : Prop
+   /-- Scalar bookkeeping terms for the tested identity. -/
+-  temporal transport stretchNear stretchFar diffusionMain : ℝ
+-  crossCutoffOrderOne crossCutoffOrderTwo crossGradMag drift : ℝ
+-  R1Term R2Term : ℝ
++  (temporal transport stretchNear stretchFar diffusionMain : ℝ)
++  (crossCutoffOrderOne crossCutoffOrderTwo crossGradMag drift : ℝ)
++  (R1Term R2Term : ℝ)
+   /-- Exact identity produced by the PDE test. -/
+   local_energy_identity :
+     temporal =
+--- a/formal/g1/lean/G1Depletion.lean
++++ b/formal/g1/lean/G1Depletion.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-! Audit-safe G1 interface. No axiom/sorry: the conjectural analytic bridge is a field supplied
+ by a model. Kernel checking proves only the downstream implication. -/
+ namespace G1
+@@ -26,7 +28,7 @@
+ 
+ /-- Exact analytic obligation: this is where localized Biot-Savart/cancellation must be proved. -/
+ structure AnalyticBridge (D : Data) where
+-  M c C δ : ℝ
++  (M c C δ : ℝ)
+   hM : 0 < M
+   hc : 0 < c
+   hC : 0 < C
+--- a/formal/lean/CriticalBarrier/B2_8_AlignmentTarget.lean
++++ b/formal/lean/CriticalBarrier/B2_8_AlignmentTarget.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # B2.8 Alignment Target
+ 
+--- a/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean
++++ b/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # B2.8 signed-flux gap isolation
+ 
+--- a/formal/lean/CriticalBarrier/B2_ChainTarget.lean
++++ b/formal/lean/CriticalBarrier/B2_ChainTarget.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import CriticalBarrier.B2_8_AlignmentTarget
+ 
++noncomputable section
++
+ /-!
+ # B2 chain target
+ 
+--- a/formal/lean/CriticalBarrier/B2_ClosureObligations.lean
++++ b/formal/lean/CriticalBarrier/B2_ClosureObligations.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # B2 closure obligations
+ 
+--- a/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
++++ b/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # B2 deterministic parameter chain (audit target)
+ 
+@@ -23,7 +25,7 @@
+   C_Bern : Scalar
+   C_Sob : Scalar
+   C_CZ : Scalar
+-  deriving Repr
++  
+ 
+ namespace Parameters
+ 
+--- a/formal/lean/CriticalBarrier/BackwardHypotheticalClosureOracle.lean
++++ b/formal/lean/CriticalBarrier/BackwardHypotheticalClosureOracle.lean
+@@ -1,5 +1,7 @@
+ import CriticalBarrier.GlobalRegularityFromG1
+ 
++noncomputable section
++
+ namespace CriticalBarrier.BackwardAudit
+ 
+ variable {State : Type}
+--- a/formal/lean/CriticalBarrier/BackwardWithoutOracle.lean
++++ b/formal/lean/CriticalBarrier/BackwardWithoutOracle.lean
+@@ -1,5 +1,7 @@
+ import CriticalBarrier.GlobalRegularityFromG1
+ 
++noncomputable section
++
+ namespace CriticalBarrier.BackwardAudit
+ 
+ open CriticalBarrier.GlobalRegularityFromG1
+--- a/formal/lean/CriticalBarrier/ClosureTargetTree.lean
++++ b/formal/lean/CriticalBarrier/ClosureTargetTree.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # ClosureTargetTree
+ 
+--- a/formal/lean/CriticalBarrier/CriticalTailBridge.lean
++++ b/formal/lean/CriticalBarrier/CriticalTailBridge.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ CriticalTailBridge.lean
+ 
+--- a/formal/lean/CriticalBarrier/EndpointInterfaces.lean
++++ b/formal/lean/CriticalBarrier/EndpointInterfaces.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace CriticalBarrier.EndpointInterfaces
+ 
+ /-- Audit-only statuses. These constructors do not prove the propositions they label. -/
+--- a/formal/lean/CriticalBarrier/G1G4ClosureBlueprint.lean
++++ b/formal/lean/CriticalBarrier/G1G4ClosureBlueprint.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ G1–G4 closure blueprint.
+ 
+--- a/formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean
++++ b/formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # GlobalRegularityFromG1
+ 
+@@ -12,10 +14,10 @@
+ 
+ namespace CriticalBarrier.GlobalRegularityFromG1
+ 
+-/-- Abstract state type for a maximal smooth Navier--Stokes trajectory. -/
++/- Abstract state type for a maximal smooth Navier--Stokes trajectory. -/
+ variable {State : Type}
+ 
+-/-- Problem-level predicates. -/
++/- Problem-level predicates. -/
+ variable (ActualNS : State → Prop)
+ variable (UniformEnstrophy : State → Prop)
+ variable (CriticalL3Bound : State → Prop)
+--- a/formal/lean/CriticalBarrier/ResolutionDynamics.lean
++++ b/formal/lean/CriticalBarrier/ResolutionDynamics.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace CriticalBarrier.ResolutionDynamics
+ 
+ /-- Generic proof-state dynamics. `nativeControl` is deliberately abstract:
+--- a/formal/lean/GapCollapseAudit.lean
++++ b/formal/lean/GapCollapseAudit.lean
+@@ -79,7 +79,7 @@
+ inductive ProofStatus where
+   | proved
+   | externalClassicalTheorem
+-  | axiom
++  | «axiom»
+   | sorry
+   | admit
+   | truePlaceholder
+--- a/formal/lean/IndeterminateParameterCompletion.lean
++++ b/formal/lean/IndeterminateParameterCompletion.lean
+@@ -16,6 +16,8 @@
+ import Mathlib.Data.Int.Basic
+ import Mathlib.Tactic
+ 
++noncomputable section
++
+ namespace AuditCompletion
+ 
+ /-! ## 1. Explicit unresolved-parameter state -/
+--- a/formal/lean/Millennium/AllClosureTargets.lean
++++ b/formal/lean/Millennium/AllClosureTargets.lean
+@@ -2,6 +2,8 @@
+ import CriticalBarrier.CompleteClosureTargets
+ import CriticalBarrier.B2_ChainTarget
+ 
++noncomputable section
++
+ /-!
+ # Millennium/AllClosureTargets.lean
+ 
+--- a/formal/lean/UnifiedAsymptoticLogic.lean
++++ b/formal/lean/UnifiedAsymptoticLogic.lean
+@@ -1,3 +1,6 @@
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ /-
+ UnifiedAsymptoticLogic.lean
+ 
+--- a/formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean
++++ b/formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # CompleteNoSorry
+ 
+--- a/formal/millennium/lean/MillenniumAudit/G1Audit.lean
++++ b/formal/millennium/lean/MillenniumAudit/G1Audit.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # G1Audit
+ 
+--- a/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean
++++ b/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # HypothesesComplete_v2
+ 
+@@ -88,19 +90,19 @@
+ /-- Abstract scaling data for checking rhoStar. -/
+ structure ScalingLaw where
+   scaleState : ℝ → E.State → E.State
+-  omegaL2_scale : ∀ λ s, 0 < λ →
+-    E.omegaL2 (scaleState λ s) = Real.sqrt λ * E.omegaL2 s
+-  gradOmegaL2_scale : ∀ λ s, 0 < λ →
+-    E.gradOmegaL2 (scaleState λ s) = λ * Real.sqrt λ * E.gradOmegaL2 s
++  omegaL2_scale : ∀ «λ» s, 0 < «λ» →
++    E.omegaL2 (scaleState «λ» s) = Real.sqrt «λ» * E.omegaL2 s
++  gradOmegaL2_scale : ∀ «λ» s, 0 < «λ» →
++    E.gradOmegaL2 (scaleState «λ» s) = «λ» * Real.sqrt «λ» * E.gradOmegaL2 s
+ 
+ /-- rhoStar scales as λ⁻¹ once the L² and gradient-L² scaling laws are supplied. -/
+ theorem rhoStar_scale
+-    (S : ScalingLaw E) (κ λ : ℝ) (s : E.State)
+-    (hλ : 0 < λ)
++    (S : ScalingLaw E) (κ «λ» : ℝ) (s : E.State)
++    («hλ» : 0 < «λ»)
+     (hgrad : E.gradOmegaL2 s ≠ 0) :
+-    rhoStar E (S.scaleState λ s) κ = λ⁻¹ * rhoStar E s κ := by
+-  rw [rhoStar, rhoStar, S.omegaL2_scale λ s hλ, S.gradOmegaL2_scale λ s hλ]
+-  have hsqrt : Real.sqrt λ ≠ 0 := ne_of_gt (Real.sqrt_pos.2 hλ)
++    rhoStar E (S.scaleState «λ» s) κ = «λ»⁻¹ * rhoStar E s κ := by
++  rw [rhoStar, rhoStar, S.omegaL2_scale fun s hλ => S.gradOmegaL2_scale «λ» s «hλ»]
++  have hsqrt : Real.sqrt «λ» ≠ 0 := ne_of_gt (Real.sqrt_pos.2 «hλ»)
+   field_simp
+   ring
+ 
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_AlignmentTarget.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_AlignmentTarget.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # B2.8 Alignment Target
+ 
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # B2.8 signed-flux gap isolation
+ 
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ChainTarget.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ChainTarget.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import CriticalBarrier.B2_8_AlignmentTarget
+ 
++noncomputable section
++
+ /-!
+ # B2 chain target
+ 
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ClosureObligations.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ClosureObligations.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # B2 closure obligations
+ 
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # B2 deterministic parameter chain (audit target)
+ 
+@@ -23,7 +25,7 @@
+   C_Bern : Scalar
+   C_Sob : Scalar
+   C_CZ : Scalar
+-  deriving Repr
++  
+ 
+ namespace Parameters
+ 
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/ClosureTargetTree.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/ClosureTargetTree.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # ClosureTargetTree
+ 
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/G1G4ClosureBlueprint.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/G1G4ClosureBlueprint.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ G1–G4 closure blueprint.
+ 
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # GlobalRegularityFromG1
+ 
+@@ -12,10 +14,10 @@
+ 
+ namespace CriticalBarrier.GlobalRegularityFromG1
+ 
+-/-- Abstract state type for a maximal smooth Navier--Stokes trajectory. -/
++/- Abstract state type for a maximal smooth Navier--Stokes trajectory. -/
+ variable {State : Type}
+ 
+-/-- Problem-level predicates. -/
++/- Problem-level predicates. -/
+ variable (ActualNS : State → Prop)
+ variable (UniformEnstrophy : State → Prop)
+ variable (CriticalL3Bound : State → Prop)
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/Millennium/AllClosureTargets.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/Millennium/AllClosureTargets.lean
+@@ -2,6 +2,8 @@
+ import CriticalBarrier.CompleteClosureTargets
+ import CriticalBarrier.B2_ChainTarget
+ 
++noncomputable section
++
+ /-!
+ # Millennium/AllClosureTargets.lean
+ 
+--- a/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/Lean/Millennium/CompleteClosure_Targets.lean
++++ b/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/Lean/Millennium/CompleteClosure_Targets.lean
+@@ -1,4 +1,7 @@
+ import Mathlib.Data.Matrix.Basic
++import Mathlib.Tactic.NormNum
++import Mathlib.Data.Real.Basic
++import Mathlib.Data.Complex.Basic
+ 
+ noncomputable section
+ open Matrix
+--- a/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean
++++ b/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ CriticalTailBridge.lean
+ 
+--- a/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/EndpointInterfaces.lean
++++ b/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/EndpointInterfaces.lean
+@@ -1,3 +1,7 @@
++import Mathlib.Tactic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ namespace CriticalBarrier.EndpointInterfaces
+ 
+ /-- Audit-only statuses. These constructors do not prove the propositions they label. -/
+--- a/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean
++++ b/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace CriticalBarrier.ResolutionDynamics
+ 
+ /-- Generic proof-state dynamics. `nativeControl` is deliberately abstract:
+--- a/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/GapCollapseAudit.lean
++++ b/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/GapCollapseAudit.lean
+@@ -79,7 +79,7 @@
+ inductive ProofStatus where
+   | proved
+   | externalClassicalTheorem
+-  | axiom
++  | «axiom»
+   | sorry
+   | admit
+   | truePlaceholder
+--- a/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean
++++ b/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean
+@@ -16,6 +16,8 @@
+ import Mathlib.Data.Int.Basic
+ import Mathlib.Tactic
+ 
++noncomputable section
++
+ namespace AuditCompletion
+ 
+ /-! ## 1. Explicit unresolved-parameter state -/
+--- a/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/UnifiedAsymptoticLogic.lean
++++ b/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/UnifiedAsymptoticLogic.lean
+@@ -1,3 +1,6 @@
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ /-
+ UnifiedAsymptoticLogic.lean
+ 
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/Lean/Millennium/CompleteClosure_Targets.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/Lean/Millennium/CompleteClosure_Targets.lean
+@@ -1,4 +1,7 @@
+ import Mathlib.Data.Matrix.Basic
++import Mathlib.Tactic.NormNum
++import Mathlib.Data.Real.Basic
++import Mathlib.Data.Complex.Basic
+ 
+ noncomputable section
+ open Matrix
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/G1/HypothesesComplete_v2.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/G1/HypothesesComplete_v2.lean
+@@ -74,18 +74,18 @@
+   gradOmegaL2 : ℝ
+   scaledOmegaL2 : ℝ → ℝ
+   scaledGradOmegaL2 : ℝ → ℝ
+-  omega_scale : ∀ λ, 0 < λ → scaledOmegaL2 λ = Real.sqrt λ * omegaL2
+-  grad_scale : ∀ λ, 0 < λ →
+-    scaledGradOmegaL2 λ = λ * Real.sqrt λ * gradOmegaL2
++  omega_scale : ∀ «λ», 0 < «λ» → scaledOmegaL2 «λ» = Real.sqrt «λ» * omegaL2
++  grad_scale : ∀ «λ», 0 < «λ» →
++    scaledGradOmegaL2 «λ» = «λ» * Real.sqrt «λ» * gradOmegaL2
+ 
+ /-- Scale covariance of rhoStar under the supplied norm scaling laws. -/
+ theorem rhoStar_scale
+-    (κ0 λ : ℝ) (S : ScalingData)
+-    (hλ : 0 < λ) (hg : S.gradOmegaL2 ≠ 0) :
+-    rhoStar κ0 (S.scaledOmegaL2 λ) (S.scaledGradOmegaL2 λ)
+-      = λ⁻¹ * rhoStar κ0 S.omegaL2 S.gradOmegaL2 := by
+-  rw [rhoStar, rhoStar, S.omega_scale λ hλ, S.grad_scale λ hλ]
+-  have hsqrt : Real.sqrt λ ≠ 0 := ne_of_gt (Real.sqrt_pos.2 hλ)
++    (κ0 «λ» : ℝ) (S : ScalingData)
++    («hλ» : 0 < «λ») (hg : S.gradOmegaL2 ≠ 0) :
++    rhoStar κ0 (S.scaledOmegaL2 «λ») (S.scaledGradOmegaL2 «λ»)
++      = «λ»⁻¹ * rhoStar κ0 S.omegaL2 S.gradOmegaL2 := by
++  rw [rhoStar, rhoStar, S.omega_scale fun hλ => S.grad_scale «λ» «hλ»]
++  have hsqrt : Real.sqrt «λ» ≠ 0 := ne_of_gt (Real.sqrt_pos.2 «hλ»)
+   field_simp
+   ring
+ 
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/g1/lean/G1Depletion.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/g1/lean/G1Depletion.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-! Audit-safe G1 interface. No axiom/sorry: the conjectural analytic bridge is a field supplied
+ by a model. Kernel checking proves only the downstream implication. -/
+ namespace G1
+@@ -26,7 +28,7 @@
+ 
+ /-- Exact analytic obligation: this is where localized Biot-Savart/cancellation must be proved. -/
+ structure AnalyticBridge (D : Data) where
+-  M c C δ : ℝ
++  (M c C δ : ℝ)
+   hM : 0 < M
+   hc : 0 < c
+   hC : 0 < C
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ CriticalTailBridge.lean
+ 
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/EndpointInterfaces.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/EndpointInterfaces.lean
+@@ -1,3 +1,7 @@
++import Mathlib.Tactic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ namespace CriticalBarrier.EndpointInterfaces
+ 
+ /-- Audit-only statuses. These constructors do not prove the propositions they label. -/
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace CriticalBarrier.ResolutionDynamics
+ 
+ /-- Generic proof-state dynamics. `nativeControl` is deliberately abstract:
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/GapCollapseAudit.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/GapCollapseAudit.lean
+@@ -79,7 +79,7 @@
+ inductive ProofStatus where
+   | proved
+   | externalClassicalTheorem
+-  | axiom
++  | «axiom»
+   | sorry
+   | admit
+   | truePlaceholder
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean
+@@ -16,6 +16,8 @@
+ import Mathlib.Data.Int.Basic
+ import Mathlib.Tactic
+ 
++noncomputable section
++
+ namespace AuditCompletion
+ 
+ /-! ## 1. Explicit unresolved-parameter state -/
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/UnifiedAsymptoticLogic.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/UnifiedAsymptoticLogic.lean
+@@ -1,3 +1,6 @@
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ /-
+ UnifiedAsymptoticLogic.lean
+ 
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # CompleteNoSorry
+ 
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/G1Audit.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/G1Audit.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # G1Audit
+ 
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # HypothesesComplete_v2
+ 
+@@ -88,19 +90,19 @@
+ /-- Abstract scaling data for checking rhoStar. -/
+ structure ScalingLaw where
+   scaleState : ℝ → E.State → E.State
+-  omegaL2_scale : ∀ λ s, 0 < λ →
+-    E.omegaL2 (scaleState λ s) = Real.sqrt λ * E.omegaL2 s
+-  gradOmegaL2_scale : ∀ λ s, 0 < λ →
+-    E.gradOmegaL2 (scaleState λ s) = λ * Real.sqrt λ * E.gradOmegaL2 s
++  omegaL2_scale : ∀ «λ» s, 0 < «λ» →
++    E.omegaL2 (scaleState «λ» s) = Real.sqrt «λ» * E.omegaL2 s
++  gradOmegaL2_scale : ∀ «λ» s, 0 < «λ» →
++    E.gradOmegaL2 (scaleState «λ» s) = «λ» * Real.sqrt «λ» * E.gradOmegaL2 s
+ 
+ /-- rhoStar scales as λ⁻¹ once the L² and gradient-L² scaling laws are supplied. -/
+ theorem rhoStar_scale
+-    (S : ScalingLaw E) (κ λ : ℝ) (s : E.State)
+-    (hλ : 0 < λ)
++    (S : ScalingLaw E) (κ «λ» : ℝ) (s : E.State)
++    («hλ» : 0 < «λ»)
+     (hgrad : E.gradOmegaL2 s ≠ 0) :
+-    rhoStar E (S.scaleState λ s) κ = λ⁻¹ * rhoStar E s κ := by
+-  rw [rhoStar, rhoStar, S.omegaL2_scale λ s hλ, S.gradOmegaL2_scale λ s hλ]
+-  have hsqrt : Real.sqrt λ ≠ 0 := ne_of_gt (Real.sqrt_pos.2 hλ)
++    rhoStar E (S.scaleState «λ» s) κ = «λ»⁻¹ * rhoStar E s κ := by
++  rw [rhoStar, rhoStar, S.omegaL2_scale fun s hλ => S.gradOmegaL2_scale «λ» s «hλ»]
++  have hsqrt : Real.sqrt «λ» ≠ 0 := ne_of_gt (Real.sqrt_pos.2 «hλ»)
+   field_simp
+   ring
+ 
+--- a/preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/G1_DynamicCriticalGeometry.lean
++++ b/preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/G1_DynamicCriticalGeometry.lean
+@@ -48,14 +48,14 @@
+ ||∇ω_λ||₂ = λ^(3/2)||∇ω||₂.
+ -/
+ structure VorticityScalingData where
+-  λ : ℝ
+-  hλ : 0 < λ
++  «λ» : ℝ
++  «hλ» : 0 < «λ»
+   omegaL2 : ℝ
+   gradOmegaL2 : ℝ
+   omegaL2_scaled : ℝ
+   gradOmegaL2_scaled : ℝ
+-  homega : omegaL2_scaled = Real.sqrt λ * omegaL2
+-  hgrad : gradOmegaL2_scaled = λ * Real.sqrt λ * gradOmegaL2
++  homega : omegaL2_scaled = Real.sqrt «λ» * omegaL2
++  hgrad : gradOmegaL2_scaled = «λ» * Real.sqrt «λ» * gradOmegaL2
+ 
+ /--
+ The expected spatial scaling law for ρ_* is exposed as a proposition.
+@@ -63,7 +63,7 @@
+ -/
+ def RhoStarScalesLikeLength (κ : ℝ) (s : VorticityScalingData) : Prop :=
+   rhoStar κ s.omegaL2_scaled s.gradOmegaL2_scaled
+-    = (1 / s.λ) * rhoStar κ s.omegaL2 s.gradOmegaL2
++    = (1 / s.«λ») * rhoStar κ s.omegaL2 s.gradOmegaL2
+ 
+ /--
+ Pairwise directional discrepancy. We use the Gram determinant rather than a
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/Lean/Millennium/CompleteClosure_Targets.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/Lean/Millennium/CompleteClosure_Targets.lean
+@@ -1,4 +1,7 @@
+ import Mathlib.Data.Matrix.Basic
++import Mathlib.Tactic.NormNum
++import Mathlib.Data.Real.Basic
++import Mathlib.Data.Complex.Basic
+ 
+ noncomputable section
+ open Matrix
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ CriticalTailBridge.lean
+ 
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/EndpointInterfaces.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/EndpointInterfaces.lean
+@@ -1,3 +1,7 @@
++import Mathlib.Tactic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ namespace CriticalBarrier.EndpointInterfaces
+ 
+ /-- Audit-only statuses. These constructors do not prove the propositions they label. -/
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace CriticalBarrier.ResolutionDynamics
+ 
+ /-- Generic proof-state dynamics. `nativeControl` is deliberately abstract:
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/GapCollapseAudit.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/GapCollapseAudit.lean
+@@ -79,7 +79,7 @@
+ inductive ProofStatus where
+   | proved
+   | externalClassicalTheorem
+-  | axiom
++  | «axiom»
+   | sorry
+   | admit
+   | truePlaceholder
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean
+@@ -16,6 +16,8 @@
+ import Mathlib.Data.Int.Basic
+ import Mathlib.Tactic
+ 
++noncomputable section
++
+ namespace AuditCompletion
+ 
+ /-! ## 1. Explicit unresolved-parameter state -/
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/UnifiedAsymptoticLogic.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/UnifiedAsymptoticLogic.lean
+@@ -1,3 +1,6 @@
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ /-
+ UnifiedAsymptoticLogic.lean
+ 
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # CompleteNoSorry
+ 
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/millennium/lean/MillenniumAudit/G1Audit.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/millennium/lean/MillenniumAudit/G1Audit.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # G1Audit
+ 
+--- a/preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean
++++ b/preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean
+@@ -130,7 +130,7 @@
+ /-- The genuinely analytic G1a evolution inequality.  Constructing a value of
+ this structure from an actual NSE solution is OPEN. -/
+ structure JointEvolutionCertificate where
+-  q qDerivative viscousRate production lowerOrder : ℝ → ℝ
++  (q qDerivative viscousRate production lowerOrder : ℝ → ℝ)
+   hq : ∀ t, 0 ≤ q t
+   hViscous : ∀ t, 0 ≤ viscousRate t
+   evolution : ∀ t,
+@@ -208,7 +208,7 @@
+ /-! ## G1d: non-circular time-integrability bookkeeping -/
+ 
+ structure LerayEnergyCertificate where
+-  ν E0 totalGradU2 : ℝ
++  (ν E0 totalGradU2 : ℝ)
+   hν : 0 < ν
+   hE0 : 0 ≤ E0
+   hgrad : 0 ≤ totalGradU2
+@@ -280,7 +280,7 @@
+ 
+ /-- Algebraic G3 reconstruction data. -/
+ structure CriticalReconstruction where
+-  E0 M C : ℝ
++  (E0 M C : ℝ)
+   hE0 : 0 ≤ E0
+   hM : 0 ≤ M
+   hC : 0 ≤ C
+--- a/preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean
++++ b/preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean
+@@ -77,7 +77,7 @@
+   exact Real.sqrt_le_sqrt (by nlinarith [sq_nonneg w])
+ 
+ structure K0DegenerateCertificate where
+-  y z : ℝ
++  (y z : ℝ)
+   hy : 0 ≤ y
+   hz : 0 ≤ z
+   zeroGradient : z = 0 → y = 0
+@@ -97,7 +97,7 @@
+     etaLow δ ≤ constant * Real.sqrt δ
+ 
+ structure WeightedGradientControl where
+-  weightedGradient palinstrophy : ℝ → ℝ
++  (weightedGradient palinstrophy : ℝ → ℝ)
+   hWeighted : ∀ t, 0 ≤ weightedGradient t
+   hPalinstrophy : ∀ t, 0 ≤ palinstrophy t
+   domination : ∀ t, weightedGradient t ≤ palinstrophy t
+@@ -108,7 +108,7 @@
+ 
+ structure LowerSemicontinuityCertificate where
+   regularizedIntegral : ℕ → ℝ
+-  limitIntegral liminfValue : ℝ
++  (limitIntegral liminfValue : ℝ)
+   hRegularized : ∀ k, 0 ≤ regularizedIntegral k
+   hLimit : 0 ≤ limitIntegral
+   liminfBound : limitIntegral ≤ liminfValue
+@@ -124,14 +124,14 @@
+ /-! ## G1a: six evolution-term classes -/
+ 
+ structure SixForces where
+-  commutator transport tail cutoff scaleMotion : ℝ → ℝ
++  (commutator transport tail cutoff scaleMotion : ℝ → ℝ)
+   dissipation : ℝ → ℝ
+ 
+ def SixForces.production (q : SixForces) (t : ℝ) : ℝ :=
+   q.commutator t + q.transport t + q.tail t + q.cutoff t + q.scaleMotion t
+ 
+ structure JointEvolutionCertificate where
+-  q qDerivative lowerOrder : ℝ → ℝ
++  (q qDerivative lowerOrder : ℝ → ℝ)
+   forces : SixForces
+   hq : ∀ t, 0 ≤ q t
+   hDissipation : ∀ t, 0 ≤ forces.dissipation t
+@@ -146,7 +146,7 @@
+ /-! ## G1b/G1c: absorption and principal-value-compatible tail -/
+ 
+ structure AbsorptionCertificate where
+-  γ1 γ2 θTail θCutoff θMotion : ℝ
++  (γ1 γ2 θTail θCutoff θMotion : ℝ)
+   hγ1 : 0 ≤ γ1
+   hγ2 : 0 ≤ γ2
+   hTail : 0 ≤ θTail
+@@ -165,7 +165,7 @@
+   · exact h.strictBudget
+ 
+ structure PrincipalValueTailCertificate where
+-  numerator denominator eta : ℝ → ℝ
++  (numerator denominator eta : ℝ → ℝ)
+   hNumerator : ∀ t, 0 ≤ numerator t
+   hDenominator : ∀ t, 0 ≤ denominator t
+   ratioOnNonzero : ∀ t, denominator t ≠ 0 →
+@@ -207,7 +207,7 @@
+ /-! ## The three aggregated Perelman-like objects -/
+ 
+ structure MonotoneNSEntropy where
+-  entropyDerivative defectEnergy remainder multiplier entropy : ℝ → ℝ
++  (entropyDerivative defectEnergy remainder multiplier entropy : ℝ → ℝ)
+   hDefect : ∀ t, 0 ≤ defectEnergy t
+   identity : ∀ t,
+     entropyDerivative t = defectEnergy t + remainder t
+@@ -230,7 +230,7 @@
+ /-! ## G2/G3/G4 and the conditional F -/
+ 
+ structure EnstrophyState where
+-  y yDerivative z stretch a : ℝ → ℝ
++  (y yDerivative z stretch a : ℝ → ℝ)
+   hy : ∀ t, 0 ≤ y t
+   hz : ∀ t, 0 ≤ z t
+   ha : ∀ t, 0 ≤ a t
+--- a/preservation/session-scratch-20260913/PerelmanLikeStabilizationSpec.lean
++++ b/preservation/session-scratch-20260913/PerelmanLikeStabilizationSpec.lean
+@@ -30,7 +30,7 @@
+ /-- Object 1: a typed entropy identity.  Constructing this certificate from
+ ActualNS is not done by this module. -/
+ structure TypedEntropyCertificate where
+-  entropy dissipation remainder multiplier : ℝ → ℝ
++  (entropy dissipation remainder multiplier : ℝ → ℝ)
+   hDissipation : ∀ t, 0 ≤ dissipation t
+   identity : ∀ t,
+     entropy t + dissipation t = remainder t

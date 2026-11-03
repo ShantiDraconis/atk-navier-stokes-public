@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T16:50:26+00:00",
+ "generated_at": "2026-11-03T08:19:01+00:00",
  "standard_axioms": [
   "Classical.choice",
   "Quot.sound",
@@ -15,7 +15,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 19.3,
+   "build_seconds": 23.4,
    "build_error": "error: ././././MillenniumAudit/StabilizedHypothetical.lean:77:30: linarith failed to find a contradiction | error: ././././MillenniumAudit/StabilizedHypothetical.lean:164:4: failed to prove positivity/nonnegativity/nonzeroness | error: Lean exited with code 1 | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -2247,7 +2247,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -2256,7 +2256,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 0.4,
+   "build_seconds": 0.5,
    "build_error": "error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 1,
    "reconstructed": true,
@@ -6353,33 +6353,53 @@
      "arquivo": "formal/lean/CriticalBarrier/BackwardHypotheticalClosureOracle.lean",
      "linha": 12,
      "nome": "CriticalBarrier.BackwardAudit.hypothetical_global_regularity",
-     "status": "nao_alcancado",
+     "status": "fechado",
      "axioms": [],
-     "motivo": "object file '/tmp/mvei-rec-haii4au_/p/.lake/mvei-salvage/CriticalBarrier/GlobalRegularityFromG1.olean' of module CriticalBarrier.GlobalRegularityFromG1 does not exist — CriticalBarrier.GlobalRegularityFromG1 não compilou: /tmp/mvei-rec-haii4au_/p/CriticalBarrier/GlobalRegularityFromG1.lean:52:40: error: function expected at | /tmp/mvei-rec-haii4au_/p/CriticalBarrier/GlobalRegularityFromG1.lean:70:56: error: application type mismatch"
+     "dependencia_com_sorry": [
+      "CriticalBarrier.GlobalRegularityFromG1"
+     ]
     },
     {
      "arquivo": "formal/lean/CriticalBarrier/BackwardWithoutOracle.lean",
      "linha": 16,
      "nome": "CriticalBarrier.BackwardAudit.independent_contract_closes",
      "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "object file '/tmp/mvei-rec-haii4au_/p/.lake/mvei-salvage/CriticalBarrier/GlobalRegularityFromG1.olean' of module CriticalBarrier.GlobalRegularityFromG1 does not exist — CriticalBarrier.GlobalRegularityFromG1 não compilou: /tmp/mvei-rec-haii4au_/p/CriticalBarrier/GlobalRegularityFromG1.lean:52:40: error: function expected at | /tmp/mvei-rec-haii4au_/p/CriticalBarrier/GlobalRegularityFromG1.lean:70:56: error: application type mismatch"
+     "axioms": [
+      "sorryAx"
+     ],
+     "dependencia_com_sorry": [
+      "CriticalBarrier.GlobalRegularityFromG1"
+     ],
+     "erro": "linha 22: unknown identifier 'global_regularity_from_G1'",
+     "coluna": 2,
+     "trecho": "  ⟦g⟧lobal_regularity_from_G1 C.g1",
+     "motivo": "importa CriticalBarrier.GlobalRegularityFromG1, que só compila com provas trocadas por sorry; com isso a prova deste teorema não passou"
     },
     {
      "arquivo": "formal/lean/CriticalBarrier/BackwardWithoutOracle.lean",
      "linha": 27,
      "nome": "CriticalBarrier.BackwardAudit.actualNS_to_contract_still_open",
-     "status": "nao_alcancado",
+     "status": "fechado",
      "axioms": [],
-     "motivo": "object file '/tmp/mvei-rec-haii4au_/p/.lake/mvei-salvage/CriticalBarrier/GlobalRegularityFromG1.olean' of module CriticalBarrier.GlobalRegularityFromG1 does not exist — CriticalBarrier.GlobalRegularityFromG1 não compilou: /tmp/mvei-rec-haii4au_/p/CriticalBarrier/GlobalRegularityFromG1.lean:52:40: error: function expected at | /tmp/mvei-rec-haii4au_/p/CriticalBarrier/GlobalRegularityFromG1.lean:70:56: error: application type mismatch"
+     "dependencia_com_sorry": [
+      "CriticalBarrier.GlobalRegularityFromG1"
+     ]
     },
     {
      "arquivo": "formal/lean/CriticalBarrier/G1BridgeTriviality.lean",
      "linha": 33,
      "nome": "CriticalBarrier.G1BridgeTriviality.g1Bridge_inhabited_for_every_ActualNS",
      "status": "nao_alcancado",
-     "axioms": [],
-     "motivo": "object file '/tmp/mvei-rec-haii4au_/p/.lake/mvei-salvage/CriticalBarrier/GlobalRegularityFromG1.olean' of module CriticalBarrier.GlobalRegularityFromG1 does not exist — CriticalBarrier.GlobalRegularityFromG1 não compilou: /tmp/mvei-rec-haii4au_/p/CriticalBarrier/GlobalRegularityFromG1.lean:52:40: error: function expected at | /tmp/mvei-rec-haii4au_/p/CriticalBarrier/GlobalRegularityFromG1.lean:70:56: error: application type mismatch"
+     "axioms": [
+      "sorryAx"
+     ],
+     "dependencia_com_sorry": [
+      "CriticalBarrier.GlobalRegularityFromG1"
+     ],
+     "erro": "linha 36: function expected at G1Bridge term has type ?m.460",
+     "coluna": 14,
+     "trecho": "    Nonempty (⟦G⟧1Bridge ActualNS) :=",
+     "motivo": "importa CriticalBarrier.GlobalRegularityFromG1, que só compila com provas trocadas por sorry; com isso a prova deste teorema não passou"
     },
     {
      "arquivo": "formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean",
@@ -6515,7 +6535,7 @@
      "nome": "Millennium.AllClosureTargets.resolve",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "object file '/tmp/mvei-rec-haii4au_/p/.lake/mvei-salvage/CriticalBarrier/CompleteClosureTargets.olean' of module CriticalBarrier.CompleteClosureTargets does not exist"
+     "motivo": "object file '/tmp/mvei-rec-dzppitq6/p/.lake/mvei-salvage/CriticalBarrier/CompleteClosureTargets.olean' of module CriticalBarrier.CompleteClosureTargets does not exist"
     },
     {
      "arquivo": "formal/lean/Millennium/AllClosureTargets.lean",
@@ -6523,7 +6543,7 @@
      "nome": "Millennium.AllClosureTargets.all_millennium_from_complete_certificates",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "object file '/tmp/mvei-rec-haii4au_/p/.lake/mvei-salvage/CriticalBarrier/CompleteClosureTargets.olean' of module CriticalBarrier.CompleteClosureTargets does not exist"
+     "motivo": "object file '/tmp/mvei-rec-dzppitq6/p/.lake/mvei-salvage/CriticalBarrier/CompleteClosureTargets.olean' of module CriticalBarrier.CompleteClosureTargets does not exist"
     },
     {
      "arquivo": "formal/lean/UnifiedAsymptoticLogic.lean",
@@ -6624,7 +6644,7 @@
     "aberto-sorry": 0,
     "condicional": 1
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -6633,7 +6653,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 17.1,
+   "build_seconds": 17.5,
    "build_error": "error: ././././MillenniumAudit/HypothesesComplete_v3.lean:58:4: linarith failed to find a contradiction | error: Lean exited with code 1 | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -7597,7 +7617,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -7606,7 +7626,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 23.0,
+   "build_seconds": 23.7,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -7679,7 +7699,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -7688,7 +7708,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": false,
    "build_ok": false,
-   "build_seconds": 22.3,
+   "build_seconds": 23.4,
    "build_error": "error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": true,
@@ -9935,7 +9955,7 @@
     "aberto-sorry": 0,
     "condicional": 1
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -9944,7 +9964,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 0.5,
+   "build_seconds": 0.6,
    "build_error": "error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": true,
@@ -12191,7 +12211,7 @@
     "aberto-sorry": 0,
     "condicional": 1
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -12200,7 +12220,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 13.8,
+   "build_seconds": 15.2,
    "build_error": "error: ././././MillenniumAudit/G1Audit.lean:48:2: dsimp made no progress | error: Lean exited with code 1 | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -13342,7 +13362,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -13351,7 +13371,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 16.1,
+   "build_seconds": 16.4,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -14147,7 +14167,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -14156,7 +14176,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": false,
    "build_ok": false,
-   "build_seconds": 22.5,
+   "build_seconds": 23.0,
    "build_error": "error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": true,
@@ -16403,7 +16423,7 @@
     "aberto-sorry": 0,
     "condicional": 1
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -16412,7 +16432,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 15.1,
+   "build_seconds": 16.1,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -17567,7 +17587,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -17576,7 +17596,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.3,
+   "build_seconds": 23.9,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -17649,7 +17669,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -17658,7 +17678,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.3,
+   "build_seconds": 23.5,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -17731,7 +17751,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -17740,7 +17760,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.2,
+   "build_seconds": 23.0,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -17813,93 +17833,11 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
    "path": "preservation/branch-snapshots/copilot_compare-mathematical-formulas/formal/lean",
-   "toolchain": "leanprover/lean4:stable",
-   "toolchain_used": "leanprover/lean4:stable",
-   "needs_mathlib": false,
-   "build_ok": true,
-   "build_seconds": 22.4,
-   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
-   "sorry_warnings": 0,
-   "reconstructed": false,
-   "bridges": [],
-   "declared_axioms": [
-    {
-     "name": "CriticalBarrier.admissible_concentration_window",
-     "module": "CriticalBarrier.Concentration",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.audit_pipeline_loaded",
-     "module": "CriticalBarrier.Audit",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
-     "module": "CriticalBarrier.Barrier",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.energy_scaling_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_blowup_alternative",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_endpoint_classical",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.finite_energy_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.l3_scale_invariant",
-     "module": "CriticalBarrier.Scaling",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.pressure_poisson_compatibility",
-     "module": "CriticalBarrier.Pressure",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
-     "module": "CriticalBarrier.Forcing",
-     "statement": "Prop"
-    }
-   ],
-   "theorems": [],
-   "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
-   "corrections": [
-    "vocabulario-lean4",
-    "z-provas-reparadas"
-   ],
-   "lakefile_gerado": "",
-   "avulso": false,
-   "salvage": [],
-   "preenchimento": [],
-   "summary": {
-    "fechado": 0,
-    "aberto-sorry": 0,
-    "condicional": 0
-   },
-   "hora_commit_mvei": 1793349359
-  },
-  {
-   "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_execute-multi-agent-audit/formal/lean",
    "toolchain": "leanprover/lean4:stable",
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
@@ -17977,93 +17915,11 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_fix-doc-date-error/formal/lean",
-   "toolchain": "leanprover/lean4:stable",
-   "toolchain_used": "leanprover/lean4:stable",
-   "needs_mathlib": false,
-   "build_ok": true,
-   "build_seconds": 21.6,
-   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | file: CriticalBarrier.lean | error: build failed",
-   "sorry_warnings": 0,
-   "reconstructed": false,
-   "bridges": [],
-   "declared_axioms": [
-    {
-     "name": "CriticalBarrier.admissible_concentration_window",
-     "module": "CriticalBarrier.Concentration",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.audit_pipeline_loaded",
-     "module": "CriticalBarrier.Audit",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
-     "module": "CriticalBarrier.Barrier",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.energy_scaling_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_blowup_alternative",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_endpoint_classical",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.finite_energy_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.l3_scale_invariant",
-     "module": "CriticalBarrier.Scaling",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.pressure_poisson_compatibility",
-     "module": "CriticalBarrier.Pressure",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
-     "module": "CriticalBarrier.Forcing",
-     "statement": "Prop"
-    }
-   ],
-   "theorems": [],
-   "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
-   "corrections": [
-    "vocabulario-lean4",
-    "z-provas-reparadas"
-   ],
-   "lakefile_gerado": "",
-   "avulso": false,
-   "salvage": [],
-   "preenchimento": [],
-   "summary": {
-    "fechado": 0,
-    "aberto-sorry": 0,
-    "condicional": 0
-   },
-   "hora_commit_mvei": 1793349359
-  },
-  {
-   "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_navier-stokes-critical-barrier-audit/formal/lean",
+   "path": "preservation/branch-snapshots/copilot_execute-multi-agent-audit/formal/lean",
    "toolchain": "leanprover/lean4:stable",
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
@@ -18141,17 +17997,17 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_navier-stokes-noncircular-implementation/formal/lean",
+   "path": "preservation/branch-snapshots/copilot_fix-doc-date-error/formal/lean",
    "toolchain": "leanprover/lean4:stable",
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.7,
-   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
+   "build_seconds": 23.3,
+   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | file: CriticalBarrier.lean | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
    "bridges": [],
@@ -18223,421 +18079,11 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_registro-git-navier-stokes/formal/lean",
-   "toolchain": "leanprover/lean4:stable",
-   "toolchain_used": "leanprover/lean4:stable",
-   "needs_mathlib": false,
-   "build_ok": true,
-   "build_seconds": 22.4,
-   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
-   "sorry_warnings": 0,
-   "reconstructed": false,
-   "bridges": [],
-   "declared_axioms": [
-    {
-     "name": "CriticalBarrier.admissible_concentration_window",
-     "module": "CriticalBarrier.Concentration",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.audit_pipeline_loaded",
-     "module": "CriticalBarrier.Audit",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
-     "module": "CriticalBarrier.Barrier",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.energy_scaling_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_blowup_alternative",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_endpoint_classical",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.finite_energy_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.l3_scale_invariant",
-     "module": "CriticalBarrier.Scaling",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.pressure_poisson_compatibility",
-     "module": "CriticalBarrier.Pressure",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
-     "module": "CriticalBarrier.Forcing",
-     "statement": "Prop"
-    }
-   ],
-   "theorems": [],
-   "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
-   "corrections": [
-    "vocabulario-lean4",
-    "z-provas-reparadas"
-   ],
-   "lakefile_gerado": "",
-   "avulso": false,
-   "salvage": [],
-   "preenchimento": [],
-   "summary": {
-    "fechado": 0,
-    "aberto-sorry": 0,
-    "condicional": 0
-   },
-   "hora_commit_mvei": 1793349359
-  },
-  {
-   "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_revendo-arquivos-auditoria/formal/lean",
-   "toolchain": "leanprover/lean4:stable",
-   "toolchain_used": "leanprover/lean4:stable",
-   "needs_mathlib": false,
-   "build_ok": true,
-   "build_seconds": 21.8,
-   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
-   "sorry_warnings": 0,
-   "reconstructed": false,
-   "bridges": [],
-   "declared_axioms": [
-    {
-     "name": "CriticalBarrier.admissible_concentration_window",
-     "module": "CriticalBarrier.Concentration",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.audit_pipeline_loaded",
-     "module": "CriticalBarrier.Audit",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
-     "module": "CriticalBarrier.Barrier",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.energy_scaling_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_blowup_alternative",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_endpoint_classical",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.finite_energy_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.l3_scale_invariant",
-     "module": "CriticalBarrier.Scaling",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.pressure_poisson_compatibility",
-     "module": "CriticalBarrier.Pressure",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
-     "module": "CriticalBarrier.Forcing",
-     "statement": "Prop"
-    }
-   ],
-   "theorems": [],
-   "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
-   "corrections": [
-    "vocabulario-lean4",
-    "z-provas-reparadas"
-   ],
-   "lakefile_gerado": "",
-   "avulso": false,
-   "salvage": [],
-   "preenchimento": [],
-   "summary": {
-    "fechado": 0,
-    "aberto-sorry": 0,
-    "condicional": 0
-   },
-   "hora_commit_mvei": 1793349359
-  },
-  {
-   "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_shanti-0-0-default-history/formal/lean",
-   "toolchain": "leanprover/lean4:stable",
-   "toolchain_used": "leanprover/lean4:stable",
-   "needs_mathlib": false,
-   "build_ok": true,
-   "build_seconds": 24.1,
-   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
-   "sorry_warnings": 0,
-   "reconstructed": false,
-   "bridges": [],
-   "declared_axioms": [
-    {
-     "name": "CriticalBarrier.admissible_concentration_window",
-     "module": "CriticalBarrier.Concentration",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.audit_pipeline_loaded",
-     "module": "CriticalBarrier.Audit",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
-     "module": "CriticalBarrier.Barrier",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.energy_scaling_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_blowup_alternative",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_endpoint_classical",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.finite_energy_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.l3_scale_invariant",
-     "module": "CriticalBarrier.Scaling",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.pressure_poisson_compatibility",
-     "module": "CriticalBarrier.Pressure",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
-     "module": "CriticalBarrier.Forcing",
-     "statement": "Prop"
-    }
-   ],
-   "theorems": [],
-   "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
-   "corrections": [
-    "vocabulario-lean4",
-    "z-provas-reparadas"
-   ],
-   "lakefile_gerado": "",
-   "avulso": false,
-   "salvage": [],
-   "preenchimento": [],
-   "summary": {
-    "fechado": 0,
-    "aberto-sorry": 0,
-    "condicional": 0
-   },
-   "hora_commit_mvei": 1793349359
-  },
-  {
-   "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_shanti-auditoria-ns/formal/lean",
-   "toolchain": "leanprover/lean4:stable",
-   "toolchain_used": "leanprover/lean4:stable",
-   "needs_mathlib": false,
-   "build_ok": true,
-   "build_seconds": 21.6,
-   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
-   "sorry_warnings": 0,
-   "reconstructed": false,
-   "bridges": [],
-   "declared_axioms": [
-    {
-     "name": "CriticalBarrier.admissible_concentration_window",
-     "module": "CriticalBarrier.Concentration",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.audit_pipeline_loaded",
-     "module": "CriticalBarrier.Audit",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
-     "module": "CriticalBarrier.Barrier",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.energy_scaling_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_blowup_alternative",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_endpoint_classical",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.finite_energy_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.l3_scale_invariant",
-     "module": "CriticalBarrier.Scaling",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.pressure_poisson_compatibility",
-     "module": "CriticalBarrier.Pressure",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
-     "module": "CriticalBarrier.Forcing",
-     "statement": "Prop"
-    }
-   ],
-   "theorems": [],
-   "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
-   "corrections": [
-    "vocabulario-lean4",
-    "z-provas-reparadas"
-   ],
-   "lakefile_gerado": "",
-   "avulso": false,
-   "salvage": [],
-   "preenchimento": [],
-   "summary": {
-    "fechado": 0,
-    "aberto-sorry": 0,
-    "condicional": 0
-   },
-   "hora_commit_mvei": 1793349359
-  },
-  {
-   "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_target-extractor/formal/lean",
-   "toolchain": "leanprover/lean4:stable",
-   "toolchain_used": "leanprover/lean4:stable",
-   "needs_mathlib": false,
-   "build_ok": true,
-   "build_seconds": 22.0,
-   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
-   "sorry_warnings": 0,
-   "reconstructed": false,
-   "bridges": [],
-   "declared_axioms": [
-    {
-     "name": "CriticalBarrier.admissible_concentration_window",
-     "module": "CriticalBarrier.Concentration",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.audit_pipeline_loaded",
-     "module": "CriticalBarrier.Audit",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
-     "module": "CriticalBarrier.Barrier",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.energy_scaling_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_blowup_alternative",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_endpoint_classical",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.finite_energy_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.l3_scale_invariant",
-     "module": "CriticalBarrier.Scaling",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.pressure_poisson_compatibility",
-     "module": "CriticalBarrier.Pressure",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
-     "module": "CriticalBarrier.Forcing",
-     "statement": "Prop"
-    }
-   ],
-   "theorems": [],
-   "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
-   "corrections": [
-    "vocabulario-lean4",
-    "z-provas-reparadas"
-   ],
-   "lakefile_gerado": "",
-   "avulso": false,
-   "salvage": [],
-   "preenchimento": [],
-   "summary": {
-    "fechado": 0,
-    "aberto-sorry": 0,
-    "condicional": 0
-   },
-   "hora_commit_mvei": 1793349359
-  },
-  {
-   "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_task-219265797-1361927617-c6bfd6e0-3c0d-429b-a267-9cea34423468/formal/lean",
+   "path": "preservation/branch-snapshots/copilot_navier-stokes-critical-barrier-audit/formal/lean",
    "toolchain": "leanprover/lean4:stable",
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
@@ -18715,11 +18161,339 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_update-reference-section/formal/lean",
+   "path": "preservation/branch-snapshots/copilot_navier-stokes-noncircular-implementation/formal/lean",
+   "toolchain": "leanprover/lean4:stable",
+   "toolchain_used": "leanprover/lean4:stable",
+   "needs_mathlib": false,
+   "build_ok": true,
+   "build_seconds": 23.4,
+   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
+   "sorry_warnings": 0,
+   "reconstructed": false,
+   "bridges": [],
+   "declared_axioms": [
+    {
+     "name": "CriticalBarrier.admissible_concentration_window",
+     "module": "CriticalBarrier.Concentration",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.audit_pipeline_loaded",
+     "module": "CriticalBarrier.Audit",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
+     "module": "CriticalBarrier.Barrier",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.energy_scaling_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_blowup_alternative",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_endpoint_classical",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.finite_energy_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.l3_scale_invariant",
+     "module": "CriticalBarrier.Scaling",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.pressure_poisson_compatibility",
+     "module": "CriticalBarrier.Pressure",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
+     "module": "CriticalBarrier.Forcing",
+     "statement": "Prop"
+    }
+   ],
+   "theorems": [],
+   "integrity": [],
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "corrections": [
+    "vocabulario-lean4",
+    "z-provas-reparadas"
+   ],
+   "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
+   "summary": {
+    "fechado": 0,
+    "aberto-sorry": 0,
+    "condicional": 0
+   },
+   "hora_commit_mvei": 1793652851
+  },
+  {
+   "repo": "navier-stokes-critical-barrier-audit",
+   "path": "preservation/branch-snapshots/copilot_registro-git-navier-stokes/formal/lean",
+   "toolchain": "leanprover/lean4:stable",
+   "toolchain_used": "leanprover/lean4:stable",
+   "needs_mathlib": false,
+   "build_ok": true,
+   "build_seconds": 23.1,
+   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
+   "sorry_warnings": 0,
+   "reconstructed": false,
+   "bridges": [],
+   "declared_axioms": [
+    {
+     "name": "CriticalBarrier.admissible_concentration_window",
+     "module": "CriticalBarrier.Concentration",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.audit_pipeline_loaded",
+     "module": "CriticalBarrier.Audit",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
+     "module": "CriticalBarrier.Barrier",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.energy_scaling_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_blowup_alternative",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_endpoint_classical",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.finite_energy_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.l3_scale_invariant",
+     "module": "CriticalBarrier.Scaling",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.pressure_poisson_compatibility",
+     "module": "CriticalBarrier.Pressure",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
+     "module": "CriticalBarrier.Forcing",
+     "statement": "Prop"
+    }
+   ],
+   "theorems": [],
+   "integrity": [],
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "corrections": [
+    "vocabulario-lean4",
+    "z-provas-reparadas"
+   ],
+   "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
+   "summary": {
+    "fechado": 0,
+    "aberto-sorry": 0,
+    "condicional": 0
+   },
+   "hora_commit_mvei": 1793652851
+  },
+  {
+   "repo": "navier-stokes-critical-barrier-audit",
+   "path": "preservation/branch-snapshots/copilot_revendo-arquivos-auditoria/formal/lean",
+   "toolchain": "leanprover/lean4:stable",
+   "toolchain_used": "leanprover/lean4:stable",
+   "needs_mathlib": false,
+   "build_ok": true,
+   "build_seconds": 22.1,
+   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
+   "sorry_warnings": 0,
+   "reconstructed": false,
+   "bridges": [],
+   "declared_axioms": [
+    {
+     "name": "CriticalBarrier.admissible_concentration_window",
+     "module": "CriticalBarrier.Concentration",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.audit_pipeline_loaded",
+     "module": "CriticalBarrier.Audit",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
+     "module": "CriticalBarrier.Barrier",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.energy_scaling_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_blowup_alternative",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_endpoint_classical",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.finite_energy_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.l3_scale_invariant",
+     "module": "CriticalBarrier.Scaling",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.pressure_poisson_compatibility",
+     "module": "CriticalBarrier.Pressure",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
+     "module": "CriticalBarrier.Forcing",
+     "statement": "Prop"
+    }
+   ],
+   "theorems": [],
+   "integrity": [],
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "corrections": [
+    "vocabulario-lean4",
+    "z-provas-reparadas"
+   ],
+   "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
+   "summary": {
+    "fechado": 0,
+    "aberto-sorry": 0,
+    "condicional": 0
+   },
+   "hora_commit_mvei": 1793652851
+  },
+  {
+   "repo": "navier-stokes-critical-barrier-audit",
+   "path": "preservation/branch-snapshots/copilot_shanti-0-0-default-history/formal/lean",
+   "toolchain": "leanprover/lean4:stable",
+   "toolchain_used": "leanprover/lean4:stable",
+   "needs_mathlib": false,
+   "build_ok": true,
+   "build_seconds": 21.8,
+   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
+   "sorry_warnings": 0,
+   "reconstructed": false,
+   "bridges": [],
+   "declared_axioms": [
+    {
+     "name": "CriticalBarrier.admissible_concentration_window",
+     "module": "CriticalBarrier.Concentration",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.audit_pipeline_loaded",
+     "module": "CriticalBarrier.Audit",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
+     "module": "CriticalBarrier.Barrier",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.energy_scaling_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_blowup_alternative",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_endpoint_classical",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.finite_energy_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.l3_scale_invariant",
+     "module": "CriticalBarrier.Scaling",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.pressure_poisson_compatibility",
+     "module": "CriticalBarrier.Pressure",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
+     "module": "CriticalBarrier.Forcing",
+     "statement": "Prop"
+    }
+   ],
+   "theorems": [],
+   "integrity": [],
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "corrections": [
+    "vocabulario-lean4",
+    "z-provas-reparadas"
+   ],
+   "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
+   "summary": {
+    "fechado": 0,
+    "aberto-sorry": 0,
+    "condicional": 0
+   },
+   "hora_commit_mvei": 1793652851
+  },
+  {
+   "repo": "navier-stokes-critical-barrier-audit",
+   "path": "preservation/branch-snapshots/copilot_shanti-auditoria-ns/formal/lean",
    "toolchain": "leanprover/lean4:stable",
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
@@ -18797,7 +18571,253 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
+  },
+  {
+   "repo": "navier-stokes-critical-barrier-audit",
+   "path": "preservation/branch-snapshots/copilot_target-extractor/formal/lean",
+   "toolchain": "leanprover/lean4:stable",
+   "toolchain_used": "leanprover/lean4:stable",
+   "needs_mathlib": false,
+   "build_ok": true,
+   "build_seconds": 22.9,
+   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
+   "sorry_warnings": 0,
+   "reconstructed": false,
+   "bridges": [],
+   "declared_axioms": [
+    {
+     "name": "CriticalBarrier.admissible_concentration_window",
+     "module": "CriticalBarrier.Concentration",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.audit_pipeline_loaded",
+     "module": "CriticalBarrier.Audit",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
+     "module": "CriticalBarrier.Barrier",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.energy_scaling_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_blowup_alternative",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_endpoint_classical",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.finite_energy_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.l3_scale_invariant",
+     "module": "CriticalBarrier.Scaling",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.pressure_poisson_compatibility",
+     "module": "CriticalBarrier.Pressure",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
+     "module": "CriticalBarrier.Forcing",
+     "statement": "Prop"
+    }
+   ],
+   "theorems": [],
+   "integrity": [],
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "corrections": [
+    "vocabulario-lean4",
+    "z-provas-reparadas"
+   ],
+   "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
+   "summary": {
+    "fechado": 0,
+    "aberto-sorry": 0,
+    "condicional": 0
+   },
+   "hora_commit_mvei": 1793652851
+  },
+  {
+   "repo": "navier-stokes-critical-barrier-audit",
+   "path": "preservation/branch-snapshots/copilot_task-219265797-1361927617-c6bfd6e0-3c0d-429b-a267-9cea34423468/formal/lean",
+   "toolchain": "leanprover/lean4:stable",
+   "toolchain_used": "leanprover/lean4:stable",
+   "needs_mathlib": false,
+   "build_ok": true,
+   "build_seconds": 24.0,
+   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
+   "sorry_warnings": 0,
+   "reconstructed": false,
+   "bridges": [],
+   "declared_axioms": [
+    {
+     "name": "CriticalBarrier.admissible_concentration_window",
+     "module": "CriticalBarrier.Concentration",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.audit_pipeline_loaded",
+     "module": "CriticalBarrier.Audit",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
+     "module": "CriticalBarrier.Barrier",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.energy_scaling_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_blowup_alternative",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_endpoint_classical",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.finite_energy_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.l3_scale_invariant",
+     "module": "CriticalBarrier.Scaling",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.pressure_poisson_compatibility",
+     "module": "CriticalBarrier.Pressure",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
+     "module": "CriticalBarrier.Forcing",
+     "statement": "Prop"
+    }
+   ],
+   "theorems": [],
+   "integrity": [],
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "corrections": [
+    "vocabulario-lean4",
+    "z-provas-reparadas"
+   ],
+   "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
+   "summary": {
+    "fechado": 0,
+    "aberto-sorry": 0,
+    "condicional": 0
+   },
+   "hora_commit_mvei": 1793652851
+  },
+  {
+   "repo": "navier-stokes-critical-barrier-audit",
+   "path": "preservation/branch-snapshots/copilot_update-reference-section/formal/lean",
+   "toolchain": "leanprover/lean4:stable",
+   "toolchain_used": "leanprover/lean4:stable",
+   "needs_mathlib": false,
+   "build_ok": true,
+   "build_seconds": 21.8,
+   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
+   "sorry_warnings": 0,
+   "reconstructed": false,
+   "bridges": [],
+   "declared_axioms": [
+    {
+     "name": "CriticalBarrier.admissible_concentration_window",
+     "module": "CriticalBarrier.Concentration",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.audit_pipeline_loaded",
+     "module": "CriticalBarrier.Audit",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
+     "module": "CriticalBarrier.Barrier",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.energy_scaling_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_blowup_alternative",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_endpoint_classical",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.finite_energy_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.l3_scale_invariant",
+     "module": "CriticalBarrier.Scaling",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.pressure_poisson_compatibility",
+     "module": "CriticalBarrier.Pressure",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
+     "module": "CriticalBarrier.Forcing",
+     "statement": "Prop"
+    }
+   ],
+   "theorems": [],
+   "integrity": [],
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 8 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, differential_decay, shrinkingDefect_pos, shrinkingDefect_pos, shrinkingDefect_pos, K0a_regularizedAmplitude_ge. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "corrections": [
+    "vocabulario-lean4",
+    "z-provas-reparadas"
+   ],
+   "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
+   "summary": {
+    "fechado": 0,
+    "aberto-sorry": 0,
+    "condicional": 0
+   },
+   "hora_commit_mvei": 1793652851
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -18806,7 +18826,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 11.3,
+   "build_seconds": 16.6,
    "build_error": "error: ././././MillenniumAudit/StabilizedHypothetical.lean:77:30: linarith failed to find a contradiction | error: ././././MillenniumAudit/StabilizedHypothetical.lean:164:4: failed to prove positivity/nonnegativity/nonzeroness | error: Lean exited with code 1 | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -19275,7 +19295,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793349359
+   "hora_commit_mvei": 1793652851
   }
  ]
 }

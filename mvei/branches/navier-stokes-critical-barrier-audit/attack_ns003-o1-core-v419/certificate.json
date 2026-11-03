@@ -578,7 +578,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-29T05:36:17+00:00",
+  "generated_at": "2026-11-03T08:19:01+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.10.0",
@@ -650,7 +650,7 @@
    "name": "MillenniumAudit.NS003.O1_O2_O3_close_flexible_G1",
    "file": "formal/G1/NS003FirstGap.lean",
    "line": 45,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS : Prop) (ν : ℝ) (d : G1PrizeStandardV4.EnstrophyData) (hNS : ActualNS) (o1 : O1ActualNSToJointQ ActualNS) (o2 : O2JointQToKernel) (tail : WeightedTailControl) (o3 : O3KernelTailGain ν d) : FlexibleStretchingBound ν o3.θ o3.a d ∧ Nonempty (L1TimeControl o3.a)"
   },
@@ -658,7 +658,7 @@
    "name": "MillenniumAudit.NS003.O1_O2_O3_to_uniform_enstrophy",
    "file": "formal/G1/NS003FirstGap.lean",
    "line": 64,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ActualNS UniformEnstrophy : Prop) (ν : ℝ) (d : G1PrizeStandardV4.EnstrophyData) (yPrime : ℝ → ℝ) (hNS : ActualNS) (hbal : G1PrizeStandardV4.EnstrophyBalance ν d yPrime) (o1 : O1ActualNSToJointQ ActualNS) (o2 : O2JointQToKernel) (tail : WeightedTailControl) (o3 : O3KernelTailGain ν d) (gr : GronwallClosure ν d yPrime UniformEnstrophy) : UniformEnstrophy"
   },
@@ -666,7 +666,7 @@
    "name": "MillenniumAudit.NS003.O1_currently_uninhabited",
    "file": "formal/G1/NS003FirstGap.lean",
    "line": 92,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": O1_inhabited_in_current_corpus = false"
   },
@@ -674,7 +674,7 @@
    "name": "MillenniumAudit.NS003.O1_from_atomic_components",
    "file": "formal/millennium/lean/MillenniumAudit/NS003O1Atomic.lean",
    "line": 83,
-   "state": "nao_alcancado",
+   "state": "erro",
    "axioms_beyond_standard": [],
    "statement": "(u : ActualNSCriticalData) (hA : LocalEnergyToDirection u) (hB : PressureToStrain u) (hC : EpsilonRegularRegionControl u) (hD : ExceptionalTailControlAtomic u) (assemble : O1AssemblyLaw u) : DynamicQBound"
   },
@@ -735,17 +735,21 @@
    "statement": "(ν cBulk δTail : ℝ) (hν : 0 ≤ ν) (d : EnstrophyData) (s : StretchSplit d) (hBulk : BulkAbsorption ν cBulk d s) (hTail : ExceptionalTailControl ν δTail d s) (hBudget : SubcriticalBudget cBulk δTail) : G1HypothesesV3.GeometricDepletion ν { z"
   }
  ],
- "closed": 8,
+ "closed": 11,
  "files_sha256": {
   "G1_KAdmissible_to_SignedDepletion.lean": "0994575d31c50a20f19c52ad6dacde51405d99c015e7141f8d01ed9db9f592d5",
   "HypothesesComplete_v3.lean": "fef6fb1c0be88a28b106f5c8453795feac889ac3d43c3353e647da20a430814c",
   "formal/G1/NS003EndpointTheorem.lean": "7649fb9b7347516298a498927cdf652abda9e52c43b0327a207562f502411bc2",
+  "formal/G1/NS003FirstGap.lean": "3cbb6ecf8796721e0481b702f0201c2d397fb5f843ebed5f5122956645184099",
   "formal/G1/NS003O1Concrete.lean": "1c48faf7e742804174936c845b805be0df31e1b5c03b8f3af537d919a317c9f4",
   "formal/G1/StrictSignedDepletionProducer.lean": "0c497a06e7d37686de5627b55fd8599be50a151a4090f14ec2f310596d7cc7e3",
+  "formal/millennium/lean/MillenniumAudit/G1_PrizeStandard_v4.lean": "9e777bbb970273dfe21815d911c85d27adf08b17093e322f4e64f87a062b1457",
+  "formal/millennium/lean/lakefile.toml": "87d61e4c3e600b0acebd7712fe60283fb70a82d3bed647a02275e07fa6cae1a3",
+  "formal/millennium/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
   "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
   "lakefile.toml": "a5de78a93ba257572f683b546fdb07f604d842c69c26f43f5089ada9c7e8bf8a",
   "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
  },
- "published_at": "2026-10-29T20:16:03Z",
- "certificate_sha256": "b98ea708b6e3888b4bdc5bebd51bb53b966e8b845de2e6b2965f80d941d0fb2b"
+ "published_at": "2026-11-03T11:28:12Z",
+ "certificate_sha256": "e9acc924d45d2d98037e2dfc4dcaee27842fed99ad328d73ce3834ed5dc19fd3"
 }

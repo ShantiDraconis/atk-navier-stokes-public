@@ -1168,7 +1168,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-30T16:50:26+00:00",
+  "generated_at": "2026-11-03T08:19:01+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -1185,7 +1185,7 @@
    "name": "MillenniumAudit.G1KAdmissible.FlexibleBulkTailRemainder.delta_pos",
    "file": "audit/producer-first/FlexibleBulkTailMaterialOperator.lean",
    "line": 105,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} {d : EnstrophyData} (H : FlexibleBulkTailRemainder ν d) : 0 < H.delta"
   },
@@ -1193,7 +1193,7 @@
    "name": "MillenniumAudit.G1KAdmissible.flexible_bulk_tail_differential",
    "file": "audit/producer-first/FlexibleBulkTailMaterialOperator.lean",
    "line": 71,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} {d : EnstrophyData} (H : FlexibleBulkTailRemainder ν d) (B : EnstrophyBalance ν d) : ∀ t, d.yDerivative t + 2 * (1 - (H.cBulk + H.cTail)) * ν * d.z t ≤ 2 * H.a t * d.y t"
   },
@@ -1201,7 +1201,7 @@
    "name": "MillenniumAudit.G1PrimitiveLaws.raw_budget_gives_positive_margin",
    "file": "audit/producer-first/PrimitiveMaterialLaws.lean",
    "line": 35,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(cBulk cTail : ℝ) (hbudget : cBulk + cTail < 1) : 0 < 1 - (cBulk + cTail)"
   },
@@ -1209,7 +1209,7 @@
    "name": "MillenniumAudit.G1PrimitiveLaws.raw_bulk_tail_remainder_bound",
    "file": "audit/producer-first/PrimitiveMaterialLaws.lean",
    "line": 5,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(stretch bulk tail remainder ν z y a cBulk cTail : ℝ) (hsplit : stretch = bulk + tail + remainder) (hbulk : bulk ≤ cBulk * ν * z) (htail : tail ≤ cTail * ν * z) (hrem : remainder ≤ a * y) : stretch ≤ (cBulk + cTail) * ν * z + a * y"
   },
@@ -1217,7 +1217,7 @@
    "name": "MillenniumAudit.G1PrimitiveLaws.raw_enstrophy_differential",
    "file": "audit/producer-first/PrimitiveMaterialLaws.lean",
    "line": 20,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(yPrime stretch ν z y a cBulk cTail : ℝ) (hbalance : yPrime / 2 + ν * z = stretch) (hstretch : stretch ≤ (cBulk + cTail) * ν * z + a * y) : yPrime + 2 * (1 - (cBulk + cTail)) * ν * z ≤ 2 * a * y"
   },
@@ -1225,7 +1225,7 @@
    "name": "MillenniumAudit.G1PrimitiveLaws.raw_time_coefficient_budget",
    "file": "audit/producer-first/PrimitiveMaterialLaws.lean",
    "line": 42,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(totalA totalGradU2 K E ν : ℝ) (hK : 0 ≤ K) (hA : totalA ≤ K * totalGradU2) (hEnergy : totalGradU2 ≤ E / (2 * ν)) : totalA ≤ K * (E / (2 * ν))"
   },
@@ -1233,7 +1233,7 @@
    "name": "MillenniumAudit.G1PrimitiveLaws.raw_zero_remainder_differential",
    "file": "audit/producer-first/PrimitiveMaterialLaws.lean",
    "line": 59,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(yPrime stretch ν z cBulk cTail : ℝ) (hbalance : yPrime / 2 + ν * z = stretch) (hstretch : stretch ≤ (cBulk + cTail) * ν * z) : yPrime + 2 * (1 - (cBulk + cTail)) * ν * z ≤ 0"
   },
@@ -1241,39 +1241,47 @@
    "name": "MillenniumAudit.MaterialDecision.CriticalL3BlowupProfile.exceeds_every_threshold",
    "file": "audit/producer-first/MaterialDecisionObjects.lean",
    "line": 40,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(B : CriticalL3BlowupProfile) (C : ℝ) : ∃ n, C < B.l3norm n"
   },
   {
    "name": "MillenniumAudit.MaterialDecision.CriticalL3BlowupProfile.no_uniform_bound",
    "file": "audit/producer-first/MaterialDecisionObjects.lean",
    "line": 27,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(B : CriticalL3BlowupProfile) : ¬ ∃ C : ℝ, ∀ n, B.l3norm n ≤ C"
   },
   {
    "name": "MillenniumAudit.MaterialDecision.CriticalL3BlowupProfile.refutes_uniform_bound",
    "file": "audit/producer-first/MaterialDecisionObjects.lean",
    "line": 53,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(B : CriticalL3BlowupProfile) (C : ℝ) (hbound : ∀ n, B.l3norm n ≤ C) : False"
   },
   {
    "name": "MillenniumAudit.MaterialDecision.bounded_and_blowup_samples_incompatible",
    "file": "audit/producer-first/MaterialDecisionObjects.lean",
    "line": 76,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(P : UniformCriticalL3Profile) (B : CriticalL3BlowupProfile) (hsample : ∀ n, B.l3norm n = P.l3norm (B.time n)) : False"
   },
   {
    "name": "NSMaterialPrizeGate.NSCube.closed_closed_closed_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 66,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize CLOSED_CLOSED_CLOSED_NS = .closedOnly"
   },
@@ -1281,7 +1289,7 @@
    "name": "NSMaterialPrizeGate.NSCube.closed_closed_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 41,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize CLOSED_CLOSED_NS = .closedOnly"
   },
@@ -1289,7 +1297,7 @@
    "name": "NSMaterialPrizeGate.NSCube.closed_closed_open_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 80,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize CLOSED_CLOSED_OPEN_NS = .full"
   },
@@ -1297,7 +1305,7 @@
    "name": "NSMaterialPrizeGate.NSCube.closed_open_closed_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 78,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize CLOSED_OPEN_CLOSED_NS = .full"
   },
@@ -1305,7 +1313,7 @@
    "name": "NSMaterialPrizeGate.NSCube.closed_open_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 37,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize CLOSED_OPEN_NS = .full"
   },
@@ -1313,7 +1321,7 @@
    "name": "NSMaterialPrizeGate.NSCube.closed_open_open_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 73,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize CLOSED_OPEN_OPEN_NS = .full"
   },
@@ -1321,7 +1329,7 @@
    "name": "NSMaterialPrizeGate.NSCube.dual_ns_eq_full",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 25,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": DUAL_NS = .full"
   },
@@ -1329,7 +1337,7 @@
    "name": "NSMaterialPrizeGate.NSCube.full_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 89,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize FULL_NS = .full"
   },
@@ -1337,7 +1345,7 @@
    "name": "NSMaterialPrizeGate.NSCube.full_ns_counts",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 86,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": FULL_NS = ⟨2, 2⟩"
   },
@@ -1345,7 +1353,7 @@
    "name": "NSMaterialPrizeGate.NSCube.ns_cube_complete",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 92,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize openFree = .openOnly ∧ canonicalize closedFree = .closedOnly ∧ canonicalize OPEN_CLOSED_NS = .full ∧ canonicalize CLOSED_OPEN_NS = .full ∧ canonicalize OPEN_OPEN_NS = .openOnly ∧ canonicalize CLOSED_CLOSED_NS = .closedOnly ∧ canonicalize OPEN_OPEN_OPEN_NS = .openOnly ∧ canonicalize CLOSED_CLOSED_CLOSED_NS = .closedOnly ∧ canonicalize OPEN_OPEN_CLOSED_NS = .full ∧ canonicalize OPEN_C"
   },
@@ -1353,7 +1361,7 @@
    "name": "NSMaterialPrizeGate.NSCube.open_closed_closed_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 75,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize OPEN_CLOSED_CLOSED_NS = .full"
   },
@@ -1361,7 +1369,7 @@
    "name": "NSMaterialPrizeGate.NSCube.open_closed_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 34,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize OPEN_CLOSED_NS = .full"
   },
@@ -1369,7 +1377,7 @@
    "name": "NSMaterialPrizeGate.NSCube.open_closed_open_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 71,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize OPEN_CLOSED_OPEN_NS = .full"
   },
@@ -1377,7 +1385,7 @@
    "name": "NSMaterialPrizeGate.NSCube.open_ns_ne_closed_ns",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 19,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": OPEN_NS ≠ CLOSED_NS"
   },
@@ -1385,7 +1393,7 @@
    "name": "NSMaterialPrizeGate.NSCube.open_open_closed_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 68,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize OPEN_OPEN_CLOSED_NS = .full"
   },
@@ -1393,7 +1401,7 @@
    "name": "NSMaterialPrizeGate.NSCube.open_open_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 39,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize OPEN_OPEN_NS = .openOnly"
   },
@@ -1401,7 +1409,7 @@
    "name": "NSMaterialPrizeGate.NSCube.open_open_open_ns_canonical",
    "file": "open_math/NS_EndpointCube.lean",
    "line": 63,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize OPEN_OPEN_OPEN_NS = .openOnly"
   },
@@ -1409,7 +1417,7 @@
    "name": "NSMaterialPrizeGate.finalClosure_implies_smoothness",
    "file": "open_math/NS_MaterialPrizeGate.lean",
    "line": 72,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{State : Type} {ActualNS SmoothGlobal NoBlowup EnergyControlled CriticalRegular : State → Prop} {ν : ℝ} {data : State → EnstrophyData} (h : NSFinalClosureMaterial State ActualNS SmoothGlobal NoBlowup EnergyControlled CriticalRegular ν data) : NSSmoothnessGate State ActualNS SmoothGlobal"
   },
@@ -1417,7 +1425,7 @@
    "name": "NSMaterialPrizeGate.structural_full_plus_material_closes",
    "file": "open_math/NS_MaterialPrizeGate.lean",
    "line": 84,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{State : Type} {ActualNS SmoothGlobal NoBlowup EnergyControlled CriticalRegular : State → Prop} {ν : ℝ} {data : State → EnstrophyData} {Open Closed : Prop} (_hFull : RPA.EndpointLattice.FULL Open Closed) (hMaterial : NSFinalClosureMaterial State ActualNS SmoothGlobal NoBlowup EnergyControlled CriticalRegular ν data) : NSFinalClosureMaterial State ActualNS SmoothGlobal NoBlowup EnergyControlled Cri"
   },
@@ -1425,7 +1433,7 @@
    "name": "NSProducerFirst.P02RejectionNSInvariantProbe.invScale_val",
    "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
    "line": 41,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(lam : Scale) : (invScale lam).1 = lam.1⁻¹"
   },
@@ -1433,7 +1441,7 @@
    "name": "NSProducerFirst.P02RejectionNSInvariantProbe.no_scale_orbit_collapse",
    "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
    "line": 116,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(M : ScaleModel) (x : M.Point) (hx : M.defect x ≠ 0) : ¬ ∃ lam : Scale, M.defect (M.scale lam x) = 0"
   },
@@ -1441,7 +1449,7 @@
    "name": "NSProducerFirst.P02RejectionNSInvariantProbe.nonzero_defect_preserved",
    "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
    "line": 69,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(M : ScaleModel) (x : M.Point) (hx : M.defect x ≠ 0) (lam : Scale) : M.defect (M.scale lam x) ≠ 0"
   },
@@ -1449,7 +1457,7 @@
    "name": "NSProducerFirst.P02RejectionNSInvariantProbe.not_every_real_eq_neg_self",
    "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
    "line": 150,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ (∀ x : ℝ, x = -x)"
   },
@@ -1457,7 +1465,7 @@
    "name": "NSProducerFirst.P02RejectionNSInvariantProbe.positive_defect_preserved",
    "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
    "line": 60,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(M : ScaleModel) (x : M.Point) (hx : 0 < M.defect x) (lam : Scale) : 0 < M.defect (M.scale lam x)"
   },
@@ -1465,7 +1473,7 @@
    "name": "NSProducerFirst.P02RejectionNSInvariantProbe.real_eq_neg_self_iff_zero",
    "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
    "line": 138,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(x : ℝ) : x = -x ↔ x = 0"
   },
@@ -1473,7 +1481,7 @@
    "name": "NSProducerFirst.P02RejectionNSInvariantProbe.scale_inverse",
    "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
    "line": 44,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(M : ScaleModel) (lam : Scale) (x : M.Point) : M.scale (invScale lam) (M.scale lam x) = x"
   },
@@ -1481,7 +1489,7 @@
    "name": "NSProducerFirst.P02RejectionNSInvariantProbe.scaling_axioms_do_not_force_defect_zero",
    "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
    "line": 108,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ∃ (M : ScaleModel) (x : M.Point), M.defect x ≠ 0"
   },
@@ -1489,7 +1497,7 @@
    "name": "NSProducerFirst.P02RejectionNSInvariantProbe.toy_has_positive_defect",
    "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
    "line": 103,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": 0 < toyScaleModel.defect (show toyScaleModel.Point from (1 : ℝ))"
   },
@@ -1497,7 +1505,7 @@
    "name": "NSProducerFirst.P02RejectionNSInvariantProbe.toy_rejects_analytic_collapse",
    "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
    "line": 163,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ AdditionalAnalyticCollapse toyScaleModel"
   },
@@ -1505,7 +1513,7 @@
    "name": "NSProducerFirst.P02RejectionNSInvariantProbe.universal_scale_collapse_forbidden",
    "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
    "line": 126,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(M : ScaleModel) (hx : ∃ x : M.Point, M.defect x ≠ 0) : ¬ (∀ x : M.Point, ∃ lam : Scale, M.defect (M.scale lam x) = 0)"
   },
@@ -1513,7 +1521,7 @@
    "name": "NSProducerFirst.P02RejectionNSInvariantProbe.zero_defect_preserved",
    "file": "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean",
    "line": 77,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(M : ScaleModel) (x : M.Point) (hx : M.defect x = 0) (lam : Scale) : M.defect (M.scale lam x) = 0"
   },
@@ -1529,16 +1537,20 @@
    "name": "NSProducerFirst.P1Concrete.P1_concrete_material_attempt",
    "file": "open_math/ActualNSToSignedGainCore/P1_ConcreteMaterialAttack.lean",
    "line": 18,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) : ∃ (bulk tail remainder : ℝ → ℝ) (cBulk cTail C : ℝ), 0 ≤ cBulk ∧ 0 ≤ cTail ∧ cBulk + cTail < 1 ∧ (∀ t, stretching s.velocity t = bulk t + tail t + remainder t) ∧ (∀ t, bulk t ≤ cBulk * ν * palinstrophy s.velocity t) ∧ (∀ t, tail t ≤ cTail * ν * palinstrophy s.velocity t) ∧ (∀ t, remainder t ≤ C * (enstrophy s.velocity t)^2"
   },
   {
    "name": "NSProducerFirst.P1Concrete.abs_p1RieszSymbol_le_one",
    "file": "open_math/ActualNSToSignedGainCore/P1_RieszCZ_Mincut.lean",
    "line": 26,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(j : Fin 3) (ξ : Space) : |p1RieszSymbol j ξ| ≤ 1"
   },
   {
@@ -1553,7 +1565,7 @@
    "name": "NSProducerFirst.P1Concrete.analyticSlice_exposes_H1_inputs",
    "file": "open_math/ActualNSToSignedGainCore/P1_NSAnalyticSliceData.lean",
    "line": 56,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{u : VelocityField} {t : ℝ} (h : NSAnalyticSliceData u t) : MemLp (vorticity u t) 2 (volume : Measure Space) ∧ MemLp (fderiv ℝ (vorticity u t)) 2 (volume : Measure Space) ∧ MemLp (vorticity u t) 3 (volume : Measure Space)"
   },
@@ -1561,31 +1573,37 @@
    "name": "NSProducerFirst.P1Concrete.analyticSlice_gradient_memLp_three",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3FromNineEntry.lean",
    "line": 48,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (P : GradientRieszNineEntryPayload u t) : MemLp (fun x => spatialDerivative u t x) 3 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.analyticSlice_stretchingMajorant_memLp_one",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3FromNineEntry.lean",
    "line": 59,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (P : GradientRieszNineEntryPayload u t) : MemLp (stretchingMajorant u t) 1 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.column_norm_le_sum_entries",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientEntries.lean",
    "line": 58,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(A : Space →L[ℝ] Space) (j : Fin 3) : ‖A (coordinateVector j)‖ ≤ ∑ i : Fin 3, |(A (coordinateVector j)) i|"
   },
   {
    "name": "NSProducerFirst.P1Concrete.compact_sobolev_L6",
    "file": "open_math/ActualNSToSignedGainCore/P1_SobolevL6.lean",
    "line": 29,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{w : Space → Space} (hw : ContDiff ℝ 1 w) (hcompact : HasCompactSupport w) : eLpNorm w 6 (volume : Measure Space) ≤ (eLpNormLESNormFDerivOfEqInnerConst (volume : Measure Space) (2 : ℝ≥0) : ℝ≥0∞) * eLpNorm (fderiv ℝ w) 2 (volume : Measure Space)"
   },
@@ -1593,7 +1611,7 @@
    "name": "NSProducerFirst.P1Concrete.compact_sobolev_L6_toReal",
    "file": "open_math/ActualNSToSignedGainCore/P1_SobolevL6.lean",
    "line": 53,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{w : Space → Space} (hw : ContDiff ℝ 1 w) (hcompact : HasCompactSupport w) (hDw2 : MemLp (fderiv ℝ w) 2 (volume : Measure Space)) : (eLpNorm w 6 (volume : Measure Space)).toReal ≤ sobolevL6Constant * (eLpNorm (fderiv ℝ w) 2 (volume : Measure Space)).toReal"
   },
@@ -1601,31 +1619,37 @@
    "name": "NSProducerFirst.P1Concrete.coordinate_decomposition",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientEntries.lean",
    "line": 26,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(v : Space) : ∑ j : Fin 3, v j • coordinateVector j = v"
   },
   {
    "name": "NSProducerFirst.P1Concrete.coordinate_mixed_second_derivative_commutes",
    "file": "open_math/ActualNSToSignedGainCore/P1_MixedPartials.lean",
    "line": 14,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) (x : Space) (i j : Fin 3) : fderiv ℝ (fderiv ℝ (fun y : Space => s.velocity (t, y))) x (coordinateVector i) (coordinateVector j) = fderiv ℝ (fderiv ℝ (fun y : Space => s.velocity (t, y))) x (coordinateVector j) (coordinateVector i)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.coordinate_mixed_second_derivative_component_commutes",
    "file": "open_math/ActualNSToSignedGainCore/P1_MixedPartials.lean",
    "line": 36,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) (x : Space) (i j k : Fin 3) : (fderiv ℝ (fderiv ℝ (fun y : Space => s.velocity (t, y))) x (coordinateVector i) (coordinateVector j)) k = (fderiv ℝ (fderiv ℝ (fun y : Space => s.velocity (t, y))) x (coordinateVector j) (coordinateVector i)) k"
   },
   {
    "name": "NSProducerFirst.P1Concrete.coordinate_target_of_divCurl",
    "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlCoordinateMincut.lean",
    "line": 57,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (x : Space) (h : spatialLaplacian s.velocity t x = - curlVorticity s.velocity t x) : DivCurlCoordinateTarget s t x"
   },
@@ -1633,7 +1657,7 @@
    "name": "NSProducerFirst.P1Concrete.divCurl_iff_coordinate_target",
    "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlCoordinateMincut.lean",
    "line": 75,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (x : Space) : spatialLaplacian s.velocity t x = - curlVorticity s.velocity t x ↔ DivCurlCoordinateTarget s t x"
   },
@@ -1641,7 +1665,7 @@
    "name": "NSProducerFirst.P1Concrete.divCurl_of_coordinate_target",
    "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlCoordinateMincut.lean",
    "line": 43,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (x : Space) (h : DivCurlCoordinateTarget s t x) : spatialLaplacian s.velocity t x = - curlVorticity s.velocity t x"
   },
@@ -1657,7 +1681,7 @@
    "name": "NSProducerFirst.P1Concrete.enstrophy_eq_integral_norm_sq",
    "file": "open_math/ActualNSToSignedGainCore/P1_VorticityH1Gate.lean",
    "line": 60,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u : VelocityField) (t : ℝ) : enstrophy u t = ∫ x : Space, ‖vorticity u t x‖ ^ 2"
   },
@@ -1673,7 +1697,7 @@
    "name": "NSProducerFirst.P1Concrete.enstrophy_zero",
    "file": "open_math/ActualNSToSignedGainCore/P1_ZeroMaterial.lean",
    "line": 37,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(t : ℝ) : enstrophy (fun _ => 0) t = 0"
   },
@@ -1681,15 +1705,17 @@
    "name": "NSProducerFirst.P1Concrete.gradientEntryMajorant_memLp",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3Reconstruction.lean",
    "line": 22,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{u : VelocityField} {t : ℝ} (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH u t) : MemLp (gradientEntryMajorant u t) 3 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.gradientEntry_apply",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientEntries.lean",
    "line": 20,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u : VelocityField) (t : ℝ) (j i : Fin 3) (x : Space) : gradientEntry u t j i x = (spatialDerivative u t x (coordinateVector j)) i"
   },
@@ -1697,40 +1723,50 @@
    "name": "NSProducerFirst.P1Concrete.gradientEnvelope_memLp_three",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3FromNineEntry.lean",
    "line": 23,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{u : VelocityField} {t : ℝ} (P : GradientRieszNineEntryPayload u t) : MemLp (gradientEnvelope u t) 3 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.gradientRieszCandidateL2_memLp",
    "file": "open_math/ActualNSToSignedGainCore/P1_BiotSavartRieszCandidate.lean",
    "line": 79,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (j i : Fin 3) : MemLp (gradientRieszCandidateL2 A j i : Space → ℂ) 2 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.gradient_memLp_three_of_nineEntry",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3FromNineEntry.lean",
    "line": 34,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{u : VelocityField} {t : ℝ} (hsmooth : ContDiff ℝ 1 (fun x : Space => u (t, x))) (P : GradientRieszNineEntryPayload u t) : MemLp (fun x => spatialDerivative u t x) 3 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.gradient_pointwise_le_nine_entries",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientRieszNineEntry.lean",
    "line": 44,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(u : VelocityField) (t : ℝ) (x : Space) : ‖spatialDerivative u t x‖ ≤ ∑ j : Fin 3, ∑ i : Fin 3, |gradientEntry u t j i x|"
   },
   {
    "name": "NSProducerFirst.P1Concrete.h1_to_l3_compression",
    "file": "open_math/ActualNSToSignedGainCore/P1_RieszH1ToL3.lean",
    "line": 18,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] {f : Space → E} (hf : ContDiff ℝ 1 f) (h2 : MemLp f 2 volume) (hD2 : MemLp (fderiv ℝ f) 2 volume) : MemLp f 3 volume ∧ realLpNorm 3 f ≤ realLpNorm 2 f ^ (1 / 2 : ℝ) * (((eLpNormLESNormFDerivOfEqInnerConst (volume : Measure Space) 2 : ℝ) * realLpNorm 2 (fderiv ℝ f)) ^ (1 / 2 : ℝ))"
   },
   {
@@ -1745,15 +1781,17 @@
    "name": "NSProducerFirst.P1Concrete.mincut_of_p1_rieszCZ_L3",
    "file": "open_math/ActualNSToSignedGainCore/P1_RieszCZ_Mincut.lean",
    "line": 77,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": ": P1_RIESZ_CZ_L3_OPEN_MATH"
   },
   {
    "name": "NSProducerFirst.P1Concrete.nineEntryPayload_entry",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientRieszNineEntry.lean",
    "line": 59,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "{u : VelocityField} {t : ℝ} (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH u t) (j i : Fin 3) : GradientEntryL3Control u t j i"
   },
@@ -1761,15 +1799,17 @@
    "name": "NSProducerFirst.P1Concrete.nineEntryPayload_uniform_coefficient",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientRieszNineEntry.lean",
    "line": 68,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "NSProducerFirst.P1Concrete.nineEntryPayload_uniform_coefficient"
+   ],
    "statement": "{u : VelocityField} {t : ℝ} (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH u t) : ∃ Cmax : ℝ, 0 ≤ Cmax ∧ ∀ j i : Fin 3, ((nineEntryPayload_entry H j i).C ≤ Cmax)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.nonempty_signedGainCore_of_rawAnalytic_smallData",
    "file": "open_math/ActualNSToSignedGainCore/P1_RawAnalyticToSignedGain.lean",
    "line": 118,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "{times : Set ℝ} {ν ε : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) (hν : 0 < ν) (hsmall : SmallEnstrophy s ε) (hRaw : RawAnalyticStretchingEstimate s) : Nonempty (NSProducerFirst.SignedGainCore ν (concreteEnstrophyData s))"
   },
@@ -1777,40 +1817,50 @@
    "name": "NSProducerFirst.P1Concrete.omegaComponentComplex_memLp_two",
    "file": "open_math/ActualNSToSignedGainCore/P1_BiotSavartRieszCandidate.lean",
    "line": 25,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (k : Fin 3) : MemLp (omegaComponentComplex u t k) 2 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.omegaComponent_memLp_three",
    "file": "open_math/ActualNSToSignedGainCore/P1_VorticityComponents.lean",
    "line": 28,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (k : Fin 3) : MemLp (omegaComponent u t k) 3 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.omegaComponent_memLp_two",
    "file": "open_math/ActualNSToSignedGainCore/P1_VorticityComponents.lean",
    "line": 19,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (k : Fin 3) : MemLp (omegaComponent u t k) 2 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.opNorm_le_sum_coordinate_columns",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientEntries.lean",
    "line": 35,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(A : Space →L[ℝ] Space) : ‖A‖ ≤ ∑ j : Fin 3, ‖A (coordinateVector j)‖"
   },
   {
    "name": "NSProducerFirst.P1Concrete.operator_output_l3_of_l2_and_derivative",
    "file": "open_math/ActualNSToSignedGainCore/P1_RieszH1ToL3.lean",
    "line": 46,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] {f g : Space → E} (hg : ContDiff ℝ 1 g) (hg2 : MemLp g 2 volume) (hgD2 : MemLp (fderiv ℝ g) 2 volume) (hf2 : MemLp f 2 volume) (hfD2 : MemLp (fderiv ℝ f) 2 volume) (h0 : realLpNorm 2 g ≤ realLpNorm 2 f) (A : ℝ) (hA : 0 ≤ A) (h1 : realLpNorm 2 (fderiv ℝ g) ≤ A * realLpNorm 2 (fderiv ℝ f)) : MemLp g 3 volume ∧ realLpNorm 3 g ≤ realLpNorm 2 f"
   },
   {
@@ -1905,23 +1955,27 @@
    "name": "NSProducerFirst.P1Concrete.p1DoubleRiesz_output_l3_of_derivative_bound",
    "file": "open_math/ActualNSToSignedGainCore/P1_RieszH1ConcreteRoute.lean",
    "line": 17,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(i j : Fin 3) {f g : Space → ℂ} (hg : ContDiff ℝ 1 g) (hg2 : MemLp g 2 volume) (hgD2 : MemLp (fderiv ℝ g) 2 volume) (hf2 : MemLp f 2 volume) (hfD2 : MemLp (fderiv ℝ f) 2 volume) (hL2 : realLpNorm 2 g ≤ realLpNorm 2 f) (A : ℝ) (hA : 0 ≤ A) (hD2 : realLpNorm 2 (fderiv ℝ g) ≤ A * realLpNorm 2 (fderiv ℝ f)) : MemLp g 3 volume ∧ realLpNorm 3 g ≤ realLpNorm 2 f ^ (1 / 2 : ℝ) * (((eLpNormLESNormFDerivOfE"
   },
   {
    "name": "NSProducerFirst.P1Concrete.p1DoubleRiesz_output_l3_of_triple_derivative",
    "file": "open_math/ActualNSToSignedGainCore/P1_RieszH1ConcreteRoute.lean",
    "line": 50,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(i j : Fin 3) {f g : Space → ℂ} (hg : ContDiff ℝ 1 g) (hg2 : MemLp g 2 volume) (hgD2 : MemLp (fderiv ℝ g) 2 volume) (hf2 : MemLp f 2 volume) (hfD2 : MemLp (fderiv ℝ f) 2 volume) (hL2 : realLpNorm 2 g ≤ realLpNorm 2 f) (hD2 : realLpNorm 2 (fderiv ℝ g) ≤ 3 * realLpNorm 2 (fderiv ℝ f)) : MemLp g 3 volume ∧ realLpNorm 3 g ≤ realLpNorm 2 f ^ (1 / 2 : ℝ) * (((eLpNormLESNormFDerivOfEqInnerConst (volume :"
   },
   {
    "name": "NSProducerFirst.P1Concrete.p1RieszL2Backend_contraction",
    "file": "open_math/ActualNSToSignedGainCore/P1_RieszL2Foundation.lean",
    "line": 29,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(B : P1RieszL2Backend) (i j : Fin 3) (f : Lp ℂ 2 (volume : Measure Space)) : ‖B.doubleRiesz i j f‖ ≤ ‖f‖"
   },
@@ -1929,7 +1983,7 @@
    "name": "NSProducerFirst.P1Concrete.p1RieszSymbol_zero",
    "file": "open_math/ActualNSToSignedGainCore/P1_RieszCZ_Mincut.lean",
    "line": 22,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(j : Fin 3) : p1RieszSymbol j 0 = 0"
   },
@@ -1937,7 +1991,7 @@
    "name": "NSProducerFirst.P1Concrete.p1_eLpNorm_fderiv_cutoff_smul_le",
    "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceSobolev.lean",
    "line": 52,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : Space → E} (hf : ContDiff ℝ 1 f) {R : ℝ} (hR : 0 < R) : eLpNorm (fderiv ℝ (fun y => p1Cutoff R y • f y)) 2 volume ≤ eLpNorm (fderiv ℝ f) 2 volume + ENNReal.ofReal (p1DerivativeConstant / R) * eLpNorm f 2 volume"
   },
@@ -1969,7 +2023,7 @@
    "name": "NSProducerFirst.P1Concrete.p1_norm_fderiv_cutoff_smul_le",
    "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceSobolev.lean",
    "line": 20,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : Space → E} (hf : ContDiff ℝ 1 f) {R : ℝ} (hR : 0 < R) (x : Space) : ‖fderiv ℝ (fun y => p1Cutoff R y • f y) x‖ ≤ ‖fderiv ℝ f x‖ + (p1DerivativeConstant / R) * ‖f x‖"
   },
@@ -1985,15 +2039,17 @@
    "name": "NSProducerFirst.P1Concrete.p1_rieszCZ_L3",
    "file": "open_math/ActualNSToSignedGainCore/P1_RieszCZ_L3.lean",
    "line": 24,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(u : VelocityField) (t : ℝ) (hu2 : MemLp (fun x => u (t, x)) 2 (volume : Measure Space)) (hdiv : ∀ x, spatialDivergence u t x = 0) (hω3 : MemLp (vorticity u t) 3 (volume : Measure Space)) : ∃ C_CZ : ℝ, 0 ≤ C_CZ ∧ MemLp (fun x => spatialDerivative u t x) 3 (volume : Measure Space) ∧ (eLpNorm (fun x => spatialDerivative u t x) 3 (volume : Measure Space)).toReal ≤ C_CZ * (eLpNorm (vorticity u t) 3 (v"
   },
   {
    "name": "NSProducerFirst.P1Concrete.p1_rieszCZ_L3_of_mincut",
    "file": "open_math/ActualNSToSignedGainCore/P1_RieszCZ_Mincut.lean",
    "line": 57,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(H : P1_RIESZ_CZ_L3_OPEN_MATH) (u : VelocityField) (t : ℝ) (hu2 : MemLp (fun x => u (t, x)) 2 (volume : Measure Space)) (hdiv : ∀ x, spatialDivergence u t x = 0) (hω3 : MemLp (vorticity u t) 3 (volume : Measure Space)) : ∃ C_CZ : ℝ, 0 ≤ C_CZ ∧ MemLp (fun x => spatialDerivative u t x) 3 (volume : Measure Space) ∧ (eLpNorm (fun x => spatialDerivative u t x) 3 (volume : Measure Space)).toReal ≤ C_CZ "
   },
@@ -2001,7 +2057,7 @@
    "name": "NSProducerFirst.P1Concrete.p1_scalar_product_bound",
    "file": "open_math/ActualNSToSignedGainCore/P1_StretchingHolder.lean",
    "line": 22,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{p q r : ENNReal} [ENNReal.HolderTriple p q r] {f g : Space → ℝ} (hf : MemLp f p volume) (hg : MemLp g q volume) : MemLp (fun x => f x * g x) r volume ∧ p1LpNorm r (fun x => f x * g x) ≤ p1LpNorm p f * p1LpNorm q g"
   },
@@ -2009,31 +2065,37 @@
    "name": "NSProducerFirst.P1Concrete.p1_smooth_eLpNorm_six_le",
    "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceSobolev.lean",
    "line": 77,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{f : Space → E} (hf : ContDiff ℝ 1 f) (h2 : MemLp f 2 volume) : eLpNorm f 6 volume ≤ (eLpNormLESNormFDerivOfEqInnerConst (volume : Measure Space) 2 : ℝ≥0∞) * eLpNorm (fderiv ℝ f) 2 volume"
   },
   {
    "name": "NSProducerFirst.P1Concrete.p1_smooth_eLpNorm_six_toReal_le",
    "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceSobolev.lean",
    "line": 169,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{f : Space → E} (hf : ContDiff ℝ 1 f) (h2 : MemLp f 2 volume) (hD2 : MemLp (fderiv ℝ f) 2 volume) : (eLpNorm f 6 volume).toReal ≤ (eLpNormLESNormFDerivOfEqInnerConst (volume : Measure Space) 2 : ℝ) * (eLpNorm (fderiv ℝ f) 2 volume).toReal"
   },
   {
    "name": "NSProducerFirst.P1Concrete.p1_smooth_memLp_six",
    "file": "open_math/ActualNSToSignedGainCore/P1_WholeSpaceSobolev.lean",
    "line": 159,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{f : Space → E} (hf : ContDiff ℝ 1 f) (h2 : MemLp f 2 volume) (hD2 : MemLp (fderiv ℝ f) 2 volume) : MemLp f 6 volume"
   },
   {
    "name": "NSProducerFirst.P1Concrete.palinstrophy_eq_integral_norm_sq",
    "file": "open_math/ActualNSToSignedGainCore/P1_VorticityH1Gate.lean",
    "line": 67,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u : VelocityField) (t : ℝ) : palinstrophy u t = ∫ x : Space, ‖fderiv ℝ (fun y : Space => vorticity u t y) x‖ ^ 2"
   },
@@ -2049,7 +2111,7 @@
    "name": "NSProducerFirst.P1Concrete.palinstrophy_zero",
    "file": "open_math/ActualNSToSignedGainCore/P1_ZeroMaterial.lean",
    "line": 41,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(t : ℝ) : palinstrophy (fun _ => 0) t = 0"
   },
@@ -2073,39 +2135,47 @@
    "name": "NSProducerFirst.P1Concrete.riesz_three_l3_of_unit_l2_and_triple_derivative",
    "file": "open_math/ActualNSToSignedGainCore/P1_RieszH1ToL3.lean",
    "line": 93,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] {f g : Space → E} (hg : ContDiff ℝ 1 g) (hg2 : MemLp g 2 volume) (hgD2 : MemLp (fderiv ℝ g) 2 volume) (hf2 : MemLp f 2 volume) (hfD2 : MemLp (fderiv ℝ f) 2 volume) (hL2 : realLpNorm 2 g ≤ realLpNorm 2 f) (hD2 : realLpNorm 2 (fderiv ℝ g) ≤ 3 * realLpNorm 2 (fderiv ℝ f)) : MemLp g 3 volume ∧ realLpNorm 3 g ≤ realLpNorm 2 f ^ (1 / 2 : ℝ) * (("
   },
   {
    "name": "NSProducerFirst.P1Concrete.rijOmegaL2_norm_le",
    "file": "open_math/ActualNSToSignedGainCore/P1_BiotSavartRieszCandidate.lean",
    "line": 71,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{u : VelocityField} {t : ℝ} (A : NSAnalyticSliceData u t) (a b k : Fin 3) : ‖rijOmegaL2 A a b k‖ ≤ ‖omegaComponentL2 A k‖"
   },
   {
    "name": "NSProducerFirst.P1Concrete.small_data_signed_stretching_gap",
    "file": "open_math/ActualNSToSignedGainCore/P1_SmallData_Gap.lean",
    "line": 29,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν ε : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) (hν : 0 < ν) (hsmall : SmallEnstrophy s ε) : ∃ θ C : ℝ, 0 ≤ θ ∧ θ < 1 ∧ 0 ≤ C ∧ ∀ t, stretching s.velocity t ≤ θ * ν * palinstrophy s.velocity t + C * (enstrophy s.velocity t)^2"
   },
   {
    "name": "NSProducerFirst.P1Concrete.small_data_signed_stretching_gap_of_raw",
    "file": "open_math/ActualNSToSignedGainCore/P1_RawAnalyticEstimate.lean",
    "line": 25,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν ε : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) (hν : 0 < ν) (hsmall : SmallEnstrophy s ε) (hRaw : RawAnalyticEstimate s) : ∃ θ C : ℝ, 0 ≤ θ ∧ θ < 1 ∧ 0 ≤ C ∧ ∀ t, stretching s.velocity t ≤ θ * ν * palinstrophy s.velocity t + C * (enstrophy s.velocity t)^2"
   },
   {
    "name": "NSProducerFirst.P1Concrete.smoothNSState_divergence_free",
    "file": "open_math/ActualNSToSignedGainCore/P1_RieszCZ_L3.lean",
    "line": 63,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) : ∀ x, spatialDivergence s.velocity t x = 0"
   },
@@ -2113,7 +2183,7 @@
    "name": "NSProducerFirst.P1Concrete.smoothNSState_spatialDerivative_aestronglyMeasurable",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3SmoothState.lean",
    "line": 17,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) : AEStronglyMeasurable (fun x : Space => spatialDerivative s.velocity t x) (volume : Measure Space)"
   },
@@ -2121,31 +2191,37 @@
    "name": "NSProducerFirst.P1Concrete.smoothNSState_spatialDerivative_memLp_three_of_nine_entries",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3SmoothState.lean",
    "line": 33,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH s.velocity t) : MemLp (fun x : Space => spatialDerivative s.velocity t x) 3 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.smoothNSState_stretchingMajorant_lpNorm_one_le_of_nine_entries",
    "file": "open_math/ActualNSToSignedGainCore/P1_NineEntryToStretching.lean",
    "line": 43,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) (hω3 : MemLp (vorticity s.velocity t) 3 (volume : Measure Space)) (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH s.velocity t) : p1LpNorm 1 (stretchingMajorant s.velocity t) ≤ p1LpNorm 3 (fun x => ‖vorticity s.velocity t x‖) ^ 2 * p1LpNorm 3 (fun x => ‖spatialDerivative s.velocity t x‖)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.smoothNSState_stretchingMajorant_memLp_one_of_nine_entries",
    "file": "open_math/ActualNSToSignedGainCore/P1_NineEntryToStretching.lean",
    "line": 14,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) (hω3 : MemLp (vorticity s.velocity t) 3 (volume : Measure Space)) (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH s.velocity t) : MemLp (stretchingMajorant s.velocity t) 1 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.sobolevL6Constant_nonneg",
    "file": "open_math/ActualNSToSignedGainCore/P1_SobolevL6.lean",
    "line": 25,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": 0 ≤ sobolevL6Constant"
   },
@@ -2153,7 +2229,7 @@
    "name": "NSProducerFirst.P1Concrete.space_ext_three",
    "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlCoordinateMincut.lean",
    "line": 14,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{a b : Space} (h0 : a 0 = b 0) (h1 : a 1 = b 1) (h2 : a 2 = b 2) : a = b"
   },
@@ -2161,31 +2237,37 @@
    "name": "NSProducerFirst.P1Concrete.spatialDerivative_memLp_three_of_nine_entries",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientL3Reconstruction.lean",
    "line": 34,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{u : VelocityField} {t : ℝ} (H : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH u t) (hmeas : AEStronglyMeasurable (fun x : Space => spatialDerivative u t x) (volume : Measure Space)) : MemLp (fun x : Space => spatialDerivative u t x) 3 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.spatialDerivative_norm_le_sum_entries",
    "file": "open_math/ActualNSToSignedGainCore/P1_GradientEntries.lean",
    "line": 78,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(u : VelocityField) (t : ℝ) (x : Space) : ‖spatialDerivative u t x‖ ≤ ∑ j : Fin 3, ∑ i : Fin 3, |gradientEntry u t j i x|"
   },
   {
    "name": "NSProducerFirst.P1Concrete.spatialLaplacian_eq_neg_curlVorticity",
    "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlIdentity.lean",
    "line": 45,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) : ∀ x, spatialLaplacian s.velocity t x = - curlVorticity s.velocity t x"
   },
   {
    "name": "NSProducerFirst.P1Concrete.spatialSlice_contDiff",
    "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlIdentity.lean",
    "line": 15,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) : ContDiff ℝ ∞ (fun x : Space => s.velocity (t, x))"
   },
@@ -2193,8 +2275,10 @@
    "name": "NSProducerFirst.P1Concrete.spatialSlice_second_derivative_symmetric",
    "file": "open_math/ActualNSToSignedGainCore/P1_DivCurlIdentity.lean",
    "line": 28,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) {t : ℝ} (ht : t ∈ times) (x : Space) : IsSymmSndFDerivAt ℝ (fun y : Space => s.velocity (t, y)) x"
   },
   {
@@ -2209,16 +2293,20 @@
    "name": "NSProducerFirst.P1Concrete.stretchingMajorant_lpNorm_one_le",
    "file": "open_math/ActualNSToSignedGainCore/P1_StretchingHolder.lean",
    "line": 71,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(u : VelocityField) (t : ℝ) (hω : MemLp (vorticity u t) 3 volume) (hD : MemLp (fun x => spatialDerivative u t x) 3 volume) : p1LpNorm 1 (stretchingMajorant u t) ≤ p1LpNorm 3 (fun x => ‖vorticity u t x‖) ^ 2 * p1LpNorm 3 (fun x => ‖spatialDerivative u t x‖)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.stretchingMajorant_memLp_one_of_L3",
    "file": "open_math/ActualNSToSignedGainCore/P1_StretchingHolder.lean",
    "line": 43,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(u : VelocityField) (t : ℝ) (hω : MemLp (vorticity u t) 3 volume) (hD : MemLp (fun x => spatialDerivative u t x) 3 volume) : MemLp (stretchingMajorant u t) 1 volume"
   },
   {
@@ -2233,7 +2321,7 @@
    "name": "NSProducerFirst.P1Concrete.stretching_zero",
    "file": "open_math/ActualNSToSignedGainCore/P1_ZeroMaterial.lean",
    "line": 45,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(t : ℝ) : stretching (fun _ => 0) t = 0"
   },
@@ -2241,7 +2329,7 @@
    "name": "NSProducerFirst.P1Concrete.uniformGradientRiesz_constant",
    "file": "open_math/ActualNSToSignedGainCore/P1_UniformGradientRiesz.lean",
    "line": 46,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} {s : SmoothNSState times ν f} (H : UNIFORM_GRADIENT_RIESZ_OPEN_MATH s) : ∃ C_CZ : ℝ, 0 ≤ C_CZ ∧ ∀ t : ℝ, ((Classical.choice H).atTime t).Cmax ≤ C_CZ"
   },
@@ -2249,7 +2337,7 @@
    "name": "NSProducerFirst.P1Concrete.uniformGradientRiesz_per_time",
    "file": "open_math/ActualNSToSignedGainCore/P1_UniformGradientRiesz.lean",
    "line": 35,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} {s : SmoothNSState times ν f} (H : UNIFORM_GRADIENT_RIESZ_OPEN_MATH s) (t : ℝ) : GRADIENT_RIESZ_NINE_ENTRY_OPEN_MATH s.velocity t"
   },
@@ -2257,16 +2345,20 @@
    "name": "NSProducerFirst.P1Concrete.uniform_material_stretching_holder_bound",
    "file": "open_math/ActualNSToSignedGainCore/P1_UniformMaterialChain.lean",
    "line": 44,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) (hH1 : VORTICITY_H1_OPEN_MATH s) (hRiesz : UNIFORM_GRADIENT_RIESZ_OPEN_MATH s) {t : ℝ} (ht : t ∈ times) : p1LpNorm 1 (stretchingMajorant s.velocity t) ≤ p1LpNorm 3 (fun x => ‖vorticity s.velocity t x‖) ^ 2 * p1LpNorm 3 (fun x => ‖spatialDerivative s.velocity t x‖)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.uniform_material_stretching_memLp_one",
    "file": "open_math/ActualNSToSignedGainCore/P1_UniformMaterialChain.lean",
    "line": 19,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} (s : SmoothNSState times ν f) (hH1 : VORTICITY_H1_OPEN_MATH s) (hRiesz : UNIFORM_GRADIENT_RIESZ_OPEN_MATH s) {t : ℝ} (ht : t ∈ times) : MemLp (stretchingMajorant s.velocity t) 1 (volume : Measure Space)"
   },
   {
@@ -2281,15 +2373,17 @@
    "name": "NSProducerFirst.P1Concrete.vorticity_memLp_three_of_H1_gate",
    "file": "open_math/ActualNSToSignedGainCore/P1_VorticityH1Gate.lean",
    "line": 44,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{times : Set ℝ} {ν : ℝ} {f : VelocityField} {s : SmoothNSState times ν f} (H : VORTICITY_H1_OPEN_MATH s) (t : ℝ) : MemLp (vorticity s.velocity t) 3 (volume : Measure Space)"
   },
   {
    "name": "NSProducerFirst.P1Concrete.vorticity_zero",
    "file": "open_math/ActualNSToSignedGainCore/P1_ZeroMaterial.lean",
    "line": 33,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(t : ℝ) (x : Space) : vorticity (fun _ => 0) t x = 0"
   },
@@ -2297,7 +2391,7 @@
    "name": "NSProducerFirst.P1Concrete.zero_material_witness",
    "file": "open_math/ActualNSToSignedGainCore/P1_ZeroMaterial.lean",
    "line": 49,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(times : Set ℝ) (ν : ℝ) : ∃ (bulk tail remainder : ℝ → ℝ) (cBulk cTail C : ℝ), 0 ≤ cBulk ∧ 0 ≤ cTail ∧ cBulk + cTail < 1 ∧ (∀ t, stretching (zeroState times ν).velocity t = bulk t + tail t + remainder t) ∧ (∀ t, bulk t ≤ cBulk * ν * palinstrophy (zeroState times ν).velocity t) ∧ (∀ t, tail t ≤ cTail * ν * palinstrophy (zeroState times ν).velocity t) ∧ (∀ t, remainder t ≤ C * (enstrophy (zeroState "
   },
@@ -2305,23 +2399,27 @@
    "name": "NSProducerFirst.P1_generic_frontier_not_derivable_from_abstract_carriers",
    "file": "open_math/ActualNSToSignedGainCore/P1_WitnessAttack.lean",
    "line": 51,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": ": ¬ Nonempty (ActualNSToQuadraticBulkTailWitness Unit P1AbstractCounterexampleActualNS (1 : ℝ) (fun _ => P1AbstractCounterexampleData))"
   },
   {
    "name": "NSProducerFirst.P1_no_witness_for_abstract_counterexample",
    "file": "open_math/ActualNSToSignedGainCore/P1_WitnessAttack.lean",
    "line": 40,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": ": ¬ Nonempty (QuadraticBulkTailWitness (1 : ℝ) P1AbstractCounterexampleData)"
   },
   {
    "name": "NSProducerFirst.TerminalBridgeAudit.no_structural_to_arbitrary_signed_gain",
    "file": "open_math/ActualNSToSignedGainCore/P05TerminalBridgeAudit.lean",
    "line": 32,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ (Nonempty State → Nonempty (SignedGainCertificate 1 impossibleSignedGainData))"
   },
@@ -2329,7 +2427,7 @@
    "name": "NSProducerFirst.TerminalBridgeAudit.no_terminal_cycle_to_impossible_signed_gain",
    "file": "open_math/ActualNSToSignedGainCore/P05TerminalBridgeAudit.lean",
    "line": 41,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ (Endpoint True → Nonempty (SignedGainCertificate 1 impossibleSignedGainData))"
   },
@@ -2337,7 +2435,7 @@
    "name": "NSProducerFirst.TerminalBridgeAudit.structural_closure_does_not_inhabit_impossible_signed_gain",
    "file": "open_math/ActualNSToSignedGainCore/P05TerminalBridgeAudit.lean",
    "line": 23,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": Nonempty State → ¬ Nonempty (SignedGainCertificate 1 impossibleSignedGainData)"
   },
@@ -2345,7 +2443,7 @@
    "name": "NSProducerFirst.TerminalBridgeAudit.structural_terminal_witness_exists",
    "file": "open_math/ActualNSToSignedGainCore/P05TerminalBridgeAudit.lean",
    "line": 18,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": Nonempty State"
   },
@@ -2353,7 +2451,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.all_finite_continuations_agree",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 70,
-   "state": "nao_checado",
+   "state": "erro",
    "axioms_beyond_standard": [],
    "statement": "{Obligation : Type} (S : Signature Obligation) (m n : Nat) (o : Obligation) : repeat S.expand m o = repeat S.expand n o"
   },
@@ -2361,7 +2459,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.endpoint_iff_gap",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 93,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{P : Prop} : Endpoint P ↔ Gap P"
   },
@@ -2369,7 +2467,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.endpoint_to_gap",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 88,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{P : Prop} : Endpoint P → Gap P"
   },
@@ -2377,7 +2475,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.expansion_adds_no_new_obligation",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 34,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{Obligation : Type} (S : Signature Obligation) (o : Obligation) : S.expand o = o"
   },
@@ -2385,7 +2483,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.gap_iff_habitant",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 95,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{P : Prop} : Gap P ↔ Habitant P"
   },
@@ -2393,7 +2491,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.gap_to_habitant",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 90,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{P : Prop} : Gap P → Habitant P"
   },
@@ -2401,7 +2499,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.habitant_iff_inhabitant",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 96,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{P : Prop} : Habitant P ↔ Inhabitant P"
   },
@@ -2409,7 +2507,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.habitant_to_inhabitant",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 91,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{P : Prop} : Habitant P → Inhabitant P"
   },
@@ -2417,7 +2515,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.inhabitant_to_endpoint",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 92,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{P : Prop} : Inhabitant P → Endpoint P"
   },
@@ -2425,7 +2523,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.no_generic_terminal_inhabitant",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 114,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ (∀ P : Prop, Endpoint P)"
   },
@@ -2433,7 +2531,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.repeat_eq_terminal",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 23,
-   "state": "nao_checado",
+   "state": "erro",
    "axioms_beyond_standard": [],
    "statement": "{Obligation : Type} (S : Signature Obligation) (n : Nat) (o : Obligation) : repeat S.expand n o = o"
   },
@@ -2441,7 +2539,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.restart_after_skip_is_same_terminal",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 60,
-   "state": "nao_checado",
+   "state": "erro",
    "axioms_beyond_standard": [],
    "statement": "{Obligation : Type} (S : Signature Obligation) (n : Nat) (o : Obligation) : repeat S.expand n (repeat S.expand 1 o) = o"
   },
@@ -2449,7 +2547,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.signature_alone_does_not_imply_arbitrary_target",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 41,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": (∃ S : Signature Unit, True) ∧ ¬ False"
   },
@@ -2457,7 +2555,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.skip_terminal_bit",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 51,
-   "state": "nao_checado",
+   "state": "erro",
    "axioms_beyond_standard": [],
    "statement": "{Obligation : Type} (S : Signature Obligation) (o : Obligation) : repeat S.expand 1 o = o"
   },
@@ -2465,7 +2563,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.terminal_cycle",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 97,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{P : Prop} : Endpoint P ↔ Inhabitant P"
   },
@@ -2473,7 +2571,7 @@
    "name": "NSProducerFirst.TerminalGapSignature.terminal_cycle_does_not_create_false",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 108,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": (Endpoint False ↔ Gap False) ∧ ¬ Endpoint False"
   },
@@ -2481,15 +2579,17 @@
    "name": "NSProducerFirst.TerminalGapSignature.terminal_inhabited_iff_endpoint",
    "file": "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean",
    "line": 98,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{P : Prop} : Inhabited (Endpoint P) ↔ Endpoint P"
   },
   {
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.closed_eq_reverse_open_after_collapse",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 51,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": collapse .right = collapse (reverse .right)"
   },
@@ -2497,7 +2597,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.closed_is_terminal_fixed",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 136,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": terminalStep State.core = State.core"
   },
@@ -2505,7 +2605,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.closed_ne_reverse_closed",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 94,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": State.right ≠ reverse State.right"
   },
@@ -2513,7 +2613,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.collapse_reverse_commute",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 61,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "(s : State) : collapse (reverse s) = reverse (collapse s)"
   },
@@ -2521,7 +2621,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.collapse_reverse_eq_collapse",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 36,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "(s : State) : collapse (reverse s) = collapse s"
   },
@@ -2529,7 +2629,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_closed_distinct_but_terminally_equal",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 104,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": State.left ≠ State.right ∧ collapse State.left = collapse State.right"
   },
@@ -2537,7 +2637,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_closed_equal_after_terminal_collapse",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 41,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": collapse .left = collapse .right"
   },
@@ -2545,7 +2645,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_eq_reverse_closed_after_collapse",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 46,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": collapse .left = collapse (reverse .left)"
   },
@@ -2553,7 +2653,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_ne_closed",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 99,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": State.left ≠ State.right"
   },
@@ -2561,7 +2661,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_ne_reverse_open",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 86,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": State.left ≠ reverse State.left"
   },
@@ -2569,7 +2669,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_reaches_closed_and_stays",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 141,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "(n : Nat) : Nat.iterate terminalStep (n + 1) State.left = State.core"
   },
@@ -2577,7 +2677,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.open_tends_to_closed",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 130,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": terminalStep State.left = State.core"
   },
@@ -2585,7 +2685,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.representative_ne_reverse_but_terminalEq",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 110,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "(s : State) (hs : s ≠ State.core) : s ≠ reverse s ∧ TerminalEq s (reverse s)"
   },
@@ -2593,7 +2693,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.reverse_core",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 29,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": reverse .core = .core"
   },
@@ -2601,7 +2701,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.reverse_involutive",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 31,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "(s : State) : reverse (reverse s) = s"
   },
@@ -2609,7 +2709,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.reverse_left",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 27,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": reverse .left = .right"
   },
@@ -2617,7 +2717,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.reverse_right",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 30,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": reverse .right = .left"
   },
@@ -2625,7 +2725,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.terminalEq_all",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 71,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "(a b : State) : TerminalEq a b"
   },
@@ -2633,7 +2733,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.terminalEq_reverse",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 75,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "(s : State) : TerminalEq s (reverse s)"
   },
@@ -2641,7 +2741,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.terminal_equivalence_does_not_close_material_endpoint",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 79,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ Nonempty (NSProducerFirst.SignedGainCertificate 1 NSProducerFirst.impossibleSignedGainData)"
   },
@@ -2649,7 +2749,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.terminal_image_is_core",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 56,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "(s : State) : collapse s = .core"
   },
@@ -2657,7 +2757,7 @@
    "name": "NSProducerFirst.TerminalOpenClosedAlgebra.unique_terminal_normal_form",
    "file": "open_math/ActualNSToSignedGainCore/P06TerminalOpenClosedAlgebra.lean",
    "line": 152,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "(s : State) : terminalStep s = State.core"
   },
@@ -2665,7 +2765,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.all_collapse_to_core",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 44,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(s : State) : collapse s = .core"
   },
@@ -2673,7 +2773,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.bilateral_meet",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 54,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": collapse .left = collapse .right"
   },
@@ -2681,7 +2781,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.closure_does_not_create_arbitrary_endpoint",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 63,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ (∀ P : Prop, P)"
   },
@@ -2689,7 +2789,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.code_core",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 29,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": code .core = 1"
   },
@@ -2697,7 +2797,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.code_left",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 27,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": code .left = 0"
   },
@@ -2705,7 +2805,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.code_right",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 30,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": code .right = 2"
   },
@@ -2713,7 +2813,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.collapse_core",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 39,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": collapse .core = .core"
   },
@@ -2721,7 +2821,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.collapse_idempotent",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 49,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(s : State) : collapse (collapse s) = collapse s"
   },
@@ -2729,7 +2829,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.collapse_left",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 37,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": collapse .left = .core"
   },
@@ -2737,7 +2837,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.collapse_right",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 40,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": collapse .right = .core"
   },
@@ -2745,7 +2845,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.core_fixed",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 41,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": collapse .core = .core"
   },
@@ -2753,7 +2853,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.last_bit_normalization_does_not_decide_arbitrary_prop",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 115,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ (∀ P : Prop, P ∨ ¬ P → P)"
   },
@@ -2761,7 +2861,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.normalize_00",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 87,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeLastBit (0, 0) = (0, 0)"
   },
@@ -2769,7 +2869,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.normalize_01",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 81,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeLastBit (0, 1) = (1, 1)"
   },
@@ -2777,7 +2877,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.normalize_02",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 84,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeLastBit (0, 2) = (2, 2)"
   },
@@ -2785,7 +2885,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.normalize_fixed_iff_diagonal",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 102,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(p : PairCode) : normalizeLastBit p = p ↔ p.1 = p.2"
   },
@@ -2793,7 +2893,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.normalize_idempotent",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 96,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(p : PairCode) : normalizeLastBit (normalizeLastBit p) = normalizeLastBit p"
   },
@@ -2801,7 +2901,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.normalize_is_diagonal",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 90,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(p : PairCode) : (normalizeLastBit p).1 = (normalizeLastBit p).2"
   },
@@ -2809,7 +2909,7 @@
    "name": "NSProducerFirst.TerminalThreeStateClosure.three_state_model_exists",
    "file": "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean",
    "line": 59,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": Nonempty State"
   },
@@ -2817,7 +2917,7 @@
    "name": "NSProducerFirst.g1_bulk_tail_implies_strict_differential",
    "file": "audit/producer-first/G1MaterialUnified.lean",
    "line": 80,
-   "state": "nao_checado",
+   "state": "erro",
    "axioms_beyond_standard": [],
    "statement": "(ν cBulk δTail : ℝ) (_hν : 0 ≤ ν) (d : MillenniumAudit.G1KAdmissible.EnstrophyData) (s : MillenniumAudit.G1KAdmissible.StretchSplit d) (hBulk : MillenniumAudit.G1KAdmissible.BulkAbsorption ν cBulk d s) (hTail : MillenniumAudit.G1KAdmissible.ExceptionalTailControl ν δTail d s) (hBudget : MillenniumAudit.G1KAdmissible.SubcriticalBudget cBulk δTail) (hbalance : ∀ t, (1 / 2 : ℝ) * deriv (EnstrophyData"
   },
@@ -2825,47 +2925,57 @@
    "name": "NSProducerFirst.navierStokes_material_cert_refute_disjoint",
    "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
    "line": 62,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(State : Type) (ActualNS : State → Prop) (ν : ℝ) (data : State → EnstrophyData) : ¬ (NavierStokesMaterialCertifies State ActualNS ν data ∧ NavierStokesMaterialRefutes State ActualNS ν data)"
   },
   {
    "name": "NSProducerFirst.nonempty_actualNSToSignedGainCore_of_quadraticBulkTail",
    "file": "audit/producer-first/MaterialClosurePipeline.lean",
    "line": 130,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} (h : Nonempty (ActualNSToQuadraticBulkTailWitness State ActualNS ν data)) : Nonempty (ActualNSToSignedGainCore State ActualNS ν data)"
   },
   {
    "name": "NSProducerFirst.nonempty_signedGainCore_of_bulk_tail",
    "file": "audit/producer-first/SignedGainCore.lean",
    "line": 129,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{ν : ℝ} {d : EnstrophyData} (bulk tail : ℝ → ℝ) (split : ∀ t, d.stretch t = bulk t + tail t) (cBulk δTail : ℝ) (hBulk0 : 0 ≤ cBulk) (hTail0 : 0 ≤ δTail) (hBulk : ∀ t, bulk t ≤ cBulk * ν * d.z t) (hTail : ∀ t, tail t ≤ δTail * ν * d.z t) (hBudget : cBulk + δTail < 1) : Nonempty (SignedGainCore ν d)"
   },
   {
    "name": "NSProducerFirst.not_navierStokesMaterialCertifies_iff_refutes",
    "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
    "line": 46,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(State : Type) (ActualNS : State → Prop) (ν : ℝ) (data : State → EnstrophyData) : ¬ NavierStokesMaterialCertifies State ActualNS ν data ↔ NavierStokesMaterialRefutes State ActualNS ν data"
   },
   {
    "name": "NSProducerFirst.quadraticProducer_certifies_navierStokesMaterial",
    "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
    "line": 37,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} (h : NavierStokesQuadraticProducer State ActualNS ν data) : NavierStokesMaterialCertifies State ActualNS ν data"
   },
   {
    "name": "NSRPACube.closed_closed_closed_ns_canonical",
    "file": "open_math/NS_RPACompleteCube.lean",
    "line": 66,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize CLOSED_CLOSED_CLOSED_NS = .closedOnly"
   },
@@ -2873,7 +2983,7 @@
    "name": "NSRPACube.closed_closed_ns_canonical",
    "file": "open_math/NS_RPACompleteCube.lean",
    "line": 60,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize CLOSED_CLOSED_NS = .closedOnly"
   },
@@ -2881,7 +2991,7 @@
    "name": "NSRPACube.closed_closed_open_ns_canonical",
    "file": "open_math/NS_RPACompleteCube.lean",
    "line": 84,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize CLOSED_CLOSED_OPEN_NS = .full"
   },
@@ -2889,7 +2999,7 @@
    "name": "NSRPACube.closed_open_closed_ns_canonical",
    "file": "open_math/NS_RPACompleteCube.lean",
    "line": 81,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize CLOSED_OPEN_CLOSED_NS = .full"
   },
@@ -2897,7 +3007,7 @@
    "name": "NSRPACube.closed_open_open_ns_canonical",
    "file": "open_math/NS_RPACompleteCube.lean",
    "line": 75,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize CLOSED_OPEN_OPEN_NS = .full"
   },
@@ -2905,7 +3015,7 @@
    "name": "NSRPACube.dual_ns_canonical",
    "file": "open_math/NS_RPACompleteCube.lean",
    "line": 54,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize DUAL_NS = .full"
   },
@@ -2913,7 +3023,7 @@
    "name": "NSRPACube.full_ns_free_canonical",
    "file": "open_math/NS_RPACompleteCube.lean",
    "line": 87,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize FULL_NS_FREE = .full"
   },
@@ -2921,7 +3031,7 @@
    "name": "NSRPACube.open_closed_closed_ns_canonical",
    "file": "open_math/NS_RPACompleteCube.lean",
    "line": 78,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize OPEN_CLOSED_CLOSED_NS = .full"
   },
@@ -2929,7 +3039,7 @@
    "name": "NSRPACube.open_closed_open_ns_canonical",
    "file": "open_math/NS_RPACompleteCube.lean",
    "line": 72,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize OPEN_CLOSED_OPEN_NS = .full"
   },
@@ -2937,7 +3047,7 @@
    "name": "NSRPACube.open_open_closed_ns_canonical",
    "file": "open_math/NS_RPACompleteCube.lean",
    "line": 69,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize OPEN_OPEN_CLOSED_NS = .full"
   },
@@ -2945,7 +3055,7 @@
    "name": "NSRPACube.open_open_ns_canonical",
    "file": "open_math/NS_RPACompleteCube.lean",
    "line": 57,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize OPEN_OPEN_NS = .openOnly"
   },
@@ -2953,7 +3063,7 @@
    "name": "NSRPACube.open_open_open_ns_canonical",
    "file": "open_math/NS_RPACompleteCube.lean",
    "line": 63,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize OPEN_OPEN_OPEN_NS = .openOnly"
   },
@@ -2961,7 +3071,7 @@
    "name": "RPA.EndpointLattice.canonical_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 63,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize closedFree = .closedOnly"
   },
@@ -2969,7 +3079,7 @@
    "name": "RPA.EndpointLattice.canonical_closed_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 66,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize (closedFree + closedFree) = .closedOnly"
   },
@@ -2977,7 +3087,7 @@
    "name": "RPA.EndpointLattice.canonical_closed_closed_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 114,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize (closedFree + closedFree + closedFree) = .closedOnly"
   },
@@ -2985,7 +3095,7 @@
    "name": "RPA.EndpointLattice.canonical_closed_closed_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 126,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize (closedFree + closedFree + openFree) = .full"
   },
@@ -2993,7 +3103,7 @@
    "name": "RPA.EndpointLattice.canonical_closed_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 67,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize (closedFree + openFree) = .full"
   },
@@ -3001,7 +3111,7 @@
    "name": "RPA.EndpointLattice.canonical_closed_open_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 124,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize (closedFree + openFree + closedFree) = .full"
   },
@@ -3009,7 +3119,7 @@
    "name": "RPA.EndpointLattice.canonical_closed_open_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 120,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize (closedFree + openFree + openFree) = .full"
   },
@@ -3017,7 +3127,7 @@
    "name": "RPA.EndpointLattice.canonical_dual",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 64,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize dualFree = .full"
   },
@@ -3025,7 +3135,7 @@
    "name": "RPA.EndpointLattice.canonical_empty",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 60,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize emptyFree = .empty"
   },
@@ -3033,7 +3143,7 @@
    "name": "RPA.EndpointLattice.canonical_fullFree",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 133,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize fullFree = .full"
   },
@@ -3041,7 +3151,7 @@
    "name": "RPA.EndpointLattice.canonical_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 62,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize openFree = .openOnly"
   },
@@ -3049,7 +3159,7 @@
    "name": "RPA.EndpointLattice.canonical_open_closed_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 122,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize (openFree + closedFree + closedFree) = .full"
   },
@@ -3057,7 +3167,7 @@
    "name": "RPA.EndpointLattice.canonical_open_closed_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 118,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize (openFree + closedFree + openFree) = .full"
   },
@@ -3065,7 +3175,7 @@
    "name": "RPA.EndpointLattice.canonical_open_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 65,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize (openFree + openFree) = .openOnly"
   },
@@ -3073,7 +3183,7 @@
    "name": "RPA.EndpointLattice.canonical_open_open_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 116,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize (openFree + openFree + closedFree) = .full"
   },
@@ -3081,7 +3191,7 @@
    "name": "RPA.EndpointLattice.canonical_open_open_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 111,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize (openFree + openFree + openFree) = .openOnly"
   },
@@ -3089,7 +3199,7 @@
    "name": "RPA.EndpointLattice.closed_closed_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 104,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": closedFree + closedFree + closedFree = ⟨0, 3⟩"
   },
@@ -3097,7 +3207,7 @@
    "name": "RPA.EndpointLattice.closed_closed_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 110,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": closedFree + closedFree + openFree = ⟨1, 2⟩"
   },
@@ -3105,7 +3215,7 @@
    "name": "RPA.EndpointLattice.closed_idempotent",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 70,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": join .closedOnly .closedOnly = .closedOnly"
   },
@@ -3113,7 +3223,7 @@
    "name": "RPA.EndpointLattice.closed_open_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 109,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": closedFree + openFree + closedFree = ⟨1, 2⟩"
   },
@@ -3121,7 +3231,7 @@
    "name": "RPA.EndpointLattice.closed_open_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 107,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": closedFree + openFree + openFree = ⟨2, 1⟩"
   },
@@ -3129,7 +3239,7 @@
    "name": "RPA.EndpointLattice.closed_plus_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 24,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": closedFree + closedFree = ⟨0, 2⟩"
   },
@@ -3137,7 +3247,7 @@
    "name": "RPA.EndpointLattice.closed_plus_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 22,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": closedFree + openFree = dualFree"
   },
@@ -3145,7 +3255,7 @@
    "name": "RPA.EndpointLattice.complete_cube_through_three",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 168,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": canonicalize openFree = .openOnly ∧ canonicalize closedFree = .closedOnly ∧ canonicalize (openFree + closedFree) = .full ∧ canonicalize (closedFree + openFree) = .full ∧ canonicalize (openFree + openFree) = .openOnly ∧ canonicalize (closedFree + closedFree) = .closedOnly ∧ canonicalize (openFree + openFree + openFree) = .openOnly ∧ canonicalize (closedFree + closedFree + closedFree) = .closedOnl"
   },
@@ -3153,7 +3263,7 @@
    "name": "RPA.EndpointLattice.fullFree_counts",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 131,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": fullFree = ⟨2, 2⟩"
   },
@@ -3161,7 +3271,7 @@
    "name": "RPA.EndpointLattice.full_absorbs_left",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 72,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(x : Canonical) : join .full x = .full"
   },
@@ -3169,7 +3279,7 @@
    "name": "RPA.EndpointLattice.full_absorbs_right",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 73,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(x : Canonical) : join x .full = .full"
   },
@@ -3177,7 +3287,7 @@
    "name": "RPA.EndpointLattice.full_eq_dual_endpoint_state",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 81,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : FULL Open Closed ↔ RPA.DUAL_ENDPOINT_STATE Open Closed"
   },
@@ -3185,7 +3295,7 @@
    "name": "RPA.EndpointLattice.full_eq_final_root",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 86,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : FULL Open Closed ↔ FINAL_ROOT Open Closed"
   },
@@ -3193,7 +3303,7 @@
    "name": "RPA.EndpointLattice.full_eq_global_external_certificate",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 88,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : FULL Open Closed ↔ GLOBAL_EXTERNAL_CERTIFICATE Open Closed"
   },
@@ -3201,7 +3311,7 @@
    "name": "RPA.EndpointLattice.full_eq_math",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 84,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : FULL Open Closed ↔ MATH Open Closed"
   },
@@ -3209,7 +3319,7 @@
    "name": "RPA.EndpointLattice.maximal_full_chain",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 90,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : FULL Open Closed ↔ RPA.DUAL_ENDPOINT_STATE Open Closed ∧ MATH Open Closed ∧ FINAL_ROOT Open Closed ∧ GLOBAL_EXTERNAL_CERTIFICATE Open Closed"
   },
@@ -3217,7 +3327,7 @@
    "name": "RPA.EndpointLattice.one_open_two_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 26,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": openFree + closedFree + closedFree = ⟨1, 2⟩"
   },
@@ -3225,7 +3335,7 @@
    "name": "RPA.EndpointLattice.open_closed_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 108,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": openFree + closedFree + closedFree = ⟨1, 2⟩"
   },
@@ -3233,7 +3343,7 @@
    "name": "RPA.EndpointLattice.open_closed_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 106,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": openFree + closedFree + openFree = ⟨2, 1⟩"
   },
@@ -3241,7 +3351,7 @@
    "name": "RPA.EndpointLattice.open_idempotent",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 68,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": join .openOnly .openOnly = .openOnly"
   },
@@ -3249,7 +3359,7 @@
    "name": "RPA.EndpointLattice.open_join_closed_full",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 71,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": join .openOnly .closedOnly = .full"
   },
@@ -3257,7 +3367,7 @@
    "name": "RPA.EndpointLattice.open_open_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 105,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": openFree + openFree + closedFree = ⟨2, 1⟩"
   },
@@ -3265,7 +3375,7 @@
    "name": "RPA.EndpointLattice.open_open_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 102,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": openFree + openFree + openFree = ⟨3, 0⟩"
   },
@@ -3273,7 +3383,7 @@
    "name": "RPA.EndpointLattice.open_plus_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 20,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": openFree + closedFree = dualFree"
   },
@@ -3281,7 +3391,7 @@
    "name": "RPA.EndpointLattice.open_plus_open",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 23,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": openFree + openFree = ⟨2, 0⟩"
   },
@@ -3289,7 +3399,7 @@
    "name": "RPA.EndpointLattice.two_open_one_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 25,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": openFree + openFree + closedFree = ⟨2, 1⟩"
   },
@@ -3297,7 +3407,7 @@
    "name": "RPA.EndpointLattice.two_open_two_closed",
    "file": "open_math/RPA_EndpointLattice.lean",
    "line": 27,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": openFree + openFree + closedFree + closedFree = ⟨2, 2⟩"
   },
@@ -3305,7 +3415,7 @@
    "name": "RPA.bridge_eq_math",
    "file": "open_math/RPA_MinimalChain.lean",
    "line": 54,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : OPEN_BRIDGE_CLOSED_BRIDGE Open Closed ↔ MATH Open Closed"
   },
@@ -3313,7 +3423,7 @@
    "name": "RPA.certify",
    "file": "open_math/RPA_MinimalChain.lean",
    "line": 89,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{Open Closed : Prop} (hOpen : Open) (hClosed : Closed) (hIdentity : Open ↔ Closed) : GLOBAL_EXTERNAL_CERTIFICATE Open Closed"
   },
@@ -3321,7 +3431,7 @@
    "name": "RPA.dual_endpoint_eq_openClosed",
    "file": "open_math/RPA_MinimalChain.lean",
    "line": 68,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : OPEN_ENDPOINT_CLOSED_ENDPOINT Open Closed ↔ OPEN_MATH_CLOSED_MATH Open Closed"
   },
@@ -3329,7 +3439,7 @@
    "name": "RPA.finalRoot_eq_globalExternal",
    "file": "open_math/RPA_MinimalChain.lean",
    "line": 63,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : FINAL_ROOT Open Closed ↔ GLOBAL_EXTERNAL_CERTIFICATE Open Closed"
   },
@@ -3337,7 +3447,7 @@
    "name": "RPA.math_eq_finalRoot",
    "file": "open_math/RPA_MinimalChain.lean",
    "line": 59,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : MATH Open Closed ↔ FINAL_ROOT Open Closed"
   },
@@ -3345,7 +3455,7 @@
    "name": "RPA.openClosed_eq_bridge",
    "file": "open_math/RPA_MinimalChain.lean",
    "line": 49,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : OPEN_MATH_CLOSED_MATH Open Closed ↔ OPEN_BRIDGE_CLOSED_BRIDGE Open Closed"
   },
@@ -3353,7 +3463,7 @@
    "name": "RPA.openPos_ne_closedPos",
    "file": "open_math/RPA_MinimalChain.lean",
    "line": 20,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": EndpointPosition.openPos ≠ EndpointPosition.closedPos"
   },
@@ -3361,23 +3471,55 @@
    "name": "RPA.rpa_chain",
    "file": "open_math/RPA_MinimalChain.lean",
    "line": 74,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : OPEN_ENDPOINT_CLOSED_ENDPOINT Open Closed ↔ DUAL_ENDPOINT_STATE Open Closed ∧ OPEN_MATH_CLOSED_MATH Open Closed ∧ OPEN_BRIDGE_CLOSED_BRIDGE Open Closed ∧ MATH Open Closed ∧ FINAL_ROOT Open Closed ∧ GLOBAL_EXTERNAL_CERTIFICATE Open Closed"
   }
  ],
- "closed": 24,
+ "closed": 182,
  "files_sha256": {
+  "G1_KAdmissible_to_SignedDepletion.lean": "36f5204b9ecf913f83a005e4344051b8eb7dce54c4cf7a0125765be581536f30",
+  "audit/producer-first/FlexibleBulkTailMaterialOperator.lean": "d17ec70049138ad10ee545774283e60161a50ef263c2ba5b4254db4aaa753cb5",
+  "audit/producer-first/PrimitiveMaterialLaws.lean": "1e0a76273d2da94aaf995229ae531d978442f10aa72207ab950ef7e8e24b514c",
   "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
   "lakefile.toml": "a04806e1803da95f93288391457d12b83c5da1e1f70a624bb08251616701dfbb",
   "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87",
+  "open_math/ActualNSToSignedGainCore/P02RejectionNSInvariantProbe.lean": "c1837731dc8c2eb7e68676949eeb777c760801d1ef119f8f8feb3e2cd491b51e",
+  "open_math/ActualNSToSignedGainCore/P03TerminalGapSignature.lean": "b5c60d7575f01bf12c2e3920a379001d8d99fee2ca1f1eac22896828cde9bfd2",
+  "open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean": "4c84a7ce65a905a599ae208cc3b220faee3db4e046aec128a0d7b04c4fdb1fc8",
   "open_math/ActualNSToSignedGainCore/P1_ConcreteObservables.lean": "af99e291a460e8e1188c0a758ca5b264bbd19aed8cd0e1bd1df563bc643618df",
+  "open_math/ActualNSToSignedGainCore/P1_ConcretePDE.lean": "bbd6daa5822e4f2d935af79fc4bec040ab8c75943934d628f702a3b1ecb64fcf",
+  "open_math/ActualNSToSignedGainCore/P1_DivCurlCoordinateMincut.lean": "f70ec6b740933bb8ba4676a2804e8b287e29d663b3c86961441be6fb13405c57",
+  "open_math/ActualNSToSignedGainCore/P1_DivCurlIdentity.lean": "4a32ebdeb5f3d54dc7864b85bfb92be121a8967946bb3b7ca3028a6f43851b32",
+  "open_math/ActualNSToSignedGainCore/P1_GradientEntries.lean": "05cd6d35ba37327ad6d2ae2b8a0003c11bf00eba7f41005f312bfcdfc5206c46",
+  "open_math/ActualNSToSignedGainCore/P1_GradientL3Reconstruction.lean": "4896886e87825bcb04aa0c713c71ffc64e2508da88c872d517899c8473d0ce8c",
+  "open_math/ActualNSToSignedGainCore/P1_GradientL3SmoothState.lean": "0766e80a608284cba23b580383b54468a62b2e3a52ad1e5c2fa79eb41ce7f201",
+  "open_math/ActualNSToSignedGainCore/P1_GradientRieszNineEntry.lean": "fb841cfc79baa29ea6626a734feaf6fb4cd5bf9c5c2c270fb2ea7a5ecb316d0e",
   "open_math/ActualNSToSignedGainCore/P1_LpInterpolation.lean": "ca06bc61e6dc4165be94ce701f301a4018042b91eaa89768e4eea5c8020ac9d8",
+  "open_math/ActualNSToSignedGainCore/P1_MixedPartials.lean": "20a87c9189ac2db2d37c86c9a3d40579a9b855db16b79a53a6f686ec125057ad",
+  "open_math/ActualNSToSignedGainCore/P1_NSAnalyticSliceData.lean": "7f793e8577a962e4b72880c145fcd16402bc00a5a8159d19b224ba799e9b3ca7",
   "open_math/ActualNSToSignedGainCore/P1_QuarticYoung.lean": "dade3c9858d6b026cbc5294424281091084198a0448ef99db7cfd7d69d7f52fd",
+  "open_math/ActualNSToSignedGainCore/P1_RieszCZ_L3.lean": "0ba364e7fe348e9f78261a968578fa8902b27c5089921d2d61502061135e116d",
+  "open_math/ActualNSToSignedGainCore/P1_RieszCZ_Mincut.lean": "ae1eabd7896f57607e881e2dd6cf0dbabc86a49ffe42cbcc11afd321ad5b599c",
+  "open_math/ActualNSToSignedGainCore/P1_RieszH1ConcreteRoute.lean": "07abc299e79529ab1b2972975ca61ae5918c2e79f84308f7d95c4f6cf195a058",
+  "open_math/ActualNSToSignedGainCore/P1_RieszH1ToL3.lean": "4f857ba7898c7a3eaf887017ac7baf9368a24bd6415dbc8246bfb697fa09f88b",
+  "open_math/ActualNSToSignedGainCore/P1_RieszL2Foundation.lean": "f08a06c5131eb6df39222aa82785f1a942ccde1ad6fb349cfe07fdd06c719d09",
   "open_math/ActualNSToSignedGainCore/P1_SobolevCompactSupport.lean": "49311d226d6568358fd2be54d74d69a5de497be43ac0b82170971c3245571fc1",
+  "open_math/ActualNSToSignedGainCore/P1_SobolevL6.lean": "18ddbae665b6f2ec33cff57edea5f7432c375b7f5b8e8aff3fb528323dd0cf56",
+  "open_math/ActualNSToSignedGainCore/P1_StretchingHolder.lean": "a8f5aacb569688825c67532f4dc7c1788fe74f823c04bb7254760e4ea2d6f914",
   "open_math/ActualNSToSignedGainCore/P1_StretchingPointwise.lean": "76c897d71c92cafafcc79ed2aa204911a242f596ca17c85cead81d59b9a81a8a",
-  "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean": "f639d4f6eb0f5ea7e1964f9c9c241a4471150b82ee953db9e78f2045e2015c9c"
+  "open_math/ActualNSToSignedGainCore/P1_UniformGradientRiesz.lean": "6f4129b9c84230f816b97740d4d3efd6b9c17df27a75e65df4dc8051a6d39749",
+  "open_math/ActualNSToSignedGainCore/P1_VorticityH1Gate.lean": "632aa3e6efa1188634c508fd9b7c8703794ccda88f8b3e135ff34cf06383a211",
+  "open_math/ActualNSToSignedGainCore/P1_WholeSpaceCutoff.lean": "f639d4f6eb0f5ea7e1964f9c9c241a4471150b82ee953db9e78f2045e2015c9c",
+  "open_math/ActualNSToSignedGainCore/P1_WholeSpaceSobolev.lean": "c9275e8cd3a2b8a6a30af39ec3df005a2437f5e06938d5980ff2a91bc9ecc5be",
+  "open_math/ActualNSToSignedGainCore/P1_ZeroMaterial.lean": "f96bd33e7c62f9e96317f50ffa91325d2a383f46ae3bc2ab4425b2c60475bfc6",
+  "open_math/NS_EndpointCube.lean": "3ac4eaf247eeb5caba142a75d979004451b4185c334b1e0bbee28b69584da65b",
+  "open_math/NS_MaterialPrizeGate.lean": "9b9f87ebb28b8381f1a80cddc8cc82bd611384a4c57c622bb88646e61dffe26e",
+  "open_math/NS_ProducerFirstAPI.lean": "621165d9cd407b8a2461dff5c2ac211fedcd5feceedf91e5b5e5fe20a45e211a",
+  "open_math/NS_RPACompleteCube.lean": "2ed0aaa567de62273863f5fbfcbef9b0f8604fab9317605154c8176123bc7628",
+  "open_math/RPA_EndpointLattice.lean": "862c81b6161bf220dffd2d5a7bbdb9be4fc957d682041ad29f4ef12b0ff3ca63",
+  "open_math/RPA_MinimalChain.lean": "9af04ebce5afe14f5d768c1bd5fc14307d43a2c5f078399f0f82ca4a813638e1"
  },
- "published_at": "2026-11-02T20:55:44Z",
- "certificate_sha256": "30aa24829d24757545a1a59372bd5e71a9a8ca8ffd60c180e69d63157e52ea41"
+ "published_at": "2026-11-03T11:28:12Z",
+ "certificate_sha256": "5f0d6552bddc300bd132bcf218c6c0e4c9986150747d3aba90fc57a2044b8111"
 }

@@ -73,7 +73,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-30T16:50:26+00:00",
+  "generated_at": "2026-11-03T08:19:01+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0",
    "padrão do elan"
@@ -90,15 +90,17 @@
    "name": "CriticalBarrier.AlignmentTransport.qJoint_nonneg",
    "file": "formal/lean/CriticalBarrier/AlignmentTransport.lean",
    "line": 27,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(A : AlignmentState) : 0 ≤ qJoint A"
   },
   {
    "name": "CriticalBarrier.AlignmentTransport.transport_after_absorption",
    "file": "formal/lean/CriticalBarrier/AlignmentTransport.lean",
    "line": 51,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(T : TransportEstimate) (A : UniformAbsorption) (hcomm : T.comm ≤ A.comm) : T.q_t + T.coercive ≤ A.gamma * A.diss + A.bQ + T.cutoff + T.motion + T.lower"
   },
@@ -154,7 +156,7 @@
    "name": "CriticalBarrier.WeightedLow.audit_constant_36",
    "file": "formal/lean/CriticalBarrier/WeightedLow.lean",
    "line": 83,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": (2 : ℝ) * (0.6 : ℝ) ^ 2 * 50 = 36"
   },
@@ -162,34 +164,40 @@
    "name": "CriticalBarrier.WeightedLow.etaLow_tendsto_zero",
    "file": "formal/lean/CriticalBarrier/WeightedLow.lean",
    "line": 24,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(D : WeightedLowData) : Filter.Tendsto D.etaLow (nhdsWithin 0 (Set.Ici 0)) (nhds 0)"
   },
   {
    "name": "CriticalBarrier.WeightedLow.residual_dissipation_positive",
    "file": "formal/lean/CriticalBarrier/WeightedLow.lean",
    "line": 103,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(D : SignedDepletionData) : 0 < (1 - D.theta) * D.nu"
   },
   {
    "name": "CriticalBarrier.WeightedLow.strict_absorption",
    "file": "formal/lean/CriticalBarrier/WeightedLow.lean",
    "line": 69,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(D : WeightedAbsorptionData) : D.comm ≤ D.gamma * D.diss + D.lower ∧ D.gamma < 1"
   }
  ],
- "closed": 6,
+ "closed": 9,
  "files_sha256": {
+  "formal/lean/CriticalBarrier/AlignmentTransport.lean": "7b377f4b21e91bc77054605217686fcd74e683f430e7c9d2fa14beacb183b7d3",
   "formal/lean/CriticalBarrier/EntropyObstruction.lean": "df5a7c3ec1e88baac46b9efe5be7815bdeb63921d3409343fe50302b270ac92d",
   "formal/lean/CriticalBarrier/MillenniumCore.lean": "d15615faf447ca3df75c74a944833d9a4b6b237ace1721ea750223cb506602f5",
+  "formal/lean/CriticalBarrier/WeightedLow.lean": "52c347968279ead392d30c743e197fef02b0747ca18b249ecc8afe755fd6edbb",
   "formal/lean/lakefile.toml": "ae588249ee34ba35be93608e76703456a73ba966cc13cd08f1a2383af9d901f1",
   "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
  },
- "published_at": "2026-11-02T20:55:44Z",
- "certificate_sha256": "bbf47acbcd2b5a396fb86e9d4242a3f6f883b714998297dca7628bcae6a63cf6"
+ "published_at": "2026-11-03T11:28:12Z",
+ "certificate_sha256": "33372047ee5f95ebf415b0fc68235a57309cca483b8036ea7720860c75f62152"
 }

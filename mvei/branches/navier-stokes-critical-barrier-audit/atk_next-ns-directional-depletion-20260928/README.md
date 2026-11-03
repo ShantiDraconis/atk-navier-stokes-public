@@ -5,7 +5,7 @@ Lean sources from the branch `atk/next-ns-directional-depletion-20260928` of the
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 2 — closed 2, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 160 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `aa91b5269704ad503dc4488fcd34a63732334935f29b3b48b58c6aac33cbd578`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/atk_next-ns-directional-depletion-20260928/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `e2e8e46e37d80d34c6b72925797d2819d303c113421634360016ea3d677ab32d`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/atk_next-ns-directional-depletion-20260928/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

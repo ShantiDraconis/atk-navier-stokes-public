@@ -168,7 +168,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -185,7 +185,7 @@
    "name": "MillenniumAudit.G1Uniformity.uniformGapLowerBound_closes_G1",
    "file": "formal/millennium/lean/MillenniumAudit/G1Uniformity.lean",
    "line": 53,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{State : Type} {ActualNS : State → Prop} {stretching dissipation : State → ℝ} (h : UniformGapLowerBound ActualNS stretching dissipation) : G1ClosedForActualNS ActualNS stretching dissipation"
   },
@@ -198,13 +198,17 @@
    "statement": "{Goal : Prop} (a : ParallelAttack Goal) (h : a.Residual) : Goal"
   }
  ],
- "closed": 1,
+ "closed": 2,
  "files_sha256": {
   "formal/ParallelClosure.lean": "86ae811c27fff2e1a32eccbe576379455c3f5f597c656b608f5a9fd0b10a4a09",
+  "formal/millennium/lean/MillenniumAudit/G1Audit.lean": "e05de2d920ae19010864902cd1f0a87c53b62c13880d87582dfc11427712ffeb",
+  "formal/millennium/lean/MillenniumAudit/G1Uniformity.lean": "047e69061ceedc297568e961ca213d248b2e829faa24e18c4e1e703ddaabf91e",
+  "formal/millennium/lean/lakefile.toml": "87d61e4c3e600b0acebd7712fe60283fb70a82d3bed647a02275e07fa6cae1a3",
+  "formal/millennium/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
   "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
   "lakefile.toml": "d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c",
   "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87"
  },
- "published_at": "2026-11-03T11:28:26Z",
- "certificate_sha256": "04ac8dbc2dce1de05098f4e8ff4ba6f7f19b35b6fd1e560066500fa50decde43"
+ "published_at": "2026-11-05T17:43:22Z",
+ "certificate_sha256": "7b3d6897b8c1e8b0493f5f48e61810e9b9bb775f4739421b332b036583276d59"
 }

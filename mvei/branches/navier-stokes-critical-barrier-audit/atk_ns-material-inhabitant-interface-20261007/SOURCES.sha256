@@ -1,0 +1,6 @@
+822e0d4d4b67b8315a6fd72f0fe13c7fbec3d65543e257efef5c04fcbe51074b  branches/navier-stokes-critical-barrier-audit/atk_ns-material-inhabitant-interface-20261007/audit/producer-first/ClayGlobalRegularityClosure.lean
+63b870e2ae77e1fa49251513530a383c549c50a81d4cf3223299eef493a031ce  branches/navier-stokes-critical-barrier-audit/atk_ns-material-inhabitant-interface-20261007/audit/producer-first/MaterialPromotionFull.lean
+4184ae69eaccb8d53fe5e4c2df78d165f8086bce0f1ff18a680e45b8e2f54114  branches/navier-stokes-critical-barrier-audit/atk_ns-material-inhabitant-interface-20261007/audit/producer-first/RecoveredMaterialRoute.lean
+b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526  branches/navier-stokes-critical-barrier-audit/atk_ns-material-inhabitant-interface-20261007/lake-manifest.json
+d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c  branches/navier-stokes-critical-barrier-audit/atk_ns-material-inhabitant-interface-20261007/lakefile.toml
+ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87  branches/navier-stokes-critical-barrier-audit/atk_ns-material-inhabitant-interface-20261007/lean-toolchain

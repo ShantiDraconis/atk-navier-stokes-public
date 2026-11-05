@@ -5,7 +5,7 @@ Lean sources from the branch `copilot/primitive-to-bridge` of the private reposi
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 4 — closed 2, conditional 0, open 0, proof error 2, not reached 0, no result 0.
 * History: 1 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `cb25984d62b7d29a2c77cba756afa4953955e71b5298d520b3fdf0de3a94ad5a`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/copilot_primitive-to-bridge/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `73b5ab6be3c83c8f47aa484defef1e17ee9cff51e5bbb037271518aa0c8c1e93`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/copilot_primitive-to-bridge/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

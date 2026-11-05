@@ -578,7 +578,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -597,7 +597,7 @@
    "line": 28,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{State : Type} (ActualNS : State → Prop) : Nonempty (G1Bridge ActualNS)"
+   "statement": "∀ {State : Type} (ActualNS : State → Prop), Nonempty (CriticalBarrier.GlobalRegularityFromG1.G1Bridge ActualNS)"
   },
   {
    "name": "CriticalBarrier.HardenedG1.hardenedG1_exposes_strict_budget",
@@ -615,7 +615,7 @@
    "line": 11,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{State : Type} {ActualNS : State → Prop} (h : FirstRealOpenMath ActualNS) : Nonempty (G1Bridge ActualNS)"
+   "statement": "∀ {State : Type} {ActualNS : State → Prop},   CriticalBarrier.OpenMath.FirstRealOpenMath ActualNS →     Nonempty (CriticalBarrier.GlobalRegularityFromG1.G1Bridge ActualNS)"
   }
  ],
  "closed": 2,
@@ -626,6 +626,6 @@
   "formal/lean/lakefile.toml": "ae588249ee34ba35be93608e76703456a73ba966cc13cd08f1a2383af9d901f1",
   "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
  },
- "published_at": "2026-11-03T11:28:26Z",
- "certificate_sha256": "7c5173257dac06fd1f1ad84e0a4860f5cb209c0a8c7d7f2d2a67e67c3d766abc"
+ "published_at": "2026-11-05T17:43:22Z",
+ "certificate_sha256": "7c3ea11e32cc765fd4f818b30c04caaf2c706c1c6d5ac318ca0012530f06ad5b"
 }

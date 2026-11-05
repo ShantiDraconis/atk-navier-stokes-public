@@ -28,6 +28,7 @@ fe009559232d5abc626fbdd7fd9ca55895199b5eb50a7310540f167088916026  branches/navie
 05aa9ce00e70534ab6927d1933303570607efc6d4e50c7690afe6f83ec6927bc  branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty/open-math/navier-stokes/claim/RefutationProducer.lean
 744afc255463385e8231b4a5d309f338bb6ff558c36d9bc1dce0d8362da81dc3  branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty/open-math/navier-stokes/claim/ScientificBoundary.lean
 12198c341efbde64dd32b30570d8c7455977e96333b7b6261453794f7a35614c  branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty/open-math/navier-stokes/claim/ThreeCaseClosure.lean
+080363116c7c21b96c6b2fd42675bfc4e1ed3100c8208aaf8f8e9ed9e09875e5  branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty/open-math/navier-stokes/claim/UnconditionalClaimCertificate.lean
 4d0fd42789779f6c558433ec1b90d8c8b6625ae8433306c0108473d890a64670  branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty/open-math/navier-stokes/logic-refutation/AmplitudeInvariantFixedDeltaNoGo.lean
 f7705dd820f1d4bf53e520860445adfb7b4e23d1206de0aeec003972df638e0f  branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty/open-math/navier-stokes/logic-refutation/EnergyCompressionBarrier.lean
 4729c50509cc8a0e0bfc1be24c31ca1390b6598648e0982021275df1eef8c1f9  branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty/open-math/navier-stokes/logic-refutation/FiberUnboundedFromScaling.lean

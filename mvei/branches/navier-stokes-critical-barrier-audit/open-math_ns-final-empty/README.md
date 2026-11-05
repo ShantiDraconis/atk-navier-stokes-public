@@ -3,9 +3,9 @@
 Lean sources from the branch `open-math/ns-final-empty` of the private repository `ShantiDraconis/navier-stokes-critical-barrier-audit`, commit `61132607c574ef079c1937a49726a922ff7fd512` (2026-09-27T10:55:41+01:00), that hold theorems found only on branches (no default branch of any repository has a theorem with the same name). Published here: the files with the theorems the kernel closed, the local files they import and the Lake files of their project.
 
 * Branch state: parada (not in the default branch).
-* Theorems only on branches, in this branch: 74 — closed 63, conditional 0, open 2, proof error 3, not reached 6, no result 0.
+* Theorems only on branches, in this branch: 74 — closed 65, conditional 0, open 2, proof error 7, not reached 0, no result 0.
 * History: 226 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `c16b0a0148a7fe1dc2b66aba25911a8344c7a028236293c7955d14e2f742197e`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `90fce495bb6c696a3e0a59429f3ac011b0bebe10c5144c9b6116dbdcd5a67622`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 
@@ -13,7 +13,7 @@ Closed means the kernel accepted the proof and it depends only on `propext`, `Cl
 |---|---|---|
 | `CriticalBarrier.OpenMath.NavierStokes.MinimalGreen.uniform_bulk_tail_implies_strict_signed_depletion` | `open-math/navier-stokes/actualns-g1/MinimalGreenCore.lean`:44 | fechado |
 | `CriticalBarrier.OpenMath.NavierStokes.bulkTail_implies_openMathCore` | `formal/lean/CriticalBarrier/OpenMath/NavierStokes/G1StrictAdapter.lean`:48 | fechado |
-| `CriticalBarrier.OpenMath.NavierStokes.g1Bridge_of_openMathCore` | `formal/lean/CriticalBarrier/OpenMath/NavierStokes/OpenMathCore.lean`:78 | nao_alcancado |
+| `CriticalBarrier.OpenMath.NavierStokes.g1Bridge_of_openMathCore` | `formal/lean/CriticalBarrier/OpenMath/NavierStokes/OpenMathCore.lean`:78 | fechado |
 | `CriticalBarrier.OpenMath.NavierStokes.g1Producer_implies_openMathCore` | `formal/lean/CriticalBarrier/OpenMath/NavierStokes/G1StrictAdapter.lean`:37 | fechado |
 | `CriticalBarrier.OpenMath.NavierStokes.global_regularity_from_actualNS_producer` | `open-math/navier-stokes/actualns-g1/ActualNSToG1Bridge.lean`:48 | aberto-sorry |
 | `G1WeightedLow.gamma_effective_eq_neg35` | `formal/G1/WeightedLow.lean`:115 | fechado |
@@ -21,8 +21,8 @@ Closed means the kernel accepted the proof and it depends only on `propext`, `Cl
 | `G1WeightedLow.no_canonical_absorption_at_gamma_effective` | `formal/G1/WeightedLow.lean`:128 | fechado |
 | `NSActualNSToSubcriticalCoupling.actualNS_to_subcriticalCoupling` | `open-math/navier-stokes/claim/ActualNSToSubcriticalCouplingLane.lean`:115 | fechado |
 | `NSActualNSToSubcriticalCoupling.subcriticalCoupling_of_controls` | `open-math/navier-stokes/claim/ActualNSToSubcriticalCouplingLane.lean`:102 | fechado |
-| `NSAllCertifiedReuseMaster.enable_final_theorem_from_open_math_core` | `open-math/navier-stokes/claim/AllCertifiedReuseMaster.lean`:31 | nao_alcancado |
-| `NSAllCertifiedReuseMaster.only_core_needed_for_terminal` | `open-math/navier-stokes/claim/AllCertifiedReuseMaster.lean`:58 | nao_alcancado |
+| `NSAllCertifiedReuseMaster.enable_final_theorem_from_open_math_core` | `open-math/navier-stokes/claim/AllCertifiedReuseMaster.lean`:31 | erro |
+| `NSAllCertifiedReuseMaster.only_core_needed_for_terminal` | `open-math/navier-stokes/claim/AllCertifiedReuseMaster.lean`:58 | aberto-sorry |
 | `NSAmplitudeInvariantNoGo.no_fixed_delta_from_amplitude_invariant_certificate` | `open-math/navier-stokes/logic-refutation/AmplitudeInvariantFixedDeltaNoGo.lean`:27 | fechado |
 | `NSBulkTailTerminal.openMath_implies_strict_budget` | `open-math/navier-stokes/claim/BulkTailTerminal.lean`:102 | fechado |
 | `NSBulkTailTerminal.producer_implies_uniform_margin` | `open-math/navier-stokes/claim/BulkTailTerminal.lean`:57 | fechado |
@@ -71,8 +71,8 @@ Closed means the kernel accepted the proof and it depends only on `propext`, `Cl
 | `NSLimitClosureF7F1.limit_property_closure` | `open-math/navier-stokes/claim/LimitClosureF7F1.lean`:52 | fechado |
 | `NSLimitClosureF7F1.navier_stokes_limit_closure` | `open-math/navier-stokes/claim/LimitClosureF7F1.lean`:62 | fechado |
 | `NSLimitClosureF7F1.open_math_producer_enables_theorem` | `open-math/navier-stokes/claim/LimitClosureF7F1.lean`:75 | fechado |
-| `NSOpenMathCoreToG1Producer.openMathCore_implies_fastClosed` | `open-math/navier-stokes/claim/OpenMathCoreToG1Producer.lean`:42 | nao_alcancado |
-| `NSOpenMathCoreToG1Producer.openMathCore_implies_fastProducerExists` | `open-math/navier-stokes/claim/OpenMathCoreToG1Producer.lean`:34 | nao_alcancado |
+| `NSOpenMathCoreToG1Producer.openMathCore_implies_fastClosed` | `open-math/navier-stokes/claim/OpenMathCoreToG1Producer.lean`:42 | erro |
+| `NSOpenMathCoreToG1Producer.openMathCore_implies_fastProducerExists` | `open-math/navier-stokes/claim/OpenMathCoreToG1Producer.lean`:34 | erro |
 | `NSPositiveHabitantCore.open_math_exact` | `open-math/navier-stokes/claim/NSPositiveHabitantCore.lean`:42 | fechado |
 | `NSPositiveHabitantCore.producer_enables_global` | `open-math/navier-stokes/claim/NSPositiveHabitantCore.lean`:27 | fechado |
 | `NSQuantumClosureClaim.actualNS_closes_quantum_lane` | `open-math/navier-stokes/claim/QuantumClosureClaim.lean`:90 | fechado |
@@ -83,5 +83,5 @@ Closed means the kernel accepted the proof and it depends only on `propext`, `Cl
 | `NSThreeCaseClosure.false_true_admissible` | `open-math/navier-stokes/claim/ThreeCaseClosure.lean`:35 | fechado |
 | `NSThreeCaseClosure.true_false_admissible` | `open-math/navier-stokes/claim/ThreeCaseClosure.lean`:39 | fechado |
 | `NSThreeCaseClosure.true_true_excluded` | `open-math/navier-stokes/claim/ThreeCaseClosure.lean`:31 | fechado |
-| `NSUnconditionalClaimCertificate.certificate_enables_final_theorem` | `open-math/navier-stokes/claim/UnconditionalClaimCertificate.lean`:24 | nao_alcancado |
-| `NSUnconditionalClaimCertificate.certificate_requires_open_math_core` | `open-math/navier-stokes/claim/UnconditionalClaimCertificate.lean`:38 | aberto-sorry |
+| `NSUnconditionalClaimCertificate.certificate_enables_final_theorem` | `open-math/navier-stokes/claim/UnconditionalClaimCertificate.lean`:24 | erro |
+| `NSUnconditionalClaimCertificate.certificate_requires_open_math_core` | `open-math/navier-stokes/claim/UnconditionalClaimCertificate.lean`:38 | fechado |

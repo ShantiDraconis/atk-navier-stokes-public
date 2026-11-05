@@ -5,7 +5,7 @@ Lean sources from the branch `atk/material-unification-v2-20260928` of the priva
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 1 — closed 1, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 127 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `36048235c70e567dabd3ab6f8722818de41d9335d818055b88976f3feb55957f`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/atk_material-unification-v2-20260928/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `280e66a4aa2c657355ee40f8e1f6878a87fa950f31be174ae13dae6cbf4f3654`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/atk_material-unification-v2-20260928/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

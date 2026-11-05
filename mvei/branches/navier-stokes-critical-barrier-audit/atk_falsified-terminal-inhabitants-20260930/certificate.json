@@ -33,7 +33,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -58,9 +58,9 @@
    "name": "NSProducerFirst.falsified_terminal_is_inhabited",
    "file": "audit/producer-first/FalsifiedTerminal.lean",
    "line": 14,
-   "state": "erro",
+   "state": "condicional",
    "axioms_beyond_standard": [
-    "sorryAx"
+    "NSProducerFirst.falsified_actualNSToSignedGain"
    ],
    "statement": "(State : Type) (ActualNS : State → Prop) (ν : ℝ) (data : State → EnstrophyData) : Nonempty (ActualNSToSignedGain State ActualNS ν data)"
   }
@@ -72,6 +72,6 @@
   "lakefile.toml": "d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c",
   "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87"
  },
- "published_at": "2026-11-03T11:28:26Z",
- "certificate_sha256": "19ae878320aa06edde2409591e72a54e6212635d53aaa530f05215c334d137a0"
+ "published_at": "2026-11-05T17:43:22Z",
+ "certificate_sha256": "d8784a1917a894442d0be1f7fe4c0891c60e4c192e4f7c360d8883d99e76ddac"
 }

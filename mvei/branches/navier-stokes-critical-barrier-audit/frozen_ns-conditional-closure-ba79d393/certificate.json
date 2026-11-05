@@ -88,7 +88,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -117,6 +117,6 @@
   "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87",
   "open-math/navier-stokes/claim/NavierStokesMinimalClaim.lean": "24699360014548f2c08289993a02bb037c8525ab1930e14248382f91c3a7a9d4"
  },
- "published_at": "2026-11-03T11:28:26Z",
- "certificate_sha256": "946c271e08a3e95d2266cf48c26a592968a7e61bf4acc0a779202c2fbea75f27"
+ "published_at": "2026-11-05T17:43:22Z",
+ "certificate_sha256": "bc6559b6b13c91b5fa25e21bafcb6dae220abe8d9673109cec60098f35d9b389"
 }

@@ -808,7 +808,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -827,7 +827,7 @@
    "line": 39,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps q : ℝ} (heps : 0 < eps) (hq : 0 ≤ q) : 1 - q / rSq eps q ≤ 1"
+   "statement": "∀ {eps q : ℝ}, 0 < eps → 0 ≤ q → 1 - q / CriticalBarrier.K1aXiEps.rSq eps q ≤ 1"
   },
   {
    "name": "CriticalBarrier.K1aXiEps.radial_defect_pos",
@@ -835,7 +835,7 @@
    "line": 31,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{eps q : ℝ} (heps : 0 < eps) (hq : 0 ≤ q) : 0 < 1 - q / rSq eps q"
+   "statement": "∀ {eps q : ℝ}, 0 < eps → 0 ≤ q → 0 < 1 - q / CriticalBarrier.K1aXiEps.rSq eps q"
   }
  ],
  "closed": 2,
@@ -844,6 +844,6 @@
   "formal/lean/lakefile.toml": "9a15a8e689ddba259f186de20113fdaf1fb31f5247058734165bb55ee47d9efb",
   "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
  },
- "published_at": "2026-11-03T11:28:26Z",
- "certificate_sha256": "e2e8e46e37d80d34c6b72925797d2819d303c113421634360016ea3d677ab32d"
+ "published_at": "2026-11-05T17:43:22Z",
+ "certificate_sha256": "461ccea8f7dcfe1ae7668c7a38a20912406b18e6270a015e2ecf5fc5c6a8182e"
 }

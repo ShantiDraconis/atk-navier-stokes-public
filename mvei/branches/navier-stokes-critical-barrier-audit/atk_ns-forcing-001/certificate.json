@@ -1168,7 +1168,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -2925,50 +2925,40 @@
    "name": "NSProducerFirst.navierStokes_material_cert_refute_disjoint",
    "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
    "line": 62,
-   "state": "aberto-sorry",
-   "axioms_beyond_standard": [
-    "sorryAx"
-   ],
+   "state": "fechado",
+   "axioms_beyond_standard": [],
    "statement": "(State : Type) (ActualNS : State → Prop) (ν : ℝ) (data : State → EnstrophyData) : ¬ (NavierStokesMaterialCertifies State ActualNS ν data ∧ NavierStokesMaterialRefutes State ActualNS ν data)"
   },
   {
    "name": "NSProducerFirst.nonempty_actualNSToSignedGainCore_of_quadraticBulkTail",
    "file": "audit/producer-first/MaterialClosurePipeline.lean",
    "line": 130,
-   "state": "erro",
-   "axioms_beyond_standard": [
-    "sorryAx"
-   ],
+   "state": "fechado",
+   "axioms_beyond_standard": [],
    "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} (h : Nonempty (ActualNSToQuadraticBulkTailWitness State ActualNS ν data)) : Nonempty (ActualNSToSignedGainCore State ActualNS ν data)"
   },
   {
    "name": "NSProducerFirst.nonempty_signedGainCore_of_bulk_tail",
    "file": "audit/producer-first/SignedGainCore.lean",
    "line": 129,
-   "state": "erro",
-   "axioms_beyond_standard": [
-    "sorryAx"
-   ],
+   "state": "fechado",
+   "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} {d : EnstrophyData} (bulk tail : ℝ → ℝ) (split : ∀ t, d.stretch t = bulk t + tail t) (cBulk δTail : ℝ) (hBulk0 : 0 ≤ cBulk) (hTail0 : 0 ≤ δTail) (hBulk : ∀ t, bulk t ≤ cBulk * ν * d.z t) (hTail : ∀ t, tail t ≤ δTail * ν * d.z t) (hBudget : cBulk + δTail < 1) : Nonempty (SignedGainCore ν d)"
   },
   {
    "name": "NSProducerFirst.not_navierStokesMaterialCertifies_iff_refutes",
    "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
    "line": 46,
-   "state": "aberto-sorry",
-   "axioms_beyond_standard": [
-    "sorryAx"
-   ],
+   "state": "fechado",
+   "axioms_beyond_standard": [],
    "statement": "(State : Type) (ActualNS : State → Prop) (ν : ℝ) (data : State → EnstrophyData) : ¬ NavierStokesMaterialCertifies State ActualNS ν data ↔ NavierStokesMaterialRefutes State ActualNS ν data"
   },
   {
    "name": "NSProducerFirst.quadraticProducer_certifies_navierStokesMaterial",
    "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
    "line": 37,
-   "state": "erro",
-   "axioms_beyond_standard": [
-    "sorryAx"
-   ],
+   "state": "fechado",
+   "axioms_beyond_standard": [],
    "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} (h : NavierStokesQuadraticProducer State ActualNS ν data) : NavierStokesMaterialCertifies State ActualNS ν data"
   },
   {
@@ -3476,11 +3466,14 @@
    "statement": "(Open Closed : Prop) : OPEN_ENDPOINT_CLOSED_ENDPOINT Open Closed ↔ DUAL_ENDPOINT_STATE Open Closed ∧ OPEN_MATH_CLOSED_MATH Open Closed ∧ OPEN_BRIDGE_CLOSED_BRIDGE Open Closed ∧ MATH Open Closed ∧ FINAL_ROOT Open Closed ∧ GLOBAL_EXTERNAL_CERTIFICATE Open Closed"
   }
  ],
- "closed": 182,
+ "closed": 187,
  "files_sha256": {
   "G1_KAdmissible_to_SignedDepletion.lean": "36f5204b9ecf913f83a005e4344051b8eb7dce54c4cf7a0125765be581536f30",
   "audit/producer-first/FlexibleBulkTailMaterialOperator.lean": "d17ec70049138ad10ee545774283e60161a50ef263c2ba5b4254db4aaa753cb5",
+  "audit/producer-first/MaterialClosurePipeline.lean": "4c00bfc19f84bebfbc2aedd3a5ab8837cdc39b044ec05443c9e95ad7a849ce4b",
+  "audit/producer-first/NavierStokesTerminalAdapter.lean": "15bf234340c10bdcb84cc798d84c50b54c7d591874eda7d3971570876a892fa0",
   "audit/producer-first/PrimitiveMaterialLaws.lean": "1e0a76273d2da94aaf995229ae531d978442f10aa72207ab950ef7e8e24b514c",
+  "audit/producer-first/SignedGainCore.lean": "0ee376e6d87bdf17f436ebe4cc635381d179ce86ad3487d6aed226ae4c08ec84",
   "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
   "lakefile.toml": "a04806e1803da95f93288391457d12b83c5da1e1f70a624bb08251616701dfbb",
   "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87",
@@ -3520,6 +3513,6 @@
   "open_math/RPA_EndpointLattice.lean": "862c81b6161bf220dffd2d5a7bbdb9be4fc957d682041ad29f4ef12b0ff3ca63",
   "open_math/RPA_MinimalChain.lean": "9af04ebce5afe14f5d768c1bd5fc14307d43a2c5f078399f0f82ca4a813638e1"
  },
- "published_at": "2026-11-03T11:28:12Z",
- "certificate_sha256": "5f0d6552bddc300bd132bcf218c6c0e4c9986150747d3aba90fc57a2044b8111"
+ "published_at": "2026-11-05T17:43:09Z",
+ "certificate_sha256": "a8fa6d9601de95112f32dff015520652c65bcca7d9b923774927e914d1982f63"
 }

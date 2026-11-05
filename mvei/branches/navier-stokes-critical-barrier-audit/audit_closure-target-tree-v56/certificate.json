@@ -43,10 +43,9 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
-   "leanprover/lean4:v4.19.0",
-   "padrão do elan"
+   "leanprover/lean4:v4.19.0"
   ],
   "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
   "standard_axioms": [
@@ -68,7 +67,7 @@
    "name": "G1Audit.hDynamic_if_campanato_closes",
    "file": "formal/G1/G1_DynamicCriticalGeometry.lean",
    "line": 67,
-   "state": "erro",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "{Point State : Type*} (pde : XiEpsPDE State) (geom : DynamicCriticalGeometryData Point) (rem : RemainderCutoffFreeWitness) (hDynamic : Prop) (analytic : PDEToDynamicCampanato pde geom rem) (embedding : HDynamicOpenBridge geom hDynamic) : hDynamic"
   },
@@ -76,7 +75,7 @@
    "name": "G1Audit.signed_depletion_if_dynamic_geometry_closes",
    "file": "formal/G1/G1_DynamicCriticalGeometry.lean",
    "line": 91,
-   "state": "erro",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "{Point State : Type*} (pde : XiEpsPDE State) (geom : DynamicCriticalGeometryData Point) (rem : RemainderCutoffFreeWitness) (hDynamic signedDepletion : Prop) (analytic : PDEToDynamicCampanato pde geom rem) (embedding : HDynamicOpenBridge geom hDynamic) (downstream : HDynamicToSignedDepletion hDynamic signedDepletion) : signedDepletion"
   }
@@ -85,6 +84,6 @@
  "files_sha256": {
   "formal/G1/DynamicCampanato.lean": "ec175c7b6254491f7707bad7729432bb0fdbbfb82b4ebade9e9fa526f289e144"
  },
- "published_at": "2026-11-03T11:28:26Z",
- "certificate_sha256": "3da6d5d1a18d10d760839a45dab7ab10e0cf9f34753beb8f507ecb5dfdaa4002"
+ "published_at": "2026-11-05T17:43:22Z",
+ "certificate_sha256": "05051476b9ecc5949e4fd73fce649fbfc273155e6c74564c58899c86eac73590"
 }

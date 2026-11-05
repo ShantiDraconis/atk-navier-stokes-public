@@ -1,0 +1,211 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "atk/ns-material-inhabitant-interface-20261007",
+ "branch_state": "parada",
+ "head_commit": "c6877d55772ebffd6e18ac31f7c6f51141176864",
+ "head_commit_date": "2026-10-07T16:04:53+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "c6877d55772ebffd6e18ac31f7c6f51141176864",
+   "date": "2026-10-07T16:04:53+02:00",
+   "subject": "NS: restore historical strict bulk-tail producer route"
+  },
+  {
+   "commit": "f896ddf2f333687c649473b16cc0341931a929dc",
+   "date": "2026-10-07T16:00:17+02:00",
+   "subject": "CI: kernel-check recovered material route"
+  },
+  {
+   "commit": "e006e45fa17617dac564afbdb6c0f43160ab8063",
+   "date": "2026-10-07T16:00:02+02:00",
+   "subject": "NS: recover bulk-tail-remainder route to signed gain core"
+  },
+  {
+   "commit": "0be4da9f25761f054d253bac1b7ba3f6f6b4b880",
+   "date": "2026-10-07T15:59:26+02:00",
+   "subject": "NS: fix reserved continuation field in material promotion"
+  },
+  {
+   "commit": "639a37af45ed9eb2d8062a1cad89e069c91e1f83",
+   "date": "2026-10-07T06:48:18+02:00",
+   "subject": "CI: include full material promotion in kernel gate"
+  },
+  {
+   "commit": "c643d80837088354209d800d001d5bc9c6c1feda",
+   "date": "2026-10-07T06:48:07+02:00",
+   "subject": "CI: kernel-check full material promotion module"
+  },
+  {
+   "commit": "cc11d7165a87e7809a251da28b443b4483a658cc",
+   "date": "2026-10-07T06:48:00+02:00",
+   "subject": "NS: add full fail-closed material promotion architecture"
+  },
+  {
+   "commit": "9c34b10fd5890b287583bac08db86320813df6c7",
+   "date": "2026-10-07T06:38:36+02:00",
+   "subject": "CI: remove stale G1 v2 audit path"
+  },
+  {
+   "commit": "264a7ad3f5d6433e61e4ac60680a56fc5822c574",
+   "date": "2026-10-07T06:38:30+02:00",
+   "subject": "G1: use portable Isabelle symbols"
+  },
+  {
+   "commit": "6c445cf843c09424e5d08c76c9a0a42c119060ba",
+   "date": "2026-10-07T06:38:28+02:00",
+   "subject": "CI: remove stale G1 v2 Lean path"
+  },
+  {
+   "commit": "2d12434a6de03a4daccde863cd2f1d83d2b33c32",
+   "date": "2026-10-07T06:30:51+02:00",
+   "subject": "CI: build G1 through Isabelle session"
+  },
+  {
+   "commit": "f9b093b4870e26316b1c7212539dbe9e22c4e096",
+   "date": "2026-10-07T06:30:45+02:00",
+   "subject": "G1: add Isabelle audit session"
+  },
+  {
+   "commit": "c2a0d37a64a6f03c94e8ba94d04a876cfb039cdf",
+   "date": "2026-10-07T06:30:40+02:00",
+   "subject": "G1: reduce Isabelle theory to Main session"
+  },
+  {
+   "commit": "936c66a51a3fd4099dcfd3635ee9fd9006788ca6",
+   "date": "2026-10-07T06:30:34+02:00",
+   "subject": "G1: make subcritical budget proof deterministic"
+  },
+  {
+   "commit": "990f3ec8e3bd4845154a9d514a86e3f24b56c382",
+   "date": "2026-10-07T06:00:14+02:00",
+   "subject": "NS: make ActualNS witness explicit in differential target"
+  },
+  {
+   "commit": "108769226d46f1ef32fbcf05a56cc8ee92146a0c",
+   "date": "2026-10-07T06:00:03+02:00",
+   "subject": "NS: fix material inhabitant Lean elaboration"
+  },
+  {
+   "commit": "0d9252737049179e8284d00eeb559b2bdd959edb",
+   "date": "2026-10-07T05:54:37+02:00",
+   "subject": "NS: retrigger producer-first Clay kernel gate"
+  },
+  {
+   "commit": "053d1e3e026caa94e7edb49a5db7d22646e08f41",
+   "date": "2026-10-07T05:40:41+02:00",
+   "subject": "NS: kernel-check Clay global regularity closure"
+  },
+  {
+   "commit": "3f08c8ef24564d33d51bd6d44fb0d87e9aff6780",
+   "date": "2026-10-07T05:40:33+02:00",
+   "subject": "NS: add fail-closed Clay A global regularity closure"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:stable",
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "NSProducerFirst.ClayClosureCertificate.provesClayA",
+   "file": "audit/producer-first/ClayGlobalRegularityClosure.lean",
+   "line": 121,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{I : ClayAInterface} {ν : ℝ} {data : I.State → EnstrophyData} {P : ClayPredicates I.State} (cert : ClayClosureCertificate I ν data P) : ClayAStatement I P.GlobalRegularity"
+  },
+  {
+   "name": "NSProducerFirst.clay_A_from_material",
+   "file": "audit/producer-first/ClayGlobalRegularityClosure.lean",
+   "line": 95,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(I : ClayAInterface) (ν : ℝ) (data : I.State → EnstrophyData) (P : ClayPredicates I.State) (hMaterial : NSMaterialInhabitant I.State I.ActualNS ν data) (hDown : ClayDownstream I.State I.ActualNS ν data P) : ClayAStatement I P.GlobalRegularity"
+  },
+  {
+   "name": "NSProducerFirst.clay_dependency_chain",
+   "file": "audit/producer-first/ClayGlobalRegularityClosure.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} {P : ClayPredicates State} (hMaterial : NSMaterialInhabitant State ActualNS ν data) (hDown : ClayDownstream State ActualNS ν data P) (u : State) (hu : ActualNS u) : P.UniformEnstrophy u ∧ P.CriticalL3Bound u ∧ P.GlobalRegularity u"
+  },
+  {
+   "name": "NSProducerFirst.clay_global_regularity_from_material",
+   "file": "audit/producer-first/ClayGlobalRegularityClosure.lean",
+   "line": 64,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} {P : ClayPredicates State} (hMaterial : NSMaterialInhabitant State ActualNS ν data) (hDown : ClayDownstream State ActualNS ν data P) : ∀ u : State, ActualNS u → P.GlobalRegularity u"
+  },
+  {
+   "name": "NSProducerFirst.material_to_uniform_enstrophy",
+   "file": "audit/producer-first/MaterialPromotionFull.lean",
+   "line": 77,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} (hν : 0 < ν) (hMaterial : NSMaterialInhabitant State ActualNS ν data) (hBalance : ExactEnstrophyBalance ActualNS ν data) (energy : LerayEnergyRealization State ActualNS ν data) (gronwall : EnergyCompatibleGronwallBridge State ActualNS ν data energy) : ∀ u : State, ∀ hu : ActualNS u, let cert"
+  },
+  {
+   "name": "NSProducerFirst.promotedByMaterial_global",
+   "file": "audit/producer-first/MaterialPromotionFull.lean",
+   "line": 162,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} {GlobalRegularity : State → Prop} (cert : PromotedByMaterial State ActualNS ν data GlobalRegularity) : ∀ u : State, ActualNS u → GlobalRegularity u"
+  },
+  {
+   "name": "NSProducerFirst.promotedByMaterial_proves_ClayA",
+   "file": "audit/producer-first/MaterialPromotionFull.lean",
+   "line": 202,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "(I : ClayAInterface) (ν : ℝ) (data : I.State → EnstrophyData) (GlobalRegularity : I.State → Prop) (cert : PromotedByMaterial I.State I.ActualNS ν data GlobalRegularity) : ClayAStatement I GlobalRegularity"
+  },
+  {
+   "name": "NSProducerFirst.promotedByMaterial_requires_material",
+   "file": "audit/producer-first/MaterialPromotionFull.lean",
+   "line": 216,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} {GlobalRegularity : State → Prop} : Nonempty (PromotedByMaterial State ActualNS ν data GlobalRegularity) → Nonempty (NSMaterialInhabitant State ActualNS ν data)"
+  },
+  {
+   "name": "NSProducerFirst.recovered_bulk_tail_closes_material",
+   "file": "audit/producer-first/RecoveredMaterialRoute.lean",
+   "line": 196,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} : Nonempty (NS_BULK_TAIL_RECOVERED_OPEN_MATH State ActualNS ν data) → Nonempty (NSMaterialInhabitant State ActualNS ν data)"
+  },
+  {
+   "name": "NSProducerFirst.recovered_route_is_sufficient",
+   "file": "audit/producer-first/RecoveredMaterialRoute.lean",
+   "line": 118,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} : Nonempty (RemainingMaterialObligation State ActualNS ν data) → Nonempty (NSMaterialInhabitant State ActualNS ν data)"
+  }
+ ],
+ "closed": 9,
+ "files_sha256": {
+  "audit/producer-first/ClayGlobalRegularityClosure.lean": "822e0d4d4b67b8315a6fd72f0fe13c7fbec3d65543e257efef5c04fcbe51074b",
+  "audit/producer-first/MaterialPromotionFull.lean": "63b870e2ae77e1fa49251513530a383c549c50a81d4cf3223299eef493a031ce",
+  "audit/producer-first/RecoveredMaterialRoute.lean": "4184ae69eaccb8d53fe5e4c2df78d165f8086bce0f1ff18a680e45b8e2f54114",
+  "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
+  "lakefile.toml": "d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c",
+  "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87"
+ },
+ "published_at": "2026-11-05T17:43:09Z",
+ "certificate_sha256": "adf77b6657eb965928abd47e4d9f08092021cd3e095a0cf8a9c9bdd94392c11a"
+}

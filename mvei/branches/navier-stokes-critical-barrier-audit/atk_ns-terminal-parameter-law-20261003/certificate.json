@@ -1,0 +1,150 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "atk/ns-terminal-parameter-law-20261003",
+ "branch_state": "parada",
+ "head_commit": "7c851534ecb6825cf52f43fd3fd53439b627485d",
+ "head_commit_date": "2026-10-04T16:01:55+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "7c851534ecb6825cf52f43fd3fd53439b627485d",
+   "date": "2026-10-04T16:01:55+02:00",
+   "subject": "scope NS enstrophy L1 frontier to physical nonnegative time"
+  },
+  {
+   "commit": "40303cfe1857b52050f9a8559f90c1b084fab858",
+   "date": "2026-10-04T16:00:38+02:00",
+   "subject": "isolate exact NS enstrophy L1 producer after signed gain"
+  },
+  {
+   "commit": "5260128e38e539535738fd01eb474822c1cfcae3",
+   "date": "2026-10-04T16:00:08+02:00",
+   "subject": "harden dependent binder in NS differential adapter"
+  },
+  {
+   "commit": "287d49b528a2e5e753d0ddd6abed19b05af9ecf7",
+   "date": "2026-10-04T15:59:31+02:00",
+   "subject": "compress NS signed-gain core to exact differential frontier"
+  },
+  {
+   "commit": "32939716a9bf36e5d55f08acae9ff57e2ba25b4c",
+   "date": "2026-10-03T17:10:17+02:00",
+   "subject": "formalize exact Navier-Stokes material terminal adapter"
+  },
+  {
+   "commit": "9644e3e8410a285aa895a388222990cf9db5cabd",
+   "date": "2026-10-01T20:21:20+02:00",
+   "subject": "ns: formalize positive bounded-L3 and negative blow-up observable objects"
+  },
+  {
+   "commit": "c09ac86c0bdbca7dab28d491236e55c71d25d764",
+   "date": "2026-10-01T19:34:23+02:00",
+   "subject": "ns: add primitive scalar material laws with no OpenMath arguments"
+  },
+  {
+   "commit": "6579345a05166d3a6efd02c2315caa5da6aaf61c",
+   "date": "2026-10-01T19:26:31+02:00",
+   "subject": "ns: add flexible bulk-tail-remainder material operator and differential law"
+  },
+  {
+   "commit": "2e4fe05d9f20a9635f179f2a146008bf604c7328",
+   "date": "2026-10-01T17:50:02+02:00",
+   "subject": "ns: derive strict differential directly from bulk-tail bounds"
+  },
+  {
+   "commit": "d321d0a7eb7cb3ff4ab120d68a010a7de71a347b",
+   "date": "2026-10-01T17:49:44+02:00",
+   "subject": "ns: unify G1 bulk-tail route with canonical producer-first core"
+  },
+  {
+   "commit": "7c51a500c8293b60e0c87723b3dd71dcdecff6d5",
+   "date": "2026-10-01T00:16:35+02:00",
+   "subject": "ATK: project strict bulk-tail data to ActualNSToSignedGainCore"
+  },
+  {
+   "commit": "266eca2b3246beda64c6c82e80a65969dadcfb1c",
+   "date": "2026-10-01T00:07:10+02:00",
+   "subject": "ATK: reduce signed-gain core to strict bulk-tail budget"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:stable",
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "NSProducerFirst.actualNSCore_coefficient_integrableOn_nonnegativeTime",
+   "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
+   "line": 174,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} (P : ActualNSToSignedGainCore State ActualNS ν data) (hL1 : ActualNSToEnstrophyL1 State ActualNS data) : ∀ u, ∀ hu : ActualNS u, IntegrableOn (signedGainCoreCoefficient (P u hu)) (Set.Ici (0 : ℝ))"
+  },
+  {
+   "name": "NSProducerFirst.actualNSCore_implies_differential",
+   "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
+   "line": 107,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} (hν : 0 ≤ ν) (P : ActualNSToSignedGainCore State ActualNS ν data) (hbalance : ∀ u, ActualNS u → ∀ t, (1 / 2 : ℝ) * deriv (data u).y t + ν * (data u).z t = (data u).stretch t) : ∀ u, ∀ hu : ActualNS u, ∀ t, deriv (data u).y t + 2 * (1 - max (P u hu).theta 0) * ν * (data u).z t ≤ 2 * max (P u hu).C 0 * ((data u).y t)^2"
+  },
+  {
+   "name": "NSProducerFirst.bulkTail_certifies_navierStokesMaterial",
+   "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
+   "line": 63,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{State : Type} {ActualNS : State → Prop} {ν : ℝ} {data : State → EnstrophyData} (bulk tail : State → ℝ → ℝ) (cBulk δTail : State → ℝ) (split : ∀ u, ActualNS u → ∀ t, (data u).stretch t = bulk u t + tail u t) (hBulk0 : ∀ u, ActualNS u → 0 ≤ cBulk u) (hTail0 : ∀ u, ActualNS u → 0 ≤ δTail u) (hBulk : ∀ u, ActualNS u → ∀ t, bulk u t ≤ cBulk u * ν * (data u).z t) (hTail : ∀ u, ActualNS u → ∀ t, tail u "
+  },
+  {
+   "name": "NSProducerFirst.signedGainCoreCoefficient_integrableOn_nonnegativeTime",
+   "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
+   "line": 153,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{ν : ℝ} {d : EnstrophyData} (h : SignedGainCore ν d) (hy : IntegrableOn d.y (Set.Ici (0 : ℝ))) : IntegrableOn (signedGainCoreCoefficient h) (Set.Ici (0 : ℝ))"
+  },
+  {
+   "name": "NSProducerFirst.signedGainCoreCoefficient_nonnegative",
+   "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
+   "line": 134,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{ν : ℝ} {d : EnstrophyData} (h : SignedGainCore ν d) : ∀ t, 0 ≤ signedGainCoreCoefficient h t"
+  },
+  {
+   "name": "NSProducerFirst.signedGainCore_implies_differential",
+   "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
+   "line": 90,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{ν : ℝ} {d : EnstrophyData} (hν : 0 ≤ ν) (hbalance : ∀ t, (1 / 2 : ℝ) * deriv d.y t + ν * d.z t = d.stretch t) (h : SignedGainCore ν d) : ∀ t, deriv d.y t + 2 * (1 - max h.theta 0) * ν * d.z t ≤ 2 * max h.C 0 * (d.y t)^2"
+  },
+  {
+   "name": "NSProducerFirst.signedGainCore_residual_factorization",
+   "file": "audit/producer-first/NavierStokesTerminalAdapter.lean",
+   "line": 141,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{ν : ℝ} {d : EnstrophyData} (h : SignedGainCore ν d) : ∀ t, signedGainCoreCoefficient h t * d.y t = max h.C 0 * (d.y t)^2"
+  }
+ ],
+ "closed": 5,
+ "files_sha256": {
+  "audit/producer-first/NavierStokesTerminalAdapter.lean": "222386a4c7187854485347fc692616c40de28c5735cc66a8f08eee1dd7066b7b",
+  "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
+  "lakefile.toml": "d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c",
+  "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87"
+ },
+ "published_at": "2026-11-05T17:43:09Z",
+ "certificate_sha256": "524078427dc439c43903d5e4c52dcf513988b30c32762c4e15b93e8466bd9751"
+}

@@ -1,4 +1,8 @@
 86ae811c27fff2e1a32eccbe576379455c3f5f597c656b608f5a9fd0b10a4a09  branches/navier-stokes-critical-barrier-audit/research_pure-math-final-proof-v1/formal/ParallelClosure.lean
+e05de2d920ae19010864902cd1f0a87c53b62c13880d87582dfc11427712ffeb  branches/navier-stokes-critical-barrier-audit/research_pure-math-final-proof-v1/formal/millennium/lean/MillenniumAudit/G1Audit.lean
+047e69061ceedc297568e961ca213d248b2e829faa24e18c4e1e703ddaabf91e  branches/navier-stokes-critical-barrier-audit/research_pure-math-final-proof-v1/formal/millennium/lean/MillenniumAudit/G1Uniformity.lean
+87d61e4c3e600b0acebd7712fe60283fb70a82d3bed647a02275e07fa6cae1a3  branches/navier-stokes-critical-barrier-audit/research_pure-math-final-proof-v1/formal/millennium/lean/lakefile.toml
+55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea  branches/navier-stokes-critical-barrier-audit/research_pure-math-final-proof-v1/formal/millennium/lean/lean-toolchain
 b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526  branches/navier-stokes-critical-barrier-audit/research_pure-math-final-proof-v1/lake-manifest.json
 d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c  branches/navier-stokes-critical-barrier-audit/research_pure-math-final-proof-v1/lakefile.toml
 ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87  branches/navier-stokes-critical-barrier-audit/research_pure-math-final-proof-v1/lean-toolchain

@@ -1138,7 +1138,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -1165,17 +1165,15 @@
    "line": 48,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(ActualNS : State → Prop) (D : NSG1ProducerFastPath.Data (State"
+   "statement": "∀ {State : Type} (ActualNS : State → Prop) (D : NSG1ProducerFastPath.Data) (y : State → ℝ → ℝ)   (hy : ∀ (u : State) (t : ℝ), 0 ≤ y u t),   NSG1ProducerFastPath.BulkTailProducer ActualNS D →     CriticalBarrier.OpenMath.NavierStokes.NSOpenMathCore ActualNS       (CriticalBarrier.OpenMath.NavierStokes.physicalDataOfG1Data D y hy)"
   },
   {
    "name": "CriticalBarrier.OpenMath.NavierStokes.g1Bridge_of_openMathCore",
    "file": "formal/lean/CriticalBarrier/OpenMath/NavierStokes/OpenMathCore.lean",
    "line": 78,
-   "state": "nao_alcancado",
-   "axioms_beyond_standard": [
-    "sorryAx"
-   ],
-   "statement": "{ActualNS : State → Prop} {D : PhysicalStretchingData (State"
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {State : Type} {ActualNS : State → Prop} {D : CriticalBarrier.OpenMath.NavierStokes.PhysicalStretchingData},   CriticalBarrier.OpenMath.NavierStokes.NSOpenMathCore ActualNS D →     Nonempty (CriticalBarrier.GlobalRegularityFromG1.G1Bridge ActualNS)"
   },
   {
    "name": "CriticalBarrier.OpenMath.NavierStokes.g1Producer_implies_openMathCore",
@@ -1183,7 +1181,7 @@
    "line": 37,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(ActualNS : State → Prop) (D : NSG1ProducerFastPath.Data (State"
+   "statement": "∀ {State : Type} (ActualNS : State → Prop) (D : NSG1ProducerFastPath.Data) (y : State → ℝ → ℝ)   (hy : ∀ (u : State) (t : ℝ), 0 ≤ y u t),   NSG1ProducerFastPath.G1Producer ActualNS D →     CriticalBarrier.OpenMath.NavierStokes.NSOpenMathCore ActualNS       (CriticalBarrier.OpenMath.NavierStokes.physicalDataOfG1Data D y hy)"
   },
   {
    "name": "CriticalBarrier.OpenMath.NavierStokes.global_regularity_from_actualNS_producer",
@@ -1239,7 +1237,7 @@
    "name": "NSAllCertifiedReuseMaster.enable_final_theorem_from_open_math_core",
    "file": "open-math/navier-stokes/claim/AllCertifiedReuseMaster.lean",
    "line": 31,
-   "state": "nao_alcancado",
+   "state": "erro",
    "axioms_beyond_standard": [
     "sorryAx"
    ],
@@ -1249,7 +1247,7 @@
    "name": "NSAllCertifiedReuseMaster.only_core_needed_for_terminal",
    "file": "open-math/navier-stokes/claim/AllCertifiedReuseMaster.lean",
    "line": 58,
-   "state": "nao_alcancado",
+   "state": "aberto-sorry",
    "axioms_beyond_standard": [
     "sorryAx"
    ],
@@ -1643,7 +1641,7 @@
    "name": "NSOpenMathCoreToG1Producer.openMathCore_implies_fastClosed",
    "file": "open-math/navier-stokes/claim/OpenMathCoreToG1Producer.lean",
    "line": 42,
-   "state": "nao_alcancado",
+   "state": "erro",
    "axioms_beyond_standard": [
     "sorryAx"
    ],
@@ -1653,7 +1651,7 @@
    "name": "NSOpenMathCoreToG1Producer.openMathCore_implies_fastProducerExists",
    "file": "open-math/navier-stokes/claim/OpenMathCoreToG1Producer.lean",
    "line": 34,
-   "state": "nao_alcancado",
+   "state": "erro",
    "axioms_beyond_standard": [
     "sorryAx"
    ],
@@ -1743,7 +1741,7 @@
    "name": "NSUnconditionalClaimCertificate.certificate_enables_final_theorem",
    "file": "open-math/navier-stokes/claim/UnconditionalClaimCertificate.lean",
    "line": 24,
-   "state": "nao_alcancado",
+   "state": "erro",
    "axioms_beyond_standard": [
     "sorryAx"
    ],
@@ -1753,14 +1751,12 @@
    "name": "NSUnconditionalClaimCertificate.certificate_requires_open_math_core",
    "file": "open-math/navier-stokes/claim/UnconditionalClaimCertificate.lean",
    "line": 38,
-   "state": "aberto-sorry",
-   "axioms_beyond_standard": [
-    "sorryAx"
-   ],
+   "state": "fechado",
+   "axioms_beyond_standard": [],
    "statement": "(ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop) (D : PhysicalStretchingData (State"
   }
  ],
- "closed": 63,
+ "closed": 65,
  "files_sha256": {
   "formal/G1/WeightedLow.lean": "7ce283704eb794c67ae1d798739792c2c0ccc7f72afe0a0fb0c4470767bc3fc6",
   "formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean": "4f59921c448e643b9df24f46ddd1d7dd86e89f0ff15e98d6217382c9b8d40efd",
@@ -1792,10 +1788,11 @@
   "open-math/navier-stokes/claim/RefutationProducer.lean": "05aa9ce00e70534ab6927d1933303570607efc6d4e50c7690afe6f83ec6927bc",
   "open-math/navier-stokes/claim/ScientificBoundary.lean": "744afc255463385e8231b4a5d309f338bb6ff558c36d9bc1dce0d8362da81dc3",
   "open-math/navier-stokes/claim/ThreeCaseClosure.lean": "12198c341efbde64dd32b30570d8c7455977e96333b7b6261453794f7a35614c",
+  "open-math/navier-stokes/claim/UnconditionalClaimCertificate.lean": "080363116c7c21b96c6b2fd42675bfc4e1ed3100c8208aaf8f8e9ed9e09875e5",
   "open-math/navier-stokes/logic-refutation/AmplitudeInvariantFixedDeltaNoGo.lean": "4d0fd42789779f6c558433ec1b90d8c8b6625ae8433306c0108473d890a64670",
   "open-math/navier-stokes/logic-refutation/EnergyCompressionBarrier.lean": "f7705dd820f1d4bf53e520860445adfb7b4e23d1206de0aeec003972df638e0f",
   "open-math/navier-stokes/logic-refutation/FiberUnboundedFromScaling.lean": "4729c50509cc8a0e0bfc1be24c31ca1390b6598648e0982021275df1eef8c1f9"
  },
- "published_at": "2026-11-03T11:28:12Z",
- "certificate_sha256": "c16b0a0148a7fe1dc2b66aba25911a8344c7a028236293c7955d14e2f742197e"
+ "published_at": "2026-11-05T17:43:09Z",
+ "certificate_sha256": "90fce495bb6c696a3e0a59429f3ac011b0bebe10c5144c9b6116dbdcd5a67622"
 }

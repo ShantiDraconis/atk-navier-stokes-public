@@ -3,9 +3,9 @@
 Lean sources from the branch `atk/ns-forcing-001` of the private repository `ShantiDraconis/navier-stokes-critical-barrier-audit`, commit `c406517f22858a51f66ca76a385f8ca97f45bf7e` (2026-10-07T03:13:56+02:00), that hold theorems found only on branches (no default branch of any repository has a theorem with the same name). Published here: the files with the theorems the kernel closed, the local files they import and the Lake files of their project.
 
 * Branch state: parada (not in the default branch).
-* Theorems only on branches, in this branch: 273 — closed 182, conditional 0, open 23, proof error 20, not reached 46, no result 2.
+* Theorems only on branches, in this branch: 273 — closed 187, conditional 0, open 21, proof error 17, not reached 46, no result 2.
 * History: 232 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `5f0d6552bddc300bd132bcf218c6c0e4c9986150747d3aba90fc57a2044b8111`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/atk_ns-forcing-001/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `a8fa6d9601de95112f32dff015520652c65bcca7d9b923774927e914d1982f63`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/atk_ns-forcing-001/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 
@@ -216,11 +216,11 @@ Closed means the kernel accepted the proof and it depends only on `propext`, `Cl
 | `NSProducerFirst.TerminalThreeStateClosure.normalize_is_diagonal` | `open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean`:90 | fechado |
 | `NSProducerFirst.TerminalThreeStateClosure.three_state_model_exists` | `open_math/ActualNSToSignedGainCore/P04TerminalThreeStateClosure.lean`:59 | fechado |
 | `NSProducerFirst.g1_bulk_tail_implies_strict_differential` | `audit/producer-first/G1MaterialUnified.lean`:80 | erro |
-| `NSProducerFirst.navierStokes_material_cert_refute_disjoint` | `audit/producer-first/NavierStokesTerminalAdapter.lean`:62 | aberto-sorry |
-| `NSProducerFirst.nonempty_actualNSToSignedGainCore_of_quadraticBulkTail` | `audit/producer-first/MaterialClosurePipeline.lean`:130 | erro |
-| `NSProducerFirst.nonempty_signedGainCore_of_bulk_tail` | `audit/producer-first/SignedGainCore.lean`:129 | erro |
-| `NSProducerFirst.not_navierStokesMaterialCertifies_iff_refutes` | `audit/producer-first/NavierStokesTerminalAdapter.lean`:46 | aberto-sorry |
-| `NSProducerFirst.quadraticProducer_certifies_navierStokesMaterial` | `audit/producer-first/NavierStokesTerminalAdapter.lean`:37 | erro |
+| `NSProducerFirst.navierStokes_material_cert_refute_disjoint` | `audit/producer-first/NavierStokesTerminalAdapter.lean`:62 | fechado |
+| `NSProducerFirst.nonempty_actualNSToSignedGainCore_of_quadraticBulkTail` | `audit/producer-first/MaterialClosurePipeline.lean`:130 | fechado |
+| `NSProducerFirst.nonempty_signedGainCore_of_bulk_tail` | `audit/producer-first/SignedGainCore.lean`:129 | fechado |
+| `NSProducerFirst.not_navierStokesMaterialCertifies_iff_refutes` | `audit/producer-first/NavierStokesTerminalAdapter.lean`:46 | fechado |
+| `NSProducerFirst.quadraticProducer_certifies_navierStokesMaterial` | `audit/producer-first/NavierStokesTerminalAdapter.lean`:37 | fechado |
 | `NSRPACube.closed_closed_closed_ns_canonical` | `open_math/NS_RPACompleteCube.lean`:66 | fechado |
 | `NSRPACube.closed_closed_ns_canonical` | `open_math/NS_RPACompleteCube.lean`:60 | fechado |
 | `NSRPACube.closed_closed_open_ns_canonical` | `open_math/NS_RPACompleteCube.lean`:84 | fechado |

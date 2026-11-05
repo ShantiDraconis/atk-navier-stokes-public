@@ -1,0 +1,5 @@
+7bfbfe326fdbc54c5c142ec6325c305865709436a13205ee79c828afb231c376  branches/navier-stokes-critical-barrier-audit/atk_ns-direction-coherence-countermodel-20261001/audit/producer-first/DirectionCoherenceCountermodel.lean
+5d2db414bb9908b0a4d414dbffbc1b0e3eb214d366822746f169487be4879990  branches/navier-stokes-critical-barrier-audit/atk_ns-direction-coherence-countermodel-20261001/formal/g1/lean/G1Depletion.lean
+b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526  branches/navier-stokes-critical-barrier-audit/atk_ns-direction-coherence-countermodel-20261001/lake-manifest.json
+d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c  branches/navier-stokes-critical-barrier-audit/atk_ns-direction-coherence-countermodel-20261001/lakefile.toml
+ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87  branches/navier-stokes-critical-barrier-audit/atk_ns-direction-coherence-countermodel-20261001/lean-toolchain

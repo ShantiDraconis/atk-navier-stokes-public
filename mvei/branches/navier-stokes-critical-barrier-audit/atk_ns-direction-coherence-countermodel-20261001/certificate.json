@@ -1,0 +1,64 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+ "branch": "atk/ns-direction-coherence-countermodel-20261001",
+ "branch_state": "parada",
+ "head_commit": "fd745c37598f90483a1e3c39ea7f3bdc0a8be189",
+ "head_commit_date": "2026-10-01T18:21:53+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "fd745c37598f90483a1e3c39ea7f3bdc0a8be189",
+   "date": "2026-10-01T18:21:53+02:00",
+   "subject": "ns: refute direction-only coherence as universal depletion producer"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:stable",
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "G1.DirectionCoherenceCountermodel.betaHalfCoherence_holds",
+   "file": "audit/producer-first/DirectionCoherenceCountermodel.lean",
+   "line": 20,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(M c C : ℝ) (hM : 0 < M) (hc : 0 < c) : G1.BetaHalfCoherence counterData M c C"
+  },
+  {
+   "name": "G1.DirectionCoherenceCountermodel.closedDepletion_fails",
+   "file": "audit/producer-first/DirectionCoherenceCountermodel.lean",
+   "line": 29,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(δ : ℝ) (hδ : 0 < δ) : ¬ G1.ClosedDepletion counterData δ"
+  },
+  {
+   "name": "G1.DirectionCoherenceCountermodel.no_universal_direction_only_bridge",
+   "file": "audit/producer-first/DirectionCoherenceCountermodel.lean",
+   "line": 39,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (∀ (D : G1.Data) (M c C δ : ℝ), 0 < M → 0 < c → 0 < δ → G1.BetaHalfCoherence D M c C → G1.ClosedDepletion D δ)"
+  }
+ ],
+ "closed": 3,
+ "files_sha256": {
+  "audit/producer-first/DirectionCoherenceCountermodel.lean": "7bfbfe326fdbc54c5c142ec6325c305865709436a13205ee79c828afb231c376",
+  "formal/g1/lean/G1Depletion.lean": "5d2db414bb9908b0a4d414dbffbc1b0e3eb214d366822746f169487be4879990",
+  "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
+  "lakefile.toml": "d4836d54a421c929e1db4c8c6e0aa266f836afe85add15451e19336167bce89c",
+  "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87"
+ },
+ "published_at": "2026-11-05T17:43:22Z",
+ "certificate_sha256": "1bcb279eaa761047ea2a3fdd7558babde9b6b56ae9cc87ab4f0edf0198f8a636"
+}

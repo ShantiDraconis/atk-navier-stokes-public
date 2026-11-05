@@ -758,7 +758,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -1145,7 +1145,7 @@
    "name": "G1FailProofAllGaps.ALL_EXPOSED_GAPS_FAIL_PROOF",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 340,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": G1FailProofFinal.CURRENT_ARCHITECTURE_FAIL_PROOF_PROP ∧ vacuousEndpointMap.GlobalRegularity ∧ EndpointInterfaces.NSCriticalBridge vacuousNSAssumptions ∧ EndpointInterfaces.ESSEndpoint vacuousNSAssumptions ∧ vacuousEpsilonCoercive.implication ∧ vacuousCorrectionClosure.preservesAdmissibility ∧ vacuousCorrectionClosure.contractsDefect ∧ vacuousPressureCompatibility.theoremObligation ∧ vacuousForci"
   },
@@ -1153,7 +1153,7 @@
    "name": "G1FailProofAllGaps.G2_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 157,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": zeroG1G4State.highL3 ≤ vacuousHighFrequencyCertificate.C * vacuousHighFrequencyCertificate.Lambda ^ (-1 : ℤ) * vacuousHighFrequencyCertificate.M"
   },
@@ -1161,7 +1161,7 @@
    "name": "G1FailProofAllGaps.G3_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 174,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": zeroG1G4State.totalL3 ≤ vacuousFixedScaleReconstruction.low_bound + vacuousFixedScaleReconstruction.high_bound"
   },
@@ -1169,7 +1169,7 @@
    "name": "G1FailProofAllGaps.G4_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 187,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousEndpointMap.GlobalRegularity"
   },
@@ -1177,7 +1177,7 @@
    "name": "G1FailProofAllGaps.GENERIC_NS_BRIDGE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 311,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousNoSorryBridge.ActualNS → vacuousNoSorryBridge.GlobalRegularity"
   },
@@ -1185,7 +1185,7 @@
    "name": "G1FailProofAllGaps.K1A_INVENTORY_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 34,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousK1Inventory.K1a"
   },
@@ -1193,7 +1193,7 @@
    "name": "G1FailProofAllGaps.K1B_INVENTORY_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 36,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousK1Inventory.K1b"
   },
@@ -1201,7 +1201,7 @@
    "name": "G1FailProofAllGaps.K1B_TRANSPORT_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 53,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousTransportEstimate.C_transport_cutoff_free ∧ vacuousTransportEstimate.transport_bound"
   },
@@ -1209,7 +1209,7 @@
    "name": "G1FailProofAllGaps.K1C_INVENTORY_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 37,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousK1Inventory.K1c"
   },
@@ -1217,7 +1217,7 @@
    "name": "G1FailProofAllGaps.K1C_K1D_ABSORPTION_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 68,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousUniformAbsorption.gamma_eps_independent ∧ vacuousUniformAbsorption.biot_savart_bound ∧ vacuousUniformAbsorption.aubin_lions_tightness"
   },
@@ -1225,7 +1225,7 @@
    "name": "G1FailProofAllGaps.K1D_INVENTORY_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 38,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousK1Inventory.K1d"
   },
@@ -1233,7 +1233,7 @@
    "name": "G1FailProofAllGaps.K1D_WEIGHTED_ABSORPTION_DERIVATION_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 83,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousWeightedAbsorption.γ_derivation_certificate"
   },
@@ -1241,7 +1241,7 @@
    "name": "G1FailProofAllGaps.K1E_INTEGRABILITY_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 104,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousIntegrableCoefficient.uniform_L1 ∧ vacuousIntegrableCoefficient.A_cutoff_free"
   },
@@ -1249,7 +1249,7 @@
    "name": "G1FailProofAllGaps.K1E_INVENTORY_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 39,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousK1Inventory.K1e"
   },
@@ -1257,7 +1257,7 @@
    "name": "G1FailProofAllGaps.K1E_LIMIT_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 117,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousAbsorptionToDepletionBridge.eps_limit_preserves_gamma"
   },
@@ -1265,7 +1265,7 @@
    "name": "G1FailProofAllGaps.K1F_DIMENSIONAL_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 134,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousVEffData.dimensional_normalisation"
   },
@@ -1273,7 +1273,7 @@
    "name": "G1FailProofAllGaps.K1F_INVENTORY_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 40,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousK1Inventory.K1f"
   },
@@ -1281,7 +1281,7 @@
    "name": "G1FailProofAllGaps.NS_B1_UNDERSPECIFIED_CLASS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 199,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ∃ u : vacuousNSAssumptions.AdmissibleState, vacuousNSAssumptions.repositoryCondition u"
   },
@@ -1289,7 +1289,7 @@
    "name": "G1FailProofAllGaps.NS_B2_CRITICAL_BRIDGE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 204,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": EndpointInterfaces.NSCriticalBridge vacuousNSAssumptions"
   },
@@ -1297,7 +1297,7 @@
    "name": "G1FailProofAllGaps.NS_B3_ESS_MAP_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 211,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": EndpointInterfaces.ESSEndpoint vacuousNSAssumptions"
   },
@@ -1305,7 +1305,7 @@
    "name": "G1FailProofAllGaps.NS_B4_ZERO_BRANCH_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 226,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousEpsilonWellDefined.zeroBranchSpecified () trivial rfl"
   },
@@ -1313,7 +1313,7 @@
    "name": "G1FailProofAllGaps.NS_B5_COERCIVITY_FIELD_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 239,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousEpsilonCoercive.implication"
   },
@@ -1321,7 +1321,7 @@
    "name": "G1FailProofAllGaps.NS_B6_CORRECTION_FIELDS_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 252,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousCorrectionClosure.preservesAdmissibility ∧ vacuousCorrectionClosure.contractsDefect"
   },
@@ -1329,7 +1329,7 @@
    "name": "G1FailProofAllGaps.NS_B7_PRESSURE_FIELD_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 263,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousPressureCompatibility.theoremObligation"
   },
@@ -1337,7 +1337,7 @@
    "name": "G1FailProofAllGaps.NS_B8_FORCING_FIELD_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 273,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousForcingCompatibility.theoremObligation"
   },
@@ -1345,7 +1345,7 @@
    "name": "G1FailProofAllGaps.NS_B9_MEAN_TO_CRITICAL_FIELD_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 286,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousMeanToCritical.theoremObligation"
   },
@@ -1353,7 +1353,7 @@
    "name": "G1FailProofAllGaps.STATE_CLOSURE_INTERFACE_VACUOUS",
    "file": "formal/G1/FailProofAllGaps.lean",
    "line": 335,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": vacuousStateClosure.GlobalRegularity ()"
   },
@@ -1454,17 +1454,21 @@
    "statement": ": vacuousXiEpsPDESpec.local_energy_test"
   }
  ],
- "closed": 57,
+ "closed": 84,
  "files_sha256": {
+  "formal/G1/AlignmentTransport.lean": "b47c514adcf895adae12242f30f62517760a0f19b0eef4ba46dd419da94691ef",
   "formal/G1/DynamicCampanato.lean": "ca6be9bd81706c00cdbd3cef942ad99d601ae0ea8d6592dbe955fc8d178bed77",
+  "formal/G1/FailProofAllGaps.lean": "a6eef564bf103c4f06c1a2a5497f5523af8c353582caa60765b90de7828940af",
   "formal/G1/FailProofFinal.lean": "dc7d01dc30347bddd40d6b28541d4e66e8e8ebcfa51fb7c6ef35dfa36cd46571",
   "formal/G1/G1_DynamicCriticalGeometry.lean": "a35c0cf091632cfe4a6682469c81fbfa69c63ac8fed25a8be13aa4de6fe202df",
   "formal/G1/ScientificMeet.lean": "a00e82b321b648eba9cb31c6edaae047f7aa3032bd250dd4c9fb97f7e0ebf1df",
   "formal/G1/WeightedLow.lean": "0b700ba44839af996491bdfa5c8378ee88bae0f228d9458f9c45df1dd61762a1",
   "formal/G1/XiEpsChainRule.lean": "2362f2cadf20664828d4946230146dad61469ecdeaf6401808a729ab08d09521",
   "formal/G1/XiEpsPDE.lean": "ec46dbf9b520e6a6611b5b852d8b6ae440dac015e6de8df767c8b4c82105cd9b",
+  "formal/lean/CriticalBarrier/EndpointInterfaces.lean": "629cfad861d71b1f5cd522e4cda837624646e98702812b6f284c915c51838361",
   "formal/lean/CriticalBarrier/ExternalFastPath.lean": "dd81d80215908db62393af1e82b05b8ff53862a3c07755f77f669ab32bdf4498",
   "formal/lean/CriticalBarrier/ExternalRouteRouter.lean": "4e8a6759dea2aae6b4152b3e353af0b4ca69329792813a80916f457e4d00a79b",
+  "formal/lean/CriticalBarrier/G1G4ClosureBlueprint.lean": "cda34403cb75153c40da965c1fb2af4b34b667110f69061069024548a69fab9c",
   "formal/lean/CriticalBarrier/K1aChainRule.lean": "02e86bf047e8a6426db34b8ff950d1da16b6b568ce11fb62679b1b60c3cb1db8",
   "formal/lean/CriticalBarrier/K1aClaimGate.lean": "1a8ff725341e4161a3ea926db26a94274c8c494a7402613fb34145ed97d96211",
   "formal/lean/CriticalBarrier/K1aExactFrechetProducer.lean": "97ad8873fcb0c19b02cd2eeb35c05c6227af31d51adfb7e87b7399724c93f4f1",
@@ -1476,10 +1480,15 @@
   "formal/lean/CriticalBarrier/ScientificMeet.lean": "4f2ef04a135c0b14b996e3afaf8363b1ec26dbfaf639b5f9fa765d7837e1ad03",
   "formal/lean/lakefile.toml": "ae588249ee34ba35be93608e76703456a73ba966cc13cd08f1a2383af9d901f1",
   "formal/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "formal/millennium/lean/MillenniumAudit/CompleteNoSorry.lean": "e2e231acfef930d5224a5e794365c0fe4262140979502c87cba3165ec4680a05",
+  "formal/millennium/lean/MillenniumAudit/Core.lean": "2e75bc14b7a7c9e233bb290b0da40d3a9a0c9db1a3175b2c8507f129c9671976",
+  "formal/millennium/lean/MillenniumAudit/Millennium/NavierStokes.lean": "1e9c6a0f028372f60683be88792c4f0a396e415690a70e09a2478b5fecb6d97d",
+  "formal/millennium/lean/lakefile.toml": "87d61e4c3e600b0acebd7712fe60283fb70a82d3bed647a02275e07fa6cae1a3",
+  "formal/millennium/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
   "lake-manifest.json": "b1f17c18521fe007ffb4c23ac9067b2666878165e4d68143b2a3798b56950526",
   "lakefile.toml": "1e6a21f0c490cf4d081764648d0473d217ddc48eb0755224aadf84a6bf0d3b1e",
   "lean-toolchain": "ee6fd37555065223ddad24dff70b5447dfbac23c14f48fb8e3ddf266104bfa87"
  },
- "published_at": "2026-11-03T11:28:12Z",
- "certificate_sha256": "9b5ac957621326ccaf84f6f2b849e6150883b32753466683cfc6efdad1836226"
+ "published_at": "2026-11-05T17:43:09Z",
+ "certificate_sha256": "ef1e07f746686e064e30530e52d95f057fc5fe315fecdaea49ebf6a0f32a9a3d"
 }

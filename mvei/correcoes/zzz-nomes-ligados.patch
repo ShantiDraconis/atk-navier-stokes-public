@@ -1,0 +1,23 @@
+diff --git a/audit/producer-first/NSMaterialInhabitant.lean b/audit/producer-first/NSMaterialInhabitant.lean
+index 96635c4..714b0c7 100644
+--- a/audit/producer-first/NSMaterialInhabitant.lean
++++ b/audit/producer-first/NSMaterialInhabitant.lean
+@@ -1,5 +1,7 @@
+ import Mathlib.Tactic
+ import Mathlib.Data.Real.Basic
++import ProducerFirst
++import SignedGainCore
+ /-!
+ NS material inhabitant interface.
+ 
+diff --git a/audit/producer-first/SignedGainCore.lean b/audit/producer-first/SignedGainCore.lean
+index e679a77..ed88664 100644
+--- a/audit/producer-first/SignedGainCore.lean
++++ b/audit/producer-first/SignedGainCore.lean
+@@ -1,5 +1,6 @@
+ import Mathlib.Tactic
+ import Mathlib.Data.Real.Basic
++import ProducerFirst
+ /-!
+ Forward-only continuation of audit/producer-first/ProducerFirst.lean.
+ 

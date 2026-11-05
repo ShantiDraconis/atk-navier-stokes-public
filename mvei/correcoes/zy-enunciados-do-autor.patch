@@ -1,0 +1,191 @@
+--- a/audit/producer-first/NSMaterialInhabitant.lean
++++ b/audit/producer-first/NSMaterialInhabitant.lean
+@@ -85,13 +85,11 @@
+     {data : State → EnstrophyData}
+     (hν : 0 < ν)
+     (P : NSMaterialInhabitant State ActualNS ν data) :
+-    ∀ u : State, ActualNS u →
++    ∀ (u : State) (_ : ActualNS u),
+       0 <
+         2 * (1 - (P u ‹ActualNS u›).theta) * ν := by
+   intro u hu
+-  have hcore := P u hu
+-  have hmargin : 0 < 1 - hcore.theta := sub_pos.mpr hcore.htheta1
+-  positivity
++  exact mul_pos (mul_pos two_pos (sub_pos.mpr (P u hu).htheta1)) hν
+ 
+ /-- Exact fail-closed statement: the final material step is equivalent to
+ providing the canonical producer itself.  This theorem prevents an arbitrary
+--- a/formal/G1/AlignmentTransport.lean
++++ b/formal/G1/AlignmentTransport.lean
+@@ -58,7 +58,7 @@
+ Any bound that uses alpha_eps must treat it as a function of flow data.
+ -/
+ noncomputable def alpha_eps (eps : ℝ) (ω : Vec3) (S : StrainTensor) : ℝ :=
+-  inner ℝ (xi_eps eps ω) (S.apply (xi_eps eps ω))
++  @inner ℝ _ _ (xi_eps eps ω) (S.apply (xi_eps eps ω))
+ 
+ /-- alpha_eps is bounded by the operator norm of S. -/
+ lemma alpha_eps_le_norm (eps : ℝ) (ω : Vec3) (S : StrainTensor)
+--- a/formal/G1/DynamicCampanato.lean
++++ b/formal/G1/DynamicCampanato.lean
+@@ -67,7 +67,7 @@
+         + drift + R1Term + R2Term
+   /-- `C_rem(‖u₀‖₂, ν)` remains explicit and cutoff-free. -/
+   remainder_cutoff_free :
+-    xiPDE.remainderWitness.independence_certificate ∧ 0 < xiPDE.remainderWitness.C_rem
++    type_of% xiPDE.remainderWitness.independence_certificate ∧ 0 < xiPDE.remainderWitness.C_rem
+   /-- No replacement by `‖∇ω‖₂³ / ‖ω‖₂` occurs at this stage. -/
+   no_cubic_ratio_reduction : Prop
+ 
+@@ -99,9 +99,9 @@
+   tests_XiEpsPDE_exactly := h.local_energy_test
+   identity := h.local_energy_identity
+   remainder_cutoff_free := ⟨h.remainderWitness.independence_certificate, h.remainderWitness.hC_rem_pos⟩
+-  no_cubic_ratio_reduction := h.R1_definition ∧ h.R2_definition
++  no_cubic_ratio_reduction := type_of% h.R1_definition ∧ type_of% h.R2_definition
+ 
+-def PROVED_IDENTITY (I : LocalEnergyIdentityData) : Prop := I.identity
++def PROVED_IDENTITY (I : LocalEnergyIdentityData) : Prop := type_of% I.identity
+ 
+ theorem ofXiEpsPDE_PROVED_IDENTITY
+     (h : XiEpsPDE)
+--- a/formal/G1/G1_DynamicCriticalGeometry.lean
++++ b/formal/G1/G1_DynamicCriticalGeometry.lean
+@@ -26,15 +26,15 @@
+ 
+ /-- Algebraic tangential projection of a forcing vector F onto ξ^⊥. -/
+ def tangentialPart (ξ F : Vec3) : Vec3 :=
+-  F - (inner ℝ ξ F) • ξ
++  F - (@inner ℝ _ _ ξ F) • ξ
+ 
+ /-- The tangential part is unchanged by adding a vector parallel to ξ. -/
+ theorem tangentialPart_add_parallel
+     (ξ F : Vec3) (a : ℝ) :
+     tangentialPart ξ (F + a • ξ)
+-      = tangentialPart ξ F + a • ξ - (a * inner ℝ ξ ξ) • ξ := by
+-  simp [tangentialPart, inner_add_right, inner_smul_right, sub_eq_add_neg,
+-    add_assoc, add_left_comm, add_comm]
++      = tangentialPart ξ F + a • ξ - (a * @inner ℝ _ _ ξ ξ) • ξ := by
++  simp only [tangentialPart, inner_add_right, inner_smul_right, add_smul]
++  abel
+ 
+ /--
+ A scale-covariant coherence radius. The caller supplies the actual L² norms.
+@@ -71,7 +71,7 @@
+ For unit vectors this is sin²(theta).
+ -/
+ def sinAngleSq (ξ η : Vec3) : ℝ :=
+-  max 0 (‖ξ‖^2 * ‖η‖^2 - (inner ℝ ξ η)^2)
++  max 0 (‖ξ‖^2 * ‖η‖^2 - (@inner ℝ _ _ ξ η)^2)
+ 
+ /-- Nonnegative directional angle surrogate. -/
+ def sinAngle (ξ η : Vec3) : ℝ := Real.sqrt (sinAngleSq ξ η)
+--- a/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean
++++ b/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean
+@@ -113,7 +113,7 @@
+ /-- Therefore the B2.8 closure needs an additional directional/depletion
+     hypothesis or a genuinely PDE-derived mechanism excluding the expansive
+     alignment example. -/
+-structure MissingDirectionalCertificate (Pi R kappa err : Scalar) : Prop where
++structure MissingDirectionalCertificate (Pi R kappa err : Scalar) where
+   alignmentDepletion : Prop
+   directionalMechanism : alignmentDepletion
+   signedFlux : alignmentDepletion → Pi ≤ (kappa + err) * R
+--- a/formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean
++++ b/formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean
+@@ -49,7 +49,7 @@
+   defect : State → ℝ → ℝ
+   stretchingData : State → ℝ → StretchingData
+   actual_to_signed : ∀ u, ActualNS u → ∀ t, SignedDepletionAt (stretchingData u t)
+-  defect_integrable : ∀ u, ActualNS u → Integrable (defect u)
++  defect_integrable : ∀ u, ActualNS u → MeasureTheory.Integrable (defect u)
+ 
+ /-- Explicit downstream certificate. Each field is a theorem obligation in the
+     mathematical development; packaging them prevents an OPEN bridge from being
+--- a/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean
++++ b/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean
+@@ -48,7 +48,7 @@
+ 
+ /-- Dimensionless half-Hölder diagnostic at the local scale rhoStar.
+     The right side is C * sqrt(dist/rho), so C itself is dimensionless. -/
+-structure DynamicHalfHolderCoherence (A : AngleModel E) (c κ : ℝ) : Prop where
++structure DynamicHalfHolderCoherence (A : AngleModel E) (c κ : ℝ) where
+   C : ℝ
+   C_pos : 0 < C
+   c_pos : 0 < c
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean
+@@ -113,7 +113,7 @@
+ /-- Therefore the B2.8 closure needs an additional directional/depletion
+     hypothesis or a genuinely PDE-derived mechanism excluding the expansive
+     alignment example. -/
+-structure MissingDirectionalCertificate (Pi R kappa err : Scalar) : Prop where
++structure MissingDirectionalCertificate (Pi R kappa err : Scalar) where
+   alignmentDepletion : Prop
+   directionalMechanism : alignmentDepletion
+   signedFlux : alignmentDepletion → Pi ≤ (kappa + err) * R
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/GlobalRegularityFromG1.lean
+@@ -49,7 +49,7 @@
+   defect : State → ℝ → ℝ
+   stretchingData : State → ℝ → StretchingData
+   actual_to_signed : ∀ u, ActualNS u → ∀ t, SignedDepletionAt (stretchingData u t)
+-  defect_integrable : ∀ u, ActualNS u → Integrable (defect u)
++  defect_integrable : ∀ u, ActualNS u → MeasureTheory.Integrable (defect u)
+ 
+ /-- Explicit downstream certificate. Each field is a theorem obligation in the
+     mathematical development; packaging them prevents an OPEN bridge from being
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/G1/HypothesesComplete_v2.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/G1/HypothesesComplete_v2.lean
+@@ -139,7 +139,7 @@
+   tailTheorem : WeightedTailTheorem obs
+ 
+ /-- The empirical route proves only what its supplied weighted-tail theorem certifies. -/
+-theorem CH95_to_KWC_conditional
++def CH95_to_KWC_conditional
+     (obs : ℕ → CH95Observation)
+     (hCH : UniformCH95 obs)
+     (R : ExperimentalKernelRoute obs) :
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean
+@@ -48,7 +48,7 @@
+ 
+ /-- Dimensionless half-Hölder diagnostic at the local scale rhoStar.
+     The right side is C * sqrt(dist/rho), so C itself is dimensionless. -/
+-structure DynamicHalfHolderCoherence (A : AngleModel E) (c κ : ℝ) : Prop where
++structure DynamicHalfHolderCoherence (A : AngleModel E) (c κ : ℝ) where
+   C : ℝ
+   C_pos : 0 < C
+   c_pos : 0 < c
+--- a/preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/G1_DynamicCriticalGeometry.lean
++++ b/preservation/branch-snapshots/audit_g1-dynamic-q-20260913/formal/G1/G1_DynamicCriticalGeometry.lean
+@@ -26,15 +26,15 @@
+ 
+ /-- Algebraic tangential projection of a forcing vector F onto ξ^⊥. -/
+ def tangentialPart (ξ F : Vec3) : Vec3 :=
+-  F - (inner ℝ ξ F) • ξ
++  F - (@inner ℝ _ _ ξ F) • ξ
+ 
+ /-- The tangential part is unchanged by adding a vector parallel to ξ. -/
+ theorem tangentialPart_add_parallel
+     (ξ F : Vec3) (a : ℝ) :
+     tangentialPart ξ (F + a • ξ)
+-      = tangentialPart ξ F + a • ξ - (a * inner ℝ ξ ξ) • ξ := by
+-  simp [tangentialPart, inner_add_right, inner_smul_right, sub_eq_add_neg,
+-    add_assoc, add_left_comm, add_comm]
++      = tangentialPart ξ F + a • ξ - (a * @inner ℝ _ _ ξ ξ) • ξ := by
++  simp only [tangentialPart, inner_add_right, inner_smul_right, add_smul]
++  abel
+ 
+ /--
+ A scale-covariant coherence radius. The caller supplies the actual L² norms.
+@@ -71,7 +71,7 @@
+ For unit vectors this is sin²(theta).
+ -/
+ def sinAngleSq (ξ η : Vec3) : ℝ :=
+-  max 0 (‖ξ‖^2 * ‖η‖^2 - (inner ℝ ξ η)^2)
++  max 0 (‖ξ‖^2 * ‖η‖^2 - (@inner ℝ _ _ ξ η)^2)
+ 
+ /-- Nonnegative directional angle surrogate. -/
+ def sinAngle (ξ η : Vec3) : ℝ := Real.sqrt (sinAngleSq ξ η)

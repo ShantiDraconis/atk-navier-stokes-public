@@ -11,19 +11,19 @@ This folder records what the Lean 4 kernel said about the Lean sources of the pr
 
 ## What the kernel said
 
-MVEI verification of 2026-11-03T08:19:01+00:00, on commit `3904224e49f7b2256d56ce19a5e11e7ddc93f524`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
+MVEI verification of 2026-11-05T15:19:16+00:00, on commit `3904224e49f7b2256d56ce19a5e11e7ddc93f524`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
 
 | Lean project | Lean version | Build | Closed | Conditional | Open (`sorry`) | Checked file by file: closed / conditional / open / proof error / not reached |
 |---|---|---|---:|---:|---:|---|
-| `.` | v4.19.0 | failed | 0 | 0 | 0 | 162 / 0 / 5 / 32 / 2 |
-| `formal/lean` | v4.19.0 | partial | 449 | 1 | 0 | 27 / 0 / 0 / 4 / 4 |
-| `formal/millennium/lean` | v4.19.0 | partial | 50 | 0 | 0 | 34 / 0 / 1 / 4 / 0 |
+| `.` | v4.19.0 | OK | 151 | 0 | 0 | 175 / 0 / 0 / 5 / 2 |
+| `formal/lean` | v4.19.0 | partial | 514 | 1 | 0 | 17 / 0 / 0 / 2 / 2 |
+| `formal/millennium/lean` | v4.19.0 | OK | 70 | 0 | 0 | 36 / 0 / 0 / 1 / 0 |
 | `preservation/branch-snapshots/audit_correct-provenance-attribution-20260912/formal/lean` | stable | OK | 0 | 0 | 0 | — |
-| `preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean` | v4.19.0 | partial | 235 | 1 | 0 | 24 / 0 / 0 / 2 / 0 |
-| `preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean` | v4.19.0 | partial | 235 | 1 | 0 | 24 / 0 / 0 / 2 / 0 |
-| `preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean` | v4.19.0 | partial | 128 | 0 | 0 | 3 / 0 / 0 / 3 / 0 |
+| `preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean` | v4.19.0 | partial | 309 | 1 | 0 | 9 / 0 / 0 / 0 / 0 |
+| `preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean` | v4.19.0 | partial | 309 | 1 | 0 | 9 / 0 / 0 / 0 / 0 |
+| `preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean` | v4.19.0 | OK | 136 | 0 | 0 | 2 / 0 / 0 / 1 / 0 |
 | `preservation/branch-snapshots/audit_g1-prize-standard-v4-20260913/formal/millennium/lean` | v4.19.0 | OK | 71 | 0 | 0 | — |
-| `preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean` | v4.19.0 | partial | 235 | 1 | 0 | 24 / 0 / 0 / 2 / 0 |
+| `preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean` | v4.19.0 | partial | 309 | 1 | 0 | 9 / 0 / 0 / 0 / 0 |
 | `preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/millennium/lean` | v4.19.0 | OK | 136 | 0 | 0 | — |
 | `preservation/branch-snapshots/copilot_add-lre-ns-framework/formal/lean` | stable | OK | 0 | 0 | 0 | — |
 | `preservation/branch-snapshots/copilot_audit-search-terms/formal/lean` | stable | OK | 0 | 0 | 0 | — |
@@ -40,13 +40,13 @@ MVEI verification of 2026-11-03T08:19:01+00:00, on commit `3904224e49f7b2256d56c
 | `preservation/branch-snapshots/copilot_target-extractor/formal/lean` | stable | OK | 0 | 0 | 0 | — |
 | `preservation/branch-snapshots/copilot_task-219265797-1361927617-c6bfd6e0-3c0d-429b-a267-9cea34423468/formal/lean` | stable | OK | 0 | 0 | 0 | — |
 | `preservation/branch-snapshots/copilot_update-reference-section/formal/lean` | stable | OK | 0 | 0 | 0 | — |
-| `preservation/session-scratch-20260913` | v4.19.0 | failed | 0 | 0 | 0 | 36 / 0 / 1 / 3 / 0 |
+| `preservation/session-scratch-20260913` | v4.19.0 | OK | 151 | 0 | 0 | 22 / 0 / 0 / 0 / 0 |
 
 | Closed theorems in this repository | |
 |---|---:|
-| Counting each project | 1 873 |
-| Unique (name + statement) | 760 |
-| Unique, without the lemmas Lean generates itself (`eq_1`, `mk.inj`, `sizeOf_spec`, `deriving`) | 351 |
+| Counting each project | 2 435 |
+| Unique (name + statement) | 962 |
+| Unique, without the lemmas Lean generates itself (`eq_1`, `mk.inj`, `sizeOf_spec`, `deriving`) | 438 |
 
 *Closed* means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`. It says that the statement as written in the file is proved; it does not say that an open problem is solved. Every statement is in `VERIFICACAO.json`. *Conditional* means the proof also uses axioms declared in the repository; *open* means it uses `sorry`. *Checked file by file* covers the files that no build reached: each one went through Lean whole, with a `#print axioms` for each theorem.
 
@@ -56,30 +56,25 @@ MVEI verification of 2026-11-03T08:19:01+00:00, on commit `3904224e49f7b2256d56c
 | `CriticalBarrierClayTarget.target_chain_is_explicit` | `preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean` | conditional | `CriticalBarrierClayTarget.LP_Bernstein_TARGET`, `CriticalBarrierClayTarget.CZ_Riesz_L32_TARGET`, `CriticalBarrierClayTarget.Sobolev_R3_TARGET`, `CriticalBarrierClayTarget.B2_12_ESS_TARGET`, `CriticalBarrierClayTarget.NS_GLOBAL_CLOSURE_TARGET` |
 | `CriticalBarrierClayTarget.target_chain_is_explicit` | `preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean` | conditional | `CriticalBarrierClayTarget.LP_Bernstein_TARGET`, `CriticalBarrierClayTarget.CZ_Riesz_L32_TARGET`, `CriticalBarrierClayTarget.Sobolev_R3_TARGET`, `CriticalBarrierClayTarget.B2_12_ESS_TARGET`, `CriticalBarrierClayTarget.NS_GLOBAL_CLOSURE_TARGET` |
 | `CriticalBarrierClayTarget.target_chain_is_explicit` | `preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean` | conditional | `CriticalBarrierClayTarget.LP_Bernstein_TARGET`, `CriticalBarrierClayTarget.CZ_Riesz_L32_TARGET`, `CriticalBarrierClayTarget.Sobolev_R3_TARGET`, `CriticalBarrierClayTarget.B2_12_ESS_TARGET`, `CriticalBarrierClayTarget.NS_GLOBAL_CLOSURE_TARGET` |
-| `G1HypothesesV3.joint_law_and_tail_conditional_G1` | `. (file by file)` | open | `sorryAx` |
-| `G1DynamicCampanato.localEnergy_radius_formula` | `. (file by file)` | open | `sorryAx` |
-| `G1HypothesesV3.joint_law_and_tail_conditional_G1` | `. (file by file)` | open | `sorryAx` |
-| `G1HypothesesV3.joint_law_and_tail_conditional_G1` | `. (file by file)` | open | `sorryAx` |
-| `G1HypothesesV3.joint_law_and_tail_conditional_G1` | `. (file by file)` | open | `sorryAx` |
-| `G1HypothesesV3.joint_law_and_tail_conditional_G1` | `formal/millennium/lean (file by file)` | open | `sorryAx` |
-| `G1HypothesesV3.joint_law_and_tail_conditional_G1` | `preservation/session-scratch-20260913 (file by file)` | open | `sorryAx` |
 
 ### Declared theorems
 
-The `.lean` files of the verified commit declare 670 `theorem`/`lemma` (counting copies). The kernel checked 608 of them (597 closed, 4 conditional, 7 open). The closed count in the table above is larger: it also counts the theorems Lean generates by itself (equation lemmas, structure fields, `deriving`), which are not written in the text. For 62 the kernel has no result:
+The `.lean` files of the verified commit declare 670 `theorem`/`lemma` (counting copies). The kernel checked 652 of them (648 closed, 4 conditional, 0 open). The closed count in the table above is larger: it also counts the theorems Lean generates by itself (equation lemmas, structure fields, `deriving`), which are not written in the text. For 18 the kernel has no result:
 
 | Reason | Theorems |
 |---|---:|
-| checked file by file: the written proof does not pass the kernel | 52 |
-| checked file by file: Lean did not reach the theorem (missing import, syntax error or timeout) | 6 |
-| the file did not compile (an error in it or in a file it imports) | 4 |
+| checked file by file: the written proof does not pass the kernel | 9 |
+| the project built, but the file is not part of the lakefile target | 5 |
+| checked file by file: Lean did not reach the theorem (missing import, syntax error or timeout) | 4 |
 
 ### MVEI corrections
 
 * `correcoes/imports-no-topo.patch` (import fora do início do arquivo, 6 file(s)): applies to the published sources: `git apply -p1 --directory=imports/navier-stokes-critical-barrier-audit mvei/correcoes/imports-no-topo.patch` (in order, after the ones above)
 * `correcoes/renomear-imports-mathlib.patch` (import de módulo que não existe na versão do Mathlib do projeto (renomeado ou dividido), 4 file(s)): applies to the published sources: `git apply -p1 --directory=imports/navier-stokes-critical-barrier-audit mvei/correcoes/renomear-imports-mathlib.patch` (in order, after the ones above)
 * `correcoes/vocabulario-lean4.patch` (grafia que o Lean 4 não lê (nome acentuado, λ/Σ/Π como nome, ∀ x y ∈ s, docstring solta, constant, tática do Mathlib sem import), 76 file(s)): applies to the published sources: `git apply -p1 --directory=imports/navier-stokes-critical-barrier-audit mvei/correcoes/vocabulario-lean4.patch` (in order, after the ones above)
-* `correcoes/z-provas-reparadas.patch` (prova que não passava no kernel (o enunciado fica igual), 8 file(s)): applies to the published sources: `git apply -p1 --directory=imports/navier-stokes-critical-barrier-audit mvei/correcoes/z-provas-reparadas.patch` (in order, after the ones above)
+* `correcoes/z-provas-reparadas.patch` (prova que não passava no kernel (o enunciado fica igual), 35 file(s)): applies to the published sources: `git apply -p1 --directory=imports/navier-stokes-critical-barrier-audit mvei/correcoes/z-provas-reparadas.patch` (in order, after the ones above)
+* `correcoes/zy-enunciados-do-autor.patch` (enunciado reescrito a pedido do autor (o original, como escrito, fica registrado), 12 file(s)): applies to the published sources: `git apply -p1 --directory=imports/navier-stokes-critical-barrier-audit mvei/correcoes/zy-enunciados-do-autor.patch` (in order, after the ones above)
+* `correcoes/zzz-nomes-ligados.patch` (nome usado no arquivo e declarado em outro arquivo do mesmo repositório, sem o import, 2 file(s)): applies to the published sources: `git apply -p1 --directory=imports/navier-stokes-critical-barrier-audit mvei/correcoes/zzz-nomes-ligados.patch` (in order, after the ones above)
 
 ## Files in this folder
 

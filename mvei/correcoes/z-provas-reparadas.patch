@@ -12,6 +12,111 @@
  
  /-- K0a': the regularized amplitude is nonnegative. -/
  theorem K0a_regularizedAmplitude_nonneg (w ε : ℝ) :
+--- a/HypothesesComplete_v3.lean
++++ b/HypothesesComplete_v3.lean
+@@ -52,6 +52,7 @@
+     GeometricDepletion ν d := by
+   rcases hBulk with ⟨hc, hbulk⟩
+   rcases hTail with ⟨ht, htail⟩
++  have hB : cBulk + δTail < 1 := hBudget
+   let δ := 1 - (cBulk + δTail)
+   have hδ : 0 < δ := by
+     dsimp [δ]
+--- a/Lean/Millennium/CompleteClosure_Targets.lean
++++ b/Lean/Millennium/CompleteClosure_Targets.lean
+@@ -1,4 +1,5 @@
+ import Mathlib.Data.Matrix.Basic
++import Mathlib.Data.Matrix.Notation
+ import Mathlib.Tactic.NormNum
+ import Mathlib.Data.Real.Basic
+ import Mathlib.Data.Complex.Basic
+@@ -27,12 +28,12 @@
+ 
+ theorem B2_9_R_equal :
+     R_Lambda (u1 ⬝ᵥ u1) = R_Lambda (u2 ⬝ᵥ u2) := by
+-  simp [R_Lambda, u1, u2, dotProduct]
++  simp [R_Lambda, u1, u2, dotProduct, Fin.sum_univ_three]
+ 
+ theorem B2_9_Pi_different :
+     Pi_Lambda S_divFree u1 ≠ Pi_Lambda S_divFree u2 := by
+-  simp [Pi_Lambda, S_divFree, u1, u2, dotProduct, mulVec]
+-  norm_num
++  norm_num [Pi_Lambda, S_divFree, u1, u2, dotProduct, mulVec, Fin.sum_univ_three, Matrix.cons_val_two,
++    Matrix.vecHead, Matrix.vecTail]
+ 
+ /-!
+ ## OPEN specifications
+--- a/MillenniumAudit/StabilizedHypothetical.lean
++++ b/MillenniumAudit/StabilizedHypothetical.lean
+@@ -73,8 +73,9 @@
+ 
+ theorem K0a_totality (w ε : ℝ) (hε : 0 < ε) :
+     ε ≤ regularizedAmplitude w ε := by
+-  rw [regularizedAmplitude, ← Real.sqrt_sq (le_of_lt hε)]
+-  exact Real.sqrt_le_sqrt (by nlinarith [sq_nonneg w])
++  rw [regularizedAmplitude]
++  calc ε = Real.sqrt (ε ^ 2) := (Real.sqrt_sq (le_of_lt hε)).symm
++    _ ≤ Real.sqrt (w ^ 2 + ε ^ 2) := Real.sqrt_le_sqrt (by nlinarith [sq_nonneg w])
+ 
+ structure K0DegenerateCertificate where
+   (y z : ℝ)
+@@ -161,7 +162,7 @@
+     0 ≤ h.total ∧ h.total < 1 := by
+   constructor
+   · unfold AbsorptionCertificate.total
+-    positivity
++    linarith [h.hγ1, h.hγ2, h.hTail, h.hCutoff, h.hMotion]
+   · exact h.strictBudget
+ 
+ structure PrincipalValueTailCertificate where
+--- a/formal/G1/AlignmentTransport.lean
++++ b/formal/G1/AlignmentTransport.lean
+@@ -64,9 +64,9 @@
+ lemma alpha_eps_le_norm (eps : ℝ) (ω : Vec3) (S : StrainTensor)
+     (hS : ∀ v : Vec3, ‖S.apply v‖ ≤ ‖v‖) :
+     |alpha_eps eps ω S| ≤ ‖xi_eps eps ω‖^2 := by
+-  have hinner := abs_inner_le_norm ℝ (xi_eps eps ω) (S.apply (xi_eps eps ω))
++  have hinner := abs_real_inner_le_norm (xi_eps eps ω) (S.apply (xi_eps eps ω))
+   calc |alpha_eps eps ω S|
+-      = |inner ℝ (xi_eps eps ω) (S.apply (xi_eps eps ω))| := rfl
++      = |@inner ℝ _ _ (xi_eps eps ω) (S.apply (xi_eps eps ω))| := rfl
+     _ ≤ ‖xi_eps eps ω‖ * ‖S.apply (xi_eps eps ω)‖ := hinner
+     _ ≤ ‖xi_eps eps ω‖ * ‖xi_eps eps ω‖ := by
+         apply mul_le_mul_of_nonneg_left (hS _) (norm_nonneg _)
+--- a/formal/G1/DynamicCampanato.lean
++++ b/formal/G1/DynamicCampanato.lean
+@@ -155,8 +155,8 @@
+   have hratio_nonneg : 0 ≤ r / rho := by
+     exact div_nonneg hr hrho.le
+   have hratio_le_one : r / rho ≤ 1 := by
+-    exact (div_le_iff hrho).2 (by simpa using hr_le_rho)
+-  rw [betaCampanato, Real.rpow_one]
++    exact (div_le_iff₀ hrho).2 (by simpa using hr_le_rho)
++  rw [betaCampanato, Real.rpow_eq_pow, Real.rpow_one]
+   nlinarith
+ 
+ /-- One step of the Campanato iteration `J_{r/2} ≤ γ J_r + A r / ρ_*`. -/
+@@ -206,7 +206,7 @@
+   have hrewrite :
+       (C / 2) * (S.r / S.rhoStar) = C * ((S.r / 2) / S.rhoStar) := by
+     ring_nf
+-  rw [← hrewrite] at hmul
++  rw [hrewrite] at hmul
+   linarith
+ 
+ /--
+@@ -226,9 +226,10 @@
+   have h2C : 0 < 2 * C := by
+     positivity
+   have hgamma : gamma < C / (2 * C) :=
+-    (lt_div_iff h2C).2 hmul
++    (lt_div_iff₀ h2C).2 hmul
+   have hfrac : C / (2 * C) = (1 : ℝ) / 2 := by
+     field_simp [hC.ne']
++    ring
+   simpa [hfrac] using hgamma
+ 
+ /--
 --- a/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
 +++ b/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
 @@ -64,8 +64,7 @@
@@ -24,6 +129,17 @@
    linarith [h.balance, h.dissipation, h.flux]
  
  /-- Correct high-frequency L3 reconstruction interface:
+--- a/formal/lean/CriticalBarrier/BackwardWithoutOracle.lean
++++ b/formal/lean/CriticalBarrier/BackwardWithoutOracle.lean
+@@ -19,7 +19,7 @@
+     (C : IndependentClosureContract
+       ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity) :
+     ∀ u, ActualNS u → GlobalRegularity u :=
+-  global_regularity_from_G1 C.g1 C.downstream
++  global_regularity_from_G1 ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity C.g1 C.downstream
+ 
+ /-- The repository does not claim construction of the independent contract
+     from bare ActualNS dynamics. -/
 --- a/formal/lean/CriticalBarrier/CriticalTailBridge.lean
 +++ b/formal/lean/CriticalBarrier/CriticalTailBridge.lean
 @@ -37,7 +37,8 @@
@@ -36,6 +152,49 @@
  
  theorem growingCritical_ge_one (n : ℕ) : 1 ≤ growingCritical n := by
    simp [growingCritical]
+--- a/formal/lean/IndeterminateParameterCompletion.lean
++++ b/formal/lean/IndeterminateParameterCompletion.lean
+@@ -120,6 +120,7 @@
+     ¬ (∀ x y z : ℚ, |x-y| < 1 → |y-z| < 1 → |x-z| < 1) := by
+   intro h
+   have hx := h 0 (3/4 : ℚ) (3/2 : ℚ)
++  simp only [abs_lt] at hx
+   norm_num at hx
+ 
+ end Tolerance
+--- a/formal/millennium/lean/MillenniumAudit/G1Audit.lean
++++ b/formal/millennium/lean/MillenniumAudit/G1Audit.lean
+@@ -45,7 +45,6 @@
+     yPrime + 2 * δ * s.z ≤ 0 := by
+   rcases hclosed with ⟨hδ, hδ1, hstretch⟩
+   dsimp [EnstrophyBalance] at hbal
+-  dsimp [ClosedDepletion] at hstretch
+   linarith
+ 
+ /-- Scalar OPEN estimate. This is deliberately represented separately from CLOSED depletion. -/
+--- a/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean
++++ b/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean
+@@ -101,8 +101,9 @@
+     («hλ» : 0 < «λ»)
+     (hgrad : E.gradOmegaL2 s ≠ 0) :
+     rhoStar E (S.scaleState «λ» s) κ = «λ»⁻¹ * rhoStar E s κ := by
+-  rw [rhoStar, rhoStar, S.omegaL2_scale fun s hλ => S.gradOmegaL2_scale «λ» s «hλ»]
++  rw [rhoStar, rhoStar, S.omegaL2_scale «λ» s «hλ», S.gradOmegaL2_scale «λ» s «hλ»]
+   have hsqrt : Real.sqrt «λ» ≠ 0 := ne_of_gt (Real.sqrt_pos.2 «hλ»)
++  have hl : «λ» ≠ 0 := ne_of_gt «hλ»
+   field_simp
+   ring
+ 
+--- a/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean
++++ b/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean
+@@ -52,6 +52,7 @@
+     GeometricDepletion ν d := by
+   rcases hBulk with ⟨hc, hbulk⟩
+   rcases hTail with ⟨ht, htail⟩
++  have hB : cBulk + δTail < 1 := hBudget
+   let δ := 1 - (cBulk + δTail)
+   have hδ : 0 < δ := by
+     dsimp [δ]
 --- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
 +++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
 @@ -64,8 +64,7 @@
@@ -48,6 +207,40 @@
    linarith [h.balance, h.dissipation, h.flux]
  
  /-- Correct high-frequency L3 reconstruction interface:
+--- a/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean
++++ b/preservation/branch-snapshots/audit_closure-target-tree-v56/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean
+@@ -52,6 +52,7 @@
+     GeometricDepletion ν d := by
+   rcases hBulk with ⟨hc, hbulk⟩
+   rcases hTail with ⟨ht, htail⟩
++  have hB : cBulk + δTail < 1 := hBudget
+   let δ := 1 - (cBulk + δTail)
+   have hδ : 0 < δ := by
+     dsimp [δ]
+--- a/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/Lean/Millennium/CompleteClosure_Targets.lean
++++ b/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/Lean/Millennium/CompleteClosure_Targets.lean
+@@ -1,4 +1,5 @@
+ import Mathlib.Data.Matrix.Basic
++import Mathlib.Data.Matrix.Notation
+ import Mathlib.Tactic.NormNum
+ import Mathlib.Data.Real.Basic
+ import Mathlib.Data.Complex.Basic
+@@ -27,12 +28,12 @@
+ 
+ theorem B2_9_R_equal :
+     R_Lambda (u1 ⬝ᵥ u1) = R_Lambda (u2 ⬝ᵥ u2) := by
+-  simp [R_Lambda, u1, u2, dotProduct]
++  simp [R_Lambda, u1, u2, dotProduct, Fin.sum_univ_three]
+ 
+ theorem B2_9_Pi_different :
+     Pi_Lambda S_divFree u1 ≠ Pi_Lambda S_divFree u2 := by
+-  simp [Pi_Lambda, S_divFree, u1, u2, dotProduct, mulVec]
+-  norm_num
++  norm_num [Pi_Lambda, S_divFree, u1, u2, dotProduct, mulVec, Fin.sum_univ_three, Matrix.cons_val_two,
++    Matrix.vecHead, Matrix.vecTail]
+ 
+ /-!
+ ## OPEN specifications
 --- a/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean
 +++ b/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/CriticalTailBridge.lean
 @@ -37,7 +37,8 @@
@@ -60,6 +253,64 @@
  
  theorem growingCritical_ge_one (n : ℕ) : 1 ≤ growingCritical n := by
    simp [growingCritical]
+--- a/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean
++++ b/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/CriticalBarrier/ResolutionDynamics.lean
+@@ -58,7 +58,7 @@
+       simpa using hx
+   | succ n ih =>
+       intro x hx
+-      rw [Function.iterate_succ_apply]
++      rw [Function.iterate_succ_apply']
+       exact hPreserve _ (ih x hx)
+ 
+ /-- Logical endpoint composition. The substantive mathematical content is in
+--- a/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean
++++ b/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean/IndeterminateParameterCompletion.lean
+@@ -120,6 +120,7 @@
+     ¬ (∀ x y z : ℚ, |x-y| < 1 → |y-z| < 1 → |x-z| < 1) := by
+   intro h
+   have hx := h 0 (3/4 : ℚ) (3/2 : ℚ)
++  simp only [abs_lt] at hx
+   norm_num at hx
+ 
+ end Tolerance
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/Lean/Millennium/CompleteClosure_Targets.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/Lean/Millennium/CompleteClosure_Targets.lean
+@@ -1,4 +1,5 @@
+ import Mathlib.Data.Matrix.Basic
++import Mathlib.Data.Matrix.Notation
+ import Mathlib.Tactic.NormNum
+ import Mathlib.Data.Real.Basic
+ import Mathlib.Data.Complex.Basic
+@@ -27,12 +28,12 @@
+ 
+ theorem B2_9_R_equal :
+     R_Lambda (u1 ⬝ᵥ u1) = R_Lambda (u2 ⬝ᵥ u2) := by
+-  simp [R_Lambda, u1, u2, dotProduct]
++  simp [R_Lambda, u1, u2, dotProduct, Fin.sum_univ_three]
+ 
+ theorem B2_9_Pi_different :
+     Pi_Lambda S_divFree u1 ≠ Pi_Lambda S_divFree u2 := by
+-  simp [Pi_Lambda, S_divFree, u1, u2, dotProduct, mulVec]
+-  norm_num
++  norm_num [Pi_Lambda, S_divFree, u1, u2, dotProduct, mulVec, Fin.sum_univ_three, Matrix.cons_val_two,
++    Matrix.vecHead, Matrix.vecTail]
+ 
+ /-!
+ ## OPEN specifications
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/G1/HypothesesComplete_v2.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/G1/HypothesesComplete_v2.lean
+@@ -84,8 +84,9 @@
+     («hλ» : 0 < «λ») (hg : S.gradOmegaL2 ≠ 0) :
+     rhoStar κ0 (S.scaledOmegaL2 «λ») (S.scaledGradOmegaL2 «λ»)
+       = «λ»⁻¹ * rhoStar κ0 S.omegaL2 S.gradOmegaL2 := by
+-  rw [rhoStar, rhoStar, S.omega_scale fun hλ => S.grad_scale «λ» «hλ»]
++  rw [rhoStar, rhoStar, S.omega_scale «λ» «hλ», S.grad_scale «λ» «hλ»]
+   have hsqrt : Real.sqrt «λ» ≠ 0 := ne_of_gt (Real.sqrt_pos.2 «hλ»)
++  have hl : «λ» ≠ 0 := ne_of_gt «hλ»
+   field_simp
+   ring
+ 
 --- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean
 +++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean
 @@ -37,7 +37,8 @@
@@ -72,6 +323,74 @@
  
  theorem growingCritical_ge_one (n : ℕ) : 1 ≤ growingCritical n := by
    simp [growingCritical]
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean
+@@ -58,7 +58,7 @@
+       simpa using hx
+   | succ n ih =>
+       intro x hx
+-      rw [Function.iterate_succ_apply]
++      rw [Function.iterate_succ_apply']
+       exact hPreserve _ (ih x hx)
+ 
+ /-- Logical endpoint composition. The substantive mathematical content is in
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean/IndeterminateParameterCompletion.lean
+@@ -120,6 +120,7 @@
+     ¬ (∀ x y z : ℚ, |x-y| < 1 → |y-z| < 1 → |x-z| < 1) := by
+   intro h
+   have hx := h 0 (3/4 : ℚ) (3/2 : ℚ)
++  simp only [abs_lt] at hx
+   norm_num at hx
+ 
+ end Tolerance
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/G1Audit.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/G1Audit.lean
+@@ -45,7 +45,6 @@
+     yPrime + 2 * δ * s.z ≤ 0 := by
+   rcases hclosed with ⟨hδ, hδ1, hstretch⟩
+   dsimp [EnstrophyBalance] at hbal
+-  dsimp [ClosedDepletion] at hstretch
+   linarith
+ 
+ /-- Scalar OPEN estimate. This is deliberately represented separately from CLOSED depletion. -/
+--- a/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean
++++ b/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean
+@@ -101,8 +101,9 @@
+     («hλ» : 0 < «λ»)
+     (hgrad : E.gradOmegaL2 s ≠ 0) :
+     rhoStar E (S.scaleState «λ» s) κ = «λ»⁻¹ * rhoStar E s κ := by
+-  rw [rhoStar, rhoStar, S.omegaL2_scale fun s hλ => S.gradOmegaL2_scale «λ» s «hλ»]
++  rw [rhoStar, rhoStar, S.omegaL2_scale «λ» s «hλ», S.gradOmegaL2_scale «λ» s «hλ»]
+   have hsqrt : Real.sqrt «λ» ≠ 0 := ne_of_gt (Real.sqrt_pos.2 «hλ»)
++  have hl : «λ» ≠ 0 := ne_of_gt «hλ»
+   field_simp
+   ring
+ 
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/Lean/Millennium/CompleteClosure_Targets.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/Lean/Millennium/CompleteClosure_Targets.lean
+@@ -1,4 +1,5 @@
+ import Mathlib.Data.Matrix.Basic
++import Mathlib.Data.Matrix.Notation
+ import Mathlib.Tactic.NormNum
+ import Mathlib.Data.Real.Basic
+ import Mathlib.Data.Complex.Basic
+@@ -27,12 +28,12 @@
+ 
+ theorem B2_9_R_equal :
+     R_Lambda (u1 ⬝ᵥ u1) = R_Lambda (u2 ⬝ᵥ u2) := by
+-  simp [R_Lambda, u1, u2, dotProduct]
++  simp [R_Lambda, u1, u2, dotProduct, Fin.sum_univ_three]
+ 
+ theorem B2_9_Pi_different :
+     Pi_Lambda S_divFree u1 ≠ Pi_Lambda S_divFree u2 := by
+-  simp [Pi_Lambda, S_divFree, u1, u2, dotProduct, mulVec]
+-  norm_num
++  norm_num [Pi_Lambda, S_divFree, u1, u2, dotProduct, mulVec, Fin.sum_univ_three, Matrix.cons_val_two,
++    Matrix.vecHead, Matrix.vecTail]
+ 
+ /-!
+ ## OPEN specifications
 --- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean
 +++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/CriticalTailBridge.lean
 @@ -37,7 +37,8 @@
@@ -84,6 +403,47 @@
  
  theorem growingCritical_ge_one (n : ℕ) : 1 ≤ growingCritical n := by
    simp [growingCritical]
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/CriticalBarrier/ResolutionDynamics.lean
+@@ -58,7 +58,7 @@
+       simpa using hx
+   | succ n ih =>
+       intro x hx
+-      rw [Function.iterate_succ_apply]
++      rw [Function.iterate_succ_apply']
+       exact hPreserve _ (ih x hx)
+ 
+ /-- Logical endpoint composition. The substantive mathematical content is in
+--- a/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean
++++ b/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean/IndeterminateParameterCompletion.lean
+@@ -120,6 +120,7 @@
+     ¬ (∀ x y z : ℚ, |x-y| < 1 → |y-z| < 1 → |x-z| < 1) := by
+   intro h
+   have hx := h 0 (3/4 : ℚ) (3/2 : ℚ)
++  simp only [abs_lt] at hx
+   norm_num at hx
+ 
+ end Tolerance
+--- a/preservation/branch-snapshots/main/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean
++++ b/preservation/branch-snapshots/main/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean
+@@ -52,6 +52,7 @@
+     GeometricDepletion ν d := by
+   rcases hBulk with ⟨hc, hbulk⟩
+   rcases hTail with ⟨ht, htail⟩
++  have hB : cBulk + δTail < 1 := hBudget
+   let δ := 1 - (cBulk + δTail)
+   have hδ : 0 < δ := by
+     dsimp [δ]
+--- a/preservation/branch-snapshots/origin/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean
++++ b/preservation/branch-snapshots/origin/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v3.lean
+@@ -52,6 +52,7 @@
+     GeometricDepletion ν d := by
+   rcases hBulk with ⟨hc, hbulk⟩
+   rcases hTail with ⟨ht, htail⟩
++  have hB : cBulk + δTail < 1 := hBudget
+   let δ := 1 - (cBulk + δTail)
+   have hδ : 0 < δ := by
+     dsimp [δ]
 --- a/preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean
 +++ b/preservation/session-scratch-20260913/G1_KAdmissible_to_SignedDepletion.lean
 @@ -32,8 +32,9 @@
@@ -98,3 +458,36 @@
  
  /-- K0a': the regularized amplitude is nonnegative. -/
  theorem K0a_regularizedAmplitude_nonneg (w ε : ℝ) :
+--- a/preservation/session-scratch-20260913/HypothesesComplete_v3.lean
++++ b/preservation/session-scratch-20260913/HypothesesComplete_v3.lean
+@@ -52,6 +52,7 @@
+     GeometricDepletion ν d := by
+   rcases hBulk with ⟨hc, hbulk⟩
+   rcases hTail with ⟨ht, htail⟩
++  have hB : cBulk + δTail < 1 := hBudget
+   let δ := 1 - (cBulk + δTail)
+   have hδ : 0 < δ := by
+     dsimp [δ]
+--- a/preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean
++++ b/preservation/session-scratch-20260913/MillenniumAudit/StabilizedHypothetical.lean
+@@ -73,8 +73,9 @@
+ 
+ theorem K0a_totality (w ε : ℝ) (hε : 0 < ε) :
+     ε ≤ regularizedAmplitude w ε := by
+-  rw [regularizedAmplitude, ← Real.sqrt_sq (le_of_lt hε)]
+-  exact Real.sqrt_le_sqrt (by nlinarith [sq_nonneg w])
++  rw [regularizedAmplitude]
++  calc ε = Real.sqrt (ε ^ 2) := (Real.sqrt_sq (le_of_lt hε)).symm
++    _ ≤ Real.sqrt (w ^ 2 + ε ^ 2) := Real.sqrt_le_sqrt (by nlinarith [sq_nonneg w])
+ 
+ structure K0DegenerateCertificate where
+   (y z : ℝ)
+@@ -161,7 +162,7 @@
+     0 ≤ h.total ∧ h.total < 1 := by
+   constructor
+   · unfold AbsorptionCertificate.total
+-    positivity
++    linarith [h.hγ1, h.hγ2, h.hTail, h.hCutoff, h.hMotion]
+   · exact h.strictBudget
+ 
+ structure PrincipalValueTailCertificate where

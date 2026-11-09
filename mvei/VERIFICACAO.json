@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T15:19:16+00:00",
+ "generated_at": "2026-11-06T00:22:08+00:00",
  "standard_axioms": [
   "Classical.choice",
   "Quot.sound",
@@ -1635,7 +1635,7 @@
     }
    ],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (imports-no-topo, vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): imports movidos para o início (antes de comentários de módulo ou de documentação) em 6 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate.",
+   "note": "CORRIGIDO PELO MVEI (imports-no-topo, vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): imports movidos para o início (antes de comentários de módulo ou de documentação) em 6 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate.",
    "corrections": [
     "imports-no-topo",
     "vocabulario-lean4",
@@ -2228,16 +2228,12 @@
      "arquivo": "formal/G1/DynamicCampanato.lean",
      "linha": 142,
      "nome": "G1DynamicCampanato.betaCampanato_energy_only",
-     "status": "erro",
+     "status": "fechado",
      "axioms": [
       "propext",
-      "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ],
-     "erro": "linha 158: unknown identifier 'div_le_iff'",
-     "coluna": 11,
-     "trecho": "    exact (⟦d⟧iv_le_iff hrho).2 (by simpa u"
+     ]
     },
     {
      "arquivo": "formal/G1/DynamicCampanato.lean",
@@ -2265,16 +2261,12 @@
      "arquivo": "formal/G1/DynamicCampanato.lean",
      "linha": 211,
      "nome": "G1DynamicCampanato.gamma_lt_half_of_barrier_condition",
-     "status": "erro",
+     "status": "fechado",
      "axioms": [
       "propext",
-      "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ],
-     "erro": "linha 229: unknown identifier 'lt_div_iff'",
-     "coluna": 5,
-     "trecho": "    (⟦l⟧t_div_iff h2C).2 hmul"
+     ]
     },
     {
      "arquivo": "formal/G1/G1_DynamicCriticalGeometry.lean",
@@ -2660,16 +2652,12 @@
      "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
      "linha": 120,
      "nome": "CriticalBarrier.B28GapIsolation.signed_flux_from_directional_certificate",
-     "status": "erro",
+     "status": "fechado",
      "axioms": [
       "propext",
-      "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ],
-     "erro": "linha 125: invalid field 'signedFlux', the environment does not contain 'CriticalBarrier.B28GapIsolation.MissingDirectionalCertificate.signedFlux' C has type MissingDirectionalCertificate Pi R kappa err",
-     "coluna": 2,
-     "trecho": "  ⟦C⟧.signedFlux C.directionalMech"
+     ]
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_closure-target-tree-v56/formal/lean/CriticalBarrier/B2_ChainTarget.lean",
@@ -3549,7 +3537,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -4282,6 +4270,248 @@
      "status": "fechado"
     },
     {
+     "name": "CriticalBarrier.B28GapIsolation.AlignmentState.alignment.eq_1",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ (s : CriticalBarrier.B28GapIsolation.AlignmentState), s.alignment = s.quadratic",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.AlignmentState.mk.inj",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀   {lambda1 lambda2 lambda3 weight1 weight2 weight3 lambda1_1 lambda2_1 lambda3_1 weight1_1 weight2_1 weight3_1 :     CriticalBarrier.B28GapIsolation.Scalar},   { lambda1 := lambda1, lambda2 := lambda2, lambda3 := lambda3, weight1 := weight1, weight2 := weight2,         weight3 := weight3 } =       { lambda1 := lambda1_1, lambda2 := lambda2_1, lambda3 := lambda3_1, weight1 := weight1_1, weight2 :",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.AlignmentState.mk.injEq",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀   (lambda1 lambda2 lambda3 weight1 weight2 weight3 lambda1_1 lambda2_1 lambda3_1 weight1_1 weight2_1 weight3_1 :     CriticalBarrier.B28GapIsolation.Scalar),   ({ lambda1 := lambda1, lambda2 := lambda2, lambda3 := lambda3, weight1 := weight1, weight2 := weight2,         weight3 := weight3 } =       { lambda1 := lambda1_1, lambda2 := lambda2_1, lambda3 := lambda3_1, weight1 := weight1_1, weight2",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.AlignmentState.mk.sizeOf_spec",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ (lambda1 lambda2 lambda3 weight1 weight2 weight3 : CriticalBarrier.B28GapIsolation.Scalar),   sizeOf       { lambda1 := lambda1, lambda2 := lambda2, lambda3 := lambda3, weight1 := weight1, weight2 := weight2,         weight3 := weight3 } =     1 + sizeOf lambda1 + sizeOf lambda2 + sizeOf lambda3 + sizeOf weight1 + sizeOf weight2 + sizeOf weight3",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.AlignmentState.quadratic.eq_1",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ (s : CriticalBarrier.B28GapIsolation.AlignmentState),   s.quadratic = s.lambda1 * s.weight1 + s.lambda2 * s.weight2 + s.lambda3 * s.weight3",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.AlignmentState.totalWeight.eq_1",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ (s : CriticalBarrier.B28GapIsolation.AlignmentState), s.totalWeight = s.weight1 + s.weight2 + s.weight3",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.AlignmentState.trace.eq_1",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ (s : CriticalBarrier.B28GapIsolation.AlignmentState), s.trace = s.lambda1 + s.lambda2 + s.lambda3",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.MissingDirectionalCertificate.directionalMechanism",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ {Pi R kappa err : CriticalBarrier.B28GapIsolation.Scalar}   (self : CriticalBarrier.B28GapIsolation.MissingDirectionalCertificate Pi R kappa err), self.alignmentDepletion",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.MissingDirectionalCertificate.mk.inj",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ {Pi R kappa err : CriticalBarrier.B28GapIsolation.Scalar} {alignmentDepletion : Prop}   {directionalMechanism : alignmentDepletion} {signedFlux : alignmentDepletion → Pi ≤ (kappa + err) * R}   {alignmentDepletion_1 : Prop} {directionalMechanism_1 : alignmentDepletion_1}   {signedFlux_1 : alignmentDepletion_1 → Pi ≤ (kappa + err) * R},   { alignmentDepletion := alignmentDepletion, directionalMech",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.MissingDirectionalCertificate.mk.injEq",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ {Pi R kappa err : CriticalBarrier.B28GapIsolation.Scalar} (alignmentDepletion : Prop)   (directionalMechanism : alignmentDepletion) (signedFlux : alignmentDepletion → Pi ≤ (kappa + err) * R)   (alignmentDepletion_1 : Prop) (directionalMechanism_1 : alignmentDepletion_1)   (signedFlux_1 : alignmentDepletion_1 → Pi ≤ (kappa + err) * R),   ({ alignmentDepletion := alignmentDepletion, directionalMec",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.MissingDirectionalCertificate.mk.sizeOf_spec",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ {Pi R kappa err : CriticalBarrier.B28GapIsolation.Scalar} (alignmentDepletion : Prop)   (directionalMechanism : alignmentDepletion) (signedFlux : alignmentDepletion → Pi ≤ (kappa + err) * R),   sizeOf       { alignmentDepletion := alignmentDepletion, directionalMechanism := directionalMechanism,         signedFlux := signedFlux } =     1 + sizeOf alignmentDepletion + sizeOf directionalMechanism",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.MissingDirectionalCertificate.signedFlux",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ {Pi R kappa err : CriticalBarrier.B28GapIsolation.Scalar}   (self : CriticalBarrier.B28GapIsolation.MissingDirectionalCertificate Pi R kappa err),   self.alignmentDepletion → Pi ≤ (kappa + err) * R",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.delta.eq_1",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "CriticalBarrier.B28GapIsolation.delta = 1 / 10",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.expansiveExample.eq_1",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "CriticalBarrier.B28GapIsolation.expansiveExample =   { lambda1 := 1, lambda2 := -1 / 2, lambda3 := -1 / 2, weight1 := 1, weight2 := 0, weight3 := 0 }",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.expansive_alignment_one",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "CriticalBarrier.B28GapIsolation.expansiveExample.alignment = 1",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.expansive_is_concentrated",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "1 / 2 ≤ CriticalBarrier.B28GapIsolation.expansiveExample.totalWeight",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.expansive_total_weight_one",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "CriticalBarrier.B28GapIsolation.expansiveExample.totalWeight = 1",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.expansive_trace_zero",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "CriticalBarrier.B28GapIsolation.expansiveExample.trace = 0",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.proposed_strain_chain_exceeds_target",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "CriticalBarrier.B28GapIsolation.targetKappa < CriticalBarrier.B28GapIsolation.proposedStrainCoeff",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.signed_flux_from_directional_certificate",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ (Pi R kappa err : CriticalBarrier.B28GapIsolation.Scalar),   CriticalBarrier.B28GapIsolation.MissingDirectionalCertificate Pi R kappa err → Pi ≤ (kappa + err) * R",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.sqrt10_gt_three",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "3 < √10",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.B28GapIsolation.traceless_and_concentrated_do_not_force_alignment_09",
+     "module": "CriticalBarrier.B2_8_SignedFlux_GapIsolation",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "CriticalBarrier.B28GapIsolation.expansiveExample.trace = 0 ∧   1 / 2 ≤ CriticalBarrier.B28GapIsolation.expansiveExample.totalWeight ∧     ¬CriticalBarrier.B28GapIsolation.expansiveExample.alignment ≤ 1 - CriticalBarrier.B28GapIsolation.delta",
+     "status": "fechado"
+    },
+    {
      "name": "CriticalBarrier.B2Chain.Certificates.b210_gronwall",
      "module": "CriticalBarrier.B2_ChainTarget",
      "axioms": [],
@@ -4912,10 +5142,72 @@
      "status": "fechado"
     },
     {
+     "name": "CriticalBarrier.BackwardAudit.IndependentClosureContract.downstream",
+     "module": "CriticalBarrier.BackwardWithoutOracle",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ {State : Type} {ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop},   CriticalBarrier.BackwardAudit.IndependentClosureContract ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity →     CriticalBarrier.GlobalRegularityFromG1.DownstreamClosure ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.BackwardAudit.IndependentClosureContract.mk.inj",
+     "module": "CriticalBarrier.BackwardWithoutOracle",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ {State : Type} {ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop}   {g1 : CriticalBarrier.GlobalRegularityFromG1.G1Bridge ActualNS}   {downstream :     CriticalBarrier.GlobalRegularityFromG1.DownstreamClosure ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity}   {g1_1 : CriticalBarrier.GlobalRegularityFromG1.G1Bridge ActualNS}   {downstream_1 :     CriticalBarrie",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.BackwardAudit.IndependentClosureContract.mk.injEq",
+     "module": "CriticalBarrier.BackwardWithoutOracle",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ {State : Type} {ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop}   (g1 : CriticalBarrier.GlobalRegularityFromG1.G1Bridge ActualNS)   (downstream :     CriticalBarrier.GlobalRegularityFromG1.DownstreamClosure ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity)   (g1_1 : CriticalBarrier.GlobalRegularityFromG1.G1Bridge ActualNS)   (downstream_1 :     CriticalBarrie",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.BackwardAudit.IndependentClosureContract.mk.sizeOf_spec",
+     "module": "CriticalBarrier.BackwardWithoutOracle",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ {State : Type} {ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop} [inst : SizeOf State]   [inst_1 : (a : State) → SizeOf (ActualNS a)] [inst_2 : (a : State) → SizeOf (UniformEnstrophy a)]   [inst_3 : (a : State) → SizeOf (CriticalL3Bound a)] [inst_4 : (a : State) → SizeOf (GlobalRegularity a)]   (g1 : CriticalBarrier.GlobalRegularityFromG1.G1Bridge ActualNS)   (downstrea",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.BackwardAudit.actualNS_to_contract_still_open",
+     "module": "CriticalBarrier.BackwardWithoutOracle",
+     "axioms": [],
+     "statement": "CriticalBarrier.BackwardAudit.actualNSProducesClosureContract = false",
+     "status": "fechado"
+    },
+    {
      "name": "CriticalBarrier.BackwardAudit.hypothetical_global_regularity",
      "module": "CriticalBarrier.BackwardHypotheticalClosureOracle",
      "axioms": [],
      "statement": "∀ {State : Type} {ActualNS GlobalRegularity : State → Prop},   CriticalBarrier.BackwardAudit.HypotheticalClosure ActualNS GlobalRegularity →     ∀ (u : State), ActualNS u → GlobalRegularity u",
+     "status": "fechado"
+    },
+    {
+     "name": "CriticalBarrier.BackwardAudit.independent_contract_closes",
+     "module": "CriticalBarrier.BackwardWithoutOracle",
+     "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+     ],
+     "statement": "∀ {State : Type} {ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity : State → Prop},   CriticalBarrier.BackwardAudit.IndependentClosureContract ActualNS UniformEnstrophy CriticalL3Bound GlobalRegularity →     ∀ (u : State), ActualNS u → GlobalRegularity u",
      "status": "fechado"
     },
     {
@@ -8143,7 +8435,7 @@
     }
    ],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././UnifiedAsymptoticLogic.lean:22:2: unknown constant 'Real.sqrt' | error: Lean exited with code 1)",
+   "note": "CORRIGIDO PELO MVEI (renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././UnifiedAsymptoticLogic.lean:22:2: unknown constant 'Real.sqrt' | error: Lean exited with code 1)",
    "corrections": [
     "renomear-imports-mathlib",
     "vocabulario-lean4",
@@ -8155,126 +8447,12 @@
    "avulso": false,
    "salvage": [
     {
-     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
-     "linha": 36,
-     "nome": "CriticalBarrier.B28GapIsolation.sqrt10_gt_three",
-     "status": "fechado",
-     "axioms": [
-      "propext",
-      "Classical.choice",
-      "Quot.sound"
-     ]
-    },
-    {
-     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
-     "linha": 43,
-     "nome": "CriticalBarrier.B28GapIsolation.proposed_strain_chain_exceeds_target",
-     "status": "fechado",
-     "axioms": [
-      "propext",
-      "Classical.choice",
-      "Quot.sound"
-     ]
-    },
-    {
-     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
-     "linha": 86,
-     "nome": "CriticalBarrier.B28GapIsolation.expansive_trace_zero",
-     "status": "fechado",
-     "axioms": [
-      "propext",
-      "Classical.choice",
-      "Quot.sound"
-     ]
-    },
-    {
-     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
-     "linha": 89,
-     "nome": "CriticalBarrier.B28GapIsolation.expansive_total_weight_one",
-     "status": "fechado",
-     "axioms": [
-      "propext",
-      "Classical.choice",
-      "Quot.sound"
-     ]
-    },
-    {
-     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
-     "linha": 92,
-     "nome": "CriticalBarrier.B28GapIsolation.expansive_is_concentrated",
-     "status": "fechado",
-     "axioms": [
-      "propext",
-      "Classical.choice",
-      "Quot.sound"
-     ]
-    },
-    {
-     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
-     "linha": 98,
-     "nome": "CriticalBarrier.B28GapIsolation.expansive_alignment_one",
-     "status": "fechado",
-     "axioms": [
-      "propext",
-      "Classical.choice",
-      "Quot.sound"
-     ]
-    },
-    {
-     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
-     "linha": 102,
-     "nome": "CriticalBarrier.B28GapIsolation.traceless_and_concentrated_do_not_force_alignment_09",
-     "status": "fechado",
-     "axioms": [
-      "propext",
-      "Classical.choice",
-      "Quot.sound"
-     ]
-    },
-    {
-     "arquivo": "formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
-     "linha": 120,
-     "nome": "CriticalBarrier.B28GapIsolation.signed_flux_from_directional_certificate",
-     "status": "erro",
-     "axioms": [
-      "propext",
-      "sorryAx",
-      "Classical.choice",
-      "Quot.sound"
-     ],
-     "erro": "linha 125: invalid field 'signedFlux', the environment does not contain 'CriticalBarrier.B28GapIsolation.MissingDirectionalCertificate.signedFlux' C has type MissingDirectionalCertificate Pi R kappa err",
-     "coluna": 2,
-     "trecho": "  ⟦C⟧.signedFlux C.directionalMech"
-    },
-    {
-     "arquivo": "formal/lean/CriticalBarrier/BackwardWithoutOracle.lean",
-     "linha": 16,
-     "nome": "CriticalBarrier.BackwardAudit.independent_contract_closes",
-     "status": "erro",
-     "axioms": [
-      "propext",
-      "sorryAx",
-      "Classical.choice",
-      "Quot.sound"
-     ],
-     "erro": "linha 22: type mismatch global_regularity_from_G1 ?m.2620 ?m.4078 has type ∀ (CriticalL3Bound GlobalRegularity : ?m.879 → Prop), G1Bridge ?m.2620 → DownstreamClosure ?m.2620 ?m.4078 CriticalL3Bound GlobalRegularity → ∀ (u : ?m.879), ?m.2620 u → Globa",
-     "coluna": 2,
-     "trecho": "  ⟦g⟧lobal_regularity_from_G1 C.g1"
-    },
-    {
-     "arquivo": "formal/lean/CriticalBarrier/BackwardWithoutOracle.lean",
-     "linha": 27,
-     "nome": "CriticalBarrier.BackwardAudit.actualNS_to_contract_still_open",
-     "status": "fechado",
-     "axioms": []
-    },
-    {
      "arquivo": "formal/lean/Millennium/AllClosureTargets.lean",
      "linha": 41,
      "nome": "Millennium.AllClosureTargets.resolve",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "object file '/tmp/mvei-rec-4xxhmrpd/p/.lake/mvei-salvage/CriticalBarrier/CompleteClosureTargets.olean' of module CriticalBarrier.CompleteClosureTargets does not exist"
+     "motivo": "object file '/tmp/mvei-rec-utr3y7d5/p/.lake/mvei-salvage/CriticalBarrier/CompleteClosureTargets.olean' of module CriticalBarrier.CompleteClosureTargets does not exist"
     },
     {
      "arquivo": "formal/lean/Millennium/AllClosureTargets.lean",
@@ -8282,7 +8460,7 @@
      "nome": "Millennium.AllClosureTargets.all_millennium_from_complete_certificates",
      "status": "nao_alcancado",
      "axioms": [],
-     "motivo": "object file '/tmp/mvei-rec-4xxhmrpd/p/.lake/mvei-salvage/CriticalBarrier/CompleteClosureTargets.olean' of module CriticalBarrier.CompleteClosureTargets does not exist"
+     "motivo": "object file '/tmp/mvei-rec-utr3y7d5/p/.lake/mvei-salvage/CriticalBarrier/CompleteClosureTargets.olean' of module CriticalBarrier.CompleteClosureTargets does not exist"
     },
     {
      "arquivo": "formal/lean/UnifiedAsymptoticLogic.lean",
@@ -8379,11 +8557,11 @@
     }
    ],
    "summary": {
-    "fechado": 514,
+    "fechado": 542,
     "aberto-sorry": 0,
     "condicional": 1
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -8392,7 +8570,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 19.1,
+   "build_seconds": 16.5,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -9163,7 +9341,7 @@
     }
    ],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate.",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate.",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -9458,16 +9636,12 @@
      "arquivo": "formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean",
      "linha": 77,
      "nome": "MillenniumAudit.G1Star.exists_uniform_C",
-     "status": "erro",
+     "status": "fechado",
      "axioms": [
       "propext",
-      "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ],
-     "erro": "linha 88: invalid field 'C', the environment does not contain 'MillenniumAudit.G1Star.DynamicHalfHolderCoherence.C' h has type DynamicHalfHolderCoherence E A c κ",
-     "coluna": 9,
-     "trecho": "  exact ⟨⟦h⟧.C, h.C_pos, h.coherence⟩"
+     ]
     },
     {
      "arquivo": "formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean",
@@ -9543,7 +9717,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -9552,7 +9726,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 23.6,
+   "build_seconds": 22.2,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -9611,7 +9785,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -9627,7 +9801,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -9636,7 +9810,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": false,
    "build_ok": false,
-   "build_seconds": 23.1,
+   "build_seconds": 21.8,
    "build_error": "error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": true,
@@ -12238,7 +12412,7 @@
     }
    ],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././UnifiedAsymptoticLogic.lean:22:2: unknown constant 'Real.sqrt' | error: Lean exited with code 1)",
+   "note": "CORRIGIDO PELO MVEI (renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././UnifiedAsymptoticLogic.lean:22:2: unknown constant 'Real.sqrt' | error: Lean exited with code 1)",
    "corrections": [
     "renomear-imports-mathlib",
     "vocabulario-lean4",
@@ -12348,7 +12522,7 @@
     "aberto-sorry": 0,
     "condicional": 1
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -12357,7 +12531,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": false,
-   "build_seconds": 0.6,
+   "build_seconds": 0.5,
    "build_error": "error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": true,
@@ -14959,7 +15133,7 @@
     }
    ],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././UnifiedAsymptoticLogic.lean:22:2: unknown constant 'Real.sqrt' | error: Lean exited with code 1)",
+   "note": "CORRIGIDO PELO MVEI (renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././UnifiedAsymptoticLogic.lean:22:2: unknown constant 'Real.sqrt' | error: Lean exited with code 1)",
    "corrections": [
     "renomear-imports-mathlib",
     "vocabulario-lean4",
@@ -15069,7 +15243,7 @@
     "aberto-sorry": 0,
     "condicional": 1
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -15078,7 +15252,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 16.9,
+   "build_seconds": 17.7,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -16219,7 +16393,7 @@
     }
    ],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate.",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate.",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -16233,16 +16407,12 @@
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean",
      "linha": 77,
      "nome": "MillenniumAudit.G1Star.exists_uniform_C",
-     "status": "erro",
+     "status": "fechado",
      "axioms": [
       "propext",
-      "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ],
-     "erro": "linha 88: invalid field 'C', the environment does not contain 'MillenniumAudit.G1Star.DynamicHalfHolderCoherence.C' h has type DynamicHalfHolderCoherence E A c κ",
-     "coluna": 9,
-     "trecho": "  exact ⟨⟦h⟧.C, h.C_pos, h.coherence⟩"
+     ]
     },
     {
      "arquivo": "preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean/MillenniumAudit/HypothesesComplete_v2.lean",
@@ -16269,7 +16439,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -16278,7 +16448,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 14.8,
+   "build_seconds": 16.1,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -17060,7 +17230,7 @@
     }
    ],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate.",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate.",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -17076,7 +17246,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -17085,7 +17255,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": false,
    "build_ok": false,
-   "build_seconds": 22.5,
+   "build_seconds": 22.1,
    "build_error": "error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": true,
@@ -19687,7 +19857,7 @@
     }
    ],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././UnifiedAsymptoticLogic.lean:22:2: unknown constant 'Real.sqrt' | error: Lean exited with code 1)",
+   "note": "CORRIGIDO PELO MVEI (renomear-imports-mathlib, vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): 4 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 4 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, IndeterminateParameterCompletion, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././UnifiedAsymptoticLogic.lean:22:2: unknown constant 'Real.sqrt' | error: Lean exited with code 1)",
    "corrections": [
     "renomear-imports-mathlib",
     "vocabulario-lean4",
@@ -19797,7 +19967,7 @@
     "aberto-sorry": 0,
     "condicional": 1
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -19806,7 +19976,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 15.1,
+   "build_seconds": 17.2,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -20947,7 +21117,7 @@
     }
    ],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate.",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate.",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -20963,7 +21133,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -20972,7 +21142,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 23.0,
+   "build_seconds": 21.8,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -21031,7 +21201,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -21047,7 +21217,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -21056,7 +21226,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 23.1,
+   "build_seconds": 21.6,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -21115,7 +21285,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -21131,7 +21301,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -21140,7 +21310,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.7,
+   "build_seconds": 22.0,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -21199,7 +21369,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -21215,11 +21385,95 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
    "path": "preservation/branch-snapshots/copilot_compare-mathematical-formulas/formal/lean",
+   "toolchain": "leanprover/lean4:stable",
+   "toolchain_used": "leanprover/lean4:stable",
+   "needs_mathlib": false,
+   "build_ok": true,
+   "build_seconds": 21.2,
+   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
+   "sorry_warnings": 0,
+   "reconstructed": false,
+   "bridges": [],
+   "declared_axioms": [
+    {
+     "name": "CriticalBarrier.admissible_concentration_window",
+     "module": "CriticalBarrier.Concentration",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.audit_pipeline_loaded",
+     "module": "CriticalBarrier.Audit",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
+     "module": "CriticalBarrier.Barrier",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.energy_scaling_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_blowup_alternative",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.ess_endpoint_classical",
+     "module": "CriticalBarrier.CriticalL3",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.finite_energy_constraint",
+     "module": "CriticalBarrier.Energy",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.l3_scale_invariant",
+     "module": "CriticalBarrier.Scaling",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.pressure_poisson_compatibility",
+     "module": "CriticalBarrier.Pressure",
+     "statement": "Prop"
+    },
+    {
+     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
+     "module": "CriticalBarrier.Forcing",
+     "statement": "Prop"
+    }
+   ],
+   "theorems": [],
+   "integrity": [],
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "corrections": [
+    "vocabulario-lean4",
+    "z-provas-reparadas",
+    "zy-enunciados-do-autor",
+    "zzz-nomes-ligados"
+   ],
+   "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [],
+   "preenchimento": [],
+   "summary": {
+    "fechado": 0,
+    "aberto-sorry": 0,
+    "condicional": 0
+   },
+   "hora_commit_mvei": 1793883115
+  },
+  {
+   "repo": "navier-stokes-critical-barrier-audit",
+   "path": "preservation/branch-snapshots/copilot_execute-multi-agent-audit/formal/lean",
    "toolchain": "leanprover/lean4:stable",
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
@@ -21283,7 +21537,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -21299,91 +21553,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
-  },
-  {
-   "repo": "navier-stokes-critical-barrier-audit",
-   "path": "preservation/branch-snapshots/copilot_execute-multi-agent-audit/formal/lean",
-   "toolchain": "leanprover/lean4:stable",
-   "toolchain_used": "leanprover/lean4:stable",
-   "needs_mathlib": false,
-   "build_ok": true,
-   "build_seconds": 22.7,
-   "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
-   "sorry_warnings": 0,
-   "reconstructed": false,
-   "bridges": [],
-   "declared_axioms": [
-    {
-     "name": "CriticalBarrier.admissible_concentration_window",
-     "module": "CriticalBarrier.Concentration",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.audit_pipeline_loaded",
-     "module": "CriticalBarrier.Audit",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.critical_barrier_dichotomy_target",
-     "module": "CriticalBarrier.Barrier",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.energy_scaling_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_blowup_alternative",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.ess_endpoint_classical",
-     "module": "CriticalBarrier.CriticalL3",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.finite_energy_constraint",
-     "module": "CriticalBarrier.Energy",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.l3_scale_invariant",
-     "module": "CriticalBarrier.Scaling",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.pressure_poisson_compatibility",
-     "module": "CriticalBarrier.Pressure",
-     "statement": "Prop"
-    },
-    {
-     "name": "CriticalBarrier.smooth_forcing_requires_cancellation",
-     "module": "CriticalBarrier.Forcing",
-     "statement": "Prop"
-    }
-   ],
-   "theorems": [],
-   "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
-   "corrections": [
-    "vocabulario-lean4",
-    "z-provas-reparadas",
-    "zy-enunciados-do-autor",
-    "zzz-nomes-ligados"
-   ],
-   "lakefile_gerado": "",
-   "avulso": false,
-   "salvage": [],
-   "preenchimento": [],
-   "summary": {
-    "fechado": 0,
-    "aberto-sorry": 0,
-    "condicional": 0
-   },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -21392,7 +21562,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.3,
+   "build_seconds": 21.8,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | file: CriticalBarrier.lean | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -21451,7 +21621,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -21467,7 +21637,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -21535,7 +21705,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -21551,7 +21721,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -21560,7 +21730,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.4,
+   "build_seconds": 21.6,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -21619,7 +21789,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -21635,7 +21805,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -21644,7 +21814,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.8,
+   "build_seconds": 21.5,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -21703,7 +21873,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -21719,7 +21889,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -21728,7 +21898,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.9,
+   "build_seconds": 22.0,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -21787,7 +21957,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -21803,7 +21973,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -21812,7 +21982,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.6,
+   "build_seconds": 21.6,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -21871,7 +22041,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -21887,7 +22057,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -21955,7 +22125,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -21971,7 +22141,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -21980,7 +22150,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.8,
+   "build_seconds": 21.6,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -22039,7 +22209,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -22055,7 +22225,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -22064,7 +22234,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 22.7,
+   "build_seconds": 21.3,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -22123,7 +22293,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -22139,7 +22309,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -22148,7 +22318,7 @@
    "toolchain_used": "leanprover/lean4:stable",
    "needs_mathlib": false,
    "build_ok": true,
-   "build_seconds": 21.4,
+   "build_seconds": 21.6,
    "build_error": "(alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -22207,7 +22377,7 @@
    ],
    "theorems": [],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
+   "note": "CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original",
    "corrections": [
     "vocabulario-lean4",
     "z-provas-reparadas",
@@ -22223,7 +22393,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   },
   {
    "repo": "navier-stokes-critical-barrier-audit",
@@ -22232,7 +22402,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 13.2,
+   "build_seconds": 13.9,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -23852,7 +24022,7 @@
     }
    ],
    "integrity": [],
-   "note": "CORRIGIDO PELO MVEI (imports-no-topo, vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): imports movidos para o início (antes de comentários de módulo ou de documentação) em 6 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 44 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, differential_decay, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 12 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, global_regularity_from_G1, global_regularity_from_G1, CH95_to_KWC_conditional, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate.",
+   "note": "CORRIGIDO PELO MVEI (imports-no-topo, vocabulario-lean4, z-provas-reparadas, zy-enunciados-do-autor, zzz-nomes-ligados): imports movidos para o início (antes de comentários de módulo ou de documentação) em 6 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 76 arquivo(s): campos_multiplos 43, constant 1, docstring 4, lambda 81, nomes_mathlib 1, noncomputable 54, notacao 14, palavra_chave 4, repr 2, tatica_mathlib 4, tipos_numericos 8; 47 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, K0a_totality, G1b_total_strict, alpha_eps_le_norm, iterate_to_half_scale, betaCampanato_energy_only, gamma_lt_half_of_barrier_condition, differential_decay, independent_contract_closes, shrinkingDefect_pos, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, bulk_tail_to_depletion, differential_decay, bulk_tail_to_depletion, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, rhoStar_scale, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, closed_depletion_implies_decay, rhoStar_scale, B2_9_Pi_different, B2_9_Pi_different, B2_9_R_equal, shrinkingDefect_pos, admissible_iterate, epsilon_close_not_transitive, bulk_tail_to_depletion, bulk_tail_to_depletion, K0a_regularizedAmplitude_ge, bulk_tail_to_depletion, K0a_totality, G1b_total_strict; 16 enunciado(s) reescrito(s) a pedido do autor, conferidos no Lean do projeto: materialInhabitant_dissipation_margin_pos, alpha_eps, LocalEnergyIdentityData, ofXiEpsPDE, ofXiEpsPDE_PROVED_IDENTITY, tangentialPart_add_parallel, sinAngleSq, MissingDirectionalCertificate, global_regularity_from_G1, DynamicHalfHolderCoherence, MissingDirectionalCertificate, global_regularity_from_G1, CH95_to_KWC_conditional, DynamicHalfHolderCoherence, tangentialPart_add_parallel, sinAngleSq; 2 arquivo(s) passam a importar o módulo que declara o nome que faltava: audit/producer-first/NSMaterialInhabitant.lean: SignedGainCertificate, ActualNSToSignedGainCore; audit/producer-first/SignedGainCore.lean: SignedGainCertificate.",
    "corrections": [
     "imports-no-topo",
     "vocabulario-lean4",
@@ -24104,7 +24274,7 @@
     "aberto-sorry": 0,
     "condicional": 0
    },
-   "hora_commit_mvei": 1793828546
+   "hora_commit_mvei": 1793883115
   }
  ]
 }

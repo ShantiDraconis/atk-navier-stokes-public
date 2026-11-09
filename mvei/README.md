@@ -11,17 +11,17 @@ This folder records what the Lean 4 kernel said about the Lean sources of the pr
 
 ## What the kernel said
 
-MVEI verification of 2026-11-05T15:19:16+00:00, on commit `3904224e49f7b2256d56ce19a5e11e7ddc93f524`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
+MVEI verification of 2026-11-06T00:22:08+00:00, on commit `3904224e49f7b2256d56ce19a5e11e7ddc93f524`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
 
 | Lean project | Lean version | Build | Closed | Conditional | Open (`sorry`) | Checked file by file: closed / conditional / open / proof error / not reached |
 |---|---|---|---:|---:|---:|---|
-| `.` | v4.19.0 | OK | 151 | 0 | 0 | 175 / 0 / 0 / 5 / 2 |
-| `formal/lean` | v4.19.0 | partial | 514 | 1 | 0 | 17 / 0 / 0 / 2 / 2 |
-| `formal/millennium/lean` | v4.19.0 | OK | 70 | 0 | 0 | 36 / 0 / 0 / 1 / 0 |
+| `.` | v4.19.0 | OK | 151 | 0 | 0 | 178 / 0 / 0 / 2 / 2 |
+| `formal/lean` | v4.19.0 | partial | 542 | 1 | 0 | 9 / 0 / 0 / 0 / 2 |
+| `formal/millennium/lean` | v4.19.0 | OK | 70 | 0 | 0 | 37 / 0 / 0 / 0 / 0 |
 | `preservation/branch-snapshots/audit_correct-provenance-attribution-20260912/formal/lean` | stable | OK | 0 | 0 | 0 | — |
 | `preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean` | v4.19.0 | partial | 309 | 1 | 0 | 9 / 0 / 0 / 0 / 0 |
 | `preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean` | v4.19.0 | partial | 309 | 1 | 0 | 9 / 0 / 0 / 0 / 0 |
-| `preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean` | v4.19.0 | OK | 136 | 0 | 0 | 2 / 0 / 0 / 1 / 0 |
+| `preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean` | v4.19.0 | OK | 136 | 0 | 0 | 3 / 0 / 0 / 0 / 0 |
 | `preservation/branch-snapshots/audit_g1-prize-standard-v4-20260913/formal/millennium/lean` | v4.19.0 | OK | 71 | 0 | 0 | — |
 | `preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean` | v4.19.0 | partial | 309 | 1 | 0 | 9 / 0 / 0 / 0 / 0 |
 | `preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/millennium/lean` | v4.19.0 | OK | 136 | 0 | 0 | — |
@@ -44,9 +44,9 @@ MVEI verification of 2026-11-05T15:19:16+00:00, on commit `3904224e49f7b2256d56c
 
 | Closed theorems in this repository | |
 |---|---:|
-| Counting each project | 2 435 |
-| Unique (name + statement) | 962 |
-| Unique, without the lemmas Lean generates itself (`eq_1`, `mk.inj`, `sizeOf_spec`, `deriving`) | 438 |
+| Counting each project | 2 460 |
+| Unique (name + statement) | 985 |
+| Unique, without the lemmas Lean generates itself (`eq_1`, `mk.inj`, `sizeOf_spec`, `deriving`) | 446 |
 
 *Closed* means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`. It says that the statement as written in the file is proved; it does not say that an open problem is solved. Every statement is in `VERIFICACAO.json`. *Conditional* means the proof also uses axioms declared in the repository; *open* means it uses `sorry`. *Checked file by file* covers the files that no build reached: each one went through Lean whole, with a `#print axioms` for each theorem.
 
@@ -59,13 +59,13 @@ MVEI verification of 2026-11-05T15:19:16+00:00, on commit `3904224e49f7b2256d56c
 
 ### Declared theorems
 
-The `.lean` files of the verified commit declare 670 `theorem`/`lemma` (counting copies). The kernel checked 652 of them (648 closed, 4 conditional, 0 open). The closed count in the table above is larger: it also counts the theorems Lean generates by itself (equation lemmas, structure fields, `deriving`), which are not written in the text. For 18 the kernel has no result:
+The `.lean` files of the verified commit declare 670 `theorem`/`lemma` (counting copies). The kernel checked 659 of them (655 closed, 4 conditional, 0 open). The closed count in the table above is larger: it also counts the theorems Lean generates by itself (equation lemmas, structure fields, `deriving`), which are not written in the text. For 11 the kernel has no result:
 
 | Reason | Theorems |
 |---|---:|
-| checked file by file: the written proof does not pass the kernel | 9 |
 | the project built, but the file is not part of the lakefile target | 5 |
 | checked file by file: Lean did not reach the theorem (missing import, syntax error or timeout) | 4 |
+| checked file by file: the written proof does not pass the kernel | 2 |
 
 ### MVEI corrections
 

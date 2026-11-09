@@ -43,7 +43,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-05T15:19:16+00:00",
+  "generated_at": "2026-11-06T00:22:08+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -84,6 +84,6 @@
  "files_sha256": {
   "formal/G1/DynamicCampanato.lean": "ec175c7b6254491f7707bad7729432bb0fdbbfb82b4ebade9e9fa526f289e144"
  },
- "published_at": "2026-11-05T17:43:22Z",
- "certificate_sha256": "05051476b9ecc5949e4fd73fce649fbfc273155e6c74564c58899c86eac73590"
+ "published_at": "2026-11-09T23:13:19Z",
+ "certificate_sha256": "656de93bbbe522394c1b2e4e3ae0e75c78b19c39c621e12c6f9ad2f3cee33653"
 }

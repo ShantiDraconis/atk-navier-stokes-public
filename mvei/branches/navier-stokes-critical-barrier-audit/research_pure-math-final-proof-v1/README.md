@@ -5,7 +5,7 @@ Lean sources from the branch `research/pure-math-final-proof-v1` of the private 
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 2 — closed 2, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 32 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `7b3d6897b8c1e8b0493f5f48e61810e9b9bb775f4739421b332b036583276d59`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/research_pure-math-final-proof-v1/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `24ad7f9dd4a8db749b3735619d87c70626f97754dae8553ecf5ee6aa757f10fc`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/research_pure-math-final-proof-v1/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

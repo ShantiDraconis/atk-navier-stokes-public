@@ -5,7 +5,7 @@ Lean sources from the branch `open-math/ns-final-empty` of the private repositor
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 74 — closed 65, conditional 0, open 2, proof error 7, not reached 0, no result 0.
 * History: 226 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `df48061e1f5af6ce503bd89a6d19dba9e2780e746e608bc8382cf9cfaa125362`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `b09d6f344af0f4f5ab10e86853039ea2e3783dd905a3d97624da3c7c59d26a9a`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

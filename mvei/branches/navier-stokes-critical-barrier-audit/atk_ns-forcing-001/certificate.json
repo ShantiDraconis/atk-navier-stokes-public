@@ -1168,7 +1168,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-06T00:22:08+00:00",
+  "generated_at": "2026-11-10T04:38:10+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -3513,6 +3513,6 @@
   "open_math/RPA_EndpointLattice.lean": "862c81b6161bf220dffd2d5a7bbdb9be4fc957d682041ad29f4ef12b0ff3ca63",
   "open_math/RPA_MinimalChain.lean": "9af04ebce5afe14f5d768c1bd5fc14307d43a2c5f078399f0f82ca4a813638e1"
  },
- "published_at": "2026-11-09T23:13:05Z",
- "certificate_sha256": "8058edcb17e95b7d9fe88fde4e668149a2607fc364b7602576ce71a2f1336847"
+ "published_at": "2026-11-11T15:17:16Z",
+ "certificate_sha256": "efef0c79f8709e04380bff81d72ecb2347a799982209cef3308fd030435071a7"
 }

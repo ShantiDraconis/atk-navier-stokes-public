@@ -1138,7 +1138,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-06T00:22:08+00:00",
+  "generated_at": "2026-11-10T04:38:10+00:00",
   "lean": [
    "leanprover/lean4:stable",
    "leanprover/lean4:v4.19.0"
@@ -1793,6 +1793,6 @@
   "open-math/navier-stokes/logic-refutation/EnergyCompressionBarrier.lean": "f7705dd820f1d4bf53e520860445adfb7b4e23d1206de0aeec003972df638e0f",
   "open-math/navier-stokes/logic-refutation/FiberUnboundedFromScaling.lean": "4729c50509cc8a0e0bfc1be24c31ca1390b6598648e0982021275df1eef8c1f9"
  },
- "published_at": "2026-11-09T23:13:05Z",
- "certificate_sha256": "df48061e1f5af6ce503bd89a6d19dba9e2780e746e608bc8382cf9cfaa125362"
+ "published_at": "2026-11-11T15:17:16Z",
+ "certificate_sha256": "b09d6f344af0f4f5ab10e86853039ea2e3783dd905a3d97624da3c7c59d26a9a"
 }
